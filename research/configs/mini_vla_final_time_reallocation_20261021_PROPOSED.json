@@ -1,0 +1,15 @@
+{
+  "status": "PROPOSED_NOT_APPROVED",
+  "thread": "PUBLIC_REPRODUCTION",
+  "final_stage_seconds": 14400,
+  "m9_training_stage_seconds": 10800,
+  "old_final_stage_seconds": 10800,
+  "old_m9_training_stage_seconds": 14400,
+  "total_execution_seconds": 93600,
+  "modern_total_seconds": 68400,
+  "storage_unchanged": true,
+  "max_simultaneous_gpus": 2,
+  "rent_gpus": false,
+  "reason": "Independent2GPU same-output optimized projection12255.53s exceeds old remaining~10700s; transfer1h from completedM9training allowance, no increase to total.",
+  "report": "reports/MINI_VLA_FINAL_TIME_REALLOCATION_20261021.md"
+}

@@ -1,0 +1,155 @@
+{
+  "status": "SCIENCE_FROZEN_EXECUTOR_PENDING",
+  "thread": "PUBLIC_REPRODUCTION",
+  "selection": "configs/mini_vla_final_selection_20261021_v1.json",
+  "selection_sha256": "0ed90a152760a94698a61019d78453a4148cb9a6136e6b8581e86d7bb37e2c79",
+  "checkpoint": "results/mini_vla_m6_train_20261020_run1/training/best.pt",
+  "checkpoint_sha256": "88d410dc3a812713e05a3f0188763b8b000ff638314e4d50d721983b5a7c1b8f",
+  "baseline_standard": "configs/mini_vla_libero_benchmark_20261019_v2.json",
+  "case_manifest": "configs/mini_vla_four_suite_cases_20261019_v1.json",
+  "case_manifest_sha256": "6860f17f816ac0cf6e73700ebeb8892406d67aa779ab74ed1a6c93cbc9a63dad",
+  "suites": [
+    {
+      "name": "libero_spatial",
+      "tasks": 10,
+      "trials_per_task": 50,
+      "rollouts": 500,
+      "max_action_steps": 220
+    },
+    {
+      "name": "libero_object",
+      "tasks": 10,
+      "trials_per_task": 50,
+      "rollouts": 500,
+      "max_action_steps": 280
+    },
+    {
+      "name": "libero_goal",
+      "tasks": 10,
+      "trials_per_task": 50,
+      "rollouts": 500,
+      "max_action_steps": 300
+    },
+    {
+      "name": "libero_10",
+      "tasks": 10,
+      "trials_per_task": 50,
+      "rollouts": 500,
+      "max_action_steps": 520
+    }
+  ],
+  "task_order_index": 0,
+  "environment_seed": 7,
+  "initial_state_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49
+  ],
+  "wait_steps": 10,
+  "action_horizon": 10,
+  "execute_steps": 5,
+  "reset": "Within each suite,upstream np.seed7 then task order0..9;one environment/task seeded7, sequential reset/set_init_state indices0..49;no reseed per trial. Keep whole suites within worker.",
+  "worker_suites": [
+    [
+      "libero_spatial",
+      "libero_10"
+    ],
+    [
+      "libero_object",
+      "libero_goal"
+    ]
+  ],
+  "max_action_steps_per_worker": [
+    370000,
+    290000
+  ],
+  "videos": {
+    "indices_per_task": [
+      0,
+      25
+    ],
+    "maximum": 80,
+    "fps": 10,
+    "codec": "libx264",
+    "crf": 20,
+    "selection": "before outcomes"
+  },
+  "records": "All2000 actions/chunks/callsteps/states/done/initialphysicalstate/inputhashes/latency;durable incremental journal and completed-file hashes;no full RGB dataset recreation",
+  "resume": "Reuse complete case outputs by hash. Reconstruct sequential reset history via stored actions of earlier completed cases, never requery policy or resample their outcomes;verify physical state and RNG;incomplete infra cases explicitly recorded.",
+  "statistics": {
+    "per_task": 50,
+    "per_suite": 500,
+    "macro_suites": 4,
+    "development": 800,
+    "confirmation": 1200,
+    "bootstrap": "10000 task-cluster replicates, stratified bysuite",
+    "seed": 20261021,
+    "report_development_confirmation_separately": true
+  },
+  "resources": {
+    "phase": "modern_final2000",
+    "cumulative_seconds": 10800,
+    "max_gpus": 2,
+    "artifact_allocation_bytes": 2147483648,
+    "filesystem_reserve_bytes": 107374182400,
+    "ledger": "results/mini_vla_m6_20261019_ledger.json",
+    "counts_preflight_and_failures": true
+  },
+  "release": {
+    "confirmation_released": false,
+    "requires": [
+      "selected weights/settings frozen",
+      "final executor source frozen and CPUreset/queue/resume contracts passed",
+      "bounded concurrent replay throughput and remainingbudget admission",
+      "all initialstate/task/sourcehash metadata bound"
+    ]
+  },
+  "new_training_updates": 0
+}

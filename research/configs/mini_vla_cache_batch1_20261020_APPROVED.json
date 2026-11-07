@@ -1,0 +1,17 @@
+{
+  "status": "APPROVED",
+  "approved_at": "2026-10-20T19:37:44.667780+08:00",
+  "thread": "PUBLIC_REPRODUCTION",
+  "user_reply": "批准缓存batch改为1（推荐）",
+  "cache_batch_size": 1,
+  "online_batch_size": 1,
+  "training_batch_size": 128,
+  "proposal": "configs/mini_vla_modern_cache_batch1_proposal_20261020_v1.json",
+  "proposal_sha256": "de29222c858a783a3ad6e2c8663d5c76af1c3a05c4b93b764dbbae83e4ad0eab",
+  "report": "reports/MINI_VLA_CACHE_BATCH1_REVISION_20261020.md",
+  "parent_resource_approval": "configs/mini_vla_m8_m9_20261020_APPROVED.json",
+  "online_relative_l2_max": 0.01,
+  "precision": "bfloat16",
+  "budget_increase": false,
+  "existing_ledgers_unchanged": true
+}

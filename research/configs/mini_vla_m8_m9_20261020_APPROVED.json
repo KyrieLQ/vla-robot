@@ -1,0 +1,27 @@
+{
+  "status": "APPROVED",
+  "approved_at": "2026-10-20T18:06:36.946495+08:00",
+  "thread": "PUBLIC_REPRODUCTION",
+  "user_reply": "批准新增12小时/80 GiB及该方案（推荐）",
+  "proposal": "configs/mini_vla_m8_m9_proposal_20261020_v1.json",
+  "proposal_sha256": "221bfa972d3be7ea95da7b7cfa9dc4ee28419d61f73e4e09e5922c1c00ec6a46",
+  "report": "reports/MINI_VLA_M8_M9_RESOURCE_PROPOSAL_20261020.md",
+  "additional_execution_seconds": 43200,
+  "total_execution_seconds": 93600,
+  "additional_phase_artifact_gib": 80,
+  "total_phase_artifact_gib": 140,
+  "project_cap_gib": 240,
+  "filesystem_reserve_gib": 100,
+  "modern_total_seconds": 64800,
+  "modern_artifact_gib": 84,
+  "stage_seconds": {
+    "modern_cache": 21600,
+    "modern_m8_train": 14400,
+    "modern_m9_train": 14400,
+    "modern_dev50": 3600,
+    "modern_final2000": 10800
+  },
+  "max_simultaneous_gpus": 2,
+  "rent_gpus": false,
+  "final2000_release": "only after model/checkpoint/execution freeze"
+}

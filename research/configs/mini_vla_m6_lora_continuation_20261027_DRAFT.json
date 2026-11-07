@@ -1,0 +1,81 @@
+{
+  "status": "DRAFT_AWAITING_GPU_MEASUREMENTS_AND_RESOURCE_ADMISSION",
+  "thread": "PUBLIC_REPRODUCTION",
+  "scope_authorization": "configs/mini_vla_m6_lora_20261027_AUTHORIZED.json",
+  "comparison": "sameepoch12 starting head+base SmolVLM; frozen continuation versus LoRA continuation",
+  "arms": [
+    "frozen_vlm_head_continuation",
+    "vision_text_attention_lora_head_continuation"
+  ],
+  "initialization": {
+    "head_checkpoint": "results/mini_vla_m8_regression_train_20261021_run1/training/best.pt",
+    "head_sha256": "113ebfb4ef3453c77ca7337942841be958a18a8cd48079f02309e688243bde12",
+    "base_model": "cache/models/smolvlm2_500m_7b375e1",
+    "zero_B_LoRA_identity": true,
+    "optimizer": "reset both arms; do not load old optimizer only for one arm"
+  },
+  "data": {
+    "split": "configs/mini_vla_four_suite_demo_split_20261019_v1.json",
+    "preprocessing": "configs/mini_vla_m6_preprocessing_20261019_v1.json",
+    "train_episodes": 1506,
+    "validation_episodes": 187,
+    "train_frames": 243000,
+    "validation_frames": 30465,
+    "new_sampling": false,
+    "image_resolution": 512,
+    "two_cameras": true,
+    "prompt": "unchanged original external/wrist template",
+    "state_dim": 8,
+    "target": "original K10 valid-tail masked regression MSE"
+  },
+  "training": {
+    "seed": 42,
+    "additional_full_epochs": 1,
+    "effective_batch": 128,
+    "microbatch_per_gpu": 1,
+    "accumulate_by_valid_target_count": true,
+    "updates": 1899,
+    "head_lr": 3e-05,
+    "lora_lr": 1e-05,
+    "optimizer": "AdamW",
+    "weight_decay": 0.0001,
+    "clip_norm": 1.0,
+    "warmup_updates": 100,
+    "schedule": "cosine to 0.1*lr over1899updates; same head schedule both arms",
+    "lora": {
+      "rank": 8,
+      "alpha": 8,
+      "dropout": 0,
+      "target": "all vision/text attention q,k,v,o/out linear projections",
+      "expected_modules": 176,
+      "expected_trainable_lora_parameters": 2228224,
+      "connector_embedding_lm_head": "frozen",
+      "adapter_dtype": "float32",
+      "base_dtype": "bfloat16",
+      "checkpointing": "nonreentrant"
+    },
+    "selection": "full validation first-action MSE; compare initial and full-epoch endpoint, earliest ties; retain endpoint regardless of selection",
+    "negative_endpoint": "report endpoint and selected metrics; if selected checkpoint identical to old accepted initial, reuse old committed evaluation after identity/source checks; no outcome resampling",
+    "frozen_cache_allowed": "only frozen control after online parity audit; adapting arm always differentiable current model forward",
+    "retired_rgb_cache": "do not rebuild"
+  },
+  "evaluation": {
+    "suite": "Spatial original50development",
+    "K": 10,
+    "H": 5,
+    "baseline_reference": "oldM8/PPTM6 39/50, kept distinct from continued frozen control",
+    "main_comparison": "paired fresh frozen-continuation vs LoRA-continuation on same50initialstates, original reset/seed rules",
+    "metric": "success count, paired rescue/harm, per-task results, task-cluster descriptive interval, calls/latency/cost",
+    "one_training_seed": true,
+    "no_selection_by_closedloop": true,
+    "final2000_access": false,
+    "confirmation_note": "Previous final2000 already evaluated; cannot label it untouched or reopen for this comparison"
+  },
+  "budget": {
+    "increase_authorized": false,
+    "estimate": "pending actual CUDA forward/backward and I/O",
+    "remaining_ledger": "results/mini_vla_m6_20261019_ledger.json",
+    "formal_launch": "blocked until measured full workload fits; otherwise concrete extension proposal"
+  },
+  "implementation_status": "LoRA frontend+bounded preflight implemented and CPUchecked; formal continuation runner and adapters will be frozen after throughput admission"
+}

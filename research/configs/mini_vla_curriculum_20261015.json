@@ -1,0 +1,526 @@
+{
+  "version": 1,
+  "date": "2026-10-15",
+  "kind": "curriculum_and_project_direction_not_run_protocol",
+  "status": "EXPERIMENT_ROUTE_COMPLETE_LEARNING_CONTINUES",
+  "launchable": false,
+  "objective": "面向具身智能实习，从基础组件实现小型语言条件操控策略，通过训练与闭环对照理解组件作用和成本。原创模块不是完成条件。",
+  "authority": "User explicitly repositioned the project on 2026-10-15; supersedes the earlier recovery-research objective for future work only.",
+  "roadmap": "reports/MINI_VLA_ROADMAP_20261015.md",
+  "planned_source_directory": "mini_vla",
+  "originating_thread": "PUBLIC_REPRODUCTION",
+  "reference_assets": {
+    "dataset": "Existing LIBERO Spatial demonstrations; exact source files and new episode split to be bound in M0",
+    "demonstrations": 432,
+    "records": 52970,
+    "tasks": 10,
+    "closed_loop_split": "configs/research_split_20261014_v1.json",
+    "pi05_report": "reports/FORMAL_TRAINING_REPORT.md",
+    "pi05_development_result": {
+      "successes": 170,
+      "episodes": 200,
+      "training_updates": 30000
+    },
+    "reference_is_not_controlled_architecture_ablation": true
+  },
+  "initial_policy": {
+    "inputs": [
+      "external_rgb",
+      "wrist_rgb",
+      "instruction",
+      "proprioception_8d"
+    ],
+    "vision": "shared three-layer CNN with coarse spatial grid retained",
+    "language": "training-vocabulary embedding and pooling",
+    "state": "normalized proprioception and two-layer MLP",
+    "fusion": "concatenation and MLP",
+    "output": "7d controller command; not seven raw joint angles",
+    "objective": "masked MSE where padding exists",
+    "future_ground_truth_actions_in_inference": false,
+    "parameter_count": 786599
+  },
+  "stages": [
+    {
+      "id": "M0",
+      "name": "Data contract and tensor flow",
+      "requires": [],
+      "priority": "core",
+      "run_protocol": "configs/mini_vla_m0_20261015_v1.json",
+      "status": "ACCEPTED",
+      "legacy_experiment_id": "M0"
+    },
+    {
+      "id": "M1",
+      "name": "Minimal single-action language-conditioned policy",
+      "requires": [
+        "M0"
+      ],
+      "priority": "core",
+      "run_protocol": "configs/mini_vla_m1_20261019_v2.json",
+      "status": "COMPLETE_REVIEWED",
+      "run": "results/mini_vla_m1_20261019_run1",
+      "successes": 18,
+      "episodes": 50,
+      "review": "results/mini_vla_m1_20261019_run1/REVIEWED_REPORT.md",
+      "legacy_experiment_id": "M1",
+      "display_model_id": "M1",
+      "lesson_number": 1
+    },
+    {
+      "id": "M2",
+      "name": "Action chunks and replanning",
+      "requires": [
+        "M1"
+      ],
+      "priority": "core",
+      "planned_comparisons": [
+        "K1/H1 versus K10/H1",
+        "K10/H1 versus K10/H5"
+      ],
+      "run_protocol": "configs/mini_vla_m2_20261019_v2.json",
+      "status": "COMPLETE_REVIEWED",
+      "run": "results/mini_vla_m2_20261019_run1",
+      "successes": {
+        "h1": 39,
+        "h5": 41
+      },
+      "episodes_per_variant": 50,
+      "review": "results/mini_vla_m2_20261019_run1/REVIEWED_REPORT.md",
+      "legacy_experiment_id": "M2",
+      "display_model_id": "M2",
+      "lesson_number": 2
+    },
+    {
+      "id": "M3",
+      "name": "Visual architecture and pretraining",
+      "requires": [
+        "M2"
+      ],
+      "priority": "core",
+      "planned_comparisons": [
+        "TinyCNN versus random ResNet18",
+        "random versus pretrained ResNet18"
+      ],
+      "run_protocol": "configs/mini_vla_m3_20261019_v1.json",
+      "status": "COMPLETE_REVIEWED",
+      "run": "results/mini_vla_m3_20261019_run3",
+      "review": "results/mini_vla_m3_20261019_run3/REVIEWED_REPORT.md",
+      "successes": {
+        "tiny_norm": 36,
+        "resnet_random": 39,
+        "resnet_pretrained": 44
+      },
+      "episodes_per_variant": 50,
+      "lesson": "reports/MINI_VLA_LESSON_03.md",
+      "legacy_experiment_id": "M3",
+      "display_model_id": "M3",
+      "lesson_number": 3
+    },
+    {
+      "id": "M4",
+      "name": "Attention fusion and action-query decoding",
+      "requires": [
+        "M3"
+      ],
+      "priority": "core",
+      "label": "language-conditioned ACT-style; not full ACT reproduction",
+      "run_protocol": "configs/mini_vla_m4_20261019_v2.json",
+      "status": "COMPLETE_REVIEWED",
+      "run": "results/mini_vla_m4_20261019_run3",
+      "review": "results/mini_vla_m4_20261019_run3/REVIEWED_REPORT.md",
+      "successes": 44,
+      "episodes": 50,
+      "lesson": "reports/MINI_VLA_LESSON_04.md",
+      "legacy_experiment_id": "M4",
+      "display_model_id": "M4",
+      "lesson_number": 4
+    },
+    {
+      "id": "M5",
+      "name": "Conditional flow-matching action head",
+      "requires": [
+        "M4"
+      ],
+      "priority": "extension_if_core_ready",
+      "run_protocol": null,
+      "status": "SKIPPED_NOT_RUN",
+      "reason": "Optional stage skipped; later flow experiment separately executed as M9",
+      "legacy_experiment_id": "M5",
+      "display_model_id": null,
+      "lesson_number": null,
+      "omitted_from_numbered_course": true
+    },
+    {
+      "id": "M6",
+      "name": "Final evaluation, interpretation and portfolio",
+      "requires": [
+        "M4"
+      ],
+      "priority": "core",
+      "optional_input": "M5",
+      "run_protocol": "configs/mini_vla_m6_train_20261020_v1.json",
+      "status": "COMPLETE_REVIEWED_SELECTED_FINAL_MODEL",
+      "resource_proposal": "configs/mini_vla_m6_resource_proposal_20261019_v1.json",
+      "approval": "configs/mini_vla_m6_20261019_APPROVED.json",
+      "run": "results/mini_vla_m6_train_20261020_run1",
+      "data_review": "results/mini_vla_m6_prepare_20261019_run3/REVIEWED_REPORT.md",
+      "training_review": "results/mini_vla_m6_train_20261020_run1/REVIEWED_REPORT.md",
+      "development_protocol": "configs/mini_vla_m6_fast50_20261020_v1.json",
+      "development_successes": 47,
+      "development_episodes": 50,
+      "development_review": "results/mini_vla_m6_fast50_20261020_run1/REVIEWED_REPORT.md",
+      "final_review": "results/mini_vla_final2000_20261021_run3/REVIEWED_REPORT.md",
+      "final_successes": 1565,
+      "final_episodes": 2000,
+      "lesson": "reports/MINI_VLA_LESSON_05.md",
+      "legacy_experiment_id": "M6",
+      "display_model_id": "M5",
+      "lesson_number": 5
+    },
+    {
+      "id": "M7a",
+      "name": "Explicit spatial visual tokens",
+      "status": "COMPLETE_REVIEWED_NEGATIVE",
+      "run_protocol": "configs/mini_vla_m7a_20261020_v1.json",
+      "run": "results/mini_vla_m7a_20261020_run1",
+      "requires": [
+        "M6"
+      ],
+      "scope_approval": "configs/mini_vla_m7a_20261020_APPROVED.json",
+      "successes": 37,
+      "episodes": 50,
+      "baseline_successes": 47,
+      "review": "results/mini_vla_m7a_20261020_run1/REVIEWED_REPORT.md",
+      "legacy_experiment_id": "M7a",
+      "display_model_id": "M6",
+      "lesson_number": 6,
+      "lesson": "reports/MINI_VLA_LESSON_06.md"
+    },
+    {
+      "id": "M8_preflight",
+      "name": "Frozen pretrainedVLM interface and resource feasibility",
+      "status": "COMPLETE_REVIEWED",
+      "run_protocol": "configs/mini_vla_m8_preflight_20261020_v2.json",
+      "requires": [
+        "M7a"
+      ],
+      "new_training_updates": 0,
+      "run": "results/mini_vla_m8_preflight_20261020_run2",
+      "repair_report": "reports/MINI_VLA_M8_PREFLIGHT_REPAIR_20261020.md",
+      "review": "results/mini_vla_m8_preflight_20261020_run2/REVIEWED_REPORT.md",
+      "legacy_experiment_id": "M8_preflight"
+    },
+    {
+      "id": "Modern_cache",
+      "name": "Full frozenVLM BF16 token cache",
+      "status": "COMPLETE_INDEPENDENTLY_REVIEWED",
+      "run_protocol": "configs/mini_vla_modern_cache_resume_20261021_v1.json",
+      "run": "results/mini_vla_modern_cache_20261021_run3",
+      "new_training_updates": 0,
+      "expected_frames": 273465,
+      "review": "results/mini_vla_modern_cache_20261021_run3/REVIEWED_REPORT.md",
+      "revision_report": "reports/MINI_VLA_CACHE_BATCH1_REVISION_20261020.md",
+      "batch_revision_approval": "configs/mini_vla_cache_batch1_20261020_APPROVED.json",
+      "committed_frames": 273465,
+      "remaining_frames": 0,
+      "storage_revision_approval": "configs/mini_vla_legacy_image_retirement_20261021_APPROVED.json",
+      "legacy_experiment_id": "Modern_cache"
+    },
+    {
+      "id": "M8",
+      "name": "Frozen pretrainedVLM regression action head",
+      "status": "COMPLETE_INDEPENDENTLY_REVIEWED",
+      "run_protocol": "configs/mini_vla_m8_regression_train_20261021_v1.json",
+      "run": "results/mini_vla_m8_regression_train_20261021_run1",
+      "parameters_trainable": 398663,
+      "parameters_frozen": 507482304,
+      "best_epoch": 12,
+      "optimizer_updates": 94950,
+      "validation_first_mse": 0.3256385146420309,
+      "validation_chunk_mse": 0.3149129371936796,
+      "review": "results/mini_vla_m8_dev50_20261021_run1/REVIEWED_REPORT.md",
+      "evaluation_protocol": "configs/mini_vla_m8_dev50_20261021_v1.json",
+      "evaluation_run": "results/mini_vla_m8_dev50_20261021_run1",
+      "online_contract": "results/mini_vla_m8_dev50_20261021_run1/online_contract.json",
+      "successes": 39,
+      "episodes": 50,
+      "baseline_successes": 47,
+      "paired_wins": 2,
+      "paired_losses": 10,
+      "legacy_experiment_id": "M8",
+      "display_model_id": "M7",
+      "lesson_number": 7,
+      "lesson": "reports/MINI_VLA_LESSON_07.md"
+    },
+    {
+      "id": "M9",
+      "name": "Same frozenVLM conditionalflow action head",
+      "status": "COMPLETE_INDEPENDENTLY_REVIEWED",
+      "run_protocol": "configs/mini_vla_m9_flow_train_20261021_v1.json",
+      "requires": [
+        "M8"
+      ],
+      "parameters_trainable": 432711,
+      "parameters_frozen": 507482304,
+      "training_seed": 42,
+      "epochs": 50,
+      "updates": 94950,
+      "euler_steps": 10,
+      "confirmation_access": false,
+      "run": "results/mini_vla_m9_flow_train_20261021_run1",
+      "best_epoch": 43,
+      "optimizer_updates": 94950,
+      "validation_first_mse": 0.5032683948076753,
+      "validation_chunk_mse": 0.4823360233638286,
+      "review": "results/mini_vla_m9_dev50_20261021_run1/REVIEWED_REPORT.md",
+      "evaluation_protocol": "configs/mini_vla_m9_dev50_20261021_v1.json",
+      "evaluation_run": "results/mini_vla_m9_dev50_20261021_run1",
+      "online_contract": "results/mini_vla_m9_dev50_20261021_run1/online_contract.json",
+      "successes": 18,
+      "episodes": 50,
+      "baseline_m8_successes": 39,
+      "baseline_m6_successes": 47,
+      "legacy_experiment_id": "M9",
+      "display_model_id": "M8",
+      "lesson_number": 8,
+      "lesson": "reports/MINI_VLA_LESSON_08.md"
+    },
+    {
+      "id": "Final2000",
+      "name": "SelectedM6 four-suite2000 final evaluation",
+      "status": "COMPLETE_INDEPENDENTLY_REVIEWED",
+      "requires": [
+        "M6",
+        "M9"
+      ],
+      "run_protocol": "configs/mini_vla_final2000_20261021_v1.json",
+      "proposal": "reports/MINI_VLA_FINAL_TIME_REALLOCATION_20261021.md",
+      "scenarios_executed": 2000,
+      "confirmation_released": true,
+      "time_approval": "configs/mini_vla_final_time_reallocation_20261021_APPROVED.json",
+      "run": "results/mini_vla_final2000_20261021_run3",
+      "started_at": "2026-10-21T14:30:29.285308+08:00",
+      "progress_snapshot": {
+        "at": "2026-10-21T23:43:37.420010+08:00",
+        "coverage_by_suite": {
+          "libero_spatial": 500,
+          "libero_10": 500,
+          "libero_object": 500,
+          "libero_goal": 500
+        },
+        "complete_cases": 2000,
+        "status": "COMPLETE_INDEPENDENTLY_REVIEWED",
+        "original_completed_results_reused": 161,
+        "original_partial_steps_retained": 51
+      },
+      "scenarios_executed_complete": 2000,
+      "partial_scenarios": 0,
+      "resume_protocol": "configs/mini_vla_final2000_resume_20261021_v1.json",
+      "review": "results/mini_vla_final2000_20261021_run3/REVIEWED_REPORT.md",
+      "resource_waiter": "automation/final_resume_resource_waiter_20261021_v1.json",
+      "gpu_ids": [
+        6,
+        7
+      ],
+      "successes": 1565,
+      "success_rate": 0.7825,
+      "legacy_experiment_id": "Final2000",
+      "display_model_id": "M5",
+      "display_name": "Selected M5 final2000 (legacy M6)"
+    }
+  ],
+  "evaluation": {
+    "expert_train_validation_split": "configs/mini_vla_split_20261015_v1.json",
+    "normalization_and_vocabulary": "fit training demonstrations only",
+    "development_cases": 50,
+    "fast_development_subset": "Existing fixed 50-case subset; not an independent test",
+    "confirmation_cases": 300,
+    "confirmation_access": "Final frozen selected-model evaluation complete; no subsequent tuning authorized",
+    "metrics": [
+      "closed-loop success",
+      "paired differences",
+      "latency",
+      "inference calls",
+      "training throughput",
+      "peak GPU memory",
+      "parameters",
+      "sample presentations"
+    ],
+    "seed_policy": "Engineering pilots may use one seed; final comparative claims need multiple training seeds specified before their runs",
+    "generalization_claim": "held-out starts within known Spatial tasks; no unseen-task or unseen-scene claim without a separate split",
+    "expert_train_episodes": 384,
+    "expert_validation_episodes": 48,
+    "unified_standard": "configs/mini_vla_evaluation_standard_20261019_v1.json",
+    "primary_development_cases": 50,
+    "fast_results_role": "smoke/quick development only",
+    "final_spatial_coverage_cases": 500,
+    "four_suite_benchmark_standard": "configs/mini_vla_libero_benchmark_20261019_v2.json",
+    "final_benchmark_episodes_per_checkpoint": 2000,
+    "development_cases_scope": "fixed Spatial10 tasks x5 starts;800-case four-suite development partition is metadata only, not a mandatory experiment",
+    "automatic_intermediate_full_evaluation": false,
+    "final_evaluation_timing": "after modernVLM/flow architecture selection; original2000deferred by user20261020"
+  },
+  "resource_policy": {
+    "artifact_root": "/data1/niuye/lq/pi05_lora_libero",
+    "allowed_physical_gpu_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "max_simultaneous_gpus": 2,
+    "small_model_preference": "single GPU after finite resource admission",
+    "project_cap_gib": 240,
+    "filesystem_reserve_gib": 100,
+    "old_recovery_limits_retained": {
+      "paired_seconds": 16200,
+      "total_seconds": 28800,
+      "artifacts_gib": 4
+    },
+    "old_recovery_ledger": "results/recovery_seed_stability_20261014_v1/review/resource_ledger.json",
+    "budget_reset": false,
+    "new_training_budget": {
+      "phase": "M6",
+      "seconds": 93600,
+      "artifacts_gib": 140,
+      "approval": "configs/mini_vla_m6_20261019_APPROVED.json",
+      "extension_approval": "configs/mini_vla_m8_m9_20261020_APPROVED.json"
+    },
+    "new_training_budget_status": "EXPLICITLY_APPROVED_20261019_OLD_LEDGERS_RETAINED",
+    "idle_gpu_monitor": "authorized quiet300s dispatcher until reviewed M6 completion or cancellation",
+    "long_jobs": "durable supervisor and deduplicated terminal event to originating thread",
+    "gpu_scope_approval": "configs/mini_vla_all_gpus_20261019_APPROVED.json",
+    "automation_approval": "configs/mini_vla_automation_20261019_APPROVED.json"
+  },
+  "next_work": "Continue teaching; new VLM finetuning deferred by user. Existing M7/M8 experiments already complete.",
+  "modern_extension_proposal": "configs/mini_vla_m7a_scope_proposal_20261020_v1.json",
+  "modern_extension_approval": "configs/mini_vla_m7a_20261020_APPROVED.json",
+  "modern_resource_proposal": "configs/mini_vla_m8_m9_proposal_20261020_v1.json",
+  "modern_resource_approval": "configs/mini_vla_m8_m9_20261020_APPROVED.json",
+  "updated_at": "2026-10-21T23:43:37.420010+08:00",
+  "final_selected_model": "M6",
+  "final_selection": "configs/mini_vla_final_selection_20261021_v1.json",
+  "final_scientific_protocol": "configs/mini_vla_final2000_scientific_20261021_v2.json",
+  "learning_progress": {
+    "user_reported_read": [
+      "reports/MINI_VLA_LESSON_01.md",
+      "reports/MINI_VLA_LESSON_02.md",
+      "reports/MINI_VLA_LESSON_03.md"
+    ],
+    "current": "reports/MINI_VLA_LESSON_09.md",
+    "current_status": "USER_REPORTED_ALL_LESSONS_FINISHED",
+    "mastery_not_assumed": true,
+    "lesson04_status": "DISCUSSED_ARCHITECTURE; next lesson requested; full reading/mastery not asserted",
+    "current_model_id": "M9",
+    "current_legacy_experiment_id": "pi05_formal_spatial_20261013_v1",
+    "lesson05_status": "User described main idea and requested M6; mastery not assumed",
+    "lesson06_status": "Provided; user may omit spatial-token branch from PPT; mastery not assumed",
+    "current_ppt_model_id": "M8",
+    "lesson07_status": "Architecture discussed; next lesson requested; mastery not assumed",
+    "lesson08_status": "User reports basic understanding and requested next lesson; mastery not assumed",
+    "user_reported_all_lessons_finished": true,
+    "user_reported_finished_date": "2026-10-27"
+  },
+  "learning_updated_at": "2026-10-27T15:17:59.729212+08:00",
+  "course_overview": "reports/MINI_VLA_COURSE_M1_M9_CURRENT.md",
+  "performance_summary": "reports/mini_vla_performance_summary.json",
+  "project_complete": true,
+  "teaching_numbering": "configs/mini_vla_lesson_numbering_20261023.json",
+  "final_selected_model_display": "M5",
+  "experiment_model_id_namespace": "legacy",
+  "canonical_course_stages": [
+    {
+      "lesson_number": 1,
+      "model_id": "M1",
+      "legacy_experiment_id": "M1",
+      "topic": "最小单动作策略",
+      "lesson_path": "reports/MINI_VLA_LESSON_01.md",
+      "lesson_written": true
+    },
+    {
+      "lesson_number": 2,
+      "model_id": "M2",
+      "legacy_experiment_id": "M2",
+      "topic": "动作分块与重规划",
+      "lesson_path": "reports/MINI_VLA_LESSON_02.md",
+      "lesson_written": true
+    },
+    {
+      "lesson_number": 3,
+      "model_id": "M3",
+      "legacy_experiment_id": "M3",
+      "topic": "视觉编码与预训练",
+      "lesson_path": "reports/MINI_VLA_LESSON_03.md",
+      "lesson_written": true
+    },
+    {
+      "lesson_number": 4,
+      "model_id": "M4",
+      "legacy_experiment_id": "M4",
+      "topic": "Transformer融合与动作查询",
+      "lesson_path": "reports/MINI_VLA_LESSON_04.md",
+      "lesson_written": true
+    },
+    {
+      "lesson_number": 5,
+      "model_id": "M5",
+      "legacy_experiment_id": "M6",
+      "topic": "四套联合训练、选点与评测",
+      "lesson_path": "reports/MINI_VLA_LESSON_05.md",
+      "lesson_written": true
+    },
+    {
+      "lesson_number": 6,
+      "model_id": "M6",
+      "legacy_experiment_id": "M7a",
+      "topic": "空间token",
+      "lesson_path": "reports/MINI_VLA_LESSON_06.md",
+      "lesson_written": true
+    },
+    {
+      "lesson_number": 7,
+      "model_id": "M7",
+      "legacy_experiment_id": "M8",
+      "topic": "冻结预训练VLM与回归动作头",
+      "lesson_path": "reports/MINI_VLA_LESSON_07.md",
+      "lesson_written": true
+    },
+    {
+      "lesson_number": 8,
+      "model_id": "M8",
+      "legacy_experiment_id": "M9",
+      "topic": "条件flow动作头",
+      "lesson_path": "reports/MINI_VLA_LESSON_08.md",
+      "lesson_written": true
+    },
+    {
+      "lesson_number": 9,
+      "model_id": "M9",
+      "legacy_experiment_id": "pi05_formal_spatial_20261013_v1",
+      "topic": "已有π0.5预训练完整VLA微调、部署与闭环复盘",
+      "lesson_path": "reports/MINI_VLA_LESSON_09.md",
+      "lesson_written": true,
+      "source_run": "results/formal_pipeline_20261013_v2",
+      "source_report": "reports/FORMAL_TRAINING_REPORT.md",
+      "new_training": false
+    }
+  ],
+  "future_finetuning_hold": "configs/mini_vla_finetuning_hold_20261023.json",
+  "m9_teaching_reference": {
+    "lesson_number": 9,
+    "model_id": "M9",
+    "legacy_experiment_id": "pi05_formal_spatial_20261013_v1",
+    "topic": "已有π0.5预训练完整VLA微调、部署与闭环复盘",
+    "lesson_path": "reports/MINI_VLA_LESSON_09.md",
+    "lesson_written": true,
+    "source_run": "results/formal_pipeline_20261013_v2",
+    "source_report": "reports/FORMAL_TRAINING_REPORT.md",
+    "new_training": false
+  },
+  "ppt_numbering": "configs/mini_vla_ppt_numbering_20261024.json",
+  "ppt_performance_summary": "reports/MINI_VLA_PPT_M1_M8_PERFORMANCE.md"
+}

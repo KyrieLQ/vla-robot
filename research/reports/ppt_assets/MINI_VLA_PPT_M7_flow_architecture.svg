@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2720" height="1720" viewBox="0 0 2720 1720">
+<rect width="100%" height="100%" fill="white"/>
+<rect x="40" y="140" width="2640" height="350" rx="15" fill="#F7FBFE" stroke="#B6CDDF"/>
+<rect x="40" y="530" width="2640" height="520" rx="15" fill="#FFFBF5" stroke="#D9C7AC"/>
+<rect x="40" y="1090" width="1290" height="500" rx="15" fill="#FFF9F1" stroke="#D9C7AC"/>
+<rect x="1390" y="1090" width="1290" height="500" rx="15" fill="#F1FAF5" stroke="#A9CDB8"/>
+<text x="1360" y="47" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="44" font-weight="700" fill="#071E4A">M7 · 流匹配动作生成</text>
+<text x="1360" y="99" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="29" font-weight="400" fill="#071E4A">PPT主线：冻结VLM + 条件速度网络  |  动作长度K=10 · 积分次数S=10 · 执行前缀H=5</text>
+<circle cx="80" cy="178" r="21" fill="#0563C6" stroke="#0563C6" stroke-width="1.5"/>
+<text x="80" y="178" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="28" font-weight="700" fill="white">1</text>
+<text x="383.546875" y="178" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="32" font-weight="700" fill="#071E4A">观测条件：一次准备，提供memory</text>
+<rect x="70" y="240" width="370" height="100" rx="12" fill="#F2F7FA" stroke="#7895AC"/>
+<text x="255.0" y="272.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="30" font-weight="700" fill="#071E4A">两路RGB图像 + 任务文字</text>
+<text x="255.0" y="308.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="27" font-weight="400" fill="#071E4A">当前观测，不含未来动作</text>
+<rect x="500" y="225" width="480" height="130" rx="12" fill="#ECF8FD" stroke="#148EEB"/>
+<text x="740.0" y="254.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="30" font-weight="700" fill="#071E4A">输入适配 + 官方Processor</text>
+<text x="740.0" y="290.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="27" font-weight="400" fill="#071E4A">冻结 SmolVLM2-500M</text>
+<text x="740.0" y="326.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="27" font-weight="400" fill="#071E4A">图文H：[B,L,960]</text>
+<polyline points="440,290 500,290" fill="none" stroke="#148EEB" stroke-width="2.5"/>
+<polygon points="500,290 490.0,285.0 490.0,295.0" fill="#148EEB"/>
+<rect x="1040" y="240" width="320" height="100" rx="12" fill="#FFF2E2" stroke="#C47A25"/>
+<text x="1200.0" y="272.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="30" font-weight="700" fill="#071E4A">可训练图文投影</text>
+<text x="1200.0" y="308.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="27" font-weight="400" fill="#071E4A">Linear 960→128</text>
+<polyline points="980,290 1040,290" fill="none" stroke="#148EEB" stroke-width="2.5"/>
+<polygon points="1040,290 1030.0,285.0 1030.0,295.0" fill="#148EEB"/>
+<polyline points="1360,290 1970,290" fill="none" stroke="#258557" stroke-width="2.5"/>
+<polygon points="1970,290 1960.0,285.0 1960.0,295.0" fill="#258557"/>
+<text x="1645" y="263" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#258557">[B,L,128]</text>
+<rect x="70" y="390" width="370" height="75" rx="12" fill="#F2F7FA" stroke="#7895AC"/>
+<text x="255.0" y="427.5" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="30" font-weight="700" fill="#071E4A">标准化本体状态 [B,8]</text>
+<rect x="500" y="380" width="480" height="90" rx="12" fill="#FFF2E2" stroke="#C47A25"/>
+<text x="740.0" y="407.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="30" font-weight="700" fill="#071E4A">可训练状态MLP</text>
+<text x="740.0" y="443.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="25" font-weight="400" fill="#071E4A">8→64→ReLU→128 → [B,1,128]</text>
+<polyline points="440,427 500,427" fill="none" stroke="#148EEB" stroke-width="2.5"/>
+<polygon points="500,427 490.0,422.0 490.0,432.0" fill="#148EEB"/>
+<polyline points="980,425 1860,425 1860,370 1970,370" fill="none" stroke="#258557" stroke-width="2.5"/>
+<polygon points="1970,370 1960.0,365.0 1960.0,375.0" fill="#258557"/>
+<rect x="1970" y="255" width="630" height="160" rx="12" fill="#EAF6EF" stroke="#258557"/>
+<text x="2285.0" y="299.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="30" font-weight="700" fill="#071E4A">图文token + 状态token</text>
+<text x="2285.0" y="335.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="27" font-weight="400" fill="#071E4A">memory：[B,L+1,128]</text>
+<text x="2285.0" y="371.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="27" font-weight="400" fill="#071E4A">同时传入memory padding mask</text>
+<circle cx="80" cy="568" r="21" fill="#0563C6" stroke="#0563C6" stroke-width="1.5"/>
+<text x="80" y="568" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="28" font-weight="700" fill="white">2</text>
+<text x="340.1640625" y="568" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="32" font-weight="700" fill="#071E4A">共享条件速度网络 vθ(xτ, τ, c)</text>
+<rect x="70" y="640" width="360" height="90" rx="12" fill="#F2F7FA" stroke="#7895AC"/>
+<text x="250.0" y="667.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="30" font-weight="700" fill="#071E4A">中间动作块 xτ</text>
+<text x="250.0" y="703.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="27" font-weight="400" fill="#071E4A">[B,10,7]</text>
+<rect x="500" y="635" width="360" height="100" rx="12" fill="#FFF2E2" stroke="#C47A25"/>
+<text x="680.0" y="667.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="30" font-weight="700" fill="#071E4A">带噪动作投影</text>
+<text x="680.0" y="703.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="27" font-weight="400" fill="#071E4A">Linear 7→128</text>
+<polyline points="430,685 500,685" fill="none" stroke="#148EEB" stroke-width="2.5"/>
+<polygon points="500,685 490.0,680.0 490.0,690.0" fill="#148EEB"/>
+<polyline points="860,685 1510,685 1510,740" fill="none" stroke="#148EEB" stroke-width="2.5"/>
+<polygon points="1510,740 1515.0,730.0 1505.0,730.0" fill="#148EEB"/>
+<text x="1155" y="653" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#071E4A">[B,10,128]</text>
+<rect x="500" y="800" width="360" height="100" rx="12" fill="#FFF2E2" stroke="#C47A25"/>
+<text x="680.0" y="832.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="30" font-weight="700" fill="#071E4A">10个可学习槽位向量</text>
+<text x="680.0" y="868.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="24" font-weight="400" fill="#071E4A">[1,10,128]，广播到batch</text>
+<polyline points="860,850 1420,850 1420,770 1480,770" fill="none" stroke="#148EEB" stroke-width="2.5"/>
+<polygon points="1480,770 1470.0,765.0 1470.0,775.0" fill="#148EEB"/>
+<rect x="70" y="935" width="360" height="80" rx="12" fill="#F2F7FA" stroke="#7895AC"/>
+<text x="250.0" y="975.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="30" font-weight="700" fill="#071E4A">生成时间 τ：[B]</text>
+<rect x="500" y="930" width="360" height="90" rx="12" fill="#F2F7FA" stroke="#7895AC"/>
+<text x="680.0" y="957.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="30" font-weight="700" fill="#071E4A">正弦 / 余弦时间编码</text>
+<text x="680.0" y="993.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="27" font-weight="400" fill="#071E4A">[B,128]，固定频率</text>
+<polyline points="430,975 500,975" fill="none" stroke="#148EEB" stroke-width="2.5"/>
+<polygon points="500,975 490.0,970.0 490.0,980.0" fill="#148EEB"/>
+<rect x="920" y="930" width="380" height="90" rx="12" fill="#FFF2E2" stroke="#C47A25"/>
+<text x="1110.0" y="957.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="30" font-weight="700" fill="#071E4A">可训练时间MLP</text>
+<text x="1110.0" y="993.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="25" font-weight="400" fill="#071E4A">128→128→128，中间SiLU</text>
+<polyline points="860,975 920,975" fill="none" stroke="#148EEB" stroke-width="2.5"/>
+<polygon points="920,975 910.0,970.0 910.0,980.0" fill="#148EEB"/>
+<polyline points="1300,975 1510,975 1510,800" fill="none" stroke="#148EEB" stroke-width="2.5"/>
+<polygon points="1510,800 1505.0,810.0 1515.0,810.0" fill="#148EEB"/>
+<text x="1450" y="1010" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="24" font-weight="400" fill="#071E4A">[B,1,128]，广播到10步</text>
+<circle cx="1510" cy="770" r="30" fill="white" stroke="#148EEB" stroke-width="1.5"/>
+<text x="1510" y="766" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="44" font-weight="700" fill="#148EEB">+</text>
+<rect x="1620" y="725" width="250" height="90" rx="12" fill="#EAF6EF" stroke="#258557"/>
+<text x="1745.0" y="752.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="30" font-weight="700" fill="#071E4A">动作token</text>
+<text x="1745.0" y="788.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="25" font-weight="400" fill="#071E4A">[B,10,128]</text>
+<polyline points="1540,770 1620,770" fill="none" stroke="#148EEB" stroke-width="2.5"/>
+<polygon points="1620,770 1610.0,765.0 1610.0,775.0" fill="#148EEB"/>
+<rect x="1940" y="650" width="380" height="230" rx="12" fill="#FFF2E2" stroke="#C47A25"/>
+<text x="2130.0" y="693.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="30" font-weight="700" fill="#071E4A">可训练动作Decoder</text>
+<text x="2130.0" y="729.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="24" font-weight="400" fill="#071E4A">1层 · 4头 · 宽度128</text>
+<text x="2130.0" y="765.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="24" font-weight="400" fill="#071E4A">自注意力 + 交叉注意力</text>
+<text x="2130.0" y="801.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="24" font-weight="400" fill="#071E4A">FFN：128→512→128</text>
+<text x="2130.0" y="837.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="24" font-weight="400" fill="#071E4A">ReLU；输出[B,10,128]</text>
+<polyline points="1870,770 1940,770" fill="none" stroke="#148EEB" stroke-width="2.5"/>
+<polygon points="1940,770 1930.0,765.0 1930.0,775.0" fill="#148EEB"/>
+<polyline points="2285,415 2285,505 2130,505 2130,650" fill="none" stroke="#258557" stroke-width="2.5"/>
+<polygon points="2130,650 2135.0,640.0 2125.0,640.0" fill="#258557"/>
+<text x="2250" y="611" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="25" font-weight="400" fill="#258557">memory</text>
+<rect x="2370" y="720" width="260" height="100" rx="12" fill="#FFF2E2" stroke="#C47A25"/>
+<text x="2500.0" y="752.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="30" font-weight="700" fill="#071E4A">输出 Linear</text>
+<text x="2500.0" y="788.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="27" font-weight="400" fill="#071E4A">128→7</text>
+<polyline points="2320,770 2370,770" fill="none" stroke="#148EEB" stroke-width="2.5"/>
+<polygon points="2370,770 2360.0,765.0 2360.0,775.0" fill="#148EEB"/>
+<rect x="2370" y="910" width="260" height="105" rx="12" fill="#EAF6EF" stroke="#258557"/>
+<text x="2500.0" y="926.5" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="30" font-weight="700" fill="#071E4A">预测速度场</text>
+<text x="2500.0" y="962.5" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="24" font-weight="400" fill="#071E4A">vθ：[B,10,7]</text>
+<text x="2500.0" y="998.5" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="24" font-weight="400" fill="#071E4A">不是最终动作</text>
+<polyline points="2500,820 2500,910" fill="none" stroke="#148EEB" stroke-width="2.5"/>
+<polygon points="2500,910 2505.0,900.0 2495.0,900.0" fill="#148EEB"/>
+<text x="1840" y="1000" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="24" font-weight="400" fill="#071E4A">三路逐元素相加；不是拼接</text>
+<circle cx="80" cy="1130" r="21" fill="#0563C6" stroke="#0563C6" stroke-width="1.5"/>
+<text x="80" y="1130" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="28" font-weight="700" fill="white">3</text>
+<text x="317.0" y="1130" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="32" font-weight="700" fill="#071E4A">训练：构造路径，学习速度</text>
+<rect x="70" y="1190" width="370" height="110" rx="12" fill="#F2F7FA" stroke="#7895AC"/>
+<text x="255.0" y="1209.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="30" font-weight="700" fill="#071E4A">专家动作a + 噪声z</text>
+<text x="255.0" y="1245.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="25" font-weight="400" fill="#071E4A">随机τ ~ U(0,1)</text>
+<text x="255.0" y="1281.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="25" font-weight="400" fill="#071E4A">a、z：[B,10,7]</text>
+<rect x="490" y="1190" width="370" height="110" rx="12" fill="#F2F7FA" stroke="#7895AC"/>
+<text x="675.0" y="1209.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="30" font-weight="700" fill="#071E4A">构造训练样本</text>
+<text x="675.0" y="1245.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="25" font-weight="400" fill="#071E4A">xτ = (1−τ)z + τa</text>
+<text x="675.0" y="1281.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="25" font-weight="400" fill="#071E4A">目标速度 u = a−z</text>
+<polyline points="440,1245 490,1245" fill="none" stroke="#148EEB" stroke-width="2.5"/>
+<polygon points="490,1245 480.0,1240.0 480.0,1250.0" fill="#148EEB"/>
+<rect x="910" y="1190" width="380" height="110" rx="12" fill="#FFF2E2" stroke="#C47A25"/>
+<text x="1100.0" y="1227.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="30" font-weight="700" fill="#071E4A">调用上方同一速度网络</text>
+<text x="1100.0" y="1263.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="27" font-weight="400" fill="#071E4A">vθ(xτ,τ,c)</text>
+<polyline points="860,1245 910,1245" fill="none" stroke="#148EEB" stroke-width="2.5"/>
+<polygon points="910,1245 900.0,1240.0 900.0,1250.0" fill="#148EEB"/>
+<text x="885" y="1170" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="22" font-weight="400" fill="#071E4A">xτ、τ</text>
+<rect x="910" y="1370" width="380" height="100" rx="12" fill="#F2F7FA" stroke="#7895AC"/>
+<text x="1100.0" y="1402.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="30" font-weight="700" fill="#071E4A">有效位置速度场MSE</text>
+<text x="1100.0" y="1438.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="25" font-weight="400" fill="#071E4A">比较 vθ 与 u=a−z</text>
+<polyline points="1100,1300 1100,1370" fill="none" stroke="#C47A25" stroke-width="2.5"/>
+<polygon points="1100,1370 1105.0,1360.0 1095.0,1360.0" fill="#C47A25"/>
+<polyline points="675,1300 675,1420 910,1420" fill="none" stroke="#C47A25" stroke-width="2.5"/>
+<polygon points="910,1420 900.0,1415.0 900.0,1425.0" fill="#C47A25"/>
+<text x="782" y="1383" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="24" font-weight="400" fill="#C47A25">目标u</text>
+<text x="353" y="1382" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="25" font-weight="400" fill="#071E4A">训练使用专家动作构造xτ</text>
+<text x="353" y="1428" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="23" font-weight="400" fill="#071E4A">动作目标mask仅用于训练补位/损失</text>
+<polyline points="1100,1470 1100,1505" fill="none" stroke="#C47A25" stroke-width="2.5"/>
+<polygon points="1100,1505 1105.0,1495.0 1095.0,1495.0" fill="#C47A25"/>
+<text x="685" y="1542" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="26" font-weight="400" fill="#C47A25">反向传播 + AdamW：更新可训练模块；VLM保持冻结</text>
+<circle cx="1430" cy="1130" r="21" fill="#0563C6" stroke="#0563C6" stroke-width="1.5"/>
+<text x="1430" y="1130" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="28" font-weight="700" fill="white">4</text>
+<text x="1743.1953125" y="1130" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="32" font-weight="700" fill="#071E4A">推理：从纯噪声出发，10次Euler更新</text>
+<rect x="1420" y="1190" width="330" height="100" rx="12" fill="#F2F7FA" stroke="#7895AC"/>
+<text x="1585.0" y="1222.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="30" font-weight="700" fill="#071E4A">初始化 x_0=z</text>
+<text x="1585.0" y="1258.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="27" font-weight="400" fill="#071E4A">本次只采样一次噪声</text>
+<rect x="1810" y="1190" width="400" height="160" rx="12" fill="#FFF2E2" stroke="#C47A25"/>
+<text x="2010.0" y="1234.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="30" font-weight="700" fill="#071E4A">调用上方同一速度网络</text>
+<text x="2010.0" y="1270.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="25" font-weight="400" fill="#071E4A">x_(i+1) = x_i + 0.1vθ</text>
+<text x="2010.0" y="1306.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="25" font-weight="400" fill="#071E4A">τ_i = i/10，i=0…9</text>
+<polyline points="1750,1240 1810,1240" fill="none" stroke="#148EEB" stroke-width="2.5"/>
+<polygon points="1810,1240 1800.0,1235.0 1800.0,1245.0" fill="#148EEB"/>
+<rect x="2270" y="1190" width="380" height="100" rx="12" fill="#EAF6EF" stroke="#258557"/>
+<text x="2460.0" y="1222.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="30" font-weight="700" fill="#071E4A">10次后：最终动作块</text>
+<text x="2460.0" y="1258.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="26" font-weight="400" fill="#071E4A">x_10：[B,10,7]</text>
+<polyline points="2210,1240 2270,1240" fill="none" stroke="#258557" stroke-width="2.5"/>
+<polygon points="2270,1240 2260.0,1235.0 2260.0,1245.0" fill="#258557"/>
+<polyline points="2010,1350 2010,1407 1775,1407 1775,1285 1810,1285" fill="none" stroke="#148EEB" stroke-width="2.5"/>
+<polygon points="1810,1285 1800.0,1280.0 1800.0,1290.0" fill="#148EEB"/>
+<text x="2010" y="1450" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="24" font-weight="400" fill="#071E4A">更新x与τ，返回再预测速度</text>
+<rect x="2270" y="1370" width="380" height="120" rx="12" fill="#EAF6EF" stroke="#258557"/>
+<text x="2460.0" y="1394.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="30" font-weight="700" fill="#071E4A">反标准化 → 截断[-1,1]</text>
+<text x="2460.0" y="1430.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="25" font-weight="400" fill="#071E4A">执行前H=5步</text>
+<text x="2460.0" y="1466.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="25" font-weight="400" fill="#071E4A">新观测 → 下一次策略调用</text>
+<polyline points="2460,1290 2460,1370" fill="none" stroke="#258557" stroke-width="2.5"/>
+<polygon points="2460,1370 2465.0,1360.0 2455.0,1360.0" fill="#258557"/>
+<text x="2010" y="1528" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="24" font-weight="400" fill="#258557">循环内复用memory，不重复计算VLM</text>
+<text x="1360" y="1632" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="27" font-weight="400" fill="#071E4A">可训练参数共432,711个，包含观测投影和状态MLP；Flow输出速度，Euler循环结束才得到动作。</text>
+<text x="1360" y="1678" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="23" font-weight="400" fill="#071E4A">PPT M7 = 第八课（课程M8）；专家动作a不进入部署输入。图示复用已有实现，不启动新实验。</text>
+</svg>

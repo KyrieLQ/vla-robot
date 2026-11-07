@@ -1,0 +1,170 @@
+{
+  "stage": "mini_vla_m6_train_20261020_v1",
+  "authorization": "User authorized automatic evidence-driven component upgrades and all GPUs; retain shared 3h/8GiB limits",
+  "thread": "PUBLIC_REPRODUCTION",
+  "split": "configs/mini_vla_four_suite_demo_split_20261019_v1.json",
+  "preprocessing": "configs/mini_vla_m6_preprocessing_20261019_v1.json",
+  "dataset_root": "datasets/lerobot/physical-intelligence/libero",
+  "cache": "datasets/mini_vla_four_suite_128_20261019_v1",
+  "architecture": "M4 four observation tokens (two camera projections, pooled language, proprioception),d128,4heads,one encoder and one decoder,10 learned action queries,linear7D output; no CVAE/ACT posterior",
+  "training": {
+    "seed": 42,
+    "epochs": 50,
+    "batch_size": 128,
+    "workers": 2,
+    "optimizer": "AdamW",
+    "learning_rate": 0.0003,
+    "weight_decay": 0.0001,
+    "gradient_clip_norm": 1.0,
+    "precision": "float32",
+    "augmentation": "none",
+    "shuffle": "all training frames; deterministic seed+epoch; drop_last=false",
+    "checkpoint_selection": "minimum full validation FIRST-ACTION frame-weighted normalized MSE; earliest on ties, same criterion as M1",
+    "checkpoint_retention": "initial, best, latest; resume only completed epochs with optimizer state",
+    "expected_train_frames_per_epoch": 243000,
+    "expected_validation_frames": 30465,
+    "total_training_sample_presentations": 12150000,
+    "real_training_seeds": 1,
+    "loss": "masked normalized MSE across all valid K10 target steps; terminal padding has zero weight",
+    "initialization": "fresh seed42; matched M3 ImageNet visual backbone and projection, language and state modules; new fusion/query modules freshly initialized. Do not warm start M3 trained weights.",
+    "valid_target_steps_per_epoch": 2362230,
+    "expected_validation_target_steps": 296235,
+    "comparability": "Data/word-vocabulary expansion fromSpatial to40tasks, model family unchanged; new baseline, not isolated architecture contrast.",
+    "updates_per_epoch": 1899,
+    "expected_total_updates": 94950
+  },
+  "evaluation": {
+    "launch_in_this_stage": false,
+    "new_simulation_episodes": 0,
+    "confirmation_access": false,
+    "final_target": 2000,
+    "route_decision": "Read latest modern-architecture discussion and response before final evaluation release. This stage trains only the already-approvedM4 four-suite baseline."
+  },
+  "analysis": {
+    "metrics": [
+      "per-epoch train/validation loss",
+      "offline mean-action reference",
+      "per-task and overall paired success",
+      "task-cluster bootstrap interval",
+      "inference latency",
+      "GPU peak memory",
+      "throughput",
+      "failure videos"
+    ],
+    "bootstrap_seed": 20261019,
+    "bootstrap_samples": 10000,
+    "upgrade_rule": "Combined fusion/generation architecture contrast vs M3 pretrained, no attention-only causal claim. Keep outcomes even if worse; no confirmation, no automatic tuning or epoch extension. Review before choosing optional M5 or final preparation."
+  },
+  "resources": {
+    "allowed_physical_gpus": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "simultaneous_gpus": 1,
+    "max_cpu_threads": 4,
+    "cache_seconds": 1800,
+    "project_cap_gib": 160,
+    "filesystem_reserve_gib": 100,
+    "idle_gate": "two samples plus prelaunch check; no compute process; used<=512MiB; utilization<=5%",
+    "old_recovery_accounting": "unchanged; this is the newly requested Mini VLA baseline stage, not a reset or continuation of the old recovery queue",
+    "persistent_idle_monitor": true,
+    "per_attempt_seconds": 10800,
+    "ledger": "results/mini_vla_m6_20261019_ledger.json",
+    "budget_scope": "Approved separateM6 ledger, oldcomponent/recovery ledgers unchanged; dynamic remaining applies. Reserve final evaluation budget, do not autoextend.",
+    "reuse_cache": true,
+    "additional_reservation_bytes": 1073741824,
+    "new_phase_execution_seconds": 50400,
+    "phase_artifact_gib": 60
+  },
+  "resumption": "retain cache, completed epoch checkpoints and completed episode outcomes; no resampling or extra epochs because of scores",
+  "automatic_followup": "supervisor terminal event to same thread; review then enqueue next frozen authorized stage; stop dispatcher when M6 reviewed complete or user cancels",
+  "baseline_run": "results/mini_vla_m3_20261019_run3",
+  "baseline_acceptance_sha256": "265ac6a7d4a1a452b07954ec12b41fafc65806c5e9c76d0f556eef20f4b83b63",
+  "gpu_authorization": "configs/mini_vla_all_gpus_20261019_APPROVED.json",
+  "model_variants": [
+    "resnet_pretrained"
+  ],
+  "expected_parameters": {
+    "resnet_pretrained": 13666695
+  },
+  "baseline_variant": "resnet_pretrained/h5",
+  "pretraining": {
+    "url": "https://download.pytorch.org/models/resnet18-f37072fd.pth",
+    "path": "cache/torch/hub/checkpoints/resnet18-f37072fd.pth",
+    "sha256_prefix": "f37072fd",
+    "max_bytes": 67108864,
+    "source": "torchvision 0.22.1 ResNet18_Weights.IMAGENET1K_V1",
+    "trainability": "all retained backbone parameters fine-tuned; classifier discarded; no frozen feature cache"
+  },
+  "image_processing": {
+    "resolution": 128,
+    "resize_crop": "reuse existing 128 bilinear cache; no center crop or augmentation",
+    "fixed_mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "fixed_std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "controls": "M2 -> tiny_norm isolates RGB normalization. tiny_norm -> resnet_random changes architecture/capacity. resnet_random -> resnet_pretrained changes initialization only. Same RGB normalization in all three new models; resolution differs from standard ImageNet inference and is disclosed."
+  },
+  "resource_preflight": {
+    "steps": 25,
+    "warmup": 5,
+    "eval_batches": 10,
+    "discard_weights": true,
+    "estimate": "1.15*(94950trainsteps+239validationbatches*52+480s overhead);dynamic available stage minus120s",
+    "failure": "exit78 without shortening50epochs"
+  },
+  "changes": "Same approvedM4 architecture, train jointly on all40tasks with71-word train vocabulary. Data-scale baseline for further architecture work; not proof of an architecture improvement overSpatial results.",
+  "idle_monitor": {
+    "controller": "automation/mini_vla_dispatcher.json",
+    "interval_seconds": 300,
+    "notifications": "stage terminal events and blockers only",
+    "waiting_wall_time": "separately recorded by dispatcher; all experimental execution and failed attempts remain on existing non-reset ledger"
+  },
+  "evaluation_schedule_standard": "configs/mini_vla_libero_benchmark_20261019_v2.json",
+  "phase": "train",
+  "entry_module": "mini_vla.train_m6_pipeline_v1",
+  "approval": "configs/mini_vla_m6_20261019_APPROVED.json",
+  "approval_sha256": "7cca1097ed283871bfe591cc0b9ee5646ee639b3ea1b564f63b9f98339899f6b",
+  "data_acceptance": "results/mini_vla_m6_prepare_20261019_run3/review/independent_acceptance.json",
+  "input_sha256": {
+    "configs/mini_vla_m6_20261019_APPROVED.json": "7cca1097ed283871bfe591cc0b9ee5646ee639b3ea1b564f63b9f98339899f6b",
+    "configs/mini_vla_four_suite_demo_split_20261019_v1.json": "97142601f468d5415c4dec96ec6cf014b965b3c3261e6945c26c8b17ce36be30",
+    "configs/mini_vla_m6_preprocessing_20261019_v1.json": "acc542f5811bc8fcb8af6f39d6e9c77052cd092ac5ff73908ee4abb1a0c84251",
+    "results/mini_vla_m6_prepare_20261019_run3/review/independent_acceptance.json": "2a8ba8b0df4423469935a576046a5a6c35c0d05cf8babe3f9652b852214298ae",
+    "datasets/mini_vla_four_suite_128_20261019_v1/complete.json": "ec137da0c108a35769b0149bdcefb70f52617771bdc5adb6d0687f13284cae4e",
+    "cache/torch/hub/checkpoints/resnet18-f37072fd.pth": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec",
+    "mini_vla/attention_model_v1.py": "1b6cef3d76f520629109c6e462ea887663d53913fb49d1bb366aacef0a7766af"
+  },
+  "frozen_sources": [
+    "mini_vla/train_m6_pipeline_v1.py",
+    "mini_vla/preflight_m6_training_v1.py",
+    "mini_vla/experiment_m4_v1.py",
+    "mini_vla/experiment_m3_v1.py",
+    "mini_vla/experiment_v1.py",
+    "mini_vla/pipeline_v1.py",
+    "mini_vla/attention_model_v1.py",
+    "mini_vla/visual_model_v1.py",
+    "mini_vla/model.py",
+    "mini_vla/chunk_model_v1.py",
+    "mini_vla/data.py",
+    "mini_vla/policy.py",
+    "scripts/gpu_run.py",
+    "scripts/start_mini_vla_m6_v2.sh",
+    "configs/mini_vla_four_suite_demo_split_20261019_v1.json",
+    "configs/mini_vla_m6_preprocessing_20261019_v1.json",
+    "results/mini_vla_m6_prepare_20261019_run3/review/independent_acceptance.json",
+    "reports/mini_vla_m6_training_contract_20261020.json"
+  ]
+}

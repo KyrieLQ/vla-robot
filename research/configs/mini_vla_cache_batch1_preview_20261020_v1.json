@@ -1,0 +1,12 @@
+{
+  "status": "FROZEN_ENGINEERING_PREVIEW_ONLY",
+  "source_proposal": "configs/mini_vla_modern_cache_batch1_proposal_20261020_v1.json",
+  "samples": 120,
+  "source_sample_manifest": "configs/mini_vla_m8_preflight_samples_20261020_v1.json",
+  "gpu_count": 1,
+  "timeout_seconds": 180,
+  "new_training_updates": 0,
+  "new_simulation_episodes": 0,
+  "fullcache_execution": false,
+  "outputs": "original120 input repeatedbatch1/online1/disk gate only; no fullcache or threshold change"
+}

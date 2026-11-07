@@ -1,0 +1,68 @@
+{
+  "effective_date": "2026-10-24",
+  "authority": "User omitted spatial-token branch from PPT and requested consecutive slide-model numbering",
+  "scope": "PPT labels only; lesson numbering and original experiment paths retained",
+  "stages": [
+    {
+      "ppt_model_id": "M1",
+      "course_model_id": "M1",
+      "lesson_number": 1,
+      "legacy_experiment_id": "M1",
+      "topic": "最小单动作策略"
+    },
+    {
+      "ppt_model_id": "M2",
+      "course_model_id": "M2",
+      "lesson_number": 2,
+      "legacy_experiment_id": "M2",
+      "topic": "动作分块"
+    },
+    {
+      "ppt_model_id": "M3",
+      "course_model_id": "M3",
+      "lesson_number": 3,
+      "legacy_experiment_id": "M3",
+      "topic": "视觉编码与预训练"
+    },
+    {
+      "ppt_model_id": "M4",
+      "course_model_id": "M4",
+      "lesson_number": 4,
+      "legacy_experiment_id": "M4",
+      "topic": "Transformer融合"
+    },
+    {
+      "ppt_model_id": "M5",
+      "course_model_id": "M5",
+      "lesson_number": 5,
+      "legacy_experiment_id": "M6",
+      "topic": "四套联合训练"
+    },
+    {
+      "ppt_model_id": "M6",
+      "course_model_id": "M7",
+      "lesson_number": 7,
+      "legacy_experiment_id": "M8",
+      "topic": "接入冻结预训练VLM"
+    },
+    {
+      "ppt_model_id": "M7",
+      "course_model_id": "M8",
+      "lesson_number": 8,
+      "legacy_experiment_id": "M9",
+      "topic": "条件Flow动作生成"
+    },
+    {
+      "ppt_model_id": "M8",
+      "course_model_id": "M9",
+      "lesson_number": 9,
+      "legacy_experiment_id": "pi05_formal_spatial_20261013_v1",
+      "topic": "π0.5微调与部署复盘"
+    }
+  ],
+  "omitted_course_stage": {
+    "course_model_id": "M6",
+    "topic": "空间token",
+    "placement": "optional appendix; not in numbered PPT mainline"
+  }
+}

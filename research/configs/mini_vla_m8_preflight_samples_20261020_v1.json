@@ -1,0 +1,845 @@
+{
+  "selection": "Each of40 tasks: first/middle/last train episode byID, respectively first/middle/last frame;no outcomes used",
+  "samples": [
+    {
+      "suite": "libero_10",
+      "task_id": 0,
+      "episode_id": 8,
+      "frame_index": 0,
+      "instruction": "put both the alphabet soup and the tomato sauce in the basket"
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 0,
+      "episode_id": 181,
+      "frame_index": 130,
+      "instruction": "put both the alphabet soup and the tomato sauce in the basket"
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 0,
+      "episode_id": 363,
+      "frame_index": 274,
+      "instruction": "put both the alphabet soup and the tomato sauce in the basket"
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 1,
+      "episode_id": 12,
+      "frame_index": 0,
+      "instruction": "put both the cream cheese box and the butter in the basket"
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 1,
+      "episode_id": 215,
+      "frame_index": 123,
+      "instruction": "put both the cream cheese box and the butter in the basket"
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 1,
+      "episode_id": 378,
+      "frame_index": 251,
+      "instruction": "put both the cream cheese box and the butter in the basket"
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 2,
+      "episode_id": 6,
+      "frame_index": 0,
+      "instruction": "turn on the stove and put the moka pot on it"
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 2,
+      "episode_id": 225,
+      "frame_index": 128,
+      "instruction": "turn on the stove and put the moka pot on it"
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 2,
+      "episode_id": 361,
+      "frame_index": 300,
+      "instruction": "turn on the stove and put the moka pot on it"
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 3,
+      "episode_id": 14,
+      "frame_index": 0,
+      "instruction": "put the black bowl in the bottom drawer of the cabinet and close it"
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 3,
+      "episode_id": 192,
+      "frame_index": 114,
+      "instruction": "put the black bowl in the bottom drawer of the cabinet and close it"
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 3,
+      "episode_id": 377,
+      "frame_index": 228,
+      "instruction": "put the black bowl in the bottom drawer of the cabinet and close it"
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 4,
+      "episode_id": 0,
+      "frame_index": 0,
+      "instruction": "put the white mug on the left plate and put the yellow and white mug on the right plate"
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 4,
+      "episode_id": 231,
+      "frame_index": 132,
+      "instruction": "put the white mug on the left plate and put the yellow and white mug on the right plate"
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 4,
+      "episode_id": 367,
+      "frame_index": 224,
+      "instruction": "put the white mug on the left plate and put the yellow and white mug on the right plate"
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 5,
+      "episode_id": 27,
+      "frame_index": 0,
+      "instruction": "pick up the book and place it in the back compartment of the caddy"
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 5,
+      "episode_id": 191,
+      "frame_index": 82,
+      "instruction": "pick up the book and place it in the back compartment of the caddy"
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 5,
+      "episode_id": 374,
+      "frame_index": 172,
+      "instruction": "pick up the book and place it in the back compartment of the caddy"
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 6,
+      "episode_id": 1,
+      "frame_index": 0,
+      "instruction": "put the white mug on the plate and put the chocolate pudding to the right of the plate"
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 6,
+      "episode_id": 197,
+      "frame_index": 150,
+      "instruction": "put the white mug on the plate and put the chocolate pudding to the right of the plate"
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 6,
+      "episode_id": 369,
+      "frame_index": 206,
+      "instruction": "put the white mug on the plate and put the chocolate pudding to the right of the plate"
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 7,
+      "episode_id": 7,
+      "frame_index": 0,
+      "instruction": "put both the alphabet soup and the cream cheese box in the basket"
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 7,
+      "episode_id": 188,
+      "frame_index": 134,
+      "instruction": "put both the alphabet soup and the cream cheese box in the basket"
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 7,
+      "episode_id": 373,
+      "frame_index": 311,
+      "instruction": "put both the alphabet soup and the cream cheese box in the basket"
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 8,
+      "episode_id": 10,
+      "frame_index": 0,
+      "instruction": "put both moka pots on the stove"
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 8,
+      "episode_id": 143,
+      "frame_index": 209,
+      "instruction": "put both moka pots on the stove"
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 8,
+      "episode_id": 341,
+      "frame_index": 388,
+      "instruction": "put both moka pots on the stove"
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 9,
+      "episode_id": 2,
+      "frame_index": 0,
+      "instruction": "put the yellow and white mug in the microwave and close it"
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 9,
+      "episode_id": 178,
+      "frame_index": 129,
+      "instruction": "put the yellow and white mug in the microwave and close it"
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 9,
+      "episode_id": 365,
+      "frame_index": 266,
+      "instruction": "put the yellow and white mug in the microwave and close it"
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 0,
+      "episode_id": 399,
+      "frame_index": 0,
+      "instruction": "open the middle drawer of the cabinet"
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 0,
+      "episode_id": 577,
+      "frame_index": 68,
+      "instruction": "open the middle drawer of the cabinet"
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 0,
+      "episode_id": 802,
+      "frame_index": 159,
+      "instruction": "open the middle drawer of the cabinet"
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 1,
+      "episode_id": 392,
+      "frame_index": 0,
+      "instruction": "put the bowl on the stove"
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 1,
+      "episode_id": 629,
+      "frame_index": 49,
+      "instruction": "put the bowl on the stove"
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 1,
+      "episode_id": 805,
+      "frame_index": 94,
+      "instruction": "put the bowl on the stove"
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 2,
+      "episode_id": 385,
+      "frame_index": 0,
+      "instruction": "put the wine bottle on top of the cabinet"
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 2,
+      "episode_id": 543,
+      "frame_index": 61,
+      "instruction": "put the wine bottle on top of the cabinet"
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 2,
+      "episode_id": 795,
+      "frame_index": 113,
+      "instruction": "put the wine bottle on top of the cabinet"
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 3,
+      "episode_id": 382,
+      "frame_index": 0,
+      "instruction": "open the top drawer and put the bowl inside"
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 3,
+      "episode_id": 559,
+      "frame_index": 90,
+      "instruction": "open the top drawer and put the bowl inside"
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 3,
+      "episode_id": 782,
+      "frame_index": 214,
+      "instruction": "open the top drawer and put the bowl inside"
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 4,
+      "episode_id": 398,
+      "frame_index": 0,
+      "instruction": "put the bowl on top of the cabinet"
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 4,
+      "episode_id": 661,
+      "frame_index": 52,
+      "instruction": "put the bowl on top of the cabinet"
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 4,
+      "episode_id": 794,
+      "frame_index": 107,
+      "instruction": "put the bowl on top of the cabinet"
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 5,
+      "episode_id": 386,
+      "frame_index": 0,
+      "instruction": "push the plate to the front of the stove"
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 5,
+      "episode_id": 647,
+      "frame_index": 66,
+      "instruction": "push the plate to the front of the stove"
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 5,
+      "episode_id": 781,
+      "frame_index": 124,
+      "instruction": "push the plate to the front of the stove"
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 6,
+      "episode_id": 384,
+      "frame_index": 0,
+      "instruction": "put the cream cheese in the bowl"
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 6,
+      "episode_id": 600,
+      "frame_index": 50,
+      "instruction": "put the cream cheese in the bowl"
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 6,
+      "episode_id": 797,
+      "frame_index": 108,
+      "instruction": "put the cream cheese in the bowl"
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 7,
+      "episode_id": 388,
+      "frame_index": 0,
+      "instruction": "turn on the stove"
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 7,
+      "episode_id": 602,
+      "frame_index": 42,
+      "instruction": "turn on the stove"
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 7,
+      "episode_id": 800,
+      "frame_index": 78,
+      "instruction": "turn on the stove"
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 8,
+      "episode_id": 379,
+      "frame_index": 0,
+      "instruction": "put the bowl on the plate"
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 8,
+      "episode_id": 607,
+      "frame_index": 51,
+      "instruction": "put the bowl on the plate"
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 8,
+      "episode_id": 806,
+      "frame_index": 91,
+      "instruction": "put the bowl on the plate"
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 9,
+      "episode_id": 381,
+      "frame_index": 0,
+      "instruction": "put the wine bottle on the rack"
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 9,
+      "episode_id": 595,
+      "frame_index": 84,
+      "instruction": "put the wine bottle on the rack"
+    },
+    {
+      "suite": "libero_goal",
+      "task_id": 9,
+      "episode_id": 798,
+      "frame_index": 172,
+      "instruction": "put the wine bottle on the rack"
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 0,
+      "episode_id": 813,
+      "frame_index": 0,
+      "instruction": "pick up the alphabet soup and place it in the basket"
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 0,
+      "episode_id": 1035,
+      "frame_index": 67,
+      "instruction": "pick up the alphabet soup and place it in the basket"
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 0,
+      "episode_id": 1245,
+      "frame_index": 156,
+      "instruction": "pick up the alphabet soup and place it in the basket"
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 1,
+      "episode_id": 810,
+      "frame_index": 0,
+      "instruction": "pick up the cream cheese and place it in the basket"
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 1,
+      "episode_id": 1055,
+      "frame_index": 73,
+      "instruction": "pick up the cream cheese and place it in the basket"
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 1,
+      "episode_id": 1256,
+      "frame_index": 127,
+      "instruction": "pick up the cream cheese and place it in the basket"
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 2,
+      "episode_id": 816,
+      "frame_index": 0,
+      "instruction": "pick up the salad dressing and place it in the basket"
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 2,
+      "episode_id": 1019,
+      "frame_index": 62,
+      "instruction": "pick up the salad dressing and place it in the basket"
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 2,
+      "episode_id": 1252,
+      "frame_index": 124,
+      "instruction": "pick up the salad dressing and place it in the basket"
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 3,
+      "episode_id": 811,
+      "frame_index": 0,
+      "instruction": "pick up the bbq sauce and place it in the basket"
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 3,
+      "episode_id": 1022,
+      "frame_index": 87,
+      "instruction": "pick up the bbq sauce and place it in the basket"
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 3,
+      "episode_id": 1258,
+      "frame_index": 147,
+      "instruction": "pick up the bbq sauce and place it in the basket"
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 4,
+      "episode_id": 808,
+      "frame_index": 0,
+      "instruction": "pick up the ketchup and place it in the basket"
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 4,
+      "episode_id": 1018,
+      "frame_index": 89,
+      "instruction": "pick up the ketchup and place it in the basket"
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 4,
+      "episode_id": 1260,
+      "frame_index": 151,
+      "instruction": "pick up the ketchup and place it in the basket"
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 5,
+      "episode_id": 830,
+      "frame_index": 0,
+      "instruction": "pick up the tomato sauce and place it in the basket"
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 5,
+      "episode_id": 1117,
+      "frame_index": 74,
+      "instruction": "pick up the tomato sauce and place it in the basket"
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 5,
+      "episode_id": 1257,
+      "frame_index": 131,
+      "instruction": "pick up the tomato sauce and place it in the basket"
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 6,
+      "episode_id": 827,
+      "frame_index": 0,
+      "instruction": "pick up the butter and place it in the basket"
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 6,
+      "episode_id": 1012,
+      "frame_index": 75,
+      "instruction": "pick up the butter and place it in the basket"
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 6,
+      "episode_id": 1220,
+      "frame_index": 149,
+      "instruction": "pick up the butter and place it in the basket"
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 7,
+      "episode_id": 814,
+      "frame_index": 0,
+      "instruction": "pick up the milk and place it in the basket"
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 7,
+      "episode_id": 1033,
+      "frame_index": 73,
+      "instruction": "pick up the milk and place it in the basket"
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 7,
+      "episode_id": 1248,
+      "frame_index": 134,
+      "instruction": "pick up the milk and place it in the basket"
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 8,
+      "episode_id": 823,
+      "frame_index": 0,
+      "instruction": "pick up the chocolate pudding and place it in the basket"
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 8,
+      "episode_id": 1006,
+      "frame_index": 75,
+      "instruction": "pick up the chocolate pudding and place it in the basket"
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 8,
+      "episode_id": 1259,
+      "frame_index": 152,
+      "instruction": "pick up the chocolate pudding and place it in the basket"
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 9,
+      "episode_id": 807,
+      "frame_index": 0,
+      "instruction": "pick up the orange juice and place it in the basket"
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 9,
+      "episode_id": 1050,
+      "frame_index": 61,
+      "instruction": "pick up the orange juice and place it in the basket"
+    },
+    {
+      "suite": "libero_object",
+      "task_id": 9,
+      "episode_id": 1227,
+      "frame_index": 125,
+      "instruction": "pick up the orange juice and place it in the basket"
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 0,
+      "episode_id": 1272,
+      "frame_index": 0,
+      "instruction": "pick up the black bowl between the plate and the ramekin and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 0,
+      "episode_id": 1500,
+      "frame_index": 45,
+      "instruction": "pick up the black bowl between the plate and the ramekin and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 0,
+      "episode_id": 1679,
+      "frame_index": 87,
+      "instruction": "pick up the black bowl between the plate and the ramekin and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 1,
+      "episode_id": 1281,
+      "frame_index": 0,
+      "instruction": "pick up the black bowl next to the ramekin and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 1,
+      "episode_id": 1499,
+      "frame_index": 58,
+      "instruction": "pick up the black bowl next to the ramekin and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 1,
+      "episode_id": 1688,
+      "frame_index": 144,
+      "instruction": "pick up the black bowl next to the ramekin and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 2,
+      "episode_id": 1283,
+      "frame_index": 0,
+      "instruction": "pick up the black bowl from table center and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 2,
+      "episode_id": 1445,
+      "frame_index": 54,
+      "instruction": "pick up the black bowl from table center and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 2,
+      "episode_id": 1686,
+      "frame_index": 116,
+      "instruction": "pick up the black bowl from table center and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 3,
+      "episode_id": 1278,
+      "frame_index": 0,
+      "instruction": "pick up the black bowl on the cookie box and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 3,
+      "episode_id": 1487,
+      "frame_index": 51,
+      "instruction": "pick up the black bowl on the cookie box and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 3,
+      "episode_id": 1670,
+      "frame_index": 89,
+      "instruction": "pick up the black bowl on the cookie box and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 4,
+      "episode_id": 1262,
+      "frame_index": 0,
+      "instruction": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 4,
+      "episode_id": 1470,
+      "frame_index": 79,
+      "instruction": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 4,
+      "episode_id": 1687,
+      "frame_index": 142,
+      "instruction": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 5,
+      "episode_id": 1264,
+      "frame_index": 0,
+      "instruction": "pick up the black bowl on the ramekin and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 5,
+      "episode_id": 1498,
+      "frame_index": 65,
+      "instruction": "pick up the black bowl on the ramekin and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 5,
+      "episode_id": 1692,
+      "frame_index": 108,
+      "instruction": "pick up the black bowl on the ramekin and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 6,
+      "episode_id": 1261,
+      "frame_index": 0,
+      "instruction": "pick up the black bowl next to the cookie box and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 6,
+      "episode_id": 1448,
+      "frame_index": 59,
+      "instruction": "pick up the black bowl next to the cookie box and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 6,
+      "episode_id": 1661,
+      "frame_index": 129,
+      "instruction": "pick up the black bowl next to the cookie box and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 7,
+      "episode_id": 1267,
+      "frame_index": 0,
+      "instruction": "pick up the black bowl on the stove and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 7,
+      "episode_id": 1424,
+      "frame_index": 64,
+      "instruction": "pick up the black bowl on the stove and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 7,
+      "episode_id": 1691,
+      "frame_index": 139,
+      "instruction": "pick up the black bowl on the stove and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 8,
+      "episode_id": 1280,
+      "frame_index": 0,
+      "instruction": "pick up the black bowl next to the plate and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 8,
+      "episode_id": 1503,
+      "frame_index": 52,
+      "instruction": "pick up the black bowl next to the plate and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 8,
+      "episode_id": 1678,
+      "frame_index": 96,
+      "instruction": "pick up the black bowl next to the plate and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 9,
+      "episode_id": 1290,
+      "frame_index": 0,
+      "instruction": "pick up the black bowl on the wooden cabinet and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 9,
+      "episode_id": 1476,
+      "frame_index": 62,
+      "instruction": "pick up the black bowl on the wooden cabinet and place it on the plate"
+    },
+    {
+      "suite": "libero_spatial",
+      "task_id": 9,
+      "episode_id": 1690,
+      "frame_index": 132,
+      "instruction": "pick up the black bowl on the wooden cabinet and place it on the plate"
+    }
+  ]
+}

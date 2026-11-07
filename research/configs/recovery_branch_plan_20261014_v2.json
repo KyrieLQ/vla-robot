@@ -1,0 +1,279 @@
+{
+  "version": 2,
+  "created_at": "2026-10-14T10:20:09.192041+08:00",
+  "phase": "recovery_branch_feasibility",
+  "originating_thread": "PUBLIC_REPRODUCTION",
+  "authorization": "User approved starting the 1–2 month VLA improvement project and automatic follow-through within resource limits.",
+  "source_diagnosis": "configs/research_diagnosis_20261014_v2.json",
+  "source_diagnosis_sha256": "70a34203dd43853a67272172b3decf3700b9c18610f3729b47cf3c0996a06784",
+  "source_episodes": "results/research_diagnosis_20261014_v3/ckpt30k_prefix5/episodes",
+  "root_manifest": "configs/recovery_branch_roots_20261014_v1.json",
+  "root_manifest_sha256": "3d5effd30982d8bfd23ee20780771ecf959246ec3f715039a993073fa2526374",
+  "development_split": "configs/research_split_20261014_v1.json",
+  "development_split_sha256": "7eca378ed4fbf44ae38dabe8734a1a68691af2988f750e6829c55763227b9a6c",
+  "checkpoint": "checkpoints/pi05_libero_lora_3090x2_train/formal_spatial_20261013_v1/30000",
+  "checkpoint_updates": 30000,
+  "new_gradient_updates": 0,
+  "unique_scenarios": 200,
+  "roots": 269,
+  "branches_per_root": 4,
+  "expected_branches": 1076,
+  "confirmation_cases_used": 0,
+  "root_rule": "Fixed t=60 for all 200 episodes; t=120 additionally if the baseline is still active at that time (69 cases). No future success filtering.",
+  "methods": [
+    {
+      "name": "continue",
+      "rule": "Resume original RNG at number of previous calls; execute prefix5 to the same total 220-step cap."
+    },
+    {
+      "name": "fine20",
+      "rule": "Same RNG at the root; prefix1 for exactly 20 actual actions, then return to prefix5."
+    },
+    {
+      "name": "resample5",
+      "rule": "Restart the policy noise stream using the frozen independent root seed, retain prefix5 for the remainder."
+    },
+    {
+      "name": "retreat5_fine20",
+      "rule": "Five legal OSC commands [0,0,0.3,0,0,0,-1] (upwards with open gripper), then 20 prefix1 actions and return to prefix5. All actions count toward 220."
+    }
+  ],
+  "method_order": "continue first as the per-root integrity control, then fine20,resample5,retreat5_fine20; each branch starts from an independently replayed identical root.",
+  "prefix_steps": 5,
+  "action_horizon": 10,
+  "denoising_steps": 10,
+  "max_total_steps": 220,
+  "fine_steps": 20,
+  "retreat_steps": 5,
+  "retreat_action": [
+    0,
+    0,
+    0.3,
+    0,
+    0,
+    0,
+    -1
+  ],
+  "reset_protocol": {
+    "mode": "fresh_environment_canonical_anchor_history",
+    "anchor_indices": [
+      2,
+      12,
+      22,
+      32,
+      42
+    ],
+    "history_rule": "For case index i, instantiate a fresh environment; replay reset + init state + 10 dummy waits for each anchor j<i, then seed/reset/set target state and wait 10. No policy calls in warmup. This preserves the old five-anchor initial scenes and is independent of subset/queue/variant order.",
+    "evidence": "reports/research_reset_history_probe.json",
+    "upstream_modified": false,
+    "scope_note": "Common reproducible scene definitions across conditions; not a claim of byte-identical official 50-trial sequential reset semantics."
+  },
+  "wait_steps": 10,
+  "state_reconstruction": "Canonical initialization plus exact replay of all original actions to the root, rebuilding native controller/internal history. No claim that qpos/qvel alone restore state. No rollout rewind after a branch begins.",
+  "rng_reconstruction": "Policy.infer splits its JAX key once per call. Rebuild original key from episode seed and advance the carried key root_step/5 times; first continue prediction must match the archived chunk.",
+  "acceptance": {
+    "image_hashes": "Historical action-prefix images are recorded for diagnostics and do not cause rejection; no inference consumes them. Root image hash and every full continue-suffix image hash (including terminal observation) remain exact.",
+    "numeric_atol": 1e-06,
+    "numeric_rtol": 0,
+    "root_simulator_atol": 1e-07,
+    "continue_final_outcome_and_steps": "exact at the 220-action cap",
+    "fail_policy": "Preserve evidence and stop affected collection; never relax gates or choose a different sample because of a mismatch.",
+    "prefix_physical_state": "At every replayed step: qpos, qvel, control at absolute tolerance 1e-7, rtol=0; robot_state at original 1e-6. No oracle fields are sent to the policy."
+  },
+  "preflight_roots": [
+    {
+      "pair_id": "task0_init2",
+      "branch_step": 60
+    },
+    {
+      "pair_id": "task4_init22",
+      "branch_step": 120
+    },
+    {
+      "pair_id": "task0_init5",
+      "branch_step": 60
+    }
+  ],
+  "preflight_protocol": "Each GPU independently regenerates three continue suffixes: known success, known failure, and task0/init5 which exposed the render discrepancy. All six controls must pass before new intervention outcomes.",
+  "workers": 2,
+  "maximum_simultaneous_gpus": 2,
+  "allowed_physical_gpus": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "queue_timeout_seconds": 28512,
+  "job_timeout_seconds": 25200,
+  "project_budget_gib": 120,
+  "filesystem_reserve_gib": 100,
+  "new_artifact_budget_gib": 4,
+  "periodic_chat_notifications": false,
+  "persistent_idle_monitor": false,
+  "analysis": {
+    "units": "269 paired roots nested in 200 episodes and 10 tasks; early/late cohorts reported separately",
+    "bootstrap_seed": 2026101402,
+    "bootstrap_draws": 10000,
+    "metrics": [
+      "paired successes and losses vs continue",
+      "rescued baseline-failure episodes",
+      "harmed baseline-success episodes",
+      "additional policy calls and inference seconds",
+      "actual steps consumed",
+      "per-task counts"
+    ],
+    "intervals": "Exploratory task-cluster bootstrap; no multiplicity-adjusted or confirmation claim. Roots and branches are not independent episodes.",
+    "oracle": "Any-candidate success is only an offline feasibility upper bound, never a deployed selector score.",
+    "feasibility_gate": "If at least 8 distinct baseline-failure episodes have a successful alternative and every continue control passes, proceed to frozen-encoder progress/value module development with fixed fit/calibration split. Otherwise improve the recovery candidates/teacher before training a selector; no outcome-driven repeated branch sampling.",
+    "noise_limit": "One fixed stochastic stream per method/root; labels are sampled outcomes, not exact conditional expected values."
+  },
+  "self_review": [
+    "Full-episode prefix1 wins do not imply locally recoverable failures; this experiment tests that gap.",
+    "Fixed upward/open retreat can drop a held object or collide; it is a bounded simulator candidate, not a safe real-robot controller.",
+    "A failure classifier cannot help when no recovery candidate works. The oracle feasibility gate precedes module training.",
+    "Preserve successful-case controls to measure false intervention harm; never collect only failed trajectories.",
+    "The 60/120 roots are convenient development probes, not a learned trigger or proof of optimal timing.",
+    "All geometric/contact labels stay evaluator-side; no object IDs, task IDs or future labels enter policy inputs."
+  ],
+  "references": [
+    "https://mujoco.readthedocs.io/en/3.2.3/programming/simulation.html#state-and-control",
+    "https://docs.jax.dev/en/latest/random-numbers.html"
+  ],
+  "next_stage_requires": "Complete integrity and feasibility review, then freeze module architecture, training targets, seeds, costs and held-out calibration rules before training.",
+  "engineering_amendment_status": "APPROVED",
+  "prefix_replay_acceptance_amendment_approved": true,
+  "parent_protocol": "configs/recovery_branch_plan_20261014_v1.json",
+  "parent_protocol_sha256": "5f50473ce6cfd717fcb105f18e1292707a394ec8799824672fae6f15d8ba12d9",
+  "proposed_at": "2026-10-14T10:44:51.332916+08:00",
+  "resume_runs": [
+    "results/recovery_branches_20261014_v1"
+  ],
+  "evidence": [
+    "reports/branch_replay_repeatability_probe.json",
+    "reports/branch_render_readback_probe.json",
+    "reports/branch_fresh_process_probe/summary.json"
+  ],
+  "isolation_probe_conclusion": "Fresh processes still produced one render-only mismatch in 16 trials; do not add per-branch process isolation overhead because it did not eliminate the discrepancy.",
+  "approved_at": "2026-10-14T10:58:36.846311+08:00",
+  "approval": {
+    "source": "Explicit user reply to request_user_input_async",
+    "answer": "批准该工程修订（推荐）",
+    "scope": "Only images not consumed by policy during historical action-prefix replay become diagnostic records with strict per-step qpos/qvel/control validation. Root images, full continue suffix images/actions/state/predicted chunks and final outcomes retain prior gates."
+  },
+  "accepted_engineering_change": "For historical action-prefix replay only, replace exact image-hash rejection by per-step qpos/qvel/control checks at the existing 1e-7 absolute tolerance, retaining all render hash mismatches. No inference consumes those replay images. Root images, all continue-suffix images, state/action/chunk tolerances and final outcome/steps remain under the original gates.",
+  "proposal_file": "configs/recovery_branch_plan_20261014_v2_PROPOSED.json",
+  "proposal_sha256": "181f9d593883bf8a1b0568934b236dc741e3fe8daf4171b5344dbda5fe89454c",
+  "prior_resource_accounting": {
+    "admission_windows": [
+      {
+        "record": "reports/gpu_selection_20261014_102835.json",
+        "seconds": 94.36925935745239,
+        "gpus": 2
+      },
+      {
+        "record": "reports/gpu_selection_20261014_103209.json",
+        "seconds": 31.353801488876343,
+        "gpus": 1
+      },
+      {
+        "record": "reports/gpu_selection_20261014_103546.json",
+        "seconds": 52.08183717727661,
+        "gpus": 1
+      },
+      {
+        "record": "reports/gpu_selection_20261014_104007.json",
+        "seconds": 109.52255010604858,
+        "gpus": 1
+      }
+    ],
+    "elapsed_active_window_seconds": 287.32744812965393,
+    "selected_gpu_window_hours": 0.10602686319086287,
+    "note": "Admission/report timestamp to completion file mtime, includes CPU and I/O; excludes user decision wait and is not pure GPU compute."
+  },
+  "original_queue_active_window_budget_seconds": 28800,
+  "resume_audit": [
+    {
+      "root_id": "task0_init2_t60",
+      "method": "continue",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v1/workers/worker0/roots/task0_init2_t60/continue",
+      "source_result_sha256": "79f87617df240753647d32258f6cb639911ea5a78db64f22533624b3cc481e05",
+      "trace_sha256": "21f3fc76bf2d08945604ed0d433667220f49578ae96d4243c060d4cee5bb153a",
+      "accepted_under": "original v1 protocol"
+    },
+    {
+      "root_id": "task0_init2_t60",
+      "method": "fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v1/workers/worker0/roots/task0_init2_t60/fine20",
+      "source_result_sha256": "e9cb3a579eea7c4b02124e01a2759c34e6b365a2de5bd8af4cf71ac5a42f5e6c",
+      "trace_sha256": "8f93763fda096c4475f883aaf72e53274f88d9a4422988da6967742a01579d5a",
+      "accepted_under": "original v1 protocol"
+    },
+    {
+      "root_id": "task0_init2_t60",
+      "method": "resample5",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v1/workers/worker0/roots/task0_init2_t60/resample5",
+      "source_result_sha256": "f7270929f20db2a0347f1b1b3af022543469774d86995813aafb6dbf4ad44410",
+      "trace_sha256": "70d4525cedfeb99e84502be8b1af465c9eee3207e4452b3d0d1ce12c0e1e63fc",
+      "accepted_under": "original v1 protocol"
+    },
+    {
+      "root_id": "task0_init2_t60",
+      "method": "retreat5_fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v1/workers/worker0/roots/task0_init2_t60/retreat5_fine20",
+      "source_result_sha256": "418a46fa0095088420cb140ceba88383c1219a338a617fcdfa96cae00dea3494",
+      "trace_sha256": "dd65a4c3b1d5ce402004715d1e1e7e9978af4134484a85f20e20ebd04dc09613",
+      "accepted_under": "original v1 protocol"
+    },
+    {
+      "root_id": "task0_init6_t60",
+      "method": "continue",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v1/workers/worker0/roots/task0_init6_t60/continue",
+      "source_result_sha256": "10ca399a8ed26e394bd6e46873302bff929789bd15f0a5133ca4f3690a6a17ac",
+      "trace_sha256": "22391eaf2cee7984d4b46db3656361fdd88884432f11a86e7f773e26f26ccec1",
+      "accepted_under": "original v1 protocol"
+    },
+    {
+      "root_id": "task0_init6_t60",
+      "method": "fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v1/workers/worker0/roots/task0_init6_t60/fine20",
+      "source_result_sha256": "fcb61624f80add5fa54c6b234247ed0b8fc6bf84da82546bf73ad04ce3f9e4b9",
+      "trace_sha256": "bb414dc6fd3b2a6429aee8f2a498eaf63f6edbd0e66fc88606d1ff3a71a8473a",
+      "accepted_under": "original v1 protocol"
+    },
+    {
+      "root_id": "task0_init6_t60",
+      "method": "resample5",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v1/workers/worker0/roots/task0_init6_t60/resample5",
+      "source_result_sha256": "ad4aea1a37d2682d47bb02721d1a7500fbc6aba6821835dece49de8903e98398",
+      "trace_sha256": "c0045c774287cd0ae719c73ed1ea00c21abaf003049b84f4c9a72dbd615ad0fd",
+      "accepted_under": "original v1 protocol"
+    },
+    {
+      "root_id": "task0_init6_t60",
+      "method": "retreat5_fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v1/workers/worker0/roots/task0_init6_t60/retreat5_fine20",
+      "source_result_sha256": "cd332f12bb7a3b24c5c7de0f0dd9414d91ad8fb8d5bd7de31de99aeb24ae3e64",
+      "trace_sha256": "8ed5942cca49a9fefc4702cfd04fbd002a90e3cefb370ec2796482f371e92ff6",
+      "accepted_under": "original v1 protocol"
+    },
+    {
+      "root_id": "task0_init5_t60",
+      "method": "continue",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v1/workers/worker1/roots/task0_init5_t60/continue",
+      "source_result_sha256": "af00873d29155a6c2f4fc1f58cae5cf6e818fa297f65fbed6f18c2f56971454f",
+      "trace_sha256": "72c19e39144c02cf46e422184df14d98314e0fbebf2dcab01d043c38dc0cb1e3",
+      "accepted_under": "original v1 protocol"
+    },
+    {
+      "root_id": "task0_init5_t60",
+      "method": "fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v1/workers/worker1/roots/task0_init5_t60/fine20",
+      "source_result_sha256": "c898fb2c46d85e525ee242ce7e52a53075513aaeef37b13d63d17fa4af50b1d5",
+      "trace_sha256": "5074065cc9139dfb6b42d8407e033d4876e1e2170480d4d3c392766a94ca568d",
+      "accepted_under": "original v1 protocol"
+    }
+  ],
+  "retained_complete_branches": 10,
+  "remaining_new_branches": 1066,
+  "prior_branch_artifact_bytes": 4894720
+}

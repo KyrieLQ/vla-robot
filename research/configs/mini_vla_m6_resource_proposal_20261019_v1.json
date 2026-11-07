@@ -1,0 +1,136 @@
+{
+  "status": "AWAITING_RESOURCE_APPROVAL_NOT_LAUNCHABLE",
+  "stage": "mini_vla_m6_four_suite_final_20261019_v1",
+  "thread": "PUBLIC_REPRODUCTION",
+  "scope": "Skip optionalM5; final M4 architecture trained jointly on four suites and one final2000 evaluation. Historical M1-M4 kept; no claim M4 beatsM3.",
+  "model": {
+    "class": "AttentionMiniVLA",
+    "architecture_source": "mini_vla/attention_model_v1.py",
+    "source_sha256": "1b6cef3d76f520629109c6e462ea887663d53913fb49d1bb366aacef0a7766af",
+    "image_size": 128,
+    "vocabulary_size_train_only_expected": 71,
+    "horizon": 10,
+    "execute_steps": 5,
+    "token_dimension": 128,
+    "encoder_layers": 1,
+    "decoder_layers": 1,
+    "heads": 4,
+    "dropout": 0,
+    "language": "same masked-mean pooling; no future labels",
+    "initialization": "fresh seed42 with existing ImageNet weights; not fine-tuning Spatial-trained checkpoint"
+  },
+  "data": {
+    "repo": "physical-intelligence/libero",
+    "revision": "a4336d589d589045d1c56423ffdf3b88a0e19b1f",
+    "download_manifest": "configs/mini_vla_m6_download_manifest_20261019_v1.json",
+    "download_manifest_sha256": "d6d1665cb3255601aa98284def1cfb8ff908964710e9d0e8e33ce5d61981254b",
+    "missing_files": 1261,
+    "missing_bytes": 28333231595,
+    "split": "configs/mini_vla_four_suite_demo_split_20261019_v1.json",
+    "split_sha256": "97142601f468d5415c4dec96ec6cf014b965b3c3261e6945c26c8b17ce36be30",
+    "train_episodes": 1506,
+    "validation_episodes": 187,
+    "train_frames": 243000,
+    "validation_frames": 30465,
+    "cache": "new project-local uint8 two-camera128 cache; same bilinear resize/no augmentation; train-only normalization/vocabulary",
+    "cache_image_gib": 25.036468505859375,
+    "no_existing_artifact_deletion": true
+  },
+  "training": {
+    "seed": 42,
+    "epochs": 50,
+    "batch_size": 128,
+    "updates_per_epoch": 1899,
+    "total_updates": 94950,
+    "optimizer": "AdamW",
+    "learning_rate": 0.0003,
+    "weight_decay": 0.0001,
+    "clip_grad_norm": 1.0,
+    "precision": "FP32",
+    "loss": "masked normalized K10 MSE",
+    "selection": "earliest minimum complete validation first-actionMSE; no rollout checkpoint selection",
+    "retention": "initial,best,latest; interrupted work resumes completed epochs with optimizer, no reset"
+  },
+  "evaluation": {
+    "standard": "configs/mini_vla_libero_benchmark_20261019_v2.json",
+    "case_manifest": "configs/mini_vla_four_suite_cases_20261019_v1.json",
+    "case_manifest_sha256": "6860f17f816ac0cf6e73700ebeb8892406d67aa779ab74ed1a6c93cbc9a63dad",
+    "suites": [
+      "libero_spatial",
+      "libero_object",
+      "libero_goal",
+      "libero_10"
+    ],
+    "tasks_per_suite": 10,
+    "trials_per_task": 50,
+    "total": 2000,
+    "environment_seed": 7,
+    "task_order_index": 0,
+    "reset": "official sequential reset/set_init_state indices0..49 per task",
+    "max_action_steps": [
+      220,
+      280,
+      300,
+      520
+    ],
+    "wait_steps": 10,
+    "final_access": "remains sealed until checkpoint/adapter/execution hashes frozen; no scientific retuning after final results",
+    "models_to_evaluate": 1,
+    "no_intermediate_full_sweeps": true,
+    "no_extra_random_rollouts": true,
+    "positive_control": "Replay existing recorded successfulSpatial physics trace; verify other-suite assets/controller/action/camera mappings before final evaluation. Existing LeRobot8D state is not a full simulator reset state, so do not claim raw demo replay in other suites without full-state provenance.",
+    "video_policy": "freeze recording atinitial stateindices0and25 per task=80 videos, all2000 retain action/termination/latency traces; no posthoc best-video-only selection",
+    "reporting": "all per-task/per-suite rates and macro;report development andconfirmation strata separately; no unseen-scene or independently tested2000 claim"
+  },
+  "budget_request": {
+    "additional_execution_seconds": 50400,
+    "includes": "download,cache,training,all2000eval,failed attempts,CPU audit and analysis; idle waiting separately logged; no paid cloud",
+    "new_phase_artifact_cap_gib": 60,
+    "project_cap_gib_requested": 160,
+    "project_cap_gib_existing": 120,
+    "filesystem_reserve_gib": 100,
+    "max_simultaneous_gpus": 2,
+    "prefer_single_gpu": true,
+    "all_gpu_ids_allowed": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "old_ledgers_unchanged": true,
+    "existing_remaining_seconds": 1376.8718243183448,
+    "accounting": "new separately bounded phase ledger; old trial budget not reset; new14h is ceiling not ETA",
+    "no_budget_change_until_approved": true
+  },
+  "estimate": {
+    "training_seconds_scaled_from_M4": 7050.499358322235,
+    "evaluation_seconds_scaled_by_suite_horizon": 17435.58257742785,
+    "evaluation_seconds_if_all_runs_hit_horizon_using_observed_perstep_rate": 33372.43924686033,
+    "max_environment_steps": 660000,
+    "uncertainty": "linear estimates exclude novel-suite decoder/cache/physics differences and contention; not measured completion promises",
+    "typical_working_estimate_hours": "about7-9 including preparation;14h hard cap with repair margin; may need revision if throughput gate fails"
+  },
+  "stages": [
+    "source integrity and decode/cache/normalization audit",
+    "one full training run",
+    "freeze checkpoint and official-style evaluation adapter;data/control positive checks",
+    "one full2000 suite evaluation",
+    "independent statistics/video/portfolio report"
+  ],
+  "prepared_now": [
+    "pinned source/split/case metadata",
+    "exact1261-file download manifest with sizes and LFS metadata",
+    "model implementation and M4 acceptance",
+    "concrete settings and resource bounds"
+  ],
+  "implementation_remaining": [
+    "generalize data loader/task IDs/vocabulary to40 tasks",
+    "official-reset four-suite evaluator and safe checkpoint release",
+    "new phase ledger/supervision/cache and download integrity implementation"
+  ],
+  "automation": "same originating-thread dispatcher,quiet300s idle checks,versioned records;enqueue after resource approval and executable checks"
+}

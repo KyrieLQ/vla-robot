@@ -1,0 +1,5 @@
+contourpy==1.3.3
+cycler==0.12.1
+fonttools==4.66.1
+kiwisolver==1.5.1
+matplotlib==3.10.1

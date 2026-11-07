@@ -1,0 +1,20 @@
+{
+  "status": "APPROVED",
+  "approved_at": "2026-10-20T13:25:26.937397+08:00",
+  "thread": "PUBLIC_REPRODUCTION",
+  "user_reply": "按照你的推荐来",
+  "proposal": "configs/mini_vla_m7a_scope_proposal_20261020_v1.json",
+  "proposal_sha256": "f39ba282fd3f00acf4d9ad61bb8123d7f1bc329ece0f8252117306046ae18466",
+  "scope": "M7a spatial-token comparison first; defer final2000 until modern architecture frozen",
+  "stage_total_seconds": 10800,
+  "stage_artifact_cap_gib": 1,
+  "budget_ledger": "results/mini_vla_m6_20261019_ledger.json",
+  "no_total_budget_increase": true,
+  "total_limit_seconds": 50400,
+  "phase_artifact_cap_gib": 60,
+  "project_cap_gib": 160,
+  "filesystem_reserve_gib": 100,
+  "simultaneous_gpus": 1,
+  "confirmation_access": false,
+  "later_stages": "prepare concrete VLM/flow protocols; no unlimited resource expansion"
+}

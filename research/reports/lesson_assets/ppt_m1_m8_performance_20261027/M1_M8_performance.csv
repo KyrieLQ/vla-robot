@@ -1,0 +1,24 @@
+﻿model,variant,evaluation,training_data,successes,episodes,success_rate,rpc_median_ms,source
+M1,小CNN＋单动作MLP（K1/H1）,Mini VLA固定Spatial50开发,Spatial：384训练/48离线验证示范,18,50,36.0,3.6087641492486,results/mini_vla_m1_20261019_run1/review/independent_acceptance.json
+M2,动作分块（K10/H5）,Mini VLA固定Spatial50开发,Spatial：384训练/48离线验证示范,41,50,82.0,5.316474009305239,results/mini_vla_m2_20261019_run1/review/independent_acceptance.json
+M3,ImageNet预训练ResNet18,Mini VLA固定Spatial50开发,Spatial：384训练/48离线验证示范,44,50,88.0,7.637121248990297,results/mini_vla_m3_20261019_run3/review/independent_acceptance.json
+M4,Transformer融合＋动作查询,Mini VLA固定Spatial50开发,Spatial：384训练/48离线验证示范,44,50,88.0,7.496822159737349,results/mini_vla_m4_20261019_run3/review/independent_acceptance.json
+M5,M4架构四套联合训练,Mini VLA固定Spatial50开发,四套：1506训练/187离线验证示范,47,50,94.0,8.611065801233053,results/mini_vla_m6_fast50_20261020_run1/review/independent_acceptance.json
+M6,冻结SmolVLM＋回归动作头,Mini VLA固定Spatial50开发,四套：1506训练/187离线验证示范,39,50,78.0,67.77065200731158,results/mini_vla_m8_dev50_20261021_run1/review/independent_acceptance.json
+M7,同冻结SmolVLM＋Flow动作头,Mini VLA固定Spatial50开发,四套：1506训练/187离线验证示范,18,50,36.0,82.28899072855711,results/mini_vla_m9_dev50_20261021_run1/review/independent_acceptance.json
+M8,π0.5微调30k（K10/H5）,π0.5历史Spatial50配对,Spatial：432条示范,42,50,84.0,,results/formal_pipeline_20261013_v2/final_acceptance.json
+M1,未训练初始化,Mini VLA固定Spatial50开发,未训练,0,50,0.0,,results/mini_vla_m1_20261019_run1/review/independent_acceptance.json
+M2,同一个K10模型，执行H1,Mini VLA固定Spatial50开发,Spatial：384训练/48离线验证示范,39,50,78.0,,results/mini_vla_m2_20261019_run1/review/independent_acceptance.json
+M3,原小CNN＋RGB通道标准化,Mini VLA固定Spatial50开发,Spatial：384训练/48离线验证示范,36,50,72.0,,results/mini_vla_m3_20261019_run3/review/independent_acceptance.json
+M3,随机初始化ResNet18,Mini VLA固定Spatial50开发,Spatial：384训练/48离线验证示范,39,50,78.0,,results/mini_vla_m3_20261019_run3/review/independent_acceptance.json
+M8,官方base＋相同Spatial归一化统计,π0.5历史Spatial50配对,未进行本轮微调,0,50,0.0,,results/formal_pipeline_20261013_v2/final_acceptance.json
+M8,ckpt10k_prefix5,π0.5历史Spatial200开发，220步上限,Spatial：432条示范,119,200,59.5,,results/research_diagnosis_20261014_v3/ANALYSIS.json
+M8,ckpt20k_prefix5,π0.5历史Spatial200开发，220步上限,Spatial：432条示范,152,200,76.0,,results/research_diagnosis_20261014_v3/ANALYSIS.json
+M8,ckpt30k_prefix5,π0.5历史Spatial200开发，220步上限,Spatial：432条示范,170,200,85.0,,results/research_diagnosis_20261014_v3/ANALYSIS.json
+M8,ckpt30k_prefix1,π0.5历史Spatial200开发，220步上限,Spatial：432条示范,173,200,86.5,,results/research_diagnosis_20261014_v3/ANALYSIS.json
+M8,ckpt30k_prefix10,π0.5历史Spatial200开发，220步上限,Spatial：432条示范,148,200,74.0,,results/research_diagnosis_20261014_v3/ANALYSIS.json
+M5,Spatial,冻结模型最终四套2000,四套：1506训练/187离线验证示范,450,500,90.0,,results/mini_vla_final2000_20261021_run3/review/independent_acceptance.json
+M5,Object,冻结模型最终四套2000,四套：1506训练/187离线验证示范,439,500,87.8,,results/mini_vla_final2000_20261021_run3/review/independent_acceptance.json
+M5,Goal,冻结模型最终四套2000,四套：1506训练/187离线验证示范,341,500,68.2,,results/mini_vla_final2000_20261021_run3/review/independent_acceptance.json
+M5,Long,冻结模型最终四套2000,四套：1506训练/187离线验证示范,335,500,67.0,,results/mini_vla_final2000_20261021_run3/review/independent_acceptance.json
+M5,四套总计,冻结模型最终四套2000,四套：1506训练/187离线验证示范,1565,2000,78.25,,results/mini_vla_final2000_20261021_run3/review/independent_acceptance.json

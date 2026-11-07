@@ -1,0 +1,3434 @@
+{
+  "export_date": "2026-11-07",
+  "upstream": {
+    "openpi": "215abfb217dbac7d5f1273282331b9b1866c0479",
+    "libero": "f78abd68ee283de9f9be3c8f7e2a9ad60246e95c"
+  },
+  "files": [
+    {
+      "path": "research/configs/assets/pi05_libero_lora_3090_smoke/physical-intelligence/libero/norm_stats.json",
+      "sha256": "46b9da6a02b02dc5395a101f93cdafdb9d7f19aaab1b813cd479b49e63c85402"
+    },
+    {
+      "path": "research/configs/assets/pi05_libero_lora_3090_train/physical-intelligence/libero/norm_stats.json",
+      "sha256": "50edc992e7c005b797e1d61aed9f4f5350603a47f3feb7e686d990285fe9a4d9"
+    },
+    {
+      "path": "research/configs/formal_analysis_requirements.txt",
+      "sha256": "22e79c64882c7895a1677582179c4d99addd5f0183f2e890f3d187d67ad6e490"
+    },
+    {
+      "path": "research/configs/formal_plan_20261013.json",
+      "sha256": "d9797f8951527f195f79425419dc9cb45f8d1f09d35c74c40d1020ad782eb286",
+      "original_sha256": "5e7ad9e0067d8ae22383404191ea73ee526a0360fc6297204f27160ff263ead5",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/libero/config.yaml",
+      "sha256": "99f3dc393bbdebeaf6401ecf76e55e394bd2c0fe61c988e4b9099f6f309c1f23"
+    },
+    {
+      "path": "research/configs/libero_installed_freeze.txt",
+      "sha256": "3665179f498577fa3460fa62ade373f783dc7cec654b1794ac11af856b8fcaab"
+    },
+    {
+      "path": "research/configs/mini_vla_active_gpu_policy.json",
+      "sha256": "f17e3b2072159171351bdd729d6f413d2d6ae898a2954f6b956aa8e64eef23df"
+    },
+    {
+      "path": "research/configs/mini_vla_all_gpus_20261019_APPROVED.json",
+      "sha256": "5dc85e4531ee584ddcb1f8422e4bf9c0ddf410257cf879ca7d0082ba49ba6cf5"
+    },
+    {
+      "path": "research/configs/mini_vla_automation_20261019_APPROVED.json",
+      "sha256": "7fb78bc4005e44ebe0c7fe90fe41cd0ed7b4c5ec734a0df547a0d636971635df",
+      "original_sha256": "f16a6f98ed08ed99e1948ce810fd599a188fc5049eceffc621842d5b9b6388a4",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_cache_batch1_20261020_APPROVED.json",
+      "sha256": "f663c002e6b87576dbd638c417009a693fa2d96b9f60446755e8a9cac85e8020",
+      "original_sha256": "c4ef7db216f4442631573f17f5fc8a77ef091827e079a29637b1c881d8716f62",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_cache_batch1_preview_20261020_v1.json",
+      "sha256": "0197ed9ce8ee663bd807644dcd2b5f35adef55be5173598df6055c3a5ee9360a"
+    },
+    {
+      "path": "research/configs/mini_vla_cache_parity_diagnostic_20261020_v1.json",
+      "sha256": "43286015a58e2adab8fcae9991f39d1629fc05ec93896b1feed5f1d2b98f7471"
+    },
+    {
+      "path": "research/configs/mini_vla_curriculum_20261015.json",
+      "sha256": "0408752d408c4f66304fe6401754539835b4ba5463420a84a780b024e0bbb1e0",
+      "original_sha256": "5fc901dee39b6d100948830d57ab9e11c46c8ef8505246cc6726887e3c994656",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_evaluation_standard_20261019_v1.json",
+      "sha256": "7bcb218266c58b90fab6e28fbf14f197065ac614b89f00de023e175673a80eba"
+    },
+    {
+      "path": "research/configs/mini_vla_final2000_20261021_READY.json",
+      "sha256": "3b9bcade2537d33238dbbd528e06dce85c308599388efb8c4167dde329de3138",
+      "original_sha256": "e0af8a9989a10c3beb789d00f1a4ff002a142680f689c9683c079268757821e4",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_final2000_20261021_v1.json",
+      "sha256": "a0b3ca659173ff7d7e0ac39cd02968897628d8bc7ea8aa6f145900b1ab339d51",
+      "original_sha256": "71b84d7e68247765c0a0802a7f192f3adecdf10816386004484ca9c4d7147bf9",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_final2000_resume_20261021_v1.json",
+      "sha256": "97fa8525f6d37f944bdd338e77def4c889c9f6903f813ea0afe888dc8bb6f96a",
+      "original_sha256": "8a67f15c492d9851b3a4fa7a2e2962ef76edbc82f995db6939a5f51d67d82185",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_final2000_scientific_20261021_v1.json",
+      "sha256": "1e43083b3a8d02a6aa42087e339197d08456b922f9f04381228cc787c7112620",
+      "original_sha256": "90a16f2523546048fbee5145c59716e220a7d7d3f5259e069363b138c205470a",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_final2000_scientific_20261021_v2.json",
+      "sha256": "e6420f50c6d209ce65fd4cbfb2c3f002114fe68f1221bf2bd7affdb6465cc0f3",
+      "original_sha256": "6b8b8a8b23f1662364d31a2495d9f4b0c78cba691c1961495cd375ed16ab8361",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_final_preflight_20261021_v1.json",
+      "sha256": "299edfb4b881473ddd1e11bf094108a4cd3a32d21219499c8af6844ba918b010",
+      "original_sha256": "e022477f340c69b16c1204abeb5a6647898b295964a1e99462fed79450fd3207",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_final_preflight_20261021_v2.json",
+      "sha256": "077d5eb4fe23370c28a36bfffe8b7c037d829f750ad89c07c5e1e1b3ddd2fd08",
+      "original_sha256": "34bc3f1f3e98b3bff93b790754101ea2b1a5ccae6ca6c96035a513a2c2fb577f",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_final_release_20261021_v1.json",
+      "sha256": "c3bdbbf2a177c91f169b92922f87d939a46689784fddb4ab0246c5bad0a2c6d5",
+      "original_sha256": "e5fbe1908351a23291645af8c4d6848e233d5f9b23febe8498287d7aa135be1d",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_final_resume_manifest_20261021_v1.json",
+      "sha256": "77049e5a34a1a27f46838f523be7e6430efa8d3660f5018dee6497070d5377d3"
+    },
+    {
+      "path": "research/configs/mini_vla_final_selection_20261021_v1.json",
+      "sha256": "3c28c55d8ba4f9e47ac5db07ffc356f770534fdcd9ba45eb7560880a2e65b46b",
+      "original_sha256": "0ed90a152760a94698a61019d78453a4148cb9a6136e6b8581e86d7bb37e2c79",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_final_task_bindings_20261021_v1.json",
+      "sha256": "5695844daf139abb6bf3587ae5feaf116b6b20c9ca061a37a4e272b2d267765a"
+    },
+    {
+      "path": "research/configs/mini_vla_final_time_reallocation_20261021_APPROVED.json",
+      "sha256": "247cba60d71516edccf8725029a269ceec227710987239be5a0e93518e736a5c",
+      "original_sha256": "17f13f4b8beac9f31f7ad537a8754f28ff85ad1487279428388315d45ffae140",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_final_time_reallocation_20261021_PROPOSED.json",
+      "sha256": "38ed97a664eb389aab0b1e183c93f8663deb0d728a0481c2b15d13e0ec96e5f4",
+      "original_sha256": "ca6ba1c6b928fc7c3df699af495421ffe857acbb5104086fe69edd2ccb64ee95",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_finetuning_hold_20261023.json",
+      "sha256": "899b78b37d9e09ccb85764b6cf4c86faadfda6f51439500ef1a54424ae1ddbbc"
+    },
+    {
+      "path": "research/configs/mini_vla_flow_improvement_20261103_AUTHORIZED.json",
+      "sha256": "d7d7eb8dfcb9d11863a6f429e3f593a7b76dfe3a16fe63bfd1bedd0390b319fe",
+      "original_sha256": "b7d91b01be3d123463b5d6df6750a2f8566a5d4b6aa8155b931dfef455ce58ec",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_flow_improvement_20261103_protocol.json",
+      "sha256": "16258af55f994f701bbd01c7c3bbfb4ee230fd95d062f2763bfdbc790a77f522",
+      "original_sha256": "0f616488d1365e1a7c5b3458e1e20292bf0437ae9bb5c55105d812c478c0e834",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_four_suite_cases_20261019_v1.json",
+      "sha256": "6860f17f816ac0cf6e73700ebeb8892406d67aa779ab74ed1a6c93cbc9a63dad"
+    },
+    {
+      "path": "research/configs/mini_vla_four_suite_demo_split_20261019_v1.json",
+      "sha256": "97142601f468d5415c4dec96ec6cf014b965b3c3261e6945c26c8b17ce36be30"
+    },
+    {
+      "path": "research/configs/mini_vla_four_suite_dev200_20261104_v1.json",
+      "sha256": "38a020f71151fd8b212b5aed9d60ed8df130bb3159ba8d4a6c429aebdecbbc13",
+      "original_sha256": "158c6cf375a4c62d29df3ce5c443e08f9bfa25c3d1d4036617d7ec6312c7f739",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_legacy_image_retirement_20261021_APPROVED.json",
+      "sha256": "63f6cde6ea3d041ec5105113e27b77302fc2e338746fbe905c777d5bf499732f",
+      "original_sha256": "fcb7bb66836e1b3caa9f25b819804d6b32f625eb7abbc4aed35c242855d9baa9",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_legacy_image_retirement_proposal_20261021_v1.json",
+      "sha256": "ad997ef76d0a627202737bd7edb6716b57b3590f2e31ab11c5adac75c5f04b21"
+    },
+    {
+      "path": "research/configs/mini_vla_lesson_numbering_20261023.json",
+      "sha256": "03c204832e6110aff286b60c92c4156de480ff6eeee0020fa845b716deed60a0"
+    },
+    {
+      "path": "research/configs/mini_vla_libero_benchmark_20261019_v1.json",
+      "sha256": "a718e364f6397afcc72af9144ea639e46f48227f243b98dc87ec37bd427ced35"
+    },
+    {
+      "path": "research/configs/mini_vla_libero_benchmark_20261019_v2.json",
+      "sha256": "96e34ee3b5438f77e4a1ee869af7e2b19981b0034af781cec8ede4465ce31bd9"
+    },
+    {
+      "path": "research/configs/mini_vla_m0_20261015_v1.json",
+      "sha256": "447a082369d76dad23c21381aaf66a6961b14b74b2418e73dc9340499b7d3c29"
+    },
+    {
+      "path": "research/configs/mini_vla_m1_20261019_GPU_APPROVED.json",
+      "sha256": "aced593c379789e90462b9112872e1a9e4be0c00b8577f728c81724edc4f9f6b"
+    },
+    {
+      "path": "research/configs/mini_vla_m1_20261019_v1.json",
+      "sha256": "7126f339b9d4940967941f2032fc3d7b6488e317b800ff2af138b8630f40d6e8",
+      "original_sha256": "6b691fb9ac9010fe875a82467538e097d76e0d9f13e787994cbe460299b894c4",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_m1_20261019_v2.json",
+      "sha256": "837b39913f99394c4ff2e1fac1efc9d3bbfff82d24b8c32650bca01854d90782",
+      "original_sha256": "cb18089d2acf5de49e5153064a09b2c3c475a9ef3c1fa7ee2ebaa19db6764a15",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_m2_20261019_v1.json",
+      "sha256": "e52a7fe4de03833ab577801fe0927e783031fb26e25ea2ae4e09d30150952311",
+      "original_sha256": "94e902db874bc741d78a57bdedafb224b4f210b07f771f271bb93ade3462738f",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_m2_20261019_v2.json",
+      "sha256": "94ab1674ca94e41a81c5b60bb3e5bfe783768bc40bcd654186b7ecd08b550829",
+      "original_sha256": "edf809537c01af4849c895af96ef4c31bdb4dcdc040033d7960794d5b72d0565",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_m3_20261019_v1.json",
+      "sha256": "6d9feb94f5b0f45a69833476f4812d3407d15f27354add6595288d6c17506dc1",
+      "original_sha256": "a39572c9726a1c67a7627a2c33bd1b07c78d8ab5089a98fad3e3bae72d94f1d3",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_m3_20261019_v2.json",
+      "sha256": "f658f35256904ee59c62c091bd787368f8a592146e2195dcfb81815caed328f3",
+      "original_sha256": "434efa07ba3cad1de26177232a6f275d9abaae7237c769ce45349612893739ef",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_m3_resume_20261019_v1.json",
+      "sha256": "28a746bb29a140a8b0ca8be2d158fb832b0e18e84da4a173f3e733a73367fc79",
+      "original_sha256": "3e9fcb5df545f66ca2d972310085b0c3fb812e6f1c0fd52f90ba0d03a321b4f3",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_m4_20261019_v1.json",
+      "sha256": "8ffd3d83e8a0694b95089f686bc496b40d7736a3ed462c250415775c7ba95ec1",
+      "original_sha256": "4123e7f3ad9516e961b32c1c122cd5ea045bf2efff9cc522933c3d8ca6dd4bba",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_m4_20261019_v2.json",
+      "sha256": "7bc99eda859141f49a9ab2a10fff78b85f6cc4a56512180ccd4a038d74bc0480",
+      "original_sha256": "997868a92d453a286057a9e3ec5e9b5ebff659314cb18828e61d0aa41bcaebb4",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_m6_20261019_APPROVED.json",
+      "sha256": "a86a5ba98835543fe1c3d04964cead87380663db0d42768dc8d7900f18fd304e",
+      "original_sha256": "7cca1097ed283871bfe591cc0b9ee5646ee639b3ea1b564f63b9f98339899f6b",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_m6_download_manifest_20261019_v1.json",
+      "sha256": "d6d1665cb3255601aa98284def1cfb8ff908964710e9d0e8e33ce5d61981254b"
+    },
+    {
+      "path": "research/configs/mini_vla_m6_fast50_20261020_v1.json",
+      "sha256": "105727f433f66dace35eb36e65992a9f4f4c1aa02bf056e6835dee4e101a4913",
+      "original_sha256": "30b3bb6dddd304d07ee3c70dc8c7ea81ad0642d6a19f0c664582fdb0fce45a8f",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_m6_lora_20261027_AUTHORIZED.json",
+      "sha256": "13d58ffa20786a7e5c094fcfe935e9fdecdc733512052fcf5e2fe453f0074ce3",
+      "original_sha256": "74921f61c5cbab1a243776eb257b0296b87d7839457bb2bfb99fe4499bba0d70",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_m6_lora_continuation_20261027_DRAFT.json",
+      "sha256": "c7311620591f024c5031922171d8a45a043fa497fd8162eb60502a7c252ea0ab",
+      "original_sha256": "2eef1f3f67cedeba95ab5515fc9548deb6b09aa6e2f07cdd83106d356975b092",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_m6_lora_preflight_20261027_v1.json",
+      "sha256": "afd2493fbe8b27bcf6132760552479e47754c6c88d3ea26915463f9cafcea2d7",
+      "original_sha256": "612ea15b5bec30a20a710ce2d14f90b342bc5a5bcf0e38591caef0619a494107",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_m6_lora_time_override_20261028_APPROVED.json",
+      "sha256": "eed73120cbb87e4beb9ce9d6ee96032ccc19fce08a40c8477dc444cbcf52a320",
+      "original_sha256": "c244441cd08088f62c3c1e943f45f31b15d4f470a07ecd7c775ba21a135e10ac",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_m6_paired_20261028_v1.json",
+      "sha256": "b65d422cdc44a073d6ceb195f5d122c5484cd00205d4a6e83a9a749321d63c4c",
+      "original_sha256": "44a00d2161d157c97b750e226a39703567111b692949fd2675e1187a6ebeed83",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_m6_paired_dev50_20261029_v1.json",
+      "sha256": "59fcbdb627ce0b8f28c98b2bf4cfd9a84ce85a14cb03b39309e69c3adc6bdc90",
+      "original_sha256": "9f65ba0c41ed033bae629cc8c82caa7b8008758b5905c896d70daf981d3cb040",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_m6_paired_dev50_20261029_v2.json",
+      "sha256": "c67db02359a2b96913cadb41dee6ba25043c6cebb9ffa3d322ecfd5d663981c0",
+      "original_sha256": "1056998bf43e4b3818e2d7a7778f9c255a318385e53e578f04274bf97658a563",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_m6_paired_dev50_20261029_v3.json",
+      "sha256": "3c56ba1b177d03f1729f3dbb08f987db01e695d63632a6bcab223fe1e2ced4e6",
+      "original_sha256": "b0f5976f2ea69174615d9e392689351d1ea736b88eb8d0f648c908304f4d135a",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_m6_prepare_20261019_v1.json",
+      "sha256": "1d113b5bcf60f42b630f53477bf99cd5417e341058e8f1f534ac59af5687f4bf",
+      "original_sha256": "edf6c79e6a27b1ce4624f3dc8974d70184e5161e71b70bbf5e3d4326cb4588fc",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_m6_prepare_20261019_v2.json",
+      "sha256": "9f2b36b61000ff7c8ac9416409e3274ff64db4c8fa457e4449077c70480caf95",
+      "original_sha256": "3bb813fd9703c5ad0672e808597dbb6b8bee4644df10676855f950a8a9e95eec",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_m6_prepare_20261019_v3.json",
+      "sha256": "adcf7f65f7785bfe3e365501e413b818273b1c5457b73dee0d32af2c6185079e",
+      "original_sha256": "50693a30d73be8bc45edccf8b23d5fb2f5a6732995052bada7b8cb26a1ecdac2",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_m6_preprocessing_20261019_v1.json",
+      "sha256": "acc542f5811bc8fcb8af6f39d6e9c77052cd092ac5ff73908ee4abb1a0c84251"
+    },
+    {
+      "path": "research/configs/mini_vla_m6_regression_dev200_20261105_v1.json",
+      "sha256": "84ffb77264319b4a96072739e29b50605b2738557c5ad04c4a03be21cfc6859c",
+      "original_sha256": "11037a35d22d4103c0ac18db49454287192bd03e86e05813c63adc4dece239ec",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_m6_regression_dev200_20261105_v2.json",
+      "sha256": "8b940ac84cc086a6ed3046c0bd807866ba79b71b2fde8a131bdf8ad79229c1f4",
+      "original_sha256": "da65572bb5b24059fdacc4e3c5655cad1a6fbb19939e04521f82351cc61d19b1",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_m6_regression_pair_20261104_v1.json",
+      "sha256": "efc016cf9324b816b41c772931473a0a452cd19e230ed7d828eb9502452621ee",
+      "original_sha256": "01cfe6cc7190afb69d21cfb39685e1fafc595a3bb6bb5b1a9c4b82212b7f5e4e",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_m6_regression_pair_20261104_v2.json",
+      "sha256": "5bcac040bde0b861ff82112933b46e607e6f0c8bf8927a0abfd620c9e28442d3",
+      "original_sha256": "c8db39bbe3b79f2da879a4783034689b76fd9e6fc319b25c12630147690fa49e",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_m6_resource_proposal_20261019_v1.json",
+      "sha256": "1f423fe8184177b014812b32c8213a564cd7b8efec32c7deb0db9619618008d5",
+      "original_sha256": "dd61c79ea3fef0e4790df4d9099054915ecfb74f59a30d1b2c1ea3ab4eeb3bdb",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_m6_train_20261020_v1.json",
+      "sha256": "969235709b33cb0f89d838296a0ef27886979718a7039795a456360a1a0184d6",
+      "original_sha256": "df00145b33c85810a7abba5052513f5b8b399d8dbfb0c03bc727d79b0fc7db1c",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_m7_fixed_lora_flow_20261029_AUTHORIZED.json",
+      "sha256": "1164ac0d0918343ff3c37d041e66fccfdc447a0b404950e754e675375541d027",
+      "original_sha256": "7051f2ac194992cc9f9690119046133f787b8060da521874815305538642ba5e",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_m7_fixed_lora_flow_20261029_v1.json",
+      "sha256": "fb17badd55a6e4590907a0e1ab74e9b6b938fb942c586578b1b4bd808173bb15",
+      "original_sha256": "d8c38c7f64d2a432145c578af22116143ae7bab9e575460467a25473d5baa893",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_m7_fixed_lora_flow_dev50_20261030_v1.json",
+      "sha256": "ed5b6e2c1be72c09da549603dc75574edc06df1875533f94fcec7e09cd0a5d53",
+      "original_sha256": "4fa3f30584330bb947fff1acf0086219c7a6fa92f64d5537a5714177789b7f7c",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_m7_flow_depth2_dev50_20261104_v1.json",
+      "sha256": "1688648a253e6c0e14515ce86b41a5a00be3e192f8efe78693d20135a2aa51c0",
+      "original_sha256": "74d0f9500eda1f7a7315aaf3738302c9afab30b8f17f90f0249328e81233af7b",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_m7_flow_depth2_dev50_20261104_v2.json",
+      "sha256": "2177de1f35a8ccacd78a9a8ab38024cde47a46e39f4138ca2502e12350cc7bdf",
+      "original_sha256": "45e319809808a486759a3128fea022195e0324832a8f2b98980cd79c1fbb74c3",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_m7_flow_depth2_train_20261103_v1.json",
+      "sha256": "c1b7af36c277c4f0737f5e3ad1ff6237879aef5391a06a937add28f61bc9e653",
+      "original_sha256": "eaba83307ae4d3712cde9236ed076f98e707fd387462585c40828eb6f2938496",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_m7_flow_noise_dev50_20261103_v1.json",
+      "sha256": "6cd9ae7f82be3f5940bdbf2ceb29ba0c88430e9089217b45b661cbbbf657ba22",
+      "original_sha256": "9076ab1e7b8976233d66f8fc5a88907e677c0a701036846f314244de1dceb4c1",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_m7_flow_parallel_preflight_20261103_v1.json",
+      "sha256": "e6184fc03592cd9e868012ed671439d4fa97a35e60215de8fd778d015c2eaadc",
+      "original_sha256": "8178f08bbfecd62677c76ebc26dab10bba3c28538bbf904b2a4b781189b5908e",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_m7_flow_tail_dev50_20261103_v1.json",
+      "sha256": "d3be3d40950f7cf5cb8ef418bea35acf93e271741f56ba1fe20f16175fa41cf3",
+      "original_sha256": "8f818fe4c1537d0fb99b1185ca94629d40cfb454004c0aad71634c45a55938fd",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_m7_flow_tail_train_20261103_DRAFT.json",
+      "sha256": "cd1d3479fd0f07116c3f9e1c7fca57bb257b00edc31c5f828c213b45c09cbce6",
+      "original_sha256": "2be025dc4c2fbb4b5fb646e48e2fe673fdf0c7199451e2cf005a0ca18bcb83a2",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_m7_flow_tail_train_20261103_v1.json",
+      "sha256": "927c8e159a66bcbe01f0f66dfae14d43d6f092410a30efc4e9dc68c0dfeb8c15",
+      "original_sha256": "9f5b9cbb9c70efb4950ade85298e5f46e721d050e565e8ad9e2cb79cdc1ddfbb",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_m7_flow_tail_train_parallel_20261103_v2.json",
+      "sha256": "6afdfad819080ddb87212b2d8c3519bc504dc6871ee3a1e19ca0c25a8994ccfc",
+      "original_sha256": "fbb5fd4fc9422def5c17a1f440fae76503c444fb96c83f12e81565a4383b58ad",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_m7_flow_time_film_dev50_20261104_v1.json",
+      "sha256": "c0528e8a464e1f799cd6682870a5ccf6d87a80be44074fe59a8abcbd37f39df3",
+      "original_sha256": "09ac2ed8973470332ffac16cea50d9b3543a6e8a23ae1b261728eafa1af361b7",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_m7_flow_time_film_train_20261104_v1.json",
+      "sha256": "08eebeb9731ee63e796625749e1791401c5b54e4468015fde31884097e8b2b67",
+      "original_sha256": "9d9b58e68025bb038ba24adc59a1461ab2c78e9bb357cdb1498d2a631d6ff67f",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_m7a_20261020_APPROVED.json",
+      "sha256": "12a9542ce2dbfe6c71a51a3ba0a7fce717c823d9adee02906d60bf09f4c19992",
+      "original_sha256": "874e2d9cb35cc1520d8bded7cd7e3fb71fe62e8be1d2acc9cbee0d6ac2d391a4",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_m7a_20261020_v1.json",
+      "sha256": "b79472e3fe96275dc8ad691b143e36fd2f35dffad19fa66d0d79373bf0abbab6",
+      "original_sha256": "fe46a94de4384e8c535565975acb522c0c4fc3cb8ee9c6be8e86511e85deb49f",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_m7a_scope_proposal_20261020_v1.json",
+      "sha256": "f39ba282fd3f00acf4d9ad61bb8123d7f1bc329ece0f8252117306046ae18466"
+    },
+    {
+      "path": "research/configs/mini_vla_m8_dev50_20261021_v1.json",
+      "sha256": "bfc47c5d16bcf7712994cc5121abe0b0dfecf4f8c74e146c055cf9baf081816e",
+      "original_sha256": "5a8fbd7cfad320e3ae13ef1178901ac77300cc85172322800f8c14119b7ee636",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_m8_m9_20261020_APPROVED.json",
+      "sha256": "72d02ab2a0c9a92a5d90f1a1f080fcfeb89ad42571d8a7acc89741e5d1ffd196",
+      "original_sha256": "e98f0a65f9d585a08052c9ae1f633f62b240cf410178465b5ff256603070b6e9",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_m8_m9_proposal_20261020_v1.json",
+      "sha256": "d4ed368f062550fdcd7499404b2d0082ca23d3284387e8cd7f6493f9dcc3d562",
+      "original_sha256": "221bfa972d3be7ea95da7b7cfa9dc4ee28419d61f73e4e09e5922c1c00ec6a46",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_m8_preflight_20261020_v1.json",
+      "sha256": "b33bd99222d333f274d2af9147cbb5923e6e99d8727bf3e9912f0a02ff8c5420",
+      "original_sha256": "022d29458f64eedb96569719bac41aa66a2c3c5cffd220fa93b251a3b826966a",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_m8_preflight_20261020_v2.json",
+      "sha256": "60a1da57d2bd12a335c3e2b854e5aa6f2348ce55d21b202ec70ed50718c9c847",
+      "original_sha256": "b87ebe208b4ef3b6e1ac7fb4c12cc1b198f28f8e31be8f0c2d1daadf1c4160de",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_m8_preflight_samples_20261020_v1.json",
+      "sha256": "23dfcbf72a3cb60d904da46701d200343d444b8c57acc8e3b21c181bbd07b3c3"
+    },
+    {
+      "path": "research/configs/mini_vla_m8_regression_train_20261021_v1.json",
+      "sha256": "5e112e8247bb29ef97ef14fbec12737eebd1a3d129810d961437f39328d6bf30",
+      "original_sha256": "b2fbc8b284d258fa3b71bbd605b9c0016249a08583e101356ca8a42ce4cba36a",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_m9_dev50_20261021_v1.json",
+      "sha256": "027d34f013b066ec1a5bca825f65319a0312ad1af4640e51e3c53209a9930eea",
+      "original_sha256": "c00cf7ac18e8862183110247e9ecf05aaf4171cc65d545aa7fb9d654ddc69edc",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_m9_flow_train_20261021_v1.json",
+      "sha256": "dff77a2ac1d1e489044541c73942eea00c0f51da82f8e32ce06465dd9d06a15a",
+      "original_sha256": "ac299ed68712c63ccd90d2e577fb0a75a40b75d1b857c41c7266599eeb5a6883",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_mainline_20261104_AUTHORIZED.json",
+      "sha256": "daa16725e11744af3a39eb1101a5e1d19e596353e68748fa55d3fa9ee06e99e2",
+      "original_sha256": "3456559b7178ef4dffd829137ba5c1b09acc63d9198f5ef6b226f24ec62f575a",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_mainline_smol_selection_20261105_v1.json",
+      "sha256": "f9197893ef538ebc88434bedd5d11f14c73a4c5776c304f826a857be8dec19d3"
+    },
+    {
+      "path": "research/configs/mini_vla_modern_cache_20261020_v1.json",
+      "sha256": "3411b964996b3cc63805a131b526f27363f515ef28e88babd5c86b3fad78221e",
+      "original_sha256": "bc54e8776c568dd9e6b1eed58a691f00cc6bb5cf20bd16051b54238f702fe40e",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_modern_cache_20261020_v2.json",
+      "sha256": "5826bd2d568308793b3d3f3c619fda88e803fbfcdc17ed468966cc2fb682f2b0",
+      "original_sha256": "3c10c87c24cc8da43899c12b774a72e164a54e6a3a398570e3079774f81889aa",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_modern_cache_batch1_proposal_20261020_v1.json",
+      "sha256": "cdd580bae65f5867c203fe2e4c9b6c297fbaf6a2379115c7e67680f1921d09cc",
+      "original_sha256": "de29222c858a783a3ad6e2c8663d5c76af1c3a05c4b93b764dbbae83e4ad0eab",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_modern_cache_resume_20261021_proposal_v1.json",
+      "sha256": "7f043763752c2fb8a9f8f20296ddb624ec32459c275e59db867db3a3d4a7a340",
+      "original_sha256": "097a52d492a1ed681f1eb2d3f9d0b5fd1b7c5e50b56b5802d72cbc8adce8fe34",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_modern_cache_resume_20261021_v1.json",
+      "sha256": "3ddb5b6f544f6336f4a7373f248a92372277b3538b847915583bbf15b1b39ca1",
+      "original_sha256": "75d3dc63447fca38904f8f954c8a3a089ffc11f07b41bf45bcbbaea1ba77c7dc",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_optimization_before_final_20261104_USER_DIRECTIVE.json",
+      "sha256": "c48fe5f1d61412168442d37fdd4c4e8d5c8faf4caee7dd21f21598a6bacd15e4",
+      "original_sha256": "37a7bc7e3d7cd6fd6b4b5023a97a719128acb9c7870b865943489ac4cf75e8f4",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_pi05_exit_preflight_20261105_v1.json",
+      "sha256": "bdc2830767b77e98867e56437cacec3ffcc8e966cf020baebf8ef3ead4a14744",
+      "original_sha256": "12168bb68df3a984da12e4871ca5bdfcaa73a1d7b741b39d475c07d6f7734d13",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_pi05_formal_20261105_v1.json",
+      "sha256": "75ac8556a2ca829b7e2b132d11f3979ba13456a4ac3aa3e244c15d5f6cbce119",
+      "original_sha256": "8516b6692d6e93cb14517197738d73ea88dc1fe528c69f0d638f492ac22a1c95",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_pi05_formal_20261105_v2.json",
+      "sha256": "5cf401a9f0d744f3ac083337f01c08d44dfd4521ee516fbfc2787b79bed73b7f",
+      "original_sha256": "ff0202a8c92c2e1fd38aac516b80e1489cd2c617921082b79771114a04b08b34",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_pi05_formal_20261105_v3.json",
+      "sha256": "7c6c468c60c3b30ba7f331e8ea15a2efcd05f36da696be9304d41f28e7e4308b",
+      "original_sha256": "4f998fd2cc007c500b2966684366245cf103550fedd906a21d898949609cdcea",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_pi05_formal_20261105_v4.json",
+      "sha256": "d27e89c400145033722b95a562866aba6554f874a1588e160db8662e7c92ffa7",
+      "original_sha256": "fc666d98e5d617ae719905cff7602a1cde7f4fbfab6c44a46511b5f12dbdd3e3",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_pi05_four_suite_formal_20261105_DRAFT.json",
+      "sha256": "d3947cf75dc57f8ea4f230f90a20d3a99125cf850dc89dc7e7b73395cac6f680",
+      "original_sha256": "d501bda2451e4f802dc9a091b3377e284f33f53a6bbaa4243dd6828c0f205d93",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_pi05_four_suite_preflight_20261105_v1.json",
+      "sha256": "b9e7b2a721d19a36791b193f42d3ce34722b1e47d96a5bffe97f915af2309a0e",
+      "original_sha256": "8caa6c8eea9a85f90367c7d6dd973f773a291417e9a9bea772437a1a4113519c",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_pi05_four_suite_preflight_20261105_v2.json",
+      "sha256": "7d7eee3dcd50ccb668e3accce5ae8c404819e6e90f9edb6b386bb631dee4f71d",
+      "original_sha256": "6b6e35543be5dae12fc40d01c73925c1f0fcf72d56e365a63bc64de79e3c21ae",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_pi05_four_suite_scientific_20261105_v1.json",
+      "sha256": "7a75f0ca8c9000dde63481105eb615521e836cd3a0a2ef21b15892f703700433",
+      "original_sha256": "943e9f8360a9195407160dce1f8a9fdfa3e76c21b4cc67135f3ed99251a4e6bb",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_pi05_four_suite_scientific_20261105_v2.json",
+      "sha256": "ad6ab5a0df0de5d00bc0592457bb70aa5caf127af2d740f60a6bb3f157d8fd65",
+      "original_sha256": "8ecc60b44d3a3f61eef3778b1106a07dc4120e84e480c38059bfb1b420d7e678",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_pi05_generation_preflight_20261105_v1.json",
+      "sha256": "cea2a2cf9f761478d515d683ca12ca0f28bc25fe7d6221fdcd1f2a657dcca597",
+      "original_sha256": "0ffb2bdc9f3c7776cb3010ed0d3ed97d65fdaf6f9eb4db9d641f14f5c45fd1af",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_pi05_storage_revision_20261105_APPROVED.json",
+      "sha256": "eb1b907f46211c96926423da8c87edf7475a8510fc3f5be5ca8ed692c24895d3",
+      "original_sha256": "3958883b67a2136a101f357d50c0a25f4d63d0dffd0a04b2c10d2cc531288ca9",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_pi05_storage_revision_20261105_PROPOSED.json",
+      "sha256": "a1c2f6d527046962859fa353a19a786c58c66d92b2d3b3c5b9581a389bf17f9e",
+      "original_sha256": "9fa16a8f4dee70a54737dfb7af19f55d003fae7dd756fb4f3f81c21be1c2f533",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_ppt_numbering_20261024.json",
+      "sha256": "45cc735a410fe2e9f982b39f3e2ee1c5f0820240c2cb1b28b9b467087a1ba647"
+    },
+    {
+      "path": "research/configs/mini_vla_shared_gpu_20261029_APPROVED.json",
+      "sha256": "323986622212d7a1f134311440c808cc8d2b835c317dd8b1c2458c5a76c523ee",
+      "original_sha256": "b1664e98021b07b231993e793523a4b9e907882d132519eef8b91e3c30057d63",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_shared_gpu_20261103_APPROVED.json",
+      "sha256": "ed70714c6c2a6c75f5bb64eab46052554be86c2372dcad1741ee2a24c95c8f4a",
+      "original_sha256": "8381e90c84364adfa97aa25482ac6024d3d613e60c341633992dd8f93c05747b",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/mini_vla_spatial_cases_20261019_v1.json",
+      "sha256": "174ce93438b9ea05dd762f51ee32ffaba6082db1985edeb27ac93f95553b30f3"
+    },
+    {
+      "path": "research/configs/mini_vla_split_20261015_v1.json",
+      "sha256": "37dbbefe4ba96dec383806ac7107dc39da92c0d2ccafc8d35f8d63aababd8bf2"
+    },
+    {
+      "path": "research/configs/openpi_installed_freeze.txt",
+      "sha256": "2c24784edb22f33892f5e5f6c53fd5447fc9286d2925a3b89e915a071075ae9b"
+    },
+    {
+      "path": "research/configs/recovery_action_critic_20261014_v1.json",
+      "sha256": "09f0ac885fc566d0b33f182b34274ad7fbdbec42ef07d0ede193d3971dc61b36",
+      "original_sha256": "5cf6991b3fb64c632d5aba881924acf73d51daadc0d8c36d75dc1f80ed97b87e",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/recovery_branch_plan_20261014_v1.json",
+      "sha256": "feb98bc148b7d6f9e10eb83c7ee1c60ce0e9747f9731a3429feace96cb0430e3",
+      "original_sha256": "5f50473ce6cfd717fcb105f18e1292707a394ec8799824672fae6f15d8ba12d9",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/recovery_branch_plan_20261014_v2.json",
+      "sha256": "6829a4a37b3e301620a0c90e345d1f29af8a8b39daf6ca745910114662c6ccd5",
+      "original_sha256": "3d252de4c77cbc41ea86a69e6eec098cba8e6706a9599585cac43d3cc2c0c61d",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/recovery_branch_plan_20261014_v2_PROPOSED.json",
+      "sha256": "40b4af9cc12c374f85dcaa03c9a8e76afdd6baa294e59b82c0680121932431bb",
+      "original_sha256": "181f9d593883bf8a1b0568934b236dc741e3fe8daf4171b5344dbda5fe89454c",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/recovery_branch_plan_20261014_v3.json",
+      "sha256": "2aa645f0a545253524070f92567726b82d980574e0eff2839c87a3fd726aefb7",
+      "original_sha256": "fa18812a5a05e16ef93b33bb44aa6e51bbdbf3bfc2287d1a41fcd9ad4ecf008b",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/recovery_branch_plan_20261014_v4.json",
+      "sha256": "a8a227a782c5ca6e42b0f8e5807e7ec7509f0b5a79bc8c2a7dd19fefef2b5539",
+      "original_sha256": "956bbe4fc0f12bfa8d0108e60e469bbb18c278e250486e0f800baf1fdd3f8d3d",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/recovery_branch_plan_20261014_v5.json",
+      "sha256": "3d772bc2ca06655f60db940bd772511a2bc2ba69e010bee6b91e72b92cda6afd",
+      "original_sha256": "736e5d973af24bdd810978d5ce320b2554aa4ebba0296a5f89f8b64cd220002a",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/recovery_branch_plan_20261014_v6.json",
+      "sha256": "4d076174239cf676d3c0bc60969d792b85100fb18a932a150cb1de17e169ce47",
+      "original_sha256": "5c5327b5a9ec5a929dc5db5595fc7f09972ffab9f098b17216ca28d0b2699913",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/recovery_branch_roots_20261014_v1.json",
+      "sha256": "3d5effd30982d8bfd23ee20780771ecf959246ec3f715039a993073fa2526374"
+    },
+    {
+      "path": "research/configs/recovery_fit_audit_20261014_v1.json",
+      "sha256": "2178f1a2b1621b69a7ca9fcbaedeba1ab179ea61e0bb89994220d1f888997225",
+      "original_sha256": "6051196bf7212fc74131c1fd285d05939ac72f158c4ec383cd203c08519c13a3",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/recovery_paired_live_20261014_APPROVED.json",
+      "sha256": "481aca850682fdf7683e9c6f8fba7c562b77856856ea15ae32e9f7499de7e298",
+      "original_sha256": "bb461243686d710a8f42f82392743df0291954bf4875b98f2c76d2d4d733207b",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/recovery_paired_live_20261014_PROPOSED.json",
+      "sha256": "8dba6dbf2ade7d67d76f01c77bfa94e8fe66ca0b30388024e7b7cebd47e9ef67",
+      "original_sha256": "ba5a0b879fe5c737574c1dd6aba32d55ff96e50b904fff48467783417fc68f48",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/recovery_paired_live_20261014_v1.json",
+      "sha256": "a8e84c491df3d9f6bdd0571e8648d795b631feda7f1e9d20fcd8a5c0b32ff1da",
+      "original_sha256": "274a4e36c409630c8ee176f838de904e4b10264a59deb81f74bf9d3f262cd098",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/recovery_paired_live_20261014_v2.json",
+      "sha256": "a90bd2fa16b3f0efb043ca128608235642fbf988132098a43630b4b159484756",
+      "original_sha256": "59c9a181fbbb5011fff476dac8dc17cfb25c1851d0b8c8ac56768605cc90831f",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/recovery_paired_live_20261014_v3.json",
+      "sha256": "aea84ba6320fa0b8d8e76ce7359871dc9bd05adced79820cd74382e218e970c6",
+      "original_sha256": "5274caa852a0245f76ff7ab45d6f9c50e750405a20375ab8fa6ffef53b4de485",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/recovery_seed_stability_20261014_APPROVED.json",
+      "sha256": "112ebf58d80e82a69d3ed7201f62523512fa801359f742dd3d8b7fb45b4e31b8",
+      "original_sha256": "0e046373ce5c3805c28a79e06facb7c7900ace58b194c0897ca482e6aa7e5fc6",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/recovery_seed_stability_20261014_v1.json",
+      "sha256": "56fc77e1180a3dff340ba5871e66b00d3b0370895e377af45f0997f0ca2c3b1e",
+      "original_sha256": "9f11369586333d2404a2a27108277fd00feedadb2fe21f8bca88cdc2f97efb6e",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/recovery_seed_stability_20261014_v1_PROPOSED.json",
+      "sha256": "d359d392023d79bede94a8c977ce0c2d6f5514db7316030e63322baa86918803",
+      "original_sha256": "729347087a1515cc227c4c1693a17a51dcc9a889ef08630ab78e0982d00f1e3f",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/recovery_seed_stability_roots_20261014_v1.json",
+      "sha256": "0a3e64c2573e997f200dc7f186ada97ecbbc52132181d39703539cdf7ce8b8c3"
+    },
+    {
+      "path": "research/configs/recovery_spatial_progress_20261014_v1.json",
+      "sha256": "c6a8a6bebd663ca5fe24233b58a8b433f424cb2b51502b7e15f03a4422770ead",
+      "original_sha256": "689ed9ee87e288cd11b193d7caff2e4c58210760bf98e3199db14a8376eb7117",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/recovery_spatial_progress_20261014_v1_PREPARED.json",
+      "sha256": "809ee454a3a7538e73315c2957c895e0a274910db21a5f834f0b8cc3ae5c53ea",
+      "original_sha256": "a30600cb02662086b1f95683f4ff1d1fa917c8581067635779cc2b276029e5f4",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/recovery_suffix_acceptance_20261014_APPROVED.json",
+      "sha256": "ba9d28fd3b91636503ca54053c7b2beed7ee0de847b5889812adb46695fec53b"
+    },
+    {
+      "path": "research/configs/recovery_suffix_acceptance_20261014_PROPOSED.json",
+      "sha256": "05892ca6470d0a60319d407853feb05cba6b20e71a34c48320f597449435e9f0"
+    },
+    {
+      "path": "research/configs/recovery_suffix_handoff_20261014_v1.json",
+      "sha256": "d9ffc5c4b5b0dee3f6926336cc15f90474dceac8b7ceaab61d0f38227b690c7c",
+      "original_sha256": "c4a518f190faf71bf7396e9b5ddb6bdf2723eec1941537155362323b9bab6f6d",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/recovery_value_pilot_20261014_v1.json",
+      "sha256": "9809032f8581c64f1b4b2679c20b2d402ae18b85ad9213f13fc5f6a03bc5f873",
+      "original_sha256": "879cab1b1780f0ecf2aba2a322ec43dd362cccfe3067850343c8b5c16d6e5c9b",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/research_diagnosis_20261014_v1.json",
+      "sha256": "8fe1e28ef416bb89c596472b9ddef2ea045db4f1ef251ad946db034c8985c26b",
+      "original_sha256": "412526aeb6341ba56b7a327560294a427613ba68eb906e71c4084be005419961",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/research_diagnosis_20261014_v2.json",
+      "sha256": "d4906a9b410cf3b582a5c9cdb1869ec2544d5976fa2e901b7cc86d69646cc8db",
+      "original_sha256": "70a34203dd43853a67272172b3decf3700b9c18610f3729b47cf3c0996a06784",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/research_split_20261014_v1.json",
+      "sha256": "7eca378ed4fbf44ae38dabe8734a1a68691af2988f750e6829c55763227b9a6c"
+    },
+    {
+      "path": "research/configs/scope.json",
+      "sha256": "1930bb91c5d728cb0558ceb57f7347135289f7c14b76332600b250818bc658a0",
+      "original_sha256": "bb7e2aa26b591de39d08efd9261961b61f281f2e72765ca941811a015f027175",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/configs/scope_deployment_20261012.json",
+      "sha256": "4b881a7ba996f826d8d07237b6fb99cc88dd2b69c12953732386fad431ab3fea",
+      "original_sha256": "687163ffbe5316f1acb390fe39bdc02908f839746bcad693bbca2dece11646b2",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/mini_vla/__init__.py",
+      "sha256": "de234f7a7e7222b55e194a2a2a7b410389693c57339f27aacd1386ab7d7e50e9"
+    },
+    {
+      "path": "research/mini_vla/adapted_feature_parallel_v2.py",
+      "sha256": "49da14c2208b3b05931b551e766c1fdebf847febb79f60cb93cf28b1b63a4aca"
+    },
+    {
+      "path": "research/mini_vla/analyze_fixed_lora_flow_dev50_v1.py",
+      "sha256": "0a4872512e4a81d649a859b2edfbea19d958afca5e02641e8daacc19e620e9f4"
+    },
+    {
+      "path": "research/mini_vla/analyze_flow_depth2_dev50_v1.py",
+      "sha256": "63cd964930dd2d9111140bd55be236d0d6106412802ce31db4d6cfe25be5d5b5"
+    },
+    {
+      "path": "research/mini_vla/analyze_flow_noise_control_v1.py",
+      "sha256": "39b5565da43a3f3b8db101fc9f999326d2b758d6743ead1bda57f26854c9b456"
+    },
+    {
+      "path": "research/mini_vla/analyze_flow_noise_seams_v1.py",
+      "sha256": "12f57f84dfdf02a7508ac4de7a7062ab716025c1b6fc3b9cdf94924de58f5220"
+    },
+    {
+      "path": "research/mini_vla/analyze_flow_tail_dev50_v1.py",
+      "sha256": "fb4d762c8f59650c7d13cd2e91a0d3142f879abe12482568c746fd3b4c17a92f"
+    },
+    {
+      "path": "research/mini_vla/analyze_flow_time_film_dev50_v1.py",
+      "sha256": "daa9338fcbfc407114a4bf6f36f3208a51b3b4d4b1e9d8c567c0b033f22d44e1"
+    },
+    {
+      "path": "research/mini_vla/analyze_m2_v1.py",
+      "sha256": "615066543eec713c11a4f2b1af487116a5042eb755d5bfafa63cc2b323ed175b"
+    },
+    {
+      "path": "research/mini_vla/analyze_m3_v1.py",
+      "sha256": "76f8956a310db1abf1b5e15921c33bad2ef776181bfb373c671e3d0287ee6789"
+    },
+    {
+      "path": "research/mini_vla/analyze_m4_v1.py",
+      "sha256": "0772f6b0ca8d63abafd74bdbd4f42fd911a3a45a8ad70f607052b13e756ce248"
+    },
+    {
+      "path": "research/mini_vla/analyze_m6_fast50_v1.py",
+      "sha256": "3a827f555e01c60e508abea32a3b29225159357ebedb9fa5b0c0c567892d8b3e"
+    },
+    {
+      "path": "research/mini_vla/analyze_m7a_v1.py",
+      "sha256": "b12dea99be12ada1bc4d14a2d4e1105f089b18d63c8d0e87086cfd178f81b161"
+    },
+    {
+      "path": "research/mini_vla/analyze_m8_dev50_v1.py",
+      "sha256": "d1cc961708bfeb711254dd9d97b72f7812417dc58d59140fde5f450a7e927e34"
+    },
+    {
+      "path": "research/mini_vla/analyze_m9_dev50_v1.py",
+      "sha256": "0761ba013b3b4d2b6b56e9f0210372489139aef5e99c7e905069e605d51246a8"
+    },
+    {
+      "path": "research/mini_vla/analyze_paired_dev50_v1.py",
+      "sha256": "cf6422116d37316a1c8b15cec1db28c0899a11fabe514131266c3ad9193970ca"
+    },
+    {
+      "path": "research/mini_vla/analyze_v1.py",
+      "sha256": "e6eb3c386f516dab7a07fdcab22ee8e1b66676096c7c96963b7257cae36cba2a"
+    },
+    {
+      "path": "research/mini_vla/attention_model_v1.py",
+      "sha256": "1b6cef3d76f520629109c6e462ea887663d53913fb49d1bb366aacef0a7766af"
+    },
+    {
+      "path": "research/mini_vla/check_fixed_lora_flow_online_v1.py",
+      "sha256": "5a00615fe07cbb96ca6fcf15ee3725b03c256adcc7af9f714979f9cdc7be3358"
+    },
+    {
+      "path": "research/mini_vla/check_flow_depth2_metadata_v1.py",
+      "sha256": "751ed5fc1e15b6c2f1e90c9e492719574e3fe25e2581a4335c914d63d0d224f0"
+    },
+    {
+      "path": "research/mini_vla/check_flow_depth2_online_v1.py",
+      "sha256": "eaa8fcb9d500ee59049f1477279417e36056dbbdb405068d31a858215af1d1e6"
+    },
+    {
+      "path": "research/mini_vla/check_flow_noise_control_v1.py",
+      "sha256": "26a9e374819fd89a7565791e87b2c99497c46d38e8bcf4ecb86e8b50769d84e1"
+    },
+    {
+      "path": "research/mini_vla/check_flow_time_film_metadata_v1.py",
+      "sha256": "a921b9e97d724fcb39d0cfe964c93b1f00ca7bab7ebb604337551ce8f155e4af"
+    },
+    {
+      "path": "research/mini_vla/check_flow_time_film_online_v1.py",
+      "sha256": "be9b44882bdcdb18fff46911e538ed66a742ce53a1509a2b4c95ea3f764b39b0"
+    },
+    {
+      "path": "research/mini_vla/check_m8_online_v1.py",
+      "sha256": "acd7ab2567942e777c4b9423c7417ecfef9a6fd983664d549823d42df834cbf4"
+    },
+    {
+      "path": "research/mini_vla/check_m9_online_v1.py",
+      "sha256": "5cbe564d2ff00484c799e847d4e188c62f63f9909a9a2392713a0eaa9e3fe7bd"
+    },
+    {
+      "path": "research/mini_vla/chunk_model_v1.py",
+      "sha256": "f893786eb35df6e514687c3eb518244870356192cadb37bee68e0f0580b6ae58"
+    },
+    {
+      "path": "research/mini_vla/data.py",
+      "sha256": "78854966383cdb986c0232c9710d6d350a77e9e82ef0e0b3cf83ddaa043a9a30"
+    },
+    {
+      "path": "research/mini_vla/eval_m6_fast50_v1.py",
+      "sha256": "13ead58bb965e11bcdf379d7babc04ba4ccfcb7933706beb3d74174ee83be525"
+    },
+    {
+      "path": "research/mini_vla/evaluation_standard_v1.py",
+      "sha256": "87906ebc75bf86c0f110e858e17eefad809ad9d8752b17e3975c66f9aa2a9bbb"
+    },
+    {
+      "path": "research/mini_vla/experiment_m2_v1.py",
+      "sha256": "75bac34238a7b4ab6b4643bffe990748724f9377e7abeda89dda7ceb92997d1d"
+    },
+    {
+      "path": "research/mini_vla/experiment_m3_v1.py",
+      "sha256": "8f260a4ab73a2c3c2011d4cbdc884daf66ce6e3b2678a1c6964b4882ff31972a"
+    },
+    {
+      "path": "research/mini_vla/experiment_m4_v1.py",
+      "sha256": "24b5d5b9e3a4fbf8e0189da9d603aa6906e667151e75017be0509a2b23b35fc8"
+    },
+    {
+      "path": "research/mini_vla/experiment_m7a_v1.py",
+      "sha256": "b03ca2247868e6a1ae8d2ec8ddd001739b62c0e0786eaa4372fe87155d555935"
+    },
+    {
+      "path": "research/mini_vla/experiment_v1.py",
+      "sha256": "48221e4605f43ba945e1e656b10807e2d579bfa19582fa05f2b1982fd4e00307"
+    },
+    {
+      "path": "research/mini_vla/final_analyze_v1.py",
+      "sha256": "8385333bf34190aaf85adf283c9aa5bcbb46b4f67d89c335b19f2f10bccd56ce"
+    },
+    {
+      "path": "research/mini_vla/final_episode_v1.py",
+      "sha256": "bbf562e7007bf748623aaba981080ac90cdcba79c2605e57cc39051cdf9ea615"
+    },
+    {
+      "path": "research/mini_vla/final_episode_v2.py",
+      "sha256": "62900da1dad59a1965cb5ea6c9cf0a57eab2f8d9044d842b9b7afbbc18db3558"
+    },
+    {
+      "path": "research/mini_vla/final_pipeline_v1.py",
+      "sha256": "5c2bf3ef004ec2d4bd85091f8617eeb2ad37f532b27707c56f4f25d14a028e49"
+    },
+    {
+      "path": "research/mini_vla/final_pipeline_v2.py",
+      "sha256": "dfade5092dce6695a54ba1a34416df2eadd36dbf327336c5772c64538a048261"
+    },
+    {
+      "path": "research/mini_vla/final_policy_v1.py",
+      "sha256": "b8095032ff5ffe84f287f4947aee705e07e3291d1f3f0a1374c68c93a4210155"
+    },
+    {
+      "path": "research/mini_vla/final_preflight_v1.py",
+      "sha256": "eec3310a76a9838e84e719e3b63ad752d7fa328a4f7b6d1f7495918cde901626"
+    },
+    {
+      "path": "research/mini_vla/final_preflight_v2.py",
+      "sha256": "8b3f3bb6ff81147cb5480b8b10f62580a8855e4fd2bea92399c8b524acf3ae31"
+    },
+    {
+      "path": "research/mini_vla/final_probe_client_v1.py",
+      "sha256": "6512a3b76d65972cfe40eb59d7d77a5bc79b01575ae211c40de8bacb00f2db86"
+    },
+    {
+      "path": "research/mini_vla/final_resume_io_v1.py",
+      "sha256": "d132b9135c02b54099c77c406e04ad52ca36de1d60eac49a59c7d590f3d3ef38"
+    },
+    {
+      "path": "research/mini_vla/final_suite_client_v1.py",
+      "sha256": "14f03ff91f2caefb038df20701e977de9b61601d8a507fa1cc62855111a2ac1b"
+    },
+    {
+      "path": "research/mini_vla/final_suite_client_v2.py",
+      "sha256": "a239aa291013e971e01a2244233817b8628c04bdf7cdb6d39288ca9da9fa2ee1"
+    },
+    {
+      "path": "research/mini_vla/flow_depth2_metadata_v1.py",
+      "sha256": "a1e23251494d576458eb7f53142d1a93aac53b34031922594ff0cc2509fac678"
+    },
+    {
+      "path": "research/mini_vla/flow_depth2_v1.py",
+      "sha256": "834249b933f39e4035afbd2fbf47f3273e4db9b88f8ff1f3261df2734e30a048"
+    },
+    {
+      "path": "research/mini_vla/flow_feature_worker_v1.py",
+      "sha256": "8a72de0d86d49915645dd1033ec50cceb1fc9b073d9b159d8f7b21f5899d322f"
+    },
+    {
+      "path": "research/mini_vla/flow_parallel_extract_v1.py",
+      "sha256": "951ec300a69d7b634e0dbc206c3e9014711ff8faac61149e51281f85f959a6bd"
+    },
+    {
+      "path": "research/mini_vla/flow_tail_consistent_v1.py",
+      "sha256": "cf84fd757b447f798c22226127c2488964b9ecf1760ad5478315600b44c2bf8d"
+    },
+    {
+      "path": "research/mini_vla/flow_time_film_metadata_v1.py",
+      "sha256": "000da3fd7d6c1b149322ad04fcf9b0c954f2870e63c4104be8c981f39481d5f4"
+    },
+    {
+      "path": "research/mini_vla/flow_time_film_v1.py",
+      "sha256": "2d0f4a20089889f00447c5f916bea6e7947e76a2a8e29c280454c0ef3c8db2af"
+    },
+    {
+      "path": "research/mini_vla/libero_eval_fixed_lora_flow_v1.py",
+      "sha256": "850f8cb8d3bd623c9570b62788c63ef3b68dff931d2412575bc1a944fbfb2a35"
+    },
+    {
+      "path": "research/mini_vla/libero_eval_flow_depth2_parallel_v1.py",
+      "sha256": "252698e2c439743beb05f927b5b3236b18791f6fd1010552ce224b94a2999945"
+    },
+    {
+      "path": "research/mini_vla/libero_eval_flow_noise_control_v1.py",
+      "sha256": "fd3bb71d9b14694cc1548a306bb0ca8b5a5a8f64279b0992df30ce5e9fb4886a"
+    },
+    {
+      "path": "research/mini_vla/libero_eval_flow_tail_parallel_v1.py",
+      "sha256": "603859ae63431a7bdc210b609e6dd535ce4571160837829bce62161f5872a9aa"
+    },
+    {
+      "path": "research/mini_vla/libero_eval_flow_time_film_parallel_v1.py",
+      "sha256": "63f4c27c87fe42dfdbe2cdb756c2310966def54ddc571110edc8f12fa31b8bf1"
+    },
+    {
+      "path": "research/mini_vla/libero_eval_m2_v1.py",
+      "sha256": "b0a858fc13c84dc9234f5cd72743659d3efac3dfd3f89144e50e312d0f028d0e"
+    },
+    {
+      "path": "research/mini_vla/libero_eval_m8_v1.py",
+      "sha256": "90c6a488548ee6477485468999fec666068b2f9eec1860832c0e8d939213a3ca"
+    },
+    {
+      "path": "research/mini_vla/libero_eval_m9_v1.py",
+      "sha256": "53776d99475135ad680d27104db50647d47ac8ad5ce9fe66080151add3263220"
+    },
+    {
+      "path": "research/mini_vla/libero_eval_paired_v1.py",
+      "sha256": "26fd6dc722494539f5fa49e88d10257857742c915a3d70f1e1a660136c852522"
+    },
+    {
+      "path": "research/mini_vla/libero_eval_regression_panel_v1.py",
+      "sha256": "f6923e15204f9376897b2be263a6722ef143e0dc742bd256e17aff0918be6dd2"
+    },
+    {
+      "path": "research/mini_vla/libero_eval_regression_panel_v2.py",
+      "sha256": "edf9c76800ebe617a266be25f6776d5116c10db52d0b6a84790bc09dc2b0fb6f"
+    },
+    {
+      "path": "research/mini_vla/libero_eval_v1.py",
+      "sha256": "9347d00662df28f714561f5d243572df89de0625dd58e0936ea1025d5bd28032"
+    },
+    {
+      "path": "research/mini_vla/model.py",
+      "sha256": "ad427864acd56401f98f7acf6cace5e3dcea2bed37c099078eada7dafa0ef204"
+    },
+    {
+      "path": "research/mini_vla/paired_continuation_v1.py",
+      "sha256": "3661b09ffa8ccceb7763560a7dc84152ceb7b1f5fd230dc18ad66730e760e1b5"
+    },
+    {
+      "path": "research/mini_vla/paired_eval_journal_v1.py",
+      "sha256": "23e1b556813f3946698bc8a40befa751ce14c23c394f9a77f4c0048581a678dd"
+    },
+    {
+      "path": "research/mini_vla/parallel_flow_depth2_eval_worker_v1.py",
+      "sha256": "bf1bf01c02d1485beca029ee3889d325b297906ce8a1101ddd00ad905bd70493"
+    },
+    {
+      "path": "research/mini_vla/parallel_flow_depth2_eval_worker_v2.py",
+      "sha256": "1ca8deb270c0b01db2452876740461dfba4e44f41a580db809e632cf6bc09beb"
+    },
+    {
+      "path": "research/mini_vla/parallel_flow_eval_worker_v1.py",
+      "sha256": "e3c8f41d9f7a586f98d956bc8d9e6f9cb7ed7fa677fef0f882e743eb405b0d7f"
+    },
+    {
+      "path": "research/mini_vla/parallel_flow_time_film_eval_worker_v1.py",
+      "sha256": "66a0d18e5e57adabff46f94e6c1c8130b7f3c655e9dcf29f8b0293ef2f9bb569"
+    },
+    {
+      "path": "research/mini_vla/parallel_regression_panel_worker_v1.py",
+      "sha256": "54d54c6be625b16d88c5f2506e36977be57c9f70f74bd2f5d1fa064a5b8768cb"
+    },
+    {
+      "path": "research/mini_vla/parallel_regression_panel_worker_v2.py",
+      "sha256": "8d16a80f50f78e18d500eab688b567425933d02da5c2bea5b4103caa87194829"
+    },
+    {
+      "path": "research/mini_vla/pi05_compact_state_v1.py",
+      "sha256": "5709fe2090d23c7e2040901a6a9216d07632c169e2a9ac90dfde0d544b9a5009"
+    },
+    {
+      "path": "research/mini_vla/pi05_compact_state_v2.py",
+      "sha256": "e20024bd30fe46f87730bbf93809d3e3e8075eff6d753415656376fb0a88d054"
+    },
+    {
+      "path": "research/mini_vla/pi05_exit_probe_v1.py",
+      "sha256": "37054cf1d080c138e8f191a9682453d665ff6d246a31c43f9f8080f9a5f8a331"
+    },
+    {
+      "path": "research/mini_vla/pi05_formal_io_v1.py",
+      "sha256": "1b5ea3c558626ed292d90f4202c73601cb90389e36039069cab4ea81e403874f"
+    },
+    {
+      "path": "research/mini_vla/pi05_formal_pipeline_v1.py",
+      "sha256": "97b1a81ff7bbd131b429ce052872a0562abc58bd0913dcf118beed74d16f3d01"
+    },
+    {
+      "path": "research/mini_vla/pi05_formal_pipeline_v2.py",
+      "sha256": "e9b390261b1bb4a40bdc19f9d4a16724eb4e2a3da779b3b5074b9cdd0244005f"
+    },
+    {
+      "path": "research/mini_vla/pi05_formal_pipeline_v3.py",
+      "sha256": "8396e48d5a20b611d22af20e13af34311057e7b1d1b975434f0cea7aa20acc0e"
+    },
+    {
+      "path": "research/mini_vla/pi05_formal_pipeline_v4.py",
+      "sha256": "5e8f09847cd7dc58a74da91dea07bca60baf4ebb7278668c178892e15eafd0f5"
+    },
+    {
+      "path": "research/mini_vla/pi05_formal_worker_v1.py",
+      "sha256": "8ccdc781f8d4dc48ebbac19c2f6fb04859e794b138ba0107fe96054c9e7fec57"
+    },
+    {
+      "path": "research/mini_vla/pi05_formal_worker_v2.py",
+      "sha256": "7f25894aa3966a4b832067df43fb1e29b418c0b28c313908d09fd60d08d64074"
+    },
+    {
+      "path": "research/mini_vla/pi05_formal_worker_v3.py",
+      "sha256": "b9c7f01bbae31787bbf079c03d43f4709eb785ad4371720850c888e88481174f"
+    },
+    {
+      "path": "research/mini_vla/pi05_four_suite_v1.py",
+      "sha256": "acb0b8d6c34e5639f4fd1262d888b306fe4a132ce0f194b823173a8ab94611ad"
+    },
+    {
+      "path": "research/mini_vla/pi05_full_data_v1.py",
+      "sha256": "24e8479c988c1cae9a0bd3e75e7fe69293869352eae28f3675ba2ea92f98ed32"
+    },
+    {
+      "path": "research/mini_vla/pi05_generation_probe_v1.py",
+      "sha256": "e98738f314849efbb2ca93f02e076d7d3b6ff48a23ecf0b8468bd1de257aa31b"
+    },
+    {
+      "path": "research/mini_vla/pi05_numa_admission_v1.py",
+      "sha256": "f4aa9f0ed3f4d5e6cde563693cf29ccbf494839bc4085291e39a5aa022c7688a"
+    },
+    {
+      "path": "research/mini_vla/pi05_numa_admission_v2.py",
+      "sha256": "0a8dc2f78166d85c807e605fe25c3f22da7a39cb628daa2de9c3bb7424df9618"
+    },
+    {
+      "path": "research/mini_vla/pi05_numa_admission_v3.py",
+      "sha256": "5470ee54974963446017fdc30c9226e3ab656df0f49ef9669da8f29cb56e70da"
+    },
+    {
+      "path": "research/mini_vla/pi05_preflight_pipeline_v1.py",
+      "sha256": "1a4975152d4f4fbcfed9827cfcdc189a851a785e0a9d975d81280bb416b880f5"
+    },
+    {
+      "path": "research/mini_vla/pi05_preflight_pipeline_v2.py",
+      "sha256": "da78120aa45c606a2e865d62fc0149024308dd64be15194bafd040b2e0dd60e3"
+    },
+    {
+      "path": "research/mini_vla/pi05_preflight_worker_v1.py",
+      "sha256": "0c22eb71d6fd49e76505e166058747d273db54db719bc2b80fb08cc198d43926"
+    },
+    {
+      "path": "research/mini_vla/pipeline_fixed_lora_flow_dev50_v1.py",
+      "sha256": "3c904d4149167da6f1072d3e0634d9258e15426980cb6d980314d4cfe4cc3cac"
+    },
+    {
+      "path": "research/mini_vla/pipeline_flow_depth2_parallel_dev50_v1.py",
+      "sha256": "b9ea21ec6ab2494ad0556db8338eff740f2418d8528e2b493d4a226e3c4feb11"
+    },
+    {
+      "path": "research/mini_vla/pipeline_flow_depth2_parallel_dev50_v2.py",
+      "sha256": "820dca3781fb5a4704cd65803640870259508ab2da1796e9f77890c7a610b856"
+    },
+    {
+      "path": "research/mini_vla/pipeline_flow_noise_control_v1.py",
+      "sha256": "7878fd4739051992b1f2455215036e8e1242fdbf4868c7ee5e41a5f833bdcab7"
+    },
+    {
+      "path": "research/mini_vla/pipeline_flow_tail_parallel_dev50_v1.py",
+      "sha256": "9f262f84e48059d95ffe14dc6158f80e622070da5b7ef6f022b9be5e6cc476bd"
+    },
+    {
+      "path": "research/mini_vla/pipeline_flow_time_film_parallel_dev50_v1.py",
+      "sha256": "1aa49e308f94e288eae4d4c5e253c722d8b806ec82d17f56c39fdd269fa66f96"
+    },
+    {
+      "path": "research/mini_vla/pipeline_m2_v1.py",
+      "sha256": "b0c1e7bf294ecaeaf0b6409128f9bec164aadac08f14fc5ea944bc87e986fd7b"
+    },
+    {
+      "path": "research/mini_vla/pipeline_m3_resume_v1.py",
+      "sha256": "5f11b1f5935afca7b0b4fca0fdb6f51f4febd15a7fa75660dc598ee90a611619"
+    },
+    {
+      "path": "research/mini_vla/pipeline_m3_v1.py",
+      "sha256": "c649589716e5c68bcd87c143758b115476c7d9325f25bd96367b1a970ab4d0cf"
+    },
+    {
+      "path": "research/mini_vla/pipeline_m4_v1.py",
+      "sha256": "556a92681252b8fa5ef3aaf411b747872726fbfda6a4409696bda164c537ffd6"
+    },
+    {
+      "path": "research/mini_vla/pipeline_m4_v2.py",
+      "sha256": "15571ee4ee7306e8c3aa15058799ccba615c389286b2b528802ad2d8212c02b1"
+    },
+    {
+      "path": "research/mini_vla/pipeline_m7a_v1.py",
+      "sha256": "bc72881ada9adbfa91911ed6dc0e6b03e0b331024ede01f842e6dc8cf73e5c02"
+    },
+    {
+      "path": "research/mini_vla/pipeline_m8_dev50_v1.py",
+      "sha256": "c4def0a7e5bf3a49bdd229f5ac3833148705fea4c93aa5ed7abf50f58317a354"
+    },
+    {
+      "path": "research/mini_vla/pipeline_m9_dev50_v1.py",
+      "sha256": "cbbe1269edc0870f8d11037a67677133c7fd562a442912357f55c2d89a5473ef"
+    },
+    {
+      "path": "research/mini_vla/pipeline_paired_dev50_v1.py",
+      "sha256": "bac8390c45ec5210fa03d2bb3f65d38ea3f3bbde37e33a68cce7493ab15631f6"
+    },
+    {
+      "path": "research/mini_vla/pipeline_paired_dev50_v2.py",
+      "sha256": "071934ad6566c6deadcb4b5b10639ad81293c676775d5349583acf1dbe07aa1d"
+    },
+    {
+      "path": "research/mini_vla/pipeline_regression_panel_v1.py",
+      "sha256": "346012daf9e8f25cfa2360fff2a77d5ad3d10168498d8c1cb516bd356a0f4f85"
+    },
+    {
+      "path": "research/mini_vla/pipeline_regression_panel_v2.py",
+      "sha256": "a7752e0f0917674193e9d34c2b0a65767d6ab7541c8b511dec718e35dc79b974"
+    },
+    {
+      "path": "research/mini_vla/pipeline_v1.py",
+      "sha256": "2f3f302fe9f1cdcc0247dbd535ae4a82f3ec2f2642c8e229b088474d123b33ca"
+    },
+    {
+      "path": "research/mini_vla/policy.py",
+      "sha256": "2406ec414c729b934d3f106049fa674fd6f825bf03e2fa6d6150ee05ae05034c"
+    },
+    {
+      "path": "research/mini_vla/policy_fixed_lora_flow_v1.py",
+      "sha256": "c3cb26c4049ae0903aa5c83ec5c34e78e6f75080ca1c149dae6e44f38323cd41"
+    },
+    {
+      "path": "research/mini_vla/policy_flow_depth2_v1.py",
+      "sha256": "0e2e6fb040397a59412b50c2054bef4a5d0832ca825eb8b742320d7358ade2aa"
+    },
+    {
+      "path": "research/mini_vla/policy_flow_noise_control_v1.py",
+      "sha256": "7413a5216d67543eb1fd97aa24ce19187c0ed6c2324926f9f29afdaf52ef2da0"
+    },
+    {
+      "path": "research/mini_vla/policy_flow_time_film_v1.py",
+      "sha256": "20e11da9bc48a6752ecd800bd891fba0e4285b318d7a5a604311304a0f08becc"
+    },
+    {
+      "path": "research/mini_vla/policy_m8_v1.py",
+      "sha256": "c553e6cf2e2126bf616a6c7bcbd06e74672388cfa2046b40ebd60ef2a8f80a50"
+    },
+    {
+      "path": "research/mini_vla/policy_m9_v1.py",
+      "sha256": "3b369fb37efa16cde99ca0ae9599889e3e5fd15c66d7513c430f4411ea5ff4c0"
+    },
+    {
+      "path": "research/mini_vla/policy_paired_v1.py",
+      "sha256": "f51c6087509aa34cdb41b6bd8f3f6b9306e86ceb945da092b66236891ae8a434"
+    },
+    {
+      "path": "research/mini_vla/policy_regression_panel_v1.py",
+      "sha256": "2a4a105826b2469096ba84e7a4f89f500e13c3ccc885250de800998d1966f4ad"
+    },
+    {
+      "path": "research/mini_vla/preflight_exit_record_v1.py",
+      "sha256": "0c59287404b1d4449ce783a0076948eae39c1063aea2bf7015a0811ee8c41ca8"
+    },
+    {
+      "path": "research/mini_vla/preflight_m4_v1.py",
+      "sha256": "a28ae49fe5547408751322c2d45b423872997f2bde569dfd02e25dff2d425ae0"
+    },
+    {
+      "path": "research/mini_vla/preflight_m6_lora_v1.py",
+      "sha256": "ac2b35411af9a1af19d8dba1defd081537c4e677c14e8d2b382ccf0873bdfba0"
+    },
+    {
+      "path": "research/mini_vla/preflight_m6_training_v1.py",
+      "sha256": "31dd7b89b16d62e1a5545d63e0190cb703557fb5250b7168a052cfe843a1f6db"
+    },
+    {
+      "path": "research/mini_vla/preflight_m7a_v1.py",
+      "sha256": "a19d909537457596d7ad17a82345935d09277eee5bc056e0c2df6186132db6dc"
+    },
+    {
+      "path": "research/mini_vla/preflight_m8_v1.py",
+      "sha256": "a7da7dec00fe5cc828bea9cf434ad9734b8dcd5048eceed6d01f55ec123ed467"
+    },
+    {
+      "path": "research/mini_vla/preflight_m8_v2.py",
+      "sha256": "4833a1703ab434c58805cfc755d306920030bb2e7bcac44e8f2c54cacf31a8b3"
+    },
+    {
+      "path": "research/mini_vla/prepare.py",
+      "sha256": "6bce5770f8b72730a42de3ebc1e91ba5b0d91c775706fe7528bbdc404ba52097"
+    },
+    {
+      "path": "research/mini_vla/prepare_benchmark_standard_v1.py",
+      "sha256": "6c7922f175a2fe3e66a722a0db96b92fa7cc9c2b375cc71c565ff1774eeb55cc"
+    },
+    {
+      "path": "research/mini_vla/prepare_m6_v1.py",
+      "sha256": "92aeef394f7dda2e5e3116284964bb86b89241f99bb41d6378eee67b100ac10f"
+    },
+    {
+      "path": "research/mini_vla/prepare_m6_v2.py",
+      "sha256": "40c6fb06aab685df73001dd0220b35607313da0a1e4c949c1c1138b2315daf02"
+    },
+    {
+      "path": "research/mini_vla/prepare_m6_v3.py",
+      "sha256": "b5c43642a837e74d825aa9f5f9816fbb7c817e45419bcba59679d1bc158a95ac"
+    },
+    {
+      "path": "research/mini_vla/ram_token_data_v1.py",
+      "sha256": "f816d24d84e4b127fa02a371857c8408a6c3a42386c6f04639ea97b5df9bc539"
+    },
+    {
+      "path": "research/mini_vla/regression_depth_pair_v1.py",
+      "sha256": "4ed311504a9b5915166472885076b176f057aca4b9038960f01943daa9f3dbd3"
+    },
+    {
+      "path": "research/mini_vla/regression_panel_contract_v1.py",
+      "sha256": "6e62fa4fe216b6e54604a1881957840fe4d9ad39d7fcd10f64dfa3571f320746"
+    },
+    {
+      "path": "research/mini_vla/regression_panel_journal_v1.py",
+      "sha256": "9676dc9e1e37f24d5cc5cea824e30bc9448f715fd0e354f3ac003f14305ac592"
+    },
+    {
+      "path": "research/mini_vla/review_m1_v1.py",
+      "sha256": "8d8a3181d2f8c60f2b400cf97627be1404d4b6b7b68b58db6e1eca0f6392f641"
+    },
+    {
+      "path": "research/mini_vla/review_m2_v1.py",
+      "sha256": "3e0843455521bc78a026c0475c83d4e9081cdb173a658e44cac803895e7b5ca6"
+    },
+    {
+      "path": "research/mini_vla/smolvlm_lora_v1.py",
+      "sha256": "ee9978d9162b85791c0cccc8015b99b850493611e9cf0244820c20a0e5f490db"
+    },
+    {
+      "path": "research/mini_vla/spatial_tokens_model_v1.py",
+      "sha256": "82291535e6d874cf8dc25b54b79938c11645238888d3f27b1554b57a8d3f5c78"
+    },
+    {
+      "path": "research/mini_vla/tests/__init__.py",
+      "sha256": "f7e95f0cf49c3a090cbcbee255b01cddd66b4071a4d2b441d7ecd12f361c3ec5"
+    },
+    {
+      "path": "research/mini_vla/tests/test_chunk_v1.py",
+      "sha256": "7b51523dc291dee1b9fd0a2dab9119946a83073fab5a21e66062c556a43fa487"
+    },
+    {
+      "path": "research/mini_vla/tests/test_contract.py",
+      "sha256": "5cd79462c7127e152591440e65e3a61bbba427b8306ce1b26b621e6cce233d25"
+    },
+    {
+      "path": "research/mini_vla/tests/test_evaluation_standard_v1.py",
+      "sha256": "d1a8633617ee9a64f69ebbbf1533815f9dc7aab5f939cc41a18acc41cecddfe9"
+    },
+    {
+      "path": "research/mini_vla/tests/test_experiment_v1.py",
+      "sha256": "8a60a578fcd0e50646bb240e6642c6b14f5790e18cf3730a0427c9db443a43d3"
+    },
+    {
+      "path": "research/mini_vla/tests/test_visual_v1.py",
+      "sha256": "8c97ea888c8991a3bd19ed9f57a285924359cb0595f813ae322275693bd9c113"
+    },
+    {
+      "path": "research/mini_vla/train_adapted_flow_ram_v1.py",
+      "sha256": "8cb243a2a969b2e59f8f5acf130c8d225a54fa1eb1a6f2eecbef1a6912f37b5f"
+    },
+    {
+      "path": "research/mini_vla/train_flow_depth2_parallel_v1.py",
+      "sha256": "e1c0389c61d056b6dbcbe829958e0c70df1b5acd97ff3d15fba1796c310fd4e8"
+    },
+    {
+      "path": "research/mini_vla/train_flow_depth2_ram_v1.py",
+      "sha256": "3eb74c027a041c448292ed0f0ecb1c5e98669901de27c523475835f4358739e8"
+    },
+    {
+      "path": "research/mini_vla/train_flow_tail_consistent_ram_v1.py",
+      "sha256": "4532644b90ab85238da44c600e366bd687c4e6930a94267aee687edd2686997e"
+    },
+    {
+      "path": "research/mini_vla/train_flow_tail_parallel_v1.py",
+      "sha256": "9f713d4255b52e481b62aba6d8c0877c5b1d8f7b295e9be50b90d281d701189a"
+    },
+    {
+      "path": "research/mini_vla/train_flow_time_film_parallel_v1.py",
+      "sha256": "5fc50e1e87d225fe9e0aa26c61c70b1c8f1e207fd3294cd1a5bf3712134ce6bb"
+    },
+    {
+      "path": "research/mini_vla/train_flow_time_film_ram_v1.py",
+      "sha256": "0e40b08cb59c39a2d3dc31207b987e67be41e70b55f5f0cf92498f89cbe4bc22"
+    },
+    {
+      "path": "research/mini_vla/train_m6_pipeline_v1.py",
+      "sha256": "0eb18a00f08fe4d73e8a9ea956db3545a52cc48ef992de0a8a8ab863a6e1521f"
+    },
+    {
+      "path": "research/mini_vla/train_regression_depth_pair_v1.py",
+      "sha256": "aff372647021bc3cfb9eeac461fb0a464956a8ac1ad13739620ce01f851b33cf"
+    },
+    {
+      "path": "research/mini_vla/train_regression_depth_pair_v2.py",
+      "sha256": "e1cd9392c30f3f7f1a1b1bca0995aaad0b13f2eb7b62d8cdcd9613eadefc199e"
+    },
+    {
+      "path": "research/mini_vla/train_vlm_flow_v1.py",
+      "sha256": "d7b188eb1c35f727ad25e1ac1fb2ee5b7f619c5d22237a9f32a33b2aa3e72600"
+    },
+    {
+      "path": "research/mini_vla/train_vlm_head_v1.py",
+      "sha256": "6b48f0d218cc6e76bf17f373a2c07f801d27700eb99634c8745dd45b3432f4e0"
+    },
+    {
+      "path": "research/mini_vla/verify.py",
+      "sha256": "fba72c87b62c4f4c11a2091b0f6b0a71c8878eb1ae87f72fafb9a35368711e59"
+    },
+    {
+      "path": "research/mini_vla/visual_model_v1.py",
+      "sha256": "e4fda8e829a160e05ce5ff2529938070391551e7cd21efeafa8b1b1e30714191"
+    },
+    {
+      "path": "research/mini_vla/visual_preflight_v1.py",
+      "sha256": "b08a6979a32964e97cd5891b17bdb7005dc4ae884fe5e3679769aa2e73ff07e4"
+    },
+    {
+      "path": "research/mini_vla/vlm_action_heads_v1.py",
+      "sha256": "37b9e1817ed9d674d9bed7d8592825bdbe3c553b5c9dbc3b4ea46a9fb2b45078"
+    },
+    {
+      "path": "research/mini_vla/vlm_cache_v1.py",
+      "sha256": "a49548111b23643e190ac8c096dda69209f1f8106e9f4d95b49ce36ec8f63e0b"
+    },
+    {
+      "path": "research/mini_vla/vlm_cache_v2.py",
+      "sha256": "1a4e32a5204c1bbbe58edbcb1a90a804c19b470fca511f54d9880f097660bea4"
+    },
+    {
+      "path": "research/mini_vla/vlm_cached_data_v1.py",
+      "sha256": "fd297752528458980314d20ea02a37876ee74e29f4cd9bb088ebebbdcd00a5c1"
+    },
+    {
+      "path": "research/mini_vla/vlm_cached_data_v2.py",
+      "sha256": "3f2bca0a908d79fa26e506e0726515b35b8b12eacdcbcc0a8902b2eecf4a41e4"
+    },
+    {
+      "path": "research/mini_vla/vlm_frontend_v1.py",
+      "sha256": "77bdd8e809f7fa7be902f01e64361de73a1e2c1c3555d81e7c936bc2212994c6"
+    },
+    {
+      "path": "research/reports/FORMAL_TRAINING_REPORT.md",
+      "sha256": "b826741e3e6a0133d2be4ee3b1226730fd8b7387079674c4c4d644de6191e128"
+    },
+    {
+      "path": "research/reports/MINI_VLA_COURSE_M1_M9.md",
+      "sha256": "0be4fed0d3c8b7515931b3ce511cb0651edce4dbd693cfcaa5ca3e448a8cc27d"
+    },
+    {
+      "path": "research/reports/MINI_VLA_COURSE_M1_M9_CURRENT.md",
+      "sha256": "70ea7af9a8e39e9c5655985b0dd1675f97f89f7311647d059026e528da701508"
+    },
+    {
+      "path": "research/reports/MINI_VLA_FLOW_IMPROVEMENT_CLOSEOUT_20261104.md",
+      "sha256": "420d5720641d5c4dfa0d67ef84b0a79c535e4efd0c844834cb2bf96bd9e401d5"
+    },
+    {
+      "path": "research/reports/MINI_VLA_LESSON_01.md",
+      "sha256": "ab08f55c5cda14ace63ac9f12aa373634bac6df8bace67650c079e547b778c72"
+    },
+    {
+      "path": "research/reports/MINI_VLA_LESSON_02.md",
+      "sha256": "1feb53c01f38bdf90d06315429f5971968a27c8471670e60ab27b9e8f6749b7b"
+    },
+    {
+      "path": "research/reports/MINI_VLA_LESSON_02_EXAMPLE.json",
+      "sha256": "291c7cbb436ade78aac5771808ab5817ec1fb2c194395ca15c3586db7529fd8a"
+    },
+    {
+      "path": "research/reports/MINI_VLA_LESSON_03.md",
+      "sha256": "75ed3948f28a53cc401c554b7483b02498e8f956eb861e45a83cfceeca56f9ae"
+    },
+    {
+      "path": "research/reports/MINI_VLA_LESSON_03_EVIDENCE.json",
+      "sha256": "a830108a6c9d87b542a124bb90330eb6326ba1b043f6b378756b7a80eaa0fdb2"
+    },
+    {
+      "path": "research/reports/MINI_VLA_LESSON_04.md",
+      "sha256": "e08645c053f5a937e1a3ac196ff901c7a1155a6e00a4f57e41cb1a2a03dfeca0"
+    },
+    {
+      "path": "research/reports/MINI_VLA_LESSON_04_EVIDENCE.json",
+      "sha256": "64804feace6ea41019b7bd39745a735abe44a82b9f5f9a6b1d61bd6e9c98cdbe"
+    },
+    {
+      "path": "research/reports/MINI_VLA_LESSON_05.md",
+      "sha256": "0d714b8fb28ab31a5d91ab9c3c9e871d234e8dd9ed7446ffffad657e1965e9d0"
+    },
+    {
+      "path": "research/reports/MINI_VLA_LESSON_05_EVIDENCE.json",
+      "sha256": "71b5d1f23c8008119b0840ff9dc506ab437ed8b35264348e5da27c55adf30cc7"
+    },
+    {
+      "path": "research/reports/MINI_VLA_LESSON_06.md",
+      "sha256": "63b8e3778a3c459e34946c9a8d11438c31c369fc7207381fc96fed5abba22f73"
+    },
+    {
+      "path": "research/reports/MINI_VLA_LESSON_06_EVIDENCE.json",
+      "sha256": "5e98a1cba85a27b56419339f7e9b03f4e115a3e92b884fe496fc0731266069b7"
+    },
+    {
+      "path": "research/reports/MINI_VLA_LESSON_07.md",
+      "sha256": "efc1ef8660d81c573bf8695a05b8ae37515b451d0ed1623bd5bd6462023aab8b"
+    },
+    {
+      "path": "research/reports/MINI_VLA_LESSON_07_EVIDENCE.json",
+      "sha256": "8778cc9d013a18327a2dad5fbe7bb65797acc86e9235e8c1102f8b0210b81664"
+    },
+    {
+      "path": "research/reports/MINI_VLA_LESSON_08.md",
+      "sha256": "de0932e66c37ada954f0c909fb832351c59453aea81dab8a5ff47a082bd3a92f"
+    },
+    {
+      "path": "research/reports/MINI_VLA_LESSON_08_EVIDENCE.json",
+      "sha256": "21b611dbd5f8b77a81fc476363b45ecb62693c253e2a067e38e15090440dd88f"
+    },
+    {
+      "path": "research/reports/MINI_VLA_LESSON_09.md",
+      "sha256": "0f05dd8e31b55499992576d052583059ec7b145654046e60f4219438138fdbbb"
+    },
+    {
+      "path": "research/reports/MINI_VLA_LESSON_09_EVIDENCE.json",
+      "sha256": "332ba58d607b28b95e663100490f6b3fac15420646f57c025ed20f5e039e30b7"
+    },
+    {
+      "path": "research/reports/MINI_VLA_M2_PROTOCOL_20261019.md",
+      "sha256": "8eed807a5edd735f619487af7aa0846c320d36677b7610c7dec37e16ff0064a4"
+    },
+    {
+      "path": "research/reports/MINI_VLA_NUMBERING_20261023.md",
+      "sha256": "627b078e1ba4513704665abda281d38a3b77e4d9e17f302a2fc9a15fa1f49150"
+    },
+    {
+      "path": "research/reports/MINI_VLA_PERFORMANCE_SUMMARY.md",
+      "sha256": "733fe6ac48c98bf9655de200573bc0d0f9a473ce5d3be84fa1c8eb3af5039707"
+    },
+    {
+      "path": "research/reports/MINI_VLA_PPT_M1_M8_PERFORMANCE.md",
+      "sha256": "86771bbd01768b4b8c2ed4a08641310ae5596ed7ece1187d96cfd1b54ec69aac"
+    },
+    {
+      "path": "research/reports/MINI_VLA_PPT_NUMBERING_20261024.md",
+      "sha256": "0e324c6f5c3cf854abcdcc4f3ad10b5279eb6824101c95bcd406cbe8f29ae6a4"
+    },
+    {
+      "path": "research/reports/MINI_VLA_SMOL_REGRESSION_DEV200_20261105.md",
+      "sha256": "93f80ddfa6f351d5d9600bf827da8287250829d17c3dddb60a6dd0f627a2337b"
+    },
+    {
+      "path": "research/reports/lesson_assets/flow_lesson08/experiment_review.png",
+      "sha256": "d0290628ff26f8e40e6be1395a7ac1e37fb7a0df1c1b6a96e11ef0b6d05848b9"
+    },
+    {
+      "path": "research/reports/lesson_assets/flow_lesson08/flow_path_example.png",
+      "sha256": "f22155e474aa3ea8296ab52269720abb2800b94d5ce5749841027e83c13147b2"
+    },
+    {
+      "path": "research/reports/lesson_assets/m6_spatial_tokens/experiment_review.png",
+      "sha256": "70cf56c827cbbffc85c22bd9e08156b196774650f2f4784a6ad7cf8611076cac"
+    },
+    {
+      "path": "research/reports/lesson_assets/m7_frozen_vlm/experiment_review.png",
+      "sha256": "f165b27a8301164d14c4f102284b13adcfb6776bda9fe26593f7b5a5a4901960"
+    },
+    {
+      "path": "research/reports/lesson_assets/numbering_20261023/development_history.png",
+      "sha256": "d414dcc7ba3427d20a102a68eca186244ff2d6eed4afd35b73374265cf122f6b"
+    },
+    {
+      "path": "research/reports/lesson_assets/numbering_20261023/final_performance.png",
+      "sha256": "347f918307de870e5c7b53540e41da9a163179b5b75a1f129c2523b11a36762c"
+    },
+    {
+      "path": "research/reports/lesson_assets/numbering_20261023/training_review.png",
+      "sha256": "d2b90297185c06a518588c60d9a76e131a86db5345246445c0a23cc400617b87"
+    },
+    {
+      "path": "research/reports/lesson_assets/ppt_m1_m8_performance_20261027/M1_M8_performance.csv",
+      "sha256": "4aa8ecf73625cffec1e0c57c782855fc6dbc1f069b5259576583735e65a887fd"
+    },
+    {
+      "path": "research/reports/lesson_assets/ppt_m1_m8_performance_20261027/M1_M8_performance.png",
+      "sha256": "d146bb3328a882aca3a65c0b68963c4cafdf864df5007af5a6ca718d13f7cff9"
+    },
+    {
+      "path": "research/reports/lesson_assets/ppt_m1_m8_performance_20261027/M1_M8_performance.svg",
+      "sha256": "fc92e4f01c11a42f240ed6235648d18170abc2fa74f88c79c20794e1c01f166f"
+    },
+    {
+      "path": "research/reports/lesson_assets/ppt_m1_m8_performance_20261027/evidence.json",
+      "sha256": "13a82845b83a98c2df91c756548b8db65e12d0d9b43b03a39f5157d386a3c6a8"
+    },
+    {
+      "path": "research/reports/mini_vla_performance_summary.json",
+      "sha256": "5f2f517c3dc0fcb4e66dc6b35925bfde93f32276c352aeb1bb1a44ed81990e79"
+    },
+    {
+      "path": "research/reports/parameter_audit.json",
+      "sha256": "dfe5692a28f2b6464ab063476992e12ecbc85a505ca697d168bcd1ec4bbcc32e"
+    },
+    {
+      "path": "research/reports/pi05_four_suite_prepare_20261104/norm_stats.json",
+      "sha256": "b8f4b6169e48f7604e4be835b79995c0f840b4611107d5107b55cf309f89be26"
+    },
+    {
+      "path": "research/reports/ppt_assets/MINI_VLA_M4_decoder_horizontal.png",
+      "sha256": "d253f231b448dc278842a63c071dff71fc913ac7ee88b654bff2814459b2ac3b"
+    },
+    {
+      "path": "research/reports/ppt_assets/MINI_VLA_M4_decoder_horizontal.svg",
+      "sha256": "9eeecf79d2c389a248d9d8de3c25eab38957498fa47d0057c3fa6ec2a8662a4d"
+    },
+    {
+      "path": "research/reports/ppt_assets/MINI_VLA_M4_encoder_horizontal.png",
+      "sha256": "0918efd842b706b40200a2422bc5460b273dac22f805c88c35bf90c7add9a763"
+    },
+    {
+      "path": "research/reports/ppt_assets/MINI_VLA_M4_encoder_horizontal.svg",
+      "sha256": "1e06a5413e459dceca50adc4e046aebd9e8472bbf27e7883180f689aeb5f429d"
+    },
+    {
+      "path": "research/reports/ppt_assets/MINI_VLA_M4_transformer_decoder.png",
+      "sha256": "a545efc3ff11735071ce0572b0e49ee836af66934d1f9e30b572232e111dedf2"
+    },
+    {
+      "path": "research/reports/ppt_assets/MINI_VLA_M4_transformer_decoder.svg",
+      "sha256": "61ee5647579d29008364d1fdb7b13c0234a7d30ea9c3064098ab93b305d2180b"
+    },
+    {
+      "path": "research/reports/ppt_assets/MINI_VLA_M4_transformer_encoder.png",
+      "sha256": "41ec45ad2aa11630ba13d9e2b056b5c8162f4ad9fe1d2323d11f8c6f64b388cd"
+    },
+    {
+      "path": "research/reports/ppt_assets/MINI_VLA_M4_transformer_encoder.svg",
+      "sha256": "019c0e8573901f862cd29650e72acaf5a542bc4509595501e442139a414e28ce"
+    },
+    {
+      "path": "research/reports/ppt_assets/MINI_VLA_M7_overall_architecture.png",
+      "sha256": "1788c5d57aa0c439ce6c68c0ba7a307f30f0f2145774c97bef731ccf3e8f0005"
+    },
+    {
+      "path": "research/reports/ppt_assets/MINI_VLA_M7_overall_architecture.svg",
+      "sha256": "19a7ca2ee822344d6aa97079c1c834d3bcde933cdd28a75f83abe05f5fb9c379"
+    },
+    {
+      "path": "research/reports/ppt_assets/MINI_VLA_M7_text_transformer_block.png",
+      "sha256": "bbda8b900249f9aa461f26c17df479d3c376ac6258fb070e04b308ac1a0382d1"
+    },
+    {
+      "path": "research/reports/ppt_assets/MINI_VLA_M7_text_transformer_block.svg",
+      "sha256": "ccdc4dff82dace37cf59b73a036899309b9a6751c6bbfb2ee8158c5deb5c9679"
+    },
+    {
+      "path": "research/reports/ppt_assets/MINI_VLA_M7_text_transformer_overview.png",
+      "sha256": "7a9b9ade4e5a8804869c101e6f31953fa9b18b69b1653a3bad1c142125cb62c8"
+    },
+    {
+      "path": "research/reports/ppt_assets/MINI_VLA_M7_text_transformer_overview.svg",
+      "sha256": "90ccd72cbabbc964a080fa9003a5b5e5ce9cc04619d9707064aa578f15d0dbd7"
+    },
+    {
+      "path": "research/reports/ppt_assets/MINI_VLA_M7_visual_transformer_connector.png",
+      "sha256": "2e232eec018fee8b47d83c40ab45c388cc063107ee24f7afd34028b4d123919b"
+    },
+    {
+      "path": "research/reports/ppt_assets/MINI_VLA_M7_visual_transformer_connector.svg",
+      "sha256": "955532be7ed04e5838f19f0b417479ab77cb3085afb0be7e4c2fe18f095d0626"
+    },
+    {
+      "path": "research/reports/ppt_assets/MINI_VLA_PPT_M7_flow_architecture.png",
+      "sha256": "1a06f10b4dc59dcfe25c73214d4f3d27d6d22e4fff179f564d2d6a0e5a374b58"
+    },
+    {
+      "path": "research/reports/ppt_assets/MINI_VLA_PPT_M7_flow_architecture.svg",
+      "sha256": "b19728a23d047fb9c785ba30acd6eb53b48f92e9596ff2b729a6300c3968426a"
+    },
+    {
+      "path": "research/reports/ppt_assets/MINI_VLA_PPT_M8_action_expert_block.png",
+      "sha256": "6f629f096573dbe63ed406c0c5c140b9818ab801d21699fc67a8927945f35c0b"
+    },
+    {
+      "path": "research/reports/ppt_assets/MINI_VLA_PPT_M8_action_expert_block.svg",
+      "sha256": "9adfef8a7d1eb60d44130637eecef8741417ed7ee431dbb01d9c1614113b5f4d"
+    },
+    {
+      "path": "research/reports/ppt_assets/MINI_VLA_PPT_M8_action_expert_overview.png",
+      "sha256": "395dc174ad1c9f7b7f0d29c01e48378142a136554aa389a2a20155bc6dd98e0f"
+    },
+    {
+      "path": "research/reports/ppt_assets/MINI_VLA_PPT_M8_action_expert_overview.svg",
+      "sha256": "d65ed48cc37c43730b0a2f39de0c76efb4546c8d1d21f09610e0ade19b91bc32"
+    },
+    {
+      "path": "research/reports/ppt_assets/MINI_VLA_PPT_M8_gemma_block.png",
+      "sha256": "19282ae1b037888b8f6e084a9bd2b85a470bbea2d4892d0b8a963d7b6dd49676"
+    },
+    {
+      "path": "research/reports/ppt_assets/MINI_VLA_PPT_M8_gemma_block.svg",
+      "sha256": "2d38ee37e9a08288bd815b9fb128a15c27d820c91205e0ab200b39223c86d58d"
+    },
+    {
+      "path": "research/reports/ppt_assets/MINI_VLA_PPT_M8_gemma_overview.png",
+      "sha256": "620d5be709c296406207314c2e8fad2c91f92db9fd80431840fcbb38a31b3137"
+    },
+    {
+      "path": "research/reports/ppt_assets/MINI_VLA_PPT_M8_gemma_overview.svg",
+      "sha256": "7e26a207c1b5ba1fbdea71034e52562e691be69429061ec2d54512bc4a8f86be"
+    },
+    {
+      "path": "research/reports/ppt_assets/MINI_VLA_PPT_M8_pi05_architecture.png",
+      "sha256": "60b7ef3328139fee16c5d2e489903a5826cbb513fc7b96066713aae8d32b88a0"
+    },
+    {
+      "path": "research/reports/ppt_assets/MINI_VLA_PPT_M8_pi05_architecture.svg",
+      "sha256": "be4434e75da004733b4d6fe4c534941d418058eb451ec9b4d35db2f642a2954d"
+    },
+    {
+      "path": "research/reports/spatial_full_manifest.json",
+      "sha256": "12beff3f050f00a02bdae1e286ade58465396e91bda595056d20abde979d7371"
+    },
+    {
+      "path": "research/results/formal_pipeline_20261013_v2/analysis.json",
+      "sha256": "a36a897589b56bae992eb2d90eb93ce9eedb7513542dcb88fb8741391bd2eec0"
+    },
+    {
+      "path": "research/results/formal_pipeline_20261013_v2/completion_audit.json",
+      "sha256": "5b030044c3090fd6ffe84e00190183a8dc25a993b6d8fb0d71a1abe8a216ad9d"
+    },
+    {
+      "path": "research/results/formal_pipeline_20261013_v2/final_acceptance.json",
+      "sha256": "6bf29ed31a691f649f4da506630a273539065b23bf79c0099d0274ac391fb0b9"
+    },
+    {
+      "path": "research/results/formal_pipeline_20261013_v2/frozen_source/configs/formal_plan_20261013.json",
+      "sha256": "d9797f8951527f195f79425419dc9cb45f8d1f09d35c74c40d1020ad782eb286",
+      "original_sha256": "5e7ad9e0067d8ae22383404191ea73ee526a0360fc6297204f27160ff263ead5",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/results/formal_pipeline_20261013_v2/paired_success.png",
+      "sha256": "f9db412867fcb6a57bab1f5332cbeb82889f619ad017bb74ed78520a6be6a784"
+    },
+    {
+      "path": "research/results/formal_pipeline_20261013_v2/training_loss.png",
+      "sha256": "7f0bf8f7c57c463f3f97e65f40006bd9a6517c1ee92caf0b1a6cae1208cb0722"
+    },
+    {
+      "path": "research/results/formal_spatial_20261013_v1/training_report.json",
+      "sha256": "d0f87f31627469abd254e7dccb5e9446154869b98f6686c838f28983ede45f5c"
+    },
+    {
+      "path": "research/results/mini_vla_final2000_20261021_run3/REVIEWED_REPORT.md",
+      "sha256": "8c80db6c53bf059b74121a7be3e46ab57a0af032c1e87fab31cefbde8a772eb5"
+    },
+    {
+      "path": "research/results/mini_vla_final2000_20261021_run3/analysis.json",
+      "sha256": "196cfd219ca7d0f6b0c3295c2ea704935ceeaf4d61768446fe2dd36773dd5138"
+    },
+    {
+      "path": "research/results/mini_vla_final2000_20261021_run3/review/episodes.csv",
+      "sha256": "d031ae24bad7fb7a818bd3e04edf7324a96ff1eae5b80d353dbba87c1fedfe96"
+    },
+    {
+      "path": "research/results/mini_vla_final2000_20261021_run3/review/final_performance.png",
+      "sha256": "7a26e5dcaae8524a307569ec3e3535daee28659b36e726e4d99b6f0e740fb136"
+    },
+    {
+      "path": "research/results/mini_vla_final2000_20261021_run3/review/independent_acceptance.json",
+      "sha256": "8d44b9b9dbbb8dadb8c131cc60992cf8c7159219a932b7e87126ffb5f7e62241"
+    },
+    {
+      "path": "research/results/mini_vla_final2000_20261021_run3/review/resource_accounting.json",
+      "sha256": "7b31bb26052b7e5761e4ec5ab53704a6f6eeb0bdbff3c7006c2c1df309d2a167"
+    },
+    {
+      "path": "research/results/mini_vla_final2000_20261021_run3/review/video_inventory.json",
+      "sha256": "8d7d82a5e9b7e612d4fdee5782fbb3b3d8cca038eca4a03cab3315603c71f7a2"
+    },
+    {
+      "path": "research/results/mini_vla_m0_20261015_v1/acceptance.json",
+      "sha256": "a5f6a0cccb430204c884ff33f3facee9929e69fce4fb8a69077e3fa1942d1df4"
+    },
+    {
+      "path": "research/results/mini_vla_m0_20261015_v1/example.json",
+      "sha256": "67b7fabfbec3c8846806bbeab2144c40c3a462e8896528090428b5e8e54d8814"
+    },
+    {
+      "path": "research/results/mini_vla_m0_20261015_v1/example_image.png",
+      "sha256": "debae34bcd293bf244cd31e5ddcf300383f09b1921ad4ae6c400fc3aa8ea5a6f"
+    },
+    {
+      "path": "research/results/mini_vla_m0_20261015_v1/example_wrist_image.png",
+      "sha256": "243433a92f2560d2ed27eee4fd060663abd12e4a910b867139fb7a7ab0365868"
+    },
+    {
+      "path": "research/results/mini_vla_m0_20261015_v1/numeric_audit.json",
+      "sha256": "7c4753c7c8dc4126203869702b48b9ca426b22d159333307943942db82ce7f3f"
+    },
+    {
+      "path": "research/results/mini_vla_m0_20261015_v1/preprocessing.json",
+      "sha256": "e23e588d3287f576fe48823cde1073b6840e84f20d9c87df543c6e782ffbfae1"
+    },
+    {
+      "path": "research/results/mini_vla_m1_20261019_run1/review/independent_acceptance.json",
+      "sha256": "2dc1d734731fdae96126a271facee6fe8ba7433bb4764419db45a829276f3157"
+    },
+    {
+      "path": "research/results/mini_vla_m2_20261019_run1/REVIEWED_REPORT.md",
+      "sha256": "f42f7c965f363fb2dae934cfabd47bed617b71e357c947441ecd5623339dccee"
+    },
+    {
+      "path": "research/results/mini_vla_m2_20261019_run1/performance.png",
+      "sha256": "c722e5a8b7447c7569be758526f9789c43bfc4a3d0f83838a7cabc4630c552a1"
+    },
+    {
+      "path": "research/results/mini_vla_m2_20261019_run1/review/independent_acceptance.json",
+      "sha256": "9c67eb43f6dbf0e1f28e53b47c73be7deff53fa5cfe3ec772773d88f591ff74d"
+    },
+    {
+      "path": "research/results/mini_vla_m3_20261019_run3/REVIEWED_REPORT.md",
+      "sha256": "4239cd6b636d36fbbc1ff462f1ec4c6688492924fc4ccda8d67ceea895b49dce"
+    },
+    {
+      "path": "research/results/mini_vla_m3_20261019_run3/reuse_manifest.json",
+      "sha256": "53e33ac49266eb6a5723f46b9d8e9cadd51387f89136e05efa11535ee8681598"
+    },
+    {
+      "path": "research/results/mini_vla_m3_20261019_run3/review/independent_acceptance.json",
+      "sha256": "265ac6a7d4a1a452b07954ec12b41fafc65806c5e9c76d0f556eef20f4b83b63"
+    },
+    {
+      "path": "research/results/mini_vla_m4_20261019_run3/REVIEWED_REPORT.md",
+      "sha256": "ae05c4ffbea029fd802af0cc9c236cddd356a31582defd7c70faef90cea949c7"
+    },
+    {
+      "path": "research/results/mini_vla_m4_20261019_run3/review/independent_acceptance.json",
+      "sha256": "561c02f49614218a81be2e44ae63d962f967669d235960e26b62c6137ccbd6d4"
+    },
+    {
+      "path": "research/results/mini_vla_m6_fast50_20261020_run1/REVIEWED_REPORT.md",
+      "sha256": "06fd66eb255c7e54e2a0d853a0b7be076784053a6058e413dea1255fe49c400c"
+    },
+    {
+      "path": "research/results/mini_vla_m6_fast50_20261020_run1/review/independent_acceptance.json",
+      "sha256": "b7ba0717def9af43e992405912b62071d2d45d0a58a57bf9f8606816ba18a1f8"
+    },
+    {
+      "path": "research/results/mini_vla_m6_paired_20261028_run1/REVIEWED_REPORT.md",
+      "sha256": "84043de2a4ba2e2f22b5bb184349150d4e1b29e593c58dacd145bc3ac71854e8"
+    },
+    {
+      "path": "research/results/mini_vla_m6_paired_dev50_20261029_run3/REVIEWED_REPORT.md",
+      "sha256": "15fbf887e6f8655f86f69c1352f148929912a4fd5c1c15906076a30cfa4da8ce"
+    },
+    {
+      "path": "research/results/mini_vla_m6_paired_dev50_20261029_run3/analysis.json",
+      "sha256": "8b1d7206466a8837eaebcbeed181c09bccdb90e76148391928d83f09f15cd68a"
+    },
+    {
+      "path": "research/results/mini_vla_m6_paired_dev50_20261029_run3/review/frozen_all50_final_frames.png",
+      "sha256": "a65852a1d3e05e90051f9ad0ca4be1792cbec3c65fbdda500cb7b0d293b23a38"
+    },
+    {
+      "path": "research/results/mini_vla_m6_paired_dev50_20261029_run3/review/independent_acceptance.json",
+      "sha256": "ae844176d8ee752f3e7294a55e91588d0da57a373ebbdc07b12638b54e23e707"
+    },
+    {
+      "path": "research/results/mini_vla_m6_paired_dev50_20261029_run3/review/lora_all50_final_frames.png",
+      "sha256": "560d956502ddf21cbcea074ae76c1e9c2bfc38a9000810c9fbe3fea961f5e654"
+    },
+    {
+      "path": "research/results/mini_vla_m6_paired_dev50_20261029_run3/review/paired_cases.csv",
+      "sha256": "bbc4d2bee803f546ba2144fe97168e04f84fa369e56a0d060b81d74ae8935070"
+    },
+    {
+      "path": "research/results/mini_vla_m6_paired_dev50_20261029_run3/review/paired_results.png",
+      "sha256": "489ffe76d3fb1d4b0a833219fa1f0d55943bca07ff7c43f333ce88405dbf8a55"
+    },
+    {
+      "path": "research/results/mini_vla_m6_paired_dev50_20261029_run3/review/paired_results.svg",
+      "sha256": "37d47c66561922abe4eca8b19e7be28a5a7f8e82a2cd895cec9ec898903f096b"
+    },
+    {
+      "path": "research/results/mini_vla_m6_paired_dev50_20261029_run3/review/paired_timeline_task2_init42.png",
+      "sha256": "e70fa936fcadba68216b39291571e783cd87b165e72da7a914e6cee25a173685"
+    },
+    {
+      "path": "research/results/mini_vla_m6_paired_dev50_20261029_run3/review/paired_timeline_task6_init32.png",
+      "sha256": "2e7cadeaa278c4ef15de24e808fe489c8dcd6cf72e23e9d874a5acd5b2dc29a2"
+    },
+    {
+      "path": "research/results/mini_vla_m6_paired_dev50_20261029_run3/review/per_task.csv",
+      "sha256": "cd046bd433697f71f02c967a298b1c307489c8da5f64408864e445d5b7034cfd"
+    },
+    {
+      "path": "research/results/mini_vla_m6_paired_dev50_20261029_run3/simulation_preflight/result.json",
+      "sha256": "2367ebe3a0c71ac3626667ce3047992973c4aae2693ef382b13cc3959f2dd5f8"
+    },
+    {
+      "path": "research/results/mini_vla_m6_regression_dev200_20261105_run2/REVIEWED_REPORT.md",
+      "sha256": "93f80ddfa6f351d5d9600bf827da8287250829d17c3dddb60a6dd0f627a2337b"
+    },
+    {
+      "path": "research/results/mini_vla_m6_regression_dev200_20261105_run2/result.json",
+      "sha256": "b0956f1b4325105fcafe77793e0902f7cb8ce8e2d18e206164d1c9f16ebc9056"
+    },
+    {
+      "path": "research/results/mini_vla_m6_regression_dev200_20261105_run2/review/independent_acceptance.json",
+      "sha256": "5bc1117d30615c71a2e2e10a7cd3db6843a6388d257b5576e17925a518a9bf98"
+    },
+    {
+      "path": "research/results/mini_vla_m6_train_20261020_run1/REVIEWED_REPORT.md",
+      "sha256": "cb44aa5595ea74cee5f29b563346d735c740df1ca75ddb0d28a31dc50192944d"
+    },
+    {
+      "path": "research/results/mini_vla_m6_train_20261020_run1/training/history.json",
+      "sha256": "91948ff90d550c8baade1bbe2b1619930e7cd00c998953ac87dad561ec61129c"
+    },
+    {
+      "path": "research/results/mini_vla_m7_fixed_lora_flow_20261029_run1/REVIEWED_REPORT.md",
+      "sha256": "4f4612f29d92eaf621a1a2cc535137fc63290ba5d84b16635798c65e64dae0c5"
+    },
+    {
+      "path": "research/results/mini_vla_m7_fixed_lora_flow_dev50_20261030_run1/REVIEWED_REPORT.md",
+      "sha256": "cf72afb035f62bc96ce7fde2729d9a698932f7f385df9dcdc0fd0994fb9df7d0"
+    },
+    {
+      "path": "research/results/mini_vla_m7_flow_depth2_dev50_20261104_run2/REVIEWED_REPORT.md",
+      "sha256": "e7bb36544cf01ca51c1b408dec4b6065d4f8399f52bc80e6ec3387a6bc5fd11f"
+    },
+    {
+      "path": "research/results/mini_vla_m7_flow_depth2_train_20261103_run1/REVIEWED_REPORT.md",
+      "sha256": "28390f693e6dc0e9168c060471628891c5db59a4d8cd3267ceb1cede10f079a2"
+    },
+    {
+      "path": "research/results/mini_vla_m7_flow_noise_dev50_20261103_run1/REVIEWED_REPORT.md",
+      "sha256": "820e196d65ed2f7f2967c402ce13dc840b587585d5eecb2160d223420b3f7763"
+    },
+    {
+      "path": "research/results/mini_vla_m7_flow_tail_dev50_20261103_run1/REVIEWED_REPORT.md",
+      "sha256": "988f33889804d3523d55237f3793df5a0e61713ed14d5ece61bb89896c3434a5"
+    },
+    {
+      "path": "research/results/mini_vla_m7_flow_tail_train_20261103_run2/REVIEWED_REPORT.md",
+      "sha256": "5e8de17a67752a49b802c1bca90794598aff90b7f25e24b0f221319210791fad"
+    },
+    {
+      "path": "research/results/mini_vla_m7a_20261020_run1/REVIEWED_REPORT.md",
+      "sha256": "2d3f57305cfb3665cbe4da10370877b338621bc712e78360cba12bae278aa2af"
+    },
+    {
+      "path": "research/results/mini_vla_m7a_20261020_run1/review/independent_acceptance.json",
+      "sha256": "437edc819ce2db9460f6499789ed104947dc1651f2bbc7ddfacc1cf6fffd9c59"
+    },
+    {
+      "path": "research/results/mini_vla_m7a_20261020_run1/review/training_acceptance.json",
+      "sha256": "4148834cd418ceb237aaca674774f50d49c2c3a4a5a2c67f7c6e79038381180d"
+    },
+    {
+      "path": "research/results/mini_vla_m8_dev50_20261021_run1/REVIEWED_REPORT.md",
+      "sha256": "6981e344ff1e4653ba888bda6649a54b323bec5095b0c389f466d1e829b81a97"
+    },
+    {
+      "path": "research/results/mini_vla_m8_dev50_20261021_run1/review/independent_acceptance.json",
+      "sha256": "e62600c563df90fc93437397e004460445177da020120c48bd72c3a1e5718454"
+    },
+    {
+      "path": "research/results/mini_vla_m8_regression_train_20261021_run1/REVIEWED_REPORT.md",
+      "sha256": "ee45f72599e3997e7f1be46ba607f378c734314135cba059d6dc12fe5ecc7243"
+    },
+    {
+      "path": "research/results/mini_vla_m9_dev50_20261021_run1/REVIEWED_REPORT.md",
+      "sha256": "74ee82d489de93cec9830755131cc462127644ec314450cae4754480f69160ef"
+    },
+    {
+      "path": "research/results/mini_vla_m9_dev50_20261021_run1/review/independent_acceptance.json",
+      "sha256": "29774a5c1d40cf3832d7f8a353ed0d41931ac7ee43ed84a7bc1c7e58261be8b7"
+    },
+    {
+      "path": "research/results/mini_vla_m9_flow_train_20261021_run1/review/independent_acceptance.json",
+      "sha256": "f237e8866419a44afade64bd3f07ac758321c2455faad18e7073a8f1c1e60668"
+    },
+    {
+      "path": "research/results/research_diagnosis_20261014_v3/ANALYSIS.json",
+      "sha256": "4a85198bd9b7471607f3fec597ebe90a6636da49d8104222e568345f9e37af91"
+    },
+    {
+      "path": "research/scripts/analyze_flow_depth2_validation_v1.py",
+      "sha256": "2be728a29043b4186bb18fda09579c3bda12e6d2ca45f97a3dc2faec890fe38a"
+    },
+    {
+      "path": "research/scripts/analyze_flow_tail_validation_v1.py",
+      "sha256": "a204207da1b54d39e4bdb56a992628bb276a02cca96d84e4e701be3c793319e5"
+    },
+    {
+      "path": "research/scripts/analyze_flow_time_film_validation_v1.py",
+      "sha256": "1dcba6181f2af15600fff2aa2ef481eb1d033a7c687934fb39ee17e26d1f60ca"
+    },
+    {
+      "path": "research/scripts/analyze_formal_v1.py",
+      "sha256": "486b78291cc4ef94087da6e4dc1f18bfcab14f1e2a11612a7186979fceab7e01"
+    },
+    {
+      "path": "research/scripts/analyze_recovery_branches_v1.py",
+      "sha256": "40e96cd2bf505094d65ea063c0fe8d0e202aa85f46f5136bb1ea0775505331cd"
+    },
+    {
+      "path": "research/scripts/analyze_recovery_branches_v4.py",
+      "sha256": "aad0c6524dfb086a5ebcf63851010e667b2e0dabd084a41a44f83255ba2037c5"
+    },
+    {
+      "path": "research/scripts/analyze_recovery_seed_review_v1.py",
+      "sha256": "bc603c1ecbdfa434339228d0e9328b1f482c1dd251d0995c4a7f88b2abb0c35d"
+    },
+    {
+      "path": "research/scripts/analyze_recovery_spatial_review_v1.py",
+      "sha256": "7f42cfad0cf99ce65e045c726e1a437e8b908356eb83eb27744526c5a2034e10"
+    },
+    {
+      "path": "research/scripts/analyze_regression_pair_training_v1.py",
+      "sha256": "39fd017c22a47a1414d0327484eed3e50bbd5536ba8a09fbb49a2f0550dfad48"
+    },
+    {
+      "path": "research/scripts/analyze_research_diagnosis_v1.py",
+      "sha256": "202d6e958defc7c8e8c604eab7e010bc0465808f162768f7692b53208b6e55fd"
+    },
+    {
+      "path": "research/scripts/artifact_accounting_cpu_checks_v1.py",
+      "sha256": "c8b818c595e5ad133d9f41ba9bcf2b35af99e0867f29b98fb85173fb4ecfa31b"
+    },
+    {
+      "path": "research/scripts/audit_flow_depth2_parallel_followup_v1.py",
+      "sha256": "57d1c42adcf04bfae3d6b399799ef4701ad3195b168face22f36d45deea7c61e"
+    },
+    {
+      "path": "research/scripts/audit_flow_noise_followup_v1.py",
+      "sha256": "bc96c568eb6335dbd12846a2b598dd14e55e428dfdbfd4f1222188d8029f7cb8"
+    },
+    {
+      "path": "research/scripts/audit_flow_tail_parallel_followup_v1.py",
+      "sha256": "ec0e6d66675c84cb9d1c8f07a781577009adbf06eeadf20cb1216fa5b6e2de1d"
+    },
+    {
+      "path": "research/scripts/audit_flow_time_film_parallel_followup_v1.py",
+      "sha256": "f6ca103f57b0a8b40270263a0e7fc5138d29a1e57e4faa1a96be4b062db467f9"
+    },
+    {
+      "path": "research/scripts/audit_m6_lora_preflight_20261028.py",
+      "sha256": "c6aca560d7a1aa2cf8deb3410f376fbc7450651ca5730dac93d1133880072676"
+    },
+    {
+      "path": "research/scripts/audit_modern_cache_partial_v1.py",
+      "sha256": "f4d615488ea1c4511ed06de96ff55988d3a11f7e0fe547d4c7bd207c2102781f"
+    },
+    {
+      "path": "research/scripts/audit_paired_validation_v1.py",
+      "sha256": "d334428e3864c621ed024509b94486d318efd1563eb9c539882de1bc54f0af6d"
+    },
+    {
+      "path": "research/scripts/audit_paired_validation_v2.py",
+      "sha256": "b36913a7a5dbb20c37472f39aabf56d06ccccd5647c39fca8d1fcc3c5db6917c"
+    },
+    {
+      "path": "research/scripts/audit_pi05_vs_mini_flow_20261104.py",
+      "sha256": "bc9031eb492293626a85b225d44ece9b4eb680f46e25804bd28aa34450a05447"
+    },
+    {
+      "path": "research/scripts/base_weight_audit.py",
+      "sha256": "d42f53ae122f1c51286798f503c00a42f6ed4f11475a4ac8aa1d6f007ad625b1"
+    },
+    {
+      "path": "research/scripts/batch_audit.py",
+      "sha256": "3792d15612d1b20059d28766dff4a69b40a5a07620fa2b6d284053a5b54009aa"
+    },
+    {
+      "path": "research/scripts/bootstrap.sh",
+      "sha256": "0397f4dc2b402fb497ef8147db96bfabc236c7e59a60c3e3f1898abec92cde47"
+    },
+    {
+      "path": "research/scripts/build_fixed_lora_flow_review_v1.py",
+      "sha256": "25f062a0b5f301e579644466e6b1519da4f0fbab821438c4a7f03e57bfcb8271"
+    },
+    {
+      "path": "research/scripts/build_paired_dev50_review_v1.py",
+      "sha256": "7bc9c671cf22a5efbf9039ba4dd756acfb09005c229bb6b571022e1520ab0669"
+    },
+    {
+      "path": "research/scripts/build_paired_training_review_v1.py",
+      "sha256": "98475bfc7d1a99127348881fb2bff3982399b8c4db8bd711a750315da32f6dab"
+    },
+    {
+      "path": "research/scripts/check_m6_training_contract_v1.py",
+      "sha256": "5a4daeb71f2ed7ddd88120f25bbca8bc4337183ec786f8cefd642bb996339ccf"
+    },
+    {
+      "path": "research/scripts/check_m7a_training_contract_v1.py",
+      "sha256": "7bb142844dc9c1cfa670bd1a8a33217bab04bb8f65ab56058bb5a63a706c2ea8"
+    },
+    {
+      "path": "research/scripts/check_ram_flow_order_v1.py",
+      "sha256": "709ded338feeff78f50ff93cb4d771ad3cc6f6b53f84009084413470a68f034f"
+    },
+    {
+      "path": "research/scripts/check_recovery_proposal_math_v1.py",
+      "sha256": "2dd2ee0b614537f4868bba3a2f200e1659d4bcd1c8cc223d72531d1f2b050942"
+    },
+    {
+      "path": "research/scripts/check_recovery_seed_stability_plan_v1.py",
+      "sha256": "136f2c72a0c7ff8498a23e873039136f5603530674388339778f9f9fc712195e"
+    },
+    {
+      "path": "research/scripts/close_regression_panel_v1.py",
+      "sha256": "3b82760c3117aef51e699170050d732b83482e1862f6aa5ef2b595d274643c39"
+    },
+    {
+      "path": "research/scripts/closed_loop.py",
+      "sha256": "a98679e468abc329f4e9a1b7c7d91a9cd0c18908d745ad6b8b86b77758206cf5"
+    },
+    {
+      "path": "research/scripts/compute_norm_stats.sh",
+      "sha256": "d1c4dd71c7e506d7d8f62d31f8bcfe11c3247f455d94edf602ffe0af7311d047"
+    },
+    {
+      "path": "research/scripts/cpu_checks.sh",
+      "sha256": "2ad95b1acbee3b0fe7aeee8c11f03349d0fc960b96c094126dc06a1344a11db7"
+    },
+    {
+      "path": "research/scripts/data_audit.py",
+      "sha256": "6b9fd215c07b41a4c20451c7047aded65b55c20e58f725361cb0254479fefc37"
+    },
+    {
+      "path": "research/scripts/deduplicate_recovery_artifacts_v1.py",
+      "sha256": "9aaf3946bb2e06750e4f48f522755c409b5401c9509eabfe53adddd7d9ffd425"
+    },
+    {
+      "path": "research/scripts/diagnose_existing_rollouts_20261013.py",
+      "sha256": "e9d666474b8e45bcca3700b9bbcea3fb6f2804d641b8049671be5b0374fda4d4"
+    },
+    {
+      "path": "research/scripts/diagnose_flow_20261103.py",
+      "sha256": "49052b79a8f51feedd24d797fb248a808efa98cd0321005edf8b2678398a9057"
+    },
+    {
+      "path": "research/scripts/diagnose_flow_noise_20261103.py",
+      "sha256": "c2317427ce85a6334492a57b8f7b106feecfeb08060db1d556864aec9542d3b0"
+    },
+    {
+      "path": "research/scripts/diagnose_vlm_cache_parity_v1.py",
+      "sha256": "4f999f185d1713263e10350aec4b22141f61f2ebf4499b27f990f1e11e87d974"
+    },
+    {
+      "path": "research/scripts/egl_device.py",
+      "sha256": "a0b04491136efc79e949bfc5083e3dcbcd1626810b47436d4c98bb3ce1d4fc8c"
+    },
+    {
+      "path": "research/scripts/estimate_vlm_finetuning_3090_v1.py",
+      "sha256": "fc154abfc89ef33982c9d2c558b62f99a7bc71bfe66ba2eb151510aa8f229dee"
+    },
+    {
+      "path": "research/scripts/evaluate.sh",
+      "sha256": "2c9af82b7b0543eddf1613fabf41419beda38265ecd9a0cbcf2d5b47923c13d2"
+    },
+    {
+      "path": "research/scripts/evaluate_recovery_branches_v1.py",
+      "sha256": "aca6efc0d84163301e3f21167b5eaa4cab668671f180cc42fe8fffa0c8b65d52"
+    },
+    {
+      "path": "research/scripts/evaluate_recovery_branches_v2.py",
+      "sha256": "0a78f3864396c1f1709e4f9f9636718a03043c290fca2eb04b0f44c530eca65d"
+    },
+    {
+      "path": "research/scripts/evaluate_recovery_branches_v3.py",
+      "sha256": "52ff8244edeb9b035619c286cdfcfb10926939c4fc6bbac1dcce81e9a196c50e"
+    },
+    {
+      "path": "research/scripts/evaluate_recovery_branches_v4.py",
+      "sha256": "9f0d5f66bf42e791c02b5f9e12dd0de47f5ce286684684a8b03803d07c570d8f"
+    },
+    {
+      "path": "research/scripts/evaluate_recovery_branches_v5.py",
+      "sha256": "8fcd8300af5ea6dcfbe43b3e7dde58ac58139dee5865436cce75939f30f390ef"
+    },
+    {
+      "path": "research/scripts/evaluate_recovery_branches_v6.py",
+      "sha256": "4a2b6f25c084ad1040a6355f5d3f3bb49a0841429ffdcb3d72a066c0d5f74790"
+    },
+    {
+      "path": "research/scripts/evaluate_research_v1.py",
+      "sha256": "751d5ee200c1e19432df6c0d54c6fd16865950adde02a2569709cfe0fa1ed464"
+    },
+    {
+      "path": "research/scripts/evaluate_spatial_v1.py",
+      "sha256": "68036ab87d12b37400d3dc68f47f0e26a99ba3965a7af28201fcc0a2103b344f"
+    },
+    {
+      "path": "research/scripts/flow_ram_resources_v1.py",
+      "sha256": "3f5a1104e326dd3a6b63918715aa467c6109a5fd84fcc2b6fecfedfb5068bcc5"
+    },
+    {
+      "path": "research/scripts/formal_data_v1.py",
+      "sha256": "390d039841085a62792c6419ce3fa25b45e093abe515b899e15b9149dcfe35d0"
+    },
+    {
+      "path": "research/scripts/formal_data_v2.py",
+      "sha256": "ebc40721ba08804617fe5c3286041f82037aa82735dd1d5a3832b68c87babfc4"
+    },
+    {
+      "path": "research/scripts/formal_eval_v1.py",
+      "sha256": "6eecda146224c8a46d4e3fef410588c835fca4b5168d81e2defc5b24dfaf4559"
+    },
+    {
+      "path": "research/scripts/formal_pipeline_v1.py",
+      "sha256": "88ed75e3e94c15e73c7641e229e8499fa95ea73f5fd94870ad85b0c8419b22d7"
+    },
+    {
+      "path": "research/scripts/formal_pipeline_v2.py",
+      "sha256": "f2d01a5260bb531b3da4e36a1ddb5da0e1c9ffd20d9eeb2982ae2e64556aee6f"
+    },
+    {
+      "path": "research/scripts/formal_stage_supervisor.py",
+      "sha256": "3dc0fdaebd5444ca2be810d7e2c68073ea5482f97e9c9a8f824d88afd503ee18"
+    },
+    {
+      "path": "research/scripts/freeze_recovery_branches_v1.py",
+      "sha256": "f2222c36998d1ea02e1e6b2668a29ea61501d9ef243572895e3aa1db1a6ff7ae"
+    },
+    {
+      "path": "research/scripts/freeze_recovery_root_restore_v1.py",
+      "sha256": "d8197cddbd96c75d9f6ac494d33667e5ba4cf027784ffa94d860d456048b91da"
+    },
+    {
+      "path": "research/scripts/freeze_recovery_unaffected_v1.py",
+      "sha256": "a0e33a13be42a0a71277d0220f6809db5f04522ec7287d769953647509e0b2eb"
+    },
+    {
+      "path": "research/scripts/freeze_research_diagnosis_v1.py",
+      "sha256": "89c826c5adf545de0cfc40bbd63e79b0090bbf32e32879ee752cb0f08bb35708",
+      "original_sha256": "bd0dac5d17eee486e5dad4ff634b51fc76bd7d79a63d8679ff1450c9ed2178f4",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/scripts/gpu_probe.py",
+      "sha256": "65e17c18af49c4f6a607abf1dde90c04d64993cc3adf790470eb1597db4c047e"
+    },
+    {
+      "path": "research/scripts/gpu_run.py",
+      "sha256": "e451d61e2e0aa9e6b19f87579f20f6e323349464dd44ac488c15c30040499fc5"
+    },
+    {
+      "path": "research/scripts/gpu_run_shared_v1.py",
+      "sha256": "70ef57b275b72b4988f8be4c0e05ea1511085d33ff26dfe558452df3f229cb80"
+    },
+    {
+      "path": "research/scripts/gpu_run_shared_v2.py",
+      "sha256": "74649dd428c83c17229ac370b4d1bdacc4cc19437689f58c4e161d874bbd644b"
+    },
+    {
+      "path": "research/scripts/gpu_watch.py",
+      "sha256": "0becbd5368c2f8e52425f70247ccab6948c622298f83678b76dff80e4f061635"
+    },
+    {
+      "path": "research/scripts/inspect_assets.py",
+      "sha256": "4069f4b7cf4634482ab2cf809ea9ab3c415dd3a8f8b6ecd5cc9110fa0052dccb"
+    },
+    {
+      "path": "research/scripts/install_libero.sh",
+      "sha256": "1e12caa3387e4577c90f2dee0ef37b1ea131d3a246e20f93f8e72ce73d178b22"
+    },
+    {
+      "path": "research/scripts/libero_validate.py",
+      "sha256": "a943877399df76610e252a71bf2c99e62fc1b7c10f63e07c0822910b69c42e4c"
+    },
+    {
+      "path": "research/scripts/paired_live_analyze_v1.py",
+      "sha256": "cb3a06f7561a36d5392ece4ca6dd45603dd8994b4eda3876508a31269c689a68"
+    },
+    {
+      "path": "research/scripts/paired_live_analyze_v2.py",
+      "sha256": "a159dbf0574bee3c12cd631de236a12afdaafab0bdf962c76b95cd3fc4e639b4"
+    },
+    {
+      "path": "research/scripts/paired_live_analyze_v3.py",
+      "sha256": "bdad93aa97da83f88381234a79a87536739029ac8ea332726fdd6c049542a771"
+    },
+    {
+      "path": "research/scripts/paired_live_audit_v1.py",
+      "sha256": "9a519aa65f41bf3ba21d01f8dd5640dcab31cffb3373ee9c358b367cbd08f5ab"
+    },
+    {
+      "path": "research/scripts/paired_live_collect_v1.py",
+      "sha256": "a0d54a8a18c80771ed7ffa5eb6a6568ae6fcaa4ee45b3ea29c85fc7bbb13ec84"
+    },
+    {
+      "path": "research/scripts/paired_live_collect_v2.py",
+      "sha256": "78170eab68ab587218bc6947a70b72e72d083c4902e4242205ec5be01b2f7df7"
+    },
+    {
+      "path": "research/scripts/paired_live_collect_v3.py",
+      "sha256": "829931a1ce35d98feecd65c67c29bdcc418312f19b6d16c040be3d31857b933f"
+    },
+    {
+      "path": "research/scripts/paired_live_cpu_checks_v1.py",
+      "sha256": "9f9f363d2d77bb29e891fbd572d3e1b11245316e0ad61d72e69fe391d8c92e76"
+    },
+    {
+      "path": "research/scripts/paired_live_pipeline_v1.py",
+      "sha256": "a04948bb9e37a788d02d6b42defc271dcb1e2ef2b64a9c94dd73d21c9d354215"
+    },
+    {
+      "path": "research/scripts/paired_live_pipeline_v2.py",
+      "sha256": "48e4d8f1b7fb8ddf768f230d42c4fe59b06f740fe5106785903adc24a9b4f968"
+    },
+    {
+      "path": "research/scripts/paired_live_pipeline_v3.py",
+      "sha256": "aaf33edf9249fafd6c80690049a39def4de24b7065076fc24bc3daa761aad6c1"
+    },
+    {
+      "path": "research/scripts/paired_live_prepare_v1.py",
+      "sha256": "48577d014e8af3cb556f9463741fb6b737786d275f6d07b027186cf799b76d0e"
+    },
+    {
+      "path": "research/scripts/paired_live_resume_cpu_checks_v1.py",
+      "sha256": "a46769441e59296b3bb217f332c7dc71ec2eef85e0c54f5f55559622b21b6f4f"
+    },
+    {
+      "path": "research/scripts/paired_live_resume_v1.py",
+      "sha256": "c121d6a5962f5cae4e06494d31ca33e347caa38f44a17964c7e619c1631c0128"
+    },
+    {
+      "path": "research/scripts/paired_live_resume_v2.py",
+      "sha256": "ff6e54520343be41ffd40d96937b4a836e0df1ca2b2145df89e277642ad347f0"
+    },
+    {
+      "path": "research/scripts/paired_live_scene_v1.py",
+      "sha256": "81a9ea07e7c8c387319b7eced88d6803d4cf7c33b1d1e0a24d4932b09d177aac"
+    },
+    {
+      "path": "research/scripts/paired_live_supervisor_v1.py",
+      "sha256": "6a5ef44cf44d588a0d156d9c613e4537aeb067e5162da9c008985afd3504488c"
+    },
+    {
+      "path": "research/scripts/paired_live_supervisor_v2.py",
+      "sha256": "68dd183b75ed2ea791783704ba0bda8d2d224a376e9531227bc66a4589acf1a6"
+    },
+    {
+      "path": "research/scripts/paired_live_supervisor_v3.py",
+      "sha256": "169cfc3915c665dc71519af2b2b234c20d69bc4ffe1e79c2f629cd05fc297d22"
+    },
+    {
+      "path": "research/scripts/paired_live_worker_v1.py",
+      "sha256": "b2324c32c24550e43822ec238b0bf5e5c7ace4a6e5d75ed7b8b9486dda2f6f2f"
+    },
+    {
+      "path": "research/scripts/paired_live_worker_v2.py",
+      "sha256": "07dc9a4365e30ebdedda8477cf15922d070f9cd1ebd9087f7f0ea7fe8428a1e3"
+    },
+    {
+      "path": "research/scripts/paired_live_worker_v3.py",
+      "sha256": "697929cd08f953bd8cd9a75066e4f03a85be543431182eae828141b4487a3809"
+    },
+    {
+      "path": "research/scripts/paired_live_workers_v1.py",
+      "sha256": "010bf3caaa9598b718215b5447a422d0f02a2a5e251ab74b22253e5e21c80677"
+    },
+    {
+      "path": "research/scripts/paired_live_workers_v2.py",
+      "sha256": "ae929538b0f226264482677ee678493da7600b8b0ad7fb4b696b39d5a270679c"
+    },
+    {
+      "path": "research/scripts/paired_live_workers_v3.py",
+      "sha256": "ce2b9031ef9bc663087508cec6849b4fbe46d324080b4ff70ab11ec4ca373f9f"
+    },
+    {
+      "path": "research/scripts/parameter_audit.py",
+      "sha256": "fd932774e0d6a49b46685cf069aa902164b1ec8172f7d6dbf3e8b2ec95e45b4d"
+    },
+    {
+      "path": "research/scripts/pi05_preflight_resources_v1.py",
+      "sha256": "874e3a9dceb67968b7b053556bb5c9e3a78a71dca0fbd191a709a132191ab8d7"
+    },
+    {
+      "path": "research/scripts/prepare_assets.py",
+      "sha256": "ac7b76bfb9b322c4f128ddf616614a1ffb1515027d0f8002b8ad5e576cedb848"
+    },
+    {
+      "path": "research/scripts/prepare_assets_v2.py",
+      "sha256": "0980a79a4e3cb41e30a849fb464b6ad6c86f61425710ed2a89e608112bc76c28"
+    },
+    {
+      "path": "research/scripts/prepare_assets_v3.py",
+      "sha256": "2ccbdab47366d20ff5ce003cf8733d5ee3384db2c73b7a870875a5c998d597ee"
+    },
+    {
+      "path": "research/scripts/prepare_pi05_four_suite_numeric_v1.py",
+      "sha256": "012ff242de7bc6a20bc18b529e887f6aea7cb8d4bcf8e0c4e143365c062a81f7"
+    },
+    {
+      "path": "research/scripts/prepare_pi05_preflight_v1.py",
+      "sha256": "ef18e8bfdc67190a29fd053309f3f919ac5b7f9724b673c0bba967e4b4337bf7"
+    },
+    {
+      "path": "research/scripts/prepare_recovery_branch_v4.py",
+      "sha256": "ac5d6b876a84d65178b1032ce2c18b1012ca47ffcd3e44424ebd2ecb97aca2e8"
+    },
+    {
+      "path": "research/scripts/prepare_spatial_v1.py",
+      "sha256": "abf876ff2894860bc07fdb87e05618062857f7874e8e033a619f9ed3a60a3cb6"
+    },
+    {
+      "path": "research/scripts/preview_vlm_cache_batch1_v1.py",
+      "sha256": "5569b8c173f5f758cd9c45fb3d93a288fa6f47857d83cff1ab74b5f322676220"
+    },
+    {
+      "path": "research/scripts/probe_branch_fresh_child_v1.py",
+      "sha256": "8998785b8c17d6604c4c4ed1a5499f69724836c1d2bb81080d515a75a848ded4"
+    },
+    {
+      "path": "research/scripts/probe_branch_render_readback_v1.py",
+      "sha256": "ad23fade8f05d646984126375d8ef2a96921d9ff201ac39f092451e738f7866e"
+    },
+    {
+      "path": "research/scripts/probe_branch_replay_v1.py",
+      "sha256": "4ea01aa860c8ac7d3d46b1a1e1136faf6a0369711737aaf248f4cceee778660e"
+    },
+    {
+      "path": "research/scripts/probe_policy_image_effect_v1.py",
+      "sha256": "1284904d256f22336463c586b18171ca80552bfc4ac1ccb0fd7da680423af1d3"
+    },
+    {
+      "path": "research/scripts/probe_render_context_rebuild_v1.py",
+      "sha256": "ebfb49d62b2cddf0ac52ea4f961d14537db41e0d1160a0e9f37715e049ef7b53"
+    },
+    {
+      "path": "research/scripts/probe_research_reset_v1.py",
+      "sha256": "2d1bdb3438199e31471f1129ed32d1101b4db0fcca423776602c0c56cb7f7a87"
+    },
+    {
+      "path": "research/scripts/project_env.sh",
+      "sha256": "60e13920bc0c3c6f251f3a2d6787aba8dd512528db8940185b94938bd14e8e88"
+    },
+    {
+      "path": "research/scripts/record_versions.py",
+      "sha256": "0db9e5f5d063a8833fddc564bec25624957f10cb965f3a3f07128dc72ad97980"
+    },
+    {
+      "path": "research/scripts/recovery_action_critic_pipeline_v1.py",
+      "sha256": "20c257e94e2a7c0a106328ed608922360d40c81c73bc3e0ef7be5dbe4584a798"
+    },
+    {
+      "path": "research/scripts/recovery_action_critic_supervisor_v1.py",
+      "sha256": "5472fb9335c2b3738a4492d2e05d453fcde74cee212eb7317700b8eb32880662"
+    },
+    {
+      "path": "research/scripts/recovery_action_critic_v1.py",
+      "sha256": "75311d18f05429ae25bab5eb1225ccf8280f075c06c04d417ce8436d9bb147af"
+    },
+    {
+      "path": "research/scripts/recovery_branch_pipeline_v1.py",
+      "sha256": "2dd78ea51078c2acc41324c9afa17f695749edb0e094f358b9542e61beea1723"
+    },
+    {
+      "path": "research/scripts/recovery_branch_pipeline_v2.py",
+      "sha256": "67b7735ebc4f3444fcaadf42b3d812ba3df2039dd649491ccb00f5f1dff2a966"
+    },
+    {
+      "path": "research/scripts/recovery_branch_pipeline_v3.py",
+      "sha256": "909ca4a7a901c1e5f365d717f68bf55c527259396aa9f3c350539d7074b0d8e8"
+    },
+    {
+      "path": "research/scripts/recovery_branch_pipeline_v4.py",
+      "sha256": "4b5dd58f462298aa9bcb18ea78a12e432821a793cfc6f046b30670935b32f450"
+    },
+    {
+      "path": "research/scripts/recovery_branch_pipeline_v5.py",
+      "sha256": "3752170ffd43b464642e06cb87916392f8d0375c70c735c31623940c5705dd80"
+    },
+    {
+      "path": "research/scripts/recovery_branch_pipeline_v6.py",
+      "sha256": "2d4bb5623ccc713b4c1cac1c247df734b39eb14e1d3f005bb1ff97af5f067e6f"
+    },
+    {
+      "path": "research/scripts/recovery_branch_supervisor_v1.py",
+      "sha256": "282265be98e92ccd4857811f2a0cd952a446c65e2a1abd1428d4827795fca965"
+    },
+    {
+      "path": "research/scripts/recovery_branch_supervisor_v2.py",
+      "sha256": "3caec99a28c71681e5e6f5929fafb9ca055c0ec2ea558d9babc1fa28e7737c1f"
+    },
+    {
+      "path": "research/scripts/recovery_branch_supervisor_v3.py",
+      "sha256": "7827d77304fb60b16b64c6bfe2398233542cdf59c4eb2d90545b7a8206096fbb"
+    },
+    {
+      "path": "research/scripts/recovery_branch_supervisor_v4.py",
+      "sha256": "f550cd9e4d4a15032153af977b9168324fe584b076c055733fcc233d003cb9fc"
+    },
+    {
+      "path": "research/scripts/recovery_branch_supervisor_v5.py",
+      "sha256": "da29172f83fdd49997d55a7951080b4c71289387f00016cf296de63fcdf05b34"
+    },
+    {
+      "path": "research/scripts/recovery_branch_supervisor_v6.py",
+      "sha256": "d8d4686f2ded997bc167523c1b9be1124cb8b9f46d487c16ba5cccc4d0a2b56d"
+    },
+    {
+      "path": "research/scripts/recovery_branch_worker_v1.py",
+      "sha256": "6ea77f0d2017392f5805f5e8adad7c17928dbbfd46e16ddf1c4af25742651aad"
+    },
+    {
+      "path": "research/scripts/recovery_branch_worker_v2.py",
+      "sha256": "344c9071eb3fd25228c111c2a3d50ef7ae1686f90c59bf3882472d0950b6250d"
+    },
+    {
+      "path": "research/scripts/recovery_branch_worker_v3.py",
+      "sha256": "53e22a40d5cb6733f7537ccb2a172ea3ee5c3d643b9e1fbeaa2f83a4bdd4fbb1"
+    },
+    {
+      "path": "research/scripts/recovery_branch_worker_v4.py",
+      "sha256": "a15633dd165b69b95d35c1e03f1f4d09346c9ac442cd01cc70822010d0d4af22"
+    },
+    {
+      "path": "research/scripts/recovery_branch_worker_v5.py",
+      "sha256": "2454ee5a52d2550704988be5fbd77c788ecb0883bbd249588df2f5e9f54e6c92"
+    },
+    {
+      "path": "research/scripts/recovery_branch_worker_v6.py",
+      "sha256": "91d94d79c6f92ae421cb40dd2e376628c07acf6405fd9e174be9aeeb5d3da205"
+    },
+    {
+      "path": "research/scripts/recovery_fit_audit_pipeline_v1.py",
+      "sha256": "c2fa0d87b3ab3dcd619ae56a530715b6d7ad44a74989612b5252aa0ba7b12236"
+    },
+    {
+      "path": "research/scripts/recovery_fit_audit_supervisor_v1.py",
+      "sha256": "d72cf9adee8d5254e43b556215dec3cfc614b4c09ca9a566bd5e5021b9686dc0"
+    },
+    {
+      "path": "research/scripts/recovery_fit_audit_v1.py",
+      "sha256": "6004f6f60636776233d2462123107d1614def685c46a03f59e5ffb956887c0c4"
+    },
+    {
+      "path": "research/scripts/recovery_seed_analyze_v1.py",
+      "sha256": "f26f7301335fbb2e6b697841c7d52f2fed57e9763a38305ec7259ff35579fd94"
+    },
+    {
+      "path": "research/scripts/recovery_seed_collect_v1.py",
+      "sha256": "64205f3d191a20566e89af90f459c9968da70f0d696842bf8a949ba6b732b97d"
+    },
+    {
+      "path": "research/scripts/recovery_seed_cpu_checks_v1.py",
+      "sha256": "1cd54d0b9c35dc79142856605efa905981fb872d9bf7d6e72141695298bdaf82"
+    },
+    {
+      "path": "research/scripts/recovery_seed_pipeline_v1.py",
+      "sha256": "a02a1587800b89b27be7b9a8a12a5f3470cfebd2ddf56b0b124c44a7ab693a78"
+    },
+    {
+      "path": "research/scripts/recovery_seed_supervisor_v1.py",
+      "sha256": "f35ac52ec336b65befc915511eed5f032cb6f4164af98fc047b6996ce83409a8"
+    },
+    {
+      "path": "research/scripts/recovery_seed_worker_v1.py",
+      "sha256": "3ffc86b2929efa0d3f6251a002f2038993a0bd3c89df95c62758e50a4dea2ab4"
+    },
+    {
+      "path": "research/scripts/recovery_seed_workers_v1.py",
+      "sha256": "350da51232042c6760cffa22748c67eb803c07281f072c4c0eab322debbacf28"
+    },
+    {
+      "path": "research/scripts/recovery_spatial_cpu_checks_v1.py",
+      "sha256": "32a7d84b56b1b6d00c41c8faf2b487dfa56506c6cb39af77d5cdc6cdb64e10d0"
+    },
+    {
+      "path": "research/scripts/recovery_spatial_data_v1.py",
+      "sha256": "8b190b679b0df0c1ef22d3b29563a4d93719967ebb977a9e1d5a63c6627143b0"
+    },
+    {
+      "path": "research/scripts/recovery_spatial_features_v1.py",
+      "sha256": "24070295ec0694d1a83c57e996157709e3051e1e6bcf8cb0591c8196f0827df9"
+    },
+    {
+      "path": "research/scripts/recovery_spatial_fit_v1.py",
+      "sha256": "98101a506f0c87bc40f9aa960037002030cf1d075fa8dbef3951751f5f9f8b9d"
+    },
+    {
+      "path": "research/scripts/recovery_spatial_pipeline_v1.py",
+      "sha256": "4ae6096e28cd53a7f08135ca106f164dfebd5cb2d9a2b4478e858a1c16b88a60"
+    },
+    {
+      "path": "research/scripts/recovery_spatial_supervisor_v1.py",
+      "sha256": "574559172353d29f698c4120ed514d433f20a8cb46b1d14b14ecc3d356bf11b3"
+    },
+    {
+      "path": "research/scripts/recovery_suffix_handoff_v1.py",
+      "sha256": "b9ada846112f1a09920827b04ba5259851bc5006340640e1358b7ac095948efe"
+    },
+    {
+      "path": "research/scripts/recovery_value_cpu_checks_v1.py",
+      "sha256": "a7cfcda2b9586253f3fa75fe2016be65135b195a8401b39071c08d1048353af5"
+    },
+    {
+      "path": "research/scripts/recovery_value_data_v1.py",
+      "sha256": "9ba040b870f31c65b7377c5e482e910c4d19ad9fe77af52ac5478f88eee57285"
+    },
+    {
+      "path": "research/scripts/recovery_value_features_v1.py",
+      "sha256": "6d5cc76e9ec6c090480e27f798044c75713190415246797fd57b88060d34ba3b"
+    },
+    {
+      "path": "research/scripts/recovery_value_fit_v1.py",
+      "sha256": "9b74339e9081784921fccabfe759d1387249e2d6496ee665cfd118ff9538456b"
+    },
+    {
+      "path": "research/scripts/recovery_value_pipeline_v1.py",
+      "sha256": "f3201cc6987701f15e95f0f13e77729cc70507b33ef4990bb8398ded2abfb014"
+    },
+    {
+      "path": "research/scripts/recovery_value_supervisor_v1.py",
+      "sha256": "734f9136469a375e4ddeee56d254389dbeae7c382273e6bb5c206d92116854dd"
+    },
+    {
+      "path": "research/scripts/render_formal_review_v1.py",
+      "sha256": "a646646b217de309012a20b78f41ae95cc81de0c6f398d25b2c042ede4f42481"
+    },
+    {
+      "path": "research/scripts/research_eval_job_v1.py",
+      "sha256": "f6fab4fce4a9afa3320f6276c333d898288128c3f07670130a3b660a8fe3d146"
+    },
+    {
+      "path": "research/scripts/research_gpu_admission_v1.py",
+      "sha256": "479eaf8aea37528cf6ed5ebf291b7a0047a1616642526c0ea0886a6b53dab28e"
+    },
+    {
+      "path": "research/scripts/research_pipeline_v1.py",
+      "sha256": "dabd83cb16ec540a108c137aa14c6f4e3a40b31a3fd3dfaf79ebbb2d071fd0d1"
+    },
+    {
+      "path": "research/scripts/research_supervisor_v1.py",
+      "sha256": "f269f0736a7e1f816f40741174c438ed343876b7fe2056b1fb7334307c57896b"
+    },
+    {
+      "path": "research/scripts/research_telemetry_v1.py",
+      "sha256": "027410d3140ae3d8fbaa448999e8240dce76d66dcd45a38cb5a763c0eb724859"
+    },
+    {
+      "path": "research/scripts/resume.sh",
+      "sha256": "62f77c237fa4afae6c31ba779a4e1349465564d2192c566b9a0e7e6ea0af0fc6"
+    },
+    {
+      "path": "research/scripts/retire_legacy_image_cache_v1.py",
+      "sha256": "b42139bf16975072adb2324d4d54aafb35719b27c01751eba649533ed2494491"
+    },
+    {
+      "path": "research/scripts/review_final_complete_v1.py",
+      "sha256": "4f42341a0dfc2d4050e79ad73bf97d33a2af70b4055ebc6b9eee4b56c53c2d4d"
+    },
+    {
+      "path": "research/scripts/review_final_partial_v1.py",
+      "sha256": "c463e3a75dd3949eeccde64fbb7833f984f3a77f52d5e643a14356dd0c8a6758"
+    },
+    {
+      "path": "research/scripts/review_fixed_lora_flow_dev50_v1.py",
+      "sha256": "bbb43b5f8a4d55092d4314931688a8e860f0a72d5642d4ca4e109b877e130a5f"
+    },
+    {
+      "path": "research/scripts/review_fixed_lora_flow_training_v1.py",
+      "sha256": "a176c2b50609f7f07f583e51046f2eb1ef51eb06e5b382ad4f22050fc41661ff"
+    },
+    {
+      "path": "research/scripts/review_flow_depth2_context_v1.py",
+      "sha256": "280db290f80c5dd3dbea423e9a9cd9cb82c5b9a3763f93b8f4545777ae31f730"
+    },
+    {
+      "path": "research/scripts/review_flow_depth2_dev50_v1.py",
+      "sha256": "03e724e57d0b420b6ae99bc11033f1dafad0ff0db4b9b85d7d33df18fcc799e5"
+    },
+    {
+      "path": "research/scripts/review_flow_depth2_training_v1.py",
+      "sha256": "83b6ac263c5ac013468eb9e59d4b7bd1297601a11b60b5dba264fa965ee99dfb"
+    },
+    {
+      "path": "research/scripts/review_flow_noise_dev50_v1.py",
+      "sha256": "e12a3b80376f5bc7435cbaad1ee0d72b88119b7d1c5082e7170b7064651a78f7"
+    },
+    {
+      "path": "research/scripts/review_flow_tail_dev50_v1.py",
+      "sha256": "d1da005a2dff8e27e4594b02ce25a08148f9c20b878be349b63888bc583c1e88"
+    },
+    {
+      "path": "research/scripts/review_flow_tail_training_v1.py",
+      "sha256": "bde94972dd0c2de0ac7c22154e46b30016d3a1b1b2664fd29217c0a70d9e9a12"
+    },
+    {
+      "path": "research/scripts/review_flow_tail_training_v2.py",
+      "sha256": "a38763ef8d76ce42020f0ac0052cd8c63cfb7d65622d6b793707235feea36475"
+    },
+    {
+      "path": "research/scripts/review_flow_time_film_dev50_v1.py",
+      "sha256": "a7304feec427474cf7ca4b3b8fb397790a8d4c44a388d63fdab4143192b4ffa8"
+    },
+    {
+      "path": "research/scripts/review_flow_time_film_training_v1.py",
+      "sha256": "5d6b82860507f9548e5b4f3cb8544d1795fa31c62dcb0d6aef6817785d1d3883"
+    },
+    {
+      "path": "research/scripts/review_m3_complete_v1.py",
+      "sha256": "1b6e6281c8d10d386fd79e47728cf16b20459ba3e208ac47cd3609ea13e34c14"
+    },
+    {
+      "path": "research/scripts/review_m3_partial_20261019.py",
+      "sha256": "734cb2a33caba6e5c2a387f8b167d96dab5e4968ca12345aba9ea50115863d45"
+    },
+    {
+      "path": "research/scripts/review_m4_complete_v1.py",
+      "sha256": "2735b8f15b609c8551a079a3ccf7e99f8ebc52514bcf5738dc72dd1ef5037a39"
+    },
+    {
+      "path": "research/scripts/review_m6_data_v1.py",
+      "sha256": "6ae4b17097cacec0b1b3efa92a047250ac174136cc67fdfe4abac00476319739"
+    },
+    {
+      "path": "research/scripts/review_m6_fast50_v1.py",
+      "sha256": "8c4a048dd04d693fd09792d8c0bbb6ac8d2396c87c5a71faa8d89f57cf0348dd"
+    },
+    {
+      "path": "research/scripts/review_m6_paired_training_v1.py",
+      "sha256": "68b46cd7234a3dc9cb7b8fc45f961fa1796680ec929a7ed3a37ec43afd85abd6"
+    },
+    {
+      "path": "research/scripts/review_m6_training_gpu_v2.py",
+      "sha256": "d6c13e8984bf9ab9ba1ec604d436d569704a9e3a7ec054ef050ffc2b9136847a"
+    },
+    {
+      "path": "research/scripts/review_m6_training_v1.py",
+      "sha256": "ca9797be8c6e80c3d4bab6c171e16ed65b33838948b17349f0d379bfe0bbdcee"
+    },
+    {
+      "path": "research/scripts/review_m7a_fast50_v1.py",
+      "sha256": "77925e5ee349dbd9cdc5e2c10a3805a667915b56f19ed83d6e928a885ad94ad5"
+    },
+    {
+      "path": "research/scripts/review_m7a_training_v1.py",
+      "sha256": "801d0125d4b4881ba3f56d0b29ed8c8a67af188c52ad4cf45a4838118fbac0d1"
+    },
+    {
+      "path": "research/scripts/review_m8_dev50_v1.py",
+      "sha256": "972ccd6b91ff80634d23c49096165ab852ddea8c9b02a7a32b4c182ff184e378"
+    },
+    {
+      "path": "research/scripts/review_m8_preflight_v1.py",
+      "sha256": "349046699dc5d00e4b1fa6e131b14e1e76683110fab725ff95844c61108dff91"
+    },
+    {
+      "path": "research/scripts/review_m8_training_v1.py",
+      "sha256": "dc976031ba3186cc636e37ae0b7f46d4f4c6bdbecd42636ead7eac607de59815"
+    },
+    {
+      "path": "research/scripts/review_m9_dev50_v1.py",
+      "sha256": "cb19cf3c0967efebf305f47e6f4838bf9dd415812264d390b280a0a33b471670"
+    },
+    {
+      "path": "research/scripts/review_m9_training_v1.py",
+      "sha256": "4f9eeb45912f2b7798b591071de0d1fe6490426df7b4ddba93f29f21891a9a00"
+    },
+    {
+      "path": "research/scripts/review_modern_cache_complete_v1.py",
+      "sha256": "96db719b9019cdc8b1efc00d3d907f4490bc60d4b30ff0075f0c6f1ccf08f58d"
+    },
+    {
+      "path": "research/scripts/review_paired_dev50_v1.py",
+      "sha256": "ba6a370b9d04a86f870da8a4730ce8466b0f211703039974bb933fe33ab59c4a"
+    },
+    {
+      "path": "research/scripts/review_paired_recovery_v1.py",
+      "sha256": "0b9d3ef6e01a4d0f1d866fda2c9856649923c4df80ffe9dc643da097835daca2"
+    },
+    {
+      "path": "research/scripts/review_pi05_generation_v1.py",
+      "sha256": "cd4e3e86170b3cf986edc0176aecb0b284f0bf833e2c887e3f0836482858f70b"
+    },
+    {
+      "path": "research/scripts/review_pi05_preflight_v1.py",
+      "sha256": "92674facaac47cf723a1586198d6161a1631d752af6512a989b79388886f71b2"
+    },
+    {
+      "path": "research/scripts/review_recovery_seed_v1.py",
+      "sha256": "d108f9f8b12d4c62f2faa023cf2e5e425ccd3503f5ea8a8e86651cfef8dce08c"
+    },
+    {
+      "path": "research/scripts/review_recovery_spatial_v1.py",
+      "sha256": "4dac0cf9004bd9bdd9fd51224ab829e78e1b9133c6ecda0d05ffbd6eeeb19bed"
+    },
+    {
+      "path": "research/scripts/review_recovery_value_fit_v1.py",
+      "sha256": "12b0f230f6c1a5e7f481ad9c2a7fdb51d42444f2bfd00a0f053187f7e9a344d0"
+    },
+    {
+      "path": "research/scripts/review_regression_depth_pair_v1.py",
+      "sha256": "d6b36c389c392c71e4491609f9edd65948d243f1661e31ec071d933f72235fec"
+    },
+    {
+      "path": "research/scripts/review_regression_depth_pair_v2.py",
+      "sha256": "9b51e96fdc984e0cc85f771d1146844e944fb598dc5cf13af06d0528eede4ed6"
+    },
+    {
+      "path": "research/scripts/review_regression_panel_v1.py",
+      "sha256": "4c1d08265b95580c1f7bbee3b608249d0cf7fd08868892c68be69686cc0b0bd7"
+    },
+    {
+      "path": "research/scripts/review_regression_panel_v2.py",
+      "sha256": "31501985ec4373caed8d9923231a3b61565c6799211c407bcc91813e292c0016"
+    },
+    {
+      "path": "research/scripts/review_research_diagnosis_v1.py",
+      "sha256": "1b02f4d0f6bc3af6784e31df6db7c4d992f7023a1b50907a27799a7976a7566c"
+    },
+    {
+      "path": "research/scripts/root_observation_snapshot_v1.py",
+      "sha256": "d313bcddb867008afd0978739d6e64ed3db54be29ec4382b35bbe700c00b585c"
+    },
+    {
+      "path": "research/scripts/run_recovery_branch_workers_v1.py",
+      "sha256": "782bcedacf59081f201e19f7508dfe3a5bc4a92c2b0a05eaa679db5b19cad2c4"
+    },
+    {
+      "path": "research/scripts/run_recovery_branch_workers_v2.py",
+      "sha256": "ff4db786c553aa23d53aac16ce721ae4d2b3c875ec6275db77e762bd55d06489"
+    },
+    {
+      "path": "research/scripts/run_recovery_branch_workers_v3.py",
+      "sha256": "a4aa7a3b3f2d2dbe2b5f86f70901be41831e2e21ccecf0de4edca283f65744a8"
+    },
+    {
+      "path": "research/scripts/run_recovery_branch_workers_v4.py",
+      "sha256": "309a8ef81037c497f4ca24e248455005bfd8dcf04e76f4e680d3eacdcc176bbb"
+    },
+    {
+      "path": "research/scripts/run_recovery_branch_workers_v5.py",
+      "sha256": "ad14fac39dd46b9f7f1dfd5ae9027e60c516eb691e41077a4663b308ad72aa66"
+    },
+    {
+      "path": "research/scripts/run_recovery_branch_workers_v6.py",
+      "sha256": "be930024be61e28a634cdd0aca6b0572a61fd75f3eaad76d0458c0afed6457a1"
+    },
+    {
+      "path": "research/scripts/run_stage.py",
+      "sha256": "bb1e2bead62f2169df4ca936403e04f17a0b1b1398a912e286d947d5d471414c"
+    },
+    {
+      "path": "research/scripts/run_validation.py",
+      "sha256": "2747dbb64ea67e2a35f57a437b33ac158b3a6dfac055b4390b086852585fcd11"
+    },
+    {
+      "path": "research/scripts/run_validation.sh",
+      "sha256": "7ba3c7eace1e27ed6e6287bbc89357d5930a54c5ae3791ec79c38dc1737ac36e"
+    },
+    {
+      "path": "research/scripts/run_validation_notified.py",
+      "sha256": "2c39d12085118ea5c3d165c0a06dc0f87b4fd8fa528c12fc523dd55d112578e1"
+    },
+    {
+      "path": "research/scripts/serve_formal_v1.py",
+      "sha256": "63199b1d6c7d417aa454978fe4da76b5937e5f3bfc37da48dfaf223bfb7f1719"
+    },
+    {
+      "path": "research/scripts/serve_policy.sh",
+      "sha256": "713567c0cd4498382c76f3965e7733452afb0e1d136946c689e1d8c55e234072"
+    },
+    {
+      "path": "research/scripts/serve_recovery_branches_v1.py",
+      "sha256": "990143ffaa4d02d06a4577a289af02ba2cf44e3ba41ca3b4ddf0a6188f051468"
+    },
+    {
+      "path": "research/scripts/smoke_train.sh",
+      "sha256": "813a5b1f299197dc52310e4b6695f11f6129aa4ecffbbc68955600f71ff4fc85"
+    },
+    {
+      "path": "research/scripts/start_formal_v1.sh",
+      "sha256": "09e8658758b2583d2b78a727dbc8148e9d6e70bfdff42dc1b8ca99bcceca69e4"
+    },
+    {
+      "path": "research/scripts/start_formal_v2.sh",
+      "sha256": "cd98142d561325ad7e743d0d10dbb454dea12655dc27a817b96b951b4870261d"
+    },
+    {
+      "path": "research/scripts/start_mini_vla_final_preflight_v1.sh",
+      "sha256": "008d1aac6e4fc86bb01792e64167d5e3e540b845dd872132c559f9e9e0d8dac3"
+    },
+    {
+      "path": "research/scripts/start_mini_vla_final_preflight_v2.sh",
+      "sha256": "b7b5d1fa6d6358508b9e2dd015ec511001143697cc4b317c15dbf89a2e50a5f2"
+    },
+    {
+      "path": "research/scripts/start_mini_vla_final_v1.sh",
+      "sha256": "2b42dac32b220c1ea82bbcebbfe33fd860cc69b097f41f3ae1a7805b6ec9a523"
+    },
+    {
+      "path": "research/scripts/start_mini_vla_final_v2.sh",
+      "sha256": "64bd01856275c804929e6f33bdc0691879fe0f4a79dd96e1b6e199dac317f7c3"
+    },
+    {
+      "path": "research/scripts/start_mini_vla_fixed_lora_flow_eval_v1.sh",
+      "sha256": "eb3164bedf711449c20897fe7385409af1d8156aee1937608c1f3d7666fd8028"
+    },
+    {
+      "path": "research/scripts/start_mini_vla_fixed_lora_flow_v1.sh",
+      "sha256": "3066a70a9277b042cabf5768592325b56d531c99c0f83b7495e0a17ca71c56b9"
+    },
+    {
+      "path": "research/scripts/start_mini_vla_flow_depth2_eval_v1.sh",
+      "sha256": "1dd6e0d09217be0fbd040f17a57ad57fb2c8b9b6742f7c751f23c320abf305a7"
+    },
+    {
+      "path": "research/scripts/start_mini_vla_flow_depth2_eval_v2.sh",
+      "sha256": "570724dc609ecc674508995c93dc57fddd1dda4d5c49f801dc28dbe534b604f9"
+    },
+    {
+      "path": "research/scripts/start_mini_vla_flow_depth2_v1.sh",
+      "sha256": "b76cebd7a35d0eace8762dfecfc2f03efe1de846840f2fcad3585753c90ce353"
+    },
+    {
+      "path": "research/scripts/start_mini_vla_flow_noise_eval_v1.sh",
+      "sha256": "4d40ad238ce60191ffe7630c164f06bc469d48a5b487303ce537d7bb20e4fbaf"
+    },
+    {
+      "path": "research/scripts/start_mini_vla_flow_tail_eval_v1.sh",
+      "sha256": "c58d393c5e8f7584c41f98fcd3a399f154d9606a41e461ffcd4162c36c5bff86"
+    },
+    {
+      "path": "research/scripts/start_mini_vla_flow_tail_v1.sh",
+      "sha256": "bca26fab30c7e2e2a6bda5edd045b3dca9b71c41d1fadb64b66156fe5f98ba2e"
+    },
+    {
+      "path": "research/scripts/start_mini_vla_flow_tail_v2.sh",
+      "sha256": "3129544d104e8a25f3d760fdfbd9a9fd0c4d237cf10a0049b99a7d7c7ebe45a1"
+    },
+    {
+      "path": "research/scripts/start_mini_vla_flow_time_film_eval_v1.sh",
+      "sha256": "3602c22a9ce6967cd1d302f25503ef192b33191471694bb5e1eb9d4be254c499"
+    },
+    {
+      "path": "research/scripts/start_mini_vla_flow_time_film_v1.sh",
+      "sha256": "cc922f474a38fcb80422804b1517085c34177a5d01042bfff6a604ca9c52ea52"
+    },
+    {
+      "path": "research/scripts/start_mini_vla_m2_v1.sh",
+      "sha256": "5593dee3be3ede97636685f4c70680ce3c028ab0bc009be5dcc5fc467775cb92"
+    },
+    {
+      "path": "research/scripts/start_mini_vla_m3_resume_v1.sh",
+      "sha256": "a18daa537443319970201e2f5be347a3e60928e12ee6602bbc8670460cc73d74"
+    },
+    {
+      "path": "research/scripts/start_mini_vla_m3_v1.sh",
+      "sha256": "0624f8b2e0db83ac64b92a9d606b662160e5ab2f6509807d577262508e554718"
+    },
+    {
+      "path": "research/scripts/start_mini_vla_m3_v2.sh",
+      "sha256": "cb65f30b91c9762419db91ff703d0d4b3a1d598d023ac0a716e3601ad2d9f174"
+    },
+    {
+      "path": "research/scripts/start_mini_vla_m4_v1.sh",
+      "sha256": "62f6a994a33724dbd406002143c08500d229a0d2cb48a548f8aab6ae19a140f6"
+    },
+    {
+      "path": "research/scripts/start_mini_vla_m4_v2.sh",
+      "sha256": "a5ac95fbb0775302e3d53c00f85516b6e381fc188e38baf5599fc7a6ad27572b"
+    },
+    {
+      "path": "research/scripts/start_mini_vla_m6_lora_preflight_v1.sh",
+      "sha256": "ebcfb9a7a054c71fc16dbab47ed41dd8f3eb6c5d06b9780a1b1fbea7c6753722"
+    },
+    {
+      "path": "research/scripts/start_mini_vla_m6_v1.sh",
+      "sha256": "a58becd722ec5cd6eef85687bf78aac4e50c9bedfa678525aad7c09b637283a7"
+    },
+    {
+      "path": "research/scripts/start_mini_vla_m6_v2.sh",
+      "sha256": "76a6b87da919aced782a2a4b57226de726a80d279036cd930133b54c0b24dec4"
+    },
+    {
+      "path": "research/scripts/start_mini_vla_m6_v3.sh",
+      "sha256": "6eb0b85afe5c107844aa10eee8b61180f63dcb8fb7b3ebc8e70c690646e57070"
+    },
+    {
+      "path": "research/scripts/start_mini_vla_m7a_v1.sh",
+      "sha256": "6f0d7a5c7ef96c536babddb9d638def9eadf93075364c89a4a5afdf489223498"
+    },
+    {
+      "path": "research/scripts/start_mini_vla_m8_preflight_v1.sh",
+      "sha256": "b1f04bec29f7cb084c53b575f3db6d9207025249a3f8836bfd6008fc4c6bd50e"
+    },
+    {
+      "path": "research/scripts/start_mini_vla_modern_v1.sh",
+      "sha256": "7cd944453cc496cc2a54a749943860e489069e2b49e1e249e53efdc2fc497ffe"
+    },
+    {
+      "path": "research/scripts/start_mini_vla_modern_v2.sh",
+      "sha256": "26f775e34114e2e515df39706e262b756b940cc49b2d5bf16f7db47c698d3a1e"
+    },
+    {
+      "path": "research/scripts/start_mini_vla_modern_v3.sh",
+      "sha256": "f90e6a71003369d5e6cbe30d266d46584da6bbd035291f54d26409ba312cc3e4"
+    },
+    {
+      "path": "research/scripts/start_mini_vla_modern_v4.sh",
+      "sha256": "c64eec6fa7b241ef2dc55d5b41608c0366dce5cca454ce7565073f847f9bae26"
+    },
+    {
+      "path": "research/scripts/start_mini_vla_modern_v5.sh",
+      "sha256": "e8c6f3c9d00701af481cd1164f11605a896096d1c550625d91801f87204242ad"
+    },
+    {
+      "path": "research/scripts/start_mini_vla_modern_v6.sh",
+      "sha256": "4c5f1c8096fd417288ef29cfdbfc53ac08e27fce359941425548a55227bb3c76"
+    },
+    {
+      "path": "research/scripts/start_mini_vla_modern_v7.sh",
+      "sha256": "8fa3726784c6c5da1862ab7d07b5e283af74f04e3967701b3feace1d52558427"
+    },
+    {
+      "path": "research/scripts/start_mini_vla_paired_eval_v1.sh",
+      "sha256": "25afbc4ffb00f95d32e23fbbe8afcf9d3cfb59471f385de519e6782b1d541bff"
+    },
+    {
+      "path": "research/scripts/start_mini_vla_paired_eval_v2.sh",
+      "sha256": "98b4121246d1452dd8f78be6ab7cf9c6fe19854cf0eaabc1bbfd8ae2ed72d20a"
+    },
+    {
+      "path": "research/scripts/start_mini_vla_paired_eval_v3.sh",
+      "sha256": "45052a951ede26fdba10c157a84a7e0d46abab4335be722ba45dc5359d6ac1f8"
+    },
+    {
+      "path": "research/scripts/start_mini_vla_paired_v1.sh",
+      "sha256": "4b3bb35d4d263eb69f09cc5d3ec6440985236a195a5ff5aa0d16f050d9916cec"
+    },
+    {
+      "path": "research/scripts/start_mini_vla_pi05_exit_v1.sh",
+      "sha256": "b8390d21736fbb969290e897e494c26e98b75d6b8afa8cdc84a57dd7241d60f8"
+    },
+    {
+      "path": "research/scripts/start_mini_vla_pi05_formal_v1.sh",
+      "sha256": "71a3fefb366df7edf0fdcabdf32b4e670157b06b46ebe12625e7c8a9f108e7c5"
+    },
+    {
+      "path": "research/scripts/start_mini_vla_pi05_formal_v2.sh",
+      "sha256": "8d8806d665a48819670d004a8c91adc4e0012019f6e39e72f91e5ebee11a39b8"
+    },
+    {
+      "path": "research/scripts/start_mini_vla_pi05_formal_v3.sh",
+      "sha256": "2d19857eb73e340018ba8846310eee694d54c5741691c25782a1ce522aff2d67"
+    },
+    {
+      "path": "research/scripts/start_mini_vla_pi05_formal_v4.sh",
+      "sha256": "529677abe602b3379fb88cc85a706cefdd41789560c7d25c239dadd5c4ab19fe"
+    },
+    {
+      "path": "research/scripts/start_mini_vla_pi05_generation_v1.sh",
+      "sha256": "fc18a58684f882e6471ed14dc45f43975c986f67a35217c6c77a75e74c5a7738"
+    },
+    {
+      "path": "research/scripts/start_mini_vla_pi05_preflight_v1.sh",
+      "sha256": "809680ee7eb7c4c55ec282ef477dbd6926e08b955633f2420f4b519c4c1fde75"
+    },
+    {
+      "path": "research/scripts/start_mini_vla_regression_pair_v1.sh",
+      "sha256": "736ae630a98db3043ad2f3782167c981523dd9ecd39d6e755e345d67ec168b59"
+    },
+    {
+      "path": "research/scripts/start_mini_vla_regression_pair_v2.sh",
+      "sha256": "a420823295f1608df199bf8174948fff1391ccb620b585f7036a8bfa24529e49"
+    },
+    {
+      "path": "research/scripts/start_mini_vla_regression_panel_v1.sh",
+      "sha256": "a9e1cad3d7614e630819a54e908d19a69144febf2cf06cbfe0bf4935b1359071"
+    },
+    {
+      "path": "research/scripts/start_mini_vla_regression_panel_v2.sh",
+      "sha256": "9626b0570d107257c05dc1da0e1bc46676c585029b0eed85954700d034b3ee84"
+    },
+    {
+      "path": "research/scripts/start_mini_vla_v1.sh",
+      "sha256": "c8aab6d2d9f7966f4d05412e2c06e67da0fb5bff252b543e25b40d5c6e206aa4"
+    },
+    {
+      "path": "research/scripts/storage_guard.py",
+      "sha256": "e07e894455008a5c473d711636051c6f62f86a2889f4e3e5b0f6778c2cfb93c3"
+    },
+    {
+      "path": "research/scripts/storage_guard_v2.py",
+      "sha256": "2bcdab38f92c872c887db9304230d759b9cdf5a6f510d5b164add53ca393451f"
+    },
+    {
+      "path": "research/scripts/storage_guard_v3.py",
+      "sha256": "dfb3857cb53895cd0c2e04b06e85408bb0a90f306eb8832bcece51dbd16e6fc9"
+    },
+    {
+      "path": "research/scripts/summarize_architecture_evidence_20261104.py",
+      "sha256": "cb6ac170e42bcb3016ce469b72cdd64dfb6ff5fb9f5815d423fa8bea6deadc5c"
+    },
+    {
+      "path": "research/scripts/summarize_flow_scope_20261104.py",
+      "sha256": "b2806752987ec166835652f48b4a0d548870666cf7351ff71af062c52893a16c"
+    },
+    {
+      "path": "research/scripts/test_adapted_flow_ram_contract_v1.py",
+      "sha256": "505e1626bd13245c0fb53e8071379afa7f999be4e094c6805b652a7fbd1c4fc7"
+    },
+    {
+      "path": "research/scripts/test_dispatcher_gpu_count_v2.py",
+      "sha256": "9f5b7c1ef898351a199dca50396d6809ed45fc366094724713a2e912bd858f5c"
+    },
+    {
+      "path": "research/scripts/test_final_episode_contract_v1.py",
+      "sha256": "8cf4f0900df5a52c7ed99185f239c1763c9492f7ee5b814450d9703caf963ae4"
+    },
+    {
+      "path": "research/scripts/test_final_prefix_resume_v1.py",
+      "sha256": "5c78bd2f877243ebde5686632ae5a715fae0a52d7f2d2c31298a4cd42c3caa70"
+    },
+    {
+      "path": "research/scripts/test_final_resume_admission_v1.py",
+      "sha256": "5e500d1b74ee3107c8d30730cf90b93ee40ef231cc431377eccedaf107d4cc6f"
+    },
+    {
+      "path": "research/scripts/test_fixed_lora_flow_eval_v1.py",
+      "sha256": "513f764dcdaf3ee32a0e7498c1f57dede09445f5beefdbac0669ab2f20a1a4fb"
+    },
+    {
+      "path": "research/scripts/test_flow_depth2_metadata_v1.py",
+      "sha256": "27793fdceec501d06307eeed245c2a6f579d4f458d00b593d584d1fa4d4bb0e2"
+    },
+    {
+      "path": "research/scripts/test_flow_depth2_parallel_eval_v1.py",
+      "sha256": "6a1eaea7b1ff6a40598a955fceea1aed087bab52a036a8f9d46e01d790df3366"
+    },
+    {
+      "path": "research/scripts/test_flow_depth2_v1.py",
+      "sha256": "dd06d14afb3a066ab826a1e9bcb4cc2c5b1add51baa89772cc50e34a2d47e392"
+    },
+    {
+      "path": "research/scripts/test_flow_noise_control_v1.py",
+      "sha256": "0a6c41809c11706385e3724a7879405e5475191c4019fede2d37c9d6fc059efb"
+    },
+    {
+      "path": "research/scripts/test_flow_tail_consistent_v1.py",
+      "sha256": "a6cacc413566d71565261646490c8d8f859dca3d629f49b9dcab8f81e2c50f14"
+    },
+    {
+      "path": "research/scripts/test_flow_tail_parallel_eval_v1.py",
+      "sha256": "a01796dfd5527c5313f0dfd8a56b8e5d74f41a431c0bf0fe0f422e1d18760e74"
+    },
+    {
+      "path": "research/scripts/test_flow_tail_realdata_v1.py",
+      "sha256": "206169575bc3d896d3ba33421e67dd769553b9a7ba5f438f7b397154f1d9a567"
+    },
+    {
+      "path": "research/scripts/test_flow_time_film_eval_v1.py",
+      "sha256": "c81d5b655687b94f2059088fabba3f9b061fad8cae3ca0820090f358ea1410eb"
+    },
+    {
+      "path": "research/scripts/test_flow_time_film_v1.py",
+      "sha256": "d4a953451007829a7b96ad6ef6a21f245a480138391042d8009b18b286a270be"
+    },
+    {
+      "path": "research/scripts/test_gpu_selection.py",
+      "sha256": "43df4a89e6389bd61b99b71aa5653da125a98d775533cac9aa12e579efbd5234"
+    },
+    {
+      "path": "research/scripts/test_gpu_shared_admission_v1.py",
+      "sha256": "30678ecb7f251c895504c3160f62d9ad57b5f1f867b5d5e594a16d0362dc2b9d"
+    },
+    {
+      "path": "research/scripts/test_gpu_watch.py",
+      "sha256": "713d20ed609f61a33b436b0ed13ec7aad19230c9c97a130b4759f181d9e6061f"
+    },
+    {
+      "path": "research/scripts/test_m4_attention_v1.py",
+      "sha256": "080922679b15244a72cf6f1f24fc9ee457fddfba29ec2c5fed866f842795fbdc"
+    },
+    {
+      "path": "research/scripts/test_m6_network_recovery_v3.py",
+      "sha256": "ba4282d131c0cba2aa1267c7b2c4c99d13b53ad31c71d1d59d1126bc5fab8d96"
+    },
+    {
+      "path": "research/scripts/test_m6_prepare_v1.py",
+      "sha256": "5f23316b5af77d7048511c3be3e20961c325dfd9c2d4be93dac990e9f1a9d6b3"
+    },
+    {
+      "path": "research/scripts/test_m6_prepare_v2.py",
+      "sha256": "7c8190349cad713bb44fdc479b32b998bfaa75db30db494f4d6199ce9b7cf6bb"
+    },
+    {
+      "path": "research/scripts/test_m7a_spatial_tokens_v1.py",
+      "sha256": "891f967d79e1e2fc572aecbed696dad9592b8dbdfa648510a9bec0168ced43cd"
+    },
+    {
+      "path": "research/scripts/test_m8_online_contract_v1.py",
+      "sha256": "7ba147b0ac325e3d4649a90840680a16d9878c3669ad788791031a45690da418"
+    },
+    {
+      "path": "research/scripts/test_m9_flow_contract_v1.py",
+      "sha256": "56b87d18d80be345bd93b8230a83b9b9158d3a5f8950c1b57b241e00217acf2f"
+    },
+    {
+      "path": "research/scripts/test_m9_online_contract_v1.py",
+      "sha256": "9532cceae8a225dac9fce532a3444c47c138c08f0a5f89ba59f28f51108efbeb"
+    },
+    {
+      "path": "research/scripts/test_mini_vla_dispatcher_v1.py",
+      "sha256": "5cd907ae5463850a9434d4977acaff9fe11b150857549c3ac99f328cc7fab064",
+      "original_sha256": "93137b1583e4f1ad94ca58132808041d9d23a0a91ec84ba09d76c67f8cd5debf",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/scripts/test_modern_cache_contract_v1.py",
+      "sha256": "1f01fb722d930b2e5a969489a5f8aa0a0753a738c1eb7004def1ce4e42f6b632"
+    },
+    {
+      "path": "research/scripts/test_paired_continuation_v1.py",
+      "sha256": "ccf439dc817eba2671bbe77faf2ea1d48e7ac9cb58d0f0121ed5a7a925c4f9ec"
+    },
+    {
+      "path": "research/scripts/test_paired_eval_contract_v1.py",
+      "sha256": "37cbebc8cf365d87b21af96468dd4b58768c00ad84684d562585851048fe0f6d"
+    },
+    {
+      "path": "research/scripts/test_paired_eval_environment_v2.py",
+      "sha256": "64418d58d57ce0d91aa2011110d8d675d95ad39d7d962255d4e7c02f4ada1782"
+    },
+    {
+      "path": "research/scripts/test_parallel_extract_v1.py",
+      "sha256": "3095a384725025337817215e0c7c6cfbbd6d3d899d67de426bb85b1b820ea51c"
+    },
+    {
+      "path": "research/scripts/test_pi05_compact_state_v1.py",
+      "sha256": "3e495580efa17b323a7070b36f6db9a2f5485849ab7ad67ea731de009246a5d0"
+    },
+    {
+      "path": "research/scripts/test_pi05_formal_executor_v1.py",
+      "sha256": "ac7832395a475d501dc886e65ae110ca42287d4c8e7e33fece3f82d169ca46df"
+    },
+    {
+      "path": "research/scripts/test_preflight_exit_record_v1.py",
+      "sha256": "a8795fcafc7cb878717de11c4d9568ff5866d864aa743833767c8f39288f8a99"
+    },
+    {
+      "path": "research/scripts/test_regression_depth_pair_v1.py",
+      "sha256": "34cc76b84065d0ddfb8e109e30c37cfd10466103aac8e76823d13784b352db41"
+    },
+    {
+      "path": "research/scripts/test_regression_panel_v1.py",
+      "sha256": "27c5dd21fabdee733893e9e086f8b487e2809f21bc8924c3001d9aa5b49a61c6"
+    },
+    {
+      "path": "research/scripts/test_regression_panel_v2.py",
+      "sha256": "8efbab03b0891fe94c496a4f50ba91e1df4e01824b420954dcef4e1bd2223dea"
+    },
+    {
+      "path": "research/scripts/test_smolvlm_lora_contract_v1.py",
+      "sha256": "f135a3596af6464b2c61cda45b8f648a66eb55b549b7e3298e507995585fe083"
+    },
+    {
+      "path": "research/scripts/test_vlm_head_training_contract_v1.py",
+      "sha256": "441c37150e60ba01c459f73c281f68efdb5943bcf4199b8edbc33afab252c873"
+    },
+    {
+      "path": "research/scripts/train.sh",
+      "sha256": "ac73b1a0f0260b0bdcbf7567e6beb9b32d53b32da82d5355496cf5065da607a1"
+    },
+    {
+      "path": "research/scripts/train_formal_v1.py",
+      "sha256": "2700eadb6c3ca8b3b7de5e15b64b4efb1b9146e4ce27c8e67cabd225232009f7"
+    },
+    {
+      "path": "research/scripts/train_verified.py",
+      "sha256": "ff7f4be90446b5dbf9ca93462c4e375a8fdaf8c0fb4bd84368148e74f71088ed"
+    },
+    {
+      "path": "research/scripts/update_report.py",
+      "sha256": "acc9598b2dc0271b585d4fec2328ff4bb18cd0b793791af7917c4c2a047ae0ec",
+      "original_sha256": "e03352ced4a4b05612147ca9dd80a598daf0e3f30cc97e0e58143ce996532ec1",
+      "export_change": "Local chat identifier replaced by PUBLIC_REPRODUCTION."
+    },
+    {
+      "path": "research/scripts/verify_continuation_v4.py",
+      "sha256": "ec01eeb3754207fbc301cd6872020cd24a84d659863e4504d58dd95c75d80b0f"
+    },
+    {
+      "path": "research/scripts/verify_formal_completion_v1.py",
+      "sha256": "bd40958c952e5690844047d0761ebb03378e469f4da794908b6ffce1a0a9ecb9"
+    },
+    {
+      "path": "robots/piper/openpi_overlay/examples/aloha_real/convert_cobot_data_to_lerobot.py",
+      "sha256": "589c432813667821bf7839ce91c2589c1a286d8aae702f9272b32c4a5c853b05",
+      "snapshot": "2026-11-06"
+    },
+    {
+      "path": "robots/piper/openpi_overlay/pyproject.toml",
+      "sha256": "b115474a844299a32543792c9676d658ad2e9e4158ffc3d12d9a37e302f6bfc0",
+      "snapshot": "2026-11-06"
+    },
+    {
+      "path": "robots/piper/openpi_overlay/scripts/aloha_inference-joint-ros2.py",
+      "sha256": "edbf215fe427d66427d3c7ecde942809ab9d5217fa414ea6b21697392ad0839f",
+      "snapshot": "2026-11-06"
+    },
+    {
+      "path": "robots/piper/openpi_overlay/scripts/compute_norm_stats.py",
+      "sha256": "68298f895c0b26ec488db2f4059ce0359b7ceb6f5b4e2c403627abd60e14ac62",
+      "snapshot": "2026-11-06"
+    },
+    {
+      "path": "robots/piper/openpi_overlay/scripts/serve_policy.py",
+      "sha256": "8814ab1ebe39cd900cb6c4e306cd00e6514f2bb4f976eac12f79e56b24dc6a80",
+      "snapshot": "2026-11-06"
+    },
+    {
+      "path": "robots/piper/openpi_overlay/src/openpi/models/pi0_config.py",
+      "sha256": "8e819451023512384639a245454a7df189a42c58a3a968f35d0195f668948ca7",
+      "snapshot": "2026-11-06"
+    },
+    {
+      "path": "robots/piper/openpi_overlay/src/openpi/policies/aloha_policy.py",
+      "sha256": "bd8706f44716425254cb1534b52c5691fa2c31e97fe52fab8e954c7ecd238555",
+      "snapshot": "2026-11-06"
+    },
+    {
+      "path": "robots/piper/openpi_overlay/src/openpi/policies/policy_config.py",
+      "sha256": "cf6607c8056cac4774a2ef809951c275e9eee2fe6bc7c1d444855c9b83c826f6",
+      "snapshot": "2026-11-06"
+    },
+    {
+      "path": "robots/piper/openpi_overlay/src/openpi/training/config.py",
+      "sha256": "e221b9937304ffe27bae821da15cbca1b93d12d4e4d1414fbcfcf1be9283cf07",
+      "snapshot": "2026-11-06"
+    }
+  ]
+}

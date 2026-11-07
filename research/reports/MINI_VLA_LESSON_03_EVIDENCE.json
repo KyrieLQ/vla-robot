@@ -1,0 +1,68 @@
+{
+  "kind": "lesson_source_and_arithmetic_review_not_new_experiment",
+  "shape_method": "Derived from installedTorchvision layer definitions;no model forward executed",
+  "resnet_stage_shapes": [
+    [
+      64,
+      64,
+      64
+    ],
+    [
+      64,
+      32,
+      32
+    ],
+    [
+      64,
+      32,
+      32
+    ],
+    [
+      128,
+      16,
+      16
+    ],
+    [
+      256,
+      8,
+      8
+    ],
+    [
+      512,
+      4,
+      4
+    ]
+  ],
+  "training_reports": {
+    "tiny_norm": {
+      "parameters": 794726,
+      "best_epoch": 9,
+      "training_seed": 42,
+      "validation_first_mse": 0.3670160654153359
+    },
+    "resnet_random": {
+      "parameters": 13781894,
+      "best_epoch": 48,
+      "training_seed": 42,
+      "validation_first_mse": 0.37527649019701653
+    },
+    "resnet_pretrained": {
+      "parameters": 13781894,
+      "best_epoch": 50,
+      "training_seed": 42,
+      "validation_first_mse": 0.37604993981638873
+    }
+  },
+  "red_pixel_128_standardized": 0.0740645603219454,
+  "projection_parameters": 2097408,
+  "parameter_ratio": 17.34169260852168,
+  "code_sources": {
+    "mini_vla/visual_model_v1.py": "e4fda8e829a160e05ce5ff2529938070391551e7cd21efeafa8b1b1e30714191",
+    "mini_vla/model.py": "ad427864acd56401f98f7acf6cace5e3dcea2bed37c099078eada7dafa0ef204",
+    "mini_vla/chunk_model_v1.py": "f893786eb35df6e514687c3eb518244870356192cadb37bee68e0f0580b6ae58",
+    "mini_vla/experiment_m3_v1.py": "8f260a4ab73a2c3c2011d4cbdc884daf66ce6e3b2678a1c6964b4882ff31972a"
+  },
+  "gpu_operations": 0,
+  "new_training_updates": 0,
+  "new_simulation_episodes": 0
+}

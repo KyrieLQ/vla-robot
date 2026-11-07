@@ -1,0 +1,3517 @@
+{
+  "created_at": "2026-10-14T00:47:53.228504+08:00",
+  "seed": 20261014,
+  "sampling": "Per task, five index strata of ten; retain old index 10*b+2 and select three smallest SHA256(seed:task:index) in each stratum.",
+  "already_inspected_indices_per_task": [
+    2,
+    12,
+    22,
+    32,
+    42
+  ],
+  "development": [
+    {
+      "pair_id": "task0_init2",
+      "task_id": 0,
+      "initial_state_index": 2,
+      "env_seed": 1002,
+      "policy_seed": 2002
+    },
+    {
+      "pair_id": "task0_init5",
+      "task_id": 0,
+      "initial_state_index": 5,
+      "env_seed": 1005,
+      "policy_seed": 2005
+    },
+    {
+      "pair_id": "task0_init6",
+      "task_id": 0,
+      "initial_state_index": 6,
+      "env_seed": 1006,
+      "policy_seed": 2006
+    },
+    {
+      "pair_id": "task0_init8",
+      "task_id": 0,
+      "initial_state_index": 8,
+      "env_seed": 1008,
+      "policy_seed": 2008
+    },
+    {
+      "pair_id": "task0_init12",
+      "task_id": 0,
+      "initial_state_index": 12,
+      "env_seed": 1012,
+      "policy_seed": 2012
+    },
+    {
+      "pair_id": "task0_init15",
+      "task_id": 0,
+      "initial_state_index": 15,
+      "env_seed": 1015,
+      "policy_seed": 2015
+    },
+    {
+      "pair_id": "task0_init16",
+      "task_id": 0,
+      "initial_state_index": 16,
+      "env_seed": 1016,
+      "policy_seed": 2016
+    },
+    {
+      "pair_id": "task0_init18",
+      "task_id": 0,
+      "initial_state_index": 18,
+      "env_seed": 1018,
+      "policy_seed": 2018
+    },
+    {
+      "pair_id": "task0_init22",
+      "task_id": 0,
+      "initial_state_index": 22,
+      "env_seed": 1022,
+      "policy_seed": 2022
+    },
+    {
+      "pair_id": "task0_init26",
+      "task_id": 0,
+      "initial_state_index": 26,
+      "env_seed": 1026,
+      "policy_seed": 2026
+    },
+    {
+      "pair_id": "task0_init27",
+      "task_id": 0,
+      "initial_state_index": 27,
+      "env_seed": 1027,
+      "policy_seed": 2027
+    },
+    {
+      "pair_id": "task0_init28",
+      "task_id": 0,
+      "initial_state_index": 28,
+      "env_seed": 1028,
+      "policy_seed": 2028
+    },
+    {
+      "pair_id": "task0_init32",
+      "task_id": 0,
+      "initial_state_index": 32,
+      "env_seed": 1032,
+      "policy_seed": 2032
+    },
+    {
+      "pair_id": "task0_init35",
+      "task_id": 0,
+      "initial_state_index": 35,
+      "env_seed": 1035,
+      "policy_seed": 2035
+    },
+    {
+      "pair_id": "task0_init36",
+      "task_id": 0,
+      "initial_state_index": 36,
+      "env_seed": 1036,
+      "policy_seed": 2036
+    },
+    {
+      "pair_id": "task0_init39",
+      "task_id": 0,
+      "initial_state_index": 39,
+      "env_seed": 1039,
+      "policy_seed": 2039
+    },
+    {
+      "pair_id": "task0_init40",
+      "task_id": 0,
+      "initial_state_index": 40,
+      "env_seed": 1040,
+      "policy_seed": 2040
+    },
+    {
+      "pair_id": "task0_init42",
+      "task_id": 0,
+      "initial_state_index": 42,
+      "env_seed": 1042,
+      "policy_seed": 2042
+    },
+    {
+      "pair_id": "task0_init43",
+      "task_id": 0,
+      "initial_state_index": 43,
+      "env_seed": 1043,
+      "policy_seed": 2043
+    },
+    {
+      "pair_id": "task0_init45",
+      "task_id": 0,
+      "initial_state_index": 45,
+      "env_seed": 1045,
+      "policy_seed": 2045
+    },
+    {
+      "pair_id": "task1_init0",
+      "task_id": 1,
+      "initial_state_index": 0,
+      "env_seed": 1100,
+      "policy_seed": 2100
+    },
+    {
+      "pair_id": "task1_init2",
+      "task_id": 1,
+      "initial_state_index": 2,
+      "env_seed": 1102,
+      "policy_seed": 2102
+    },
+    {
+      "pair_id": "task1_init4",
+      "task_id": 1,
+      "initial_state_index": 4,
+      "env_seed": 1104,
+      "policy_seed": 2104
+    },
+    {
+      "pair_id": "task1_init9",
+      "task_id": 1,
+      "initial_state_index": 9,
+      "env_seed": 1109,
+      "policy_seed": 2109
+    },
+    {
+      "pair_id": "task1_init10",
+      "task_id": 1,
+      "initial_state_index": 10,
+      "env_seed": 1110,
+      "policy_seed": 2110
+    },
+    {
+      "pair_id": "task1_init12",
+      "task_id": 1,
+      "initial_state_index": 12,
+      "env_seed": 1112,
+      "policy_seed": 2112
+    },
+    {
+      "pair_id": "task1_init13",
+      "task_id": 1,
+      "initial_state_index": 13,
+      "env_seed": 1113,
+      "policy_seed": 2113
+    },
+    {
+      "pair_id": "task1_init15",
+      "task_id": 1,
+      "initial_state_index": 15,
+      "env_seed": 1115,
+      "policy_seed": 2115
+    },
+    {
+      "pair_id": "task1_init22",
+      "task_id": 1,
+      "initial_state_index": 22,
+      "env_seed": 1122,
+      "policy_seed": 2122
+    },
+    {
+      "pair_id": "task1_init23",
+      "task_id": 1,
+      "initial_state_index": 23,
+      "env_seed": 1123,
+      "policy_seed": 2123
+    },
+    {
+      "pair_id": "task1_init24",
+      "task_id": 1,
+      "initial_state_index": 24,
+      "env_seed": 1124,
+      "policy_seed": 2124
+    },
+    {
+      "pair_id": "task1_init26",
+      "task_id": 1,
+      "initial_state_index": 26,
+      "env_seed": 1126,
+      "policy_seed": 2126
+    },
+    {
+      "pair_id": "task1_init31",
+      "task_id": 1,
+      "initial_state_index": 31,
+      "env_seed": 1131,
+      "policy_seed": 2131
+    },
+    {
+      "pair_id": "task1_init32",
+      "task_id": 1,
+      "initial_state_index": 32,
+      "env_seed": 1132,
+      "policy_seed": 2132
+    },
+    {
+      "pair_id": "task1_init33",
+      "task_id": 1,
+      "initial_state_index": 33,
+      "env_seed": 1133,
+      "policy_seed": 2133
+    },
+    {
+      "pair_id": "task1_init34",
+      "task_id": 1,
+      "initial_state_index": 34,
+      "env_seed": 1134,
+      "policy_seed": 2134
+    },
+    {
+      "pair_id": "task1_init40",
+      "task_id": 1,
+      "initial_state_index": 40,
+      "env_seed": 1140,
+      "policy_seed": 2140
+    },
+    {
+      "pair_id": "task1_init41",
+      "task_id": 1,
+      "initial_state_index": 41,
+      "env_seed": 1141,
+      "policy_seed": 2141
+    },
+    {
+      "pair_id": "task1_init42",
+      "task_id": 1,
+      "initial_state_index": 42,
+      "env_seed": 1142,
+      "policy_seed": 2142
+    },
+    {
+      "pair_id": "task1_init44",
+      "task_id": 1,
+      "initial_state_index": 44,
+      "env_seed": 1144,
+      "policy_seed": 2144
+    },
+    {
+      "pair_id": "task2_init1",
+      "task_id": 2,
+      "initial_state_index": 1,
+      "env_seed": 1201,
+      "policy_seed": 2201
+    },
+    {
+      "pair_id": "task2_init2",
+      "task_id": 2,
+      "initial_state_index": 2,
+      "env_seed": 1202,
+      "policy_seed": 2202
+    },
+    {
+      "pair_id": "task2_init4",
+      "task_id": 2,
+      "initial_state_index": 4,
+      "env_seed": 1204,
+      "policy_seed": 2204
+    },
+    {
+      "pair_id": "task2_init7",
+      "task_id": 2,
+      "initial_state_index": 7,
+      "env_seed": 1207,
+      "policy_seed": 2207
+    },
+    {
+      "pair_id": "task2_init12",
+      "task_id": 2,
+      "initial_state_index": 12,
+      "env_seed": 1212,
+      "policy_seed": 2212
+    },
+    {
+      "pair_id": "task2_init15",
+      "task_id": 2,
+      "initial_state_index": 15,
+      "env_seed": 1215,
+      "policy_seed": 2215
+    },
+    {
+      "pair_id": "task2_init16",
+      "task_id": 2,
+      "initial_state_index": 16,
+      "env_seed": 1216,
+      "policy_seed": 2216
+    },
+    {
+      "pair_id": "task2_init19",
+      "task_id": 2,
+      "initial_state_index": 19,
+      "env_seed": 1219,
+      "policy_seed": 2219
+    },
+    {
+      "pair_id": "task2_init22",
+      "task_id": 2,
+      "initial_state_index": 22,
+      "env_seed": 1222,
+      "policy_seed": 2222
+    },
+    {
+      "pair_id": "task2_init23",
+      "task_id": 2,
+      "initial_state_index": 23,
+      "env_seed": 1223,
+      "policy_seed": 2223
+    },
+    {
+      "pair_id": "task2_init27",
+      "task_id": 2,
+      "initial_state_index": 27,
+      "env_seed": 1227,
+      "policy_seed": 2227
+    },
+    {
+      "pair_id": "task2_init29",
+      "task_id": 2,
+      "initial_state_index": 29,
+      "env_seed": 1229,
+      "policy_seed": 2229
+    },
+    {
+      "pair_id": "task2_init30",
+      "task_id": 2,
+      "initial_state_index": 30,
+      "env_seed": 1230,
+      "policy_seed": 2230
+    },
+    {
+      "pair_id": "task2_init32",
+      "task_id": 2,
+      "initial_state_index": 32,
+      "env_seed": 1232,
+      "policy_seed": 2232
+    },
+    {
+      "pair_id": "task2_init35",
+      "task_id": 2,
+      "initial_state_index": 35,
+      "env_seed": 1235,
+      "policy_seed": 2235
+    },
+    {
+      "pair_id": "task2_init36",
+      "task_id": 2,
+      "initial_state_index": 36,
+      "env_seed": 1236,
+      "policy_seed": 2236
+    },
+    {
+      "pair_id": "task2_init42",
+      "task_id": 2,
+      "initial_state_index": 42,
+      "env_seed": 1242,
+      "policy_seed": 2242
+    },
+    {
+      "pair_id": "task2_init45",
+      "task_id": 2,
+      "initial_state_index": 45,
+      "env_seed": 1245,
+      "policy_seed": 2245
+    },
+    {
+      "pair_id": "task2_init46",
+      "task_id": 2,
+      "initial_state_index": 46,
+      "env_seed": 1246,
+      "policy_seed": 2246
+    },
+    {
+      "pair_id": "task2_init48",
+      "task_id": 2,
+      "initial_state_index": 48,
+      "env_seed": 1248,
+      "policy_seed": 2248
+    },
+    {
+      "pair_id": "task3_init0",
+      "task_id": 3,
+      "initial_state_index": 0,
+      "env_seed": 1300,
+      "policy_seed": 2300
+    },
+    {
+      "pair_id": "task3_init2",
+      "task_id": 3,
+      "initial_state_index": 2,
+      "env_seed": 1302,
+      "policy_seed": 2302
+    },
+    {
+      "pair_id": "task3_init3",
+      "task_id": 3,
+      "initial_state_index": 3,
+      "env_seed": 1303,
+      "policy_seed": 2303
+    },
+    {
+      "pair_id": "task3_init8",
+      "task_id": 3,
+      "initial_state_index": 8,
+      "env_seed": 1308,
+      "policy_seed": 2308
+    },
+    {
+      "pair_id": "task3_init10",
+      "task_id": 3,
+      "initial_state_index": 10,
+      "env_seed": 1310,
+      "policy_seed": 2310
+    },
+    {
+      "pair_id": "task3_init12",
+      "task_id": 3,
+      "initial_state_index": 12,
+      "env_seed": 1312,
+      "policy_seed": 2312
+    },
+    {
+      "pair_id": "task3_init16",
+      "task_id": 3,
+      "initial_state_index": 16,
+      "env_seed": 1316,
+      "policy_seed": 2316
+    },
+    {
+      "pair_id": "task3_init17",
+      "task_id": 3,
+      "initial_state_index": 17,
+      "env_seed": 1317,
+      "policy_seed": 2317
+    },
+    {
+      "pair_id": "task3_init20",
+      "task_id": 3,
+      "initial_state_index": 20,
+      "env_seed": 1320,
+      "policy_seed": 2320
+    },
+    {
+      "pair_id": "task3_init22",
+      "task_id": 3,
+      "initial_state_index": 22,
+      "env_seed": 1322,
+      "policy_seed": 2322
+    },
+    {
+      "pair_id": "task3_init23",
+      "task_id": 3,
+      "initial_state_index": 23,
+      "env_seed": 1323,
+      "policy_seed": 2323
+    },
+    {
+      "pair_id": "task3_init26",
+      "task_id": 3,
+      "initial_state_index": 26,
+      "env_seed": 1326,
+      "policy_seed": 2326
+    },
+    {
+      "pair_id": "task3_init31",
+      "task_id": 3,
+      "initial_state_index": 31,
+      "env_seed": 1331,
+      "policy_seed": 2331
+    },
+    {
+      "pair_id": "task3_init32",
+      "task_id": 3,
+      "initial_state_index": 32,
+      "env_seed": 1332,
+      "policy_seed": 2332
+    },
+    {
+      "pair_id": "task3_init36",
+      "task_id": 3,
+      "initial_state_index": 36,
+      "env_seed": 1336,
+      "policy_seed": 2336
+    },
+    {
+      "pair_id": "task3_init39",
+      "task_id": 3,
+      "initial_state_index": 39,
+      "env_seed": 1339,
+      "policy_seed": 2339
+    },
+    {
+      "pair_id": "task3_init40",
+      "task_id": 3,
+      "initial_state_index": 40,
+      "env_seed": 1340,
+      "policy_seed": 2340
+    },
+    {
+      "pair_id": "task3_init41",
+      "task_id": 3,
+      "initial_state_index": 41,
+      "env_seed": 1341,
+      "policy_seed": 2341
+    },
+    {
+      "pair_id": "task3_init42",
+      "task_id": 3,
+      "initial_state_index": 42,
+      "env_seed": 1342,
+      "policy_seed": 2342
+    },
+    {
+      "pair_id": "task3_init48",
+      "task_id": 3,
+      "initial_state_index": 48,
+      "env_seed": 1348,
+      "policy_seed": 2348
+    },
+    {
+      "pair_id": "task4_init0",
+      "task_id": 4,
+      "initial_state_index": 0,
+      "env_seed": 1400,
+      "policy_seed": 2400
+    },
+    {
+      "pair_id": "task4_init1",
+      "task_id": 4,
+      "initial_state_index": 1,
+      "env_seed": 1401,
+      "policy_seed": 2401
+    },
+    {
+      "pair_id": "task4_init2",
+      "task_id": 4,
+      "initial_state_index": 2,
+      "env_seed": 1402,
+      "policy_seed": 2402
+    },
+    {
+      "pair_id": "task4_init3",
+      "task_id": 4,
+      "initial_state_index": 3,
+      "env_seed": 1403,
+      "policy_seed": 2403
+    },
+    {
+      "pair_id": "task4_init12",
+      "task_id": 4,
+      "initial_state_index": 12,
+      "env_seed": 1412,
+      "policy_seed": 2412
+    },
+    {
+      "pair_id": "task4_init15",
+      "task_id": 4,
+      "initial_state_index": 15,
+      "env_seed": 1415,
+      "policy_seed": 2415
+    },
+    {
+      "pair_id": "task4_init16",
+      "task_id": 4,
+      "initial_state_index": 16,
+      "env_seed": 1416,
+      "policy_seed": 2416
+    },
+    {
+      "pair_id": "task4_init19",
+      "task_id": 4,
+      "initial_state_index": 19,
+      "env_seed": 1419,
+      "policy_seed": 2419
+    },
+    {
+      "pair_id": "task4_init20",
+      "task_id": 4,
+      "initial_state_index": 20,
+      "env_seed": 1420,
+      "policy_seed": 2420
+    },
+    {
+      "pair_id": "task4_init22",
+      "task_id": 4,
+      "initial_state_index": 22,
+      "env_seed": 1422,
+      "policy_seed": 2422
+    },
+    {
+      "pair_id": "task4_init28",
+      "task_id": 4,
+      "initial_state_index": 28,
+      "env_seed": 1428,
+      "policy_seed": 2428
+    },
+    {
+      "pair_id": "task4_init29",
+      "task_id": 4,
+      "initial_state_index": 29,
+      "env_seed": 1429,
+      "policy_seed": 2429
+    },
+    {
+      "pair_id": "task4_init30",
+      "task_id": 4,
+      "initial_state_index": 30,
+      "env_seed": 1430,
+      "policy_seed": 2430
+    },
+    {
+      "pair_id": "task4_init32",
+      "task_id": 4,
+      "initial_state_index": 32,
+      "env_seed": 1432,
+      "policy_seed": 2432
+    },
+    {
+      "pair_id": "task4_init36",
+      "task_id": 4,
+      "initial_state_index": 36,
+      "env_seed": 1436,
+      "policy_seed": 2436
+    },
+    {
+      "pair_id": "task4_init39",
+      "task_id": 4,
+      "initial_state_index": 39,
+      "env_seed": 1439,
+      "policy_seed": 2439
+    },
+    {
+      "pair_id": "task4_init41",
+      "task_id": 4,
+      "initial_state_index": 41,
+      "env_seed": 1441,
+      "policy_seed": 2441
+    },
+    {
+      "pair_id": "task4_init42",
+      "task_id": 4,
+      "initial_state_index": 42,
+      "env_seed": 1442,
+      "policy_seed": 2442
+    },
+    {
+      "pair_id": "task4_init46",
+      "task_id": 4,
+      "initial_state_index": 46,
+      "env_seed": 1446,
+      "policy_seed": 2446
+    },
+    {
+      "pair_id": "task4_init49",
+      "task_id": 4,
+      "initial_state_index": 49,
+      "env_seed": 1449,
+      "policy_seed": 2449
+    },
+    {
+      "pair_id": "task5_init2",
+      "task_id": 5,
+      "initial_state_index": 2,
+      "env_seed": 1502,
+      "policy_seed": 2502
+    },
+    {
+      "pair_id": "task5_init4",
+      "task_id": 5,
+      "initial_state_index": 4,
+      "env_seed": 1504,
+      "policy_seed": 2504
+    },
+    {
+      "pair_id": "task5_init5",
+      "task_id": 5,
+      "initial_state_index": 5,
+      "env_seed": 1505,
+      "policy_seed": 2505
+    },
+    {
+      "pair_id": "task5_init6",
+      "task_id": 5,
+      "initial_state_index": 6,
+      "env_seed": 1506,
+      "policy_seed": 2506
+    },
+    {
+      "pair_id": "task5_init12",
+      "task_id": 5,
+      "initial_state_index": 12,
+      "env_seed": 1512,
+      "policy_seed": 2512
+    },
+    {
+      "pair_id": "task5_init15",
+      "task_id": 5,
+      "initial_state_index": 15,
+      "env_seed": 1515,
+      "policy_seed": 2515
+    },
+    {
+      "pair_id": "task5_init16",
+      "task_id": 5,
+      "initial_state_index": 16,
+      "env_seed": 1516,
+      "policy_seed": 2516
+    },
+    {
+      "pair_id": "task5_init19",
+      "task_id": 5,
+      "initial_state_index": 19,
+      "env_seed": 1519,
+      "policy_seed": 2519
+    },
+    {
+      "pair_id": "task5_init21",
+      "task_id": 5,
+      "initial_state_index": 21,
+      "env_seed": 1521,
+      "policy_seed": 2521
+    },
+    {
+      "pair_id": "task5_init22",
+      "task_id": 5,
+      "initial_state_index": 22,
+      "env_seed": 1522,
+      "policy_seed": 2522
+    },
+    {
+      "pair_id": "task5_init23",
+      "task_id": 5,
+      "initial_state_index": 23,
+      "env_seed": 1523,
+      "policy_seed": 2523
+    },
+    {
+      "pair_id": "task5_init29",
+      "task_id": 5,
+      "initial_state_index": 29,
+      "env_seed": 1529,
+      "policy_seed": 2529
+    },
+    {
+      "pair_id": "task5_init30",
+      "task_id": 5,
+      "initial_state_index": 30,
+      "env_seed": 1530,
+      "policy_seed": 2530
+    },
+    {
+      "pair_id": "task5_init31",
+      "task_id": 5,
+      "initial_state_index": 31,
+      "env_seed": 1531,
+      "policy_seed": 2531
+    },
+    {
+      "pair_id": "task5_init32",
+      "task_id": 5,
+      "initial_state_index": 32,
+      "env_seed": 1532,
+      "policy_seed": 2532
+    },
+    {
+      "pair_id": "task5_init34",
+      "task_id": 5,
+      "initial_state_index": 34,
+      "env_seed": 1534,
+      "policy_seed": 2534
+    },
+    {
+      "pair_id": "task5_init40",
+      "task_id": 5,
+      "initial_state_index": 40,
+      "env_seed": 1540,
+      "policy_seed": 2540
+    },
+    {
+      "pair_id": "task5_init42",
+      "task_id": 5,
+      "initial_state_index": 42,
+      "env_seed": 1542,
+      "policy_seed": 2542
+    },
+    {
+      "pair_id": "task5_init44",
+      "task_id": 5,
+      "initial_state_index": 44,
+      "env_seed": 1544,
+      "policy_seed": 2544
+    },
+    {
+      "pair_id": "task5_init46",
+      "task_id": 5,
+      "initial_state_index": 46,
+      "env_seed": 1546,
+      "policy_seed": 2546
+    },
+    {
+      "pair_id": "task6_init1",
+      "task_id": 6,
+      "initial_state_index": 1,
+      "env_seed": 1601,
+      "policy_seed": 2601
+    },
+    {
+      "pair_id": "task6_init2",
+      "task_id": 6,
+      "initial_state_index": 2,
+      "env_seed": 1602,
+      "policy_seed": 2602
+    },
+    {
+      "pair_id": "task6_init3",
+      "task_id": 6,
+      "initial_state_index": 3,
+      "env_seed": 1603,
+      "policy_seed": 2603
+    },
+    {
+      "pair_id": "task6_init7",
+      "task_id": 6,
+      "initial_state_index": 7,
+      "env_seed": 1607,
+      "policy_seed": 2607
+    },
+    {
+      "pair_id": "task6_init10",
+      "task_id": 6,
+      "initial_state_index": 10,
+      "env_seed": 1610,
+      "policy_seed": 2610
+    },
+    {
+      "pair_id": "task6_init12",
+      "task_id": 6,
+      "initial_state_index": 12,
+      "env_seed": 1612,
+      "policy_seed": 2612
+    },
+    {
+      "pair_id": "task6_init13",
+      "task_id": 6,
+      "initial_state_index": 13,
+      "env_seed": 1613,
+      "policy_seed": 2613
+    },
+    {
+      "pair_id": "task6_init18",
+      "task_id": 6,
+      "initial_state_index": 18,
+      "env_seed": 1618,
+      "policy_seed": 2618
+    },
+    {
+      "pair_id": "task6_init21",
+      "task_id": 6,
+      "initial_state_index": 21,
+      "env_seed": 1621,
+      "policy_seed": 2621
+    },
+    {
+      "pair_id": "task6_init22",
+      "task_id": 6,
+      "initial_state_index": 22,
+      "env_seed": 1622,
+      "policy_seed": 2622
+    },
+    {
+      "pair_id": "task6_init25",
+      "task_id": 6,
+      "initial_state_index": 25,
+      "env_seed": 1625,
+      "policy_seed": 2625
+    },
+    {
+      "pair_id": "task6_init28",
+      "task_id": 6,
+      "initial_state_index": 28,
+      "env_seed": 1628,
+      "policy_seed": 2628
+    },
+    {
+      "pair_id": "task6_init32",
+      "task_id": 6,
+      "initial_state_index": 32,
+      "env_seed": 1632,
+      "policy_seed": 2632
+    },
+    {
+      "pair_id": "task6_init33",
+      "task_id": 6,
+      "initial_state_index": 33,
+      "env_seed": 1633,
+      "policy_seed": 2633
+    },
+    {
+      "pair_id": "task6_init34",
+      "task_id": 6,
+      "initial_state_index": 34,
+      "env_seed": 1634,
+      "policy_seed": 2634
+    },
+    {
+      "pair_id": "task6_init38",
+      "task_id": 6,
+      "initial_state_index": 38,
+      "env_seed": 1638,
+      "policy_seed": 2638
+    },
+    {
+      "pair_id": "task6_init42",
+      "task_id": 6,
+      "initial_state_index": 42,
+      "env_seed": 1642,
+      "policy_seed": 2642
+    },
+    {
+      "pair_id": "task6_init45",
+      "task_id": 6,
+      "initial_state_index": 45,
+      "env_seed": 1645,
+      "policy_seed": 2645
+    },
+    {
+      "pair_id": "task6_init48",
+      "task_id": 6,
+      "initial_state_index": 48,
+      "env_seed": 1648,
+      "policy_seed": 2648
+    },
+    {
+      "pair_id": "task6_init49",
+      "task_id": 6,
+      "initial_state_index": 49,
+      "env_seed": 1649,
+      "policy_seed": 2649
+    },
+    {
+      "pair_id": "task7_init0",
+      "task_id": 7,
+      "initial_state_index": 0,
+      "env_seed": 1700,
+      "policy_seed": 2700
+    },
+    {
+      "pair_id": "task7_init2",
+      "task_id": 7,
+      "initial_state_index": 2,
+      "env_seed": 1702,
+      "policy_seed": 2702
+    },
+    {
+      "pair_id": "task7_init7",
+      "task_id": 7,
+      "initial_state_index": 7,
+      "env_seed": 1707,
+      "policy_seed": 2707
+    },
+    {
+      "pair_id": "task7_init9",
+      "task_id": 7,
+      "initial_state_index": 9,
+      "env_seed": 1709,
+      "policy_seed": 2709
+    },
+    {
+      "pair_id": "task7_init11",
+      "task_id": 7,
+      "initial_state_index": 11,
+      "env_seed": 1711,
+      "policy_seed": 2711
+    },
+    {
+      "pair_id": "task7_init12",
+      "task_id": 7,
+      "initial_state_index": 12,
+      "env_seed": 1712,
+      "policy_seed": 2712
+    },
+    {
+      "pair_id": "task7_init17",
+      "task_id": 7,
+      "initial_state_index": 17,
+      "env_seed": 1717,
+      "policy_seed": 2717
+    },
+    {
+      "pair_id": "task7_init19",
+      "task_id": 7,
+      "initial_state_index": 19,
+      "env_seed": 1719,
+      "policy_seed": 2719
+    },
+    {
+      "pair_id": "task7_init22",
+      "task_id": 7,
+      "initial_state_index": 22,
+      "env_seed": 1722,
+      "policy_seed": 2722
+    },
+    {
+      "pair_id": "task7_init25",
+      "task_id": 7,
+      "initial_state_index": 25,
+      "env_seed": 1725,
+      "policy_seed": 2725
+    },
+    {
+      "pair_id": "task7_init27",
+      "task_id": 7,
+      "initial_state_index": 27,
+      "env_seed": 1727,
+      "policy_seed": 2727
+    },
+    {
+      "pair_id": "task7_init28",
+      "task_id": 7,
+      "initial_state_index": 28,
+      "env_seed": 1728,
+      "policy_seed": 2728
+    },
+    {
+      "pair_id": "task7_init30",
+      "task_id": 7,
+      "initial_state_index": 30,
+      "env_seed": 1730,
+      "policy_seed": 2730
+    },
+    {
+      "pair_id": "task7_init31",
+      "task_id": 7,
+      "initial_state_index": 31,
+      "env_seed": 1731,
+      "policy_seed": 2731
+    },
+    {
+      "pair_id": "task7_init32",
+      "task_id": 7,
+      "initial_state_index": 32,
+      "env_seed": 1732,
+      "policy_seed": 2732
+    },
+    {
+      "pair_id": "task7_init37",
+      "task_id": 7,
+      "initial_state_index": 37,
+      "env_seed": 1737,
+      "policy_seed": 2737
+    },
+    {
+      "pair_id": "task7_init42",
+      "task_id": 7,
+      "initial_state_index": 42,
+      "env_seed": 1742,
+      "policy_seed": 2742
+    },
+    {
+      "pair_id": "task7_init43",
+      "task_id": 7,
+      "initial_state_index": 43,
+      "env_seed": 1743,
+      "policy_seed": 2743
+    },
+    {
+      "pair_id": "task7_init44",
+      "task_id": 7,
+      "initial_state_index": 44,
+      "env_seed": 1744,
+      "policy_seed": 2744
+    },
+    {
+      "pair_id": "task7_init48",
+      "task_id": 7,
+      "initial_state_index": 48,
+      "env_seed": 1748,
+      "policy_seed": 2748
+    },
+    {
+      "pair_id": "task8_init0",
+      "task_id": 8,
+      "initial_state_index": 0,
+      "env_seed": 1800,
+      "policy_seed": 2800
+    },
+    {
+      "pair_id": "task8_init1",
+      "task_id": 8,
+      "initial_state_index": 1,
+      "env_seed": 1801,
+      "policy_seed": 2801
+    },
+    {
+      "pair_id": "task8_init2",
+      "task_id": 8,
+      "initial_state_index": 2,
+      "env_seed": 1802,
+      "policy_seed": 2802
+    },
+    {
+      "pair_id": "task8_init9",
+      "task_id": 8,
+      "initial_state_index": 9,
+      "env_seed": 1809,
+      "policy_seed": 2809
+    },
+    {
+      "pair_id": "task8_init12",
+      "task_id": 8,
+      "initial_state_index": 12,
+      "env_seed": 1812,
+      "policy_seed": 2812
+    },
+    {
+      "pair_id": "task8_init16",
+      "task_id": 8,
+      "initial_state_index": 16,
+      "env_seed": 1816,
+      "policy_seed": 2816
+    },
+    {
+      "pair_id": "task8_init17",
+      "task_id": 8,
+      "initial_state_index": 17,
+      "env_seed": 1817,
+      "policy_seed": 2817
+    },
+    {
+      "pair_id": "task8_init19",
+      "task_id": 8,
+      "initial_state_index": 19,
+      "env_seed": 1819,
+      "policy_seed": 2819
+    },
+    {
+      "pair_id": "task8_init22",
+      "task_id": 8,
+      "initial_state_index": 22,
+      "env_seed": 1822,
+      "policy_seed": 2822
+    },
+    {
+      "pair_id": "task8_init26",
+      "task_id": 8,
+      "initial_state_index": 26,
+      "env_seed": 1826,
+      "policy_seed": 2826
+    },
+    {
+      "pair_id": "task8_init27",
+      "task_id": 8,
+      "initial_state_index": 27,
+      "env_seed": 1827,
+      "policy_seed": 2827
+    },
+    {
+      "pair_id": "task8_init28",
+      "task_id": 8,
+      "initial_state_index": 28,
+      "env_seed": 1828,
+      "policy_seed": 2828
+    },
+    {
+      "pair_id": "task8_init30",
+      "task_id": 8,
+      "initial_state_index": 30,
+      "env_seed": 1830,
+      "policy_seed": 2830
+    },
+    {
+      "pair_id": "task8_init32",
+      "task_id": 8,
+      "initial_state_index": 32,
+      "env_seed": 1832,
+      "policy_seed": 2832
+    },
+    {
+      "pair_id": "task8_init36",
+      "task_id": 8,
+      "initial_state_index": 36,
+      "env_seed": 1836,
+      "policy_seed": 2836
+    },
+    {
+      "pair_id": "task8_init37",
+      "task_id": 8,
+      "initial_state_index": 37,
+      "env_seed": 1837,
+      "policy_seed": 2837
+    },
+    {
+      "pair_id": "task8_init42",
+      "task_id": 8,
+      "initial_state_index": 42,
+      "env_seed": 1842,
+      "policy_seed": 2842
+    },
+    {
+      "pair_id": "task8_init45",
+      "task_id": 8,
+      "initial_state_index": 45,
+      "env_seed": 1845,
+      "policy_seed": 2845
+    },
+    {
+      "pair_id": "task8_init47",
+      "task_id": 8,
+      "initial_state_index": 47,
+      "env_seed": 1847,
+      "policy_seed": 2847
+    },
+    {
+      "pair_id": "task8_init48",
+      "task_id": 8,
+      "initial_state_index": 48,
+      "env_seed": 1848,
+      "policy_seed": 2848
+    },
+    {
+      "pair_id": "task9_init2",
+      "task_id": 9,
+      "initial_state_index": 2,
+      "env_seed": 1902,
+      "policy_seed": 2902
+    },
+    {
+      "pair_id": "task9_init5",
+      "task_id": 9,
+      "initial_state_index": 5,
+      "env_seed": 1905,
+      "policy_seed": 2905
+    },
+    {
+      "pair_id": "task9_init6",
+      "task_id": 9,
+      "initial_state_index": 6,
+      "env_seed": 1906,
+      "policy_seed": 2906
+    },
+    {
+      "pair_id": "task9_init7",
+      "task_id": 9,
+      "initial_state_index": 7,
+      "env_seed": 1907,
+      "policy_seed": 2907
+    },
+    {
+      "pair_id": "task9_init11",
+      "task_id": 9,
+      "initial_state_index": 11,
+      "env_seed": 1911,
+      "policy_seed": 2911
+    },
+    {
+      "pair_id": "task9_init12",
+      "task_id": 9,
+      "initial_state_index": 12,
+      "env_seed": 1912,
+      "policy_seed": 2912
+    },
+    {
+      "pair_id": "task9_init13",
+      "task_id": 9,
+      "initial_state_index": 13,
+      "env_seed": 1913,
+      "policy_seed": 2913
+    },
+    {
+      "pair_id": "task9_init19",
+      "task_id": 9,
+      "initial_state_index": 19,
+      "env_seed": 1919,
+      "policy_seed": 2919
+    },
+    {
+      "pair_id": "task9_init22",
+      "task_id": 9,
+      "initial_state_index": 22,
+      "env_seed": 1922,
+      "policy_seed": 2922
+    },
+    {
+      "pair_id": "task9_init26",
+      "task_id": 9,
+      "initial_state_index": 26,
+      "env_seed": 1926,
+      "policy_seed": 2926
+    },
+    {
+      "pair_id": "task9_init27",
+      "task_id": 9,
+      "initial_state_index": 27,
+      "env_seed": 1927,
+      "policy_seed": 2927
+    },
+    {
+      "pair_id": "task9_init28",
+      "task_id": 9,
+      "initial_state_index": 28,
+      "env_seed": 1928,
+      "policy_seed": 2928
+    },
+    {
+      "pair_id": "task9_init32",
+      "task_id": 9,
+      "initial_state_index": 32,
+      "env_seed": 1932,
+      "policy_seed": 2932
+    },
+    {
+      "pair_id": "task9_init34",
+      "task_id": 9,
+      "initial_state_index": 34,
+      "env_seed": 1934,
+      "policy_seed": 2934
+    },
+    {
+      "pair_id": "task9_init36",
+      "task_id": 9,
+      "initial_state_index": 36,
+      "env_seed": 1936,
+      "policy_seed": 2936
+    },
+    {
+      "pair_id": "task9_init39",
+      "task_id": 9,
+      "initial_state_index": 39,
+      "env_seed": 1939,
+      "policy_seed": 2939
+    },
+    {
+      "pair_id": "task9_init41",
+      "task_id": 9,
+      "initial_state_index": 41,
+      "env_seed": 1941,
+      "policy_seed": 2941
+    },
+    {
+      "pair_id": "task9_init42",
+      "task_id": 9,
+      "initial_state_index": 42,
+      "env_seed": 1942,
+      "policy_seed": 2942
+    },
+    {
+      "pair_id": "task9_init45",
+      "task_id": 9,
+      "initial_state_index": 45,
+      "env_seed": 1945,
+      "policy_seed": 2945
+    },
+    {
+      "pair_id": "task9_init46",
+      "task_id": 9,
+      "initial_state_index": 46,
+      "env_seed": 1946,
+      "policy_seed": 2946
+    }
+  ],
+  "confirmation": [
+    {
+      "pair_id": "task0_init0",
+      "task_id": 0,
+      "initial_state_index": 0,
+      "env_seed": 1000,
+      "policy_seed": 2000
+    },
+    {
+      "pair_id": "task0_init1",
+      "task_id": 0,
+      "initial_state_index": 1,
+      "env_seed": 1001,
+      "policy_seed": 2001
+    },
+    {
+      "pair_id": "task0_init3",
+      "task_id": 0,
+      "initial_state_index": 3,
+      "env_seed": 1003,
+      "policy_seed": 2003
+    },
+    {
+      "pair_id": "task0_init4",
+      "task_id": 0,
+      "initial_state_index": 4,
+      "env_seed": 1004,
+      "policy_seed": 2004
+    },
+    {
+      "pair_id": "task0_init7",
+      "task_id": 0,
+      "initial_state_index": 7,
+      "env_seed": 1007,
+      "policy_seed": 2007
+    },
+    {
+      "pair_id": "task0_init9",
+      "task_id": 0,
+      "initial_state_index": 9,
+      "env_seed": 1009,
+      "policy_seed": 2009
+    },
+    {
+      "pair_id": "task0_init10",
+      "task_id": 0,
+      "initial_state_index": 10,
+      "env_seed": 1010,
+      "policy_seed": 2010
+    },
+    {
+      "pair_id": "task0_init11",
+      "task_id": 0,
+      "initial_state_index": 11,
+      "env_seed": 1011,
+      "policy_seed": 2011
+    },
+    {
+      "pair_id": "task0_init13",
+      "task_id": 0,
+      "initial_state_index": 13,
+      "env_seed": 1013,
+      "policy_seed": 2013
+    },
+    {
+      "pair_id": "task0_init14",
+      "task_id": 0,
+      "initial_state_index": 14,
+      "env_seed": 1014,
+      "policy_seed": 2014
+    },
+    {
+      "pair_id": "task0_init17",
+      "task_id": 0,
+      "initial_state_index": 17,
+      "env_seed": 1017,
+      "policy_seed": 2017
+    },
+    {
+      "pair_id": "task0_init19",
+      "task_id": 0,
+      "initial_state_index": 19,
+      "env_seed": 1019,
+      "policy_seed": 2019
+    },
+    {
+      "pair_id": "task0_init20",
+      "task_id": 0,
+      "initial_state_index": 20,
+      "env_seed": 1020,
+      "policy_seed": 2020
+    },
+    {
+      "pair_id": "task0_init21",
+      "task_id": 0,
+      "initial_state_index": 21,
+      "env_seed": 1021,
+      "policy_seed": 2021
+    },
+    {
+      "pair_id": "task0_init23",
+      "task_id": 0,
+      "initial_state_index": 23,
+      "env_seed": 1023,
+      "policy_seed": 2023
+    },
+    {
+      "pair_id": "task0_init24",
+      "task_id": 0,
+      "initial_state_index": 24,
+      "env_seed": 1024,
+      "policy_seed": 2024
+    },
+    {
+      "pair_id": "task0_init25",
+      "task_id": 0,
+      "initial_state_index": 25,
+      "env_seed": 1025,
+      "policy_seed": 2025
+    },
+    {
+      "pair_id": "task0_init29",
+      "task_id": 0,
+      "initial_state_index": 29,
+      "env_seed": 1029,
+      "policy_seed": 2029
+    },
+    {
+      "pair_id": "task0_init30",
+      "task_id": 0,
+      "initial_state_index": 30,
+      "env_seed": 1030,
+      "policy_seed": 2030
+    },
+    {
+      "pair_id": "task0_init31",
+      "task_id": 0,
+      "initial_state_index": 31,
+      "env_seed": 1031,
+      "policy_seed": 2031
+    },
+    {
+      "pair_id": "task0_init33",
+      "task_id": 0,
+      "initial_state_index": 33,
+      "env_seed": 1033,
+      "policy_seed": 2033
+    },
+    {
+      "pair_id": "task0_init34",
+      "task_id": 0,
+      "initial_state_index": 34,
+      "env_seed": 1034,
+      "policy_seed": 2034
+    },
+    {
+      "pair_id": "task0_init37",
+      "task_id": 0,
+      "initial_state_index": 37,
+      "env_seed": 1037,
+      "policy_seed": 2037
+    },
+    {
+      "pair_id": "task0_init38",
+      "task_id": 0,
+      "initial_state_index": 38,
+      "env_seed": 1038,
+      "policy_seed": 2038
+    },
+    {
+      "pair_id": "task0_init41",
+      "task_id": 0,
+      "initial_state_index": 41,
+      "env_seed": 1041,
+      "policy_seed": 2041
+    },
+    {
+      "pair_id": "task0_init44",
+      "task_id": 0,
+      "initial_state_index": 44,
+      "env_seed": 1044,
+      "policy_seed": 2044
+    },
+    {
+      "pair_id": "task0_init46",
+      "task_id": 0,
+      "initial_state_index": 46,
+      "env_seed": 1046,
+      "policy_seed": 2046
+    },
+    {
+      "pair_id": "task0_init47",
+      "task_id": 0,
+      "initial_state_index": 47,
+      "env_seed": 1047,
+      "policy_seed": 2047
+    },
+    {
+      "pair_id": "task0_init48",
+      "task_id": 0,
+      "initial_state_index": 48,
+      "env_seed": 1048,
+      "policy_seed": 2048
+    },
+    {
+      "pair_id": "task0_init49",
+      "task_id": 0,
+      "initial_state_index": 49,
+      "env_seed": 1049,
+      "policy_seed": 2049
+    },
+    {
+      "pair_id": "task1_init1",
+      "task_id": 1,
+      "initial_state_index": 1,
+      "env_seed": 1101,
+      "policy_seed": 2101
+    },
+    {
+      "pair_id": "task1_init3",
+      "task_id": 1,
+      "initial_state_index": 3,
+      "env_seed": 1103,
+      "policy_seed": 2103
+    },
+    {
+      "pair_id": "task1_init5",
+      "task_id": 1,
+      "initial_state_index": 5,
+      "env_seed": 1105,
+      "policy_seed": 2105
+    },
+    {
+      "pair_id": "task1_init6",
+      "task_id": 1,
+      "initial_state_index": 6,
+      "env_seed": 1106,
+      "policy_seed": 2106
+    },
+    {
+      "pair_id": "task1_init7",
+      "task_id": 1,
+      "initial_state_index": 7,
+      "env_seed": 1107,
+      "policy_seed": 2107
+    },
+    {
+      "pair_id": "task1_init8",
+      "task_id": 1,
+      "initial_state_index": 8,
+      "env_seed": 1108,
+      "policy_seed": 2108
+    },
+    {
+      "pair_id": "task1_init11",
+      "task_id": 1,
+      "initial_state_index": 11,
+      "env_seed": 1111,
+      "policy_seed": 2111
+    },
+    {
+      "pair_id": "task1_init14",
+      "task_id": 1,
+      "initial_state_index": 14,
+      "env_seed": 1114,
+      "policy_seed": 2114
+    },
+    {
+      "pair_id": "task1_init16",
+      "task_id": 1,
+      "initial_state_index": 16,
+      "env_seed": 1116,
+      "policy_seed": 2116
+    },
+    {
+      "pair_id": "task1_init17",
+      "task_id": 1,
+      "initial_state_index": 17,
+      "env_seed": 1117,
+      "policy_seed": 2117
+    },
+    {
+      "pair_id": "task1_init18",
+      "task_id": 1,
+      "initial_state_index": 18,
+      "env_seed": 1118,
+      "policy_seed": 2118
+    },
+    {
+      "pair_id": "task1_init19",
+      "task_id": 1,
+      "initial_state_index": 19,
+      "env_seed": 1119,
+      "policy_seed": 2119
+    },
+    {
+      "pair_id": "task1_init20",
+      "task_id": 1,
+      "initial_state_index": 20,
+      "env_seed": 1120,
+      "policy_seed": 2120
+    },
+    {
+      "pair_id": "task1_init21",
+      "task_id": 1,
+      "initial_state_index": 21,
+      "env_seed": 1121,
+      "policy_seed": 2121
+    },
+    {
+      "pair_id": "task1_init25",
+      "task_id": 1,
+      "initial_state_index": 25,
+      "env_seed": 1125,
+      "policy_seed": 2125
+    },
+    {
+      "pair_id": "task1_init27",
+      "task_id": 1,
+      "initial_state_index": 27,
+      "env_seed": 1127,
+      "policy_seed": 2127
+    },
+    {
+      "pair_id": "task1_init28",
+      "task_id": 1,
+      "initial_state_index": 28,
+      "env_seed": 1128,
+      "policy_seed": 2128
+    },
+    {
+      "pair_id": "task1_init29",
+      "task_id": 1,
+      "initial_state_index": 29,
+      "env_seed": 1129,
+      "policy_seed": 2129
+    },
+    {
+      "pair_id": "task1_init30",
+      "task_id": 1,
+      "initial_state_index": 30,
+      "env_seed": 1130,
+      "policy_seed": 2130
+    },
+    {
+      "pair_id": "task1_init35",
+      "task_id": 1,
+      "initial_state_index": 35,
+      "env_seed": 1135,
+      "policy_seed": 2135
+    },
+    {
+      "pair_id": "task1_init36",
+      "task_id": 1,
+      "initial_state_index": 36,
+      "env_seed": 1136,
+      "policy_seed": 2136
+    },
+    {
+      "pair_id": "task1_init37",
+      "task_id": 1,
+      "initial_state_index": 37,
+      "env_seed": 1137,
+      "policy_seed": 2137
+    },
+    {
+      "pair_id": "task1_init38",
+      "task_id": 1,
+      "initial_state_index": 38,
+      "env_seed": 1138,
+      "policy_seed": 2138
+    },
+    {
+      "pair_id": "task1_init39",
+      "task_id": 1,
+      "initial_state_index": 39,
+      "env_seed": 1139,
+      "policy_seed": 2139
+    },
+    {
+      "pair_id": "task1_init43",
+      "task_id": 1,
+      "initial_state_index": 43,
+      "env_seed": 1143,
+      "policy_seed": 2143
+    },
+    {
+      "pair_id": "task1_init45",
+      "task_id": 1,
+      "initial_state_index": 45,
+      "env_seed": 1145,
+      "policy_seed": 2145
+    },
+    {
+      "pair_id": "task1_init46",
+      "task_id": 1,
+      "initial_state_index": 46,
+      "env_seed": 1146,
+      "policy_seed": 2146
+    },
+    {
+      "pair_id": "task1_init47",
+      "task_id": 1,
+      "initial_state_index": 47,
+      "env_seed": 1147,
+      "policy_seed": 2147
+    },
+    {
+      "pair_id": "task1_init48",
+      "task_id": 1,
+      "initial_state_index": 48,
+      "env_seed": 1148,
+      "policy_seed": 2148
+    },
+    {
+      "pair_id": "task1_init49",
+      "task_id": 1,
+      "initial_state_index": 49,
+      "env_seed": 1149,
+      "policy_seed": 2149
+    },
+    {
+      "pair_id": "task2_init0",
+      "task_id": 2,
+      "initial_state_index": 0,
+      "env_seed": 1200,
+      "policy_seed": 2200
+    },
+    {
+      "pair_id": "task2_init3",
+      "task_id": 2,
+      "initial_state_index": 3,
+      "env_seed": 1203,
+      "policy_seed": 2203
+    },
+    {
+      "pair_id": "task2_init5",
+      "task_id": 2,
+      "initial_state_index": 5,
+      "env_seed": 1205,
+      "policy_seed": 2205
+    },
+    {
+      "pair_id": "task2_init6",
+      "task_id": 2,
+      "initial_state_index": 6,
+      "env_seed": 1206,
+      "policy_seed": 2206
+    },
+    {
+      "pair_id": "task2_init8",
+      "task_id": 2,
+      "initial_state_index": 8,
+      "env_seed": 1208,
+      "policy_seed": 2208
+    },
+    {
+      "pair_id": "task2_init9",
+      "task_id": 2,
+      "initial_state_index": 9,
+      "env_seed": 1209,
+      "policy_seed": 2209
+    },
+    {
+      "pair_id": "task2_init10",
+      "task_id": 2,
+      "initial_state_index": 10,
+      "env_seed": 1210,
+      "policy_seed": 2210
+    },
+    {
+      "pair_id": "task2_init11",
+      "task_id": 2,
+      "initial_state_index": 11,
+      "env_seed": 1211,
+      "policy_seed": 2211
+    },
+    {
+      "pair_id": "task2_init13",
+      "task_id": 2,
+      "initial_state_index": 13,
+      "env_seed": 1213,
+      "policy_seed": 2213
+    },
+    {
+      "pair_id": "task2_init14",
+      "task_id": 2,
+      "initial_state_index": 14,
+      "env_seed": 1214,
+      "policy_seed": 2214
+    },
+    {
+      "pair_id": "task2_init17",
+      "task_id": 2,
+      "initial_state_index": 17,
+      "env_seed": 1217,
+      "policy_seed": 2217
+    },
+    {
+      "pair_id": "task2_init18",
+      "task_id": 2,
+      "initial_state_index": 18,
+      "env_seed": 1218,
+      "policy_seed": 2218
+    },
+    {
+      "pair_id": "task2_init20",
+      "task_id": 2,
+      "initial_state_index": 20,
+      "env_seed": 1220,
+      "policy_seed": 2220
+    },
+    {
+      "pair_id": "task2_init21",
+      "task_id": 2,
+      "initial_state_index": 21,
+      "env_seed": 1221,
+      "policy_seed": 2221
+    },
+    {
+      "pair_id": "task2_init24",
+      "task_id": 2,
+      "initial_state_index": 24,
+      "env_seed": 1224,
+      "policy_seed": 2224
+    },
+    {
+      "pair_id": "task2_init25",
+      "task_id": 2,
+      "initial_state_index": 25,
+      "env_seed": 1225,
+      "policy_seed": 2225
+    },
+    {
+      "pair_id": "task2_init26",
+      "task_id": 2,
+      "initial_state_index": 26,
+      "env_seed": 1226,
+      "policy_seed": 2226
+    },
+    {
+      "pair_id": "task2_init28",
+      "task_id": 2,
+      "initial_state_index": 28,
+      "env_seed": 1228,
+      "policy_seed": 2228
+    },
+    {
+      "pair_id": "task2_init31",
+      "task_id": 2,
+      "initial_state_index": 31,
+      "env_seed": 1231,
+      "policy_seed": 2231
+    },
+    {
+      "pair_id": "task2_init33",
+      "task_id": 2,
+      "initial_state_index": 33,
+      "env_seed": 1233,
+      "policy_seed": 2233
+    },
+    {
+      "pair_id": "task2_init34",
+      "task_id": 2,
+      "initial_state_index": 34,
+      "env_seed": 1234,
+      "policy_seed": 2234
+    },
+    {
+      "pair_id": "task2_init37",
+      "task_id": 2,
+      "initial_state_index": 37,
+      "env_seed": 1237,
+      "policy_seed": 2237
+    },
+    {
+      "pair_id": "task2_init38",
+      "task_id": 2,
+      "initial_state_index": 38,
+      "env_seed": 1238,
+      "policy_seed": 2238
+    },
+    {
+      "pair_id": "task2_init39",
+      "task_id": 2,
+      "initial_state_index": 39,
+      "env_seed": 1239,
+      "policy_seed": 2239
+    },
+    {
+      "pair_id": "task2_init40",
+      "task_id": 2,
+      "initial_state_index": 40,
+      "env_seed": 1240,
+      "policy_seed": 2240
+    },
+    {
+      "pair_id": "task2_init41",
+      "task_id": 2,
+      "initial_state_index": 41,
+      "env_seed": 1241,
+      "policy_seed": 2241
+    },
+    {
+      "pair_id": "task2_init43",
+      "task_id": 2,
+      "initial_state_index": 43,
+      "env_seed": 1243,
+      "policy_seed": 2243
+    },
+    {
+      "pair_id": "task2_init44",
+      "task_id": 2,
+      "initial_state_index": 44,
+      "env_seed": 1244,
+      "policy_seed": 2244
+    },
+    {
+      "pair_id": "task2_init47",
+      "task_id": 2,
+      "initial_state_index": 47,
+      "env_seed": 1247,
+      "policy_seed": 2247
+    },
+    {
+      "pair_id": "task2_init49",
+      "task_id": 2,
+      "initial_state_index": 49,
+      "env_seed": 1249,
+      "policy_seed": 2249
+    },
+    {
+      "pair_id": "task3_init1",
+      "task_id": 3,
+      "initial_state_index": 1,
+      "env_seed": 1301,
+      "policy_seed": 2301
+    },
+    {
+      "pair_id": "task3_init4",
+      "task_id": 3,
+      "initial_state_index": 4,
+      "env_seed": 1304,
+      "policy_seed": 2304
+    },
+    {
+      "pair_id": "task3_init5",
+      "task_id": 3,
+      "initial_state_index": 5,
+      "env_seed": 1305,
+      "policy_seed": 2305
+    },
+    {
+      "pair_id": "task3_init6",
+      "task_id": 3,
+      "initial_state_index": 6,
+      "env_seed": 1306,
+      "policy_seed": 2306
+    },
+    {
+      "pair_id": "task3_init7",
+      "task_id": 3,
+      "initial_state_index": 7,
+      "env_seed": 1307,
+      "policy_seed": 2307
+    },
+    {
+      "pair_id": "task3_init9",
+      "task_id": 3,
+      "initial_state_index": 9,
+      "env_seed": 1309,
+      "policy_seed": 2309
+    },
+    {
+      "pair_id": "task3_init11",
+      "task_id": 3,
+      "initial_state_index": 11,
+      "env_seed": 1311,
+      "policy_seed": 2311
+    },
+    {
+      "pair_id": "task3_init13",
+      "task_id": 3,
+      "initial_state_index": 13,
+      "env_seed": 1313,
+      "policy_seed": 2313
+    },
+    {
+      "pair_id": "task3_init14",
+      "task_id": 3,
+      "initial_state_index": 14,
+      "env_seed": 1314,
+      "policy_seed": 2314
+    },
+    {
+      "pair_id": "task3_init15",
+      "task_id": 3,
+      "initial_state_index": 15,
+      "env_seed": 1315,
+      "policy_seed": 2315
+    },
+    {
+      "pair_id": "task3_init18",
+      "task_id": 3,
+      "initial_state_index": 18,
+      "env_seed": 1318,
+      "policy_seed": 2318
+    },
+    {
+      "pair_id": "task3_init19",
+      "task_id": 3,
+      "initial_state_index": 19,
+      "env_seed": 1319,
+      "policy_seed": 2319
+    },
+    {
+      "pair_id": "task3_init21",
+      "task_id": 3,
+      "initial_state_index": 21,
+      "env_seed": 1321,
+      "policy_seed": 2321
+    },
+    {
+      "pair_id": "task3_init24",
+      "task_id": 3,
+      "initial_state_index": 24,
+      "env_seed": 1324,
+      "policy_seed": 2324
+    },
+    {
+      "pair_id": "task3_init25",
+      "task_id": 3,
+      "initial_state_index": 25,
+      "env_seed": 1325,
+      "policy_seed": 2325
+    },
+    {
+      "pair_id": "task3_init27",
+      "task_id": 3,
+      "initial_state_index": 27,
+      "env_seed": 1327,
+      "policy_seed": 2327
+    },
+    {
+      "pair_id": "task3_init28",
+      "task_id": 3,
+      "initial_state_index": 28,
+      "env_seed": 1328,
+      "policy_seed": 2328
+    },
+    {
+      "pair_id": "task3_init29",
+      "task_id": 3,
+      "initial_state_index": 29,
+      "env_seed": 1329,
+      "policy_seed": 2329
+    },
+    {
+      "pair_id": "task3_init30",
+      "task_id": 3,
+      "initial_state_index": 30,
+      "env_seed": 1330,
+      "policy_seed": 2330
+    },
+    {
+      "pair_id": "task3_init33",
+      "task_id": 3,
+      "initial_state_index": 33,
+      "env_seed": 1333,
+      "policy_seed": 2333
+    },
+    {
+      "pair_id": "task3_init34",
+      "task_id": 3,
+      "initial_state_index": 34,
+      "env_seed": 1334,
+      "policy_seed": 2334
+    },
+    {
+      "pair_id": "task3_init35",
+      "task_id": 3,
+      "initial_state_index": 35,
+      "env_seed": 1335,
+      "policy_seed": 2335
+    },
+    {
+      "pair_id": "task3_init37",
+      "task_id": 3,
+      "initial_state_index": 37,
+      "env_seed": 1337,
+      "policy_seed": 2337
+    },
+    {
+      "pair_id": "task3_init38",
+      "task_id": 3,
+      "initial_state_index": 38,
+      "env_seed": 1338,
+      "policy_seed": 2338
+    },
+    {
+      "pair_id": "task3_init43",
+      "task_id": 3,
+      "initial_state_index": 43,
+      "env_seed": 1343,
+      "policy_seed": 2343
+    },
+    {
+      "pair_id": "task3_init44",
+      "task_id": 3,
+      "initial_state_index": 44,
+      "env_seed": 1344,
+      "policy_seed": 2344
+    },
+    {
+      "pair_id": "task3_init45",
+      "task_id": 3,
+      "initial_state_index": 45,
+      "env_seed": 1345,
+      "policy_seed": 2345
+    },
+    {
+      "pair_id": "task3_init46",
+      "task_id": 3,
+      "initial_state_index": 46,
+      "env_seed": 1346,
+      "policy_seed": 2346
+    },
+    {
+      "pair_id": "task3_init47",
+      "task_id": 3,
+      "initial_state_index": 47,
+      "env_seed": 1347,
+      "policy_seed": 2347
+    },
+    {
+      "pair_id": "task3_init49",
+      "task_id": 3,
+      "initial_state_index": 49,
+      "env_seed": 1349,
+      "policy_seed": 2349
+    },
+    {
+      "pair_id": "task4_init4",
+      "task_id": 4,
+      "initial_state_index": 4,
+      "env_seed": 1404,
+      "policy_seed": 2404
+    },
+    {
+      "pair_id": "task4_init5",
+      "task_id": 4,
+      "initial_state_index": 5,
+      "env_seed": 1405,
+      "policy_seed": 2405
+    },
+    {
+      "pair_id": "task4_init6",
+      "task_id": 4,
+      "initial_state_index": 6,
+      "env_seed": 1406,
+      "policy_seed": 2406
+    },
+    {
+      "pair_id": "task4_init7",
+      "task_id": 4,
+      "initial_state_index": 7,
+      "env_seed": 1407,
+      "policy_seed": 2407
+    },
+    {
+      "pair_id": "task4_init8",
+      "task_id": 4,
+      "initial_state_index": 8,
+      "env_seed": 1408,
+      "policy_seed": 2408
+    },
+    {
+      "pair_id": "task4_init9",
+      "task_id": 4,
+      "initial_state_index": 9,
+      "env_seed": 1409,
+      "policy_seed": 2409
+    },
+    {
+      "pair_id": "task4_init10",
+      "task_id": 4,
+      "initial_state_index": 10,
+      "env_seed": 1410,
+      "policy_seed": 2410
+    },
+    {
+      "pair_id": "task4_init11",
+      "task_id": 4,
+      "initial_state_index": 11,
+      "env_seed": 1411,
+      "policy_seed": 2411
+    },
+    {
+      "pair_id": "task4_init13",
+      "task_id": 4,
+      "initial_state_index": 13,
+      "env_seed": 1413,
+      "policy_seed": 2413
+    },
+    {
+      "pair_id": "task4_init14",
+      "task_id": 4,
+      "initial_state_index": 14,
+      "env_seed": 1414,
+      "policy_seed": 2414
+    },
+    {
+      "pair_id": "task4_init17",
+      "task_id": 4,
+      "initial_state_index": 17,
+      "env_seed": 1417,
+      "policy_seed": 2417
+    },
+    {
+      "pair_id": "task4_init18",
+      "task_id": 4,
+      "initial_state_index": 18,
+      "env_seed": 1418,
+      "policy_seed": 2418
+    },
+    {
+      "pair_id": "task4_init21",
+      "task_id": 4,
+      "initial_state_index": 21,
+      "env_seed": 1421,
+      "policy_seed": 2421
+    },
+    {
+      "pair_id": "task4_init23",
+      "task_id": 4,
+      "initial_state_index": 23,
+      "env_seed": 1423,
+      "policy_seed": 2423
+    },
+    {
+      "pair_id": "task4_init24",
+      "task_id": 4,
+      "initial_state_index": 24,
+      "env_seed": 1424,
+      "policy_seed": 2424
+    },
+    {
+      "pair_id": "task4_init25",
+      "task_id": 4,
+      "initial_state_index": 25,
+      "env_seed": 1425,
+      "policy_seed": 2425
+    },
+    {
+      "pair_id": "task4_init26",
+      "task_id": 4,
+      "initial_state_index": 26,
+      "env_seed": 1426,
+      "policy_seed": 2426
+    },
+    {
+      "pair_id": "task4_init27",
+      "task_id": 4,
+      "initial_state_index": 27,
+      "env_seed": 1427,
+      "policy_seed": 2427
+    },
+    {
+      "pair_id": "task4_init31",
+      "task_id": 4,
+      "initial_state_index": 31,
+      "env_seed": 1431,
+      "policy_seed": 2431
+    },
+    {
+      "pair_id": "task4_init33",
+      "task_id": 4,
+      "initial_state_index": 33,
+      "env_seed": 1433,
+      "policy_seed": 2433
+    },
+    {
+      "pair_id": "task4_init34",
+      "task_id": 4,
+      "initial_state_index": 34,
+      "env_seed": 1434,
+      "policy_seed": 2434
+    },
+    {
+      "pair_id": "task4_init35",
+      "task_id": 4,
+      "initial_state_index": 35,
+      "env_seed": 1435,
+      "policy_seed": 2435
+    },
+    {
+      "pair_id": "task4_init37",
+      "task_id": 4,
+      "initial_state_index": 37,
+      "env_seed": 1437,
+      "policy_seed": 2437
+    },
+    {
+      "pair_id": "task4_init38",
+      "task_id": 4,
+      "initial_state_index": 38,
+      "env_seed": 1438,
+      "policy_seed": 2438
+    },
+    {
+      "pair_id": "task4_init40",
+      "task_id": 4,
+      "initial_state_index": 40,
+      "env_seed": 1440,
+      "policy_seed": 2440
+    },
+    {
+      "pair_id": "task4_init43",
+      "task_id": 4,
+      "initial_state_index": 43,
+      "env_seed": 1443,
+      "policy_seed": 2443
+    },
+    {
+      "pair_id": "task4_init44",
+      "task_id": 4,
+      "initial_state_index": 44,
+      "env_seed": 1444,
+      "policy_seed": 2444
+    },
+    {
+      "pair_id": "task4_init45",
+      "task_id": 4,
+      "initial_state_index": 45,
+      "env_seed": 1445,
+      "policy_seed": 2445
+    },
+    {
+      "pair_id": "task4_init47",
+      "task_id": 4,
+      "initial_state_index": 47,
+      "env_seed": 1447,
+      "policy_seed": 2447
+    },
+    {
+      "pair_id": "task4_init48",
+      "task_id": 4,
+      "initial_state_index": 48,
+      "env_seed": 1448,
+      "policy_seed": 2448
+    },
+    {
+      "pair_id": "task5_init0",
+      "task_id": 5,
+      "initial_state_index": 0,
+      "env_seed": 1500,
+      "policy_seed": 2500
+    },
+    {
+      "pair_id": "task5_init1",
+      "task_id": 5,
+      "initial_state_index": 1,
+      "env_seed": 1501,
+      "policy_seed": 2501
+    },
+    {
+      "pair_id": "task5_init3",
+      "task_id": 5,
+      "initial_state_index": 3,
+      "env_seed": 1503,
+      "policy_seed": 2503
+    },
+    {
+      "pair_id": "task5_init7",
+      "task_id": 5,
+      "initial_state_index": 7,
+      "env_seed": 1507,
+      "policy_seed": 2507
+    },
+    {
+      "pair_id": "task5_init8",
+      "task_id": 5,
+      "initial_state_index": 8,
+      "env_seed": 1508,
+      "policy_seed": 2508
+    },
+    {
+      "pair_id": "task5_init9",
+      "task_id": 5,
+      "initial_state_index": 9,
+      "env_seed": 1509,
+      "policy_seed": 2509
+    },
+    {
+      "pair_id": "task5_init10",
+      "task_id": 5,
+      "initial_state_index": 10,
+      "env_seed": 1510,
+      "policy_seed": 2510
+    },
+    {
+      "pair_id": "task5_init11",
+      "task_id": 5,
+      "initial_state_index": 11,
+      "env_seed": 1511,
+      "policy_seed": 2511
+    },
+    {
+      "pair_id": "task5_init13",
+      "task_id": 5,
+      "initial_state_index": 13,
+      "env_seed": 1513,
+      "policy_seed": 2513
+    },
+    {
+      "pair_id": "task5_init14",
+      "task_id": 5,
+      "initial_state_index": 14,
+      "env_seed": 1514,
+      "policy_seed": 2514
+    },
+    {
+      "pair_id": "task5_init17",
+      "task_id": 5,
+      "initial_state_index": 17,
+      "env_seed": 1517,
+      "policy_seed": 2517
+    },
+    {
+      "pair_id": "task5_init18",
+      "task_id": 5,
+      "initial_state_index": 18,
+      "env_seed": 1518,
+      "policy_seed": 2518
+    },
+    {
+      "pair_id": "task5_init20",
+      "task_id": 5,
+      "initial_state_index": 20,
+      "env_seed": 1520,
+      "policy_seed": 2520
+    },
+    {
+      "pair_id": "task5_init24",
+      "task_id": 5,
+      "initial_state_index": 24,
+      "env_seed": 1524,
+      "policy_seed": 2524
+    },
+    {
+      "pair_id": "task5_init25",
+      "task_id": 5,
+      "initial_state_index": 25,
+      "env_seed": 1525,
+      "policy_seed": 2525
+    },
+    {
+      "pair_id": "task5_init26",
+      "task_id": 5,
+      "initial_state_index": 26,
+      "env_seed": 1526,
+      "policy_seed": 2526
+    },
+    {
+      "pair_id": "task5_init27",
+      "task_id": 5,
+      "initial_state_index": 27,
+      "env_seed": 1527,
+      "policy_seed": 2527
+    },
+    {
+      "pair_id": "task5_init28",
+      "task_id": 5,
+      "initial_state_index": 28,
+      "env_seed": 1528,
+      "policy_seed": 2528
+    },
+    {
+      "pair_id": "task5_init33",
+      "task_id": 5,
+      "initial_state_index": 33,
+      "env_seed": 1533,
+      "policy_seed": 2533
+    },
+    {
+      "pair_id": "task5_init35",
+      "task_id": 5,
+      "initial_state_index": 35,
+      "env_seed": 1535,
+      "policy_seed": 2535
+    },
+    {
+      "pair_id": "task5_init36",
+      "task_id": 5,
+      "initial_state_index": 36,
+      "env_seed": 1536,
+      "policy_seed": 2536
+    },
+    {
+      "pair_id": "task5_init37",
+      "task_id": 5,
+      "initial_state_index": 37,
+      "env_seed": 1537,
+      "policy_seed": 2537
+    },
+    {
+      "pair_id": "task5_init38",
+      "task_id": 5,
+      "initial_state_index": 38,
+      "env_seed": 1538,
+      "policy_seed": 2538
+    },
+    {
+      "pair_id": "task5_init39",
+      "task_id": 5,
+      "initial_state_index": 39,
+      "env_seed": 1539,
+      "policy_seed": 2539
+    },
+    {
+      "pair_id": "task5_init41",
+      "task_id": 5,
+      "initial_state_index": 41,
+      "env_seed": 1541,
+      "policy_seed": 2541
+    },
+    {
+      "pair_id": "task5_init43",
+      "task_id": 5,
+      "initial_state_index": 43,
+      "env_seed": 1543,
+      "policy_seed": 2543
+    },
+    {
+      "pair_id": "task5_init45",
+      "task_id": 5,
+      "initial_state_index": 45,
+      "env_seed": 1545,
+      "policy_seed": 2545
+    },
+    {
+      "pair_id": "task5_init47",
+      "task_id": 5,
+      "initial_state_index": 47,
+      "env_seed": 1547,
+      "policy_seed": 2547
+    },
+    {
+      "pair_id": "task5_init48",
+      "task_id": 5,
+      "initial_state_index": 48,
+      "env_seed": 1548,
+      "policy_seed": 2548
+    },
+    {
+      "pair_id": "task5_init49",
+      "task_id": 5,
+      "initial_state_index": 49,
+      "env_seed": 1549,
+      "policy_seed": 2549
+    },
+    {
+      "pair_id": "task6_init0",
+      "task_id": 6,
+      "initial_state_index": 0,
+      "env_seed": 1600,
+      "policy_seed": 2600
+    },
+    {
+      "pair_id": "task6_init4",
+      "task_id": 6,
+      "initial_state_index": 4,
+      "env_seed": 1604,
+      "policy_seed": 2604
+    },
+    {
+      "pair_id": "task6_init5",
+      "task_id": 6,
+      "initial_state_index": 5,
+      "env_seed": 1605,
+      "policy_seed": 2605
+    },
+    {
+      "pair_id": "task6_init6",
+      "task_id": 6,
+      "initial_state_index": 6,
+      "env_seed": 1606,
+      "policy_seed": 2606
+    },
+    {
+      "pair_id": "task6_init8",
+      "task_id": 6,
+      "initial_state_index": 8,
+      "env_seed": 1608,
+      "policy_seed": 2608
+    },
+    {
+      "pair_id": "task6_init9",
+      "task_id": 6,
+      "initial_state_index": 9,
+      "env_seed": 1609,
+      "policy_seed": 2609
+    },
+    {
+      "pair_id": "task6_init11",
+      "task_id": 6,
+      "initial_state_index": 11,
+      "env_seed": 1611,
+      "policy_seed": 2611
+    },
+    {
+      "pair_id": "task6_init14",
+      "task_id": 6,
+      "initial_state_index": 14,
+      "env_seed": 1614,
+      "policy_seed": 2614
+    },
+    {
+      "pair_id": "task6_init15",
+      "task_id": 6,
+      "initial_state_index": 15,
+      "env_seed": 1615,
+      "policy_seed": 2615
+    },
+    {
+      "pair_id": "task6_init16",
+      "task_id": 6,
+      "initial_state_index": 16,
+      "env_seed": 1616,
+      "policy_seed": 2616
+    },
+    {
+      "pair_id": "task6_init17",
+      "task_id": 6,
+      "initial_state_index": 17,
+      "env_seed": 1617,
+      "policy_seed": 2617
+    },
+    {
+      "pair_id": "task6_init19",
+      "task_id": 6,
+      "initial_state_index": 19,
+      "env_seed": 1619,
+      "policy_seed": 2619
+    },
+    {
+      "pair_id": "task6_init20",
+      "task_id": 6,
+      "initial_state_index": 20,
+      "env_seed": 1620,
+      "policy_seed": 2620
+    },
+    {
+      "pair_id": "task6_init23",
+      "task_id": 6,
+      "initial_state_index": 23,
+      "env_seed": 1623,
+      "policy_seed": 2623
+    },
+    {
+      "pair_id": "task6_init24",
+      "task_id": 6,
+      "initial_state_index": 24,
+      "env_seed": 1624,
+      "policy_seed": 2624
+    },
+    {
+      "pair_id": "task6_init26",
+      "task_id": 6,
+      "initial_state_index": 26,
+      "env_seed": 1626,
+      "policy_seed": 2626
+    },
+    {
+      "pair_id": "task6_init27",
+      "task_id": 6,
+      "initial_state_index": 27,
+      "env_seed": 1627,
+      "policy_seed": 2627
+    },
+    {
+      "pair_id": "task6_init29",
+      "task_id": 6,
+      "initial_state_index": 29,
+      "env_seed": 1629,
+      "policy_seed": 2629
+    },
+    {
+      "pair_id": "task6_init30",
+      "task_id": 6,
+      "initial_state_index": 30,
+      "env_seed": 1630,
+      "policy_seed": 2630
+    },
+    {
+      "pair_id": "task6_init31",
+      "task_id": 6,
+      "initial_state_index": 31,
+      "env_seed": 1631,
+      "policy_seed": 2631
+    },
+    {
+      "pair_id": "task6_init35",
+      "task_id": 6,
+      "initial_state_index": 35,
+      "env_seed": 1635,
+      "policy_seed": 2635
+    },
+    {
+      "pair_id": "task6_init36",
+      "task_id": 6,
+      "initial_state_index": 36,
+      "env_seed": 1636,
+      "policy_seed": 2636
+    },
+    {
+      "pair_id": "task6_init37",
+      "task_id": 6,
+      "initial_state_index": 37,
+      "env_seed": 1637,
+      "policy_seed": 2637
+    },
+    {
+      "pair_id": "task6_init39",
+      "task_id": 6,
+      "initial_state_index": 39,
+      "env_seed": 1639,
+      "policy_seed": 2639
+    },
+    {
+      "pair_id": "task6_init40",
+      "task_id": 6,
+      "initial_state_index": 40,
+      "env_seed": 1640,
+      "policy_seed": 2640
+    },
+    {
+      "pair_id": "task6_init41",
+      "task_id": 6,
+      "initial_state_index": 41,
+      "env_seed": 1641,
+      "policy_seed": 2641
+    },
+    {
+      "pair_id": "task6_init43",
+      "task_id": 6,
+      "initial_state_index": 43,
+      "env_seed": 1643,
+      "policy_seed": 2643
+    },
+    {
+      "pair_id": "task6_init44",
+      "task_id": 6,
+      "initial_state_index": 44,
+      "env_seed": 1644,
+      "policy_seed": 2644
+    },
+    {
+      "pair_id": "task6_init46",
+      "task_id": 6,
+      "initial_state_index": 46,
+      "env_seed": 1646,
+      "policy_seed": 2646
+    },
+    {
+      "pair_id": "task6_init47",
+      "task_id": 6,
+      "initial_state_index": 47,
+      "env_seed": 1647,
+      "policy_seed": 2647
+    },
+    {
+      "pair_id": "task7_init1",
+      "task_id": 7,
+      "initial_state_index": 1,
+      "env_seed": 1701,
+      "policy_seed": 2701
+    },
+    {
+      "pair_id": "task7_init3",
+      "task_id": 7,
+      "initial_state_index": 3,
+      "env_seed": 1703,
+      "policy_seed": 2703
+    },
+    {
+      "pair_id": "task7_init4",
+      "task_id": 7,
+      "initial_state_index": 4,
+      "env_seed": 1704,
+      "policy_seed": 2704
+    },
+    {
+      "pair_id": "task7_init5",
+      "task_id": 7,
+      "initial_state_index": 5,
+      "env_seed": 1705,
+      "policy_seed": 2705
+    },
+    {
+      "pair_id": "task7_init6",
+      "task_id": 7,
+      "initial_state_index": 6,
+      "env_seed": 1706,
+      "policy_seed": 2706
+    },
+    {
+      "pair_id": "task7_init8",
+      "task_id": 7,
+      "initial_state_index": 8,
+      "env_seed": 1708,
+      "policy_seed": 2708
+    },
+    {
+      "pair_id": "task7_init10",
+      "task_id": 7,
+      "initial_state_index": 10,
+      "env_seed": 1710,
+      "policy_seed": 2710
+    },
+    {
+      "pair_id": "task7_init13",
+      "task_id": 7,
+      "initial_state_index": 13,
+      "env_seed": 1713,
+      "policy_seed": 2713
+    },
+    {
+      "pair_id": "task7_init14",
+      "task_id": 7,
+      "initial_state_index": 14,
+      "env_seed": 1714,
+      "policy_seed": 2714
+    },
+    {
+      "pair_id": "task7_init15",
+      "task_id": 7,
+      "initial_state_index": 15,
+      "env_seed": 1715,
+      "policy_seed": 2715
+    },
+    {
+      "pair_id": "task7_init16",
+      "task_id": 7,
+      "initial_state_index": 16,
+      "env_seed": 1716,
+      "policy_seed": 2716
+    },
+    {
+      "pair_id": "task7_init18",
+      "task_id": 7,
+      "initial_state_index": 18,
+      "env_seed": 1718,
+      "policy_seed": 2718
+    },
+    {
+      "pair_id": "task7_init20",
+      "task_id": 7,
+      "initial_state_index": 20,
+      "env_seed": 1720,
+      "policy_seed": 2720
+    },
+    {
+      "pair_id": "task7_init21",
+      "task_id": 7,
+      "initial_state_index": 21,
+      "env_seed": 1721,
+      "policy_seed": 2721
+    },
+    {
+      "pair_id": "task7_init23",
+      "task_id": 7,
+      "initial_state_index": 23,
+      "env_seed": 1723,
+      "policy_seed": 2723
+    },
+    {
+      "pair_id": "task7_init24",
+      "task_id": 7,
+      "initial_state_index": 24,
+      "env_seed": 1724,
+      "policy_seed": 2724
+    },
+    {
+      "pair_id": "task7_init26",
+      "task_id": 7,
+      "initial_state_index": 26,
+      "env_seed": 1726,
+      "policy_seed": 2726
+    },
+    {
+      "pair_id": "task7_init29",
+      "task_id": 7,
+      "initial_state_index": 29,
+      "env_seed": 1729,
+      "policy_seed": 2729
+    },
+    {
+      "pair_id": "task7_init33",
+      "task_id": 7,
+      "initial_state_index": 33,
+      "env_seed": 1733,
+      "policy_seed": 2733
+    },
+    {
+      "pair_id": "task7_init34",
+      "task_id": 7,
+      "initial_state_index": 34,
+      "env_seed": 1734,
+      "policy_seed": 2734
+    },
+    {
+      "pair_id": "task7_init35",
+      "task_id": 7,
+      "initial_state_index": 35,
+      "env_seed": 1735,
+      "policy_seed": 2735
+    },
+    {
+      "pair_id": "task7_init36",
+      "task_id": 7,
+      "initial_state_index": 36,
+      "env_seed": 1736,
+      "policy_seed": 2736
+    },
+    {
+      "pair_id": "task7_init38",
+      "task_id": 7,
+      "initial_state_index": 38,
+      "env_seed": 1738,
+      "policy_seed": 2738
+    },
+    {
+      "pair_id": "task7_init39",
+      "task_id": 7,
+      "initial_state_index": 39,
+      "env_seed": 1739,
+      "policy_seed": 2739
+    },
+    {
+      "pair_id": "task7_init40",
+      "task_id": 7,
+      "initial_state_index": 40,
+      "env_seed": 1740,
+      "policy_seed": 2740
+    },
+    {
+      "pair_id": "task7_init41",
+      "task_id": 7,
+      "initial_state_index": 41,
+      "env_seed": 1741,
+      "policy_seed": 2741
+    },
+    {
+      "pair_id": "task7_init45",
+      "task_id": 7,
+      "initial_state_index": 45,
+      "env_seed": 1745,
+      "policy_seed": 2745
+    },
+    {
+      "pair_id": "task7_init46",
+      "task_id": 7,
+      "initial_state_index": 46,
+      "env_seed": 1746,
+      "policy_seed": 2746
+    },
+    {
+      "pair_id": "task7_init47",
+      "task_id": 7,
+      "initial_state_index": 47,
+      "env_seed": 1747,
+      "policy_seed": 2747
+    },
+    {
+      "pair_id": "task7_init49",
+      "task_id": 7,
+      "initial_state_index": 49,
+      "env_seed": 1749,
+      "policy_seed": 2749
+    },
+    {
+      "pair_id": "task8_init3",
+      "task_id": 8,
+      "initial_state_index": 3,
+      "env_seed": 1803,
+      "policy_seed": 2803
+    },
+    {
+      "pair_id": "task8_init4",
+      "task_id": 8,
+      "initial_state_index": 4,
+      "env_seed": 1804,
+      "policy_seed": 2804
+    },
+    {
+      "pair_id": "task8_init5",
+      "task_id": 8,
+      "initial_state_index": 5,
+      "env_seed": 1805,
+      "policy_seed": 2805
+    },
+    {
+      "pair_id": "task8_init6",
+      "task_id": 8,
+      "initial_state_index": 6,
+      "env_seed": 1806,
+      "policy_seed": 2806
+    },
+    {
+      "pair_id": "task8_init7",
+      "task_id": 8,
+      "initial_state_index": 7,
+      "env_seed": 1807,
+      "policy_seed": 2807
+    },
+    {
+      "pair_id": "task8_init8",
+      "task_id": 8,
+      "initial_state_index": 8,
+      "env_seed": 1808,
+      "policy_seed": 2808
+    },
+    {
+      "pair_id": "task8_init10",
+      "task_id": 8,
+      "initial_state_index": 10,
+      "env_seed": 1810,
+      "policy_seed": 2810
+    },
+    {
+      "pair_id": "task8_init11",
+      "task_id": 8,
+      "initial_state_index": 11,
+      "env_seed": 1811,
+      "policy_seed": 2811
+    },
+    {
+      "pair_id": "task8_init13",
+      "task_id": 8,
+      "initial_state_index": 13,
+      "env_seed": 1813,
+      "policy_seed": 2813
+    },
+    {
+      "pair_id": "task8_init14",
+      "task_id": 8,
+      "initial_state_index": 14,
+      "env_seed": 1814,
+      "policy_seed": 2814
+    },
+    {
+      "pair_id": "task8_init15",
+      "task_id": 8,
+      "initial_state_index": 15,
+      "env_seed": 1815,
+      "policy_seed": 2815
+    },
+    {
+      "pair_id": "task8_init18",
+      "task_id": 8,
+      "initial_state_index": 18,
+      "env_seed": 1818,
+      "policy_seed": 2818
+    },
+    {
+      "pair_id": "task8_init20",
+      "task_id": 8,
+      "initial_state_index": 20,
+      "env_seed": 1820,
+      "policy_seed": 2820
+    },
+    {
+      "pair_id": "task8_init21",
+      "task_id": 8,
+      "initial_state_index": 21,
+      "env_seed": 1821,
+      "policy_seed": 2821
+    },
+    {
+      "pair_id": "task8_init23",
+      "task_id": 8,
+      "initial_state_index": 23,
+      "env_seed": 1823,
+      "policy_seed": 2823
+    },
+    {
+      "pair_id": "task8_init24",
+      "task_id": 8,
+      "initial_state_index": 24,
+      "env_seed": 1824,
+      "policy_seed": 2824
+    },
+    {
+      "pair_id": "task8_init25",
+      "task_id": 8,
+      "initial_state_index": 25,
+      "env_seed": 1825,
+      "policy_seed": 2825
+    },
+    {
+      "pair_id": "task8_init29",
+      "task_id": 8,
+      "initial_state_index": 29,
+      "env_seed": 1829,
+      "policy_seed": 2829
+    },
+    {
+      "pair_id": "task8_init31",
+      "task_id": 8,
+      "initial_state_index": 31,
+      "env_seed": 1831,
+      "policy_seed": 2831
+    },
+    {
+      "pair_id": "task8_init33",
+      "task_id": 8,
+      "initial_state_index": 33,
+      "env_seed": 1833,
+      "policy_seed": 2833
+    },
+    {
+      "pair_id": "task8_init34",
+      "task_id": 8,
+      "initial_state_index": 34,
+      "env_seed": 1834,
+      "policy_seed": 2834
+    },
+    {
+      "pair_id": "task8_init35",
+      "task_id": 8,
+      "initial_state_index": 35,
+      "env_seed": 1835,
+      "policy_seed": 2835
+    },
+    {
+      "pair_id": "task8_init38",
+      "task_id": 8,
+      "initial_state_index": 38,
+      "env_seed": 1838,
+      "policy_seed": 2838
+    },
+    {
+      "pair_id": "task8_init39",
+      "task_id": 8,
+      "initial_state_index": 39,
+      "env_seed": 1839,
+      "policy_seed": 2839
+    },
+    {
+      "pair_id": "task8_init40",
+      "task_id": 8,
+      "initial_state_index": 40,
+      "env_seed": 1840,
+      "policy_seed": 2840
+    },
+    {
+      "pair_id": "task8_init41",
+      "task_id": 8,
+      "initial_state_index": 41,
+      "env_seed": 1841,
+      "policy_seed": 2841
+    },
+    {
+      "pair_id": "task8_init43",
+      "task_id": 8,
+      "initial_state_index": 43,
+      "env_seed": 1843,
+      "policy_seed": 2843
+    },
+    {
+      "pair_id": "task8_init44",
+      "task_id": 8,
+      "initial_state_index": 44,
+      "env_seed": 1844,
+      "policy_seed": 2844
+    },
+    {
+      "pair_id": "task8_init46",
+      "task_id": 8,
+      "initial_state_index": 46,
+      "env_seed": 1846,
+      "policy_seed": 2846
+    },
+    {
+      "pair_id": "task8_init49",
+      "task_id": 8,
+      "initial_state_index": 49,
+      "env_seed": 1849,
+      "policy_seed": 2849
+    },
+    {
+      "pair_id": "task9_init0",
+      "task_id": 9,
+      "initial_state_index": 0,
+      "env_seed": 1900,
+      "policy_seed": 2900
+    },
+    {
+      "pair_id": "task9_init1",
+      "task_id": 9,
+      "initial_state_index": 1,
+      "env_seed": 1901,
+      "policy_seed": 2901
+    },
+    {
+      "pair_id": "task9_init3",
+      "task_id": 9,
+      "initial_state_index": 3,
+      "env_seed": 1903,
+      "policy_seed": 2903
+    },
+    {
+      "pair_id": "task9_init4",
+      "task_id": 9,
+      "initial_state_index": 4,
+      "env_seed": 1904,
+      "policy_seed": 2904
+    },
+    {
+      "pair_id": "task9_init8",
+      "task_id": 9,
+      "initial_state_index": 8,
+      "env_seed": 1908,
+      "policy_seed": 2908
+    },
+    {
+      "pair_id": "task9_init9",
+      "task_id": 9,
+      "initial_state_index": 9,
+      "env_seed": 1909,
+      "policy_seed": 2909
+    },
+    {
+      "pair_id": "task9_init10",
+      "task_id": 9,
+      "initial_state_index": 10,
+      "env_seed": 1910,
+      "policy_seed": 2910
+    },
+    {
+      "pair_id": "task9_init14",
+      "task_id": 9,
+      "initial_state_index": 14,
+      "env_seed": 1914,
+      "policy_seed": 2914
+    },
+    {
+      "pair_id": "task9_init15",
+      "task_id": 9,
+      "initial_state_index": 15,
+      "env_seed": 1915,
+      "policy_seed": 2915
+    },
+    {
+      "pair_id": "task9_init16",
+      "task_id": 9,
+      "initial_state_index": 16,
+      "env_seed": 1916,
+      "policy_seed": 2916
+    },
+    {
+      "pair_id": "task9_init17",
+      "task_id": 9,
+      "initial_state_index": 17,
+      "env_seed": 1917,
+      "policy_seed": 2917
+    },
+    {
+      "pair_id": "task9_init18",
+      "task_id": 9,
+      "initial_state_index": 18,
+      "env_seed": 1918,
+      "policy_seed": 2918
+    },
+    {
+      "pair_id": "task9_init20",
+      "task_id": 9,
+      "initial_state_index": 20,
+      "env_seed": 1920,
+      "policy_seed": 2920
+    },
+    {
+      "pair_id": "task9_init21",
+      "task_id": 9,
+      "initial_state_index": 21,
+      "env_seed": 1921,
+      "policy_seed": 2921
+    },
+    {
+      "pair_id": "task9_init23",
+      "task_id": 9,
+      "initial_state_index": 23,
+      "env_seed": 1923,
+      "policy_seed": 2923
+    },
+    {
+      "pair_id": "task9_init24",
+      "task_id": 9,
+      "initial_state_index": 24,
+      "env_seed": 1924,
+      "policy_seed": 2924
+    },
+    {
+      "pair_id": "task9_init25",
+      "task_id": 9,
+      "initial_state_index": 25,
+      "env_seed": 1925,
+      "policy_seed": 2925
+    },
+    {
+      "pair_id": "task9_init29",
+      "task_id": 9,
+      "initial_state_index": 29,
+      "env_seed": 1929,
+      "policy_seed": 2929
+    },
+    {
+      "pair_id": "task9_init30",
+      "task_id": 9,
+      "initial_state_index": 30,
+      "env_seed": 1930,
+      "policy_seed": 2930
+    },
+    {
+      "pair_id": "task9_init31",
+      "task_id": 9,
+      "initial_state_index": 31,
+      "env_seed": 1931,
+      "policy_seed": 2931
+    },
+    {
+      "pair_id": "task9_init33",
+      "task_id": 9,
+      "initial_state_index": 33,
+      "env_seed": 1933,
+      "policy_seed": 2933
+    },
+    {
+      "pair_id": "task9_init35",
+      "task_id": 9,
+      "initial_state_index": 35,
+      "env_seed": 1935,
+      "policy_seed": 2935
+    },
+    {
+      "pair_id": "task9_init37",
+      "task_id": 9,
+      "initial_state_index": 37,
+      "env_seed": 1937,
+      "policy_seed": 2937
+    },
+    {
+      "pair_id": "task9_init38",
+      "task_id": 9,
+      "initial_state_index": 38,
+      "env_seed": 1938,
+      "policy_seed": 2938
+    },
+    {
+      "pair_id": "task9_init40",
+      "task_id": 9,
+      "initial_state_index": 40,
+      "env_seed": 1940,
+      "policy_seed": 2940
+    },
+    {
+      "pair_id": "task9_init43",
+      "task_id": 9,
+      "initial_state_index": 43,
+      "env_seed": 1943,
+      "policy_seed": 2943
+    },
+    {
+      "pair_id": "task9_init44",
+      "task_id": 9,
+      "initial_state_index": 44,
+      "env_seed": 1944,
+      "policy_seed": 2944
+    },
+    {
+      "pair_id": "task9_init47",
+      "task_id": 9,
+      "initial_state_index": 47,
+      "env_seed": 1947,
+      "policy_seed": 2947
+    },
+    {
+      "pair_id": "task9_init48",
+      "task_id": 9,
+      "initial_state_index": 48,
+      "env_seed": 1948,
+      "policy_seed": 2948
+    },
+    {
+      "pair_id": "task9_init49",
+      "task_id": 9,
+      "initial_state_index": 49,
+      "env_seed": 1949,
+      "policy_seed": 2949
+    }
+  ],
+  "confirmation_policy": "No rollouts, videos or outcomes until method and thresholds are frozen. This is a development holdout, not a claim of disjointness from training demonstration states."
+}

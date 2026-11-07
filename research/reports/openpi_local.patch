@@ -1,0 +1,198 @@
+diff --git a/scripts/serve_policy.py b/scripts/serve_policy.py
+index 30f121a..934b014 100644
+--- a/scripts/serve_policy.py
++++ b/scripts/serve_policy.py
+@@ -48,6 +48,8 @@ class Args:
+ 
+     # Port to serve the policy on.
+     port: int = 8000
++    # Local-only by default; project scope never exposes the policy to the network.
++    host: str = "127.0.0.1"
+     # Record the policy's behavior for debugging.
+     record: bool = False
+ 
+@@ -104,13 +106,11 @@ def main(args: Args) -> None:
+     if args.record:
+         policy = _policy.PolicyRecorder(policy, "policy_records")
+ 
+-    hostname = socket.gethostname()
+-    local_ip = socket.gethostbyname(hostname)
+-    logging.info("Creating server (host: %s, ip: %s)", hostname, local_ip)
++    logging.info("Creating local policy server on port %s", args.port)
+ 
+     server = websocket_policy_server.WebsocketPolicyServer(
+         policy=policy,
+-        host="0.0.0.0",
++        host=args.host,
+         port=args.port,
+         metadata=policy_metadata,
+     )
+diff --git a/scripts/train.py b/scripts/train.py
+index 5d28941..d19adf1 100644
+--- a/scripts/train.py
++++ b/scripts/train.py
+@@ -1,6 +1,7 @@
+ import dataclasses
+ import functools
+ import logging
++import os
+ import platform
+ from typing import Any
+ 
+@@ -200,7 +201,7 @@ def main(config: _config.TrainConfig):
+             f"Batch size {config.batch_size} must be divisible by the number of devices {jax.device_count()}."
+         )
+ 
+-    jax.config.update("jax_compilation_cache_dir", str(epath.Path("~/.cache/jax").expanduser()))
++    jax.config.update("jax_compilation_cache_dir", os.environ["JAX_COMPILATION_CACHE_DIR"])
+ 
+     rng = jax.random.key(config.seed)
+     train_rng, init_rng = jax.random.split(rng)
+diff --git a/src/openpi/shared/array_typing.py b/src/openpi/shared/array_typing.py
+index 569eafe..0018829 100644
+--- a/src/openpi/shared/array_typing.py
++++ b/src/openpi/shared/array_typing.py
+@@ -33,7 +33,9 @@ Array = jax.Array | torch.Tensor
+ 
+ def _check_dataclass_annotations(self, typechecker):
+     if not any(
+-        frame.frame.f_globals.get("__name__") in {"jax._src.tree_util", "flax.nnx.transforms.compilation"}
++        # AOT lowering also rebuilds pytrees with ArgInfo metadata in stages.py.
++        # Those placeholders are not runtime values and cannot satisfy array annotations.
++        frame.frame.f_globals.get("__name__") in {"jax._src.tree_util", "jax._src.stages", "flax.nnx.transforms.compilation"}
+         for frame in inspect.stack()
+     ):
+         return _original_check_dataclass_annotations(self, typechecker)
+diff --git a/src/openpi/training/config.py b/src/openpi/training/config.py
+index 4ca47e1..1fdcac9 100644
+--- a/src/openpi/training/config.py
++++ b/src/openpi/training/config.py
+@@ -65,6 +65,10 @@ class AssetsConfig:
+ class DataConfig:
+     # LeRobot repo id. If None, fake data will be created.
+     repo_id: str | None = None
++    # Project-local, immutable real-data subset. None preserves upstream behavior.
++    local_dataset_root: str | None = None
++    dataset_revision: str | None = None
++    episodes_manifest: str | None = None
+     # Directory within the assets directory containing the data assets.
+     asset_id: str | None = None
+     # Contains precomputed normalization stats. If None, normalization will not be performed.
+@@ -970,6 +974,59 @@ _CONFIGS = [
+     *polaris_config.get_polaris_configs(),
+ ]
+ 
++# Local pi05 LoRA deployment configurations. These names are not upstream recipes.
++import os as _project_os
++
++if _project_root := _project_os.environ.get("PROJECT_ROOT"):
++    _base = next(c for c in _CONFIGS if c.name == "pi05_libero")
++    _lora_model = dataclasses.replace(
++        _base.model, paligemma_variant="gemma_2b_lora", action_expert_variant="gemma_300m_lora"
++    )
++    for _mode in ("smoke", "train"):
++        _manifest = "data_manifest.json" if _mode == "smoke" else "spatial_full_manifest.json"
++        _single_config = dataclasses.replace(
++            _base,
++            name=f"pi05_libero_lora_3090_{_mode}",
++            model=_lora_model,
++            freeze_filter=_lora_model.get_freeze_filter(),
++            data=dataclasses.replace(_base.data, base_config=DataConfig(
++                prompt_from_task=True,
++                local_dataset_root=f"{_project_root}/datasets/lerobot/physical-intelligence/libero",
++                dataset_revision="a4336d589d589045d1c56423ffdf3b88a0e19b1f",
++                episodes_manifest=f"{_project_root}/reports/{_manifest}",
++            )),
++            weight_loader=weight_loaders.CheckpointWeightLoader(
++                f"{_project_root}/cache/openpi/openpi-assets/checkpoints/pi05_base/params"
++            ),
++            assets_base_dir=f"{_project_root}/configs/assets",
++            checkpoint_base_dir=f"{_project_root}/checkpoints",
++            batch_size=1, fsdp_devices=1, num_workers=2,
++            ema_decay=None, wandb_enabled=False, overwrite=False,
++            num_train_steps=20 if _mode == "smoke" else 30_000,
++            log_interval=1 if _mode == "smoke" else 100,
++            save_interval=20 if _mode == "smoke" else 1000,
++            keep_period=None,
++            lr_schedule=_optimizer.CosineDecaySchedule(
++                warmup_steps=2 if _mode == "smoke" else 1000,
++                peak_lr=5e-5, decay_steps=100 if _mode == "smoke" else 30_000,
++                decay_lr=5e-5,
++            ),
++            policy_metadata={"project":"pi05_lora_libero", "suite":"libero_spatial", "scope":_mode},
++        )
++        _CONFIGS.append(_single_config)
++        # Explicit user-authorized dual-GPU variant. Same model/freeze/data/norm
++        # semantics; global batch 2 is required by upstream DATA_AXIS sharding.
++        _CONFIGS.append(dataclasses.replace(
++            _single_config,
++            name=f"pi05_libero_lora_3090x2_{_mode}",
++            batch_size=2, fsdp_devices=2,
++            data=dataclasses.replace(
++                _single_config.data,
++                assets=dataclasses.replace(_single_config.data.assets, assets_dir=str(_single_config.assets_dirs)),
++            ),
++            policy_metadata={"project":"pi05_lora_libero", "suite":"libero_spatial", "scope":_mode, "training_gpus":2},
++        ))
++
+ if len({config.name for config in _CONFIGS}) != len(_CONFIGS):
+     raise ValueError("Config names must be unique.")
+ _CONFIGS_DICT = {config.name: config for config in _CONFIGS}
+diff --git a/src/openpi/training/data_loader.py b/src/openpi/training/data_loader.py
+index e2ee7dd..523dfb5 100644
+--- a/src/openpi/training/data_loader.py
++++ b/src/openpi/training/data_loader.py
+@@ -1,5 +1,7 @@
+ from collections.abc import Iterator, Sequence
+ import logging
++import json
++import pathlib
+ import multiprocessing
+ import os
+ import typing
+@@ -19,6 +21,20 @@ import openpi.transforms as _transforms
+ T_co = TypeVar("T_co", covariant=True)
+ 
+ 
++class ManifestSubsetLeRobotDataset(lerobot_dataset.LeRobotDataset):
++    """Map original episode IDs to positions in the selected episode index.
++
++    Pinned LeRobot 0cf8648 builds compact episode_data_index for `episodes=...`,
++    but its delta-query routine indexes that tensor with the original ID.
++    Preserve source data and upstream clamping/padding; fix only this mapping.
++    """
++
++    def _get_query_indices(self, idx, ep_idx):
++        if self.episodes is not None:
++            ep_idx = self.episodes.index(ep_idx)
++        return super()._get_query_indices(idx, ep_idx)
++
++
+ class Dataset(Protocol[T_co]):
+     """Interface for a dataset with random access."""
+ 
+@@ -137,9 +153,22 @@ def create_torch_dataset(
+     if repo_id == "fake":
+         return FakeDataset(model_config, num_samples=1024)
+ 
+-    dataset_meta = lerobot_dataset.LeRobotDatasetMetadata(repo_id)
+-    dataset = lerobot_dataset.LeRobotDataset(
++    local_kwargs = {}
++    episode_ids = None
++    if data_config.episodes_manifest is not None:
++        manifest = json.loads(pathlib.Path(data_config.episodes_manifest).read_text())
++        if manifest["source_repo"] != repo_id or manifest["source_revision"] != data_config.dataset_revision:
++            raise ValueError("Dataset manifest does not match the frozen source.")
++        episode_ids = manifest["episode_ids"]
++        if not episode_ids or len(set(episode_ids)) != len(episode_ids):
++            raise ValueError("Episode manifest must be nonempty and unique.")
++        local_kwargs = {"root": data_config.local_dataset_root, "revision": data_config.dataset_revision}
++    dataset_meta = lerobot_dataset.LeRobotDatasetMetadata(repo_id, **local_kwargs)
++    dataset_cls = ManifestSubsetLeRobotDataset if episode_ids is not None else lerobot_dataset.LeRobotDataset
++    dataset = dataset_cls(
+         data_config.repo_id,
++        episodes=episode_ids,
++        **local_kwargs,
+         delta_timestamps={
+             key: [t / dataset_meta.fps for t in range(action_horizon)] for key in data_config.action_sequence_keys
+         },

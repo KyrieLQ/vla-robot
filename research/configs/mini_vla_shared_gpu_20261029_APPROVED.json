@@ -1,0 +1,24 @@
+{
+  "status": "APPROVED",
+  "thread": "PUBLIC_REPRODUCTION",
+  "at": "2026-10-29T13:38:29.100419+00:00",
+  "user_message": "不用非得等空卡，只要有卡的空闲显存能满足我们的要求就可以",
+  "scope": "Current and authorized subsequent work in this Mini VLA project; GPU co-tenancy allowed when available memory meets stage requirement",
+  "allow_existing_compute_processes": true,
+  "utilization_is_not_a_veto": true,
+  "allowed_physical_gpus": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "max_simultaneous_gpus": 2,
+  "no_other_process_termination": true,
+  "other_budgets_unchanged": true,
+  "current_eval_min_free_mib": 4096,
+  "threshold_basis": "Preflight LoRA PyTorch peak allocated1.15GiB; completed training process observedNVML1570MiB. 4GiB admission includes extra EGL/runtime and transient margin; not an exclusive reservation."
+}

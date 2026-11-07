@@ -1,0 +1,40 @@
+{
+  "status": "APPROVED",
+  "thread": "PUBLIC_REPRODUCTION",
+  "recorded_at": "2026-11-04T12:19:45.015076+00:00",
+  "user_request": "算了，flow这块就这么地吧。我们先把算力和时间投入到之前说的“78.25% → 80%+ → 90%+”",
+  "scope": "Stop customMiniFlow optimization; execute finite SmolVLM LoRA regression optimization and prepare clean four-suite pi05 adaptation, model freeze before final2000",
+  "targets_not_guaranteed": {
+    "existing_baseline": 0.7825,
+    "smolvlm_target": "80percent+",
+    "pi05_target": "90percent+"
+  },
+  "first_stage": {
+    "new_heads": 2,
+    "layers": [
+      1,
+      2
+    ],
+    "epochs_each": 50,
+    "updates_each": 94950,
+    "fixed_adapted_backbone": true,
+    "maximum_new_dev_episodes": 600,
+    "dev_arms": [
+      "existing_LoRA_endpoint",
+      "matched_depth1",
+      "matched_depth2"
+    ],
+    "new_artifact_envelope_bytes": 1073741824
+  },
+  "pi05_next_stage": "Read-only four-suite split/normalization/compact-checkpoint preparation and actual multipGPU preflight; exact formal epochs,batch,storage and execution freeze after throughput evidence; not an automatic unlimited new training",
+  "time_overrun_allowed": true,
+  "time_basis": "Latest user explicitly reallocates compute/time to this mainline; prior necessary-execution preference retained;all history counted,perstage operational guard plus actual throughput admission",
+  "storage_caps_increased": false,
+  "old_ledgers_preserved": true,
+  "max_simultaneous_gpus": 4,
+  "gpu_policy": "configs/mini_vla_active_gpu_policy.json",
+  "flow_stop_scope": "CustomMiniFlow sweeps stop. Native pi05 Flow remains part of explicitly requested VLA adaptation.",
+  "final2000": "Defer until optimized model/checkpoint/execution frozen; oldseen2000 not a new unseen confirmation set",
+  "no_outcome_resampling": true,
+  "no_other_user_process_actions": true
+}

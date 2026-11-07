@@ -1,0 +1,38 @@
+{
+  "checked_at": "2026-10-23T19:54:41.028599+08:00",
+  "canonical_model_id": "M6",
+  "legacy_experiment_stage": "M7a",
+  "baseline_canonical": "M5",
+  "baseline_legacy": "M6",
+  "observation_tokens": 34,
+  "action_queries": 10,
+  "parameter_reduction": 2062592,
+  "all_local_links_checked": 10,
+  "display_equations": 7,
+  "development_successes": {
+    "M5": 47,
+    "M6": 37
+  },
+  "validation_metrics": {
+    "M5": {
+      "spatial": 0.3883252701337012,
+      "object": 0.23211121401959647,
+      "goal": 0.39998081580187983,
+      "long": 0.3328968425472519
+    },
+    "M6": {
+      "spatial": 0.3940728065285991,
+      "object": 0.23378322536470642,
+      "goal": 0.4028160397073642,
+      "long": 0.3233996978960086
+    }
+  },
+  "source_hashes": {
+    "results/mini_vla_m6_train_20261020_run1/review/independent_acceptance.json": "71e4fd4ee525fcbbf837e582f530e73493418bbbc550e02b9dcb26de63843a25",
+    "results/mini_vla_m7a_20261020_run1/review/training_acceptance.json": "4148834cd418ceb237aaca674774f50d49c2c3a4a5a2c67f7c6e79038381180d",
+    "results/mini_vla_m7a_20261020_run1/review/independent_acceptance.json": "437edc819ce2db9460f6499789ed104947dc1651f2bbc7ddfacc1cf6fffd9c59",
+    "mini_vla/spatial_tokens_model_v1.py": "82291535e6d874cf8dc25b54b79938c11645238888d3f27b1554b57a8d3f5c78",
+    "configs/mini_vla_m7a_20261020_v1.json": "fe46a94de4384e8c535565975acb522c0c4fc3cb8ee9c6be8e86511e85deb49f"
+  },
+  "new_experiments": false
+}

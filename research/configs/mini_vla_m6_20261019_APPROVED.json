@@ -1,0 +1,16 @@
+{
+  "approved_at": "2026-10-19T22:16:02.879754+08:00",
+  "thread": "PUBLIC_REPRODUCTION",
+  "user_reply": "批准该 M6 方案与预算（推荐）",
+  "proposal": "configs/mini_vla_m6_resource_proposal_20261019_v1.json",
+  "proposal_sha256": "dd61c79ea3fef0e4790df4d9099054915ecfb74f59a30d1b2c1ea3ab4eeb3bdb",
+  "additional_execution_seconds": 50400,
+  "new_phase_artifact_cap_gib": 60,
+  "project_cap_gib": 160,
+  "filesystem_reserve_gib": 100,
+  "max_simultaneous_gpus": 2,
+  "skip_optional_m5": true,
+  "four_suite_model_runs": 1,
+  "final_evaluation_episodes": 2000,
+  "old_ledgers_unchanged": true
+}

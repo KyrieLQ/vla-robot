@@ -1,0 +1,120 @@
+{
+  "stage": "mini_vla_m2_20261019_v1",
+  "authorization": "User requested evidence-driven model upgrades after M1; GPU4-6 M1-only permission is not inherited",
+  "thread": "PUBLIC_REPRODUCTION",
+  "split": "configs/mini_vla_split_20261015_v1.json",
+  "preprocessing": "results/mini_vla_m0_20261015_v1/preprocessing.json",
+  "dataset_root": "datasets/lerobot/physical-intelligence/libero",
+  "cache": "datasets/mini_vla_128_20261019_v1",
+  "architecture": "M2 action chunk K10: unchanged M1 observation trunk, final Linear128->70, 794726 parameters",
+  "training": {
+    "seed": 42,
+    "epochs": 50,
+    "batch_size": 128,
+    "workers": 2,
+    "optimizer": "AdamW",
+    "learning_rate": 0.0003,
+    "weight_decay": 0.0001,
+    "gradient_clip_norm": 1.0,
+    "precision": "float32",
+    "augmentation": "none",
+    "shuffle": "all training frames; deterministic seed+epoch; drop_last=false",
+    "checkpoint_selection": "minimum full validation FIRST-ACTION frame-weighted normalized MSE; earliest on ties, same criterion as M1",
+    "checkpoint_retention": "initial, best, latest; resume only completed epochs with optimizer state",
+    "expected_train_frames_per_epoch": 46982,
+    "expected_validation_frames": 5988,
+    "total_training_sample_presentations": 2349100,
+    "real_training_seeds": 1,
+    "loss": "masked normalized MSE across all valid K10 target steps; terminal padding has zero weight",
+    "initialization": "fresh seed42; observation trunk initial parameters must exactly match M1 initial checkpoint; no warm-start from trained M1",
+    "valid_target_steps_per_epoch": 452540,
+    "expected_validation_target_steps": 57720,
+    "comparability": "Same input anchors, seed, epochs, optimizer, batch and preprocessing as M1; K10 necessarily adds future-action supervision and 8127 head parameters, not equal target-label count"
+  },
+  "evaluation": {
+    "suite": "libero_spatial",
+    "task_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "initial_state_indices": [
+      2,
+      12,
+      22,
+      32,
+      42
+    ],
+    "reset_protocol": "fresh_environment_canonical_anchor_history",
+    "env_seed_rule": "1000+100*task_id+initial_state_index",
+    "variants": [
+      "h1",
+      "h5"
+    ],
+    "episodes_per_variant": 50,
+    "max_steps": 220,
+    "wait_steps": 10,
+    "action_horizon": 10,
+    "replan_steps": {
+      "h1": 1,
+      "h5": 5
+    },
+    "success": "LIBERO env._check_success matches returned done; no custom threshold",
+    "videos": "all 100 new M2 episodes, external view 256 RGB, H264",
+    "preflight_positive": "results/research_diagnosis_20261014_v3/ckpt30k_prefix5/episodes/task0_init2",
+    "preflight_rule": "replay existing successful action trace and verify initial/final physical state and original success step; no new positive sample search",
+    "confirmation_access": false,
+    "scope": "development pilot within known tasks, one training seed; no unseen-task or full benchmark claim",
+    "baseline": "reuse all 50 accepted M1 best outcomes without rerunning or selecting by M2 results"
+  },
+  "analysis": {
+    "metrics": [
+      "per-epoch train/validation loss",
+      "offline mean-action reference",
+      "per-task and overall paired success",
+      "task-cluster bootstrap interval",
+      "inference latency",
+      "GPU peak memory",
+      "throughput",
+      "failure videos"
+    ],
+    "bootstrap_seed": 20261019,
+    "bootstrap_samples": 10000,
+    "upgrade_rule": "Compare M1 K1H1, M2 K10H1, M2 K10H5; separate prediction-horizon and replanning effects. Inspect overfit and failures; retain all outcomes; next visual-encoder phase needs a new concrete protocol."
+  },
+  "resources": {
+    "allowed_physical_gpus": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "simultaneous_gpus": 1,
+    "max_cpu_threads": 4,
+    "stage_total_seconds": 10800,
+    "cache_seconds": 1800,
+    "gpu_stage_seconds": 3600,
+    "new_artifact_cap_gib": 8,
+    "project_cap_gib": 120,
+    "filesystem_reserve_gib": 100,
+    "idle_gate": "two samples plus prelaunch check; no compute process; used<=512MiB; utilization<=5%",
+    "old_recovery_accounting": "unchanged; this is the newly requested Mini VLA baseline stage, not a reset or continuation of the old recovery queue",
+    "persistent_idle_monitor": false,
+    "per_attempt_seconds": 3600,
+    "ledger": "results/mini_vla_m1_20261019_ledger.json",
+    "budget_scope": "Shared cumulative 3h and 8GiB for M1 plus this authorized successor; includes M1 attempts and recorded review/test costs; no reset",
+    "m2_additional_artifact_cap_gib": 2,
+    "reuse_cache": true
+  },
+  "resumption": "retain cache, completed epoch checkpoints and completed episode outcomes; no resampling or extra epochs because of scores",
+  "automatic_followup": "durable supervisor, atomic progress, one completion/failure event to originating thread; accepted is not processed",
+  "baseline_run": "results/mini_vla_m1_20261019_run1",
+  "baseline_acceptance_sha256": "2dc1d734731fdae96126a271facee6fe8ba7433bb4764419db45a829276f3157"
+}

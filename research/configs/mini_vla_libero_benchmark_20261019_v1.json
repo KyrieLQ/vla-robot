@@ -1,0 +1,177 @@
+{
+  "kind": "four_suite_benchmark_standard_not_launch_protocol",
+  "status": "STANDARD_ADOPTED_DATA_AND_EXECUTOR_PREPARATION_PENDING",
+  "user_directive": "那我们也应该按照同样的标准来吧",
+  "date": "2026-10-19",
+  "training": {
+    "mode": "single jointly trained policy across all four suites",
+    "data_repo": "physical-intelligence/libero",
+    "data_revision": "a4336d589d589045d1c56423ffdf3b88a0e19b1f",
+    "demo_split": "configs/mini_vla_four_suite_demo_split_20261019_v1.json",
+    "demo_split_sha256": "97142601f468d5415c4dec96ec6cf014b965b3c3261e6945c26c8b17ce36be30",
+    "train_episodes": 1506,
+    "validation_episodes": 187,
+    "normalization_and_vocabulary": "fit training demonstrations only; new artifacts; never reuse Spatial-only statistics as four-suite fit statistics",
+    "selection": "prespecified offline validation rule before closed-loop evaluation",
+    "comparison": "matched four-suite data/splits/optimization budget across component variants; existing Spatial-trained checkpoints remain historical developmental evidence",
+    "difference_from_official": "Project keeps whole-demo validation holdout; exact upstream released training manifest not independently verified. Shared benchmark does not imply identical pretraining/training data volume."
+  },
+  "evaluation": {
+    "suites": [
+      {
+        "name": "libero_spatial",
+        "tasks": 10,
+        "trials_per_task": 50,
+        "rollouts": 500,
+        "max_action_steps": 220
+      },
+      {
+        "name": "libero_object",
+        "tasks": 10,
+        "trials_per_task": 50,
+        "rollouts": 500,
+        "max_action_steps": 280
+      },
+      {
+        "name": "libero_goal",
+        "tasks": 10,
+        "trials_per_task": 50,
+        "rollouts": 500,
+        "max_action_steps": 300
+      },
+      {
+        "name": "libero_10",
+        "tasks": 10,
+        "trials_per_task": 50,
+        "rollouts": 500,
+        "max_action_steps": 520
+      }
+    ],
+    "total_per_checkpoint": 2000,
+    "case_manifest": "configs/mini_vla_four_suite_cases_20261019_v1.json",
+    "case_manifest_sha256": "6860f17f816ac0cf6e73700ebeb8892406d67aa779ab74ed1a6c93cbc9a63dad",
+    "task_order_index": 0,
+    "official_initial_state_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49
+    ],
+    "environment_seed": 7,
+    "reset": "upstream sequential env.reset/set_init_state per task, ordered indices0..49, env.seed(7); freeze implementation before execution",
+    "initial_wait_steps": 10,
+    "success": "original LIBERO success predicate; no custom distance or relaxed threshold",
+    "raw_camera_resolution": [
+      256,
+      256
+    ],
+    "orientation": "rotate raw RGB180 degrees to match dataset",
+    "model_adapters": "use each model trained preprocessing, action normalization and gripper mapping; record all differences including resolution; pi05 reference224, Mini128",
+    "K_H": "explicit frozen model settings; preserve H1/H5 comparison rather than forcing K1 policy to execute five outputs",
+    "rollout_reuse": "Old canonical-anchor/per-case-seed Spatial results are not transferable to upstream-reset final scores; full new final runs required",
+    "metrics": [
+      "per-task successes/50",
+      "per-suite successes/500",
+      "four-suite macro mean",
+      "completed/expected cases",
+      "paired wins and losses",
+      "task-cluster uncertainty",
+      "training and inference cost"
+    ],
+    "errors": "Policy task failures count. Infrastructure failures remain incomplete and must be repaired without selecting outcomes. Never publish partial as full."
+  },
+  "development_and_confirmation": {
+    "development": 800,
+    "confirmation": 1200,
+    "spatial_original_200_300_preserved": true,
+    "other_suites": "20 development IDs per task fixed via hash stratified across0..49;30 confirmation IDs",
+    "confirmation_release": "NOT_RELEASED; method, checkpoints, adapters, seeds and execution code must be frozen first",
+    "final_2000_includes_development": true,
+    "no_unseen_scene_claim": true,
+    "additional_training_seeds": "separate concrete run budget; do not conflate repeated evaluation with independent training repeats"
+  },
+  "resources": {
+    "existing_limit_seconds": 10800,
+    "recorded_seconds": 2357.5258011603655,
+    "remaining_seconds": 8442.474198839634,
+    "existing_new_artifact_limit_gib": 8,
+    "project_cap_gib": 120,
+    "filesystem_reserve_gib": 100,
+    "max_simultaneous_gpus": 2,
+    "allowed_gpus": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "gpu_admission": "finite idle checks; no periodic waiting monitor; no interference with other jobs",
+    "expansion_budget": "NOT_APPROVED_BY_THIS_STANDARD; measure missing download sizes and bounded-cache throughput before proposing an exact execution budget",
+    "no_training_or_download_started": true
+  },
+  "implementation": {
+    "metadata_manifest": "COMPLETE",
+    "data_inventory": "reports/mini_vla_four_suite_inventory_20261019.json",
+    "data_files_complete": false,
+    "evaluation_executor_migrated": false,
+    "historical_protocols_immutable": true
+  },
+  "sources": [
+    "https://github.com/Physical-Intelligence/openpi/blob/main/examples/libero/README.md",
+    "https://github.com/Physical-Intelligence/openpi/blob/main/examples/libero/main.py",
+    "https://github.com/Physical-Intelligence/openpi/blob/main/examples/libero/convert_libero_data_to_lerobot.py"
+  ],
+  "local_source_sha256": {
+    "repos/openpi/examples/libero/main.py": "d53748c95804ada559e3ca867305b8f755d8651c4c7f4e2723ef80aea55a3943",
+    "repos/openpi/examples/libero/convert_libero_data_to_lerobot.py": "199c309a601f23fa120e0c9ca3d8f7f2dba525924a60e79906fca4c6b9f03602"
+  }
+}

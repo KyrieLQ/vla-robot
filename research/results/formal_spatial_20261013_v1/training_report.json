@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "experiment": "formal_spatial_20261013_v1",
+  "attempt": "/data1/niuye/lq/pi05_lora_libero/results/formal_spatial_20261013_v1/attempt_20261013_122137",
+  "config": "pi05_libero_lora_3090x2_train",
+  "started_at": "2026-10-13T12:21:37.368331+08:00",
+  "pid": 2263188,
+  "resume": false,
+  "target_updates": 30000,
+  "global_batch": 2,
+  "fsdp_devices": 2,
+  "seed": 42,
+  "gpu_selection": "/data1/niuye/lq/pi05_lora_libero/reports/gpu_selection_20261013_122124.json",
+  "parameter_source": "official pi05_base (fresh initialization) or exact same-run checkpoint",
+  "initialization_seconds": 32.55281731905416,
+  "compile_seconds": 40.29841047804803,
+  "start_step": 0,
+  "trainable_parameters": 466957072,
+  "finished_updates": 30000,
+  "optimizer_updates_this_attempt": 30000,
+  "frozen_unchanged": true,
+  "checkpoint": {
+    "path": "/data1/niuye/lq/pi05_lora_libero/checkpoints/pi05_libero_lora_3090x2_train/formal_spatial_20261013_v1/30000",
+    "config": "pi05_libero_lora_3090x2_train",
+    "updates": 30000,
+    "saved_at": "2026-10-13T20:37:07.574391+08:00",
+    "frozen_unchanged": true
+  },
+  "training_wall_seconds": 29618.867708456004,
+  "update_seconds_mean": 0.8344275021263864,
+  "finite_parameters": true,
+  "ended_at": "2026-10-13T20:37:07.625154+08:00",
+  "observed_peak_device_memory_mib": {
+    "0": 17732,
+    "1": 21670
+  },
+  "memory_sampling": "whole selected device NVML every >=5s; may miss brief peaks"
+}

@@ -1,0 +1,51 @@
+{
+  "status": "APPROVED",
+  "thread": "PUBLIC_REPRODUCTION",
+  "created_at": "2026-11-04T19:00:19.490397+00:00",
+  "reason": "Existingmodernstoragecannotfitatomicformalcheckpointretention",
+  "existing_authorization": "configs/mini_vla_mainline_20261104_AUTHORIZED.json",
+  "modern_cap_old_gib": 84,
+  "modern_cap_requested_gib": 86,
+  "additional_modern_gib": 2,
+  "total_growth_cap_gib_unchanged": 140,
+  "project_cap_gib_unchanged": 240,
+  "filesystem_reserve_gib_unchanged": 100,
+  "max_shared_gpus_unchanged": 4,
+  "old_time_and_artifacts_preserved": true,
+  "no_cleanup": true,
+  "existing_modern_remaining_bytes": 816132096,
+  "planned_formal_scope_cap_bytes": 2684354560,
+  "peak_inventory": [
+    {
+      "item": "latest compact optimizer checkpoint + atomic replacement",
+      "bytes": 1251724576
+    },
+    {
+      "item": "three complete-epoch adapter snapshots;best is reference",
+      "bytes": 625860906
+    },
+    {
+      "item": "initial and threeepoch fullvalidation 30465x10x32 float32 predictions",
+      "bytes": 155980800
+    },
+    {
+      "item": "182250 per-update logs at512bytes",
+      "bytes": 93312000
+    },
+    {
+      "item": "future fixedfour-suite dev200 trajectories/videos budget",
+      "bytes": 402653184
+    },
+    {
+      "item": "code/config/receipts/reports allowance",
+      "bytes": 20971520
+    }
+  ],
+  "estimated_inventory_bytes": 2550502986,
+  "future_final2000_not_in_this_scope": true,
+  "approved_at": "2026-11-05T12:33:10.410618+08:00",
+  "user_reply": "批准现代子额度调到86GiB（推荐）",
+  "question_item_id": "[\"request_user_input_async\",\"call_a46c8e807fff44b5b5cc213ab6fef1e1\",0]",
+  "proposal_sha256": "9fa16a8f4dee70a54737dfb7af19f55d003fae7dd756fb4f3f81c21be1c2f533",
+  "approval_scope": "Modernartifactsubcap84to86GiB forreviewedpi05threeepoch/dev200preparationandexecutionafterrequiredgates; othercapsandhistoricalaccountingretained"
+}

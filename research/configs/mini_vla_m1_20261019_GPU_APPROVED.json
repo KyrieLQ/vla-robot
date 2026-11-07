@@ -1,0 +1,12 @@
+{
+  "approved_at": "2026-10-19T16:21:05.347449+08:00",
+  "user_reply": "允许本轮使用 GPU 4–6 中一张空闲卡",
+  "allowed_physical_gpus": [
+    4,
+    5,
+    6
+  ],
+  "simultaneous_gpus": 1,
+  "scope": "This M1 baseline round only; does not change global GPU policy",
+  "original_plan_sha256": "6b691fb9ac9010fe875a82467538e097d76e0d9f13e787994cbe460299b894c4"
+}

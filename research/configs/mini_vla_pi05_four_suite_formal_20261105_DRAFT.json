@@ -1,0 +1,81 @@
+{
+  "status": "DRAFT_PENDING_STORAGE_APPROVAL_AND_EXECUTOR_GATES",
+  "thread": "PUBLIC_REPRODUCTION",
+  "purpose": "One clean four-suite pi05LoRA adaptation;targets not guaranteed",
+  "official_base": "cache/openpi/openpi-assets/checkpoints/pi05_base/params",
+  "base_manifest": "reports/pi05_four_suite_preflight_prepare_20261105/official_base_manifest.json",
+  "initialization": "freshofficialbase + seed42LoRA;notold30k orpreflightstep2",
+  "train_episodes": 1506,
+  "validation_episodes": 187,
+  "train_frames_per_epoch": 243000,
+  "validation_frames": 30465,
+  "epochs": 3,
+  "global_batch": 4,
+  "fsdp_devices": 4,
+  "updates_per_epoch": 60750,
+  "total_updates": 182250,
+  "frame_presentations": 729000,
+  "training_seed": 42,
+  "epoch_sample_order": "numpydefault_rng(42+epoch).permutation(243000);fullcoverage;exactcursorandorderhash",
+  "model_recipe": "mini_vla/pi05_four_suite_v1.py make_config;freezevision;baseGemmaweights;languageLoRAr16/actionLoRAr32/actiontimeprojections",
+  "trainable_parameters": 52153376,
+  "loss": "nativepi05full32componentFlowMatching;Beta(1.5,1);repeatlastactionwindow;no futuremaskinput",
+  "normalization": "trainonlyq01q99 fromreports/pi05_four_suite_prepare_20261104/norm_stats.json",
+  "optimizer": {
+    "type": "AdamW",
+    "lr": 5e-05,
+    "warmup_steps": 1000,
+    "b1": 0.9,
+    "b2": 0.95,
+    "eps": 1e-08,
+    "weight_decay": 1e-10,
+    "clip_norm": 1.0,
+    "ema": null
+  },
+  "validation": {
+    "checkpoints": [
+      "initial",
+      "epoch1",
+      "epoch2",
+      "epoch3"
+    ],
+    "all_frames": 30465,
+    "inference": "Euler10;fixedCPUfloat32noise32D perframeSHA256(20261105,episode,frame)",
+    "batch": 4,
+    "last_batch_padding": 3,
+    "score": "normalizedq01q99 generatedfirstactionMSE overfirst7 realdimensions;earliestties",
+    "padding_mask": "scoresonly;neverin modelconditioning",
+    "secondary": "fullvalidchunk/per-suite/per-dimension/last9frames;do notchangecheckpointselection"
+  },
+  "checkpoint_retention": {
+    "latest": "compacttrainables+optimizer+PythonNumPyJAXRNG+epochcursor+sourcehash",
+    "latest_interval_updates": 1000,
+    "also_save_each_epoch": true,
+    "keep_all_three_epoch_adapter_snapshots": true,
+    "best": "reference toselectedepochadapterorofficialinitialrecipe",
+    "initial": "base/seed/source/fullparameterhash manifest,no duplicatedfullVLM",
+    "atomic_replace": true,
+    "old_assets_untouched": true
+  },
+  "evaluation_after_full_review": {
+    "protocol": "configs/mini_vla_four_suite_dev200_20261104_v1.json",
+    "episodes": 200,
+    "action_horizon": 10,
+    "execute_prefix": 5,
+    "videos": 40,
+    "final2000": false
+  },
+  "current_measured_training_projection_hours": 68.19011571231385,
+  "generation_throughput_probe": "configs/mini_vla_pi05_generation_preflight_20261105_v1.json",
+  "mandatory_before_launch": [
+    "storageapproval",
+    "fulltrainingdataloader/cursor/checkpointCPUcontract",
+    "fullEuler generationtiming admission",
+    "frozentraining/validation/execution/sourceprotocol",
+    "durablecomplete-result/safeprocess-exitgate;fullworkloadshutdownrootcausenotlocalized"
+  ],
+  "new_experiments_outside_scope": "NoadditionalSmolheads/customFlow/automaticepochincrease/final2000",
+  "measured_generation_probe": "results/mini_vla_pi05_generation_preflight_20261105_run1",
+  "projected_validation_hours_per_pass": 2.3916061384336453,
+  "projected_total_training_validation_hours": 77.75654026604843
+}

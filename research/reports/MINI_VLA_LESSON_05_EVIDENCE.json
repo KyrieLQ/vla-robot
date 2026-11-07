@@ -1,0 +1,31 @@
+{
+  "checked_at": "2026-10-22T20:43:19.080731+08:00",
+  "lesson": "reports/MINI_VLA_LESSON_05.md",
+  "experiment_stage": "M6",
+  "optional_M5": "not run",
+  "counts": {
+    "train": {
+      "episodes": 1506,
+      "frames": 243000
+    },
+    "validation": {
+      "episodes": 187,
+      "frames": 30465
+    }
+  },
+  "best_epoch": 3,
+  "best_updates": 5697,
+  "full_run_updates": 94950,
+  "source_sha256": {
+    "configs/mini_vla_four_suite_demo_split_20261019_v1.json": "97142601f468d5415c4dec96ec6cf014b965b3c3261e6945c26c8b17ce36be30",
+    "results/mini_vla_m6_train_20261020_run1/training/history.json": "91948ff90d550c8baade1bbe2b1619930e7cd00c998953ac87dad561ec61129c",
+    "configs/mini_vla_m6_train_20261020_v1.json": "df00145b33c85810a7abba5052513f5b8b399d8dbfb0c03bc727d79b0fc7db1c",
+    "mini_vla/prepare_m6_v1.py": "92aeef394f7dda2e5e3116284964bb86b89241f99bb41d6378eee67b100ac10f",
+    "mini_vla/experiment_m3_v1.py": "8f260a4ab73a2c3c2011d4cbdc884daf66ce6e3b2678a1c6964b4882ff31972a"
+  },
+  "local_links_checked": 12,
+  "no_new_experiments": true,
+  "legacy_experiment_stage": "M6",
+  "canonical_model_id": "M5",
+  "numbering_map": "configs/mini_vla_lesson_numbering_20261023.json"
+}

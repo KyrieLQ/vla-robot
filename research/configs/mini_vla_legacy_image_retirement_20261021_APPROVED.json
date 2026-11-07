@@ -1,0 +1,19 @@
+{
+  "status": "APPROVED",
+  "approved_at": "2026-10-21T09:25:13.241773+08:00",
+  "thread": "PUBLIC_REPRODUCTION",
+  "user_reply": "批准清理及阶段调整（推荐）",
+  "proposal": "configs/mini_vla_legacy_image_retirement_proposal_20261021_v1.json",
+  "proposal_sha256": "ad997ef76d0a627202737bd7edb6716b57b3590f2e31ab11c5adac75c5f04b21",
+  "approved_paths": [
+    "datasets/mini_vla_four_suite_128_20261019_v1/train/images.npy",
+    "datasets/mini_vla_four_suite_128_20261019_v1/validation/images.npy"
+  ],
+  "cache_stage_limit_seconds": 25200,
+  "modern_limit_seconds": 68400,
+  "shared_total_seconds_unchanged": 93600,
+  "phase_artifact_gib_unchanged": 140,
+  "project_cap_gib_unchanged": 240,
+  "filesystem_reserve_gib_unchanged": 100,
+  "budget_increase": false
+}

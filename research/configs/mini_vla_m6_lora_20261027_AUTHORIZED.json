@@ -1,0 +1,17 @@
+{
+  "status": "APPROVED",
+  "thread": "PUBLIC_REPRODUCTION",
+  "recorded_at": "2026-10-27T08:31:22.890979+00:00",
+  "user_request": "我觉得可以试一试微调smolVLM，改一下M6的模式，跟现在的冻结做一个对比实验",
+  "design_reply": "配对续训对照（推荐）：同一M6起点，冻结续训 vs LoRA续训",
+  "scope": "PPT M6 SmolVLM regression: matched frozen continuation versus attention-LoRA continuation; preserve existing results",
+  "resume_scope": "This experiment and its necessary bounded engineering preflight only",
+  "budget_increase_authorized": false,
+  "preflight_allocation_by_agent_seconds": 900,
+  "allocation_note": "Within existing remaining26h/modern19h cumulative limits; not a new user-specified time grant",
+  "max_gpus": 2,
+  "allowed_gpus": "all previously allowed physical GPUs",
+  "resource_poll_seconds": 300,
+  "no_confirmation_reuse": true,
+  "new_other_finetuning_authorized": false
+}

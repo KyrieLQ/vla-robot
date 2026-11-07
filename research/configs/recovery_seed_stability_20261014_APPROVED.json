@@ -1,0 +1,36 @@
+{
+  "approved": true,
+  "approved_at": "2026-10-14T20:21:24.147266+08:00",
+  "originating_thread": "PUBLIC_REPRODUCTION",
+  "user_reply": "批准增加30分钟配对窗口（推荐）",
+  "proposal": "configs/recovery_seed_stability_20261014_v1_PROPOSED.json",
+  "proposal_sha256": "729347087a1515cc227c4c1693a17a51dcc9a889ef08630ab78e0982d00f1e3f",
+  "change": {
+    "paired_cumulative_seconds_from": 14400,
+    "paired_cumulative_seconds_to": 16200
+  },
+  "fixed_scope": {
+    "fit_episodes": 20,
+    "replicate_seeds": [
+      2026101401,
+      2026101402,
+      2026101403
+    ],
+    "branches": 130,
+    "stage_max_seconds": 2100
+  },
+  "unchanged": {
+    "recovery_cumulative_seconds": 28800,
+    "maximum_simultaneous_gpus": 2,
+    "allowed_physical_gpus": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "phase_artifact_gib": 4,
+    "project_gib": 120,
+    "filesystem_reserve_gib": 100
+  },
+  "cumulative_usage_not_reset": true
+}

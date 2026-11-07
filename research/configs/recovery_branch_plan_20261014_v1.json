@@ -1,0 +1,138 @@
+{
+  "version": 1,
+  "created_at": "2026-10-14T10:20:09.192041+08:00",
+  "phase": "recovery_branch_feasibility",
+  "originating_thread": "PUBLIC_REPRODUCTION",
+  "authorization": "User approved starting the 1–2 month VLA improvement project and automatic follow-through within resource limits.",
+  "source_diagnosis": "configs/research_diagnosis_20261014_v2.json",
+  "source_diagnosis_sha256": "70a34203dd43853a67272172b3decf3700b9c18610f3729b47cf3c0996a06784",
+  "source_episodes": "results/research_diagnosis_20261014_v3/ckpt30k_prefix5/episodes",
+  "root_manifest": "configs/recovery_branch_roots_20261014_v1.json",
+  "root_manifest_sha256": "3d5effd30982d8bfd23ee20780771ecf959246ec3f715039a993073fa2526374",
+  "development_split": "configs/research_split_20261014_v1.json",
+  "development_split_sha256": "7eca378ed4fbf44ae38dabe8734a1a68691af2988f750e6829c55763227b9a6c",
+  "checkpoint": "checkpoints/pi05_libero_lora_3090x2_train/formal_spatial_20261013_v1/30000",
+  "checkpoint_updates": 30000,
+  "new_gradient_updates": 0,
+  "unique_scenarios": 200,
+  "roots": 269,
+  "branches_per_root": 4,
+  "expected_branches": 1076,
+  "confirmation_cases_used": 0,
+  "root_rule": "Fixed t=60 for all 200 episodes; t=120 additionally if the baseline is still active at that time (69 cases). No future success filtering.",
+  "methods": [
+    {
+      "name": "continue",
+      "rule": "Resume original RNG at number of previous calls; execute prefix5 to the same total 220-step cap."
+    },
+    {
+      "name": "fine20",
+      "rule": "Same RNG at the root; prefix1 for exactly 20 actual actions, then return to prefix5."
+    },
+    {
+      "name": "resample5",
+      "rule": "Restart the policy noise stream using the frozen independent root seed, retain prefix5 for the remainder."
+    },
+    {
+      "name": "retreat5_fine20",
+      "rule": "Five legal OSC commands [0,0,0.3,0,0,0,-1] (upwards with open gripper), then 20 prefix1 actions and return to prefix5. All actions count toward 220."
+    }
+  ],
+  "method_order": "continue first as the per-root integrity control, then fine20,resample5,retreat5_fine20; each branch starts from an independently replayed identical root.",
+  "prefix_steps": 5,
+  "action_horizon": 10,
+  "denoising_steps": 10,
+  "max_total_steps": 220,
+  "fine_steps": 20,
+  "retreat_steps": 5,
+  "retreat_action": [
+    0,
+    0,
+    0.3,
+    0,
+    0,
+    0,
+    -1
+  ],
+  "reset_protocol": {
+    "mode": "fresh_environment_canonical_anchor_history",
+    "anchor_indices": [
+      2,
+      12,
+      22,
+      32,
+      42
+    ],
+    "history_rule": "For case index i, instantiate a fresh environment; replay reset + init state + 10 dummy waits for each anchor j<i, then seed/reset/set target state and wait 10. No policy calls in warmup. This preserves the old five-anchor initial scenes and is independent of subset/queue/variant order.",
+    "evidence": "reports/research_reset_history_probe.json",
+    "upstream_modified": false,
+    "scope_note": "Common reproducible scene definitions across conditions; not a claim of byte-identical official 50-trial sequential reset semantics."
+  },
+  "wait_steps": 10,
+  "state_reconstruction": "Canonical initialization plus exact replay of all original actions to the root, rebuilding native controller/internal history. No claim that qpos/qvel alone restore state. No rollout rewind after a branch begins.",
+  "rng_reconstruction": "Policy.infer splits its JAX key once per call. Rebuild original key from episode seed and advance the carried key root_step/5 times; first continue prediction must match the archived chunk.",
+  "acceptance": {
+    "image_hashes": "exact before every replayed action and at root; full continue suffix also exact",
+    "numeric_atol": 1e-06,
+    "numeric_rtol": 0,
+    "root_simulator_atol": 1e-07,
+    "continue_final_outcome_and_steps": "exact at the 220-action cap",
+    "fail_policy": "Preserve evidence and stop affected collection; never relax gates or choose a different sample because of a mismatch."
+  },
+  "preflight_roots": [
+    {
+      "pair_id": "task0_init2",
+      "branch_step": 60
+    },
+    {
+      "pair_id": "task4_init22",
+      "branch_step": 120
+    }
+  ],
+  "preflight_protocol": "Each GPU independently replays and regenerates both a known successful and unsuccessful continue suffix; all four must pass before collecting intervention outcomes.",
+  "workers": 2,
+  "maximum_simultaneous_gpus": 2,
+  "allowed_physical_gpus": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "queue_timeout_seconds": 28800,
+  "job_timeout_seconds": 25200,
+  "project_budget_gib": 120,
+  "filesystem_reserve_gib": 100,
+  "new_artifact_budget_gib": 4,
+  "periodic_chat_notifications": false,
+  "persistent_idle_monitor": false,
+  "analysis": {
+    "units": "269 paired roots nested in 200 episodes and 10 tasks; early/late cohorts reported separately",
+    "bootstrap_seed": 2026101402,
+    "bootstrap_draws": 10000,
+    "metrics": [
+      "paired successes and losses vs continue",
+      "rescued baseline-failure episodes",
+      "harmed baseline-success episodes",
+      "additional policy calls and inference seconds",
+      "actual steps consumed",
+      "per-task counts"
+    ],
+    "intervals": "Exploratory task-cluster bootstrap; no multiplicity-adjusted or confirmation claim. Roots and branches are not independent episodes.",
+    "oracle": "Any-candidate success is only an offline feasibility upper bound, never a deployed selector score.",
+    "feasibility_gate": "If at least 8 distinct baseline-failure episodes have a successful alternative and every continue control passes, proceed to frozen-encoder progress/value module development with fixed fit/calibration split. Otherwise improve the recovery candidates/teacher before training a selector; no outcome-driven repeated branch sampling.",
+    "noise_limit": "One fixed stochastic stream per method/root; labels are sampled outcomes, not exact conditional expected values."
+  },
+  "self_review": [
+    "Full-episode prefix1 wins do not imply locally recoverable failures; this experiment tests that gap.",
+    "Fixed upward/open retreat can drop a held object or collide; it is a bounded simulator candidate, not a safe real-robot controller.",
+    "A failure classifier cannot help when no recovery candidate works. The oracle feasibility gate precedes module training.",
+    "Preserve successful-case controls to measure false intervention harm; never collect only failed trajectories.",
+    "The 60/120 roots are convenient development probes, not a learned trigger or proof of optimal timing.",
+    "All geometric/contact labels stay evaluator-side; no object IDs, task IDs or future labels enter policy inputs."
+  ],
+  "references": [
+    "https://mujoco.readthedocs.io/en/3.2.3/programming/simulation.html#state-and-control",
+    "https://docs.jax.dev/en/latest/random-numbers.html"
+  ],
+  "next_stage_requires": "Complete integrity and feasibility review, then freeze module architecture, training targets, seeds, costs and held-out calibration rules before training."
+}

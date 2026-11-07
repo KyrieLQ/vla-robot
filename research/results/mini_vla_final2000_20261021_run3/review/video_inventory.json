@@ -1,0 +1,802 @@
+[
+  {
+    "suite": "libero_spatial",
+    "task": 0,
+    "init": 0,
+    "success": true,
+    "frames": 79,
+    "video": "results/mini_vla_final2000_20261021_run3/worker0/libero_spatial/task0_init0/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_spatial_task0_init0.jpg",
+    "sha256": "13cf881074b43eaef3e277f19b352115340fda98e14982e4fc6e25ac8d754952"
+  },
+  {
+    "suite": "libero_spatial",
+    "task": 0,
+    "init": 25,
+    "success": true,
+    "frames": 117,
+    "video": "results/mini_vla_final2000_20261021_run3/worker0/libero_spatial/task0_init25/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_spatial_task0_init25.jpg",
+    "sha256": "cc8895a8aba6686d14d8e1143ee68886e91941fa4d1bf8aa9db66f2043695bd3"
+  },
+  {
+    "suite": "libero_spatial",
+    "task": 1,
+    "init": 0,
+    "success": false,
+    "frames": 221,
+    "video": "results/mini_vla_final2000_20261021_run3/worker0/libero_spatial/task1_init0/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_spatial_task1_init0.jpg",
+    "sha256": "92f0275fbaeab2a77fdd9d47a470326431f935bb2907f22662ce6c5dd50ec9f5"
+  },
+  {
+    "suite": "libero_spatial",
+    "task": 1,
+    "init": 25,
+    "success": true,
+    "frames": 107,
+    "video": "results/mini_vla_final2000_20261021_run3/worker0/libero_spatial/task1_init25/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_spatial_task1_init25.jpg",
+    "sha256": "e2eda267ebd159ecf22cc536007d9421a121bdacffeddceb98b6764b625b60cb"
+  },
+  {
+    "suite": "libero_spatial",
+    "task": 2,
+    "init": 0,
+    "success": true,
+    "frames": 101,
+    "video": "results/mini_vla_final2000_20261021_run3/worker0/libero_spatial/task2_init0/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_spatial_task2_init0.jpg",
+    "sha256": "c3972e28c04211a02b47d01d0cb225df96963df221cc7ce90da0eb35bd2b2fa5"
+  },
+  {
+    "suite": "libero_spatial",
+    "task": 2,
+    "init": 25,
+    "success": true,
+    "frames": 108,
+    "video": "results/mini_vla_final2000_20261021_run3/worker0/libero_spatial/task2_init25/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_spatial_task2_init25.jpg",
+    "sha256": "d4a95a647f18c66b40df0db42b6fd08e824da196aeb7b52b8726b89119873f4f"
+  },
+  {
+    "suite": "libero_spatial",
+    "task": 3,
+    "init": 0,
+    "success": true,
+    "frames": 96,
+    "video": "results/mini_vla_final2000_20261021_run3/worker0/libero_spatial/task3_init0/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_spatial_task3_init0.jpg",
+    "sha256": "8c56342e343dfa32817312e28a75d0c117c31c20822f4f9f48544ea1f3bd32ee"
+  },
+  {
+    "suite": "libero_spatial",
+    "task": 3,
+    "init": 25,
+    "success": true,
+    "frames": 88,
+    "video": "results/mini_vla_final2000_20261021_run3/worker0/libero_spatial/task3_init25/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_spatial_task3_init25.jpg",
+    "sha256": "c53f7708e12b23218aeb224edee3f9f1b28a1aed71894809b003ba3665cd4822"
+  },
+  {
+    "suite": "libero_spatial",
+    "task": 4,
+    "init": 0,
+    "success": false,
+    "frames": 221,
+    "video": "results/mini_vla_final2000_20261021_run3/worker0/libero_spatial/task4_init0/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_spatial_task4_init0.jpg",
+    "sha256": "8bf37bb631ce14440c62d224a5cf8167e94f169b7e148583574e90e94ebbff42"
+  },
+  {
+    "suite": "libero_spatial",
+    "task": 4,
+    "init": 25,
+    "success": true,
+    "frames": 139,
+    "video": "results/mini_vla_final2000_20261021_run3/worker0/libero_spatial/task4_init25/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_spatial_task4_init25.jpg",
+    "sha256": "df4c3b4b38b836494f5463b1902dfbef94feb5ae74093972a31993d269dbb82a"
+  },
+  {
+    "suite": "libero_spatial",
+    "task": 5,
+    "init": 0,
+    "success": true,
+    "frames": 97,
+    "video": "results/mini_vla_final2000_20261021_run3/worker0/libero_spatial/task5_init0/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_spatial_task5_init0.jpg",
+    "sha256": "10c0e4ade72a45f08d3e8bc430b767e0acff9c45042c2326a39fca0de7d5ffe8"
+  },
+  {
+    "suite": "libero_spatial",
+    "task": 5,
+    "init": 25,
+    "success": true,
+    "frames": 91,
+    "video": "results/mini_vla_final2000_20261021_run3/worker0/libero_spatial/task5_init25/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_spatial_task5_init25.jpg",
+    "sha256": "a8e11360f80396050ba2364b24f0dbe68ec376cefb02584d37e88c5fdb340972"
+  },
+  {
+    "suite": "libero_spatial",
+    "task": 6,
+    "init": 0,
+    "success": true,
+    "frames": 102,
+    "video": "results/mini_vla_final2000_20261021_run3/worker0/libero_spatial/task6_init0/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_spatial_task6_init0.jpg",
+    "sha256": "d88b341a4fd1081a67ab97f9bf945cb361651e4ce44da74b4befcb02a0e3cef2"
+  },
+  {
+    "suite": "libero_spatial",
+    "task": 6,
+    "init": 25,
+    "success": true,
+    "frames": 112,
+    "video": "results/mini_vla_final2000_20261021_run3/worker0/libero_spatial/task6_init25/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_spatial_task6_init25.jpg",
+    "sha256": "1ec1a8d8b74b4b647337ac390d95fb43d2fee29ce124a42939bc4469366afbb6"
+  },
+  {
+    "suite": "libero_spatial",
+    "task": 7,
+    "init": 0,
+    "success": true,
+    "frames": 153,
+    "video": "results/mini_vla_final2000_20261021_run3/worker0/libero_spatial/task7_init0/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_spatial_task7_init0.jpg",
+    "sha256": "88e84fc9c1c5d5cd2d898ca407ce5bac62ba61d4e35652deef8a1343c6920d35"
+  },
+  {
+    "suite": "libero_spatial",
+    "task": 7,
+    "init": 25,
+    "success": false,
+    "frames": 221,
+    "video": "results/mini_vla_final2000_20261021_run3/worker0/libero_spatial/task7_init25/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_spatial_task7_init25.jpg",
+    "sha256": "0e955b9b165c062197e98ef850312535440868ba3ef60cfe441200ab2625ae81"
+  },
+  {
+    "suite": "libero_spatial",
+    "task": 8,
+    "init": 0,
+    "success": false,
+    "frames": 221,
+    "video": "results/mini_vla_final2000_20261021_run3/worker0/libero_spatial/task8_init0/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_spatial_task8_init0.jpg",
+    "sha256": "3bf1f80c07730a796611537a7e65126a3bb21e47b2d20ab53964251268759fb9"
+  },
+  {
+    "suite": "libero_spatial",
+    "task": 8,
+    "init": 25,
+    "success": true,
+    "frames": 100,
+    "video": "results/mini_vla_final2000_20261021_run3/worker0/libero_spatial/task8_init25/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_spatial_task8_init25.jpg",
+    "sha256": "d01f33d3cbfde44255bce9fcde477bdddf82202b3efa357af61c7c3edf599efb"
+  },
+  {
+    "suite": "libero_spatial",
+    "task": 9,
+    "init": 0,
+    "success": false,
+    "frames": 221,
+    "video": "results/mini_vla_final2000_20261021_run3/worker0/libero_spatial/task9_init0/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_spatial_task9_init0.jpg",
+    "sha256": "c265967a5302dadf441d5acf79919e138e9ffdf5060dc2f74e7f592789629875"
+  },
+  {
+    "suite": "libero_spatial",
+    "task": 9,
+    "init": 25,
+    "success": true,
+    "frames": 137,
+    "video": "results/mini_vla_final2000_20261021_run3/worker0/libero_spatial/task9_init25/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_spatial_task9_init25.jpg",
+    "sha256": "e0700c42bdeab29f65b90128d13a15994d9b25036139cd3e8692dc9bff457d37"
+  },
+  {
+    "suite": "libero_10",
+    "task": 0,
+    "init": 0,
+    "success": true,
+    "frames": 260,
+    "video": "results/mini_vla_final2000_20261021_run3/worker0/libero_10/task0_init0/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_10_task0_init0.jpg",
+    "sha256": "bd3ff1868d1edb9e3e081dadd9fbc74f84f978b9b9dae4eb3a2e9e830551fe6e"
+  },
+  {
+    "suite": "libero_10",
+    "task": 0,
+    "init": 25,
+    "success": true,
+    "frames": 294,
+    "video": "results/mini_vla_final2000_20261021_run3/worker0/libero_10/task0_init25/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_10_task0_init25.jpg",
+    "sha256": "d2ef41be52f6fa05417ad90e07bfdd64156b1dcecd191c149b8ba89dab14ff5b"
+  },
+  {
+    "suite": "libero_10",
+    "task": 1,
+    "init": 0,
+    "success": true,
+    "frames": 253,
+    "video": "results/mini_vla_final2000_20261021_run3/worker0/libero_10/task1_init0/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_10_task1_init0.jpg",
+    "sha256": "7755a69adc90040acbc0586a07972bfa38a871f87ad60d6297103f9db5629b6e"
+  },
+  {
+    "suite": "libero_10",
+    "task": 1,
+    "init": 25,
+    "success": true,
+    "frames": 239,
+    "video": "results/mini_vla_final2000_20261021_run3/worker0/libero_10/task1_init25/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_10_task1_init25.jpg",
+    "sha256": "168c606d17fe2a58afe6ff5a0845d61e4cf768345655f73918f806520f282226"
+  },
+  {
+    "suite": "libero_10",
+    "task": 2,
+    "init": 0,
+    "success": true,
+    "frames": 283,
+    "video": "results/mini_vla_final2000_20261021_run3/worker0/libero_10/task2_init0/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_10_task2_init0.jpg",
+    "sha256": "864a669cc6e658acebc5bb76f7816c001546f82e2668a2f3665bfe2fd16080ea"
+  },
+  {
+    "suite": "libero_10",
+    "task": 2,
+    "init": 25,
+    "success": true,
+    "frames": 299,
+    "video": "results/mini_vla_final2000_20261021_run3/worker0/libero_10/task2_init25/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_10_task2_init25.jpg",
+    "sha256": "a7d6ea43259a74507853b4752541b035d3c41a8e54d5795afd0dd43d094ef5e4"
+  },
+  {
+    "suite": "libero_10",
+    "task": 3,
+    "init": 0,
+    "success": true,
+    "frames": 258,
+    "video": "results/mini_vla_final2000_20261021_run3/worker0/libero_10/task3_init0/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_10_task3_init0.jpg",
+    "sha256": "e33580613a0a50453451a8c45569e7fef05a58b1226d814dbceb382e474c64d6"
+  },
+  {
+    "suite": "libero_10",
+    "task": 3,
+    "init": 25,
+    "success": true,
+    "frames": 222,
+    "video": "results/mini_vla_final2000_20261021_run3/worker0/libero_10/task3_init25/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_10_task3_init25.jpg",
+    "sha256": "d171a0144693c2052a8fb3e46165afa460509690138d7c41a849c096474838b6"
+  },
+  {
+    "suite": "libero_10",
+    "task": 4,
+    "init": 0,
+    "success": true,
+    "frames": 286,
+    "video": "results/mini_vla_final2000_20261021_run3/worker0/libero_10/task4_init0/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_10_task4_init0.jpg",
+    "sha256": "d713b9103c6e9f4e3760f357e9b188862abb0bb1635704fd6db788fc8d3124a0"
+  },
+  {
+    "suite": "libero_10",
+    "task": 4,
+    "init": 25,
+    "success": true,
+    "frames": 234,
+    "video": "results/mini_vla_final2000_20261021_run3/worker0/libero_10/task4_init25/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_10_task4_init25.jpg",
+    "sha256": "fc51cdc91b89b1bbeccd8d579062c59dc9c66be41be45d798abe0b7c87610d1f"
+  },
+  {
+    "suite": "libero_10",
+    "task": 5,
+    "init": 0,
+    "success": true,
+    "frames": 157,
+    "video": "results/mini_vla_final2000_20261021_run3/worker0/libero_10/task5_init0/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_10_task5_init0.jpg",
+    "sha256": "efacd7e78797237b62ec2f57247c7ebee99ff3e2fc02b535377951e1c71df9b0"
+  },
+  {
+    "suite": "libero_10",
+    "task": 5,
+    "init": 25,
+    "success": true,
+    "frames": 190,
+    "video": "results/mini_vla_final2000_20261021_run3/worker0/libero_10/task5_init25/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_10_task5_init25.jpg",
+    "sha256": "51aff323fcc8afdcd6852634f85e0405aeaeb4ac914f0a3cc288ac6cff69e672"
+  },
+  {
+    "suite": "libero_10",
+    "task": 6,
+    "init": 0,
+    "success": false,
+    "frames": 521,
+    "video": "results/mini_vla_final2000_20261021_run3/worker0/libero_10/task6_init0/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_10_task6_init0.jpg",
+    "sha256": "5736fef10e1f71253145c0c6d055e04f67b38fc75433c544fa4ff278b7125cb2"
+  },
+  {
+    "suite": "libero_10",
+    "task": 6,
+    "init": 25,
+    "success": true,
+    "frames": 254,
+    "video": "results/mini_vla_final2000_20261021_run3/worker0/libero_10/task6_init25/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_10_task6_init25.jpg",
+    "sha256": "845386729a380cff4b78e507f99f8a462dd3f6400169f3a87a0146894b609c71"
+  },
+  {
+    "suite": "libero_10",
+    "task": 7,
+    "init": 0,
+    "success": false,
+    "frames": 521,
+    "video": "results/mini_vla_final2000_20261021_run3/worker0/libero_10/task7_init0/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_10_task7_init0.jpg",
+    "sha256": "209aa73b92b912a0e403c3157ba48a759b4303f3bfb54c0a6855d50f5a161fb7"
+  },
+  {
+    "suite": "libero_10",
+    "task": 7,
+    "init": 25,
+    "success": true,
+    "frames": 256,
+    "video": "results/mini_vla_final2000_20261021_run3/worker0/libero_10/task7_init25/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_10_task7_init25.jpg",
+    "sha256": "5f3bea9e5651c7e50fd115f6f6ffaa98965a016e16461e570be632b220f61c1b"
+  },
+  {
+    "suite": "libero_10",
+    "task": 8,
+    "init": 0,
+    "success": false,
+    "frames": 521,
+    "video": "results/mini_vla_final2000_20261021_run3/worker0/libero_10/task8_init0/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_10_task8_init0.jpg",
+    "sha256": "0ecc5e1670563cec35e10dd893a12dc10cb9ff6aba093f7adae0c645c7ed24c0"
+  },
+  {
+    "suite": "libero_10",
+    "task": 8,
+    "init": 25,
+    "success": false,
+    "frames": 521,
+    "video": "results/mini_vla_final2000_20261021_run3/worker0/libero_10/task8_init25/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_10_task8_init25.jpg",
+    "sha256": "61efea94b5c65247d39623ff6a460dac40ca5bc154c7d05bfcc4f43d553f65b1"
+  },
+  {
+    "suite": "libero_10",
+    "task": 9,
+    "init": 0,
+    "success": true,
+    "frames": 291,
+    "video": "results/mini_vla_final2000_20261021_run3/worker0/libero_10/task9_init0/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_10_task9_init0.jpg",
+    "sha256": "ac6244d8e52e00af35139b1ade86df8bc93af5cd609b4b2d11e45b1f813f7e7f"
+  },
+  {
+    "suite": "libero_10",
+    "task": 9,
+    "init": 25,
+    "success": false,
+    "frames": 521,
+    "video": "results/mini_vla_final2000_20261021_run3/worker0/libero_10/task9_init25/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_10_task9_init25.jpg",
+    "sha256": "6d55da9d6f9a63589e6a8da2a4b877dc07f69a64075e7fc76d41bd83da9e110d"
+  },
+  {
+    "suite": "libero_object",
+    "task": 0,
+    "init": 0,
+    "success": true,
+    "frames": 216,
+    "video": "results/mini_vla_final2000_20261021_run3/worker1/libero_object/task0_init0/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_object_task0_init0.jpg",
+    "sha256": "0822f50fec9ee1c4e2c1d4aa63fc5ad8b4880c42f4ac17d8548b59624efc7706"
+  },
+  {
+    "suite": "libero_object",
+    "task": 0,
+    "init": 25,
+    "success": true,
+    "frames": 153,
+    "video": "results/mini_vla_final2000_20261021_run3/worker1/libero_object/task0_init25/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_object_task0_init25.jpg",
+    "sha256": "5c641f1edc0e41db1777b0766beafff8f86bd908c78e861767e611bbe5c6f24a"
+  },
+  {
+    "suite": "libero_object",
+    "task": 1,
+    "init": 0,
+    "success": true,
+    "frames": 116,
+    "video": "results/mini_vla_final2000_20261021_run3/worker1/libero_object/task1_init0/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_object_task1_init0.jpg",
+    "sha256": "fe82d92a150718fedf6dee79826a88e63d5035a8f26e46945501b72da55a86cc"
+  },
+  {
+    "suite": "libero_object",
+    "task": 1,
+    "init": 25,
+    "success": true,
+    "frames": 121,
+    "video": "results/mini_vla_final2000_20261021_run3/worker1/libero_object/task1_init25/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_object_task1_init25.jpg",
+    "sha256": "73c7a65f2cb49ebad6a0f286a6f97d169f0f84e27eee23f96e59fef7ab98877a"
+  },
+  {
+    "suite": "libero_object",
+    "task": 2,
+    "init": 0,
+    "success": true,
+    "frames": 123,
+    "video": "results/mini_vla_final2000_20261021_run3/worker1/libero_object/task2_init0/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_object_task2_init0.jpg",
+    "sha256": "a0d7e8803e3eb49be950f2f793a7424ec1c814c9808fa8e61d4a522202adfaef"
+  },
+  {
+    "suite": "libero_object",
+    "task": 2,
+    "init": 25,
+    "success": true,
+    "frames": 124,
+    "video": "results/mini_vla_final2000_20261021_run3/worker1/libero_object/task2_init25/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_object_task2_init25.jpg",
+    "sha256": "00da0ad295a7405f29550cd1083ed22bdb9818324c761d20ed3fba3b9cf7b82d"
+  },
+  {
+    "suite": "libero_object",
+    "task": 3,
+    "init": 0,
+    "success": true,
+    "frames": 129,
+    "video": "results/mini_vla_final2000_20261021_run3/worker1/libero_object/task3_init0/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_object_task3_init0.jpg",
+    "sha256": "59a4f402dc47a00c39262e8145140c3df52f2d0aea98a4c3a611861c3dc183d2"
+  },
+  {
+    "suite": "libero_object",
+    "task": 3,
+    "init": 25,
+    "success": true,
+    "frames": 118,
+    "video": "results/mini_vla_final2000_20261021_run3/worker1/libero_object/task3_init25/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_object_task3_init25.jpg",
+    "sha256": "824ab1858221a091e6f64a4971e96a796d288bbcb20cd6538b38f1f76650611d"
+  },
+  {
+    "suite": "libero_object",
+    "task": 4,
+    "init": 0,
+    "success": true,
+    "frames": 143,
+    "video": "results/mini_vla_final2000_20261021_run3/worker1/libero_object/task4_init0/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_object_task4_init0.jpg",
+    "sha256": "193a30710968b1d731d308e91aded84d55e68a05dfba8e1e8c1537b421ed6618"
+  },
+  {
+    "suite": "libero_object",
+    "task": 4,
+    "init": 25,
+    "success": true,
+    "frames": 164,
+    "video": "results/mini_vla_final2000_20261021_run3/worker1/libero_object/task4_init25/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_object_task4_init25.jpg",
+    "sha256": "c943413de220ccee80597b090698271f28ecfb70c2611ddece567b8a6c856813"
+  },
+  {
+    "suite": "libero_object",
+    "task": 5,
+    "init": 0,
+    "success": false,
+    "frames": 281,
+    "video": "results/mini_vla_final2000_20261021_run3/worker1/libero_object/task5_init0/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_object_task5_init0.jpg",
+    "sha256": "02b90a2cebf78823f377545e2eed1a81fb4eb554f3f438554f46a0434dce0c11"
+  },
+  {
+    "suite": "libero_object",
+    "task": 5,
+    "init": 25,
+    "success": false,
+    "frames": 281,
+    "video": "results/mini_vla_final2000_20261021_run3/worker1/libero_object/task5_init25/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_object_task5_init25.jpg",
+    "sha256": "054fd98cf6f7629f385d69d9849ca42606f41fe33c0bdff83427ba1d2a301f29"
+  },
+  {
+    "suite": "libero_object",
+    "task": 6,
+    "init": 0,
+    "success": true,
+    "frames": 149,
+    "video": "results/mini_vla_final2000_20261021_run3/worker1/libero_object/task6_init0/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_object_task6_init0.jpg",
+    "sha256": "f2ab88e37a7300bf0910b7d3708b452b9c904ad6b740bbc849d74472273b94c9"
+  },
+  {
+    "suite": "libero_object",
+    "task": 6,
+    "init": 25,
+    "success": true,
+    "frames": 137,
+    "video": "results/mini_vla_final2000_20261021_run3/worker1/libero_object/task6_init25/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_object_task6_init25.jpg",
+    "sha256": "acaec532cb1d04c8222183610d809e47c9f95cdce2cb48b70a81423d4b23d297"
+  },
+  {
+    "suite": "libero_object",
+    "task": 7,
+    "init": 0,
+    "success": true,
+    "frames": 127,
+    "video": "results/mini_vla_final2000_20261021_run3/worker1/libero_object/task7_init0/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_object_task7_init0.jpg",
+    "sha256": "728271227899035a500ecca25b1966a8d97e9ea5b65c8fb15f03409160d710a2"
+  },
+  {
+    "suite": "libero_object",
+    "task": 7,
+    "init": 25,
+    "success": true,
+    "frames": 129,
+    "video": "results/mini_vla_final2000_20261021_run3/worker1/libero_object/task7_init25/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_object_task7_init25.jpg",
+    "sha256": "5ee7d6b2e7bf6eae22fcb5eabd3eaecfa5eb534d8625057b1c3d8c616f53eca0"
+  },
+  {
+    "suite": "libero_object",
+    "task": 8,
+    "init": 0,
+    "success": true,
+    "frames": 140,
+    "video": "results/mini_vla_final2000_20261021_run3/worker1/libero_object/task8_init0/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_object_task8_init0.jpg",
+    "sha256": "b9a5d562cef86b16f2a5b5ded676cdad827ec23ab5ff500290a3209aa519588a"
+  },
+  {
+    "suite": "libero_object",
+    "task": 8,
+    "init": 25,
+    "success": true,
+    "frames": 150,
+    "video": "results/mini_vla_final2000_20261021_run3/worker1/libero_object/task8_init25/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_object_task8_init25.jpg",
+    "sha256": "be0caefb877c1daf566e56200e822b7aacf424a6314fb11955abf482b51b7358"
+  },
+  {
+    "suite": "libero_object",
+    "task": 9,
+    "init": 0,
+    "success": true,
+    "frames": 118,
+    "video": "results/mini_vla_final2000_20261021_run3/worker1/libero_object/task9_init0/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_object_task9_init0.jpg",
+    "sha256": "425b2732efff2303b58e305678f6ead5db71a51776d03824c26e1458652b29ba"
+  },
+  {
+    "suite": "libero_object",
+    "task": 9,
+    "init": 25,
+    "success": true,
+    "frames": 123,
+    "video": "results/mini_vla_final2000_20261021_run3/worker1/libero_object/task9_init25/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_object_task9_init25.jpg",
+    "sha256": "29a9358c9753449f27020d15a993695e7014ee4f7a51550b0e1a78a979f8989b"
+  },
+  {
+    "suite": "libero_goal",
+    "task": 0,
+    "init": 0,
+    "success": false,
+    "frames": 301,
+    "video": "results/mini_vla_final2000_20261021_run3/worker1/libero_goal/task0_init0/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_goal_task0_init0.jpg",
+    "sha256": "c698ec0e50fd2c9c4f9c7e25a269db0b80e325b5fa7d9920479815bbf3579c2c"
+  },
+  {
+    "suite": "libero_goal",
+    "task": 0,
+    "init": 25,
+    "success": true,
+    "frames": 159,
+    "video": "results/mini_vla_final2000_20261021_run3/worker1/libero_goal/task0_init25/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_goal_task0_init25.jpg",
+    "sha256": "235c13dedab61bd11138429fb2b4e4875d3c77e5970ba4d018af42aa41ef6bda"
+  },
+  {
+    "suite": "libero_goal",
+    "task": 1,
+    "init": 0,
+    "success": true,
+    "frames": 82,
+    "video": "results/mini_vla_final2000_20261021_run3/worker1/libero_goal/task1_init0/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_goal_task1_init0.jpg",
+    "sha256": "d180d376d5b8fef6ce5996ed9c6742de390d843c282ef8ea4536a7f3c4c74e35"
+  },
+  {
+    "suite": "libero_goal",
+    "task": 1,
+    "init": 25,
+    "success": true,
+    "frames": 83,
+    "video": "results/mini_vla_final2000_20261021_run3/worker1/libero_goal/task1_init25/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_goal_task1_init25.jpg",
+    "sha256": "25defa980494d69c82653eab084bb04cc449dceb1fdc97fb0ea5b62b9b165c4d"
+  },
+  {
+    "suite": "libero_goal",
+    "task": 2,
+    "init": 0,
+    "success": true,
+    "frames": 88,
+    "video": "results/mini_vla_final2000_20261021_run3/worker1/libero_goal/task2_init0/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_goal_task2_init0.jpg",
+    "sha256": "6d49f85aaaab7168c3dee1f9d23d672022bfb539efeffdb2c652b712c7cbbbf7"
+  },
+  {
+    "suite": "libero_goal",
+    "task": 2,
+    "init": 25,
+    "success": true,
+    "frames": 93,
+    "video": "results/mini_vla_final2000_20261021_run3/worker1/libero_goal/task2_init25/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_goal_task2_init25.jpg",
+    "sha256": "c603cbfc23cf84824572de650440cc87b403f3a2fe61452c96aa2e249a5fb788"
+  },
+  {
+    "suite": "libero_goal",
+    "task": 3,
+    "init": 0,
+    "success": true,
+    "frames": 180,
+    "video": "results/mini_vla_final2000_20261021_run3/worker1/libero_goal/task3_init0/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_goal_task3_init0.jpg",
+    "sha256": "e5b9d6ee02b3378c6002dbbb678f555386317826106c956b68e808c84b0f346a"
+  },
+  {
+    "suite": "libero_goal",
+    "task": 3,
+    "init": 25,
+    "success": false,
+    "frames": 301,
+    "video": "results/mini_vla_final2000_20261021_run3/worker1/libero_goal/task3_init25/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_goal_task3_init25.jpg",
+    "sha256": "c35a43abbb78e65428845d79341af5729f9ce57f24179686ebab100f9680d42b"
+  },
+  {
+    "suite": "libero_goal",
+    "task": 4,
+    "init": 0,
+    "success": true,
+    "frames": 135,
+    "video": "results/mini_vla_final2000_20261021_run3/worker1/libero_goal/task4_init0/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_goal_task4_init0.jpg",
+    "sha256": "dcef9bc7f0f532beb3eb5756803921c6ac5ce08a70cbe823b7114bee8e8eec4e"
+  },
+  {
+    "suite": "libero_goal",
+    "task": 4,
+    "init": 25,
+    "success": true,
+    "frames": 95,
+    "video": "results/mini_vla_final2000_20261021_run3/worker1/libero_goal/task4_init25/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_goal_task4_init25.jpg",
+    "sha256": "4525a540a53db6d338c2df9f848fe3af5b415f19ba253bf8e171742e9ec1eb09"
+  },
+  {
+    "suite": "libero_goal",
+    "task": 5,
+    "init": 0,
+    "success": true,
+    "frames": 133,
+    "video": "results/mini_vla_final2000_20261021_run3/worker1/libero_goal/task5_init0/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_goal_task5_init0.jpg",
+    "sha256": "4c851f8b81ed6b4d854728c0b1debce8ea27658a9c030919bffe36ae2ac1491c"
+  },
+  {
+    "suite": "libero_goal",
+    "task": 5,
+    "init": 25,
+    "success": false,
+    "frames": 301,
+    "video": "results/mini_vla_final2000_20261021_run3/worker1/libero_goal/task5_init25/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_goal_task5_init25.jpg",
+    "sha256": "c3da233c3d48e1c648e4cad3607841d59f24a931162c09f258bfceab9c288532"
+  },
+  {
+    "suite": "libero_goal",
+    "task": 6,
+    "init": 0,
+    "success": false,
+    "frames": 301,
+    "video": "results/mini_vla_final2000_20261021_run3/worker1/libero_goal/task6_init0/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_goal_task6_init0.jpg",
+    "sha256": "c36206389ad01b421707c07c6eb8e6b3b6bb1b12ec3ea38aa95fdae0f99ff22e"
+  },
+  {
+    "suite": "libero_goal",
+    "task": 6,
+    "init": 25,
+    "success": true,
+    "frames": 82,
+    "video": "results/mini_vla_final2000_20261021_run3/worker1/libero_goal/task6_init25/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_goal_task6_init25.jpg",
+    "sha256": "0d12a04363a598434f6f4762e2124a03b50e3c2ae4ec7a1c888b81ecbebfc228"
+  },
+  {
+    "suite": "libero_goal",
+    "task": 7,
+    "init": 0,
+    "success": true,
+    "frames": 74,
+    "video": "results/mini_vla_final2000_20261021_run3/worker1/libero_goal/task7_init0/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_goal_task7_init0.jpg",
+    "sha256": "756973e1f2c1850fc33f73a92edf74a9fca651bd36a4b331687e75f6129961ac"
+  },
+  {
+    "suite": "libero_goal",
+    "task": 7,
+    "init": 25,
+    "success": true,
+    "frames": 73,
+    "video": "results/mini_vla_final2000_20261021_run3/worker1/libero_goal/task7_init25/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_goal_task7_init25.jpg",
+    "sha256": "a23baa56bd9c2a0e23f8b9ce130e45e34ec28e1f7f0c2dd5be7425358ca818e4"
+  },
+  {
+    "suite": "libero_goal",
+    "task": 8,
+    "init": 0,
+    "success": true,
+    "frames": 76,
+    "video": "results/mini_vla_final2000_20261021_run3/worker1/libero_goal/task8_init0/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_goal_task8_init0.jpg",
+    "sha256": "3d6081bc65a6b3b46310aaad1ffc122a4282cc945243709f18a7b1da03854142"
+  },
+  {
+    "suite": "libero_goal",
+    "task": 8,
+    "init": 25,
+    "success": true,
+    "frames": 72,
+    "video": "results/mini_vla_final2000_20261021_run3/worker1/libero_goal/task8_init25/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_goal_task8_init25.jpg",
+    "sha256": "5c7584e52ddf0dfbd65ea0cc10da4bc2cd63ccc39ca4fde6a13fef9a5630c651"
+  },
+  {
+    "suite": "libero_goal",
+    "task": 9,
+    "init": 0,
+    "success": true,
+    "frames": 161,
+    "video": "results/mini_vla_final2000_20261021_run3/worker1/libero_goal/task9_init0/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_goal_task9_init0.jpg",
+    "sha256": "d66279f410c3da273f1e702654d3a2a014d71d28631717dbd4c4c1aa0b580264"
+  },
+  {
+    "suite": "libero_goal",
+    "task": 9,
+    "init": 25,
+    "success": false,
+    "frames": 301,
+    "video": "results/mini_vla_final2000_20261021_run3/worker1/libero_goal/task9_init25/external.mp4",
+    "preview": "results/mini_vla_final2000_20261021_run3/review/libero_goal_task9_init25.jpg",
+    "sha256": "15bf1c2ad91438fa50052ea4ce863016eedcc98da924a28cf3b0a2d257c1007e"
+  }
+]

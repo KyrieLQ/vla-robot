@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="1160" viewBox="0 0 960 1160">
+<rect width="100%" height="100%" fill="white"/>
+<text x="480" y="40" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC" font-size="36" font-weight="700" fill="#071E4A">M4 · Transformer Encoder 内部架构</text>
+<text x="480" y="86" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC" font-size="24" font-weight="400" fill="#071E4A">1层 · 4个头 · 每头32维 · dropout = 0</text>
+<rect x="230" y="130" width="560" height="110" rx="12" fill="#ECF8FD" stroke="#148EEB" stroke-width="1.5"/>
+<text x="510.0" y="167.0" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC" font-size="32" font-weight="700" fill="#071E4A">输入 X：[B, 4, 128]</text>
+<text x="510.0" y="203.0" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC" font-size="30" font-weight="400" fill="#071E4A">已加类型向量的4个观测token</text>
+<polyline points="510,240 510,315" fill="none" stroke="#148EEB" stroke-width="3"/>
+<polygon points="510,315 516.0,302.0 504.0,302.0" fill="#148EEB"/>
+<rect x="230" y="315" width="560" height="120" rx="12" fill="#ECF8FD" stroke="#148EEB" stroke-width="1.5"/>
+<text x="510.0" y="339.0" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC" font-size="32" font-weight="700" fill="#071E4A">多头自注意力（Self-Attention）</text>
+<text x="510.0" y="375.0" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC" font-size="30" font-weight="400" fill="#071E4A">Q、K、V 均由 X 投影得到</text>
+<text x="510.0" y="411.0" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC" font-size="30" font-weight="400" fill="#071E4A">每个头的注意力权重：4 × 4</text>
+<polyline points="510,435 510,500" fill="none" stroke="#148EEB" stroke-width="3"/>
+<polygon points="510,500 516.0,487.0 504.0,487.0" fill="#148EEB"/>
+<rect x="230" y="500" width="560" height="80" rx="12" fill="#ECF8FD" stroke="#148EEB" stroke-width="1.5"/>
+<text x="510.0" y="540.0" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC" font-size="32" font-weight="700" fill="#071E4A">残差相加 + LayerNorm</text>
+<polyline points="510,270 130,270 130,540 230,540" fill="none" stroke="#C47721" stroke-width="3"/>
+<polygon points="230,540 217.0,534.0 217.0,546.0" fill="#C47721"/>
+<text x="88" y="405.0" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC" font-size="24" font-weight="400" fill="#C47721">残差</text>
+<polyline points="510,580 510,665" fill="none" stroke="#148EEB" stroke-width="3"/>
+<polygon points="510,665 516.0,652.0 504.0,652.0" fill="#148EEB"/>
+<rect x="230" y="665" width="560" height="145" rx="12" fill="#ECF8FD" stroke="#148EEB" stroke-width="1.5"/>
+<text x="510.0" y="701.5" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC" font-size="32" font-weight="700" fill="#071E4A">逐token前馈网络（FFN）</text>
+<text x="510.0" y="737.5" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC" font-size="30" font-weight="400" fill="#071E4A">Linear 128→256 → GELU</text>
+<text x="510.0" y="773.5" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC" font-size="30" font-weight="400" fill="#071E4A">Linear 256→128</text>
+<polyline points="510,810 510,880" fill="none" stroke="#148EEB" stroke-width="3"/>
+<polygon points="510,880 516.0,867.0 504.0,867.0" fill="#148EEB"/>
+<rect x="230" y="880" width="560" height="80" rx="12" fill="#ECF8FD" stroke="#148EEB" stroke-width="1.5"/>
+<text x="510.0" y="920.0" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC" font-size="32" font-weight="700" fill="#071E4A">残差相加 + LayerNorm</text>
+<polyline points="510,610 130,610 130,920 230,920" fill="none" stroke="#C47721" stroke-width="3"/>
+<polygon points="230,920 217.0,914.0 217.0,926.0" fill="#C47721"/>
+<text x="88" y="765.0" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC" font-size="24" font-weight="400" fill="#C47721">残差</text>
+<polyline points="510,960 510,1010" fill="none" stroke="#148EEB" stroke-width="3"/>
+<polygon points="510,1010 516.0,997.0 504.0,997.0" fill="#148EEB"/>
+<rect x="230" y="1010" width="560" height="85" rx="12" fill="#E9F6EF" stroke="#278A66" stroke-width="1.5"/>
+<text x="510.0" y="1052.5" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC" font-size="32" font-weight="700" fill="#071E4A">输出 memory：[B, 4, 128]</text>
+<text x="480" y="1130" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK SC" font-size="24" font-weight="400" fill="#071E4A">memory 是当前观测编码；不是历史轨迹记忆。</text>
+</svg>

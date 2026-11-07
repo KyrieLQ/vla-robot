@@ -1,0 +1,13 @@
+* text=auto eol=lf
+*.py text eol=lf
+*.sh text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.jsonl text eol=lf
+# Preserve the exact bytes of exported evaluation records and their hashes.
+*.csv -text
+*.patch -text
+*.png binary
+*.gif binary
+*.webm binary
+*.mp4 binary

@@ -1,0 +1,6 @@
+# CPU example and the data-contract tests; not the full OpenPI/ROS environment.
+torch==2.5.1
+torchvision==0.20.1
+numpy>=1.26,<2
+Pillow>=10,<12
+pyarrow>=14,<19

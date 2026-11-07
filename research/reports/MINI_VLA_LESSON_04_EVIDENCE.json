@@ -1,0 +1,36 @@
+{
+  "created_at": "2026-10-21T23:00:51.281448+08:00",
+  "lesson": "reports/MINI_VLA_LESSON_04.md",
+  "scope": "Historical Spatial M4 teaching; no training or simulation executed",
+  "checked_sources": {
+    "mini_vla/attention_model_v1.py": "1b6cef3d76f520629109c6e462ea887663d53913fb49d1bb366aacef0a7766af",
+    "mini_vla/visual_model_v1.py": "e4fda8e829a160e05ce5ff2529938070391551e7cd21efeafa8b1b1e30714191",
+    "results/mini_vla_m4_20261019_run3/review/independent_acceptance.json": "561c02f49614218a81be2e44ae63d962f967669d235960e26b62c6137ccbd6d4"
+  },
+  "validation_frames": 5988,
+  "training_updates": 18400,
+  "development_successes": {
+    "M3": 44,
+    "M4": 44
+  },
+  "paired": {
+    "wins": 3,
+    "losses": 3,
+    "difference": 0.0,
+    "interval": [
+      -0.08,
+      0.08
+    ]
+  },
+  "local_links_valid": true,
+  "experimental_metadata_unchanged": true,
+  "shape_arithmetic": {
+    "observation_tokens": 4,
+    "model_width": 128,
+    "heads": 4,
+    "head_width": 32,
+    "action_queries": 10,
+    "action_dimension": 7,
+    "masked_example_denominator": 91
+  }
+}

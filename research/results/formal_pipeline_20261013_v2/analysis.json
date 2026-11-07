@@ -1,0 +1,109 @@
+{
+  "episodes_per_policy": 50,
+  "tasks": 10,
+  "per_task": [
+    {
+      "task_id": 0,
+      "episodes": 5,
+      "base_successes": 0,
+      "trained_successes": 5,
+      "paired_difference": 1.0
+    },
+    {
+      "task_id": 1,
+      "episodes": 5,
+      "base_successes": 0,
+      "trained_successes": 4,
+      "paired_difference": 0.8
+    },
+    {
+      "task_id": 2,
+      "episodes": 5,
+      "base_successes": 0,
+      "trained_successes": 5,
+      "paired_difference": 1.0
+    },
+    {
+      "task_id": 3,
+      "episodes": 5,
+      "base_successes": 0,
+      "trained_successes": 5,
+      "paired_difference": 1.0
+    },
+    {
+      "task_id": 4,
+      "episodes": 5,
+      "base_successes": 0,
+      "trained_successes": 2,
+      "paired_difference": 0.4
+    },
+    {
+      "task_id": 5,
+      "episodes": 5,
+      "base_successes": 0,
+      "trained_successes": 3,
+      "paired_difference": 0.6
+    },
+    {
+      "task_id": 6,
+      "episodes": 5,
+      "base_successes": 0,
+      "trained_successes": 4,
+      "paired_difference": 0.8
+    },
+    {
+      "task_id": 7,
+      "episodes": 5,
+      "base_successes": 0,
+      "trained_successes": 5,
+      "paired_difference": 1.0
+    },
+    {
+      "task_id": 8,
+      "episodes": 5,
+      "base_successes": 0,
+      "trained_successes": 4,
+      "paired_difference": 0.8
+    },
+    {
+      "task_id": 9,
+      "episodes": 5,
+      "base_successes": 0,
+      "trained_successes": 5,
+      "paired_difference": 1.0
+    }
+  ],
+  "base_successes": 0,
+  "trained_successes": 42,
+  "paired_success_difference": 0.8399999999999999,
+  "task_cluster_bootstrap_95pct_interval": [
+    0.7000000000000001,
+    0.9400000000000001
+  ],
+  "bootstrap_seed": 20261013,
+  "bootstrap_samples": 10000,
+  "scope": "Fixed 50/50 spatial evaluation, 10 task clusters, one training seed; interval excludes training-seed uncertainty; not official full benchmark",
+  "status": "COMPLETE",
+  "experiment": "formal_spatial_20261013_v1",
+  "updated_at": "2026-10-13T21:01:51.089283+08:00",
+  "training_updates": 30000,
+  "training_attempts": [
+    {
+      "status": "PASS",
+      "started_at": "2026-10-13T12:21:37.368331+08:00",
+      "ended_at": "2026-10-13T20:37:07.625154+08:00",
+      "start_step": 0,
+      "finished_updates": 30000,
+      "observed_peak_device_memory_mib": {
+        "0": 17732,
+        "1": 21670
+      }
+    }
+  ],
+  "training_report": "/data1/niuye/lq/pi05_lora_libero/results/formal_spatial_20261013_v1/training_report.json",
+  "mean_update_seconds": 0.8344275021263864,
+  "first_1000_mean_loss": 0.05977211744710803,
+  "last_1000_mean_loss": 0.032430480583105235,
+  "positive_control_required": false,
+  "no_extra_training_authorized": true
+}

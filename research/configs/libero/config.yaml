@@ -1,0 +1,5 @@
+assets: /data1/niuye/lq/pi05_lora_libero/repos/openpi/third_party/libero/libero/libero/assets
+bddl_files: /data1/niuye/lq/pi05_lora_libero/repos/openpi/third_party/libero/libero/libero/bddl_files
+benchmark_root: /data1/niuye/lq/pi05_lora_libero/repos/openpi/third_party/libero/libero/libero
+datasets: /data1/niuye/lq/pi05_lora_libero/datasets
+init_states: /data1/niuye/lq/pi05_lora_libero/repos/openpi/third_party/libero/libero/libero/init_files

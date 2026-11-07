@@ -1,0 +1,17 @@
+{
+  "approved_at": "2026-10-19T18:02:10.381966+08:00",
+  "user_reply": "所有显卡均可使用，后续不再需要询问",
+  "scope": "Current and subsequent Mini VLA component experiments; no repeated GPU-number permission requests",
+  "allowed_physical_gpus": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "allocation": "idle devices only; existing concurrency and budgets retained",
+  "current_stage_gpus": 1
+}

@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "reviewed_at": "2026-10-26T12:27:32.380947+00:00",
+  "lesson": "reports/MINI_VLA_LESSON_09.md",
+  "course_model": "M9",
+  "ppt_model": "M8",
+  "checks": {
+    "parameter_totals": true,
+    "sample_presentations": true,
+    "equivalent_passes": true,
+    "paired_results": true,
+    "post_training_parameter_audit": true,
+    "explicit_state_config": true,
+    "state_route_source_anchors": true,
+    "action_shape": true,
+    "flow_sign_toy_identity": true,
+    "local_links_exist": true,
+    "display_math_delimiters": true
+  },
+  "local_links_checked": 37,
+  "display_equations": 21,
+  "lesson_sha256": "fc318318ab7033a66c9c2c5483c0250eed96d4e6bbefd8b2b2684524cc99fa25",
+  "source_sha256": {
+    "reports/parameter_audit.json": "dfe5692a28f2b6464ab063476992e12ecbc85a505ca697d168bcd1ec4bbcc32e",
+    "results/formal_pipeline_20261013_v2/analysis.json": "a36a897589b56bae992eb2d90eb93ce9eedb7513542dcb88fb8741391bd2eec0",
+    "results/formal_pipeline_20261013_v2/final_acceptance.json": "6bf29ed31a691f649f4da506630a273539065b23bf79c0099d0274ac391fb0b9",
+    "results/formal_pipeline_20261013_v2/completion_audit.json": "5b030044c3090fd6ffe84e00190183a8dc25a993b6d8fb0d71a1abe8a216ad9d",
+    "results/formal_pipeline_20261013_v2/frozen_source/configs/formal_plan_20261013.json": "5e7ad9e0067d8ae22383404191ea73ee526a0360fc6297204f27160ff263ead5",
+    "results/formal_pipeline_20261013_v2/frozen_source/repos/openpi/src/openpi/training/config.py": "fcada6fa0e5a9153a6a95901f09b54b9532f7dd41992767765816cd07e93a04f",
+    "repos/openpi/src/openpi/models/pi0.py": "24b32d7c6ed5e409459afa8ca5af96a4dae09c2dcdf48e828907e411f4f12342",
+    "repos/openpi/src/openpi/transforms.py": "a1b94e9e72849a18834778f229c6bb389a495eb7fbe0aa800edea728b9424ff4",
+    "repos/openpi/src/openpi/models/gemma.py": "7e42ada4ae7e9995f0ef3e33a0c224758323c2015e2d9d72ec15726a8a001d2a",
+    "repos/openpi/src/openpi/models/pi0_config.py": "d321858c30b398126035ea2b6da09e1c422eeeebb5ebf8df631daf9dc77647fa",
+    "repos/openpi/src/openpi/models/tokenizer.py": "965be8b3c393a6811875bbc32da9e01a5d01cc2f87802de801cf7293e049748c",
+    "repos/openpi/src/openpi/policies/libero_policy.py": "d8679d99facc3fef48da07406081b20709ed872fcefdf7de67ede99422d623fa",
+    "results/formal_pipeline_20261013_v2/frozen_source/scripts/evaluate_spatial_v1.py": "68036ab87d12b37400d3dc68f47f0e26a99ba3965a7af28201fcc0a2103b344f"
+  },
+  "state_conditioning_finding": "Static config/code audit: discrete_state_input=False and pi05 suffix has no state token. State tensor remains an interface field; no new empirical ablation performed.",
+  "scope": "Course documentation, source review, arithmetic and link checks only; no GPU, simulation, new training, budget edits or experiment result changes.",
+  "visual_math_preview": "Not rendered in client; checked $$ delimiter balance and formula signs against code."
+}

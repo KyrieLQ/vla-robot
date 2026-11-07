@@ -1,0 +1,10 @@
+{
+  "approved_at": "2026-10-19T19:42:25.929799+08:00",
+  "user_instruction": "那你就按照这个来依次跑就行，如果没有GPU了就每隔五分钟监测一下，直到所有跑完",
+  "scope": "Mini VLA M3 -> M4 -> optional M5 -> M6; stages require frozen protocols and existing resource guards",
+  "interval_seconds": 300,
+  "notify_every_check": false,
+  "supersedes_prior_idle_monitor_cancellation_for_this_project": true,
+  "training_budget_expansion": false,
+  "thread": "PUBLIC_REPRODUCTION"
+}

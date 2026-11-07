@@ -1,0 +1,167 @@
+{
+  "version": 1,
+  "date": "2026-10-19",
+  "kind": "project_evaluation_standard_not_a_launch_protocol",
+  "current_primary_suite": "libero_spatial",
+  "case_manifest": "configs/mini_vla_spatial_cases_20261019_v1.json",
+  "case_manifest_sha256": "174ce93438b9ea05dd762f51ee32ffaba6082db1985edeb27ac93f95553b30f3",
+  "levels": {
+    "fast50": {
+      "cases": 50,
+      "purpose": "smoke or quick development only; historical M1/M2 figures belong here"
+    },
+    "development200": {
+      "cases": 200,
+      "purpose": "primary component-development comparison; include all fixed baselines on this same set"
+    },
+    "confirmation300": {
+      "cases": 300,
+      "purpose": "sealed final-method confirmation after checkpoints and settings are frozen",
+      "requires_final_release": true
+    },
+    "coverage500": {
+      "cases": 500,
+      "purpose": "complete Spatial initial-state coverage; separately report development200 and confirmation300",
+      "requires_final_release": true
+    }
+  },
+  "final_release": {
+    "status": "NOT_RELEASED",
+    "required_fields": [
+      "status=FROZEN",
+      "case_manifest_sha256",
+      "method_selection_closed=true",
+      "checkpoints: nonempty list of path and sha256",
+      "evaluation_standard_sha256",
+      "execution_protocol: path and sha256, including all model settings and seeds"
+    ],
+    "claim": "Project confirmation split, not official unseen-scene validation and not proven disjoint from demonstration initial states"
+  },
+  "common_environment": {
+    "libero_commit": "f78abd68ee283de9f9be3c8f7e2a9ad60246e95c",
+    "openpi_commit": "215abfb217dbac7d5f1273282331b9b1866c0479",
+    "mujoco": "3.2.3",
+    "robosuite": "1.4.1",
+    "robot": "Panda",
+    "controller": "OSC_POSE",
+    "control_frequency_hz": 20,
+    "max_steps_spatial": 220,
+    "initial_wait_steps": 10,
+    "raw_camera_resolution": [
+      256,
+      256
+    ],
+    "camera_names": [
+      "agentview",
+      "robot0_eye_in_hand"
+    ],
+    "orientation": "raw simulator RGB rotated180 to match demonstrations",
+    "action_dimension": 7,
+    "action_bounds": [
+      -1,
+      1
+    ],
+    "success": "original LIBERO predicate; record both done and check_success, no custom distance threshold",
+    "reset_protocol": "fresh_environment_canonical_anchor_history",
+    "canonical_reset_anchor_indices": [
+      2,
+      12,
+      22,
+      32,
+      42
+    ],
+    "env_seed_rule": "1000+100*task_id+initial_state_index",
+    "paper_comparability": "This project reset/seed protocol is pinned and differs from unmodified upstream sequential reset; equal trial count alone does not establish exact paper reproduction"
+  },
+  "asset_sha256": {
+    "repos/openpi/third_party/libero/libero/libero/init_files/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate.pruned_init": "cbbc73792ce546c9bec181fd328a411d3183074840b282671dee481511381d0a",
+    "repos/openpi/third_party/libero/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate.bddl": "9b59eb1287802868ad9bc78d58e6d36d4ba31134e679cfdbdf4b0feb660c959b",
+    "repos/openpi/third_party/libero/libero/libero/init_files/libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate.pruned_init": "9b6927b6ef03460ab055141e1a1154ad85e5e290058d8ed3a8a314aff911f864",
+    "repos/openpi/third_party/libero/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate.bddl": "53a7516571412a2f46a27cbf8482d3b76dbad4221858c8f6b565d506c274e61d",
+    "repos/openpi/third_party/libero/libero/libero/init_files/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate.pruned_init": "27d5b81d739f969e40c72b6c88699e57a91ea61209946b21c593aae5990689cb",
+    "repos/openpi/third_party/libero/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate.bddl": "5e19880ebc844f86b89f63b172aab0b7a89f85b6e6955891f544f0ea7d0795d5",
+    "repos/openpi/third_party/libero/libero/libero/init_files/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate.pruned_init": "0627f5f5ce3ef23be546571012be8ef603d93bcb4032bc80feb34937ba580140",
+    "repos/openpi/third_party/libero/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate.bddl": "3d4ccf070c3d9883ae0676f2d888588f98c696ddad71b7694f47c379fc99ef36",
+    "repos/openpi/third_party/libero/libero/libero/init_files/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate.pruned_init": "deef3df529e0bb57658b973bbb3baf02b02922db065c025a73ebfcd11eb54d46",
+    "repos/openpi/third_party/libero/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate.bddl": "4371189e11d9fd29bb548ab9a8adcd741bb0ce41bb66c612672d0e8cb29a52a9",
+    "repos/openpi/third_party/libero/libero/libero/init_files/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate.pruned_init": "2d2c50b7dcbf861fffa94d576f217ed34153e57487010d7a109a220d4d97189b",
+    "repos/openpi/third_party/libero/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate.bddl": "10239815a9d18ad53e09365d453a362ee54d29ca276e04eef411cf1db8d72940",
+    "repos/openpi/third_party/libero/libero/libero/init_files/libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate.pruned_init": "ab86fb7b5942dc0fec762eae57e72bf636106b1c10ad8ce57227723d8eb9a81b",
+    "repos/openpi/third_party/libero/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate.bddl": "566c65596f3472e752e6522817bff51bbf3ce5159d7bec1d3554e5ead46b1e55",
+    "repos/openpi/third_party/libero/libero/libero/init_files/libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate.pruned_init": "ea9cba2814bc166f3682f3f5a97329467839bcf584069cd419191b6c17adae25",
+    "repos/openpi/third_party/libero/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate.bddl": "dd11837141a30d874ebbbfaae20e91ecc67ec85ab3872ceb4cff3abfcbef7cb0",
+    "repos/openpi/third_party/libero/libero/libero/init_files/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate.pruned_init": "f43df2d80042130ac8770590d83f1a1e6fd4df7479aebc392aa2ed6e3bd0b83e",
+    "repos/openpi/third_party/libero/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate.bddl": "c8fbb9effa27b947d04d26862d75273d93cac1806734e53836cd472a08aec1fe",
+    "repos/openpi/third_party/libero/libero/libero/init_files/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate.pruned_init": "08b0ac928dcc524a66d963851a6a4eece9aeb782b38466006e403a70e3287867",
+    "repos/openpi/third_party/libero/libero/libero/bddl_files/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate.bddl": "5293e759381b477e126beaf83d738542bbd4d93f522a3eead1066e612bad4a8c"
+  },
+  "model_specific_fields_required": [
+    "checkpoint hash",
+    "training data and split hash",
+    "training seed",
+    "pretraining source",
+    "image preprocessing",
+    "action normalization and gripper mapping",
+    "K",
+    "H",
+    "policy randomness or deterministic flag"
+  ],
+  "reporting": {
+    "required": [
+      "used/expected cases",
+      "per-task success",
+      "macro suite success",
+      "paired wins/losses and task-cluster intervals",
+      "training seed statistics",
+      "latency and inference calls",
+      "GPU/memory",
+      "raw artifacts and error accounting"
+    ],
+    "failure_handling": "Model task failures stay in denominator; infrastructure errors are explicit incomplete cases and cannot be silently dropped; resume only affected incomplete work",
+    "old_scores": "M1 36%, M2 H1 78%, M2 H5 82% remain fast50 development results, never relabel as500 or full LIBERO"
+  },
+  "seed_policy": {
+    "engineering_pilots": 1,
+    "final_key_comparisons_training_seed_goal": [
+      42,
+      43,
+      44
+    ],
+    "status": "additional seeds not launched; concrete compute/storage protocol required",
+    "distinguish": [
+      "training initialization and data order",
+      "environment seed",
+      "stochastic policy generation seed"
+    ],
+    "replication_warning": "rerunning a deterministic checkpoint with changed bookkeeping seeds is not an independent training replicate"
+  },
+  "benchmark_coverage_goal": {
+    "spatial": {
+      "tasks": 10,
+      "trials_per_task": 50,
+      "rollouts": 500
+    },
+    "object": {
+      "tasks": 10,
+      "trials_per_task": 50,
+      "rollouts": 500
+    },
+    "goal": {
+      "tasks": 10,
+      "trials_per_task": 50,
+      "rollouts": 500
+    },
+    "long_libero10": {
+      "tasks": 10,
+      "trials_per_task": 50,
+      "rollouts": 500
+    },
+    "status": "Only Spatial currently trained. Other-suite data/training/evaluation need separate scoped protocols; no downloads or jobs granted by this metadata"
+  },
+  "budget_policy": "Keep existing3h/8GiB, project120GiB/free100GiB and all-GPU idle admission. Recompute execution budget for larger cases before launching; no implicit reset.",
+  "sources": [
+    "https://github.com/Lifelong-Robot-Learning/LIBERO",
+    "https://github.com/openvla/openvla#libero-simulation-benchmark-evaluations",
+    "https://raw.githubusercontent.com/openvla/openvla/main/experiments/robot/libero/run_libero_eval.py"
+  ]
+}

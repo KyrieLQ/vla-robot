@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "completed_at": "2026-10-13T21:22:57.818013+08:00",
+  "training_updates": 30000,
+  "paired_episodes_per_policy": 50,
+  "base_successes": 0,
+  "trained_successes": 42,
+  "task_cluster_bootstrap_difference_interval": [
+    0.7,
+    0.94
+  ],
+  "all_100_videos_verified": true,
+  "paired_initial_images_identical": 50,
+  "checkpoints_retained": [
+    10000,
+    20000,
+    30000
+  ],
+  "owned_processes_exited": true,
+  "report": "/data1/niuye/lq/pi05_lora_libero/reports/FORMAL_TRAINING_REPORT.md",
+  "new_training_started_during_followup": false,
+  "gpu_waiter_restarted": false
+}

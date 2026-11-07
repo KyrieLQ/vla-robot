@@ -1,0 +1,44 @@
+{
+  "status": "DRAFT_AWAITING_EXPLICIT_DELETION_APPROVAL",
+  "purpose": "Retire exactly two reconstructible legacy128RGB caches to restore100GiB reserve and complete moderncache;not permission to delete any otherfiles",
+  "files": [
+    {
+      "path": "datasets/mini_vla_four_suite_128_20261019_v1/train/images.npy",
+      "bytes": 23887872128,
+      "allocated_bytes": 23887888384,
+      "expected_sha256": "94c5e5ff8557946c4b841a77209cc40cf9bf77df94333c41e245636e268a6171",
+      "nlink": 1
+    },
+    {
+      "path": "datasets/mini_vla_four_suite_128_20261019_v1/validation/images.npy",
+      "bytes": 2994831488,
+      "allocated_bytes": 2994839552,
+      "expected_sha256": "58ff4e0808aed1b68d1aae9a776efa63f116091253c5a87a932db041f34629bc",
+      "nlink": 1
+    }
+  ],
+  "total_allocated_bytes": 26882727936,
+  "filesystem_available_bytes_snapshot": 96149053440,
+  "preserve": [
+    "all original1693parquet demonstrations",
+    "state/actions/episode/task/token arrays",
+    "normalization and split metadata",
+    "all model checkpoints and logs/videos",
+    "all completed VLM token shards",
+    "all original hash/provenance manifests"
+  ],
+  "consequence": "Re-running old image-based training or old full-validation routines requires rebuilding these128RGB arrays from originalparquets;modernVLM cache/headtraining and online policy inference do not read these arrays",
+  "rebuild_source": "mini_vla/prepare_m6_v3.py, original pinned split/preprocessing;record regeneration as a new run",
+  "approval_required": "configs/mini_vla_legacy_image_retirement_20261021_APPROVED.json",
+  "accounting": "Record preexisting_asset_retirements in existing modernledger;v3supervisor adds retiredoldallocatedbytes back when computing modern growth so oldfiledeletion cannot reset84GiBbudget or double-reserve cachedwork",
+  "budget_increase": false,
+  "filesystem_reserve_bytes": 107374182400,
+  "stage_time_reallocation": {
+    "cache_seconds_from": 21600,
+    "cache_seconds_to": 25200,
+    "modern_seconds_from": 64800,
+    "modern_seconds_to": 68400,
+    "shared_seconds_unchanged": 93600,
+    "reason": "Reserve1h previously unallocated within existing26h for remaining cache extraction,hash verification and cleanup;no new total execution allowance"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "status": "APPROVED",
+  "thread": "PUBLIC_REPRODUCTION",
+  "at": "2026-10-29T14:54:31.497460+00:00",
+  "user_request": "然后基于此，下一个版本flow matching，也重新测一下",
+  "user_selected_design": "复用刚得到的 LoRA 骨干：固定该骨干，重新训练 Flow 动作头，再评测 50 集",
+  "scope": "One freshly initialized original-size Flow head on the selected fixed adapted VLM; original complete four-suite data and original50epoch training schedule,fullvalidation,then originalSpatial50",
+  "time_overrun_allowed": true,
+  "time_basis": "Latest explicit request extends authorized work to this specific retraining/evaluation; prior user direction allowed necessary time overrun. Continue cumulative accounting; not unlimited new experiments.",
+  "storage_caps_increased": false,
+  "old_ledgers_preserved": true,
+  "new_VLM_updates": false,
+  "final2000_access": false,
+  "max_simultaneous_gpus": 2,
+  "gpu_sharing_approval": "configs/mini_vla_shared_gpu_20261029_APPROVED.json",
+  "engineering_choice": {
+    "cache": "completeBF16processRAM,not newdiskcache",
+    "max_payload_rss_gib": 100,
+    "host_available_memory_reserve_gib": 128,
+    "not_user_approved_extra_storage": true
+  }
+}

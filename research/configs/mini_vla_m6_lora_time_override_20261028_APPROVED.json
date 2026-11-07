@@ -1,0 +1,16 @@
+{
+  "status": "APPROVED",
+  "thread": "PUBLIC_REPRODUCTION",
+  "at": "2026-10-28T08:13:28.242589+00:00",
+  "user_message": "没事，超出了也没关系，做就行了",
+  "context": "User replied to explanation of old26h cumulative budget and28.5h oneGPU estimate for this paired continuation.",
+  "scope": "PPT M6 sameepoch12 frozen vs vision/text attention LoRA continuation, each one complete epoch, full validation, originalSpatial50 per arm, engineering and automatic review.",
+  "time_overrun_allowed": true,
+  "old_time_caps_apply_to_this_scope": false,
+  "old_ledger_entries_preserved": true,
+  "storage_limits_unchanged": true,
+  "max_simultaneous_gpus": 2,
+  "filesystem_reserve_gib": 100,
+  "no_new_full_benchmark": true,
+  "no_other_finetuning": true
+}

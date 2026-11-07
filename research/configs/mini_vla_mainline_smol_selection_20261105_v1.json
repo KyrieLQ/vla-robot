@@ -1,0 +1,19 @@
+{
+  "status": "DEVELOPMENT_SELECTION_NOT_FINAL2000",
+  "selected": "existing",
+  "checkpoint": "results/mini_vla_m6_paired_20261028_run1/lora/endpoint.pt",
+  "checkpoint_sha256": "6ca36fb5f1f7da5c6477688635481ec6423dd70bca7ba779da28f2652d465045",
+  "development_episodes": 200,
+  "successes": 141,
+  "rate": 0.705,
+  "criterion": "Highestfrozenfour-suite dev200success;no postclosedloopcheckpointchange",
+  "source_run": "results/mini_vla_m6_regression_dev200_20261105_run2",
+  "baseline_comparison": "Old78.25percent is a different2000/resetprotocol;no directimprovementclaim",
+  "final2000_opened": false,
+  "architecture_search_closed": true,
+  "negative_heads_retained": [
+    "depth1",
+    "depth2"
+  ],
+  "recorded_at": "2026-11-04T18:17:18.752174+00:00"
+}

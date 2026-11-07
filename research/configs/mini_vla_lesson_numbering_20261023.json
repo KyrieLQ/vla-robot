@@ -1,0 +1,95 @@
+{
+  "effective_date": "2026-10-23",
+  "authorized_by": "User explicitly requested lesson/model one-to-one numbering; old M6 becomes M5 and successors shift",
+  "namespace": "canonical teaching/publication labels; immutable experiment identifiers remain legacy",
+  "stages": [
+    {
+      "lesson_number": 1,
+      "model_id": "M1",
+      "legacy_experiment_id": "M1",
+      "topic": "最小单动作策略",
+      "lesson_path": "reports/MINI_VLA_LESSON_01.md",
+      "lesson_written": true
+    },
+    {
+      "lesson_number": 2,
+      "model_id": "M2",
+      "legacy_experiment_id": "M2",
+      "topic": "动作分块与重规划",
+      "lesson_path": "reports/MINI_VLA_LESSON_02.md",
+      "lesson_written": true
+    },
+    {
+      "lesson_number": 3,
+      "model_id": "M3",
+      "legacy_experiment_id": "M3",
+      "topic": "视觉编码与预训练",
+      "lesson_path": "reports/MINI_VLA_LESSON_03.md",
+      "lesson_written": true
+    },
+    {
+      "lesson_number": 4,
+      "model_id": "M4",
+      "legacy_experiment_id": "M4",
+      "topic": "Transformer融合与动作查询",
+      "lesson_path": "reports/MINI_VLA_LESSON_04.md",
+      "lesson_written": true
+    },
+    {
+      "lesson_number": 5,
+      "model_id": "M5",
+      "legacy_experiment_id": "M6",
+      "topic": "四套联合训练、选点与评测",
+      "lesson_path": "reports/MINI_VLA_LESSON_05.md",
+      "lesson_written": true
+    },
+    {
+      "lesson_number": 6,
+      "model_id": "M6",
+      "legacy_experiment_id": "M7a",
+      "topic": "空间token",
+      "lesson_path": "reports/MINI_VLA_LESSON_06.md",
+      "lesson_written": true
+    },
+    {
+      "lesson_number": 7,
+      "model_id": "M7",
+      "legacy_experiment_id": "M8",
+      "topic": "冻结预训练VLM与回归动作头",
+      "lesson_path": "reports/MINI_VLA_LESSON_07.md",
+      "lesson_written": true
+    },
+    {
+      "lesson_number": 8,
+      "model_id": "M8",
+      "legacy_experiment_id": "M9",
+      "topic": "条件flow动作头",
+      "lesson_path": "reports/MINI_VLA_LESSON_08.md",
+      "lesson_written": true
+    },
+    {
+      "lesson_number": 9,
+      "model_id": "M9",
+      "legacy_experiment_id": "pi05_formal_spatial_20261013_v1",
+      "topic": "已有π0.5预训练完整VLA微调、部署与闭环复盘",
+      "lesson_path": "reports/MINI_VLA_LESSON_09.md",
+      "lesson_written": true,
+      "source_run": "results/formal_pipeline_20261013_v2",
+      "source_report": "reports/FORMAL_TRAINING_REPORT.md",
+      "new_training": false
+    }
+  ],
+  "legacy_unexecuted_stage": {
+    "id": "M5",
+    "status": "SKIPPED_NOT_RUN",
+    "canonical_model_id": null
+  },
+  "frozen_paths_renamed": false,
+  "results_changed": false,
+  "route_extension": {
+    "date": "2026-10-23",
+    "user_authorization": "User accepted existing pi0.5 as M9; no new VLM finetuning needed for now",
+    "scope": "Teaching reuse of completed work only"
+  },
+  "ppt_numbering": "configs/mini_vla_ppt_numbering_20261024.json"
+}

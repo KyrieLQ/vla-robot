@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "epochs": 50,
+  "updates": 94950,
+  "train_frames_per_epoch": 243000,
+  "validation_frames": 30465,
+  "valid_K10_validation_targets": 296235,
+  "selected_epoch": 43,
+  "selected_updates": 81657,
+  "head_parameters": 432711,
+  "frozen_VLM_parameters": 507482304,
+  "trainable_VLM_parameters": 0,
+  "checkpoints": {
+    "initial": {
+      "epoch": 0,
+      "updates": 0,
+      "sha256": "3f8619d03fe111e71d068ac3b1ee90125a827e252912e78b2ec475fc40c9ec61"
+    },
+    "best": {
+      "epoch": 43,
+      "updates": 81657,
+      "sha256": "3f1ad2af7693673566b45e0a56a4d3d3529d45a94d2a57d2afe1e39eda0af587"
+    },
+    "latest": {
+      "epoch": 50,
+      "updates": 94950,
+      "sha256": "5803c78476e2105b062f2458032f47299e9e7da3440012fdc66308e820bd1df6"
+    }
+  },
+  "independent_validation": {
+    "normalized_mse": 0.5032683948076753,
+    "all_valid_chunk_mse": 0.4823360233638286,
+    "mean_action_normalized_mse": 0.9880714085375778
+  },
+  "max_per_task_numerical_error": 2.7352243803235865e-09,
+  "all40_tasks_matched": true,
+  "seed42_initialization_exact": true,
+  "all_head_module_groups_updated": true,
+  "elapsed_seconds": 12.691399866715074,
+  "new_training_updates": 0,
+  "new_simulation_episodes": 0,
+  "confirmation_accessed": false,
+  "independent_noise_seed_and_Euler_loop": true,
+  "validation_target_not_input": true,
+  "claim_boundary": "Single fixed-noise generated-action MSE;not directly a point-regression optimum or a newclosedloop success score."
+}

@@ -1,0 +1,276 @@
+{
+  "status": "PASS",
+  "date": "2026-10-27",
+  "numbering": "PPT",
+  "sources": {
+    "results/mini_vla_m1_20261019_run1/review/independent_acceptance.json": "2dc1d734731fdae96126a271facee6fe8ba7433bb4764419db45a829276f3157",
+    "results/mini_vla_m2_20261019_run1/review/independent_acceptance.json": "9c67eb43f6dbf0e1f28e53b47c73be7deff53fa5cfe3ec772773d88f591ff74d",
+    "results/mini_vla_m3_20261019_run3/review/independent_acceptance.json": "265ac6a7d4a1a452b07954ec12b41fafc65806c5e9c76d0f556eef20f4b83b63",
+    "results/mini_vla_m4_20261019_run3/review/independent_acceptance.json": "561c02f49614218a81be2e44ae63d962f967669d235960e26b62c6137ccbd6d4",
+    "results/mini_vla_m6_fast50_20261020_run1/review/independent_acceptance.json": "b7ba0717def9af43e992405912b62071d2d45d0a58a57bf9f8606816ba18a1f8",
+    "results/mini_vla_m8_dev50_20261021_run1/review/independent_acceptance.json": "e62600c563df90fc93437397e004460445177da020120c48bd72c3a1e5718454",
+    "results/mini_vla_m9_dev50_20261021_run1/review/independent_acceptance.json": "29774a5c1d40cf3832d7f8a353ed0d41931ac7ee43ed84a7bc1c7e58261be8b7",
+    "results/mini_vla_final2000_20261021_run3/review/independent_acceptance.json": "8d44b9b9dbbb8dadb8c131cc60992cf8c7159219a932b7e87126ffb5f7e62241",
+    "results/formal_pipeline_20261013_v2/final_acceptance.json": "6bf29ed31a691f649f4da506630a273539065b23bf79c0099d0274ac391fb0b9",
+    "results/research_diagnosis_20261014_v3/ANALYSIS.json": "4a85198bd9b7471607f3fec597ebe90a6636da49d8104222e568345f9e37af91",
+    "configs/mini_vla_ppt_numbering_20261024.json": "45cc735a410fe2e9f982b39f3e2ee1c5f0820240c2cb1b28b9b467087a1ba647"
+  },
+  "primary": [
+    {
+      "model": "M1",
+      "variant": "小CNN＋单动作MLP（K1/H1）",
+      "evaluation": "Mini VLA固定Spatial50开发",
+      "training_data": "Spatial：384训练/48离线验证示范",
+      "successes": 18,
+      "episodes": 50,
+      "success_rate": 36.0,
+      "rpc_median_ms": 3.6087641492486,
+      "source": "results/mini_vla_m1_20261019_run1/review/independent_acceptance.json"
+    },
+    {
+      "model": "M2",
+      "variant": "动作分块（K10/H5）",
+      "evaluation": "Mini VLA固定Spatial50开发",
+      "training_data": "Spatial：384训练/48离线验证示范",
+      "successes": 41,
+      "episodes": 50,
+      "success_rate": 82.0,
+      "rpc_median_ms": 5.316474009305239,
+      "source": "results/mini_vla_m2_20261019_run1/review/independent_acceptance.json"
+    },
+    {
+      "model": "M3",
+      "variant": "ImageNet预训练ResNet18",
+      "evaluation": "Mini VLA固定Spatial50开发",
+      "training_data": "Spatial：384训练/48离线验证示范",
+      "successes": 44,
+      "episodes": 50,
+      "success_rate": 88.0,
+      "rpc_median_ms": 7.637121248990297,
+      "source": "results/mini_vla_m3_20261019_run3/review/independent_acceptance.json"
+    },
+    {
+      "model": "M4",
+      "variant": "Transformer融合＋动作查询",
+      "evaluation": "Mini VLA固定Spatial50开发",
+      "training_data": "Spatial：384训练/48离线验证示范",
+      "successes": 44,
+      "episodes": 50,
+      "success_rate": 88.0,
+      "rpc_median_ms": 7.496822159737349,
+      "source": "results/mini_vla_m4_20261019_run3/review/independent_acceptance.json"
+    },
+    {
+      "model": "M5",
+      "variant": "M4架构四套联合训练",
+      "evaluation": "Mini VLA固定Spatial50开发",
+      "training_data": "四套：1506训练/187离线验证示范",
+      "successes": 47,
+      "episodes": 50,
+      "success_rate": 94.0,
+      "rpc_median_ms": 8.611065801233053,
+      "source": "results/mini_vla_m6_fast50_20261020_run1/review/independent_acceptance.json"
+    },
+    {
+      "model": "M6",
+      "variant": "冻结SmolVLM＋回归动作头",
+      "evaluation": "Mini VLA固定Spatial50开发",
+      "training_data": "四套：1506训练/187离线验证示范",
+      "successes": 39,
+      "episodes": 50,
+      "success_rate": 78.0,
+      "rpc_median_ms": 67.77065200731158,
+      "source": "results/mini_vla_m8_dev50_20261021_run1/review/independent_acceptance.json"
+    },
+    {
+      "model": "M7",
+      "variant": "同冻结SmolVLM＋Flow动作头",
+      "evaluation": "Mini VLA固定Spatial50开发",
+      "training_data": "四套：1506训练/187离线验证示范",
+      "successes": 18,
+      "episodes": 50,
+      "success_rate": 36.0,
+      "rpc_median_ms": 82.28899072855711,
+      "source": "results/mini_vla_m9_dev50_20261021_run1/review/independent_acceptance.json"
+    },
+    {
+      "model": "M8",
+      "variant": "π0.5微调30k（K10/H5）",
+      "evaluation": "π0.5历史Spatial50配对",
+      "training_data": "Spatial：432条示范",
+      "successes": 42,
+      "episodes": 50,
+      "success_rate": 84.0,
+      "rpc_median_ms": null,
+      "source": "results/formal_pipeline_20261013_v2/final_acceptance.json"
+    }
+  ],
+  "controls": [
+    {
+      "model": "M1",
+      "variant": "未训练初始化",
+      "evaluation": "Mini VLA固定Spatial50开发",
+      "training_data": "未训练",
+      "successes": 0,
+      "episodes": 50,
+      "success_rate": 0.0,
+      "rpc_median_ms": null,
+      "source": "results/mini_vla_m1_20261019_run1/review/independent_acceptance.json"
+    },
+    {
+      "model": "M2",
+      "variant": "同一个K10模型，执行H1",
+      "evaluation": "Mini VLA固定Spatial50开发",
+      "training_data": "Spatial：384训练/48离线验证示范",
+      "successes": 39,
+      "episodes": 50,
+      "success_rate": 78.0,
+      "rpc_median_ms": null,
+      "source": "results/mini_vla_m2_20261019_run1/review/independent_acceptance.json"
+    },
+    {
+      "model": "M3",
+      "variant": "原小CNN＋RGB通道标准化",
+      "evaluation": "Mini VLA固定Spatial50开发",
+      "training_data": "Spatial：384训练/48离线验证示范",
+      "successes": 36,
+      "episodes": 50,
+      "success_rate": 72.0,
+      "rpc_median_ms": null,
+      "source": "results/mini_vla_m3_20261019_run3/review/independent_acceptance.json"
+    },
+    {
+      "model": "M3",
+      "variant": "随机初始化ResNet18",
+      "evaluation": "Mini VLA固定Spatial50开发",
+      "training_data": "Spatial：384训练/48离线验证示范",
+      "successes": 39,
+      "episodes": 50,
+      "success_rate": 78.0,
+      "rpc_median_ms": null,
+      "source": "results/mini_vla_m3_20261019_run3/review/independent_acceptance.json"
+    },
+    {
+      "model": "M8",
+      "variant": "官方base＋相同Spatial归一化统计",
+      "evaluation": "π0.5历史Spatial50配对",
+      "training_data": "未进行本轮微调",
+      "successes": 0,
+      "episodes": 50,
+      "success_rate": 0.0,
+      "rpc_median_ms": null,
+      "source": "results/formal_pipeline_20261013_v2/final_acceptance.json"
+    }
+  ],
+  "pi05_development": [
+    {
+      "model": "M8",
+      "variant": "ckpt10k_prefix5",
+      "evaluation": "π0.5历史Spatial200开发，220步上限",
+      "training_data": "Spatial：432条示范",
+      "successes": 119,
+      "episodes": 200,
+      "success_rate": 59.5,
+      "rpc_median_ms": null,
+      "source": "results/research_diagnosis_20261014_v3/ANALYSIS.json"
+    },
+    {
+      "model": "M8",
+      "variant": "ckpt20k_prefix5",
+      "evaluation": "π0.5历史Spatial200开发，220步上限",
+      "training_data": "Spatial：432条示范",
+      "successes": 152,
+      "episodes": 200,
+      "success_rate": 76.0,
+      "rpc_median_ms": null,
+      "source": "results/research_diagnosis_20261014_v3/ANALYSIS.json"
+    },
+    {
+      "model": "M8",
+      "variant": "ckpt30k_prefix5",
+      "evaluation": "π0.5历史Spatial200开发，220步上限",
+      "training_data": "Spatial：432条示范",
+      "successes": 170,
+      "episodes": 200,
+      "success_rate": 85.0,
+      "rpc_median_ms": null,
+      "source": "results/research_diagnosis_20261014_v3/ANALYSIS.json"
+    },
+    {
+      "model": "M8",
+      "variant": "ckpt30k_prefix1",
+      "evaluation": "π0.5历史Spatial200开发，220步上限",
+      "training_data": "Spatial：432条示范",
+      "successes": 173,
+      "episodes": 200,
+      "success_rate": 86.5,
+      "rpc_median_ms": null,
+      "source": "results/research_diagnosis_20261014_v3/ANALYSIS.json"
+    },
+    {
+      "model": "M8",
+      "variant": "ckpt30k_prefix10",
+      "evaluation": "π0.5历史Spatial200开发，220步上限",
+      "training_data": "Spatial：432条示范",
+      "successes": 148,
+      "episodes": 200,
+      "success_rate": 74.0,
+      "rpc_median_ms": null,
+      "source": "results/research_diagnosis_20261014_v3/ANALYSIS.json"
+    }
+  ],
+  "final": [
+    {
+      "model": "M5",
+      "variant": "Spatial",
+      "evaluation": "冻结模型最终四套2000",
+      "training_data": "四套：1506训练/187离线验证示范",
+      "successes": 450,
+      "episodes": 500,
+      "success_rate": 90.0,
+      "rpc_median_ms": null,
+      "source": "results/mini_vla_final2000_20261021_run3/review/independent_acceptance.json"
+    },
+    {
+      "model": "M5",
+      "variant": "Object",
+      "evaluation": "冻结模型最终四套2000",
+      "training_data": "四套：1506训练/187离线验证示范",
+      "successes": 439,
+      "episodes": 500,
+      "success_rate": 87.8,
+      "rpc_median_ms": null,
+      "source": "results/mini_vla_final2000_20261021_run3/review/independent_acceptance.json"
+    },
+    {
+      "model": "M5",
+      "variant": "Goal",
+      "evaluation": "冻结模型最终四套2000",
+      "training_data": "四套：1506训练/187离线验证示范",
+      "successes": 341,
+      "episodes": 500,
+      "success_rate": 68.2,
+      "rpc_median_ms": null,
+      "source": "results/mini_vla_final2000_20261021_run3/review/independent_acceptance.json"
+    },
+    {
+      "model": "M5",
+      "variant": "Long",
+      "evaluation": "冻结模型最终四套2000",
+      "training_data": "四套：1506训练/187离线验证示范",
+      "successes": 335,
+      "episodes": 500,
+      "success_rate": 67.0,
+      "rpc_median_ms": null,
+      "source": "results/mini_vla_final2000_20261021_run3/review/independent_acceptance.json"
+    }
+  ],
+  "checks": [
+    "all acceptance records PASS",
+    "mainline counts cross-checked",
+    "pi05 per-task sums",
+    "final per-task sums",
+    "50 subset of 200 is explicitly not pooled"
+  ],
+  "scope": "Read and summarize accepted historical data; no rerun, no new training"
+}

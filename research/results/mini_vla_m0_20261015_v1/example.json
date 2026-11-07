@@ -1,0 +1,143 @@
+{
+  "episode_id": 1500,
+  "length": 91,
+  "task_id": 0,
+  "instruction": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+  "frame_index": 45,
+  "source_file": "datasets/lerobot/physical-intelligence/libero/data/chunk-001/episode_001500.parquet",
+  "source_file_sha256": "715b10ad2c9ca465db08f9f0be986f452c029eaac9afaee7b2b9d311dc9e5268",
+  "raw_state": [
+    -0.0799640566110611,
+    0.1477847546339035,
+    0.9150311946868896,
+    3.155350685119629,
+    0.30171695351600647,
+    0.09333503991365433,
+    0.007395508699119091,
+    -0.01854991540312767
+  ],
+  "raw_action": [
+    0.0,
+    0.2142857164144516,
+    0.07500000298023224,
+    -0.0503571443259716,
+    0.0,
+    -0.02678571455180645,
+    1.0
+  ],
+  "normalized_state": [
+    -0.5081890225410461,
+    0.2958703339099884,
+    -1.3675153255462646,
+    0.8796783089637756,
+    0.9962773323059082,
+    0.05989335849881172,
+    -0.7259387969970703,
+    0.09487228095531464
+  ],
+  "normalized_action": [
+    [
+      -0.3711841404438019,
+      0.22186227142810822,
+      0.45168963074684143,
+      -1.2137017250061035,
+      0.15570572018623352,
+      -0.10663970559835434,
+      0.9203230738639832
+    ]
+  ],
+  "token_ids": [
+    17,
+    26,
+    23,
+    4,
+    5,
+    3,
+    23,
+    19,
+    2,
+    23,
+    20,
+    2,
+    18,
+    13,
+    16,
+    23,
+    19,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "language_mask": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+  ],
+  "observation_shapes": {
+    "image": [
+      3,
+      128,
+      128
+    ],
+    "wrist_image": [
+      3,
+      128,
+      128
+    ],
+    "state": [
+      8
+    ],
+    "token_ids": [
+      32
+    ],
+    "language_mask": [
+      32
+    ]
+  },
+  "target_shape": [
+    1,
+    7
+  ],
+  "image_orientation": "embedded images kept as stored; online simulator adapter must orient raw camera frames before calling this policy"
+}

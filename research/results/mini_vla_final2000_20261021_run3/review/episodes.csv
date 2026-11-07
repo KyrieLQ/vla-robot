@@ -1,0 +1,2001 @@
+suite,task_id,initial_state_index,partition,success,steps,calls,language
+libero_spatial,0,0,confirmation,1,78,16,pick up the black bowl between the plate and the ramekin and place it on the plate
+libero_spatial,0,1,confirmation,1,83,17,pick up the black bowl between the plate and the ramekin and place it on the plate
+libero_spatial,0,2,development,1,86,18,pick up the black bowl between the plate and the ramekin and place it on the plate
+libero_spatial,0,3,confirmation,1,83,17,pick up the black bowl between the plate and the ramekin and place it on the plate
+libero_spatial,0,4,confirmation,1,79,16,pick up the black bowl between the plate and the ramekin and place it on the plate
+libero_spatial,0,5,development,1,77,16,pick up the black bowl between the plate and the ramekin and place it on the plate
+libero_spatial,0,6,development,1,84,17,pick up the black bowl between the plate and the ramekin and place it on the plate
+libero_spatial,0,7,confirmation,1,81,17,pick up the black bowl between the plate and the ramekin and place it on the plate
+libero_spatial,0,8,development,1,92,19,pick up the black bowl between the plate and the ramekin and place it on the plate
+libero_spatial,0,9,confirmation,1,81,17,pick up the black bowl between the plate and the ramekin and place it on the plate
+libero_spatial,0,10,confirmation,1,76,16,pick up the black bowl between the plate and the ramekin and place it on the plate
+libero_spatial,0,11,confirmation,1,80,16,pick up the black bowl between the plate and the ramekin and place it on the plate
+libero_spatial,0,12,development,1,80,16,pick up the black bowl between the plate and the ramekin and place it on the plate
+libero_spatial,0,13,confirmation,1,84,17,pick up the black bowl between the plate and the ramekin and place it on the plate
+libero_spatial,0,14,confirmation,1,87,18,pick up the black bowl between the plate and the ramekin and place it on the plate
+libero_spatial,0,15,development,1,75,15,pick up the black bowl between the plate and the ramekin and place it on the plate
+libero_spatial,0,16,development,1,81,17,pick up the black bowl between the plate and the ramekin and place it on the plate
+libero_spatial,0,17,confirmation,1,73,15,pick up the black bowl between the plate and the ramekin and place it on the plate
+libero_spatial,0,18,development,1,94,19,pick up the black bowl between the plate and the ramekin and place it on the plate
+libero_spatial,0,19,confirmation,1,84,17,pick up the black bowl between the plate and the ramekin and place it on the plate
+libero_spatial,0,20,confirmation,1,87,18,pick up the black bowl between the plate and the ramekin and place it on the plate
+libero_spatial,0,21,confirmation,1,83,17,pick up the black bowl between the plate and the ramekin and place it on the plate
+libero_spatial,0,22,development,1,86,18,pick up the black bowl between the plate and the ramekin and place it on the plate
+libero_spatial,0,23,confirmation,1,76,16,pick up the black bowl between the plate and the ramekin and place it on the plate
+libero_spatial,0,24,confirmation,1,77,16,pick up the black bowl between the plate and the ramekin and place it on the plate
+libero_spatial,0,25,confirmation,1,116,24,pick up the black bowl between the plate and the ramekin and place it on the plate
+libero_spatial,0,26,development,1,88,18,pick up the black bowl between the plate and the ramekin and place it on the plate
+libero_spatial,0,27,development,1,96,20,pick up the black bowl between the plate and the ramekin and place it on the plate
+libero_spatial,0,28,development,1,77,16,pick up the black bowl between the plate and the ramekin and place it on the plate
+libero_spatial,0,29,confirmation,1,76,16,pick up the black bowl between the plate and the ramekin and place it on the plate
+libero_spatial,0,30,confirmation,1,79,16,pick up the black bowl between the plate and the ramekin and place it on the plate
+libero_spatial,0,31,confirmation,1,90,18,pick up the black bowl between the plate and the ramekin and place it on the plate
+libero_spatial,0,32,development,1,91,19,pick up the black bowl between the plate and the ramekin and place it on the plate
+libero_spatial,0,33,confirmation,1,81,17,pick up the black bowl between the plate and the ramekin and place it on the plate
+libero_spatial,0,34,confirmation,1,74,15,pick up the black bowl between the plate and the ramekin and place it on the plate
+libero_spatial,0,35,development,1,81,17,pick up the black bowl between the plate and the ramekin and place it on the plate
+libero_spatial,0,36,development,1,79,16,pick up the black bowl between the plate and the ramekin and place it on the plate
+libero_spatial,0,37,confirmation,1,81,17,pick up the black bowl between the plate and the ramekin and place it on the plate
+libero_spatial,0,38,confirmation,1,119,24,pick up the black bowl between the plate and the ramekin and place it on the plate
+libero_spatial,0,39,development,1,73,15,pick up the black bowl between the plate and the ramekin and place it on the plate
+libero_spatial,0,40,development,1,78,16,pick up the black bowl between the plate and the ramekin and place it on the plate
+libero_spatial,0,41,confirmation,1,76,16,pick up the black bowl between the plate and the ramekin and place it on the plate
+libero_spatial,0,42,development,1,88,18,pick up the black bowl between the plate and the ramekin and place it on the plate
+libero_spatial,0,43,development,1,75,15,pick up the black bowl between the plate and the ramekin and place it on the plate
+libero_spatial,0,44,confirmation,1,70,14,pick up the black bowl between the plate and the ramekin and place it on the plate
+libero_spatial,0,45,development,1,79,16,pick up the black bowl between the plate and the ramekin and place it on the plate
+libero_spatial,0,46,confirmation,1,79,16,pick up the black bowl between the plate and the ramekin and place it on the plate
+libero_spatial,0,47,confirmation,1,84,17,pick up the black bowl between the plate and the ramekin and place it on the plate
+libero_spatial,0,48,confirmation,1,82,17,pick up the black bowl between the plate and the ramekin and place it on the plate
+libero_spatial,0,49,confirmation,1,79,16,pick up the black bowl between the plate and the ramekin and place it on the plate
+libero_spatial,1,0,development,0,220,44,pick up the black bowl next to the ramekin and place it on the plate
+libero_spatial,1,1,confirmation,1,119,24,pick up the black bowl next to the ramekin and place it on the plate
+libero_spatial,1,2,development,1,122,25,pick up the black bowl next to the ramekin and place it on the plate
+libero_spatial,1,3,confirmation,1,111,23,pick up the black bowl next to the ramekin and place it on the plate
+libero_spatial,1,4,development,1,114,23,pick up the black bowl next to the ramekin and place it on the plate
+libero_spatial,1,5,confirmation,1,114,23,pick up the black bowl next to the ramekin and place it on the plate
+libero_spatial,1,6,confirmation,1,117,24,pick up the black bowl next to the ramekin and place it on the plate
+libero_spatial,1,7,confirmation,1,129,26,pick up the black bowl next to the ramekin and place it on the plate
+libero_spatial,1,8,confirmation,0,220,44,pick up the black bowl next to the ramekin and place it on the plate
+libero_spatial,1,9,development,1,111,23,pick up the black bowl next to the ramekin and place it on the plate
+libero_spatial,1,10,development,0,220,44,pick up the black bowl next to the ramekin and place it on the plate
+libero_spatial,1,11,confirmation,1,114,23,pick up the black bowl next to the ramekin and place it on the plate
+libero_spatial,1,12,development,1,183,37,pick up the black bowl next to the ramekin and place it on the plate
+libero_spatial,1,13,development,1,119,24,pick up the black bowl next to the ramekin and place it on the plate
+libero_spatial,1,14,confirmation,1,114,23,pick up the black bowl next to the ramekin and place it on the plate
+libero_spatial,1,15,development,1,123,25,pick up the black bowl next to the ramekin and place it on the plate
+libero_spatial,1,16,confirmation,1,108,22,pick up the black bowl next to the ramekin and place it on the plate
+libero_spatial,1,17,confirmation,1,102,21,pick up the black bowl next to the ramekin and place it on the plate
+libero_spatial,1,18,confirmation,1,111,23,pick up the black bowl next to the ramekin and place it on the plate
+libero_spatial,1,19,confirmation,1,106,22,pick up the black bowl next to the ramekin and place it on the plate
+libero_spatial,1,20,confirmation,0,220,44,pick up the black bowl next to the ramekin and place it on the plate
+libero_spatial,1,21,confirmation,1,120,24,pick up the black bowl next to the ramekin and place it on the plate
+libero_spatial,1,22,development,1,117,24,pick up the black bowl next to the ramekin and place it on the plate
+libero_spatial,1,23,development,1,104,21,pick up the black bowl next to the ramekin and place it on the plate
+libero_spatial,1,24,development,1,120,24,pick up the black bowl next to the ramekin and place it on the plate
+libero_spatial,1,25,confirmation,1,106,22,pick up the black bowl next to the ramekin and place it on the plate
+libero_spatial,1,26,development,1,116,24,pick up the black bowl next to the ramekin and place it on the plate
+libero_spatial,1,27,confirmation,1,105,21,pick up the black bowl next to the ramekin and place it on the plate
+libero_spatial,1,28,confirmation,1,106,22,pick up the black bowl next to the ramekin and place it on the plate
+libero_spatial,1,29,confirmation,1,112,23,pick up the black bowl next to the ramekin and place it on the plate
+libero_spatial,1,30,confirmation,1,110,22,pick up the black bowl next to the ramekin and place it on the plate
+libero_spatial,1,31,development,0,220,44,pick up the black bowl next to the ramekin and place it on the plate
+libero_spatial,1,32,development,1,111,23,pick up the black bowl next to the ramekin and place it on the plate
+libero_spatial,1,33,development,1,124,25,pick up the black bowl next to the ramekin and place it on the plate
+libero_spatial,1,34,development,1,106,22,pick up the black bowl next to the ramekin and place it on the plate
+libero_spatial,1,35,confirmation,1,113,23,pick up the black bowl next to the ramekin and place it on the plate
+libero_spatial,1,36,confirmation,1,117,24,pick up the black bowl next to the ramekin and place it on the plate
+libero_spatial,1,37,confirmation,1,121,25,pick up the black bowl next to the ramekin and place it on the plate
+libero_spatial,1,38,confirmation,1,123,25,pick up the black bowl next to the ramekin and place it on the plate
+libero_spatial,1,39,confirmation,1,99,20,pick up the black bowl next to the ramekin and place it on the plate
+libero_spatial,1,40,development,1,124,25,pick up the black bowl next to the ramekin and place it on the plate
+libero_spatial,1,41,development,1,108,22,pick up the black bowl next to the ramekin and place it on the plate
+libero_spatial,1,42,development,1,112,23,pick up the black bowl next to the ramekin and place it on the plate
+libero_spatial,1,43,confirmation,1,113,23,pick up the black bowl next to the ramekin and place it on the plate
+libero_spatial,1,44,development,1,120,24,pick up the black bowl next to the ramekin and place it on the plate
+libero_spatial,1,45,confirmation,1,108,22,pick up the black bowl next to the ramekin and place it on the plate
+libero_spatial,1,46,confirmation,1,114,23,pick up the black bowl next to the ramekin and place it on the plate
+libero_spatial,1,47,confirmation,1,119,24,pick up the black bowl next to the ramekin and place it on the plate
+libero_spatial,1,48,confirmation,1,114,23,pick up the black bowl next to the ramekin and place it on the plate
+libero_spatial,1,49,confirmation,1,109,22,pick up the black bowl next to the ramekin and place it on the plate
+libero_spatial,2,0,confirmation,1,100,20,pick up the black bowl from table center and place it on the plate
+libero_spatial,2,1,development,1,101,21,pick up the black bowl from table center and place it on the plate
+libero_spatial,2,2,development,1,99,20,pick up the black bowl from table center and place it on the plate
+libero_spatial,2,3,confirmation,0,220,44,pick up the black bowl from table center and place it on the plate
+libero_spatial,2,4,development,1,110,22,pick up the black bowl from table center and place it on the plate
+libero_spatial,2,5,confirmation,1,105,21,pick up the black bowl from table center and place it on the plate
+libero_spatial,2,6,confirmation,1,102,21,pick up the black bowl from table center and place it on the plate
+libero_spatial,2,7,development,1,111,23,pick up the black bowl from table center and place it on the plate
+libero_spatial,2,8,confirmation,1,103,21,pick up the black bowl from table center and place it on the plate
+libero_spatial,2,9,confirmation,1,100,20,pick up the black bowl from table center and place it on the plate
+libero_spatial,2,10,confirmation,1,105,21,pick up the black bowl from table center and place it on the plate
+libero_spatial,2,11,confirmation,1,101,21,pick up the black bowl from table center and place it on the plate
+libero_spatial,2,12,development,1,99,20,pick up the black bowl from table center and place it on the plate
+libero_spatial,2,13,confirmation,1,107,22,pick up the black bowl from table center and place it on the plate
+libero_spatial,2,14,confirmation,0,220,44,pick up the black bowl from table center and place it on the plate
+libero_spatial,2,15,development,1,104,21,pick up the black bowl from table center and place it on the plate
+libero_spatial,2,16,development,1,104,21,pick up the black bowl from table center and place it on the plate
+libero_spatial,2,17,confirmation,1,102,21,pick up the black bowl from table center and place it on the plate
+libero_spatial,2,18,confirmation,1,101,21,pick up the black bowl from table center and place it on the plate
+libero_spatial,2,19,development,1,105,21,pick up the black bowl from table center and place it on the plate
+libero_spatial,2,20,confirmation,1,105,21,pick up the black bowl from table center and place it on the plate
+libero_spatial,2,21,confirmation,1,106,22,pick up the black bowl from table center and place it on the plate
+libero_spatial,2,22,development,1,105,21,pick up the black bowl from table center and place it on the plate
+libero_spatial,2,23,development,1,109,22,pick up the black bowl from table center and place it on the plate
+libero_spatial,2,24,confirmation,1,101,21,pick up the black bowl from table center and place it on the plate
+libero_spatial,2,25,confirmation,1,107,22,pick up the black bowl from table center and place it on the plate
+libero_spatial,2,26,confirmation,1,100,20,pick up the black bowl from table center and place it on the plate
+libero_spatial,2,27,development,0,220,44,pick up the black bowl from table center and place it on the plate
+libero_spatial,2,28,confirmation,1,103,21,pick up the black bowl from table center and place it on the plate
+libero_spatial,2,29,development,0,220,44,pick up the black bowl from table center and place it on the plate
+libero_spatial,2,30,development,1,103,21,pick up the black bowl from table center and place it on the plate
+libero_spatial,2,31,confirmation,0,220,44,pick up the black bowl from table center and place it on the plate
+libero_spatial,2,32,development,0,220,44,pick up the black bowl from table center and place it on the plate
+libero_spatial,2,33,confirmation,1,110,22,pick up the black bowl from table center and place it on the plate
+libero_spatial,2,34,confirmation,1,111,23,pick up the black bowl from table center and place it on the plate
+libero_spatial,2,35,development,1,101,21,pick up the black bowl from table center and place it on the plate
+libero_spatial,2,36,development,1,106,22,pick up the black bowl from table center and place it on the plate
+libero_spatial,2,37,confirmation,1,101,21,pick up the black bowl from table center and place it on the plate
+libero_spatial,2,38,confirmation,1,104,21,pick up the black bowl from table center and place it on the plate
+libero_spatial,2,39,confirmation,1,108,22,pick up the black bowl from table center and place it on the plate
+libero_spatial,2,40,confirmation,1,115,23,pick up the black bowl from table center and place it on the plate
+libero_spatial,2,41,confirmation,1,104,21,pick up the black bowl from table center and place it on the plate
+libero_spatial,2,42,development,1,118,24,pick up the black bowl from table center and place it on the plate
+libero_spatial,2,43,confirmation,1,94,19,pick up the black bowl from table center and place it on the plate
+libero_spatial,2,44,confirmation,1,106,22,pick up the black bowl from table center and place it on the plate
+libero_spatial,2,45,development,1,104,21,pick up the black bowl from table center and place it on the plate
+libero_spatial,2,46,development,1,105,21,pick up the black bowl from table center and place it on the plate
+libero_spatial,2,47,confirmation,0,220,44,pick up the black bowl from table center and place it on the plate
+libero_spatial,2,48,development,1,105,21,pick up the black bowl from table center and place it on the plate
+libero_spatial,2,49,confirmation,1,105,21,pick up the black bowl from table center and place it on the plate
+libero_spatial,3,0,development,1,95,19,pick up the black bowl on the cookie box and place it on the plate
+libero_spatial,3,1,confirmation,1,84,17,pick up the black bowl on the cookie box and place it on the plate
+libero_spatial,3,2,development,1,84,17,pick up the black bowl on the cookie box and place it on the plate
+libero_spatial,3,3,development,1,99,20,pick up the black bowl on the cookie box and place it on the plate
+libero_spatial,3,4,confirmation,0,220,44,pick up the black bowl on the cookie box and place it on the plate
+libero_spatial,3,5,confirmation,1,90,18,pick up the black bowl on the cookie box and place it on the plate
+libero_spatial,3,6,confirmation,0,220,44,pick up the black bowl on the cookie box and place it on the plate
+libero_spatial,3,7,confirmation,1,82,17,pick up the black bowl on the cookie box and place it on the plate
+libero_spatial,3,8,development,0,220,44,pick up the black bowl on the cookie box and place it on the plate
+libero_spatial,3,9,confirmation,1,84,17,pick up the black bowl on the cookie box and place it on the plate
+libero_spatial,3,10,development,1,86,18,pick up the black bowl on the cookie box and place it on the plate
+libero_spatial,3,11,confirmation,1,91,19,pick up the black bowl on the cookie box and place it on the plate
+libero_spatial,3,12,development,1,88,18,pick up the black bowl on the cookie box and place it on the plate
+libero_spatial,3,13,confirmation,1,92,19,pick up the black bowl on the cookie box and place it on the plate
+libero_spatial,3,14,confirmation,1,93,19,pick up the black bowl on the cookie box and place it on the plate
+libero_spatial,3,15,confirmation,1,83,17,pick up the black bowl on the cookie box and place it on the plate
+libero_spatial,3,16,development,1,85,17,pick up the black bowl on the cookie box and place it on the plate
+libero_spatial,3,17,development,1,87,18,pick up the black bowl on the cookie box and place it on the plate
+libero_spatial,3,18,confirmation,1,89,18,pick up the black bowl on the cookie box and place it on the plate
+libero_spatial,3,19,confirmation,1,87,18,pick up the black bowl on the cookie box and place it on the plate
+libero_spatial,3,20,development,1,99,20,pick up the black bowl on the cookie box and place it on the plate
+libero_spatial,3,21,confirmation,1,86,18,pick up the black bowl on the cookie box and place it on the plate
+libero_spatial,3,22,development,1,84,17,pick up the black bowl on the cookie box and place it on the plate
+libero_spatial,3,23,development,1,85,17,pick up the black bowl on the cookie box and place it on the plate
+libero_spatial,3,24,confirmation,1,87,18,pick up the black bowl on the cookie box and place it on the plate
+libero_spatial,3,25,confirmation,1,87,18,pick up the black bowl on the cookie box and place it on the plate
+libero_spatial,3,26,development,1,82,17,pick up the black bowl on the cookie box and place it on the plate
+libero_spatial,3,27,confirmation,1,87,18,pick up the black bowl on the cookie box and place it on the plate
+libero_spatial,3,28,confirmation,1,88,18,pick up the black bowl on the cookie box and place it on the plate
+libero_spatial,3,29,confirmation,1,92,19,pick up the black bowl on the cookie box and place it on the plate
+libero_spatial,3,30,confirmation,1,93,19,pick up the black bowl on the cookie box and place it on the plate
+libero_spatial,3,31,development,1,87,18,pick up the black bowl on the cookie box and place it on the plate
+libero_spatial,3,32,development,1,84,17,pick up the black bowl on the cookie box and place it on the plate
+libero_spatial,3,33,confirmation,1,90,18,pick up the black bowl on the cookie box and place it on the plate
+libero_spatial,3,34,confirmation,1,83,17,pick up the black bowl on the cookie box and place it on the plate
+libero_spatial,3,35,confirmation,1,89,18,pick up the black bowl on the cookie box and place it on the plate
+libero_spatial,3,36,development,1,91,19,pick up the black bowl on the cookie box and place it on the plate
+libero_spatial,3,37,confirmation,1,97,20,pick up the black bowl on the cookie box and place it on the plate
+libero_spatial,3,38,confirmation,1,116,24,pick up the black bowl on the cookie box and place it on the plate
+libero_spatial,3,39,development,1,89,18,pick up the black bowl on the cookie box and place it on the plate
+libero_spatial,3,40,development,1,81,17,pick up the black bowl on the cookie box and place it on the plate
+libero_spatial,3,41,development,1,81,17,pick up the black bowl on the cookie box and place it on the plate
+libero_spatial,3,42,development,1,82,17,pick up the black bowl on the cookie box and place it on the plate
+libero_spatial,3,43,confirmation,1,82,17,pick up the black bowl on the cookie box and place it on the plate
+libero_spatial,3,44,confirmation,1,84,17,pick up the black bowl on the cookie box and place it on the plate
+libero_spatial,3,45,confirmation,1,85,17,pick up the black bowl on the cookie box and place it on the plate
+libero_spatial,3,46,confirmation,1,94,19,pick up the black bowl on the cookie box and place it on the plate
+libero_spatial,3,47,confirmation,1,90,18,pick up the black bowl on the cookie box and place it on the plate
+libero_spatial,3,48,development,1,82,17,pick up the black bowl on the cookie box and place it on the plate
+libero_spatial,3,49,confirmation,1,88,18,pick up the black bowl on the cookie box and place it on the plate
+libero_spatial,4,0,development,0,220,44,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+libero_spatial,4,1,development,1,137,28,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+libero_spatial,4,2,development,1,152,31,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+libero_spatial,4,3,development,1,139,28,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+libero_spatial,4,4,confirmation,1,139,28,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+libero_spatial,4,5,confirmation,1,140,28,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+libero_spatial,4,6,confirmation,1,147,30,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+libero_spatial,4,7,confirmation,1,125,25,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+libero_spatial,4,8,confirmation,1,150,30,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+libero_spatial,4,9,confirmation,1,137,28,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+libero_spatial,4,10,confirmation,1,141,29,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+libero_spatial,4,11,confirmation,1,141,29,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+libero_spatial,4,12,development,1,153,31,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+libero_spatial,4,13,confirmation,1,138,28,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+libero_spatial,4,14,confirmation,1,131,27,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+libero_spatial,4,15,development,1,126,26,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+libero_spatial,4,16,development,1,137,28,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+libero_spatial,4,17,confirmation,1,144,29,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+libero_spatial,4,18,confirmation,0,220,44,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+libero_spatial,4,19,development,1,144,29,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+libero_spatial,4,20,development,0,220,44,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+libero_spatial,4,21,confirmation,1,134,27,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+libero_spatial,4,22,development,1,135,27,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+libero_spatial,4,23,confirmation,1,144,29,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+libero_spatial,4,24,confirmation,1,129,26,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+libero_spatial,4,25,confirmation,1,138,28,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+libero_spatial,4,26,confirmation,1,133,27,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+libero_spatial,4,27,confirmation,1,145,29,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+libero_spatial,4,28,development,1,151,31,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+libero_spatial,4,29,development,1,143,29,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+libero_spatial,4,30,development,1,151,31,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+libero_spatial,4,31,confirmation,1,141,29,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+libero_spatial,4,32,development,1,125,25,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+libero_spatial,4,33,confirmation,1,148,30,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+libero_spatial,4,34,confirmation,1,155,31,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+libero_spatial,4,35,confirmation,1,130,26,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+libero_spatial,4,36,development,1,135,27,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+libero_spatial,4,37,confirmation,1,148,30,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+libero_spatial,4,38,confirmation,1,138,28,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+libero_spatial,4,39,development,1,144,29,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+libero_spatial,4,40,confirmation,0,220,44,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+libero_spatial,4,41,development,1,155,31,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+libero_spatial,4,42,development,1,137,28,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+libero_spatial,4,43,confirmation,1,147,30,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+libero_spatial,4,44,confirmation,0,220,44,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+libero_spatial,4,45,confirmation,1,146,30,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+libero_spatial,4,46,development,1,126,26,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+libero_spatial,4,47,confirmation,1,144,29,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+libero_spatial,4,48,confirmation,1,141,29,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+libero_spatial,4,49,development,1,152,31,pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+libero_spatial,5,0,confirmation,1,96,20,pick up the black bowl on the ramekin and place it on the plate
+libero_spatial,5,1,confirmation,1,107,22,pick up the black bowl on the ramekin and place it on the plate
+libero_spatial,5,2,development,1,92,19,pick up the black bowl on the ramekin and place it on the plate
+libero_spatial,5,3,confirmation,1,87,18,pick up the black bowl on the ramekin and place it on the plate
+libero_spatial,5,4,development,1,100,20,pick up the black bowl on the ramekin and place it on the plate
+libero_spatial,5,5,development,1,93,19,pick up the black bowl on the ramekin and place it on the plate
+libero_spatial,5,6,development,1,102,21,pick up the black bowl on the ramekin and place it on the plate
+libero_spatial,5,7,confirmation,1,96,20,pick up the black bowl on the ramekin and place it on the plate
+libero_spatial,5,8,confirmation,1,110,22,pick up the black bowl on the ramekin and place it on the plate
+libero_spatial,5,9,confirmation,1,109,22,pick up the black bowl on the ramekin and place it on the plate
+libero_spatial,5,10,confirmation,1,99,20,pick up the black bowl on the ramekin and place it on the plate
+libero_spatial,5,11,confirmation,1,85,17,pick up the black bowl on the ramekin and place it on the plate
+libero_spatial,5,12,development,1,98,20,pick up the black bowl on the ramekin and place it on the plate
+libero_spatial,5,13,confirmation,1,112,23,pick up the black bowl on the ramekin and place it on the plate
+libero_spatial,5,14,confirmation,1,106,22,pick up the black bowl on the ramekin and place it on the plate
+libero_spatial,5,15,development,1,98,20,pick up the black bowl on the ramekin and place it on the plate
+libero_spatial,5,16,development,0,220,44,pick up the black bowl on the ramekin and place it on the plate
+libero_spatial,5,17,confirmation,1,109,22,pick up the black bowl on the ramekin and place it on the plate
+libero_spatial,5,18,confirmation,1,92,19,pick up the black bowl on the ramekin and place it on the plate
+libero_spatial,5,19,development,1,98,20,pick up the black bowl on the ramekin and place it on the plate
+libero_spatial,5,20,confirmation,0,220,44,pick up the black bowl on the ramekin and place it on the plate
+libero_spatial,5,21,development,1,115,23,pick up the black bowl on the ramekin and place it on the plate
+libero_spatial,5,22,development,1,98,20,pick up the black bowl on the ramekin and place it on the plate
+libero_spatial,5,23,development,1,118,24,pick up the black bowl on the ramekin and place it on the plate
+libero_spatial,5,24,confirmation,1,86,18,pick up the black bowl on the ramekin and place it on the plate
+libero_spatial,5,25,confirmation,1,90,18,pick up the black bowl on the ramekin and place it on the plate
+libero_spatial,5,26,confirmation,0,220,44,pick up the black bowl on the ramekin and place it on the plate
+libero_spatial,5,27,confirmation,1,91,19,pick up the black bowl on the ramekin and place it on the plate
+libero_spatial,5,28,confirmation,1,91,19,pick up the black bowl on the ramekin and place it on the plate
+libero_spatial,5,29,development,1,94,19,pick up the black bowl on the ramekin and place it on the plate
+libero_spatial,5,30,development,1,91,19,pick up the black bowl on the ramekin and place it on the plate
+libero_spatial,5,31,development,1,104,21,pick up the black bowl on the ramekin and place it on the plate
+libero_spatial,5,32,development,1,95,19,pick up the black bowl on the ramekin and place it on the plate
+libero_spatial,5,33,confirmation,1,99,20,pick up the black bowl on the ramekin and place it on the plate
+libero_spatial,5,34,development,1,101,21,pick up the black bowl on the ramekin and place it on the plate
+libero_spatial,5,35,confirmation,1,98,20,pick up the black bowl on the ramekin and place it on the plate
+libero_spatial,5,36,confirmation,1,94,19,pick up the black bowl on the ramekin and place it on the plate
+libero_spatial,5,37,confirmation,1,94,19,pick up the black bowl on the ramekin and place it on the plate
+libero_spatial,5,38,confirmation,1,92,19,pick up the black bowl on the ramekin and place it on the plate
+libero_spatial,5,39,confirmation,1,99,20,pick up the black bowl on the ramekin and place it on the plate
+libero_spatial,5,40,development,1,201,41,pick up the black bowl on the ramekin and place it on the plate
+libero_spatial,5,41,confirmation,0,220,44,pick up the black bowl on the ramekin and place it on the plate
+libero_spatial,5,42,development,1,88,18,pick up the black bowl on the ramekin and place it on the plate
+libero_spatial,5,43,confirmation,1,95,19,pick up the black bowl on the ramekin and place it on the plate
+libero_spatial,5,44,development,1,96,20,pick up the black bowl on the ramekin and place it on the plate
+libero_spatial,5,45,confirmation,1,108,22,pick up the black bowl on the ramekin and place it on the plate
+libero_spatial,5,46,development,1,96,20,pick up the black bowl on the ramekin and place it on the plate
+libero_spatial,5,47,confirmation,1,100,20,pick up the black bowl on the ramekin and place it on the plate
+libero_spatial,5,48,confirmation,1,113,23,pick up the black bowl on the ramekin and place it on the plate
+libero_spatial,5,49,confirmation,1,98,20,pick up the black bowl on the ramekin and place it on the plate
+libero_spatial,6,0,confirmation,1,101,21,pick up the black bowl next to the cookie box and place it on the plate
+libero_spatial,6,1,development,1,110,22,pick up the black bowl next to the cookie box and place it on the plate
+libero_spatial,6,2,development,1,102,21,pick up the black bowl next to the cookie box and place it on the plate
+libero_spatial,6,3,development,1,112,23,pick up the black bowl next to the cookie box and place it on the plate
+libero_spatial,6,4,confirmation,1,111,23,pick up the black bowl next to the cookie box and place it on the plate
+libero_spatial,6,5,confirmation,1,102,21,pick up the black bowl next to the cookie box and place it on the plate
+libero_spatial,6,6,confirmation,1,105,21,pick up the black bowl next to the cookie box and place it on the plate
+libero_spatial,6,7,development,1,103,21,pick up the black bowl next to the cookie box and place it on the plate
+libero_spatial,6,8,confirmation,1,115,23,pick up the black bowl next to the cookie box and place it on the plate
+libero_spatial,6,9,confirmation,1,104,21,pick up the black bowl next to the cookie box and place it on the plate
+libero_spatial,6,10,development,1,108,22,pick up the black bowl next to the cookie box and place it on the plate
+libero_spatial,6,11,confirmation,1,106,22,pick up the black bowl next to the cookie box and place it on the plate
+libero_spatial,6,12,development,1,118,24,pick up the black bowl next to the cookie box and place it on the plate
+libero_spatial,6,13,development,1,106,22,pick up the black bowl next to the cookie box and place it on the plate
+libero_spatial,6,14,confirmation,1,117,24,pick up the black bowl next to the cookie box and place it on the plate
+libero_spatial,6,15,confirmation,1,111,23,pick up the black bowl next to the cookie box and place it on the plate
+libero_spatial,6,16,confirmation,1,99,20,pick up the black bowl next to the cookie box and place it on the plate
+libero_spatial,6,17,confirmation,1,100,20,pick up the black bowl next to the cookie box and place it on the plate
+libero_spatial,6,18,development,1,135,27,pick up the black bowl next to the cookie box and place it on the plate
+libero_spatial,6,19,confirmation,1,106,22,pick up the black bowl next to the cookie box and place it on the plate
+libero_spatial,6,20,confirmation,1,109,22,pick up the black bowl next to the cookie box and place it on the plate
+libero_spatial,6,21,development,1,123,25,pick up the black bowl next to the cookie box and place it on the plate
+libero_spatial,6,22,development,1,102,21,pick up the black bowl next to the cookie box and place it on the plate
+libero_spatial,6,23,confirmation,0,220,44,pick up the black bowl next to the cookie box and place it on the plate
+libero_spatial,6,24,confirmation,1,111,23,pick up the black bowl next to the cookie box and place it on the plate
+libero_spatial,6,25,development,1,111,23,pick up the black bowl next to the cookie box and place it on the plate
+libero_spatial,6,26,confirmation,1,109,22,pick up the black bowl next to the cookie box and place it on the plate
+libero_spatial,6,27,confirmation,1,111,23,pick up the black bowl next to the cookie box and place it on the plate
+libero_spatial,6,28,development,1,102,21,pick up the black bowl next to the cookie box and place it on the plate
+libero_spatial,6,29,confirmation,1,113,23,pick up the black bowl next to the cookie box and place it on the plate
+libero_spatial,6,30,confirmation,1,146,30,pick up the black bowl next to the cookie box and place it on the plate
+libero_spatial,6,31,confirmation,1,106,22,pick up the black bowl next to the cookie box and place it on the plate
+libero_spatial,6,32,development,1,105,21,pick up the black bowl next to the cookie box and place it on the plate
+libero_spatial,6,33,development,1,114,23,pick up the black bowl next to the cookie box and place it on the plate
+libero_spatial,6,34,development,1,107,22,pick up the black bowl next to the cookie box and place it on the plate
+libero_spatial,6,35,confirmation,1,129,26,pick up the black bowl next to the cookie box and place it on the plate
+libero_spatial,6,36,confirmation,1,112,23,pick up the black bowl next to the cookie box and place it on the plate
+libero_spatial,6,37,confirmation,1,112,23,pick up the black bowl next to the cookie box and place it on the plate
+libero_spatial,6,38,development,1,103,21,pick up the black bowl next to the cookie box and place it on the plate
+libero_spatial,6,39,confirmation,1,106,22,pick up the black bowl next to the cookie box and place it on the plate
+libero_spatial,6,40,confirmation,1,102,21,pick up the black bowl next to the cookie box and place it on the plate
+libero_spatial,6,41,confirmation,1,109,22,pick up the black bowl next to the cookie box and place it on the plate
+libero_spatial,6,42,development,1,110,22,pick up the black bowl next to the cookie box and place it on the plate
+libero_spatial,6,43,confirmation,1,105,21,pick up the black bowl next to the cookie box and place it on the plate
+libero_spatial,6,44,confirmation,1,108,22,pick up the black bowl next to the cookie box and place it on the plate
+libero_spatial,6,45,development,1,126,26,pick up the black bowl next to the cookie box and place it on the plate
+libero_spatial,6,46,confirmation,1,107,22,pick up the black bowl next to the cookie box and place it on the plate
+libero_spatial,6,47,confirmation,1,114,23,pick up the black bowl next to the cookie box and place it on the plate
+libero_spatial,6,48,development,1,108,22,pick up the black bowl next to the cookie box and place it on the plate
+libero_spatial,6,49,development,1,106,22,pick up the black bowl next to the cookie box and place it on the plate
+libero_spatial,7,0,development,1,152,31,pick up the black bowl on the stove and place it on the plate
+libero_spatial,7,1,confirmation,1,118,24,pick up the black bowl on the stove and place it on the plate
+libero_spatial,7,2,development,1,134,27,pick up the black bowl on the stove and place it on the plate
+libero_spatial,7,3,confirmation,1,118,24,pick up the black bowl on the stove and place it on the plate
+libero_spatial,7,4,confirmation,1,141,29,pick up the black bowl on the stove and place it on the plate
+libero_spatial,7,5,confirmation,1,122,25,pick up the black bowl on the stove and place it on the plate
+libero_spatial,7,6,confirmation,1,121,25,pick up the black bowl on the stove and place it on the plate
+libero_spatial,7,7,development,1,115,23,pick up the black bowl on the stove and place it on the plate
+libero_spatial,7,8,confirmation,0,220,44,pick up the black bowl on the stove and place it on the plate
+libero_spatial,7,9,development,1,122,25,pick up the black bowl on the stove and place it on the plate
+libero_spatial,7,10,confirmation,1,131,27,pick up the black bowl on the stove and place it on the plate
+libero_spatial,7,11,development,1,118,24,pick up the black bowl on the stove and place it on the plate
+libero_spatial,7,12,development,1,114,23,pick up the black bowl on the stove and place it on the plate
+libero_spatial,7,13,confirmation,1,136,28,pick up the black bowl on the stove and place it on the plate
+libero_spatial,7,14,confirmation,1,123,25,pick up the black bowl on the stove and place it on the plate
+libero_spatial,7,15,confirmation,1,123,25,pick up the black bowl on the stove and place it on the plate
+libero_spatial,7,16,confirmation,1,113,23,pick up the black bowl on the stove and place it on the plate
+libero_spatial,7,17,development,1,112,23,pick up the black bowl on the stove and place it on the plate
+libero_spatial,7,18,confirmation,1,114,23,pick up the black bowl on the stove and place it on the plate
+libero_spatial,7,19,development,1,126,26,pick up the black bowl on the stove and place it on the plate
+libero_spatial,7,20,confirmation,1,143,29,pick up the black bowl on the stove and place it on the plate
+libero_spatial,7,21,confirmation,1,117,24,pick up the black bowl on the stove and place it on the plate
+libero_spatial,7,22,development,1,117,24,pick up the black bowl on the stove and place it on the plate
+libero_spatial,7,23,confirmation,0,220,44,pick up the black bowl on the stove and place it on the plate
+libero_spatial,7,24,confirmation,1,113,23,pick up the black bowl on the stove and place it on the plate
+libero_spatial,7,25,development,0,220,44,pick up the black bowl on the stove and place it on the plate
+libero_spatial,7,26,confirmation,1,118,24,pick up the black bowl on the stove and place it on the plate
+libero_spatial,7,27,development,1,126,26,pick up the black bowl on the stove and place it on the plate
+libero_spatial,7,28,development,0,220,44,pick up the black bowl on the stove and place it on the plate
+libero_spatial,7,29,confirmation,1,127,26,pick up the black bowl on the stove and place it on the plate
+libero_spatial,7,30,development,1,119,24,pick up the black bowl on the stove and place it on the plate
+libero_spatial,7,31,development,1,116,24,pick up the black bowl on the stove and place it on the plate
+libero_spatial,7,32,development,1,116,24,pick up the black bowl on the stove and place it on the plate
+libero_spatial,7,33,confirmation,1,125,25,pick up the black bowl on the stove and place it on the plate
+libero_spatial,7,34,confirmation,1,130,26,pick up the black bowl on the stove and place it on the plate
+libero_spatial,7,35,confirmation,0,220,44,pick up the black bowl on the stove and place it on the plate
+libero_spatial,7,36,confirmation,0,220,44,pick up the black bowl on the stove and place it on the plate
+libero_spatial,7,37,development,0,220,44,pick up the black bowl on the stove and place it on the plate
+libero_spatial,7,38,confirmation,0,220,44,pick up the black bowl on the stove and place it on the plate
+libero_spatial,7,39,confirmation,1,116,24,pick up the black bowl on the stove and place it on the plate
+libero_spatial,7,40,confirmation,1,119,24,pick up the black bowl on the stove and place it on the plate
+libero_spatial,7,41,confirmation,1,132,27,pick up the black bowl on the stove and place it on the plate
+libero_spatial,7,42,development,0,220,44,pick up the black bowl on the stove and place it on the plate
+libero_spatial,7,43,development,1,116,24,pick up the black bowl on the stove and place it on the plate
+libero_spatial,7,44,development,1,124,25,pick up the black bowl on the stove and place it on the plate
+libero_spatial,7,45,confirmation,1,118,24,pick up the black bowl on the stove and place it on the plate
+libero_spatial,7,46,confirmation,1,131,27,pick up the black bowl on the stove and place it on the plate
+libero_spatial,7,47,confirmation,0,220,44,pick up the black bowl on the stove and place it on the plate
+libero_spatial,7,48,development,0,220,44,pick up the black bowl on the stove and place it on the plate
+libero_spatial,7,49,confirmation,0,220,44,pick up the black bowl on the stove and place it on the plate
+libero_spatial,8,0,development,0,220,44,pick up the black bowl next to the plate and place it on the plate
+libero_spatial,8,1,development,1,103,21,pick up the black bowl next to the plate and place it on the plate
+libero_spatial,8,2,development,1,180,36,pick up the black bowl next to the plate and place it on the plate
+libero_spatial,8,3,confirmation,1,117,24,pick up the black bowl next to the plate and place it on the plate
+libero_spatial,8,4,confirmation,1,123,25,pick up the black bowl next to the plate and place it on the plate
+libero_spatial,8,5,confirmation,1,107,22,pick up the black bowl next to the plate and place it on the plate
+libero_spatial,8,6,confirmation,1,102,21,pick up the black bowl next to the plate and place it on the plate
+libero_spatial,8,7,confirmation,0,220,44,pick up the black bowl next to the plate and place it on the plate
+libero_spatial,8,8,confirmation,1,107,22,pick up the black bowl next to the plate and place it on the plate
+libero_spatial,8,9,development,0,220,44,pick up the black bowl next to the plate and place it on the plate
+libero_spatial,8,10,confirmation,1,101,21,pick up the black bowl next to the plate and place it on the plate
+libero_spatial,8,11,confirmation,1,109,22,pick up the black bowl next to the plate and place it on the plate
+libero_spatial,8,12,development,1,104,21,pick up the black bowl next to the plate and place it on the plate
+libero_spatial,8,13,confirmation,1,119,24,pick up the black bowl next to the plate and place it on the plate
+libero_spatial,8,14,confirmation,1,108,22,pick up the black bowl next to the plate and place it on the plate
+libero_spatial,8,15,confirmation,1,104,21,pick up the black bowl next to the plate and place it on the plate
+libero_spatial,8,16,development,1,115,23,pick up the black bowl next to the plate and place it on the plate
+libero_spatial,8,17,development,1,105,21,pick up the black bowl next to the plate and place it on the plate
+libero_spatial,8,18,confirmation,1,107,22,pick up the black bowl next to the plate and place it on the plate
+libero_spatial,8,19,development,1,113,23,pick up the black bowl next to the plate and place it on the plate
+libero_spatial,8,20,confirmation,1,114,23,pick up the black bowl next to the plate and place it on the plate
+libero_spatial,8,21,confirmation,1,103,21,pick up the black bowl next to the plate and place it on the plate
+libero_spatial,8,22,development,1,109,22,pick up the black bowl next to the plate and place it on the plate
+libero_spatial,8,23,confirmation,1,103,21,pick up the black bowl next to the plate and place it on the plate
+libero_spatial,8,24,confirmation,1,107,22,pick up the black bowl next to the plate and place it on the plate
+libero_spatial,8,25,confirmation,1,99,20,pick up the black bowl next to the plate and place it on the plate
+libero_spatial,8,26,development,1,106,22,pick up the black bowl next to the plate and place it on the plate
+libero_spatial,8,27,development,1,107,22,pick up the black bowl next to the plate and place it on the plate
+libero_spatial,8,28,development,1,102,21,pick up the black bowl next to the plate and place it on the plate
+libero_spatial,8,29,confirmation,0,220,44,pick up the black bowl next to the plate and place it on the plate
+libero_spatial,8,30,development,1,112,23,pick up the black bowl next to the plate and place it on the plate
+libero_spatial,8,31,confirmation,1,113,23,pick up the black bowl next to the plate and place it on the plate
+libero_spatial,8,32,development,1,106,22,pick up the black bowl next to the plate and place it on the plate
+libero_spatial,8,33,confirmation,1,120,24,pick up the black bowl next to the plate and place it on the plate
+libero_spatial,8,34,confirmation,1,99,20,pick up the black bowl next to the plate and place it on the plate
+libero_spatial,8,35,confirmation,1,101,21,pick up the black bowl next to the plate and place it on the plate
+libero_spatial,8,36,development,1,104,21,pick up the black bowl next to the plate and place it on the plate
+libero_spatial,8,37,development,1,111,23,pick up the black bowl next to the plate and place it on the plate
+libero_spatial,8,38,confirmation,1,99,20,pick up the black bowl next to the plate and place it on the plate
+libero_spatial,8,39,confirmation,0,220,44,pick up the black bowl next to the plate and place it on the plate
+libero_spatial,8,40,confirmation,1,118,24,pick up the black bowl next to the plate and place it on the plate
+libero_spatial,8,41,confirmation,1,106,22,pick up the black bowl next to the plate and place it on the plate
+libero_spatial,8,42,development,1,103,21,pick up the black bowl next to the plate and place it on the plate
+libero_spatial,8,43,confirmation,0,220,44,pick up the black bowl next to the plate and place it on the plate
+libero_spatial,8,44,confirmation,1,120,24,pick up the black bowl next to the plate and place it on the plate
+libero_spatial,8,45,development,1,137,28,pick up the black bowl next to the plate and place it on the plate
+libero_spatial,8,46,confirmation,1,108,22,pick up the black bowl next to the plate and place it on the plate
+libero_spatial,8,47,development,1,107,22,pick up the black bowl next to the plate and place it on the plate
+libero_spatial,8,48,development,1,100,20,pick up the black bowl next to the plate and place it on the plate
+libero_spatial,8,49,confirmation,1,107,22,pick up the black bowl next to the plate and place it on the plate
+libero_spatial,9,0,confirmation,0,220,44,pick up the black bowl on the wooden cabinet and place it on the plate
+libero_spatial,9,1,confirmation,1,132,27,pick up the black bowl on the wooden cabinet and place it on the plate
+libero_spatial,9,2,development,0,220,44,pick up the black bowl on the wooden cabinet and place it on the plate
+libero_spatial,9,3,confirmation,1,137,28,pick up the black bowl on the wooden cabinet and place it on the plate
+libero_spatial,9,4,confirmation,1,125,25,pick up the black bowl on the wooden cabinet and place it on the plate
+libero_spatial,9,5,development,0,220,44,pick up the black bowl on the wooden cabinet and place it on the plate
+libero_spatial,9,6,development,1,137,28,pick up the black bowl on the wooden cabinet and place it on the plate
+libero_spatial,9,7,development,1,137,28,pick up the black bowl on the wooden cabinet and place it on the plate
+libero_spatial,9,8,confirmation,1,137,28,pick up the black bowl on the wooden cabinet and place it on the plate
+libero_spatial,9,9,confirmation,1,140,28,pick up the black bowl on the wooden cabinet and place it on the plate
+libero_spatial,9,10,confirmation,1,105,21,pick up the black bowl on the wooden cabinet and place it on the plate
+libero_spatial,9,11,development,1,136,28,pick up the black bowl on the wooden cabinet and place it on the plate
+libero_spatial,9,12,development,0,220,44,pick up the black bowl on the wooden cabinet and place it on the plate
+libero_spatial,9,13,development,1,138,28,pick up the black bowl on the wooden cabinet and place it on the plate
+libero_spatial,9,14,confirmation,1,125,25,pick up the black bowl on the wooden cabinet and place it on the plate
+libero_spatial,9,15,confirmation,1,126,26,pick up the black bowl on the wooden cabinet and place it on the plate
+libero_spatial,9,16,confirmation,1,137,28,pick up the black bowl on the wooden cabinet and place it on the plate
+libero_spatial,9,17,confirmation,1,123,25,pick up the black bowl on the wooden cabinet and place it on the plate
+libero_spatial,9,18,confirmation,1,127,26,pick up the black bowl on the wooden cabinet and place it on the plate
+libero_spatial,9,19,development,1,161,33,pick up the black bowl on the wooden cabinet and place it on the plate
+libero_spatial,9,20,confirmation,1,123,25,pick up the black bowl on the wooden cabinet and place it on the plate
+libero_spatial,9,21,confirmation,1,133,27,pick up the black bowl on the wooden cabinet and place it on the plate
+libero_spatial,9,22,development,1,126,26,pick up the black bowl on the wooden cabinet and place it on the plate
+libero_spatial,9,23,confirmation,1,124,25,pick up the black bowl on the wooden cabinet and place it on the plate
+libero_spatial,9,24,confirmation,1,148,30,pick up the black bowl on the wooden cabinet and place it on the plate
+libero_spatial,9,25,confirmation,1,136,28,pick up the black bowl on the wooden cabinet and place it on the plate
+libero_spatial,9,26,development,1,133,27,pick up the black bowl on the wooden cabinet and place it on the plate
+libero_spatial,9,27,development,1,139,28,pick up the black bowl on the wooden cabinet and place it on the plate
+libero_spatial,9,28,development,1,151,31,pick up the black bowl on the wooden cabinet and place it on the plate
+libero_spatial,9,29,confirmation,1,137,28,pick up the black bowl on the wooden cabinet and place it on the plate
+libero_spatial,9,30,confirmation,1,136,28,pick up the black bowl on the wooden cabinet and place it on the plate
+libero_spatial,9,31,confirmation,1,128,26,pick up the black bowl on the wooden cabinet and place it on the plate
+libero_spatial,9,32,development,1,128,26,pick up the black bowl on the wooden cabinet and place it on the plate
+libero_spatial,9,33,confirmation,1,136,28,pick up the black bowl on the wooden cabinet and place it on the plate
+libero_spatial,9,34,development,1,127,26,pick up the black bowl on the wooden cabinet and place it on the plate
+libero_spatial,9,35,confirmation,1,131,27,pick up the black bowl on the wooden cabinet and place it on the plate
+libero_spatial,9,36,development,0,220,44,pick up the black bowl on the wooden cabinet and place it on the plate
+libero_spatial,9,37,confirmation,1,144,29,pick up the black bowl on the wooden cabinet and place it on the plate
+libero_spatial,9,38,confirmation,1,126,26,pick up the black bowl on the wooden cabinet and place it on the plate
+libero_spatial,9,39,development,1,132,27,pick up the black bowl on the wooden cabinet and place it on the plate
+libero_spatial,9,40,confirmation,0,220,44,pick up the black bowl on the wooden cabinet and place it on the plate
+libero_spatial,9,41,development,0,220,44,pick up the black bowl on the wooden cabinet and place it on the plate
+libero_spatial,9,42,development,1,123,25,pick up the black bowl on the wooden cabinet and place it on the plate
+libero_spatial,9,43,confirmation,1,130,26,pick up the black bowl on the wooden cabinet and place it on the plate
+libero_spatial,9,44,confirmation,1,126,26,pick up the black bowl on the wooden cabinet and place it on the plate
+libero_spatial,9,45,development,1,131,27,pick up the black bowl on the wooden cabinet and place it on the plate
+libero_spatial,9,46,development,1,127,26,pick up the black bowl on the wooden cabinet and place it on the plate
+libero_spatial,9,47,confirmation,1,127,26,pick up the black bowl on the wooden cabinet and place it on the plate
+libero_spatial,9,48,confirmation,1,121,25,pick up the black bowl on the wooden cabinet and place it on the plate
+libero_spatial,9,49,confirmation,1,127,26,pick up the black bowl on the wooden cabinet and place it on the plate
+libero_10,0,0,confirmation,1,259,52,put both the alphabet soup and the tomato sauce in the basket
+libero_10,0,1,development,1,282,57,put both the alphabet soup and the tomato sauce in the basket
+libero_10,0,2,development,1,284,57,put both the alphabet soup and the tomato sauce in the basket
+libero_10,0,3,confirmation,1,274,55,put both the alphabet soup and the tomato sauce in the basket
+libero_10,0,4,confirmation,1,330,66,put both the alphabet soup and the tomato sauce in the basket
+libero_10,0,5,development,1,306,62,put both the alphabet soup and the tomato sauce in the basket
+libero_10,0,6,confirmation,0,520,104,put both the alphabet soup and the tomato sauce in the basket
+libero_10,0,7,confirmation,0,520,104,put both the alphabet soup and the tomato sauce in the basket
+libero_10,0,8,development,1,264,53,put both the alphabet soup and the tomato sauce in the basket
+libero_10,0,9,confirmation,1,258,52,put both the alphabet soup and the tomato sauce in the basket
+libero_10,0,10,confirmation,1,263,53,put both the alphabet soup and the tomato sauce in the basket
+libero_10,0,11,development,1,298,60,put both the alphabet soup and the tomato sauce in the basket
+libero_10,0,12,confirmation,0,520,104,put both the alphabet soup and the tomato sauce in the basket
+libero_10,0,13,development,1,328,66,put both the alphabet soup and the tomato sauce in the basket
+libero_10,0,14,confirmation,0,520,104,put both the alphabet soup and the tomato sauce in the basket
+libero_10,0,15,confirmation,1,271,55,put both the alphabet soup and the tomato sauce in the basket
+libero_10,0,16,development,1,239,48,put both the alphabet soup and the tomato sauce in the basket
+libero_10,0,17,development,0,520,104,put both the alphabet soup and the tomato sauce in the basket
+libero_10,0,18,confirmation,1,276,56,put both the alphabet soup and the tomato sauce in the basket
+libero_10,0,19,confirmation,1,290,58,put both the alphabet soup and the tomato sauce in the basket
+libero_10,0,20,confirmation,0,520,104,put both the alphabet soup and the tomato sauce in the basket
+libero_10,0,21,development,0,520,104,put both the alphabet soup and the tomato sauce in the basket
+libero_10,0,22,confirmation,0,520,104,put both the alphabet soup and the tomato sauce in the basket
+libero_10,0,23,confirmation,0,520,104,put both the alphabet soup and the tomato sauce in the basket
+libero_10,0,24,development,1,268,54,put both the alphabet soup and the tomato sauce in the basket
+libero_10,0,25,confirmation,1,293,59,put both the alphabet soup and the tomato sauce in the basket
+libero_10,0,26,confirmation,0,520,104,put both the alphabet soup and the tomato sauce in the basket
+libero_10,0,27,confirmation,1,306,62,put both the alphabet soup and the tomato sauce in the basket
+libero_10,0,28,development,0,520,104,put both the alphabet soup and the tomato sauce in the basket
+libero_10,0,29,development,1,336,68,put both the alphabet soup and the tomato sauce in the basket
+libero_10,0,30,confirmation,1,288,58,put both the alphabet soup and the tomato sauce in the basket
+libero_10,0,31,confirmation,1,281,57,put both the alphabet soup and the tomato sauce in the basket
+libero_10,0,32,confirmation,0,520,104,put both the alphabet soup and the tomato sauce in the basket
+libero_10,0,33,development,0,520,104,put both the alphabet soup and the tomato sauce in the basket
+libero_10,0,34,development,0,520,104,put both the alphabet soup and the tomato sauce in the basket
+libero_10,0,35,development,1,292,59,put both the alphabet soup and the tomato sauce in the basket
+libero_10,0,36,confirmation,1,303,61,put both the alphabet soup and the tomato sauce in the basket
+libero_10,0,37,confirmation,1,320,64,put both the alphabet soup and the tomato sauce in the basket
+libero_10,0,38,confirmation,0,520,104,put both the alphabet soup and the tomato sauce in the basket
+libero_10,0,39,development,1,271,55,put both the alphabet soup and the tomato sauce in the basket
+libero_10,0,40,confirmation,1,498,100,put both the alphabet soup and the tomato sauce in the basket
+libero_10,0,41,confirmation,0,520,104,put both the alphabet soup and the tomato sauce in the basket
+libero_10,0,42,confirmation,1,254,51,put both the alphabet soup and the tomato sauce in the basket
+libero_10,0,43,development,1,255,51,put both the alphabet soup and the tomato sauce in the basket
+libero_10,0,44,confirmation,0,520,104,put both the alphabet soup and the tomato sauce in the basket
+libero_10,0,45,development,0,520,104,put both the alphabet soup and the tomato sauce in the basket
+libero_10,0,46,development,1,243,49,put both the alphabet soup and the tomato sauce in the basket
+libero_10,0,47,confirmation,1,267,54,put both the alphabet soup and the tomato sauce in the basket
+libero_10,0,48,development,1,287,58,put both the alphabet soup and the tomato sauce in the basket
+libero_10,0,49,confirmation,1,392,79,put both the alphabet soup and the tomato sauce in the basket
+libero_10,1,0,confirmation,1,252,51,put both the cream cheese box and the butter in the basket
+libero_10,1,1,confirmation,1,258,52,put both the cream cheese box and the butter in the basket
+libero_10,1,2,development,1,230,46,put both the cream cheese box and the butter in the basket
+libero_10,1,3,development,1,267,54,put both the cream cheese box and the butter in the basket
+libero_10,1,4,development,1,238,48,put both the cream cheese box and the butter in the basket
+libero_10,1,5,confirmation,1,237,48,put both the cream cheese box and the butter in the basket
+libero_10,1,6,confirmation,1,246,50,put both the cream cheese box and the butter in the basket
+libero_10,1,7,development,1,237,48,put both the cream cheese box and the butter in the basket
+libero_10,1,8,confirmation,1,257,52,put both the cream cheese box and the butter in the basket
+libero_10,1,9,confirmation,1,237,48,put both the cream cheese box and the butter in the basket
+libero_10,1,10,development,1,248,50,put both the cream cheese box and the butter in the basket
+libero_10,1,11,confirmation,1,242,49,put both the cream cheese box and the butter in the basket
+libero_10,1,12,confirmation,1,254,51,put both the cream cheese box and the butter in the basket
+libero_10,1,13,confirmation,1,236,48,put both the cream cheese box and the butter in the basket
+libero_10,1,14,development,1,243,49,put both the cream cheese box and the butter in the basket
+libero_10,1,15,development,1,258,52,put both the cream cheese box and the butter in the basket
+libero_10,1,16,confirmation,0,520,104,put both the cream cheese box and the butter in the basket
+libero_10,1,17,development,0,520,104,put both the cream cheese box and the butter in the basket
+libero_10,1,18,confirmation,1,222,45,put both the cream cheese box and the butter in the basket
+libero_10,1,19,confirmation,1,396,80,put both the cream cheese box and the butter in the basket
+libero_10,1,20,development,1,243,49,put both the cream cheese box and the butter in the basket
+libero_10,1,21,development,1,247,50,put both the cream cheese box and the butter in the basket
+libero_10,1,22,confirmation,1,314,63,put both the cream cheese box and the butter in the basket
+libero_10,1,23,confirmation,1,234,47,put both the cream cheese box and the butter in the basket
+libero_10,1,24,confirmation,0,520,104,put both the cream cheese box and the butter in the basket
+libero_10,1,25,development,1,238,48,put both the cream cheese box and the butter in the basket
+libero_10,1,26,confirmation,1,260,52,put both the cream cheese box and the butter in the basket
+libero_10,1,27,development,0,520,104,put both the cream cheese box and the butter in the basket
+libero_10,1,28,confirmation,1,236,48,put both the cream cheese box and the butter in the basket
+libero_10,1,29,confirmation,1,245,49,put both the cream cheese box and the butter in the basket
+libero_10,1,30,development,1,247,50,put both the cream cheese box and the butter in the basket
+libero_10,1,31,confirmation,1,266,54,put both the cream cheese box and the butter in the basket
+libero_10,1,32,confirmation,1,252,51,put both the cream cheese box and the butter in the basket
+libero_10,1,33,confirmation,1,284,57,put both the cream cheese box and the butter in the basket
+libero_10,1,34,development,1,290,58,put both the cream cheese box and the butter in the basket
+libero_10,1,35,confirmation,0,520,104,put both the cream cheese box and the butter in the basket
+libero_10,1,36,development,1,243,49,put both the cream cheese box and the butter in the basket
+libero_10,1,37,confirmation,1,243,49,put both the cream cheese box and the butter in the basket
+libero_10,1,38,development,1,231,47,put both the cream cheese box and the butter in the basket
+libero_10,1,39,confirmation,1,322,65,put both the cream cheese box and the butter in the basket
+libero_10,1,40,development,1,237,48,put both the cream cheese box and the butter in the basket
+libero_10,1,41,development,1,359,72,put both the cream cheese box and the butter in the basket
+libero_10,1,42,development,1,249,50,put both the cream cheese box and the butter in the basket
+libero_10,1,43,development,0,520,104,put both the cream cheese box and the butter in the basket
+libero_10,1,44,confirmation,1,284,57,put both the cream cheese box and the butter in the basket
+libero_10,1,45,confirmation,1,243,49,put both the cream cheese box and the butter in the basket
+libero_10,1,46,confirmation,0,520,104,put both the cream cheese box and the butter in the basket
+libero_10,1,47,confirmation,1,267,54,put both the cream cheese box and the butter in the basket
+libero_10,1,48,confirmation,1,243,49,put both the cream cheese box and the butter in the basket
+libero_10,1,49,confirmation,1,463,93,put both the cream cheese box and the butter in the basket
+libero_10,2,0,confirmation,1,282,57,turn on the stove and put the moka pot on it
+libero_10,2,1,confirmation,0,520,104,turn on the stove and put the moka pot on it
+libero_10,2,2,development,1,260,52,turn on the stove and put the moka pot on it
+libero_10,2,3,confirmation,1,260,52,turn on the stove and put the moka pot on it
+libero_10,2,4,development,1,265,53,turn on the stove and put the moka pot on it
+libero_10,2,5,confirmation,0,520,104,turn on the stove and put the moka pot on it
+libero_10,2,6,development,1,256,52,turn on the stove and put the moka pot on it
+libero_10,2,7,confirmation,1,259,52,turn on the stove and put the moka pot on it
+libero_10,2,8,development,1,262,53,turn on the stove and put the moka pot on it
+libero_10,2,9,confirmation,1,262,53,turn on the stove and put the moka pot on it
+libero_10,2,10,confirmation,1,269,54,turn on the stove and put the moka pot on it
+libero_10,2,11,confirmation,1,289,58,turn on the stove and put the moka pot on it
+libero_10,2,12,development,1,244,49,turn on the stove and put the moka pot on it
+libero_10,2,13,development,1,296,60,turn on the stove and put the moka pot on it
+libero_10,2,14,development,1,272,55,turn on the stove and put the moka pot on it
+libero_10,2,15,development,1,262,53,turn on the stove and put the moka pot on it
+libero_10,2,16,confirmation,1,462,93,turn on the stove and put the moka pot on it
+libero_10,2,17,confirmation,1,269,54,turn on the stove and put the moka pot on it
+libero_10,2,18,confirmation,1,287,58,turn on the stove and put the moka pot on it
+libero_10,2,19,confirmation,1,282,57,turn on the stove and put the moka pot on it
+libero_10,2,20,development,1,250,50,turn on the stove and put the moka pot on it
+libero_10,2,21,confirmation,1,288,58,turn on the stove and put the moka pot on it
+libero_10,2,22,development,1,274,55,turn on the stove and put the moka pot on it
+libero_10,2,23,development,1,294,59,turn on the stove and put the moka pot on it
+libero_10,2,24,confirmation,1,260,52,turn on the stove and put the moka pot on it
+libero_10,2,25,confirmation,1,298,60,turn on the stove and put the moka pot on it
+libero_10,2,26,confirmation,1,261,53,turn on the stove and put the moka pot on it
+libero_10,2,27,development,1,252,51,turn on the stove and put the moka pot on it
+libero_10,2,28,confirmation,1,259,52,turn on the stove and put the moka pot on it
+libero_10,2,29,confirmation,1,250,50,turn on the stove and put the moka pot on it
+libero_10,2,30,confirmation,0,520,104,turn on the stove and put the moka pot on it
+libero_10,2,31,development,1,275,55,turn on the stove and put the moka pot on it
+libero_10,2,32,confirmation,1,262,53,turn on the stove and put the moka pot on it
+libero_10,2,33,development,1,357,72,turn on the stove and put the moka pot on it
+libero_10,2,34,confirmation,1,255,51,turn on the stove and put the moka pot on it
+libero_10,2,35,development,1,277,56,turn on the stove and put the moka pot on it
+libero_10,2,36,confirmation,1,288,58,turn on the stove and put the moka pot on it
+libero_10,2,37,confirmation,1,280,56,turn on the stove and put the moka pot on it
+libero_10,2,38,confirmation,1,304,61,turn on the stove and put the moka pot on it
+libero_10,2,39,development,1,275,55,turn on the stove and put the moka pot on it
+libero_10,2,40,development,1,306,62,turn on the stove and put the moka pot on it
+libero_10,2,41,confirmation,0,520,104,turn on the stove and put the moka pot on it
+libero_10,2,42,confirmation,1,287,58,turn on the stove and put the moka pot on it
+libero_10,2,43,confirmation,1,262,53,turn on the stove and put the moka pot on it
+libero_10,2,44,development,1,289,58,turn on the stove and put the moka pot on it
+libero_10,2,45,development,1,329,66,turn on the stove and put the moka pot on it
+libero_10,2,46,confirmation,1,295,59,turn on the stove and put the moka pot on it
+libero_10,2,47,confirmation,1,314,63,turn on the stove and put the moka pot on it
+libero_10,2,48,confirmation,1,305,61,turn on the stove and put the moka pot on it
+libero_10,2,49,development,1,263,53,turn on the stove and put the moka pot on it
+libero_10,3,0,confirmation,1,257,52,put the black bowl in the bottom drawer of the cabinet and close it
+libero_10,3,1,confirmation,1,218,44,put the black bowl in the bottom drawer of the cabinet and close it
+libero_10,3,2,confirmation,0,520,104,put the black bowl in the bottom drawer of the cabinet and close it
+libero_10,3,3,development,1,215,43,put the black bowl in the bottom drawer of the cabinet and close it
+libero_10,3,4,confirmation,0,520,104,put the black bowl in the bottom drawer of the cabinet and close it
+libero_10,3,5,development,1,237,48,put the black bowl in the bottom drawer of the cabinet and close it
+libero_10,3,6,confirmation,0,520,104,put the black bowl in the bottom drawer of the cabinet and close it
+libero_10,3,7,development,1,229,46,put the black bowl in the bottom drawer of the cabinet and close it
+libero_10,3,8,confirmation,1,222,45,put the black bowl in the bottom drawer of the cabinet and close it
+libero_10,3,9,development,1,223,45,put the black bowl in the bottom drawer of the cabinet and close it
+libero_10,3,10,development,1,251,51,put the black bowl in the bottom drawer of the cabinet and close it
+libero_10,3,11,development,1,251,51,put the black bowl in the bottom drawer of the cabinet and close it
+libero_10,3,12,confirmation,1,281,57,put the black bowl in the bottom drawer of the cabinet and close it
+libero_10,3,13,confirmation,1,256,52,put the black bowl in the bottom drawer of the cabinet and close it
+libero_10,3,14,confirmation,1,227,46,put the black bowl in the bottom drawer of the cabinet and close it
+libero_10,3,15,confirmation,1,246,50,put the black bowl in the bottom drawer of the cabinet and close it
+libero_10,3,16,confirmation,1,263,53,put the black bowl in the bottom drawer of the cabinet and close it
+libero_10,3,17,development,1,231,47,put the black bowl in the bottom drawer of the cabinet and close it
+libero_10,3,18,confirmation,1,240,48,put the black bowl in the bottom drawer of the cabinet and close it
+libero_10,3,19,development,1,371,75,put the black bowl in the bottom drawer of the cabinet and close it
+libero_10,3,20,confirmation,1,262,53,put the black bowl in the bottom drawer of the cabinet and close it
+libero_10,3,21,development,1,225,45,put the black bowl in the bottom drawer of the cabinet and close it
+libero_10,3,22,confirmation,1,231,47,put the black bowl in the bottom drawer of the cabinet and close it
+libero_10,3,23,development,1,244,49,put the black bowl in the bottom drawer of the cabinet and close it
+libero_10,3,24,development,1,252,51,put the black bowl in the bottom drawer of the cabinet and close it
+libero_10,3,25,confirmation,1,221,45,put the black bowl in the bottom drawer of the cabinet and close it
+libero_10,3,26,development,1,239,48,put the black bowl in the bottom drawer of the cabinet and close it
+libero_10,3,27,confirmation,1,244,49,put the black bowl in the bottom drawer of the cabinet and close it
+libero_10,3,28,confirmation,1,230,46,put the black bowl in the bottom drawer of the cabinet and close it
+libero_10,3,29,confirmation,1,226,46,put the black bowl in the bottom drawer of the cabinet and close it
+libero_10,3,30,development,1,230,46,put the black bowl in the bottom drawer of the cabinet and close it
+libero_10,3,31,confirmation,1,227,46,put the black bowl in the bottom drawer of the cabinet and close it
+libero_10,3,32,development,1,261,53,put the black bowl in the bottom drawer of the cabinet and close it
+libero_10,3,33,confirmation,1,219,44,put the black bowl in the bottom drawer of the cabinet and close it
+libero_10,3,34,development,1,229,46,put the black bowl in the bottom drawer of the cabinet and close it
+libero_10,3,35,confirmation,1,271,55,put the black bowl in the bottom drawer of the cabinet and close it
+libero_10,3,36,confirmation,1,252,51,put the black bowl in the bottom drawer of the cabinet and close it
+libero_10,3,37,confirmation,1,230,46,put the black bowl in the bottom drawer of the cabinet and close it
+libero_10,3,38,development,1,231,47,put the black bowl in the bottom drawer of the cabinet and close it
+libero_10,3,39,confirmation,1,226,46,put the black bowl in the bottom drawer of the cabinet and close it
+libero_10,3,40,confirmation,1,219,44,put the black bowl in the bottom drawer of the cabinet and close it
+libero_10,3,41,confirmation,1,225,45,put the black bowl in the bottom drawer of the cabinet and close it
+libero_10,3,42,development,1,247,50,put the black bowl in the bottom drawer of the cabinet and close it
+libero_10,3,43,development,1,266,54,put the black bowl in the bottom drawer of the cabinet and close it
+libero_10,3,44,development,1,227,46,put the black bowl in the bottom drawer of the cabinet and close it
+libero_10,3,45,confirmation,1,223,45,put the black bowl in the bottom drawer of the cabinet and close it
+libero_10,3,46,development,0,520,104,put the black bowl in the bottom drawer of the cabinet and close it
+libero_10,3,47,confirmation,0,520,104,put the black bowl in the bottom drawer of the cabinet and close it
+libero_10,3,48,confirmation,0,520,104,put the black bowl in the bottom drawer of the cabinet and close it
+libero_10,3,49,confirmation,1,327,66,put the black bowl in the bottom drawer of the cabinet and close it
+libero_10,4,0,confirmation,1,285,57,put the white mug on the left plate and put the yellow and white mug on the right plate
+libero_10,4,1,confirmation,1,218,44,put the white mug on the left plate and put the yellow and white mug on the right plate
+libero_10,4,2,development,1,236,48,put the white mug on the left plate and put the yellow and white mug on the right plate
+libero_10,4,3,confirmation,1,244,49,put the white mug on the left plate and put the yellow and white mug on the right plate
+libero_10,4,4,confirmation,1,221,45,put the white mug on the left plate and put the yellow and white mug on the right plate
+libero_10,4,5,development,0,520,104,put the white mug on the left plate and put the yellow and white mug on the right plate
+libero_10,4,6,confirmation,1,233,47,put the white mug on the left plate and put the yellow and white mug on the right plate
+libero_10,4,7,development,0,520,104,put the white mug on the left plate and put the yellow and white mug on the right plate
+libero_10,4,8,confirmation,0,520,104,put the white mug on the left plate and put the yellow and white mug on the right plate
+libero_10,4,9,development,1,246,50,put the white mug on the left plate and put the yellow and white mug on the right plate
+libero_10,4,10,development,1,219,44,put the white mug on the left plate and put the yellow and white mug on the right plate
+libero_10,4,11,confirmation,1,254,51,put the white mug on the left plate and put the yellow and white mug on the right plate
+libero_10,4,12,development,1,224,45,put the white mug on the left plate and put the yellow and white mug on the right plate
+libero_10,4,13,confirmation,1,234,47,put the white mug on the left plate and put the yellow and white mug on the right plate
+libero_10,4,14,confirmation,1,228,46,put the white mug on the left plate and put the yellow and white mug on the right plate
+libero_10,4,15,confirmation,1,254,51,put the white mug on the left plate and put the yellow and white mug on the right plate
+libero_10,4,16,confirmation,1,235,47,put the white mug on the left plate and put the yellow and white mug on the right plate
+libero_10,4,17,development,1,235,47,put the white mug on the left plate and put the yellow and white mug on the right plate
+libero_10,4,18,development,1,237,48,put the white mug on the left plate and put the yellow and white mug on the right plate
+libero_10,4,19,confirmation,0,520,104,put the white mug on the left plate and put the yellow and white mug on the right plate
+libero_10,4,20,confirmation,1,233,47,put the white mug on the left plate and put the yellow and white mug on the right plate
+libero_10,4,21,confirmation,0,520,104,put the white mug on the left plate and put the yellow and white mug on the right plate
+libero_10,4,22,confirmation,0,520,104,put the white mug on the left plate and put the yellow and white mug on the right plate
+libero_10,4,23,development,1,246,50,put the white mug on the left plate and put the yellow and white mug on the right plate
+libero_10,4,24,development,1,247,50,put the white mug on the left plate and put the yellow and white mug on the right plate
+libero_10,4,25,development,1,233,47,put the white mug on the left plate and put the yellow and white mug on the right plate
+libero_10,4,26,confirmation,1,246,50,put the white mug on the left plate and put the yellow and white mug on the right plate
+libero_10,4,27,confirmation,0,520,104,put the white mug on the left plate and put the yellow and white mug on the right plate
+libero_10,4,28,confirmation,1,227,46,put the white mug on the left plate and put the yellow and white mug on the right plate
+libero_10,4,29,development,1,237,48,put the white mug on the left plate and put the yellow and white mug on the right plate
+libero_10,4,30,development,0,520,104,put the white mug on the left plate and put the yellow and white mug on the right plate
+libero_10,4,31,confirmation,1,232,47,put the white mug on the left plate and put the yellow and white mug on the right plate
+libero_10,4,32,development,0,520,104,put the white mug on the left plate and put the yellow and white mug on the right plate
+libero_10,4,33,confirmation,1,230,46,put the white mug on the left plate and put the yellow and white mug on the right plate
+libero_10,4,34,confirmation,0,520,104,put the white mug on the left plate and put the yellow and white mug on the right plate
+libero_10,4,35,development,1,243,49,put the white mug on the left plate and put the yellow and white mug on the right plate
+libero_10,4,36,development,1,219,44,put the white mug on the left plate and put the yellow and white mug on the right plate
+libero_10,4,37,confirmation,0,520,104,put the white mug on the left plate and put the yellow and white mug on the right plate
+libero_10,4,38,confirmation,1,276,56,put the white mug on the left plate and put the yellow and white mug on the right plate
+libero_10,4,39,confirmation,1,214,43,put the white mug on the left plate and put the yellow and white mug on the right plate
+libero_10,4,40,confirmation,1,246,50,put the white mug on the left plate and put the yellow and white mug on the right plate
+libero_10,4,41,confirmation,0,520,104,put the white mug on the left plate and put the yellow and white mug on the right plate
+libero_10,4,42,development,1,257,52,put the white mug on the left plate and put the yellow and white mug on the right plate
+libero_10,4,43,confirmation,1,308,62,put the white mug on the left plate and put the yellow and white mug on the right plate
+libero_10,4,44,confirmation,0,520,104,put the white mug on the left plate and put the yellow and white mug on the right plate
+libero_10,4,45,confirmation,1,233,47,put the white mug on the left plate and put the yellow and white mug on the right plate
+libero_10,4,46,development,1,232,47,put the white mug on the left plate and put the yellow and white mug on the right plate
+libero_10,4,47,development,1,230,46,put the white mug on the left plate and put the yellow and white mug on the right plate
+libero_10,4,48,confirmation,1,241,49,put the white mug on the left plate and put the yellow and white mug on the right plate
+libero_10,4,49,development,1,236,48,put the white mug on the left plate and put the yellow and white mug on the right plate
+libero_10,5,0,confirmation,1,156,32,pick up the book and place it in the back compartment of the caddy
+libero_10,5,1,confirmation,1,165,33,pick up the book and place it in the back compartment of the caddy
+libero_10,5,2,development,1,157,32,pick up the book and place it in the back compartment of the caddy
+libero_10,5,3,confirmation,1,151,31,pick up the book and place it in the back compartment of the caddy
+libero_10,5,4,development,1,164,33,pick up the book and place it in the back compartment of the caddy
+libero_10,5,5,confirmation,1,153,31,pick up the book and place it in the back compartment of the caddy
+libero_10,5,6,development,1,166,34,pick up the book and place it in the back compartment of the caddy
+libero_10,5,7,confirmation,1,166,34,pick up the book and place it in the back compartment of the caddy
+libero_10,5,8,confirmation,1,138,28,pick up the book and place it in the back compartment of the caddy
+libero_10,5,9,development,1,187,38,pick up the book and place it in the back compartment of the caddy
+libero_10,5,10,development,0,520,104,pick up the book and place it in the back compartment of the caddy
+libero_10,5,11,confirmation,1,161,33,pick up the book and place it in the back compartment of the caddy
+libero_10,5,12,development,1,168,34,pick up the book and place it in the back compartment of the caddy
+libero_10,5,13,development,1,131,27,pick up the book and place it in the back compartment of the caddy
+libero_10,5,14,confirmation,1,160,32,pick up the book and place it in the back compartment of the caddy
+libero_10,5,15,development,0,520,104,pick up the book and place it in the back compartment of the caddy
+libero_10,5,16,confirmation,1,151,31,pick up the book and place it in the back compartment of the caddy
+libero_10,5,17,confirmation,1,196,40,pick up the book and place it in the back compartment of the caddy
+libero_10,5,18,confirmation,1,147,30,pick up the book and place it in the back compartment of the caddy
+libero_10,5,19,confirmation,1,180,36,pick up the book and place it in the back compartment of the caddy
+libero_10,5,20,confirmation,1,175,35,pick up the book and place it in the back compartment of the caddy
+libero_10,5,21,development,1,164,33,pick up the book and place it in the back compartment of the caddy
+libero_10,5,22,confirmation,1,147,30,pick up the book and place it in the back compartment of the caddy
+libero_10,5,23,development,1,126,26,pick up the book and place it in the back compartment of the caddy
+libero_10,5,24,development,1,188,38,pick up the book and place it in the back compartment of the caddy
+libero_10,5,25,confirmation,1,189,38,pick up the book and place it in the back compartment of the caddy
+libero_10,5,26,development,1,158,32,pick up the book and place it in the back compartment of the caddy
+libero_10,5,27,confirmation,0,520,104,pick up the book and place it in the back compartment of the caddy
+libero_10,5,28,confirmation,1,168,34,pick up the book and place it in the back compartment of the caddy
+libero_10,5,29,confirmation,1,254,51,pick up the book and place it in the back compartment of the caddy
+libero_10,5,30,development,1,184,37,pick up the book and place it in the back compartment of the caddy
+libero_10,5,31,confirmation,1,169,34,pick up the book and place it in the back compartment of the caddy
+libero_10,5,32,development,1,194,39,pick up the book and place it in the back compartment of the caddy
+libero_10,5,33,confirmation,1,162,33,pick up the book and place it in the back compartment of the caddy
+libero_10,5,34,confirmation,0,520,104,pick up the book and place it in the back compartment of the caddy
+libero_10,5,35,development,0,520,104,pick up the book and place it in the back compartment of the caddy
+libero_10,5,36,development,0,520,104,pick up the book and place it in the back compartment of the caddy
+libero_10,5,37,confirmation,1,154,31,pick up the book and place it in the back compartment of the caddy
+libero_10,5,38,confirmation,1,167,34,pick up the book and place it in the back compartment of the caddy
+libero_10,5,39,confirmation,1,150,30,pick up the book and place it in the back compartment of the caddy
+libero_10,5,40,confirmation,1,161,33,pick up the book and place it in the back compartment of the caddy
+libero_10,5,41,confirmation,1,184,37,pick up the book and place it in the back compartment of the caddy
+libero_10,5,42,confirmation,1,143,29,pick up the book and place it in the back compartment of the caddy
+libero_10,5,43,confirmation,1,157,32,pick up the book and place it in the back compartment of the caddy
+libero_10,5,44,development,1,203,41,pick up the book and place it in the back compartment of the caddy
+libero_10,5,45,confirmation,1,172,35,pick up the book and place it in the back compartment of the caddy
+libero_10,5,46,development,1,185,37,pick up the book and place it in the back compartment of the caddy
+libero_10,5,47,development,1,160,32,pick up the book and place it in the back compartment of the caddy
+libero_10,5,48,development,1,177,36,pick up the book and place it in the back compartment of the caddy
+libero_10,5,49,confirmation,1,186,38,pick up the book and place it in the back compartment of the caddy
+libero_10,6,0,confirmation,0,520,104,put the white mug on the plate and put the chocolate pudding to the right of the plate
+libero_10,6,1,development,1,208,42,put the white mug on the plate and put the chocolate pudding to the right of the plate
+libero_10,6,2,confirmation,1,329,66,put the white mug on the plate and put the chocolate pudding to the right of the plate
+libero_10,6,3,confirmation,1,214,43,put the white mug on the plate and put the chocolate pudding to the right of the plate
+libero_10,6,4,development,1,234,47,put the white mug on the plate and put the chocolate pudding to the right of the plate
+libero_10,6,5,confirmation,0,520,104,put the white mug on the plate and put the chocolate pudding to the right of the plate
+libero_10,6,6,development,0,520,104,put the white mug on the plate and put the chocolate pudding to the right of the plate
+libero_10,6,7,development,1,461,93,put the white mug on the plate and put the chocolate pudding to the right of the plate
+libero_10,6,8,confirmation,1,216,44,put the white mug on the plate and put the chocolate pudding to the right of the plate
+libero_10,6,9,confirmation,1,248,50,put the white mug on the plate and put the chocolate pudding to the right of the plate
+libero_10,6,10,confirmation,1,358,72,put the white mug on the plate and put the chocolate pudding to the right of the plate
+libero_10,6,11,confirmation,1,416,84,put the white mug on the plate and put the chocolate pudding to the right of the plate
+libero_10,6,12,development,1,392,79,put the white mug on the plate and put the chocolate pudding to the right of the plate
+libero_10,6,13,confirmation,0,520,104,put the white mug on the plate and put the chocolate pudding to the right of the plate
+libero_10,6,14,development,0,520,104,put the white mug on the plate and put the chocolate pudding to the right of the plate
+libero_10,6,15,development,0,520,104,put the white mug on the plate and put the chocolate pudding to the right of the plate
+libero_10,6,16,development,1,273,55,put the white mug on the plate and put the chocolate pudding to the right of the plate
+libero_10,6,17,confirmation,1,251,51,put the white mug on the plate and put the chocolate pudding to the right of the plate
+libero_10,6,18,confirmation,1,232,47,put the white mug on the plate and put the chocolate pudding to the right of the plate
+libero_10,6,19,confirmation,0,520,104,put the white mug on the plate and put the chocolate pudding to the right of the plate
+libero_10,6,20,confirmation,0,520,104,put the white mug on the plate and put the chocolate pudding to the right of the plate
+libero_10,6,21,confirmation,0,520,104,put the white mug on the plate and put the chocolate pudding to the right of the plate
+libero_10,6,22,development,1,373,75,put the white mug on the plate and put the chocolate pudding to the right of the plate
+libero_10,6,23,confirmation,0,520,104,put the white mug on the plate and put the chocolate pudding to the right of the plate
+libero_10,6,24,development,1,276,56,put the white mug on the plate and put the chocolate pudding to the right of the plate
+libero_10,6,25,confirmation,1,253,51,put the white mug on the plate and put the chocolate pudding to the right of the plate
+libero_10,6,26,confirmation,0,520,104,put the white mug on the plate and put the chocolate pudding to the right of the plate
+libero_10,6,27,development,0,520,104,put the white mug on the plate and put the chocolate pudding to the right of the plate
+libero_10,6,28,confirmation,0,520,104,put the white mug on the plate and put the chocolate pudding to the right of the plate
+libero_10,6,29,development,1,416,84,put the white mug on the plate and put the chocolate pudding to the right of the plate
+libero_10,6,30,development,0,520,104,put the white mug on the plate and put the chocolate pudding to the right of the plate
+libero_10,6,31,confirmation,0,520,104,put the white mug on the plate and put the chocolate pudding to the right of the plate
+libero_10,6,32,confirmation,0,520,104,put the white mug on the plate and put the chocolate pudding to the right of the plate
+libero_10,6,33,development,0,520,104,put the white mug on the plate and put the chocolate pudding to the right of the plate
+libero_10,6,34,confirmation,1,290,58,put the white mug on the plate and put the chocolate pudding to the right of the plate
+libero_10,6,35,development,0,520,104,put the white mug on the plate and put the chocolate pudding to the right of the plate
+libero_10,6,36,development,0,520,104,put the white mug on the plate and put the chocolate pudding to the right of the plate
+libero_10,6,37,confirmation,1,246,50,put the white mug on the plate and put the chocolate pudding to the right of the plate
+libero_10,6,38,confirmation,0,520,104,put the white mug on the plate and put the chocolate pudding to the right of the plate
+libero_10,6,39,confirmation,0,520,104,put the white mug on the plate and put the chocolate pudding to the right of the plate
+libero_10,6,40,development,1,227,46,put the white mug on the plate and put the chocolate pudding to the right of the plate
+libero_10,6,41,confirmation,1,434,87,put the white mug on the plate and put the chocolate pudding to the right of the plate
+libero_10,6,42,development,0,520,104,put the white mug on the plate and put the chocolate pudding to the right of the plate
+libero_10,6,43,confirmation,1,230,46,put the white mug on the plate and put the chocolate pudding to the right of the plate
+libero_10,6,44,confirmation,1,455,91,put the white mug on the plate and put the chocolate pudding to the right of the plate
+libero_10,6,45,confirmation,1,348,70,put the white mug on the plate and put the chocolate pudding to the right of the plate
+libero_10,6,46,confirmation,0,520,104,put the white mug on the plate and put the chocolate pudding to the right of the plate
+libero_10,6,47,development,0,520,104,put the white mug on the plate and put the chocolate pudding to the right of the plate
+libero_10,6,48,development,1,274,55,put the white mug on the plate and put the chocolate pudding to the right of the plate
+libero_10,6,49,confirmation,0,520,104,put the white mug on the plate and put the chocolate pudding to the right of the plate
+libero_10,7,0,confirmation,0,520,104,put both the alphabet soup and the cream cheese box in the basket
+libero_10,7,1,development,1,263,53,put both the alphabet soup and the cream cheese box in the basket
+libero_10,7,2,development,1,265,53,put both the alphabet soup and the cream cheese box in the basket
+libero_10,7,3,confirmation,1,224,45,put both the alphabet soup and the cream cheese box in the basket
+libero_10,7,4,development,0,520,104,put both the alphabet soup and the cream cheese box in the basket
+libero_10,7,5,confirmation,1,257,52,put both the alphabet soup and the cream cheese box in the basket
+libero_10,7,6,confirmation,1,261,53,put both the alphabet soup and the cream cheese box in the basket
+libero_10,7,7,confirmation,1,279,56,put both the alphabet soup and the cream cheese box in the basket
+libero_10,7,8,confirmation,0,520,104,put both the alphabet soup and the cream cheese box in the basket
+libero_10,7,9,development,1,259,52,put both the alphabet soup and the cream cheese box in the basket
+libero_10,7,10,development,1,261,53,put both the alphabet soup and the cream cheese box in the basket
+libero_10,7,11,development,1,251,51,put both the alphabet soup and the cream cheese box in the basket
+libero_10,7,12,confirmation,1,236,48,put both the alphabet soup and the cream cheese box in the basket
+libero_10,7,13,confirmation,1,311,63,put both the alphabet soup and the cream cheese box in the basket
+libero_10,7,14,confirmation,1,256,52,put both the alphabet soup and the cream cheese box in the basket
+libero_10,7,15,development,1,232,47,put both the alphabet soup and the cream cheese box in the basket
+libero_10,7,16,confirmation,1,263,53,put both the alphabet soup and the cream cheese box in the basket
+libero_10,7,17,confirmation,1,224,45,put both the alphabet soup and the cream cheese box in the basket
+libero_10,7,18,confirmation,1,242,49,put both the alphabet soup and the cream cheese box in the basket
+libero_10,7,19,development,1,257,52,put both the alphabet soup and the cream cheese box in the basket
+libero_10,7,20,confirmation,1,251,51,put both the alphabet soup and the cream cheese box in the basket
+libero_10,7,21,confirmation,0,520,104,put both the alphabet soup and the cream cheese box in the basket
+libero_10,7,22,confirmation,1,235,47,put both the alphabet soup and the cream cheese box in the basket
+libero_10,7,23,development,0,520,104,put both the alphabet soup and the cream cheese box in the basket
+libero_10,7,24,development,1,258,52,put both the alphabet soup and the cream cheese box in the basket
+libero_10,7,25,confirmation,1,255,51,put both the alphabet soup and the cream cheese box in the basket
+libero_10,7,26,development,1,243,49,put both the alphabet soup and the cream cheese box in the basket
+libero_10,7,27,development,1,262,53,put both the alphabet soup and the cream cheese box in the basket
+libero_10,7,28,confirmation,1,273,55,put both the alphabet soup and the cream cheese box in the basket
+libero_10,7,29,confirmation,1,246,50,put both the alphabet soup and the cream cheese box in the basket
+libero_10,7,30,development,1,262,53,put both the alphabet soup and the cream cheese box in the basket
+libero_10,7,31,development,1,240,48,put both the alphabet soup and the cream cheese box in the basket
+libero_10,7,32,confirmation,1,346,70,put both the alphabet soup and the cream cheese box in the basket
+libero_10,7,33,confirmation,1,269,54,put both the alphabet soup and the cream cheese box in the basket
+libero_10,7,34,confirmation,1,265,53,put both the alphabet soup and the cream cheese box in the basket
+libero_10,7,35,development,1,313,63,put both the alphabet soup and the cream cheese box in the basket
+libero_10,7,36,development,0,520,104,put both the alphabet soup and the cream cheese box in the basket
+libero_10,7,37,confirmation,1,259,52,put both the alphabet soup and the cream cheese box in the basket
+libero_10,7,38,confirmation,0,520,104,put both the alphabet soup and the cream cheese box in the basket
+libero_10,7,39,confirmation,1,258,52,put both the alphabet soup and the cream cheese box in the basket
+libero_10,7,40,confirmation,1,283,57,put both the alphabet soup and the cream cheese box in the basket
+libero_10,7,41,development,1,253,51,put both the alphabet soup and the cream cheese box in the basket
+libero_10,7,42,development,1,222,45,put both the alphabet soup and the cream cheese box in the basket
+libero_10,7,43,confirmation,1,249,50,put both the alphabet soup and the cream cheese box in the basket
+libero_10,7,44,development,1,267,54,put both the alphabet soup and the cream cheese box in the basket
+libero_10,7,45,confirmation,1,265,53,put both the alphabet soup and the cream cheese box in the basket
+libero_10,7,46,confirmation,1,273,55,put both the alphabet soup and the cream cheese box in the basket
+libero_10,7,47,development,1,372,75,put both the alphabet soup and the cream cheese box in the basket
+libero_10,7,48,confirmation,0,520,104,put both the alphabet soup and the cream cheese box in the basket
+libero_10,7,49,confirmation,1,247,50,put both the alphabet soup and the cream cheese box in the basket
+libero_10,8,0,confirmation,0,520,104,put both moka pots on the stove
+libero_10,8,1,confirmation,0,520,104,put both moka pots on the stove
+libero_10,8,2,confirmation,0,520,104,put both moka pots on the stove
+libero_10,8,3,confirmation,0,520,104,put both moka pots on the stove
+libero_10,8,4,development,0,520,104,put both moka pots on the stove
+libero_10,8,5,development,0,520,104,put both moka pots on the stove
+libero_10,8,6,confirmation,0,520,104,put both moka pots on the stove
+libero_10,8,7,confirmation,0,520,104,put both moka pots on the stove
+libero_10,8,8,development,0,520,104,put both moka pots on the stove
+libero_10,8,9,development,0,520,104,put both moka pots on the stove
+libero_10,8,10,confirmation,0,520,104,put both moka pots on the stove
+libero_10,8,11,confirmation,0,520,104,put both moka pots on the stove
+libero_10,8,12,development,0,520,104,put both moka pots on the stove
+libero_10,8,13,confirmation,0,520,104,put both moka pots on the stove
+libero_10,8,14,confirmation,0,520,104,put both moka pots on the stove
+libero_10,8,15,development,0,520,104,put both moka pots on the stove
+libero_10,8,16,confirmation,0,520,104,put both moka pots on the stove
+libero_10,8,17,confirmation,0,520,104,put both moka pots on the stove
+libero_10,8,18,development,0,520,104,put both moka pots on the stove
+libero_10,8,19,development,0,520,104,put both moka pots on the stove
+libero_10,8,20,confirmation,0,520,104,put both moka pots on the stove
+libero_10,8,21,confirmation,0,520,104,put both moka pots on the stove
+libero_10,8,22,development,0,520,104,put both moka pots on the stove
+libero_10,8,23,confirmation,0,520,104,put both moka pots on the stove
+libero_10,8,24,confirmation,0,520,104,put both moka pots on the stove
+libero_10,8,25,confirmation,0,520,104,put both moka pots on the stove
+libero_10,8,26,development,0,520,104,put both moka pots on the stove
+libero_10,8,27,confirmation,0,520,104,put both moka pots on the stove
+libero_10,8,28,development,0,520,104,put both moka pots on the stove
+libero_10,8,29,development,0,520,104,put both moka pots on the stove
+libero_10,8,30,development,0,520,104,put both moka pots on the stove
+libero_10,8,31,confirmation,0,520,104,put both moka pots on the stove
+libero_10,8,32,confirmation,0,520,104,put both moka pots on the stove
+libero_10,8,33,development,0,520,104,put both moka pots on the stove
+libero_10,8,34,confirmation,0,520,104,put both moka pots on the stove
+libero_10,8,35,development,0,520,104,put both moka pots on the stove
+libero_10,8,36,confirmation,0,520,104,put both moka pots on the stove
+libero_10,8,37,confirmation,0,520,104,put both moka pots on the stove
+libero_10,8,38,development,0,520,104,put both moka pots on the stove
+libero_10,8,39,confirmation,0,520,104,put both moka pots on the stove
+libero_10,8,40,confirmation,0,520,104,put both moka pots on the stove
+libero_10,8,41,confirmation,0,520,104,put both moka pots on the stove
+libero_10,8,42,development,0,520,104,put both moka pots on the stove
+libero_10,8,43,confirmation,0,520,104,put both moka pots on the stove
+libero_10,8,44,confirmation,0,520,104,put both moka pots on the stove
+libero_10,8,45,confirmation,0,520,104,put both moka pots on the stove
+libero_10,8,46,development,0,520,104,put both moka pots on the stove
+libero_10,8,47,development,0,520,104,put both moka pots on the stove
+libero_10,8,48,confirmation,0,520,104,put both moka pots on the stove
+libero_10,8,49,development,0,520,104,put both moka pots on the stove
+libero_10,9,0,confirmation,1,290,58,put the yellow and white mug in the microwave and close it
+libero_10,9,1,development,0,520,104,put the yellow and white mug in the microwave and close it
+libero_10,9,2,development,1,294,59,put the yellow and white mug in the microwave and close it
+libero_10,9,3,confirmation,0,520,104,put the yellow and white mug in the microwave and close it
+libero_10,9,4,development,0,520,104,put the yellow and white mug in the microwave and close it
+libero_10,9,5,confirmation,0,520,104,put the yellow and white mug in the microwave and close it
+libero_10,9,6,confirmation,0,520,104,put the yellow and white mug in the microwave and close it
+libero_10,9,7,confirmation,0,520,104,put the yellow and white mug in the microwave and close it
+libero_10,9,8,development,1,310,62,put the yellow and white mug in the microwave and close it
+libero_10,9,9,confirmation,1,311,63,put the yellow and white mug in the microwave and close it
+libero_10,9,10,development,1,266,54,put the yellow and white mug in the microwave and close it
+libero_10,9,11,development,0,520,104,put the yellow and white mug in the microwave and close it
+libero_10,9,12,confirmation,1,403,81,put the yellow and white mug in the microwave and close it
+libero_10,9,13,confirmation,0,520,104,put the yellow and white mug in the microwave and close it
+libero_10,9,14,confirmation,1,285,57,put the yellow and white mug in the microwave and close it
+libero_10,9,15,development,1,259,52,put the yellow and white mug in the microwave and close it
+libero_10,9,16,confirmation,1,294,59,put the yellow and white mug in the microwave and close it
+libero_10,9,17,confirmation,0,520,104,put the yellow and white mug in the microwave and close it
+libero_10,9,18,development,0,520,104,put the yellow and white mug in the microwave and close it
+libero_10,9,19,confirmation,1,265,53,put the yellow and white mug in the microwave and close it
+libero_10,9,20,development,0,520,104,put the yellow and white mug in the microwave and close it
+libero_10,9,21,confirmation,0,520,104,put the yellow and white mug in the microwave and close it
+libero_10,9,22,confirmation,0,520,104,put the yellow and white mug in the microwave and close it
+libero_10,9,23,development,0,520,104,put the yellow and white mug in the microwave and close it
+libero_10,9,24,development,0,520,104,put the yellow and white mug in the microwave and close it
+libero_10,9,25,development,0,520,104,put the yellow and white mug in the microwave and close it
+libero_10,9,26,confirmation,1,269,54,put the yellow and white mug in the microwave and close it
+libero_10,9,27,confirmation,0,520,104,put the yellow and white mug in the microwave and close it
+libero_10,9,28,confirmation,0,520,104,put the yellow and white mug in the microwave and close it
+libero_10,9,29,confirmation,1,271,55,put the yellow and white mug in the microwave and close it
+libero_10,9,30,development,0,520,104,put the yellow and white mug in the microwave and close it
+libero_10,9,31,confirmation,1,241,49,put the yellow and white mug in the microwave and close it
+libero_10,9,32,confirmation,1,292,59,put the yellow and white mug in the microwave and close it
+libero_10,9,33,development,0,520,104,put the yellow and white mug in the microwave and close it
+libero_10,9,34,confirmation,1,280,56,put the yellow and white mug in the microwave and close it
+libero_10,9,35,confirmation,0,520,104,put the yellow and white mug in the microwave and close it
+libero_10,9,36,development,0,520,104,put the yellow and white mug in the microwave and close it
+libero_10,9,37,confirmation,0,520,104,put the yellow and white mug in the microwave and close it
+libero_10,9,38,development,0,520,104,put the yellow and white mug in the microwave and close it
+libero_10,9,39,confirmation,0,520,104,put the yellow and white mug in the microwave and close it
+libero_10,9,40,development,1,263,53,put the yellow and white mug in the microwave and close it
+libero_10,9,41,confirmation,1,271,55,put the yellow and white mug in the microwave and close it
+libero_10,9,42,confirmation,1,264,53,put the yellow and white mug in the microwave and close it
+libero_10,9,43,development,1,262,53,put the yellow and white mug in the microwave and close it
+libero_10,9,44,confirmation,0,520,104,put the yellow and white mug in the microwave and close it
+libero_10,9,45,development,1,377,76,put the yellow and white mug in the microwave and close it
+libero_10,9,46,development,1,239,48,put the yellow and white mug in the microwave and close it
+libero_10,9,47,confirmation,1,298,60,put the yellow and white mug in the microwave and close it
+libero_10,9,48,confirmation,0,520,104,put the yellow and white mug in the microwave and close it
+libero_10,9,49,confirmation,0,520,104,put the yellow and white mug in the microwave and close it
+libero_object,0,0,confirmation,1,215,43,pick up the alphabet soup and place it in the basket
+libero_object,0,1,confirmation,1,146,30,pick up the alphabet soup and place it in the basket
+libero_object,0,2,confirmation,1,143,29,pick up the alphabet soup and place it in the basket
+libero_object,0,3,development,0,280,56,pick up the alphabet soup and place it in the basket
+libero_object,0,4,confirmation,1,135,27,pick up the alphabet soup and place it in the basket
+libero_object,0,5,confirmation,1,251,51,pick up the alphabet soup and place it in the basket
+libero_object,0,6,development,1,141,29,pick up the alphabet soup and place it in the basket
+libero_object,0,7,confirmation,1,139,28,pick up the alphabet soup and place it in the basket
+libero_object,0,8,development,1,230,46,pick up the alphabet soup and place it in the basket
+libero_object,0,9,development,1,149,30,pick up the alphabet soup and place it in the basket
+libero_object,0,10,development,1,153,31,pick up the alphabet soup and place it in the basket
+libero_object,0,11,confirmation,1,147,30,pick up the alphabet soup and place it in the basket
+libero_object,0,12,confirmation,1,167,34,pick up the alphabet soup and place it in the basket
+libero_object,0,13,confirmation,1,147,30,pick up the alphabet soup and place it in the basket
+libero_object,0,14,confirmation,0,280,56,pick up the alphabet soup and place it in the basket
+libero_object,0,15,development,1,194,39,pick up the alphabet soup and place it in the basket
+libero_object,0,16,development,1,152,31,pick up the alphabet soup and place it in the basket
+libero_object,0,17,development,0,280,56,pick up the alphabet soup and place it in the basket
+libero_object,0,18,confirmation,0,280,56,pick up the alphabet soup and place it in the basket
+libero_object,0,19,confirmation,0,280,56,pick up the alphabet soup and place it in the basket
+libero_object,0,20,confirmation,1,148,30,pick up the alphabet soup and place it in the basket
+libero_object,0,21,development,0,280,56,pick up the alphabet soup and place it in the basket
+libero_object,0,22,confirmation,1,156,32,pick up the alphabet soup and place it in the basket
+libero_object,0,23,confirmation,1,248,50,pick up the alphabet soup and place it in the basket
+libero_object,0,24,confirmation,1,218,44,pick up the alphabet soup and place it in the basket
+libero_object,0,25,development,1,152,31,pick up the alphabet soup and place it in the basket
+libero_object,0,26,confirmation,1,267,54,pick up the alphabet soup and place it in the basket
+libero_object,0,27,confirmation,1,148,30,pick up the alphabet soup and place it in the basket
+libero_object,0,28,development,1,177,36,pick up the alphabet soup and place it in the basket
+libero_object,0,29,development,1,256,52,pick up the alphabet soup and place it in the basket
+libero_object,0,30,confirmation,1,185,37,pick up the alphabet soup and place it in the basket
+libero_object,0,31,confirmation,0,280,56,pick up the alphabet soup and place it in the basket
+libero_object,0,32,development,1,194,39,pick up the alphabet soup and place it in the basket
+libero_object,0,33,development,1,165,33,pick up the alphabet soup and place it in the basket
+libero_object,0,34,development,1,151,31,pick up the alphabet soup and place it in the basket
+libero_object,0,35,development,1,139,28,pick up the alphabet soup and place it in the basket
+libero_object,0,36,confirmation,1,251,51,pick up the alphabet soup and place it in the basket
+libero_object,0,37,confirmation,1,227,46,pick up the alphabet soup and place it in the basket
+libero_object,0,38,confirmation,1,269,54,pick up the alphabet soup and place it in the basket
+libero_object,0,39,confirmation,1,147,30,pick up the alphabet soup and place it in the basket
+libero_object,0,40,development,1,141,29,pick up the alphabet soup and place it in the basket
+libero_object,0,41,confirmation,1,147,30,pick up the alphabet soup and place it in the basket
+libero_object,0,42,development,1,177,36,pick up the alphabet soup and place it in the basket
+libero_object,0,43,confirmation,1,148,30,pick up the alphabet soup and place it in the basket
+libero_object,0,44,confirmation,1,148,30,pick up the alphabet soup and place it in the basket
+libero_object,0,45,confirmation,1,221,45,pick up the alphabet soup and place it in the basket
+libero_object,0,46,development,1,117,24,pick up the alphabet soup and place it in the basket
+libero_object,0,47,development,1,192,39,pick up the alphabet soup and place it in the basket
+libero_object,0,48,confirmation,1,146,30,pick up the alphabet soup and place it in the basket
+libero_object,0,49,confirmation,1,197,40,pick up the alphabet soup and place it in the basket
+libero_object,1,0,confirmation,1,115,23,pick up the cream cheese and place it in the basket
+libero_object,1,1,confirmation,1,123,25,pick up the cream cheese and place it in the basket
+libero_object,1,2,development,1,127,26,pick up the cream cheese and place it in the basket
+libero_object,1,3,confirmation,0,280,56,pick up the cream cheese and place it in the basket
+libero_object,1,4,confirmation,1,121,25,pick up the cream cheese and place it in the basket
+libero_object,1,5,development,0,280,56,pick up the cream cheese and place it in the basket
+libero_object,1,6,confirmation,1,118,24,pick up the cream cheese and place it in the basket
+libero_object,1,7,development,1,118,24,pick up the cream cheese and place it in the basket
+libero_object,1,8,development,1,130,26,pick up the cream cheese and place it in the basket
+libero_object,1,9,confirmation,1,113,23,pick up the cream cheese and place it in the basket
+libero_object,1,10,confirmation,1,197,40,pick up the cream cheese and place it in the basket
+libero_object,1,11,confirmation,1,223,45,pick up the cream cheese and place it in the basket
+libero_object,1,12,development,1,132,27,pick up the cream cheese and place it in the basket
+libero_object,1,13,development,1,118,24,pick up the cream cheese and place it in the basket
+libero_object,1,14,confirmation,1,134,27,pick up the cream cheese and place it in the basket
+libero_object,1,15,confirmation,1,113,23,pick up the cream cheese and place it in the basket
+libero_object,1,16,confirmation,1,118,24,pick up the cream cheese and place it in the basket
+libero_object,1,17,development,1,113,23,pick up the cream cheese and place it in the basket
+libero_object,1,18,confirmation,1,121,25,pick up the cream cheese and place it in the basket
+libero_object,1,19,development,1,125,25,pick up the cream cheese and place it in the basket
+libero_object,1,20,confirmation,1,120,24,pick up the cream cheese and place it in the basket
+libero_object,1,21,confirmation,1,280,56,pick up the cream cheese and place it in the basket
+libero_object,1,22,development,0,280,56,pick up the cream cheese and place it in the basket
+libero_object,1,23,confirmation,1,118,24,pick up the cream cheese and place it in the basket
+libero_object,1,24,confirmation,1,117,24,pick up the cream cheese and place it in the basket
+libero_object,1,25,development,1,120,24,pick up the cream cheese and place it in the basket
+libero_object,1,26,confirmation,1,123,25,pick up the cream cheese and place it in the basket
+libero_object,1,27,confirmation,1,151,31,pick up the cream cheese and place it in the basket
+libero_object,1,28,development,1,120,24,pick up the cream cheese and place it in the basket
+libero_object,1,29,development,1,120,24,pick up the cream cheese and place it in the basket
+libero_object,1,30,confirmation,1,120,24,pick up the cream cheese and place it in the basket
+libero_object,1,31,confirmation,1,118,24,pick up the cream cheese and place it in the basket
+libero_object,1,32,development,1,119,24,pick up the cream cheese and place it in the basket
+libero_object,1,33,confirmation,1,118,24,pick up the cream cheese and place it in the basket
+libero_object,1,34,development,1,121,25,pick up the cream cheese and place it in the basket
+libero_object,1,35,confirmation,1,119,24,pick up the cream cheese and place it in the basket
+libero_object,1,36,development,1,117,24,pick up the cream cheese and place it in the basket
+libero_object,1,37,confirmation,1,113,23,pick up the cream cheese and place it in the basket
+libero_object,1,38,confirmation,1,117,24,pick up the cream cheese and place it in the basket
+libero_object,1,39,development,0,280,56,pick up the cream cheese and place it in the basket
+libero_object,1,40,confirmation,0,280,56,pick up the cream cheese and place it in the basket
+libero_object,1,41,development,1,122,25,pick up the cream cheese and place it in the basket
+libero_object,1,42,development,1,127,26,pick up the cream cheese and place it in the basket
+libero_object,1,43,confirmation,0,280,56,pick up the cream cheese and place it in the basket
+libero_object,1,44,confirmation,1,112,23,pick up the cream cheese and place it in the basket
+libero_object,1,45,development,0,280,56,pick up the cream cheese and place it in the basket
+libero_object,1,46,confirmation,1,127,26,pick up the cream cheese and place it in the basket
+libero_object,1,47,development,1,117,24,pick up the cream cheese and place it in the basket
+libero_object,1,48,confirmation,1,123,25,pick up the cream cheese and place it in the basket
+libero_object,1,49,confirmation,1,127,26,pick up the cream cheese and place it in the basket
+libero_object,2,0,development,1,122,25,pick up the salad dressing and place it in the basket
+libero_object,2,1,development,1,119,24,pick up the salad dressing and place it in the basket
+libero_object,2,2,confirmation,1,110,22,pick up the salad dressing and place it in the basket
+libero_object,2,3,confirmation,1,122,25,pick up the salad dressing and place it in the basket
+libero_object,2,4,development,1,117,24,pick up the salad dressing and place it in the basket
+libero_object,2,5,confirmation,1,117,24,pick up the salad dressing and place it in the basket
+libero_object,2,6,confirmation,1,118,24,pick up the salad dressing and place it in the basket
+libero_object,2,7,confirmation,1,117,24,pick up the salad dressing and place it in the basket
+libero_object,2,8,confirmation,1,114,23,pick up the salad dressing and place it in the basket
+libero_object,2,9,development,1,116,24,pick up the salad dressing and place it in the basket
+libero_object,2,10,confirmation,1,116,24,pick up the salad dressing and place it in the basket
+libero_object,2,11,confirmation,1,117,24,pick up the salad dressing and place it in the basket
+libero_object,2,12,development,1,113,23,pick up the salad dressing and place it in the basket
+libero_object,2,13,confirmation,1,117,24,pick up the salad dressing and place it in the basket
+libero_object,2,14,confirmation,1,115,23,pick up the salad dressing and place it in the basket
+libero_object,2,15,confirmation,0,280,56,pick up the salad dressing and place it in the basket
+libero_object,2,16,development,1,113,23,pick up the salad dressing and place it in the basket
+libero_object,2,17,confirmation,1,119,24,pick up the salad dressing and place it in the basket
+libero_object,2,18,development,1,120,24,pick up the salad dressing and place it in the basket
+libero_object,2,19,development,1,121,25,pick up the salad dressing and place it in the basket
+libero_object,2,20,confirmation,1,116,24,pick up the salad dressing and place it in the basket
+libero_object,2,21,confirmation,1,116,24,pick up the salad dressing and place it in the basket
+libero_object,2,22,confirmation,1,116,24,pick up the salad dressing and place it in the basket
+libero_object,2,23,confirmation,0,280,56,pick up the salad dressing and place it in the basket
+libero_object,2,24,development,1,117,24,pick up the salad dressing and place it in the basket
+libero_object,2,25,development,1,123,25,pick up the salad dressing and place it in the basket
+libero_object,2,26,development,1,118,24,pick up the salad dressing and place it in the basket
+libero_object,2,27,development,1,116,24,pick up the salad dressing and place it in the basket
+libero_object,2,28,confirmation,1,126,26,pick up the salad dressing and place it in the basket
+libero_object,2,29,confirmation,1,123,25,pick up the salad dressing and place it in the basket
+libero_object,2,30,development,1,114,23,pick up the salad dressing and place it in the basket
+libero_object,2,31,confirmation,1,126,26,pick up the salad dressing and place it in the basket
+libero_object,2,32,confirmation,1,121,25,pick up the salad dressing and place it in the basket
+libero_object,2,33,confirmation,1,120,24,pick up the salad dressing and place it in the basket
+libero_object,2,34,development,1,117,24,pick up the salad dressing and place it in the basket
+libero_object,2,35,confirmation,1,118,24,pick up the salad dressing and place it in the basket
+libero_object,2,36,confirmation,1,116,24,pick up the salad dressing and place it in the basket
+libero_object,2,37,confirmation,1,114,23,pick up the salad dressing and place it in the basket
+libero_object,2,38,development,1,119,24,pick up the salad dressing and place it in the basket
+libero_object,2,39,development,1,123,25,pick up the salad dressing and place it in the basket
+libero_object,2,40,confirmation,1,121,25,pick up the salad dressing and place it in the basket
+libero_object,2,41,confirmation,1,117,24,pick up the salad dressing and place it in the basket
+libero_object,2,42,development,1,119,24,pick up the salad dressing and place it in the basket
+libero_object,2,43,development,1,116,24,pick up the salad dressing and place it in the basket
+libero_object,2,44,development,1,115,23,pick up the salad dressing and place it in the basket
+libero_object,2,45,confirmation,1,122,25,pick up the salad dressing and place it in the basket
+libero_object,2,46,development,1,119,24,pick up the salad dressing and place it in the basket
+libero_object,2,47,confirmation,1,119,24,pick up the salad dressing and place it in the basket
+libero_object,2,48,confirmation,0,280,56,pick up the salad dressing and place it in the basket
+libero_object,2,49,confirmation,1,116,24,pick up the salad dressing and place it in the basket
+libero_object,3,0,development,1,128,26,pick up the bbq sauce and place it in the basket
+libero_object,3,1,development,1,118,24,pick up the bbq sauce and place it in the basket
+libero_object,3,2,confirmation,1,134,27,pick up the bbq sauce and place it in the basket
+libero_object,3,3,confirmation,1,125,25,pick up the bbq sauce and place it in the basket
+libero_object,3,4,confirmation,1,120,24,pick up the bbq sauce and place it in the basket
+libero_object,3,5,development,1,147,30,pick up the bbq sauce and place it in the basket
+libero_object,3,6,development,1,124,25,pick up the bbq sauce and place it in the basket
+libero_object,3,7,confirmation,1,122,25,pick up the bbq sauce and place it in the basket
+libero_object,3,8,confirmation,1,121,25,pick up the bbq sauce and place it in the basket
+libero_object,3,9,confirmation,1,135,27,pick up the bbq sauce and place it in the basket
+libero_object,3,10,development,1,131,27,pick up the bbq sauce and place it in the basket
+libero_object,3,11,confirmation,1,130,26,pick up the bbq sauce and place it in the basket
+libero_object,3,12,confirmation,1,122,25,pick up the bbq sauce and place it in the basket
+libero_object,3,13,confirmation,1,130,26,pick up the bbq sauce and place it in the basket
+libero_object,3,14,confirmation,1,126,26,pick up the bbq sauce and place it in the basket
+libero_object,3,15,development,1,119,24,pick up the bbq sauce and place it in the basket
+libero_object,3,16,confirmation,1,134,27,pick up the bbq sauce and place it in the basket
+libero_object,3,17,development,1,125,25,pick up the bbq sauce and place it in the basket
+libero_object,3,18,confirmation,1,123,25,pick up the bbq sauce and place it in the basket
+libero_object,3,19,development,1,136,28,pick up the bbq sauce and place it in the basket
+libero_object,3,20,development,1,128,26,pick up the bbq sauce and place it in the basket
+libero_object,3,21,development,1,145,29,pick up the bbq sauce and place it in the basket
+libero_object,3,22,confirmation,1,118,24,pick up the bbq sauce and place it in the basket
+libero_object,3,23,confirmation,1,126,26,pick up the bbq sauce and place it in the basket
+libero_object,3,24,confirmation,1,128,26,pick up the bbq sauce and place it in the basket
+libero_object,3,25,development,1,117,24,pick up the bbq sauce and place it in the basket
+libero_object,3,26,development,1,123,25,pick up the bbq sauce and place it in the basket
+libero_object,3,27,confirmation,1,134,27,pick up the bbq sauce and place it in the basket
+libero_object,3,28,confirmation,1,184,37,pick up the bbq sauce and place it in the basket
+libero_object,3,29,confirmation,1,129,26,pick up the bbq sauce and place it in the basket
+libero_object,3,30,development,1,121,25,pick up the bbq sauce and place it in the basket
+libero_object,3,31,development,1,115,23,pick up the bbq sauce and place it in the basket
+libero_object,3,32,development,1,126,26,pick up the bbq sauce and place it in the basket
+libero_object,3,33,confirmation,1,118,24,pick up the bbq sauce and place it in the basket
+libero_object,3,34,confirmation,1,126,26,pick up the bbq sauce and place it in the basket
+libero_object,3,35,confirmation,0,280,56,pick up the bbq sauce and place it in the basket
+libero_object,3,36,confirmation,1,176,36,pick up the bbq sauce and place it in the basket
+libero_object,3,37,development,1,131,27,pick up the bbq sauce and place it in the basket
+libero_object,3,38,confirmation,1,116,24,pick up the bbq sauce and place it in the basket
+libero_object,3,39,confirmation,1,118,24,pick up the bbq sauce and place it in the basket
+libero_object,3,40,development,1,128,26,pick up the bbq sauce and place it in the basket
+libero_object,3,41,confirmation,1,247,50,pick up the bbq sauce and place it in the basket
+libero_object,3,42,development,1,131,27,pick up the bbq sauce and place it in the basket
+libero_object,3,43,confirmation,1,122,25,pick up the bbq sauce and place it in the basket
+libero_object,3,44,confirmation,1,136,28,pick up the bbq sauce and place it in the basket
+libero_object,3,45,confirmation,1,127,26,pick up the bbq sauce and place it in the basket
+libero_object,3,46,confirmation,1,125,25,pick up the bbq sauce and place it in the basket
+libero_object,3,47,development,1,122,25,pick up the bbq sauce and place it in the basket
+libero_object,3,48,confirmation,1,129,26,pick up the bbq sauce and place it in the basket
+libero_object,3,49,development,1,124,25,pick up the bbq sauce and place it in the basket
+libero_object,4,0,confirmation,1,142,29,pick up the ketchup and place it in the basket
+libero_object,4,1,development,1,127,26,pick up the ketchup and place it in the basket
+libero_object,4,2,confirmation,0,280,56,pick up the ketchup and place it in the basket
+libero_object,4,3,development,1,152,31,pick up the ketchup and place it in the basket
+libero_object,4,4,development,1,135,27,pick up the ketchup and place it in the basket
+libero_object,4,5,confirmation,1,126,26,pick up the ketchup and place it in the basket
+libero_object,4,6,development,1,129,26,pick up the ketchup and place it in the basket
+libero_object,4,7,confirmation,1,140,28,pick up the ketchup and place it in the basket
+libero_object,4,8,confirmation,1,136,28,pick up the ketchup and place it in the basket
+libero_object,4,9,confirmation,1,137,28,pick up the ketchup and place it in the basket
+libero_object,4,10,confirmation,1,130,26,pick up the ketchup and place it in the basket
+libero_object,4,11,development,1,134,27,pick up the ketchup and place it in the basket
+libero_object,4,12,development,1,125,25,pick up the ketchup and place it in the basket
+libero_object,4,13,confirmation,1,130,26,pick up the ketchup and place it in the basket
+libero_object,4,14,confirmation,1,129,26,pick up the ketchup and place it in the basket
+libero_object,4,15,confirmation,1,132,27,pick up the ketchup and place it in the basket
+libero_object,4,16,development,1,131,27,pick up the ketchup and place it in the basket
+libero_object,4,17,development,1,137,28,pick up the ketchup and place it in the basket
+libero_object,4,18,confirmation,0,280,56,pick up the ketchup and place it in the basket
+libero_object,4,19,confirmation,1,142,29,pick up the ketchup and place it in the basket
+libero_object,4,20,development,1,124,25,pick up the ketchup and place it in the basket
+libero_object,4,21,confirmation,1,130,26,pick up the ketchup and place it in the basket
+libero_object,4,22,confirmation,1,128,26,pick up the ketchup and place it in the basket
+libero_object,4,23,development,1,132,27,pick up the ketchup and place it in the basket
+libero_object,4,24,confirmation,0,280,56,pick up the ketchup and place it in the basket
+libero_object,4,25,confirmation,1,163,33,pick up the ketchup and place it in the basket
+libero_object,4,26,development,1,154,31,pick up the ketchup and place it in the basket
+libero_object,4,27,confirmation,1,130,26,pick up the ketchup and place it in the basket
+libero_object,4,28,development,1,134,27,pick up the ketchup and place it in the basket
+libero_object,4,29,confirmation,1,130,26,pick up the ketchup and place it in the basket
+libero_object,4,30,development,1,139,28,pick up the ketchup and place it in the basket
+libero_object,4,31,confirmation,1,136,28,pick up the ketchup and place it in the basket
+libero_object,4,32,confirmation,1,133,27,pick up the ketchup and place it in the basket
+libero_object,4,33,development,1,140,28,pick up the ketchup and place it in the basket
+libero_object,4,34,confirmation,1,131,27,pick up the ketchup and place it in the basket
+libero_object,4,35,development,1,134,27,pick up the ketchup and place it in the basket
+libero_object,4,36,confirmation,1,134,27,pick up the ketchup and place it in the basket
+libero_object,4,37,confirmation,1,140,28,pick up the ketchup and place it in the basket
+libero_object,4,38,development,1,134,27,pick up the ketchup and place it in the basket
+libero_object,4,39,confirmation,1,140,28,pick up the ketchup and place it in the basket
+libero_object,4,40,confirmation,1,123,25,pick up the ketchup and place it in the basket
+libero_object,4,41,confirmation,1,142,29,pick up the ketchup and place it in the basket
+libero_object,4,42,development,1,158,32,pick up the ketchup and place it in the basket
+libero_object,4,43,development,1,136,28,pick up the ketchup and place it in the basket
+libero_object,4,44,confirmation,1,142,29,pick up the ketchup and place it in the basket
+libero_object,4,45,confirmation,1,134,27,pick up the ketchup and place it in the basket
+libero_object,4,46,confirmation,1,146,30,pick up the ketchup and place it in the basket
+libero_object,4,47,confirmation,1,143,29,pick up the ketchup and place it in the basket
+libero_object,4,48,development,1,125,25,pick up the ketchup and place it in the basket
+libero_object,4,49,development,1,140,28,pick up the ketchup and place it in the basket
+libero_object,5,0,confirmation,0,280,56,pick up the tomato sauce and place it in the basket
+libero_object,5,1,development,1,128,26,pick up the tomato sauce and place it in the basket
+libero_object,5,2,confirmation,1,134,27,pick up the tomato sauce and place it in the basket
+libero_object,5,3,development,1,160,32,pick up the tomato sauce and place it in the basket
+libero_object,5,4,confirmation,0,280,56,pick up the tomato sauce and place it in the basket
+libero_object,5,5,development,1,132,27,pick up the tomato sauce and place it in the basket
+libero_object,5,6,confirmation,1,271,55,pick up the tomato sauce and place it in the basket
+libero_object,5,7,confirmation,1,188,38,pick up the tomato sauce and place it in the basket
+libero_object,5,8,confirmation,0,280,56,pick up the tomato sauce and place it in the basket
+libero_object,5,9,development,0,280,56,pick up the tomato sauce and place it in the basket
+libero_object,5,10,confirmation,1,150,30,pick up the tomato sauce and place it in the basket
+libero_object,5,11,confirmation,1,128,26,pick up the tomato sauce and place it in the basket
+libero_object,5,12,confirmation,1,128,26,pick up the tomato sauce and place it in the basket
+libero_object,5,13,confirmation,0,280,56,pick up the tomato sauce and place it in the basket
+libero_object,5,14,confirmation,0,280,56,pick up the tomato sauce and place it in the basket
+libero_object,5,15,development,1,122,25,pick up the tomato sauce and place it in the basket
+libero_object,5,16,development,0,280,56,pick up the tomato sauce and place it in the basket
+libero_object,5,17,development,0,280,56,pick up the tomato sauce and place it in the basket
+libero_object,5,18,confirmation,1,128,26,pick up the tomato sauce and place it in the basket
+libero_object,5,19,development,0,280,56,pick up the tomato sauce and place it in the basket
+libero_object,5,20,confirmation,0,280,56,pick up the tomato sauce and place it in the basket
+libero_object,5,21,confirmation,1,129,26,pick up the tomato sauce and place it in the basket
+libero_object,5,22,development,0,280,56,pick up the tomato sauce and place it in the basket
+libero_object,5,23,confirmation,0,280,56,pick up the tomato sauce and place it in the basket
+libero_object,5,24,development,0,280,56,pick up the tomato sauce and place it in the basket
+libero_object,5,25,development,0,280,56,pick up the tomato sauce and place it in the basket
+libero_object,5,26,confirmation,0,280,56,pick up the tomato sauce and place it in the basket
+libero_object,5,27,confirmation,0,280,56,pick up the tomato sauce and place it in the basket
+libero_object,5,28,confirmation,0,280,56,pick up the tomato sauce and place it in the basket
+libero_object,5,29,development,1,123,25,pick up the tomato sauce and place it in the basket
+libero_object,5,30,confirmation,1,125,25,pick up the tomato sauce and place it in the basket
+libero_object,5,31,confirmation,0,280,56,pick up the tomato sauce and place it in the basket
+libero_object,5,32,confirmation,1,180,36,pick up the tomato sauce and place it in the basket
+libero_object,5,33,development,1,128,26,pick up the tomato sauce and place it in the basket
+libero_object,5,34,confirmation,0,280,56,pick up the tomato sauce and place it in the basket
+libero_object,5,35,development,0,280,56,pick up the tomato sauce and place it in the basket
+libero_object,5,36,development,1,134,27,pick up the tomato sauce and place it in the basket
+libero_object,5,37,development,0,280,56,pick up the tomato sauce and place it in the basket
+libero_object,5,38,confirmation,1,257,52,pick up the tomato sauce and place it in the basket
+libero_object,5,39,confirmation,0,280,56,pick up the tomato sauce and place it in the basket
+libero_object,5,40,development,1,128,26,pick up the tomato sauce and place it in the basket
+libero_object,5,41,confirmation,0,280,56,pick up the tomato sauce and place it in the basket
+libero_object,5,42,development,0,280,56,pick up the tomato sauce and place it in the basket
+libero_object,5,43,confirmation,0,280,56,pick up the tomato sauce and place it in the basket
+libero_object,5,44,development,1,184,37,pick up the tomato sauce and place it in the basket
+libero_object,5,45,confirmation,0,280,56,pick up the tomato sauce and place it in the basket
+libero_object,5,46,confirmation,0,280,56,pick up the tomato sauce and place it in the basket
+libero_object,5,47,development,0,280,56,pick up the tomato sauce and place it in the basket
+libero_object,5,48,confirmation,1,152,31,pick up the tomato sauce and place it in the basket
+libero_object,5,49,confirmation,1,129,26,pick up the tomato sauce and place it in the basket
+libero_object,6,0,development,1,148,30,pick up the butter and place it in the basket
+libero_object,6,1,confirmation,1,151,31,pick up the butter and place it in the basket
+libero_object,6,2,confirmation,1,158,32,pick up the butter and place it in the basket
+libero_object,6,3,confirmation,1,163,33,pick up the butter and place it in the basket
+libero_object,6,4,confirmation,1,153,31,pick up the butter and place it in the basket
+libero_object,6,5,development,1,171,35,pick up the butter and place it in the basket
+libero_object,6,6,development,1,142,29,pick up the butter and place it in the basket
+libero_object,6,7,confirmation,1,154,31,pick up the butter and place it in the basket
+libero_object,6,8,confirmation,1,152,31,pick up the butter and place it in the basket
+libero_object,6,9,development,1,162,33,pick up the butter and place it in the basket
+libero_object,6,10,confirmation,1,144,29,pick up the butter and place it in the basket
+libero_object,6,11,development,0,280,56,pick up the butter and place it in the basket
+libero_object,6,12,confirmation,1,150,30,pick up the butter and place it in the basket
+libero_object,6,13,confirmation,1,138,28,pick up the butter and place it in the basket
+libero_object,6,14,confirmation,1,142,29,pick up the butter and place it in the basket
+libero_object,6,15,development,1,147,30,pick up the butter and place it in the basket
+libero_object,6,16,confirmation,1,175,35,pick up the butter and place it in the basket
+libero_object,6,17,confirmation,0,280,56,pick up the butter and place it in the basket
+libero_object,6,18,development,1,138,28,pick up the butter and place it in the basket
+libero_object,6,19,development,1,154,31,pick up the butter and place it in the basket
+libero_object,6,20,development,1,175,35,pick up the butter and place it in the basket
+libero_object,6,21,confirmation,1,162,33,pick up the butter and place it in the basket
+libero_object,6,22,confirmation,1,150,30,pick up the butter and place it in the basket
+libero_object,6,23,confirmation,1,147,30,pick up the butter and place it in the basket
+libero_object,6,24,development,1,147,30,pick up the butter and place it in the basket
+libero_object,6,25,development,1,136,28,pick up the butter and place it in the basket
+libero_object,6,26,confirmation,1,147,30,pick up the butter and place it in the basket
+libero_object,6,27,development,1,145,29,pick up the butter and place it in the basket
+libero_object,6,28,confirmation,1,151,31,pick up the butter and place it in the basket
+libero_object,6,29,confirmation,1,157,32,pick up the butter and place it in the basket
+libero_object,6,30,development,1,144,29,pick up the butter and place it in the basket
+libero_object,6,31,development,1,151,31,pick up the butter and place it in the basket
+libero_object,6,32,confirmation,1,147,30,pick up the butter and place it in the basket
+libero_object,6,33,confirmation,1,144,29,pick up the butter and place it in the basket
+libero_object,6,34,confirmation,1,158,32,pick up the butter and place it in the basket
+libero_object,6,35,confirmation,1,149,30,pick up the butter and place it in the basket
+libero_object,6,36,confirmation,1,152,31,pick up the butter and place it in the basket
+libero_object,6,37,development,1,149,30,pick up the butter and place it in the basket
+libero_object,6,38,development,0,280,56,pick up the butter and place it in the basket
+libero_object,6,39,confirmation,1,144,29,pick up the butter and place it in the basket
+libero_object,6,40,confirmation,1,138,28,pick up the butter and place it in the basket
+libero_object,6,41,development,1,142,29,pick up the butter and place it in the basket
+libero_object,6,42,development,1,134,27,pick up the butter and place it in the basket
+libero_object,6,43,confirmation,1,144,29,pick up the butter and place it in the basket
+libero_object,6,44,confirmation,1,150,30,pick up the butter and place it in the basket
+libero_object,6,45,development,1,133,27,pick up the butter and place it in the basket
+libero_object,6,46,confirmation,1,138,28,pick up the butter and place it in the basket
+libero_object,6,47,confirmation,1,148,30,pick up the butter and place it in the basket
+libero_object,6,48,development,1,148,30,pick up the butter and place it in the basket
+libero_object,6,49,confirmation,1,139,28,pick up the butter and place it in the basket
+libero_object,7,0,confirmation,1,126,26,pick up the milk and place it in the basket
+libero_object,7,1,confirmation,1,125,25,pick up the milk and place it in the basket
+libero_object,7,2,development,0,280,56,pick up the milk and place it in the basket
+libero_object,7,3,development,1,143,29,pick up the milk and place it in the basket
+libero_object,7,4,development,1,134,27,pick up the milk and place it in the basket
+libero_object,7,5,confirmation,1,124,25,pick up the milk and place it in the basket
+libero_object,7,6,confirmation,1,150,30,pick up the milk and place it in the basket
+libero_object,7,7,confirmation,1,134,27,pick up the milk and place it in the basket
+libero_object,7,8,development,1,142,29,pick up the milk and place it in the basket
+libero_object,7,9,confirmation,1,129,26,pick up the milk and place it in the basket
+libero_object,7,10,confirmation,1,130,26,pick up the milk and place it in the basket
+libero_object,7,11,confirmation,1,117,24,pick up the milk and place it in the basket
+libero_object,7,12,confirmation,1,130,26,pick up the milk and place it in the basket
+libero_object,7,13,confirmation,1,130,26,pick up the milk and place it in the basket
+libero_object,7,14,development,1,125,25,pick up the milk and place it in the basket
+libero_object,7,15,confirmation,0,280,56,pick up the milk and place it in the basket
+libero_object,7,16,development,1,145,29,pick up the milk and place it in the basket
+libero_object,7,17,development,1,132,27,pick up the milk and place it in the basket
+libero_object,7,18,confirmation,1,165,33,pick up the milk and place it in the basket
+libero_object,7,19,development,1,219,44,pick up the milk and place it in the basket
+libero_object,7,20,confirmation,0,280,56,pick up the milk and place it in the basket
+libero_object,7,21,confirmation,1,135,27,pick up the milk and place it in the basket
+libero_object,7,22,development,1,125,25,pick up the milk and place it in the basket
+libero_object,7,23,confirmation,1,133,27,pick up the milk and place it in the basket
+libero_object,7,24,confirmation,0,280,56,pick up the milk and place it in the basket
+libero_object,7,25,confirmation,1,128,26,pick up the milk and place it in the basket
+libero_object,7,26,confirmation,1,213,43,pick up the milk and place it in the basket
+libero_object,7,27,development,1,121,25,pick up the milk and place it in the basket
+libero_object,7,28,development,0,280,56,pick up the milk and place it in the basket
+libero_object,7,29,development,1,143,29,pick up the milk and place it in the basket
+libero_object,7,30,development,1,125,25,pick up the milk and place it in the basket
+libero_object,7,31,confirmation,0,280,56,pick up the milk and place it in the basket
+libero_object,7,32,confirmation,1,137,28,pick up the milk and place it in the basket
+libero_object,7,33,development,1,127,26,pick up the milk and place it in the basket
+libero_object,7,34,confirmation,1,125,25,pick up the milk and place it in the basket
+libero_object,7,35,confirmation,1,127,26,pick up the milk and place it in the basket
+libero_object,7,36,confirmation,0,280,56,pick up the milk and place it in the basket
+libero_object,7,37,development,1,130,26,pick up the milk and place it in the basket
+libero_object,7,38,confirmation,1,130,26,pick up the milk and place it in the basket
+libero_object,7,39,development,1,128,26,pick up the milk and place it in the basket
+libero_object,7,40,development,1,130,26,pick up the milk and place it in the basket
+libero_object,7,41,confirmation,1,127,26,pick up the milk and place it in the basket
+libero_object,7,42,development,1,130,26,pick up the milk and place it in the basket
+libero_object,7,43,confirmation,1,122,25,pick up the milk and place it in the basket
+libero_object,7,44,confirmation,1,133,27,pick up the milk and place it in the basket
+libero_object,7,45,confirmation,1,130,26,pick up the milk and place it in the basket
+libero_object,7,46,development,1,132,27,pick up the milk and place it in the basket
+libero_object,7,47,confirmation,1,126,26,pick up the milk and place it in the basket
+libero_object,7,48,confirmation,0,280,56,pick up the milk and place it in the basket
+libero_object,7,49,development,1,135,27,pick up the milk and place it in the basket
+libero_object,8,0,development,1,139,28,pick up the chocolate pudding and place it in the basket
+libero_object,8,1,confirmation,1,142,29,pick up the chocolate pudding and place it in the basket
+libero_object,8,2,confirmation,1,144,29,pick up the chocolate pudding and place it in the basket
+libero_object,8,3,confirmation,1,142,29,pick up the chocolate pudding and place it in the basket
+libero_object,8,4,confirmation,1,134,27,pick up the chocolate pudding and place it in the basket
+libero_object,8,5,development,1,140,28,pick up the chocolate pudding and place it in the basket
+libero_object,8,6,confirmation,1,162,33,pick up the chocolate pudding and place it in the basket
+libero_object,8,7,development,1,139,28,pick up the chocolate pudding and place it in the basket
+libero_object,8,8,confirmation,1,153,31,pick up the chocolate pudding and place it in the basket
+libero_object,8,9,development,1,137,28,pick up the chocolate pudding and place it in the basket
+libero_object,8,10,confirmation,1,138,28,pick up the chocolate pudding and place it in the basket
+libero_object,8,11,development,1,142,29,pick up the chocolate pudding and place it in the basket
+libero_object,8,12,confirmation,1,144,29,pick up the chocolate pudding and place it in the basket
+libero_object,8,13,confirmation,1,146,30,pick up the chocolate pudding and place it in the basket
+libero_object,8,14,development,1,135,27,pick up the chocolate pudding and place it in the basket
+libero_object,8,15,confirmation,1,143,29,pick up the chocolate pudding and place it in the basket
+libero_object,8,16,development,1,145,29,pick up the chocolate pudding and place it in the basket
+libero_object,8,17,development,1,135,27,pick up the chocolate pudding and place it in the basket
+libero_object,8,18,confirmation,1,138,28,pick up the chocolate pudding and place it in the basket
+libero_object,8,19,confirmation,1,142,29,pick up the chocolate pudding and place it in the basket
+libero_object,8,20,development,1,150,30,pick up the chocolate pudding and place it in the basket
+libero_object,8,21,development,1,139,28,pick up the chocolate pudding and place it in the basket
+libero_object,8,22,confirmation,1,141,29,pick up the chocolate pudding and place it in the basket
+libero_object,8,23,confirmation,1,153,31,pick up the chocolate pudding and place it in the basket
+libero_object,8,24,development,1,138,28,pick up the chocolate pudding and place it in the basket
+libero_object,8,25,confirmation,1,149,30,pick up the chocolate pudding and place it in the basket
+libero_object,8,26,confirmation,1,138,28,pick up the chocolate pudding and place it in the basket
+libero_object,8,27,confirmation,1,144,29,pick up the chocolate pudding and place it in the basket
+libero_object,8,28,development,1,142,29,pick up the chocolate pudding and place it in the basket
+libero_object,8,29,confirmation,1,145,29,pick up the chocolate pudding and place it in the basket
+libero_object,8,30,development,1,147,30,pick up the chocolate pudding and place it in the basket
+libero_object,8,31,confirmation,1,139,28,pick up the chocolate pudding and place it in the basket
+libero_object,8,32,development,1,144,29,pick up the chocolate pudding and place it in the basket
+libero_object,8,33,confirmation,1,145,29,pick up the chocolate pudding and place it in the basket
+libero_object,8,34,development,1,137,28,pick up the chocolate pudding and place it in the basket
+libero_object,8,35,development,1,139,28,pick up the chocolate pudding and place it in the basket
+libero_object,8,36,confirmation,1,139,28,pick up the chocolate pudding and place it in the basket
+libero_object,8,37,confirmation,1,154,31,pick up the chocolate pudding and place it in the basket
+libero_object,8,38,confirmation,1,140,28,pick up the chocolate pudding and place it in the basket
+libero_object,8,39,confirmation,1,142,29,pick up the chocolate pudding and place it in the basket
+libero_object,8,40,confirmation,1,133,27,pick up the chocolate pudding and place it in the basket
+libero_object,8,41,development,1,142,29,pick up the chocolate pudding and place it in the basket
+libero_object,8,42,development,1,133,27,pick up the chocolate pudding and place it in the basket
+libero_object,8,43,development,1,157,32,pick up the chocolate pudding and place it in the basket
+libero_object,8,44,confirmation,1,145,29,pick up the chocolate pudding and place it in the basket
+libero_object,8,45,confirmation,1,147,30,pick up the chocolate pudding and place it in the basket
+libero_object,8,46,confirmation,1,128,26,pick up the chocolate pudding and place it in the basket
+libero_object,8,47,development,1,136,28,pick up the chocolate pudding and place it in the basket
+libero_object,8,48,confirmation,1,134,27,pick up the chocolate pudding and place it in the basket
+libero_object,8,49,confirmation,1,140,28,pick up the chocolate pudding and place it in the basket
+libero_object,9,0,confirmation,1,117,24,pick up the orange juice and place it in the basket
+libero_object,9,1,confirmation,1,113,23,pick up the orange juice and place it in the basket
+libero_object,9,2,development,1,122,25,pick up the orange juice and place it in the basket
+libero_object,9,3,development,1,117,24,pick up the orange juice and place it in the basket
+libero_object,9,4,development,1,116,24,pick up the orange juice and place it in the basket
+libero_object,9,5,development,0,280,56,pick up the orange juice and place it in the basket
+libero_object,9,6,confirmation,1,123,25,pick up the orange juice and place it in the basket
+libero_object,9,7,confirmation,1,115,23,pick up the orange juice and place it in the basket
+libero_object,9,8,confirmation,1,117,24,pick up the orange juice and place it in the basket
+libero_object,9,9,confirmation,1,119,24,pick up the orange juice and place it in the basket
+libero_object,9,10,confirmation,1,119,24,pick up the orange juice and place it in the basket
+libero_object,9,11,confirmation,1,115,23,pick up the orange juice and place it in the basket
+libero_object,9,12,development,1,117,24,pick up the orange juice and place it in the basket
+libero_object,9,13,confirmation,1,117,24,pick up the orange juice and place it in the basket
+libero_object,9,14,development,1,115,23,pick up the orange juice and place it in the basket
+libero_object,9,15,confirmation,1,117,24,pick up the orange juice and place it in the basket
+libero_object,9,16,confirmation,1,112,23,pick up the orange juice and place it in the basket
+libero_object,9,17,development,1,118,24,pick up the orange juice and place it in the basket
+libero_object,9,18,development,1,120,24,pick up the orange juice and place it in the basket
+libero_object,9,19,confirmation,1,116,24,pick up the orange juice and place it in the basket
+libero_object,9,20,confirmation,1,112,23,pick up the orange juice and place it in the basket
+libero_object,9,21,confirmation,1,117,24,pick up the orange juice and place it in the basket
+libero_object,9,22,confirmation,1,121,25,pick up the orange juice and place it in the basket
+libero_object,9,23,confirmation,1,120,24,pick up the orange juice and place it in the basket
+libero_object,9,24,confirmation,1,120,24,pick up the orange juice and place it in the basket
+libero_object,9,25,development,1,122,25,pick up the orange juice and place it in the basket
+libero_object,9,26,development,1,119,24,pick up the orange juice and place it in the basket
+libero_object,9,27,development,1,115,23,pick up the orange juice and place it in the basket
+libero_object,9,28,development,1,117,24,pick up the orange juice and place it in the basket
+libero_object,9,29,confirmation,1,112,23,pick up the orange juice and place it in the basket
+libero_object,9,30,development,1,113,23,pick up the orange juice and place it in the basket
+libero_object,9,31,confirmation,1,119,24,pick up the orange juice and place it in the basket
+libero_object,9,32,confirmation,1,113,23,pick up the orange juice and place it in the basket
+libero_object,9,33,confirmation,1,114,23,pick up the orange juice and place it in the basket
+libero_object,9,34,development,1,112,23,pick up the orange juice and place it in the basket
+libero_object,9,35,confirmation,1,111,23,pick up the orange juice and place it in the basket
+libero_object,9,36,development,1,117,24,pick up the orange juice and place it in the basket
+libero_object,9,37,confirmation,1,117,24,pick up the orange juice and place it in the basket
+libero_object,9,38,development,1,114,23,pick up the orange juice and place it in the basket
+libero_object,9,39,confirmation,1,115,23,pick up the orange juice and place it in the basket
+libero_object,9,40,development,1,121,25,pick up the orange juice and place it in the basket
+libero_object,9,41,development,1,109,22,pick up the orange juice and place it in the basket
+libero_object,9,42,confirmation,1,118,24,pick up the orange juice and place it in the basket
+libero_object,9,43,confirmation,1,112,23,pick up the orange juice and place it in the basket
+libero_object,9,44,development,1,117,24,pick up the orange juice and place it in the basket
+libero_object,9,45,confirmation,1,121,25,pick up the orange juice and place it in the basket
+libero_object,9,46,confirmation,1,117,24,pick up the orange juice and place it in the basket
+libero_object,9,47,confirmation,1,116,24,pick up the orange juice and place it in the basket
+libero_object,9,48,confirmation,1,121,25,pick up the orange juice and place it in the basket
+libero_object,9,49,development,1,120,24,pick up the orange juice and place it in the basket
+libero_goal,0,0,confirmation,0,300,60,open the middle drawer of the cabinet
+libero_goal,0,1,confirmation,0,300,60,open the middle drawer of the cabinet
+libero_goal,0,2,confirmation,0,300,60,open the middle drawer of the cabinet
+libero_goal,0,3,development,0,300,60,open the middle drawer of the cabinet
+libero_goal,0,4,development,1,198,40,open the middle drawer of the cabinet
+libero_goal,0,5,development,0,300,60,open the middle drawer of the cabinet
+libero_goal,0,6,confirmation,0,300,60,open the middle drawer of the cabinet
+libero_goal,0,7,development,1,223,45,open the middle drawer of the cabinet
+libero_goal,0,8,confirmation,0,300,60,open the middle drawer of the cabinet
+libero_goal,0,9,confirmation,0,300,60,open the middle drawer of the cabinet
+libero_goal,0,10,confirmation,0,300,60,open the middle drawer of the cabinet
+libero_goal,0,11,confirmation,1,138,28,open the middle drawer of the cabinet
+libero_goal,0,12,confirmation,0,300,60,open the middle drawer of the cabinet
+libero_goal,0,13,confirmation,1,162,33,open the middle drawer of the cabinet
+libero_goal,0,14,confirmation,0,300,60,open the middle drawer of the cabinet
+libero_goal,0,15,development,0,300,60,open the middle drawer of the cabinet
+libero_goal,0,16,development,0,300,60,open the middle drawer of the cabinet
+libero_goal,0,17,development,0,300,60,open the middle drawer of the cabinet
+libero_goal,0,18,development,0,300,60,open the middle drawer of the cabinet
+libero_goal,0,19,confirmation,0,300,60,open the middle drawer of the cabinet
+libero_goal,0,20,development,0,300,60,open the middle drawer of the cabinet
+libero_goal,0,21,confirmation,0,300,60,open the middle drawer of the cabinet
+libero_goal,0,22,development,0,300,60,open the middle drawer of the cabinet
+libero_goal,0,23,confirmation,0,300,60,open the middle drawer of the cabinet
+libero_goal,0,24,confirmation,1,115,23,open the middle drawer of the cabinet
+libero_goal,0,25,development,1,158,32,open the middle drawer of the cabinet
+libero_goal,0,26,development,0,300,60,open the middle drawer of the cabinet
+libero_goal,0,27,confirmation,0,300,60,open the middle drawer of the cabinet
+libero_goal,0,28,confirmation,0,300,60,open the middle drawer of the cabinet
+libero_goal,0,29,confirmation,1,184,37,open the middle drawer of the cabinet
+libero_goal,0,30,development,0,300,60,open the middle drawer of the cabinet
+libero_goal,0,31,confirmation,0,300,60,open the middle drawer of the cabinet
+libero_goal,0,32,development,0,300,60,open the middle drawer of the cabinet
+libero_goal,0,33,confirmation,1,122,25,open the middle drawer of the cabinet
+libero_goal,0,34,confirmation,0,300,60,open the middle drawer of the cabinet
+libero_goal,0,35,confirmation,0,300,60,open the middle drawer of the cabinet
+libero_goal,0,36,confirmation,1,148,30,open the middle drawer of the cabinet
+libero_goal,0,37,confirmation,0,300,60,open the middle drawer of the cabinet
+libero_goal,0,38,development,1,198,40,open the middle drawer of the cabinet
+libero_goal,0,39,development,1,151,31,open the middle drawer of the cabinet
+libero_goal,0,40,development,0,300,60,open the middle drawer of the cabinet
+libero_goal,0,41,development,0,300,60,open the middle drawer of the cabinet
+libero_goal,0,42,confirmation,0,300,60,open the middle drawer of the cabinet
+libero_goal,0,43,confirmation,0,300,60,open the middle drawer of the cabinet
+libero_goal,0,44,development,0,300,60,open the middle drawer of the cabinet
+libero_goal,0,45,confirmation,0,300,60,open the middle drawer of the cabinet
+libero_goal,0,46,development,0,300,60,open the middle drawer of the cabinet
+libero_goal,0,47,confirmation,0,300,60,open the middle drawer of the cabinet
+libero_goal,0,48,confirmation,1,202,41,open the middle drawer of the cabinet
+libero_goal,0,49,confirmation,1,241,49,open the middle drawer of the cabinet
+libero_goal,1,0,development,1,81,17,put the bowl on the stove
+libero_goal,1,1,confirmation,1,88,18,put the bowl on the stove
+libero_goal,1,2,confirmation,1,76,16,put the bowl on the stove
+libero_goal,1,3,confirmation,1,149,30,put the bowl on the stove
+libero_goal,1,4,confirmation,0,300,60,put the bowl on the stove
+libero_goal,1,5,development,1,83,17,put the bowl on the stove
+libero_goal,1,6,confirmation,1,86,18,put the bowl on the stove
+libero_goal,1,7,confirmation,1,86,18,put the bowl on the stove
+libero_goal,1,8,development,1,91,19,put the bowl on the stove
+libero_goal,1,9,development,1,91,19,put the bowl on the stove
+libero_goal,1,10,confirmation,1,80,16,put the bowl on the stove
+libero_goal,1,11,development,1,92,19,put the bowl on the stove
+libero_goal,1,12,development,1,86,18,put the bowl on the stove
+libero_goal,1,13,confirmation,0,300,60,put the bowl on the stove
+libero_goal,1,14,development,1,81,17,put the bowl on the stove
+libero_goal,1,15,confirmation,1,87,18,put the bowl on the stove
+libero_goal,1,16,confirmation,1,81,17,put the bowl on the stove
+libero_goal,1,17,development,1,86,18,put the bowl on the stove
+libero_goal,1,18,confirmation,1,75,15,put the bowl on the stove
+libero_goal,1,19,confirmation,1,84,17,put the bowl on the stove
+libero_goal,1,20,confirmation,1,87,18,put the bowl on the stove
+libero_goal,1,21,development,1,81,17,put the bowl on the stove
+libero_goal,1,22,development,1,89,18,put the bowl on the stove
+libero_goal,1,23,confirmation,1,80,16,put the bowl on the stove
+libero_goal,1,24,development,0,300,60,put the bowl on the stove
+libero_goal,1,25,confirmation,1,82,17,put the bowl on the stove
+libero_goal,1,26,confirmation,1,84,17,put the bowl on the stove
+libero_goal,1,27,confirmation,1,88,18,put the bowl on the stove
+libero_goal,1,28,confirmation,1,87,18,put the bowl on the stove
+libero_goal,1,29,development,1,91,19,put the bowl on the stove
+libero_goal,1,30,confirmation,0,300,60,put the bowl on the stove
+libero_goal,1,31,confirmation,0,300,60,put the bowl on the stove
+libero_goal,1,32,development,1,91,19,put the bowl on the stove
+libero_goal,1,33,confirmation,1,96,20,put the bowl on the stove
+libero_goal,1,34,confirmation,1,80,16,put the bowl on the stove
+libero_goal,1,35,development,1,83,17,put the bowl on the stove
+libero_goal,1,36,development,1,89,18,put the bowl on the stove
+libero_goal,1,37,confirmation,1,76,16,put the bowl on the stove
+libero_goal,1,38,development,1,94,19,put the bowl on the stove
+libero_goal,1,39,confirmation,1,103,21,put the bowl on the stove
+libero_goal,1,40,confirmation,1,86,18,put the bowl on the stove
+libero_goal,1,41,confirmation,1,82,17,put the bowl on the stove
+libero_goal,1,42,development,1,83,17,put the bowl on the stove
+libero_goal,1,43,confirmation,1,82,17,put the bowl on the stove
+libero_goal,1,44,development,1,87,18,put the bowl on the stove
+libero_goal,1,45,confirmation,0,300,60,put the bowl on the stove
+libero_goal,1,46,confirmation,1,88,18,put the bowl on the stove
+libero_goal,1,47,development,0,300,60,put the bowl on the stove
+libero_goal,1,48,development,1,85,17,put the bowl on the stove
+libero_goal,1,49,confirmation,1,82,17,put the bowl on the stove
+libero_goal,2,0,confirmation,1,87,18,put the wine bottle on top of the cabinet
+libero_goal,2,1,development,1,114,23,put the wine bottle on top of the cabinet
+libero_goal,2,2,confirmation,1,100,20,put the wine bottle on top of the cabinet
+libero_goal,2,3,development,1,94,19,put the wine bottle on top of the cabinet
+libero_goal,2,4,confirmation,1,230,46,put the wine bottle on top of the cabinet
+libero_goal,2,5,confirmation,1,87,18,put the wine bottle on top of the cabinet
+libero_goal,2,6,confirmation,1,87,18,put the wine bottle on top of the cabinet
+libero_goal,2,7,confirmation,1,105,21,put the wine bottle on top of the cabinet
+libero_goal,2,8,development,1,115,23,put the wine bottle on top of the cabinet
+libero_goal,2,9,development,1,89,18,put the wine bottle on top of the cabinet
+libero_goal,2,10,confirmation,1,106,22,put the wine bottle on top of the cabinet
+libero_goal,2,11,development,1,88,18,put the wine bottle on top of the cabinet
+libero_goal,2,12,development,0,300,60,put the wine bottle on top of the cabinet
+libero_goal,2,13,confirmation,1,114,23,put the wine bottle on top of the cabinet
+libero_goal,2,14,confirmation,1,93,19,put the wine bottle on top of the cabinet
+libero_goal,2,15,confirmation,1,101,21,put the wine bottle on top of the cabinet
+libero_goal,2,16,development,1,95,19,put the wine bottle on top of the cabinet
+libero_goal,2,17,development,1,95,19,put the wine bottle on top of the cabinet
+libero_goal,2,18,confirmation,1,102,21,put the wine bottle on top of the cabinet
+libero_goal,2,19,confirmation,1,89,18,put the wine bottle on top of the cabinet
+libero_goal,2,20,development,1,98,20,put the wine bottle on top of the cabinet
+libero_goal,2,21,confirmation,1,103,21,put the wine bottle on top of the cabinet
+libero_goal,2,22,development,1,107,22,put the wine bottle on top of the cabinet
+libero_goal,2,23,development,1,105,21,put the wine bottle on top of the cabinet
+libero_goal,2,24,confirmation,1,90,18,put the wine bottle on top of the cabinet
+libero_goal,2,25,confirmation,1,92,19,put the wine bottle on top of the cabinet
+libero_goal,2,26,development,0,300,60,put the wine bottle on top of the cabinet
+libero_goal,2,27,confirmation,1,98,20,put the wine bottle on top of the cabinet
+libero_goal,2,28,confirmation,1,130,26,put the wine bottle on top of the cabinet
+libero_goal,2,29,confirmation,1,81,17,put the wine bottle on top of the cabinet
+libero_goal,2,30,confirmation,1,104,21,put the wine bottle on top of the cabinet
+libero_goal,2,31,confirmation,1,92,19,put the wine bottle on top of the cabinet
+libero_goal,2,32,development,1,88,18,put the wine bottle on top of the cabinet
+libero_goal,2,33,confirmation,1,102,21,put the wine bottle on top of the cabinet
+libero_goal,2,34,confirmation,1,128,26,put the wine bottle on top of the cabinet
+libero_goal,2,35,development,1,107,22,put the wine bottle on top of the cabinet
+libero_goal,2,36,development,1,97,20,put the wine bottle on top of the cabinet
+libero_goal,2,37,confirmation,0,300,60,put the wine bottle on top of the cabinet
+libero_goal,2,38,development,1,87,18,put the wine bottle on top of the cabinet
+libero_goal,2,39,confirmation,1,94,19,put the wine bottle on top of the cabinet
+libero_goal,2,40,development,1,86,18,put the wine bottle on top of the cabinet
+libero_goal,2,41,confirmation,1,88,18,put the wine bottle on top of the cabinet
+libero_goal,2,42,development,1,110,22,put the wine bottle on top of the cabinet
+libero_goal,2,43,development,0,300,60,put the wine bottle on top of the cabinet
+libero_goal,2,44,confirmation,1,84,17,put the wine bottle on top of the cabinet
+libero_goal,2,45,confirmation,1,107,22,put the wine bottle on top of the cabinet
+libero_goal,2,46,confirmation,1,96,20,put the wine bottle on top of the cabinet
+libero_goal,2,47,confirmation,1,92,19,put the wine bottle on top of the cabinet
+libero_goal,2,48,confirmation,1,99,20,put the wine bottle on top of the cabinet
+libero_goal,2,49,development,1,97,20,put the wine bottle on top of the cabinet
+libero_goal,3,0,development,1,179,36,open the top drawer and put the bowl inside
+libero_goal,3,1,confirmation,1,179,36,open the top drawer and put the bowl inside
+libero_goal,3,2,development,0,300,60,open the top drawer and put the bowl inside
+libero_goal,3,3,confirmation,0,300,60,open the top drawer and put the bowl inside
+libero_goal,3,4,confirmation,1,182,37,open the top drawer and put the bowl inside
+libero_goal,3,5,confirmation,0,300,60,open the top drawer and put the bowl inside
+libero_goal,3,6,confirmation,0,300,60,open the top drawer and put the bowl inside
+libero_goal,3,7,development,0,300,60,open the top drawer and put the bowl inside
+libero_goal,3,8,development,1,182,37,open the top drawer and put the bowl inside
+libero_goal,3,9,confirmation,1,211,43,open the top drawer and put the bowl inside
+libero_goal,3,10,confirmation,1,200,40,open the top drawer and put the bowl inside
+libero_goal,3,11,development,0,300,60,open the top drawer and put the bowl inside
+libero_goal,3,12,confirmation,0,300,60,open the top drawer and put the bowl inside
+libero_goal,3,13,development,1,194,39,open the top drawer and put the bowl inside
+libero_goal,3,14,development,0,300,60,open the top drawer and put the bowl inside
+libero_goal,3,15,confirmation,0,300,60,open the top drawer and put the bowl inside
+libero_goal,3,16,development,1,171,35,open the top drawer and put the bowl inside
+libero_goal,3,17,confirmation,0,300,60,open the top drawer and put the bowl inside
+libero_goal,3,18,confirmation,0,300,60,open the top drawer and put the bowl inside
+libero_goal,3,19,confirmation,1,163,33,open the top drawer and put the bowl inside
+libero_goal,3,20,development,1,177,36,open the top drawer and put the bowl inside
+libero_goal,3,21,development,0,300,60,open the top drawer and put the bowl inside
+libero_goal,3,22,confirmation,0,300,60,open the top drawer and put the bowl inside
+libero_goal,3,23,development,0,300,60,open the top drawer and put the bowl inside
+libero_goal,3,24,confirmation,0,300,60,open the top drawer and put the bowl inside
+libero_goal,3,25,confirmation,0,300,60,open the top drawer and put the bowl inside
+libero_goal,3,26,development,1,182,37,open the top drawer and put the bowl inside
+libero_goal,3,27,confirmation,0,300,60,open the top drawer and put the bowl inside
+libero_goal,3,28,confirmation,0,300,60,open the top drawer and put the bowl inside
+libero_goal,3,29,confirmation,0,300,60,open the top drawer and put the bowl inside
+libero_goal,3,30,confirmation,0,300,60,open the top drawer and put the bowl inside
+libero_goal,3,31,confirmation,1,184,37,open the top drawer and put the bowl inside
+libero_goal,3,32,development,0,300,60,open the top drawer and put the bowl inside
+libero_goal,3,33,development,0,300,60,open the top drawer and put the bowl inside
+libero_goal,3,34,confirmation,1,171,35,open the top drawer and put the bowl inside
+libero_goal,3,35,confirmation,0,300,60,open the top drawer and put the bowl inside
+libero_goal,3,36,confirmation,1,188,38,open the top drawer and put the bowl inside
+libero_goal,3,37,development,1,233,47,open the top drawer and put the bowl inside
+libero_goal,3,38,confirmation,0,300,60,open the top drawer and put the bowl inside
+libero_goal,3,39,development,0,300,60,open the top drawer and put the bowl inside
+libero_goal,3,40,confirmation,0,300,60,open the top drawer and put the bowl inside
+libero_goal,3,41,confirmation,1,215,43,open the top drawer and put the bowl inside
+libero_goal,3,42,confirmation,0,300,60,open the top drawer and put the bowl inside
+libero_goal,3,43,confirmation,0,300,60,open the top drawer and put the bowl inside
+libero_goal,3,44,development,0,300,60,open the top drawer and put the bowl inside
+libero_goal,3,45,development,1,186,38,open the top drawer and put the bowl inside
+libero_goal,3,46,confirmation,0,300,60,open the top drawer and put the bowl inside
+libero_goal,3,47,development,0,300,60,open the top drawer and put the bowl inside
+libero_goal,3,48,development,1,181,37,open the top drawer and put the bowl inside
+libero_goal,3,49,confirmation,0,300,60,open the top drawer and put the bowl inside
+libero_goal,4,0,development,1,134,27,put the bowl on top of the cabinet
+libero_goal,4,1,development,0,300,60,put the bowl on top of the cabinet
+libero_goal,4,2,confirmation,1,87,18,put the bowl on top of the cabinet
+libero_goal,4,3,confirmation,1,97,20,put the bowl on top of the cabinet
+libero_goal,4,4,confirmation,1,97,20,put the bowl on top of the cabinet
+libero_goal,4,5,development,0,300,60,put the bowl on top of the cabinet
+libero_goal,4,6,confirmation,0,300,60,put the bowl on top of the cabinet
+libero_goal,4,7,development,1,86,18,put the bowl on top of the cabinet
+libero_goal,4,8,confirmation,1,82,17,put the bowl on top of the cabinet
+libero_goal,4,9,confirmation,1,92,19,put the bowl on top of the cabinet
+libero_goal,4,10,confirmation,1,94,19,put the bowl on top of the cabinet
+libero_goal,4,11,development,1,94,19,put the bowl on top of the cabinet
+libero_goal,4,12,development,1,89,18,put the bowl on top of the cabinet
+libero_goal,4,13,development,1,90,18,put the bowl on top of the cabinet
+libero_goal,4,14,confirmation,1,84,17,put the bowl on top of the cabinet
+libero_goal,4,15,confirmation,1,83,17,put the bowl on top of the cabinet
+libero_goal,4,16,confirmation,1,88,18,put the bowl on top of the cabinet
+libero_goal,4,17,development,1,91,19,put the bowl on top of the cabinet
+libero_goal,4,18,confirmation,1,144,29,put the bowl on top of the cabinet
+libero_goal,4,19,confirmation,1,84,17,put the bowl on top of the cabinet
+libero_goal,4,20,development,1,90,18,put the bowl on top of the cabinet
+libero_goal,4,21,confirmation,1,84,17,put the bowl on top of the cabinet
+libero_goal,4,22,development,0,300,60,put the bowl on top of the cabinet
+libero_goal,4,23,confirmation,1,85,17,put the bowl on top of the cabinet
+libero_goal,4,24,confirmation,1,80,16,put the bowl on top of the cabinet
+libero_goal,4,25,confirmation,1,94,19,put the bowl on top of the cabinet
+libero_goal,4,26,confirmation,0,300,60,put the bowl on top of the cabinet
+libero_goal,4,27,development,1,88,18,put the bowl on top of the cabinet
+libero_goal,4,28,development,1,93,19,put the bowl on top of the cabinet
+libero_goal,4,29,confirmation,1,96,20,put the bowl on top of the cabinet
+libero_goal,4,30,confirmation,1,94,19,put the bowl on top of the cabinet
+libero_goal,4,31,development,1,86,18,put the bowl on top of the cabinet
+libero_goal,4,32,development,1,92,19,put the bowl on top of the cabinet
+libero_goal,4,33,confirmation,1,92,19,put the bowl on top of the cabinet
+libero_goal,4,34,confirmation,1,90,18,put the bowl on top of the cabinet
+libero_goal,4,35,development,1,88,18,put the bowl on top of the cabinet
+libero_goal,4,36,confirmation,1,93,19,put the bowl on top of the cabinet
+libero_goal,4,37,confirmation,1,102,21,put the bowl on top of the cabinet
+libero_goal,4,38,development,1,153,31,put the bowl on top of the cabinet
+libero_goal,4,39,confirmation,0,300,60,put the bowl on top of the cabinet
+libero_goal,4,40,confirmation,0,300,60,put the bowl on top of the cabinet
+libero_goal,4,41,confirmation,1,97,20,put the bowl on top of the cabinet
+libero_goal,4,42,development,1,87,18,put the bowl on top of the cabinet
+libero_goal,4,43,development,1,76,16,put the bowl on top of the cabinet
+libero_goal,4,44,confirmation,1,91,19,put the bowl on top of the cabinet
+libero_goal,4,45,confirmation,1,87,18,put the bowl on top of the cabinet
+libero_goal,4,46,development,1,92,19,put the bowl on top of the cabinet
+libero_goal,4,47,confirmation,1,108,22,put the bowl on top of the cabinet
+libero_goal,4,48,development,1,89,18,put the bowl on top of the cabinet
+libero_goal,4,49,confirmation,1,127,26,put the bowl on top of the cabinet
+libero_goal,5,0,development,1,132,27,push the plate to the front of the stove
+libero_goal,5,1,development,0,300,60,push the plate to the front of the stove
+libero_goal,5,2,confirmation,1,132,27,push the plate to the front of the stove
+libero_goal,5,3,confirmation,0,300,60,push the plate to the front of the stove
+libero_goal,5,4,confirmation,1,125,25,push the plate to the front of the stove
+libero_goal,5,5,development,0,300,60,push the plate to the front of the stove
+libero_goal,5,6,confirmation,1,117,24,push the plate to the front of the stove
+libero_goal,5,7,confirmation,1,121,25,push the plate to the front of the stove
+libero_goal,5,8,confirmation,1,145,29,push the plate to the front of the stove
+libero_goal,5,9,development,1,137,28,push the plate to the front of the stove
+libero_goal,5,10,confirmation,1,113,23,push the plate to the front of the stove
+libero_goal,5,11,confirmation,0,300,60,push the plate to the front of the stove
+libero_goal,5,12,development,0,300,60,push the plate to the front of the stove
+libero_goal,5,13,confirmation,1,128,26,push the plate to the front of the stove
+libero_goal,5,14,development,0,300,60,push the plate to the front of the stove
+libero_goal,5,15,confirmation,1,133,27,push the plate to the front of the stove
+libero_goal,5,16,development,0,300,60,push the plate to the front of the stove
+libero_goal,5,17,confirmation,0,300,60,push the plate to the front of the stove
+libero_goal,5,18,confirmation,1,130,26,push the plate to the front of the stove
+libero_goal,5,19,development,1,132,27,push the plate to the front of the stove
+libero_goal,5,20,confirmation,0,300,60,push the plate to the front of the stove
+libero_goal,5,21,development,1,122,25,push the plate to the front of the stove
+libero_goal,5,22,confirmation,0,300,60,push the plate to the front of the stove
+libero_goal,5,23,development,0,300,60,push the plate to the front of the stove
+libero_goal,5,24,confirmation,1,122,25,push the plate to the front of the stove
+libero_goal,5,25,development,0,300,60,push the plate to the front of the stove
+libero_goal,5,26,confirmation,1,149,30,push the plate to the front of the stove
+libero_goal,5,27,development,1,121,25,push the plate to the front of the stove
+libero_goal,5,28,confirmation,1,119,24,push the plate to the front of the stove
+libero_goal,5,29,confirmation,1,282,57,push the plate to the front of the stove
+libero_goal,5,30,development,1,138,28,push the plate to the front of the stove
+libero_goal,5,31,confirmation,0,300,60,push the plate to the front of the stove
+libero_goal,5,32,confirmation,1,153,31,push the plate to the front of the stove
+libero_goal,5,33,confirmation,0,300,60,push the plate to the front of the stove
+libero_goal,5,34,development,1,149,30,push the plate to the front of the stove
+libero_goal,5,35,development,0,300,60,push the plate to the front of the stove
+libero_goal,5,36,development,0,300,60,push the plate to the front of the stove
+libero_goal,5,37,confirmation,1,136,28,push the plate to the front of the stove
+libero_goal,5,38,confirmation,1,131,27,push the plate to the front of the stove
+libero_goal,5,39,confirmation,0,300,60,push the plate to the front of the stove
+libero_goal,5,40,confirmation,0,300,60,push the plate to the front of the stove
+libero_goal,5,41,development,1,120,24,push the plate to the front of the stove
+libero_goal,5,42,confirmation,1,128,26,push the plate to the front of the stove
+libero_goal,5,43,development,1,131,27,push the plate to the front of the stove
+libero_goal,5,44,confirmation,1,131,27,push the plate to the front of the stove
+libero_goal,5,45,development,1,129,26,push the plate to the front of the stove
+libero_goal,5,46,confirmation,1,123,25,push the plate to the front of the stove
+libero_goal,5,47,confirmation,1,121,25,push the plate to the front of the stove
+libero_goal,5,48,confirmation,1,128,26,push the plate to the front of the stove
+libero_goal,5,49,development,1,114,23,push the plate to the front of the stove
+libero_goal,6,0,confirmation,0,300,60,put the cream cheese in the bowl
+libero_goal,6,1,confirmation,0,300,60,put the cream cheese in the bowl
+libero_goal,6,2,confirmation,1,87,18,put the cream cheese in the bowl
+libero_goal,6,3,development,1,89,18,put the cream cheese in the bowl
+libero_goal,6,4,development,1,86,18,put the cream cheese in the bowl
+libero_goal,6,5,confirmation,1,89,18,put the cream cheese in the bowl
+libero_goal,6,6,confirmation,0,300,60,put the cream cheese in the bowl
+libero_goal,6,7,development,1,75,15,put the cream cheese in the bowl
+libero_goal,6,8,confirmation,0,300,60,put the cream cheese in the bowl
+libero_goal,6,9,development,1,86,18,put the cream cheese in the bowl
+libero_goal,6,10,development,1,82,17,put the cream cheese in the bowl
+libero_goal,6,11,confirmation,0,300,60,put the cream cheese in the bowl
+libero_goal,6,12,confirmation,1,102,21,put the cream cheese in the bowl
+libero_goal,6,13,development,1,78,16,put the cream cheese in the bowl
+libero_goal,6,14,development,1,86,18,put the cream cheese in the bowl
+libero_goal,6,15,development,1,87,18,put the cream cheese in the bowl
+libero_goal,6,16,confirmation,1,96,20,put the cream cheese in the bowl
+libero_goal,6,17,confirmation,1,93,19,put the cream cheese in the bowl
+libero_goal,6,18,confirmation,0,300,60,put the cream cheese in the bowl
+libero_goal,6,19,confirmation,1,84,17,put the cream cheese in the bowl
+libero_goal,6,20,development,0,300,60,put the cream cheese in the bowl
+libero_goal,6,21,confirmation,1,92,19,put the cream cheese in the bowl
+libero_goal,6,22,development,1,83,17,put the cream cheese in the bowl
+libero_goal,6,23,confirmation,1,93,19,put the cream cheese in the bowl
+libero_goal,6,24,confirmation,1,89,18,put the cream cheese in the bowl
+libero_goal,6,25,confirmation,1,81,17,put the cream cheese in the bowl
+libero_goal,6,26,development,1,96,20,put the cream cheese in the bowl
+libero_goal,6,27,development,1,90,18,put the cream cheese in the bowl
+libero_goal,6,28,confirmation,1,86,18,put the cream cheese in the bowl
+libero_goal,6,29,confirmation,1,85,17,put the cream cheese in the bowl
+libero_goal,6,30,development,1,89,18,put the cream cheese in the bowl
+libero_goal,6,31,development,0,300,60,put the cream cheese in the bowl
+libero_goal,6,32,confirmation,0,300,60,put the cream cheese in the bowl
+libero_goal,6,33,confirmation,1,88,18,put the cream cheese in the bowl
+libero_goal,6,34,confirmation,1,83,17,put the cream cheese in the bowl
+libero_goal,6,35,confirmation,1,85,17,put the cream cheese in the bowl
+libero_goal,6,36,confirmation,0,300,60,put the cream cheese in the bowl
+libero_goal,6,37,development,1,88,18,put the cream cheese in the bowl
+libero_goal,6,38,confirmation,0,300,60,put the cream cheese in the bowl
+libero_goal,6,39,development,1,85,17,put the cream cheese in the bowl
+libero_goal,6,40,development,0,300,60,put the cream cheese in the bowl
+libero_goal,6,41,development,1,93,19,put the cream cheese in the bowl
+libero_goal,6,42,confirmation,1,81,17,put the cream cheese in the bowl
+libero_goal,6,43,confirmation,1,122,25,put the cream cheese in the bowl
+libero_goal,6,44,confirmation,0,300,60,put the cream cheese in the bowl
+libero_goal,6,45,confirmation,1,93,19,put the cream cheese in the bowl
+libero_goal,6,46,development,1,92,19,put the cream cheese in the bowl
+libero_goal,6,47,confirmation,0,300,60,put the cream cheese in the bowl
+libero_goal,6,48,confirmation,1,179,36,put the cream cheese in the bowl
+libero_goal,6,49,development,1,97,20,put the cream cheese in the bowl
+libero_goal,7,0,development,1,73,15,turn on the stove
+libero_goal,7,1,confirmation,1,72,15,turn on the stove
+libero_goal,7,2,confirmation,1,75,15,turn on the stove
+libero_goal,7,3,development,1,66,14,turn on the stove
+libero_goal,7,4,development,1,66,14,turn on the stove
+libero_goal,7,5,development,1,76,16,turn on the stove
+libero_goal,7,6,confirmation,1,79,16,turn on the stove
+libero_goal,7,7,confirmation,1,74,15,turn on the stove
+libero_goal,7,8,confirmation,1,79,16,turn on the stove
+libero_goal,7,9,confirmation,1,70,14,turn on the stove
+libero_goal,7,10,confirmation,1,77,16,turn on the stove
+libero_goal,7,11,confirmation,1,72,15,turn on the stove
+libero_goal,7,12,development,1,76,16,turn on the stove
+libero_goal,7,13,confirmation,1,72,15,turn on the stove
+libero_goal,7,14,development,1,78,16,turn on the stove
+libero_goal,7,15,development,1,79,16,turn on the stove
+libero_goal,7,16,development,1,82,17,turn on the stove
+libero_goal,7,17,confirmation,1,73,15,turn on the stove
+libero_goal,7,18,confirmation,1,79,16,turn on the stove
+libero_goal,7,19,confirmation,0,300,60,turn on the stove
+libero_goal,7,20,confirmation,1,78,16,turn on the stove
+libero_goal,7,21,confirmation,1,66,14,turn on the stove
+libero_goal,7,22,development,1,67,14,turn on the stove
+libero_goal,7,23,confirmation,1,86,18,turn on the stove
+libero_goal,7,24,development,1,76,16,turn on the stove
+libero_goal,7,25,confirmation,1,72,15,turn on the stove
+libero_goal,7,26,development,1,78,16,turn on the stove
+libero_goal,7,27,development,1,83,17,turn on the stove
+libero_goal,7,28,confirmation,1,67,14,turn on the stove
+libero_goal,7,29,confirmation,1,72,15,turn on the stove
+libero_goal,7,30,confirmation,1,72,15,turn on the stove
+libero_goal,7,31,confirmation,1,71,15,turn on the stove
+libero_goal,7,32,confirmation,0,300,60,turn on the stove
+libero_goal,7,33,development,1,79,16,turn on the stove
+libero_goal,7,34,development,1,66,14,turn on the stove
+libero_goal,7,35,development,1,76,16,turn on the stove
+libero_goal,7,36,confirmation,1,71,15,turn on the stove
+libero_goal,7,37,confirmation,1,69,14,turn on the stove
+libero_goal,7,38,confirmation,1,67,14,turn on the stove
+libero_goal,7,39,development,1,71,15,turn on the stove
+libero_goal,7,40,development,1,73,15,turn on the stove
+libero_goal,7,41,confirmation,1,72,15,turn on the stove
+libero_goal,7,42,confirmation,1,73,15,turn on the stove
+libero_goal,7,43,confirmation,1,74,15,turn on the stove
+libero_goal,7,44,development,1,73,15,turn on the stove
+libero_goal,7,45,confirmation,1,71,15,turn on the stove
+libero_goal,7,46,confirmation,1,78,16,turn on the stove
+libero_goal,7,47,development,1,68,14,turn on the stove
+libero_goal,7,48,development,1,68,14,turn on the stove
+libero_goal,7,49,confirmation,1,73,15,turn on the stove
+libero_goal,8,0,confirmation,1,75,15,put the bowl on the plate
+libero_goal,8,1,development,1,80,16,put the bowl on the plate
+libero_goal,8,2,confirmation,0,300,60,put the bowl on the plate
+libero_goal,8,3,confirmation,1,84,17,put the bowl on the plate
+libero_goal,8,4,confirmation,1,74,15,put the bowl on the plate
+libero_goal,8,5,development,1,86,18,put the bowl on the plate
+libero_goal,8,6,confirmation,1,69,14,put the bowl on the plate
+libero_goal,8,7,development,1,70,14,put the bowl on the plate
+libero_goal,8,8,development,1,87,18,put the bowl on the plate
+libero_goal,8,9,confirmation,1,76,16,put the bowl on the plate
+libero_goal,8,10,confirmation,1,110,22,put the bowl on the plate
+libero_goal,8,11,confirmation,1,76,16,put the bowl on the plate
+libero_goal,8,12,development,1,76,16,put the bowl on the plate
+libero_goal,8,13,confirmation,1,72,15,put the bowl on the plate
+libero_goal,8,14,development,0,300,60,put the bowl on the plate
+libero_goal,8,15,confirmation,0,300,60,put the bowl on the plate
+libero_goal,8,16,development,1,106,22,put the bowl on the plate
+libero_goal,8,17,confirmation,1,95,19,put the bowl on the plate
+libero_goal,8,18,development,1,77,16,put the bowl on the plate
+libero_goal,8,19,confirmation,1,74,15,put the bowl on the plate
+libero_goal,8,20,confirmation,1,80,16,put the bowl on the plate
+libero_goal,8,21,development,1,72,15,put the bowl on the plate
+libero_goal,8,22,confirmation,1,74,15,put the bowl on the plate
+libero_goal,8,23,confirmation,1,78,16,put the bowl on the plate
+libero_goal,8,24,development,1,69,14,put the bowl on the plate
+libero_goal,8,25,confirmation,1,71,15,put the bowl on the plate
+libero_goal,8,26,confirmation,1,75,15,put the bowl on the plate
+libero_goal,8,27,development,1,67,14,put the bowl on the plate
+libero_goal,8,28,confirmation,1,86,18,put the bowl on the plate
+libero_goal,8,29,development,1,75,15,put the bowl on the plate
+libero_goal,8,30,confirmation,1,76,16,put the bowl on the plate
+libero_goal,8,31,confirmation,1,72,15,put the bowl on the plate
+libero_goal,8,32,confirmation,1,71,15,put the bowl on the plate
+libero_goal,8,33,development,0,300,60,put the bowl on the plate
+libero_goal,8,34,confirmation,1,76,16,put the bowl on the plate
+libero_goal,8,35,development,0,300,60,put the bowl on the plate
+libero_goal,8,36,confirmation,1,103,21,put the bowl on the plate
+libero_goal,8,37,confirmation,1,80,16,put the bowl on the plate
+libero_goal,8,38,development,1,74,15,put the bowl on the plate
+libero_goal,8,39,development,1,72,15,put the bowl on the plate
+libero_goal,8,40,confirmation,1,82,17,put the bowl on the plate
+libero_goal,8,41,development,1,73,15,put the bowl on the plate
+libero_goal,8,42,confirmation,1,84,17,put the bowl on the plate
+libero_goal,8,43,development,1,74,15,put the bowl on the plate
+libero_goal,8,44,confirmation,0,300,60,put the bowl on the plate
+libero_goal,8,45,development,1,79,16,put the bowl on the plate
+libero_goal,8,46,development,1,88,18,put the bowl on the plate
+libero_goal,8,47,confirmation,1,75,15,put the bowl on the plate
+libero_goal,8,48,confirmation,0,300,60,put the bowl on the plate
+libero_goal,8,49,confirmation,1,81,17,put the bowl on the plate
+libero_goal,9,0,development,1,160,32,put the wine bottle on the rack
+libero_goal,9,1,confirmation,0,300,60,put the wine bottle on the rack
+libero_goal,9,2,development,0,300,60,put the wine bottle on the rack
+libero_goal,9,3,confirmation,1,143,29,put the wine bottle on the rack
+libero_goal,9,4,confirmation,0,300,60,put the wine bottle on the rack
+libero_goal,9,5,confirmation,1,134,27,put the wine bottle on the rack
+libero_goal,9,6,confirmation,1,124,25,put the wine bottle on the rack
+libero_goal,9,7,development,1,153,31,put the wine bottle on the rack
+libero_goal,9,8,development,0,300,60,put the wine bottle on the rack
+libero_goal,9,9,confirmation,0,300,60,put the wine bottle on the rack
+libero_goal,9,10,confirmation,0,300,60,put the wine bottle on the rack
+libero_goal,9,11,confirmation,1,145,29,put the wine bottle on the rack
+libero_goal,9,12,development,1,120,24,put the wine bottle on the rack
+libero_goal,9,13,development,0,300,60,put the wine bottle on the rack
+libero_goal,9,14,confirmation,1,152,31,put the wine bottle on the rack
+libero_goal,9,15,confirmation,0,300,60,put the wine bottle on the rack
+libero_goal,9,16,confirmation,1,183,37,put the wine bottle on the rack
+libero_goal,9,17,development,0,300,60,put the wine bottle on the rack
+libero_goal,9,18,development,0,300,60,put the wine bottle on the rack
+libero_goal,9,19,confirmation,0,300,60,put the wine bottle on the rack
+libero_goal,9,20,confirmation,1,135,27,put the wine bottle on the rack
+libero_goal,9,21,confirmation,1,148,30,put the wine bottle on the rack
+libero_goal,9,22,confirmation,0,300,60,put the wine bottle on the rack
+libero_goal,9,23,development,1,123,25,put the wine bottle on the rack
+libero_goal,9,24,development,1,138,28,put the wine bottle on the rack
+libero_goal,9,25,development,0,300,60,put the wine bottle on the rack
+libero_goal,9,26,confirmation,0,300,60,put the wine bottle on the rack
+libero_goal,9,27,confirmation,0,300,60,put the wine bottle on the rack
+libero_goal,9,28,development,0,300,60,put the wine bottle on the rack
+libero_goal,9,29,confirmation,0,300,60,put the wine bottle on the rack
+libero_goal,9,30,confirmation,1,140,28,put the wine bottle on the rack
+libero_goal,9,31,confirmation,1,135,27,put the wine bottle on the rack
+libero_goal,9,32,confirmation,1,174,35,put the wine bottle on the rack
+libero_goal,9,33,confirmation,0,300,60,put the wine bottle on the rack
+libero_goal,9,34,confirmation,0,300,60,put the wine bottle on the rack
+libero_goal,9,35,development,0,300,60,put the wine bottle on the rack
+libero_goal,9,36,development,0,300,60,put the wine bottle on the rack
+libero_goal,9,37,development,0,300,60,put the wine bottle on the rack
+libero_goal,9,38,confirmation,0,300,60,put the wine bottle on the rack
+libero_goal,9,39,development,0,300,60,put the wine bottle on the rack
+libero_goal,9,40,confirmation,0,300,60,put the wine bottle on the rack
+libero_goal,9,41,confirmation,1,157,32,put the wine bottle on the rack
+libero_goal,9,42,confirmation,0,300,60,put the wine bottle on the rack
+libero_goal,9,43,confirmation,0,300,60,put the wine bottle on the rack
+libero_goal,9,44,confirmation,1,282,57,put the wine bottle on the rack
+libero_goal,9,45,development,0,300,60,put the wine bottle on the rack
+libero_goal,9,46,development,0,300,60,put the wine bottle on the rack
+libero_goal,9,47,development,1,142,29,put the wine bottle on the rack
+libero_goal,9,48,confirmation,0,300,60,put the wine bottle on the rack
+libero_goal,9,49,development,0,300,60,put the wine bottle on the rack

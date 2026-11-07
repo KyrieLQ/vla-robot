@@ -1,0 +1,7857 @@
+{
+  "suite": "libero_spatial",
+  "task_order_index": 0,
+  "source_repo": "physical-intelligence/libero",
+  "source_revision": "a4336d589d589045d1c56423ffdf3b88a0e19b1f",
+  "codebase_version": "v2.0",
+  "selection": "all available complete trajectories for all 10 exact language-matched spatial tasks",
+  "tasks": [
+    {
+      "task_id": 0,
+      "task_name": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
+      "language": "pick up the black bowl between the plate and the ramekin and place it on the plate"
+    },
+    {
+      "task_id": 1,
+      "task_name": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate",
+      "language": "pick up the black bowl next to the ramekin and place it on the plate"
+    },
+    {
+      "task_id": 2,
+      "task_name": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate",
+      "language": "pick up the black bowl from table center and place it on the plate"
+    },
+    {
+      "task_id": 3,
+      "task_name": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate",
+      "language": "pick up the black bowl on the cookie box and place it on the plate"
+    },
+    {
+      "task_id": 4,
+      "task_name": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate",
+      "language": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+    },
+    {
+      "task_id": 5,
+      "task_name": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate",
+      "language": "pick up the black bowl on the ramekin and place it on the plate"
+    },
+    {
+      "task_id": 6,
+      "task_name": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate",
+      "language": "pick up the black bowl next to the cookie box and place it on the plate"
+    },
+    {
+      "task_id": 7,
+      "task_name": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate",
+      "language": "pick up the black bowl on the stove and place it on the plate"
+    },
+    {
+      "task_id": 8,
+      "task_name": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate",
+      "language": "pick up the black bowl next to the plate and place it on the plate"
+    },
+    {
+      "task_id": 9,
+      "task_name": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate",
+      "language": "pick up the black bowl on the wooden cabinet and place it on the plate"
+    }
+  ],
+  "task_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "episodes": [
+    {
+      "episode_index": 1261,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 110
+    },
+    {
+      "episode_index": 1262,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 138
+    },
+    {
+      "episode_index": 1263,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 127
+    },
+    {
+      "episode_index": 1264,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 100
+    },
+    {
+      "episode_index": 1265,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 116
+    },
+    {
+      "episode_index": 1266,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 107
+    },
+    {
+      "episode_index": 1267,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 124
+    },
+    {
+      "episode_index": 1268,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 129
+    },
+    {
+      "episode_index": 1269,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 139
+    },
+    {
+      "episode_index": 1270,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 148
+    },
+    {
+      "episode_index": 1271,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 101
+    },
+    {
+      "episode_index": 1272,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 84
+    },
+    {
+      "episode_index": 1273,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 85
+    },
+    {
+      "episode_index": 1274,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 113
+    },
+    {
+      "episode_index": 1275,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 128
+    },
+    {
+      "episode_index": 1276,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 140
+    },
+    {
+      "episode_index": 1277,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 111
+    },
+    {
+      "episode_index": 1278,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 101
+    },
+    {
+      "episode_index": 1279,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 96
+    },
+    {
+      "episode_index": 1280,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 107
+    },
+    {
+      "episode_index": 1281,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 112
+    },
+    {
+      "episode_index": 1282,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 84
+    },
+    {
+      "episode_index": 1283,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 135
+    },
+    {
+      "episode_index": 1284,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 149
+    },
+    {
+      "episode_index": 1285,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 125
+    },
+    {
+      "episode_index": 1286,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 132
+    },
+    {
+      "episode_index": 1287,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 100
+    },
+    {
+      "episode_index": 1288,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 86
+    },
+    {
+      "episode_index": 1289,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 120
+    },
+    {
+      "episode_index": 1290,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 164
+    },
+    {
+      "episode_index": 1291,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 125
+    },
+    {
+      "episode_index": 1292,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 157
+    },
+    {
+      "episode_index": 1293,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 121
+    },
+    {
+      "episode_index": 1294,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 120
+    },
+    {
+      "episode_index": 1295,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 137
+    },
+    {
+      "episode_index": 1296,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 135
+    },
+    {
+      "episode_index": 1297,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 116
+    },
+    {
+      "episode_index": 1298,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 131
+    },
+    {
+      "episode_index": 1299,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 121
+    },
+    {
+      "episode_index": 1300,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 102
+    },
+    {
+      "episode_index": 1301,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 141
+    },
+    {
+      "episode_index": 1302,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 156
+    },
+    {
+      "episode_index": 1303,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 119
+    },
+    {
+      "episode_index": 1304,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 113
+    },
+    {
+      "episode_index": 1305,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 143
+    },
+    {
+      "episode_index": 1306,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 132
+    },
+    {
+      "episode_index": 1307,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 138
+    },
+    {
+      "episode_index": 1308,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 142
+    },
+    {
+      "episode_index": 1309,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 115
+    },
+    {
+      "episode_index": 1310,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 111
+    },
+    {
+      "episode_index": 1311,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 140
+    },
+    {
+      "episode_index": 1312,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 145
+    },
+    {
+      "episode_index": 1313,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 113
+    },
+    {
+      "episode_index": 1314,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 117
+    },
+    {
+      "episode_index": 1315,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 106
+    },
+    {
+      "episode_index": 1316,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 103
+    },
+    {
+      "episode_index": 1317,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 114
+    },
+    {
+      "episode_index": 1318,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 135
+    },
+    {
+      "episode_index": 1319,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 102
+    },
+    {
+      "episode_index": 1320,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 123
+    },
+    {
+      "episode_index": 1321,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 111
+    },
+    {
+      "episode_index": 1322,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 120
+    },
+    {
+      "episode_index": 1323,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 125
+    },
+    {
+      "episode_index": 1324,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 99
+    },
+    {
+      "episode_index": 1325,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 135
+    },
+    {
+      "episode_index": 1326,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 144
+    },
+    {
+      "episode_index": 1327,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 124
+    },
+    {
+      "episode_index": 1328,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 111
+    },
+    {
+      "episode_index": 1329,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 124
+    },
+    {
+      "episode_index": 1330,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 168
+    },
+    {
+      "episode_index": 1331,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 137
+    },
+    {
+      "episode_index": 1332,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 125
+    },
+    {
+      "episode_index": 1333,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 141
+    },
+    {
+      "episode_index": 1334,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 147
+    },
+    {
+      "episode_index": 1335,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 117
+    },
+    {
+      "episode_index": 1336,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 135
+    },
+    {
+      "episode_index": 1337,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 133
+    },
+    {
+      "episode_index": 1338,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 125
+    },
+    {
+      "episode_index": 1339,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 165
+    },
+    {
+      "episode_index": 1340,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 122
+    },
+    {
+      "episode_index": 1341,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 154
+    },
+    {
+      "episode_index": 1342,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 126
+    },
+    {
+      "episode_index": 1343,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 108
+    },
+    {
+      "episode_index": 1344,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 112
+    },
+    {
+      "episode_index": 1345,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 109
+    },
+    {
+      "episode_index": 1346,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 123
+    },
+    {
+      "episode_index": 1347,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 92
+    },
+    {
+      "episode_index": 1348,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 114
+    },
+    {
+      "episode_index": 1349,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 153
+    },
+    {
+      "episode_index": 1350,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 127
+    },
+    {
+      "episode_index": 1351,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 125
+    },
+    {
+      "episode_index": 1352,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 96
+    },
+    {
+      "episode_index": 1353,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 107
+    },
+    {
+      "episode_index": 1354,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 138
+    },
+    {
+      "episode_index": 1355,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 138
+    },
+    {
+      "episode_index": 1356,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 137
+    },
+    {
+      "episode_index": 1357,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 95
+    },
+    {
+      "episode_index": 1358,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 105
+    },
+    {
+      "episode_index": 1359,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 137
+    },
+    {
+      "episode_index": 1360,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 134
+    },
+    {
+      "episode_index": 1361,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 133
+    },
+    {
+      "episode_index": 1362,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 144
+    },
+    {
+      "episode_index": 1363,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 164
+    },
+    {
+      "episode_index": 1364,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 167
+    },
+    {
+      "episode_index": 1365,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 147
+    },
+    {
+      "episode_index": 1366,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 94
+    },
+    {
+      "episode_index": 1367,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 89
+    },
+    {
+      "episode_index": 1368,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 88
+    },
+    {
+      "episode_index": 1369,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 133
+    },
+    {
+      "episode_index": 1370,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 152
+    },
+    {
+      "episode_index": 1371,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 122
+    },
+    {
+      "episode_index": 1372,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 115
+    },
+    {
+      "episode_index": 1373,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 156
+    },
+    {
+      "episode_index": 1374,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 124
+    },
+    {
+      "episode_index": 1375,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 125
+    },
+    {
+      "episode_index": 1376,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 126
+    },
+    {
+      "episode_index": 1377,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 134
+    },
+    {
+      "episode_index": 1378,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 115
+    },
+    {
+      "episode_index": 1379,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 75
+    },
+    {
+      "episode_index": 1380,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 110
+    },
+    {
+      "episode_index": 1381,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 128
+    },
+    {
+      "episode_index": 1382,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 121
+    },
+    {
+      "episode_index": 1383,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 114
+    },
+    {
+      "episode_index": 1384,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 126
+    },
+    {
+      "episode_index": 1385,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 108
+    },
+    {
+      "episode_index": 1386,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 97
+    },
+    {
+      "episode_index": 1387,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 138
+    },
+    {
+      "episode_index": 1388,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 106
+    },
+    {
+      "episode_index": 1389,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 136
+    },
+    {
+      "episode_index": 1390,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 130
+    },
+    {
+      "episode_index": 1391,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 96
+    },
+    {
+      "episode_index": 1392,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 122
+    },
+    {
+      "episode_index": 1393,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 109
+    },
+    {
+      "episode_index": 1394,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 163
+    },
+    {
+      "episode_index": 1395,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 87
+    },
+    {
+      "episode_index": 1396,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 110
+    },
+    {
+      "episode_index": 1397,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 95
+    },
+    {
+      "episode_index": 1398,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 142
+    },
+    {
+      "episode_index": 1399,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 145
+    },
+    {
+      "episode_index": 1400,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 140
+    },
+    {
+      "episode_index": 1401,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 89
+    },
+    {
+      "episode_index": 1402,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 173
+    },
+    {
+      "episode_index": 1403,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 137
+    },
+    {
+      "episode_index": 1404,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 91
+    },
+    {
+      "episode_index": 1405,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 92
+    },
+    {
+      "episode_index": 1406,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 126
+    },
+    {
+      "episode_index": 1407,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 130
+    },
+    {
+      "episode_index": 1408,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 136
+    },
+    {
+      "episode_index": 1409,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 110
+    },
+    {
+      "episode_index": 1410,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 89
+    },
+    {
+      "episode_index": 1411,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 139
+    },
+    {
+      "episode_index": 1412,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 145
+    },
+    {
+      "episode_index": 1413,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 97
+    },
+    {
+      "episode_index": 1414,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 155
+    },
+    {
+      "episode_index": 1415,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 133
+    },
+    {
+      "episode_index": 1416,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 133
+    },
+    {
+      "episode_index": 1417,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 96
+    },
+    {
+      "episode_index": 1418,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 152
+    },
+    {
+      "episode_index": 1419,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 135
+    },
+    {
+      "episode_index": 1420,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 156
+    },
+    {
+      "episode_index": 1421,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 118
+    },
+    {
+      "episode_index": 1422,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 129
+    },
+    {
+      "episode_index": 1423,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 137
+    },
+    {
+      "episode_index": 1424,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 129
+    },
+    {
+      "episode_index": 1425,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 86
+    },
+    {
+      "episode_index": 1426,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 115
+    },
+    {
+      "episode_index": 1427,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 150
+    },
+    {
+      "episode_index": 1428,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 111
+    },
+    {
+      "episode_index": 1429,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 123
+    },
+    {
+      "episode_index": 1430,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 169
+    },
+    {
+      "episode_index": 1431,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 134
+    },
+    {
+      "episode_index": 1432,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 131
+    },
+    {
+      "episode_index": 1433,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 142
+    },
+    {
+      "episode_index": 1434,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 134
+    },
+    {
+      "episode_index": 1435,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 142
+    },
+    {
+      "episode_index": 1436,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 109
+    },
+    {
+      "episode_index": 1437,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 100
+    },
+    {
+      "episode_index": 1438,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 106
+    },
+    {
+      "episode_index": 1439,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 139
+    },
+    {
+      "episode_index": 1440,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 129
+    },
+    {
+      "episode_index": 1441,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 153
+    },
+    {
+      "episode_index": 1442,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 124
+    },
+    {
+      "episode_index": 1443,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 128
+    },
+    {
+      "episode_index": 1444,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 136
+    },
+    {
+      "episode_index": 1445,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 109
+    },
+    {
+      "episode_index": 1446,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 106
+    },
+    {
+      "episode_index": 1447,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 131
+    },
+    {
+      "episode_index": 1448,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 119
+    },
+    {
+      "episode_index": 1449,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 93
+    },
+    {
+      "episode_index": 1450,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 92
+    },
+    {
+      "episode_index": 1451,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 111
+    },
+    {
+      "episode_index": 1452,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 96
+    },
+    {
+      "episode_index": 1453,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 158
+    },
+    {
+      "episode_index": 1454,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 145
+    },
+    {
+      "episode_index": 1455,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 143
+    },
+    {
+      "episode_index": 1456,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 129
+    },
+    {
+      "episode_index": 1457,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 96
+    },
+    {
+      "episode_index": 1458,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 130
+    },
+    {
+      "episode_index": 1459,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 100
+    },
+    {
+      "episode_index": 1460,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 109
+    },
+    {
+      "episode_index": 1461,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 167
+    },
+    {
+      "episode_index": 1462,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 129
+    },
+    {
+      "episode_index": 1463,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 97
+    },
+    {
+      "episode_index": 1464,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 113
+    },
+    {
+      "episode_index": 1465,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 111
+    },
+    {
+      "episode_index": 1466,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 125
+    },
+    {
+      "episode_index": 1467,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 109
+    },
+    {
+      "episode_index": 1468,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 95
+    },
+    {
+      "episode_index": 1469,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 137
+    },
+    {
+      "episode_index": 1470,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 159
+    },
+    {
+      "episode_index": 1471,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 95
+    },
+    {
+      "episode_index": 1472,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 122
+    },
+    {
+      "episode_index": 1473,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 124
+    },
+    {
+      "episode_index": 1474,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 158
+    },
+    {
+      "episode_index": 1475,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 111
+    },
+    {
+      "episode_index": 1476,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 125
+    },
+    {
+      "episode_index": 1477,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 131
+    },
+    {
+      "episode_index": 1478,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 122
+    },
+    {
+      "episode_index": 1479,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 115
+    },
+    {
+      "episode_index": 1480,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 127
+    },
+    {
+      "episode_index": 1481,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 118
+    },
+    {
+      "episode_index": 1482,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 98
+    },
+    {
+      "episode_index": 1483,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 101
+    },
+    {
+      "episode_index": 1484,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 182
+    },
+    {
+      "episode_index": 1485,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 123
+    },
+    {
+      "episode_index": 1486,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 124
+    },
+    {
+      "episode_index": 1487,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 103
+    },
+    {
+      "episode_index": 1488,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 133
+    },
+    {
+      "episode_index": 1489,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 86
+    },
+    {
+      "episode_index": 1490,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 127
+    },
+    {
+      "episode_index": 1491,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 100
+    },
+    {
+      "episode_index": 1492,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 137
+    },
+    {
+      "episode_index": 1493,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 84
+    },
+    {
+      "episode_index": 1494,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 142
+    },
+    {
+      "episode_index": 1495,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 135
+    },
+    {
+      "episode_index": 1496,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 100
+    },
+    {
+      "episode_index": 1497,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 140
+    },
+    {
+      "episode_index": 1498,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 131
+    },
+    {
+      "episode_index": 1499,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 117
+    },
+    {
+      "episode_index": 1500,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 91
+    },
+    {
+      "episode_index": 1501,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 154
+    },
+    {
+      "episode_index": 1502,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 146
+    },
+    {
+      "episode_index": 1503,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 105
+    },
+    {
+      "episode_index": 1504,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 89
+    },
+    {
+      "episode_index": 1505,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 150
+    },
+    {
+      "episode_index": 1506,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 79
+    },
+    {
+      "episode_index": 1507,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 107
+    },
+    {
+      "episode_index": 1508,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 113
+    },
+    {
+      "episode_index": 1509,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 123
+    },
+    {
+      "episode_index": 1510,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 114
+    },
+    {
+      "episode_index": 1511,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 124
+    },
+    {
+      "episode_index": 1512,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 138
+    },
+    {
+      "episode_index": 1513,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 111
+    },
+    {
+      "episode_index": 1514,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 119
+    },
+    {
+      "episode_index": 1515,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 114
+    },
+    {
+      "episode_index": 1516,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 136
+    },
+    {
+      "episode_index": 1517,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 127
+    },
+    {
+      "episode_index": 1518,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 133
+    },
+    {
+      "episode_index": 1519,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 121
+    },
+    {
+      "episode_index": 1520,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 134
+    },
+    {
+      "episode_index": 1521,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 128
+    },
+    {
+      "episode_index": 1522,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 97
+    },
+    {
+      "episode_index": 1523,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 130
+    },
+    {
+      "episode_index": 1524,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 123
+    },
+    {
+      "episode_index": 1525,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 119
+    },
+    {
+      "episode_index": 1526,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 130
+    },
+    {
+      "episode_index": 1527,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 134
+    },
+    {
+      "episode_index": 1528,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 113
+    },
+    {
+      "episode_index": 1529,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 111
+    },
+    {
+      "episode_index": 1530,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 126
+    },
+    {
+      "episode_index": 1531,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 142
+    },
+    {
+      "episode_index": 1532,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 96
+    },
+    {
+      "episode_index": 1533,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 165
+    },
+    {
+      "episode_index": 1534,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 127
+    },
+    {
+      "episode_index": 1535,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 92
+    },
+    {
+      "episode_index": 1536,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 121
+    },
+    {
+      "episode_index": 1537,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 132
+    },
+    {
+      "episode_index": 1538,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 145
+    },
+    {
+      "episode_index": 1539,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 122
+    },
+    {
+      "episode_index": 1540,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 104
+    },
+    {
+      "episode_index": 1541,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 143
+    },
+    {
+      "episode_index": 1542,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 117
+    },
+    {
+      "episode_index": 1543,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 145
+    },
+    {
+      "episode_index": 1544,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 121
+    },
+    {
+      "episode_index": 1545,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 106
+    },
+    {
+      "episode_index": 1546,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 173
+    },
+    {
+      "episode_index": 1547,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 104
+    },
+    {
+      "episode_index": 1548,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 96
+    },
+    {
+      "episode_index": 1549,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 125
+    },
+    {
+      "episode_index": 1550,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 120
+    },
+    {
+      "episode_index": 1551,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 151
+    },
+    {
+      "episode_index": 1552,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 110
+    },
+    {
+      "episode_index": 1553,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 133
+    },
+    {
+      "episode_index": 1554,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 101
+    },
+    {
+      "episode_index": 1555,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 131
+    },
+    {
+      "episode_index": 1556,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 110
+    },
+    {
+      "episode_index": 1557,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 98
+    },
+    {
+      "episode_index": 1558,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 117
+    },
+    {
+      "episode_index": 1559,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 112
+    },
+    {
+      "episode_index": 1560,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 105
+    },
+    {
+      "episode_index": 1561,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 121
+    },
+    {
+      "episode_index": 1562,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 117
+    },
+    {
+      "episode_index": 1563,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 151
+    },
+    {
+      "episode_index": 1564,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 114
+    },
+    {
+      "episode_index": 1565,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 110
+    },
+    {
+      "episode_index": 1566,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 143
+    },
+    {
+      "episode_index": 1567,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 92
+    },
+    {
+      "episode_index": 1568,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 92
+    },
+    {
+      "episode_index": 1569,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 103
+    },
+    {
+      "episode_index": 1570,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 106
+    },
+    {
+      "episode_index": 1571,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 133
+    },
+    {
+      "episode_index": 1572,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 116
+    },
+    {
+      "episode_index": 1573,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 117
+    },
+    {
+      "episode_index": 1574,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 105
+    },
+    {
+      "episode_index": 1575,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 133
+    },
+    {
+      "episode_index": 1576,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 158
+    },
+    {
+      "episode_index": 1577,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 111
+    },
+    {
+      "episode_index": 1578,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 99
+    },
+    {
+      "episode_index": 1579,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 108
+    },
+    {
+      "episode_index": 1580,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 100
+    },
+    {
+      "episode_index": 1581,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 132
+    },
+    {
+      "episode_index": 1582,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 137
+    },
+    {
+      "episode_index": 1583,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 97
+    },
+    {
+      "episode_index": 1584,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 115
+    },
+    {
+      "episode_index": 1585,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 128
+    },
+    {
+      "episode_index": 1586,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 131
+    },
+    {
+      "episode_index": 1587,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 137
+    },
+    {
+      "episode_index": 1588,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 189
+    },
+    {
+      "episode_index": 1589,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 93
+    },
+    {
+      "episode_index": 1590,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 164
+    },
+    {
+      "episode_index": 1591,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 170
+    },
+    {
+      "episode_index": 1592,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 95
+    },
+    {
+      "episode_index": 1593,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 124
+    },
+    {
+      "episode_index": 1594,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 110
+    },
+    {
+      "episode_index": 1595,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 139
+    },
+    {
+      "episode_index": 1596,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 141
+    },
+    {
+      "episode_index": 1597,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 96
+    },
+    {
+      "episode_index": 1598,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 129
+    },
+    {
+      "episode_index": 1599,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 116
+    },
+    {
+      "episode_index": 1600,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 97
+    },
+    {
+      "episode_index": 1601,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 134
+    },
+    {
+      "episode_index": 1602,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 95
+    },
+    {
+      "episode_index": 1603,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 122
+    },
+    {
+      "episode_index": 1604,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 120
+    },
+    {
+      "episode_index": 1605,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 119
+    },
+    {
+      "episode_index": 1606,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 113
+    },
+    {
+      "episode_index": 1607,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 137
+    },
+    {
+      "episode_index": 1608,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 89
+    },
+    {
+      "episode_index": 1609,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 99
+    },
+    {
+      "episode_index": 1610,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 92
+    },
+    {
+      "episode_index": 1611,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 123
+    },
+    {
+      "episode_index": 1612,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 124
+    },
+    {
+      "episode_index": 1613,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 108
+    },
+    {
+      "episode_index": 1614,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 133
+    },
+    {
+      "episode_index": 1615,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 90
+    },
+    {
+      "episode_index": 1616,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 124
+    },
+    {
+      "episode_index": 1617,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 92
+    },
+    {
+      "episode_index": 1618,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 90
+    },
+    {
+      "episode_index": 1619,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 156
+    },
+    {
+      "episode_index": 1620,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 162
+    },
+    {
+      "episode_index": 1621,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 150
+    },
+    {
+      "episode_index": 1622,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 131
+    },
+    {
+      "episode_index": 1623,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 127
+    },
+    {
+      "episode_index": 1624,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 108
+    },
+    {
+      "episode_index": 1625,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 149
+    },
+    {
+      "episode_index": 1626,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 112
+    },
+    {
+      "episode_index": 1627,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 136
+    },
+    {
+      "episode_index": 1628,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 139
+    },
+    {
+      "episode_index": 1629,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 100
+    },
+    {
+      "episode_index": 1630,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 99
+    },
+    {
+      "episode_index": 1631,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 120
+    },
+    {
+      "episode_index": 1632,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 123
+    },
+    {
+      "episode_index": 1633,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 193
+    },
+    {
+      "episode_index": 1634,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 125
+    },
+    {
+      "episode_index": 1635,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 109
+    },
+    {
+      "episode_index": 1636,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 140
+    },
+    {
+      "episode_index": 1637,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 141
+    },
+    {
+      "episode_index": 1638,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 99
+    },
+    {
+      "episode_index": 1639,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 116
+    },
+    {
+      "episode_index": 1640,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 172
+    },
+    {
+      "episode_index": 1641,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 93
+    },
+    {
+      "episode_index": 1642,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 90
+    },
+    {
+      "episode_index": 1643,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 128
+    },
+    {
+      "episode_index": 1644,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 136
+    },
+    {
+      "episode_index": 1645,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 155
+    },
+    {
+      "episode_index": 1646,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 98
+    },
+    {
+      "episode_index": 1647,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 120
+    },
+    {
+      "episode_index": 1648,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 140
+    },
+    {
+      "episode_index": 1649,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 114
+    },
+    {
+      "episode_index": 1650,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 129
+    },
+    {
+      "episode_index": 1651,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 182
+    },
+    {
+      "episode_index": 1652,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 120
+    },
+    {
+      "episode_index": 1653,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 141
+    },
+    {
+      "episode_index": 1654,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 128
+    },
+    {
+      "episode_index": 1655,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 124
+    },
+    {
+      "episode_index": 1656,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 129
+    },
+    {
+      "episode_index": 1657,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 126
+    },
+    {
+      "episode_index": 1658,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 101
+    },
+    {
+      "episode_index": 1659,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 98
+    },
+    {
+      "episode_index": 1660,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 92
+    },
+    {
+      "episode_index": 1661,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 130
+    },
+    {
+      "episode_index": 1662,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 99
+    },
+    {
+      "episode_index": 1663,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 138
+    },
+    {
+      "episode_index": 1664,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 150
+    },
+    {
+      "episode_index": 1665,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 117
+    },
+    {
+      "episode_index": 1666,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 130
+    },
+    {
+      "episode_index": 1667,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 132
+    },
+    {
+      "episode_index": 1668,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 102
+    },
+    {
+      "episode_index": 1669,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 98
+    },
+    {
+      "episode_index": 1670,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 90
+    },
+    {
+      "episode_index": 1671,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 120
+    },
+    {
+      "episode_index": 1672,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 113
+    },
+    {
+      "episode_index": 1673,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 130
+    },
+    {
+      "episode_index": 1674,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 119
+    },
+    {
+      "episode_index": 1675,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 138
+    },
+    {
+      "episode_index": 1676,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 140
+    },
+    {
+      "episode_index": 1677,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 142
+    },
+    {
+      "episode_index": 1678,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 97
+    },
+    {
+      "episode_index": 1679,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 88
+    },
+    {
+      "episode_index": 1680,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 98
+    },
+    {
+      "episode_index": 1681,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 152
+    },
+    {
+      "episode_index": 1682,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 111
+    },
+    {
+      "episode_index": 1683,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 124
+    },
+    {
+      "episode_index": 1684,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 102
+    },
+    {
+      "episode_index": 1685,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 138
+    },
+    {
+      "episode_index": 1686,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 117
+    },
+    {
+      "episode_index": 1687,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 143
+    },
+    {
+      "episode_index": 1688,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 145
+    },
+    {
+      "episode_index": 1689,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 102
+    },
+    {
+      "episode_index": 1690,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 133
+    },
+    {
+      "episode_index": 1691,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 140
+    },
+    {
+      "episode_index": 1692,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 109
+    }
+  ],
+  "episode_ids": [
+    1261,
+    1262,
+    1263,
+    1264,
+    1265,
+    1266,
+    1267,
+    1268,
+    1269,
+    1270,
+    1271,
+    1272,
+    1273,
+    1274,
+    1275,
+    1276,
+    1277,
+    1278,
+    1279,
+    1280,
+    1281,
+    1282,
+    1283,
+    1284,
+    1285,
+    1286,
+    1287,
+    1288,
+    1289,
+    1290,
+    1291,
+    1292,
+    1293,
+    1294,
+    1295,
+    1296,
+    1297,
+    1298,
+    1299,
+    1300,
+    1301,
+    1302,
+    1303,
+    1304,
+    1305,
+    1306,
+    1307,
+    1308,
+    1309,
+    1310,
+    1311,
+    1312,
+    1313,
+    1314,
+    1315,
+    1316,
+    1317,
+    1318,
+    1319,
+    1320,
+    1321,
+    1322,
+    1323,
+    1324,
+    1325,
+    1326,
+    1327,
+    1328,
+    1329,
+    1330,
+    1331,
+    1332,
+    1333,
+    1334,
+    1335,
+    1336,
+    1337,
+    1338,
+    1339,
+    1340,
+    1341,
+    1342,
+    1343,
+    1344,
+    1345,
+    1346,
+    1347,
+    1348,
+    1349,
+    1350,
+    1351,
+    1352,
+    1353,
+    1354,
+    1355,
+    1356,
+    1357,
+    1358,
+    1359,
+    1360,
+    1361,
+    1362,
+    1363,
+    1364,
+    1365,
+    1366,
+    1367,
+    1368,
+    1369,
+    1370,
+    1371,
+    1372,
+    1373,
+    1374,
+    1375,
+    1376,
+    1377,
+    1378,
+    1379,
+    1380,
+    1381,
+    1382,
+    1383,
+    1384,
+    1385,
+    1386,
+    1387,
+    1388,
+    1389,
+    1390,
+    1391,
+    1392,
+    1393,
+    1394,
+    1395,
+    1396,
+    1397,
+    1398,
+    1399,
+    1400,
+    1401,
+    1402,
+    1403,
+    1404,
+    1405,
+    1406,
+    1407,
+    1408,
+    1409,
+    1410,
+    1411,
+    1412,
+    1413,
+    1414,
+    1415,
+    1416,
+    1417,
+    1418,
+    1419,
+    1420,
+    1421,
+    1422,
+    1423,
+    1424,
+    1425,
+    1426,
+    1427,
+    1428,
+    1429,
+    1430,
+    1431,
+    1432,
+    1433,
+    1434,
+    1435,
+    1436,
+    1437,
+    1438,
+    1439,
+    1440,
+    1441,
+    1442,
+    1443,
+    1444,
+    1445,
+    1446,
+    1447,
+    1448,
+    1449,
+    1450,
+    1451,
+    1452,
+    1453,
+    1454,
+    1455,
+    1456,
+    1457,
+    1458,
+    1459,
+    1460,
+    1461,
+    1462,
+    1463,
+    1464,
+    1465,
+    1466,
+    1467,
+    1468,
+    1469,
+    1470,
+    1471,
+    1472,
+    1473,
+    1474,
+    1475,
+    1476,
+    1477,
+    1478,
+    1479,
+    1480,
+    1481,
+    1482,
+    1483,
+    1484,
+    1485,
+    1486,
+    1487,
+    1488,
+    1489,
+    1490,
+    1491,
+    1492,
+    1493,
+    1494,
+    1495,
+    1496,
+    1497,
+    1498,
+    1499,
+    1500,
+    1501,
+    1502,
+    1503,
+    1504,
+    1505,
+    1506,
+    1507,
+    1508,
+    1509,
+    1510,
+    1511,
+    1512,
+    1513,
+    1514,
+    1515,
+    1516,
+    1517,
+    1518,
+    1519,
+    1520,
+    1521,
+    1522,
+    1523,
+    1524,
+    1525,
+    1526,
+    1527,
+    1528,
+    1529,
+    1530,
+    1531,
+    1532,
+    1533,
+    1534,
+    1535,
+    1536,
+    1537,
+    1538,
+    1539,
+    1540,
+    1541,
+    1542,
+    1543,
+    1544,
+    1545,
+    1546,
+    1547,
+    1548,
+    1549,
+    1550,
+    1551,
+    1552,
+    1553,
+    1554,
+    1555,
+    1556,
+    1557,
+    1558,
+    1559,
+    1560,
+    1561,
+    1562,
+    1563,
+    1564,
+    1565,
+    1566,
+    1567,
+    1568,
+    1569,
+    1570,
+    1571,
+    1572,
+    1573,
+    1574,
+    1575,
+    1576,
+    1577,
+    1578,
+    1579,
+    1580,
+    1581,
+    1582,
+    1583,
+    1584,
+    1585,
+    1586,
+    1587,
+    1588,
+    1589,
+    1590,
+    1591,
+    1592,
+    1593,
+    1594,
+    1595,
+    1596,
+    1597,
+    1598,
+    1599,
+    1600,
+    1601,
+    1602,
+    1603,
+    1604,
+    1605,
+    1606,
+    1607,
+    1608,
+    1609,
+    1610,
+    1611,
+    1612,
+    1613,
+    1614,
+    1615,
+    1616,
+    1617,
+    1618,
+    1619,
+    1620,
+    1621,
+    1622,
+    1623,
+    1624,
+    1625,
+    1626,
+    1627,
+    1628,
+    1629,
+    1630,
+    1631,
+    1632,
+    1633,
+    1634,
+    1635,
+    1636,
+    1637,
+    1638,
+    1639,
+    1640,
+    1641,
+    1642,
+    1643,
+    1644,
+    1645,
+    1646,
+    1647,
+    1648,
+    1649,
+    1650,
+    1651,
+    1652,
+    1653,
+    1654,
+    1655,
+    1656,
+    1657,
+    1658,
+    1659,
+    1660,
+    1661,
+    1662,
+    1663,
+    1664,
+    1665,
+    1666,
+    1667,
+    1668,
+    1669,
+    1670,
+    1671,
+    1672,
+    1673,
+    1674,
+    1675,
+    1676,
+    1677,
+    1678,
+    1679,
+    1680,
+    1681,
+    1682,
+    1683,
+    1684,
+    1685,
+    1686,
+    1687,
+    1688,
+    1689,
+    1690,
+    1691,
+    1692
+  ],
+  "frames": 52970,
+  "camera_storage": "embedded parquet images",
+  "performance_claim": "one training seed; paired 50-episode spatial evaluation; not full LIBERO benchmark",
+  "episode_records": [
+    {
+      "episode_index": 1261,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 110,
+      "task_ids": [
+        6
+      ]
+    },
+    {
+      "episode_index": 1262,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 138,
+      "task_ids": [
+        4
+      ]
+    },
+    {
+      "episode_index": 1263,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 127,
+      "task_ids": [
+        4
+      ]
+    },
+    {
+      "episode_index": 1264,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 100,
+      "task_ids": [
+        5
+      ]
+    },
+    {
+      "episode_index": 1265,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 116,
+      "task_ids": [
+        5
+      ]
+    },
+    {
+      "episode_index": 1266,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 107,
+      "task_ids": [
+        5
+      ]
+    },
+    {
+      "episode_index": 1267,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 124,
+      "task_ids": [
+        7
+      ]
+    },
+    {
+      "episode_index": 1268,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 129,
+      "task_ids": [
+        4
+      ]
+    },
+    {
+      "episode_index": 1269,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 139,
+      "task_ids": [
+        7
+      ]
+    },
+    {
+      "episode_index": 1270,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 148,
+      "task_ids": [
+        7
+      ]
+    },
+    {
+      "episode_index": 1271,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 101,
+      "task_ids": [
+        5
+      ]
+    },
+    {
+      "episode_index": 1272,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 84,
+      "task_ids": [
+        0
+      ]
+    },
+    {
+      "episode_index": 1273,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 85,
+      "task_ids": [
+        0
+      ]
+    },
+    {
+      "episode_index": 1274,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 113,
+      "task_ids": [
+        6
+      ]
+    },
+    {
+      "episode_index": 1275,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 128,
+      "task_ids": [
+        0
+      ]
+    },
+    {
+      "episode_index": 1276,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 140,
+      "task_ids": [
+        4
+      ]
+    },
+    {
+      "episode_index": 1277,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 111,
+      "task_ids": [
+        6
+      ]
+    },
+    {
+      "episode_index": 1278,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 101,
+      "task_ids": [
+        3
+      ]
+    },
+    {
+      "episode_index": 1279,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 96,
+      "task_ids": [
+        3
+      ]
+    },
+    {
+      "episode_index": 1280,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 107,
+      "task_ids": [
+        8
+      ]
+    },
+    {
+      "episode_index": 1281,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 112,
+      "task_ids": [
+        1
+      ]
+    },
+    {
+      "episode_index": 1282,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 84,
+      "task_ids": [
+        0
+      ]
+    },
+    {
+      "episode_index": 1283,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 135,
+      "task_ids": [
+        2
+      ]
+    },
+    {
+      "episode_index": 1284,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 149,
+      "task_ids": [
+        4
+      ]
+    },
+    {
+      "episode_index": 1285,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 125,
+      "task_ids": [
+        8
+      ]
+    },
+    {
+      "episode_index": 1286,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 132,
+      "task_ids": [
+        1
+      ]
+    },
+    {
+      "episode_index": 1287,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 100,
+      "task_ids": [
+        2
+      ]
+    },
+    {
+      "episode_index": 1288,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 86,
+      "task_ids": [
+        5
+      ]
+    },
+    {
+      "episode_index": 1289,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 120,
+      "task_ids": [
+        2
+      ]
+    },
+    {
+      "episode_index": 1290,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 164,
+      "task_ids": [
+        9
+      ]
+    },
+    {
+      "episode_index": 1291,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 125,
+      "task_ids": [
+        6
+      ]
+    },
+    {
+      "episode_index": 1292,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 157,
+      "task_ids": [
+        6
+      ]
+    },
+    {
+      "episode_index": 1293,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 121,
+      "task_ids": [
+        8
+      ]
+    },
+    {
+      "episode_index": 1294,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 120,
+      "task_ids": [
+        1
+      ]
+    },
+    {
+      "episode_index": 1295,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 137,
+      "task_ids": [
+        9
+      ]
+    },
+    {
+      "episode_index": 1296,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 135,
+      "task_ids": [
+        9
+      ]
+    },
+    {
+      "episode_index": 1297,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 116,
+      "task_ids": [
+        1
+      ]
+    },
+    {
+      "episode_index": 1298,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 131,
+      "task_ids": [
+        4
+      ]
+    },
+    {
+      "episode_index": 1299,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 121,
+      "task_ids": [
+        2
+      ]
+    },
+    {
+      "episode_index": 1300,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 102,
+      "task_ids": [
+        0
+      ]
+    },
+    {
+      "episode_index": 1301,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 141,
+      "task_ids": [
+        6
+      ]
+    },
+    {
+      "episode_index": 1302,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 156,
+      "task_ids": [
+        4
+      ]
+    },
+    {
+      "episode_index": 1303,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 119,
+      "task_ids": [
+        3
+      ]
+    },
+    {
+      "episode_index": 1304,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 113,
+      "task_ids": [
+        6
+      ]
+    },
+    {
+      "episode_index": 1305,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 143,
+      "task_ids": [
+        1
+      ]
+    },
+    {
+      "episode_index": 1306,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 132,
+      "task_ids": [
+        9
+      ]
+    },
+    {
+      "episode_index": 1307,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 138,
+      "task_ids": [
+        8
+      ]
+    },
+    {
+      "episode_index": 1308,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 142,
+      "task_ids": [
+        7
+      ]
+    },
+    {
+      "episode_index": 1309,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 115,
+      "task_ids": [
+        6
+      ]
+    },
+    {
+      "episode_index": 1310,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 111,
+      "task_ids": [
+        2
+      ]
+    },
+    {
+      "episode_index": 1311,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 140,
+      "task_ids": [
+        7
+      ]
+    },
+    {
+      "episode_index": 1312,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 145,
+      "task_ids": [
+        9
+      ]
+    },
+    {
+      "episode_index": 1313,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 113,
+      "task_ids": [
+        5
+      ]
+    },
+    {
+      "episode_index": 1314,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 117,
+      "task_ids": [
+        6
+      ]
+    },
+    {
+      "episode_index": 1315,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 106,
+      "task_ids": [
+        2
+      ]
+    },
+    {
+      "episode_index": 1316,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 103,
+      "task_ids": [
+        2
+      ]
+    },
+    {
+      "episode_index": 1317,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 114,
+      "task_ids": [
+        2
+      ]
+    },
+    {
+      "episode_index": 1318,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 135,
+      "task_ids": [
+        1
+      ]
+    },
+    {
+      "episode_index": 1319,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 102,
+      "task_ids": [
+        3
+      ]
+    },
+    {
+      "episode_index": 1320,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 123,
+      "task_ids": [
+        2
+      ]
+    },
+    {
+      "episode_index": 1321,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 111,
+      "task_ids": [
+        3
+      ]
+    },
+    {
+      "episode_index": 1322,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 120,
+      "task_ids": [
+        1
+      ]
+    },
+    {
+      "episode_index": 1323,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 125,
+      "task_ids": [
+        1
+      ]
+    },
+    {
+      "episode_index": 1324,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 99,
+      "task_ids": [
+        3
+      ]
+    },
+    {
+      "episode_index": 1325,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 135,
+      "task_ids": [
+        7
+      ]
+    },
+    {
+      "episode_index": 1326,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 144,
+      "task_ids": [
+        9
+      ]
+    },
+    {
+      "episode_index": 1327,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 124,
+      "task_ids": [
+        0
+      ]
+    },
+    {
+      "episode_index": 1328,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 111,
+      "task_ids": [
+        3
+      ]
+    },
+    {
+      "episode_index": 1329,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 124,
+      "task_ids": [
+        6
+      ]
+    },
+    {
+      "episode_index": 1330,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 168,
+      "task_ids": [
+        0
+      ]
+    },
+    {
+      "episode_index": 1331,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 137,
+      "task_ids": [
+        1
+      ]
+    },
+    {
+      "episode_index": 1332,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 125,
+      "task_ids": [
+        8
+      ]
+    },
+    {
+      "episode_index": 1333,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 141,
+      "task_ids": [
+        6
+      ]
+    },
+    {
+      "episode_index": 1334,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 147,
+      "task_ids": [
+        4
+      ]
+    },
+    {
+      "episode_index": 1335,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 117,
+      "task_ids": [
+        9
+      ]
+    },
+    {
+      "episode_index": 1336,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 135,
+      "task_ids": [
+        6
+      ]
+    },
+    {
+      "episode_index": 1337,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 133,
+      "task_ids": [
+        6
+      ]
+    },
+    {
+      "episode_index": 1338,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 125,
+      "task_ids": [
+        6
+      ]
+    },
+    {
+      "episode_index": 1339,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 165,
+      "task_ids": [
+        4
+      ]
+    },
+    {
+      "episode_index": 1340,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 122,
+      "task_ids": [
+        6
+      ]
+    },
+    {
+      "episode_index": 1341,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 154,
+      "task_ids": [
+        5
+      ]
+    },
+    {
+      "episode_index": 1342,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 126,
+      "task_ids": [
+        8
+      ]
+    },
+    {
+      "episode_index": 1343,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 108,
+      "task_ids": [
+        5
+      ]
+    },
+    {
+      "episode_index": 1344,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 112,
+      "task_ids": [
+        0
+      ]
+    },
+    {
+      "episode_index": 1345,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 109,
+      "task_ids": [
+        2
+      ]
+    },
+    {
+      "episode_index": 1346,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 123,
+      "task_ids": [
+        8
+      ]
+    },
+    {
+      "episode_index": 1347,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 92,
+      "task_ids": [
+        0
+      ]
+    },
+    {
+      "episode_index": 1348,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 114,
+      "task_ids": [
+        8
+      ]
+    },
+    {
+      "episode_index": 1349,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 153,
+      "task_ids": [
+        4
+      ]
+    },
+    {
+      "episode_index": 1350,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 127,
+      "task_ids": [
+        1
+      ]
+    },
+    {
+      "episode_index": 1351,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 125,
+      "task_ids": [
+        9
+      ]
+    },
+    {
+      "episode_index": 1352,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 96,
+      "task_ids": [
+        0
+      ]
+    },
+    {
+      "episode_index": 1353,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 107,
+      "task_ids": [
+        2
+      ]
+    },
+    {
+      "episode_index": 1354,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 138,
+      "task_ids": [
+        2
+      ]
+    },
+    {
+      "episode_index": 1355,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 138,
+      "task_ids": [
+        9
+      ]
+    },
+    {
+      "episode_index": 1356,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 137,
+      "task_ids": [
+        9
+      ]
+    },
+    {
+      "episode_index": 1357,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 95,
+      "task_ids": [
+        3
+      ]
+    },
+    {
+      "episode_index": 1358,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 105,
+      "task_ids": [
+        2
+      ]
+    },
+    {
+      "episode_index": 1359,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 137,
+      "task_ids": [
+        4
+      ]
+    },
+    {
+      "episode_index": 1360,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 134,
+      "task_ids": [
+        4
+      ]
+    },
+    {
+      "episode_index": 1361,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 133,
+      "task_ids": [
+        1
+      ]
+    },
+    {
+      "episode_index": 1362,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 144,
+      "task_ids": [
+        7
+      ]
+    },
+    {
+      "episode_index": 1363,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 164,
+      "task_ids": [
+        8
+      ]
+    },
+    {
+      "episode_index": 1364,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 167,
+      "task_ids": [
+        7
+      ]
+    },
+    {
+      "episode_index": 1365,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 147,
+      "task_ids": [
+        4
+      ]
+    },
+    {
+      "episode_index": 1366,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 94,
+      "task_ids": [
+        3
+      ]
+    },
+    {
+      "episode_index": 1367,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 89,
+      "task_ids": [
+        3
+      ]
+    },
+    {
+      "episode_index": 1368,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 88,
+      "task_ids": [
+        0
+      ]
+    },
+    {
+      "episode_index": 1369,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 133,
+      "task_ids": [
+        7
+      ]
+    },
+    {
+      "episode_index": 1370,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 152,
+      "task_ids": [
+        1
+      ]
+    },
+    {
+      "episode_index": 1371,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 122,
+      "task_ids": [
+        6
+      ]
+    },
+    {
+      "episode_index": 1372,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 115,
+      "task_ids": [
+        8
+      ]
+    },
+    {
+      "episode_index": 1373,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 156,
+      "task_ids": [
+        4
+      ]
+    },
+    {
+      "episode_index": 1374,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 124,
+      "task_ids": [
+        6
+      ]
+    },
+    {
+      "episode_index": 1375,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 125,
+      "task_ids": [
+        1
+      ]
+    },
+    {
+      "episode_index": 1376,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 126,
+      "task_ids": [
+        1
+      ]
+    },
+    {
+      "episode_index": 1377,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 134,
+      "task_ids": [
+        2
+      ]
+    },
+    {
+      "episode_index": 1378,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 115,
+      "task_ids": [
+        3
+      ]
+    },
+    {
+      "episode_index": 1379,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 75,
+      "task_ids": [
+        0
+      ]
+    },
+    {
+      "episode_index": 1380,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 110,
+      "task_ids": [
+        2
+      ]
+    },
+    {
+      "episode_index": 1381,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 128,
+      "task_ids": [
+        7
+      ]
+    },
+    {
+      "episode_index": 1382,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 121,
+      "task_ids": [
+        0
+      ]
+    },
+    {
+      "episode_index": 1383,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 114,
+      "task_ids": [
+        2
+      ]
+    },
+    {
+      "episode_index": 1384,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 126,
+      "task_ids": [
+        7
+      ]
+    },
+    {
+      "episode_index": 1385,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 108,
+      "task_ids": [
+        2
+      ]
+    },
+    {
+      "episode_index": 1386,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 97,
+      "task_ids": [
+        3
+      ]
+    },
+    {
+      "episode_index": 1387,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 138,
+      "task_ids": [
+        8
+      ]
+    },
+    {
+      "episode_index": 1388,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 106,
+      "task_ids": [
+        5
+      ]
+    },
+    {
+      "episode_index": 1389,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 136,
+      "task_ids": [
+        7
+      ]
+    },
+    {
+      "episode_index": 1390,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 130,
+      "task_ids": [
+        9
+      ]
+    },
+    {
+      "episode_index": 1391,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 96,
+      "task_ids": [
+        3
+      ]
+    },
+    {
+      "episode_index": 1392,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 122,
+      "task_ids": [
+        8
+      ]
+    },
+    {
+      "episode_index": 1393,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 109,
+      "task_ids": [
+        8
+      ]
+    },
+    {
+      "episode_index": 1394,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 163,
+      "task_ids": [
+        4
+      ]
+    },
+    {
+      "episode_index": 1395,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 87,
+      "task_ids": [
+        0
+      ]
+    },
+    {
+      "episode_index": 1396,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 110,
+      "task_ids": [
+        5
+      ]
+    },
+    {
+      "episode_index": 1397,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 95,
+      "task_ids": [
+        0
+      ]
+    },
+    {
+      "episode_index": 1398,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 142,
+      "task_ids": [
+        7
+      ]
+    },
+    {
+      "episode_index": 1399,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 145,
+      "task_ids": [
+        1
+      ]
+    },
+    {
+      "episode_index": 1400,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 140,
+      "task_ids": [
+        9
+      ]
+    },
+    {
+      "episode_index": 1401,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 89,
+      "task_ids": [
+        0
+      ]
+    },
+    {
+      "episode_index": 1402,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 173,
+      "task_ids": [
+        9
+      ]
+    },
+    {
+      "episode_index": 1403,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 137,
+      "task_ids": [
+        8
+      ]
+    },
+    {
+      "episode_index": 1404,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 91,
+      "task_ids": [
+        5
+      ]
+    },
+    {
+      "episode_index": 1405,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 92,
+      "task_ids": [
+        3
+      ]
+    },
+    {
+      "episode_index": 1406,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 126,
+      "task_ids": [
+        1
+      ]
+    },
+    {
+      "episode_index": 1407,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 130,
+      "task_ids": [
+        7
+      ]
+    },
+    {
+      "episode_index": 1408,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 136,
+      "task_ids": [
+        9
+      ]
+    },
+    {
+      "episode_index": 1409,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 110,
+      "task_ids": [
+        8
+      ]
+    },
+    {
+      "episode_index": 1410,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 89,
+      "task_ids": [
+        0
+      ]
+    },
+    {
+      "episode_index": 1411,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 139,
+      "task_ids": [
+        9
+      ]
+    },
+    {
+      "episode_index": 1412,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 145,
+      "task_ids": [
+        9
+      ]
+    },
+    {
+      "episode_index": 1413,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 97,
+      "task_ids": [
+        8
+      ]
+    },
+    {
+      "episode_index": 1414,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 155,
+      "task_ids": [
+        1
+      ]
+    },
+    {
+      "episode_index": 1415,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 133,
+      "task_ids": [
+        6
+      ]
+    },
+    {
+      "episode_index": 1416,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 133,
+      "task_ids": [
+        6
+      ]
+    },
+    {
+      "episode_index": 1417,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 96,
+      "task_ids": [
+        8
+      ]
+    },
+    {
+      "episode_index": 1418,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 152,
+      "task_ids": [
+        6
+      ]
+    },
+    {
+      "episode_index": 1419,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 135,
+      "task_ids": [
+        9
+      ]
+    },
+    {
+      "episode_index": 1420,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 156,
+      "task_ids": [
+        4
+      ]
+    },
+    {
+      "episode_index": 1421,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 118,
+      "task_ids": [
+        6
+      ]
+    },
+    {
+      "episode_index": 1422,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 129,
+      "task_ids": [
+        7
+      ]
+    },
+    {
+      "episode_index": 1423,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 137,
+      "task_ids": [
+        7
+      ]
+    },
+    {
+      "episode_index": 1424,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 129,
+      "task_ids": [
+        7
+      ]
+    },
+    {
+      "episode_index": 1425,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 86,
+      "task_ids": [
+        0
+      ]
+    },
+    {
+      "episode_index": 1426,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 115,
+      "task_ids": [
+        2
+      ]
+    },
+    {
+      "episode_index": 1427,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 150,
+      "task_ids": [
+        1
+      ]
+    },
+    {
+      "episode_index": 1428,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 111,
+      "task_ids": [
+        2
+      ]
+    },
+    {
+      "episode_index": 1429,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 123,
+      "task_ids": [
+        6
+      ]
+    },
+    {
+      "episode_index": 1430,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 169,
+      "task_ids": [
+        4
+      ]
+    },
+    {
+      "episode_index": 1431,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 134,
+      "task_ids": [
+        1
+      ]
+    },
+    {
+      "episode_index": 1432,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 131,
+      "task_ids": [
+        2
+      ]
+    },
+    {
+      "episode_index": 1433,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 142,
+      "task_ids": [
+        5
+      ]
+    },
+    {
+      "episode_index": 1434,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 134,
+      "task_ids": [
+        4
+      ]
+    },
+    {
+      "episode_index": 1435,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 142,
+      "task_ids": [
+        9
+      ]
+    },
+    {
+      "episode_index": 1436,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 109,
+      "task_ids": [
+        1
+      ]
+    },
+    {
+      "episode_index": 1437,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 100,
+      "task_ids": [
+        3
+      ]
+    },
+    {
+      "episode_index": 1438,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 106,
+      "task_ids": [
+        8
+      ]
+    },
+    {
+      "episode_index": 1439,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 139,
+      "task_ids": [
+        9
+      ]
+    },
+    {
+      "episode_index": 1440,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 129,
+      "task_ids": [
+        2
+      ]
+    },
+    {
+      "episode_index": 1441,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 153,
+      "task_ids": [
+        4
+      ]
+    },
+    {
+      "episode_index": 1442,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 124,
+      "task_ids": [
+        2
+      ]
+    },
+    {
+      "episode_index": 1443,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 128,
+      "task_ids": [
+        5
+      ]
+    },
+    {
+      "episode_index": 1444,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 136,
+      "task_ids": [
+        9
+      ]
+    },
+    {
+      "episode_index": 1445,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 109,
+      "task_ids": [
+        2
+      ]
+    },
+    {
+      "episode_index": 1446,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 106,
+      "task_ids": [
+        6
+      ]
+    },
+    {
+      "episode_index": 1447,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 131,
+      "task_ids": [
+        9
+      ]
+    },
+    {
+      "episode_index": 1448,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 119,
+      "task_ids": [
+        6
+      ]
+    },
+    {
+      "episode_index": 1449,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 93,
+      "task_ids": [
+        0
+      ]
+    },
+    {
+      "episode_index": 1450,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 92,
+      "task_ids": [
+        0
+      ]
+    },
+    {
+      "episode_index": 1451,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 111,
+      "task_ids": [
+        8
+      ]
+    },
+    {
+      "episode_index": 1452,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 96,
+      "task_ids": [
+        3
+      ]
+    },
+    {
+      "episode_index": 1453,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 158,
+      "task_ids": [
+        4
+      ]
+    },
+    {
+      "episode_index": 1454,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 145,
+      "task_ids": [
+        9
+      ]
+    },
+    {
+      "episode_index": 1455,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 143,
+      "task_ids": [
+        2
+      ]
+    },
+    {
+      "episode_index": 1456,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 129,
+      "task_ids": [
+        6
+      ]
+    },
+    {
+      "episode_index": 1457,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 96,
+      "task_ids": [
+        3
+      ]
+    },
+    {
+      "episode_index": 1458,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 130,
+      "task_ids": [
+        9
+      ]
+    },
+    {
+      "episode_index": 1459,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 100,
+      "task_ids": [
+        8
+      ]
+    },
+    {
+      "episode_index": 1460,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 109,
+      "task_ids": [
+        2
+      ]
+    },
+    {
+      "episode_index": 1461,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 167,
+      "task_ids": [
+        4
+      ]
+    },
+    {
+      "episode_index": 1462,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 129,
+      "task_ids": [
+        5
+      ]
+    },
+    {
+      "episode_index": 1463,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 97,
+      "task_ids": [
+        3
+      ]
+    },
+    {
+      "episode_index": 1464,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 113,
+      "task_ids": [
+        8
+      ]
+    },
+    {
+      "episode_index": 1465,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 111,
+      "task_ids": [
+        5
+      ]
+    },
+    {
+      "episode_index": 1466,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 125,
+      "task_ids": [
+        2
+      ]
+    },
+    {
+      "episode_index": 1467,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 109,
+      "task_ids": [
+        8
+      ]
+    },
+    {
+      "episode_index": 1468,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 95,
+      "task_ids": [
+        3
+      ]
+    },
+    {
+      "episode_index": 1469,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 137,
+      "task_ids": [
+        5
+      ]
+    },
+    {
+      "episode_index": 1470,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 159,
+      "task_ids": [
+        4
+      ]
+    },
+    {
+      "episode_index": 1471,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 95,
+      "task_ids": [
+        8
+      ]
+    },
+    {
+      "episode_index": 1472,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 122,
+      "task_ids": [
+        6
+      ]
+    },
+    {
+      "episode_index": 1473,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 124,
+      "task_ids": [
+        6
+      ]
+    },
+    {
+      "episode_index": 1474,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 158,
+      "task_ids": [
+        4
+      ]
+    },
+    {
+      "episode_index": 1475,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 111,
+      "task_ids": [
+        3
+      ]
+    },
+    {
+      "episode_index": 1476,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 125,
+      "task_ids": [
+        9
+      ]
+    },
+    {
+      "episode_index": 1477,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 131,
+      "task_ids": [
+        9
+      ]
+    },
+    {
+      "episode_index": 1478,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 122,
+      "task_ids": [
+        2
+      ]
+    },
+    {
+      "episode_index": 1479,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 115,
+      "task_ids": [
+        2
+      ]
+    },
+    {
+      "episode_index": 1480,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 127,
+      "task_ids": [
+        1
+      ]
+    },
+    {
+      "episode_index": 1481,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 118,
+      "task_ids": [
+        5
+      ]
+    },
+    {
+      "episode_index": 1482,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 98,
+      "task_ids": [
+        5
+      ]
+    },
+    {
+      "episode_index": 1483,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 101,
+      "task_ids": [
+        2
+      ]
+    },
+    {
+      "episode_index": 1484,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 182,
+      "task_ids": [
+        9
+      ]
+    },
+    {
+      "episode_index": 1485,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 123,
+      "task_ids": [
+        6
+      ]
+    },
+    {
+      "episode_index": 1486,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 124,
+      "task_ids": [
+        1
+      ]
+    },
+    {
+      "episode_index": 1487,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 103,
+      "task_ids": [
+        3
+      ]
+    },
+    {
+      "episode_index": 1488,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 133,
+      "task_ids": [
+        8
+      ]
+    },
+    {
+      "episode_index": 1489,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 86,
+      "task_ids": [
+        3
+      ]
+    },
+    {
+      "episode_index": 1490,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 127,
+      "task_ids": [
+        1
+      ]
+    },
+    {
+      "episode_index": 1491,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 100,
+      "task_ids": [
+        0
+      ]
+    },
+    {
+      "episode_index": 1492,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 137,
+      "task_ids": [
+        7
+      ]
+    },
+    {
+      "episode_index": 1493,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 84,
+      "task_ids": [
+        0
+      ]
+    },
+    {
+      "episode_index": 1494,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 142,
+      "task_ids": [
+        4
+      ]
+    },
+    {
+      "episode_index": 1495,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 135,
+      "task_ids": [
+        1
+      ]
+    },
+    {
+      "episode_index": 1496,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 100,
+      "task_ids": [
+        5
+      ]
+    },
+    {
+      "episode_index": 1497,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 140,
+      "task_ids": [
+        9
+      ]
+    },
+    {
+      "episode_index": 1498,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 131,
+      "task_ids": [
+        5
+      ]
+    },
+    {
+      "episode_index": 1499,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 117,
+      "task_ids": [
+        1
+      ]
+    },
+    {
+      "episode_index": 1500,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 91,
+      "task_ids": [
+        0
+      ]
+    },
+    {
+      "episode_index": 1501,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 154,
+      "task_ids": [
+        1
+      ]
+    },
+    {
+      "episode_index": 1502,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 146,
+      "task_ids": [
+        6
+      ]
+    },
+    {
+      "episode_index": 1503,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 105,
+      "task_ids": [
+        8
+      ]
+    },
+    {
+      "episode_index": 1504,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 89,
+      "task_ids": [
+        0
+      ]
+    },
+    {
+      "episode_index": 1505,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 150,
+      "task_ids": [
+        4
+      ]
+    },
+    {
+      "episode_index": 1506,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 79,
+      "task_ids": [
+        0
+      ]
+    },
+    {
+      "episode_index": 1507,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 107,
+      "task_ids": [
+        8
+      ]
+    },
+    {
+      "episode_index": 1508,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 113,
+      "task_ids": [
+        1
+      ]
+    },
+    {
+      "episode_index": 1509,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 123,
+      "task_ids": [
+        2
+      ]
+    },
+    {
+      "episode_index": 1510,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 114,
+      "task_ids": [
+        2
+      ]
+    },
+    {
+      "episode_index": 1511,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 124,
+      "task_ids": [
+        9
+      ]
+    },
+    {
+      "episode_index": 1512,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 138,
+      "task_ids": [
+        9
+      ]
+    },
+    {
+      "episode_index": 1513,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 111,
+      "task_ids": [
+        8
+      ]
+    },
+    {
+      "episode_index": 1514,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 119,
+      "task_ids": [
+        2
+      ]
+    },
+    {
+      "episode_index": 1515,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 114,
+      "task_ids": [
+        8
+      ]
+    },
+    {
+      "episode_index": 1516,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 136,
+      "task_ids": [
+        7
+      ]
+    },
+    {
+      "episode_index": 1517,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 127,
+      "task_ids": [
+        0
+      ]
+    },
+    {
+      "episode_index": 1518,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 133,
+      "task_ids": [
+        9
+      ]
+    },
+    {
+      "episode_index": 1519,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 121,
+      "task_ids": [
+        5
+      ]
+    },
+    {
+      "episode_index": 1520,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 134,
+      "task_ids": [
+        9
+      ]
+    },
+    {
+      "episode_index": 1521,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 128,
+      "task_ids": [
+        5
+      ]
+    },
+    {
+      "episode_index": 1522,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 97,
+      "task_ids": [
+        3
+      ]
+    },
+    {
+      "episode_index": 1523,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 130,
+      "task_ids": [
+        9
+      ]
+    },
+    {
+      "episode_index": 1524,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 123,
+      "task_ids": [
+        5
+      ]
+    },
+    {
+      "episode_index": 1525,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 119,
+      "task_ids": [
+        5
+      ]
+    },
+    {
+      "episode_index": 1526,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 130,
+      "task_ids": [
+        6
+      ]
+    },
+    {
+      "episode_index": 1527,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 134,
+      "task_ids": [
+        0
+      ]
+    },
+    {
+      "episode_index": 1528,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 113,
+      "task_ids": [
+        3
+      ]
+    },
+    {
+      "episode_index": 1529,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 111,
+      "task_ids": [
+        1
+      ]
+    },
+    {
+      "episode_index": 1530,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 126,
+      "task_ids": [
+        9
+      ]
+    },
+    {
+      "episode_index": 1531,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 142,
+      "task_ids": [
+        9
+      ]
+    },
+    {
+      "episode_index": 1532,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 96,
+      "task_ids": [
+        0
+      ]
+    },
+    {
+      "episode_index": 1533,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 165,
+      "task_ids": [
+        8
+      ]
+    },
+    {
+      "episode_index": 1534,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 127,
+      "task_ids": [
+        6
+      ]
+    },
+    {
+      "episode_index": 1535,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 92,
+      "task_ids": [
+        3
+      ]
+    },
+    {
+      "episode_index": 1536,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 121,
+      "task_ids": [
+        8
+      ]
+    },
+    {
+      "episode_index": 1537,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 132,
+      "task_ids": [
+        4
+      ]
+    },
+    {
+      "episode_index": 1538,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 145,
+      "task_ids": [
+        7
+      ]
+    },
+    {
+      "episode_index": 1539,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 122,
+      "task_ids": [
+        6
+      ]
+    },
+    {
+      "episode_index": 1540,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 104,
+      "task_ids": [
+        8
+      ]
+    },
+    {
+      "episode_index": 1541,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 143,
+      "task_ids": [
+        1
+      ]
+    },
+    {
+      "episode_index": 1542,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 117,
+      "task_ids": [
+        8
+      ]
+    },
+    {
+      "episode_index": 1543,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 145,
+      "task_ids": [
+        4
+      ]
+    },
+    {
+      "episode_index": 1544,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 121,
+      "task_ids": [
+        6
+      ]
+    },
+    {
+      "episode_index": 1545,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 106,
+      "task_ids": [
+        2
+      ]
+    },
+    {
+      "episode_index": 1546,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 173,
+      "task_ids": [
+        8
+      ]
+    },
+    {
+      "episode_index": 1547,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 104,
+      "task_ids": [
+        8
+      ]
+    },
+    {
+      "episode_index": 1548,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 96,
+      "task_ids": [
+        3
+      ]
+    },
+    {
+      "episode_index": 1549,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 125,
+      "task_ids": [
+        2
+      ]
+    },
+    {
+      "episode_index": 1550,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 120,
+      "task_ids": [
+        1
+      ]
+    },
+    {
+      "episode_index": 1551,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 151,
+      "task_ids": [
+        4
+      ]
+    },
+    {
+      "episode_index": 1552,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 110,
+      "task_ids": [
+        8
+      ]
+    },
+    {
+      "episode_index": 1553,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 133,
+      "task_ids": [
+        7
+      ]
+    },
+    {
+      "episode_index": 1554,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 101,
+      "task_ids": [
+        3
+      ]
+    },
+    {
+      "episode_index": 1555,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 131,
+      "task_ids": [
+        1
+      ]
+    },
+    {
+      "episode_index": 1556,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 110,
+      "task_ids": [
+        2
+      ]
+    },
+    {
+      "episode_index": 1557,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 98,
+      "task_ids": [
+        2
+      ]
+    },
+    {
+      "episode_index": 1558,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 117,
+      "task_ids": [
+        1
+      ]
+    },
+    {
+      "episode_index": 1559,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 112,
+      "task_ids": [
+        1
+      ]
+    },
+    {
+      "episode_index": 1560,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 105,
+      "task_ids": [
+        0
+      ]
+    },
+    {
+      "episode_index": 1561,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 121,
+      "task_ids": [
+        5
+      ]
+    },
+    {
+      "episode_index": 1562,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 117,
+      "task_ids": [
+        5
+      ]
+    },
+    {
+      "episode_index": 1563,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 151,
+      "task_ids": [
+        0
+      ]
+    },
+    {
+      "episode_index": 1564,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 114,
+      "task_ids": [
+        6
+      ]
+    },
+    {
+      "episode_index": 1565,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 110,
+      "task_ids": [
+        8
+      ]
+    },
+    {
+      "episode_index": 1566,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 143,
+      "task_ids": [
+        9
+      ]
+    },
+    {
+      "episode_index": 1567,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 92,
+      "task_ids": [
+        0
+      ]
+    },
+    {
+      "episode_index": 1568,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 92,
+      "task_ids": [
+        0
+      ]
+    },
+    {
+      "episode_index": 1569,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 103,
+      "task_ids": [
+        3
+      ]
+    },
+    {
+      "episode_index": 1570,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 106,
+      "task_ids": [
+        3
+      ]
+    },
+    {
+      "episode_index": 1571,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 133,
+      "task_ids": [
+        7
+      ]
+    },
+    {
+      "episode_index": 1572,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 116,
+      "task_ids": [
+        8
+      ]
+    },
+    {
+      "episode_index": 1573,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 117,
+      "task_ids": [
+        2
+      ]
+    },
+    {
+      "episode_index": 1574,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 105,
+      "task_ids": [
+        0
+      ]
+    },
+    {
+      "episode_index": 1575,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 133,
+      "task_ids": [
+        6
+      ]
+    },
+    {
+      "episode_index": 1576,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 158,
+      "task_ids": [
+        4
+      ]
+    },
+    {
+      "episode_index": 1577,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 111,
+      "task_ids": [
+        5
+      ]
+    },
+    {
+      "episode_index": 1578,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 99,
+      "task_ids": [
+        3
+      ]
+    },
+    {
+      "episode_index": 1579,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 108,
+      "task_ids": [
+        0
+      ]
+    },
+    {
+      "episode_index": 1580,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 100,
+      "task_ids": [
+        3
+      ]
+    },
+    {
+      "episode_index": 1581,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 132,
+      "task_ids": [
+        4
+      ]
+    },
+    {
+      "episode_index": 1582,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 137,
+      "task_ids": [
+        4
+      ]
+    },
+    {
+      "episode_index": 1583,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 97,
+      "task_ids": [
+        0
+      ]
+    },
+    {
+      "episode_index": 1584,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 115,
+      "task_ids": [
+        8
+      ]
+    },
+    {
+      "episode_index": 1585,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 128,
+      "task_ids": [
+        7
+      ]
+    },
+    {
+      "episode_index": 1586,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 131,
+      "task_ids": [
+        4
+      ]
+    },
+    {
+      "episode_index": 1587,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 137,
+      "task_ids": [
+        1
+      ]
+    },
+    {
+      "episode_index": 1588,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 189,
+      "task_ids": [
+        1
+      ]
+    },
+    {
+      "episode_index": 1589,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 93,
+      "task_ids": [
+        0
+      ]
+    },
+    {
+      "episode_index": 1590,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 164,
+      "task_ids": [
+        7
+      ]
+    },
+    {
+      "episode_index": 1591,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 170,
+      "task_ids": [
+        4
+      ]
+    },
+    {
+      "episode_index": 1592,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 95,
+      "task_ids": [
+        3
+      ]
+    },
+    {
+      "episode_index": 1593,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 124,
+      "task_ids": [
+        7
+      ]
+    },
+    {
+      "episode_index": 1594,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 110,
+      "task_ids": [
+        5
+      ]
+    },
+    {
+      "episode_index": 1595,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 139,
+      "task_ids": [
+        4
+      ]
+    },
+    {
+      "episode_index": 1596,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 141,
+      "task_ids": [
+        1
+      ]
+    },
+    {
+      "episode_index": 1597,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 96,
+      "task_ids": [
+        0
+      ]
+    },
+    {
+      "episode_index": 1598,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 129,
+      "task_ids": [
+        5
+      ]
+    },
+    {
+      "episode_index": 1599,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 116,
+      "task_ids": [
+        8
+      ]
+    },
+    {
+      "episode_index": 1600,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 97,
+      "task_ids": [
+        3
+      ]
+    },
+    {
+      "episode_index": 1601,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 134,
+      "task_ids": [
+        1
+      ]
+    },
+    {
+      "episode_index": 1602,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 95,
+      "task_ids": [
+        0
+      ]
+    },
+    {
+      "episode_index": 1603,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 122,
+      "task_ids": [
+        2
+      ]
+    },
+    {
+      "episode_index": 1604,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 120,
+      "task_ids": [
+        6
+      ]
+    },
+    {
+      "episode_index": 1605,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 119,
+      "task_ids": [
+        5
+      ]
+    },
+    {
+      "episode_index": 1606,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 113,
+      "task_ids": [
+        6
+      ]
+    },
+    {
+      "episode_index": 1607,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 137,
+      "task_ids": [
+        6
+      ]
+    },
+    {
+      "episode_index": 1608,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 89,
+      "task_ids": [
+        3
+      ]
+    },
+    {
+      "episode_index": 1609,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 99,
+      "task_ids": [
+        8
+      ]
+    },
+    {
+      "episode_index": 1610,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 92,
+      "task_ids": [
+        3
+      ]
+    },
+    {
+      "episode_index": 1611,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 123,
+      "task_ids": [
+        6
+      ]
+    },
+    {
+      "episode_index": 1612,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 124,
+      "task_ids": [
+        6
+      ]
+    },
+    {
+      "episode_index": 1613,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 108,
+      "task_ids": [
+        6
+      ]
+    },
+    {
+      "episode_index": 1614,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 133,
+      "task_ids": [
+        1
+      ]
+    },
+    {
+      "episode_index": 1615,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 90,
+      "task_ids": [
+        0
+      ]
+    },
+    {
+      "episode_index": 1616,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 124,
+      "task_ids": [
+        7
+      ]
+    },
+    {
+      "episode_index": 1617,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 92,
+      "task_ids": [
+        0
+      ]
+    },
+    {
+      "episode_index": 1618,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 90,
+      "task_ids": [
+        3
+      ]
+    },
+    {
+      "episode_index": 1619,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 156,
+      "task_ids": [
+        4
+      ]
+    },
+    {
+      "episode_index": 1620,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 162,
+      "task_ids": [
+        4
+      ]
+    },
+    {
+      "episode_index": 1621,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 150,
+      "task_ids": [
+        8
+      ]
+    },
+    {
+      "episode_index": 1622,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 131,
+      "task_ids": [
+        2
+      ]
+    },
+    {
+      "episode_index": 1623,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 127,
+      "task_ids": [
+        8
+      ]
+    },
+    {
+      "episode_index": 1624,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 108,
+      "task_ids": [
+        6
+      ]
+    },
+    {
+      "episode_index": 1625,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 149,
+      "task_ids": [
+        4
+      ]
+    },
+    {
+      "episode_index": 1626,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 112,
+      "task_ids": [
+        5
+      ]
+    },
+    {
+      "episode_index": 1627,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 136,
+      "task_ids": [
+        9
+      ]
+    },
+    {
+      "episode_index": 1628,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 139,
+      "task_ids": [
+        9
+      ]
+    },
+    {
+      "episode_index": 1629,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 100,
+      "task_ids": [
+        3
+      ]
+    },
+    {
+      "episode_index": 1630,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 99,
+      "task_ids": [
+        8
+      ]
+    },
+    {
+      "episode_index": 1631,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 120,
+      "task_ids": [
+        7
+      ]
+    },
+    {
+      "episode_index": 1632,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 123,
+      "task_ids": [
+        1
+      ]
+    },
+    {
+      "episode_index": 1633,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 193,
+      "task_ids": [
+        9
+      ]
+    },
+    {
+      "episode_index": 1634,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 125,
+      "task_ids": [
+        7
+      ]
+    },
+    {
+      "episode_index": 1635,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 109,
+      "task_ids": [
+        5
+      ]
+    },
+    {
+      "episode_index": 1636,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 140,
+      "task_ids": [
+        7
+      ]
+    },
+    {
+      "episode_index": 1637,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 141,
+      "task_ids": [
+        7
+      ]
+    },
+    {
+      "episode_index": 1638,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 99,
+      "task_ids": [
+        3
+      ]
+    },
+    {
+      "episode_index": 1639,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 116,
+      "task_ids": [
+        8
+      ]
+    },
+    {
+      "episode_index": 1640,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 172,
+      "task_ids": [
+        4
+      ]
+    },
+    {
+      "episode_index": 1641,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 93,
+      "task_ids": [
+        2
+      ]
+    },
+    {
+      "episode_index": 1642,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 90,
+      "task_ids": [
+        0
+      ]
+    },
+    {
+      "episode_index": 1643,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 128,
+      "task_ids": [
+        9
+      ]
+    },
+    {
+      "episode_index": 1644,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 136,
+      "task_ids": [
+        9
+      ]
+    },
+    {
+      "episode_index": 1645,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 155,
+      "task_ids": [
+        6
+      ]
+    },
+    {
+      "episode_index": 1646,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 98,
+      "task_ids": [
+        5
+      ]
+    },
+    {
+      "episode_index": 1647,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 120,
+      "task_ids": [
+        5
+      ]
+    },
+    {
+      "episode_index": 1648,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 140,
+      "task_ids": [
+        8
+      ]
+    },
+    {
+      "episode_index": 1649,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 114,
+      "task_ids": [
+        1
+      ]
+    },
+    {
+      "episode_index": 1650,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 129,
+      "task_ids": [
+        3
+      ]
+    },
+    {
+      "episode_index": 1651,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 182,
+      "task_ids": [
+        4
+      ]
+    },
+    {
+      "episode_index": 1652,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 120,
+      "task_ids": [
+        2
+      ]
+    },
+    {
+      "episode_index": 1653,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 141,
+      "task_ids": [
+        9
+      ]
+    },
+    {
+      "episode_index": 1654,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 128,
+      "task_ids": [
+        7
+      ]
+    },
+    {
+      "episode_index": 1655,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 124,
+      "task_ids": [
+        6
+      ]
+    },
+    {
+      "episode_index": 1656,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 129,
+      "task_ids": [
+        1
+      ]
+    },
+    {
+      "episode_index": 1657,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 126,
+      "task_ids": [
+        2
+      ]
+    },
+    {
+      "episode_index": 1658,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 101,
+      "task_ids": [
+        3
+      ]
+    },
+    {
+      "episode_index": 1659,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 98,
+      "task_ids": [
+        3
+      ]
+    },
+    {
+      "episode_index": 1660,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 92,
+      "task_ids": [
+        0
+      ]
+    },
+    {
+      "episode_index": 1661,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 130,
+      "task_ids": [
+        6
+      ]
+    },
+    {
+      "episode_index": 1662,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 99,
+      "task_ids": [
+        3
+      ]
+    },
+    {
+      "episode_index": 1663,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 138,
+      "task_ids": [
+        4
+      ]
+    },
+    {
+      "episode_index": 1664,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 150,
+      "task_ids": [
+        1
+      ]
+    },
+    {
+      "episode_index": 1665,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 117,
+      "task_ids": [
+        2
+      ]
+    },
+    {
+      "episode_index": 1666,
+      "tasks": [
+        "pick up the black bowl next to the cookie box and place it on the plate"
+      ],
+      "length": 130,
+      "task_ids": [
+        6
+      ]
+    },
+    {
+      "episode_index": 1667,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 132,
+      "task_ids": [
+        7
+      ]
+    },
+    {
+      "episode_index": 1668,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 102,
+      "task_ids": [
+        2
+      ]
+    },
+    {
+      "episode_index": 1669,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 98,
+      "task_ids": [
+        0
+      ]
+    },
+    {
+      "episode_index": 1670,
+      "tasks": [
+        "pick up the black bowl on the cookie box and place it on the plate"
+      ],
+      "length": 90,
+      "task_ids": [
+        3
+      ]
+    },
+    {
+      "episode_index": 1671,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 120,
+      "task_ids": [
+        8
+      ]
+    },
+    {
+      "episode_index": 1672,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 113,
+      "task_ids": [
+        0
+      ]
+    },
+    {
+      "episode_index": 1673,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 130,
+      "task_ids": [
+        7
+      ]
+    },
+    {
+      "episode_index": 1674,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 119,
+      "task_ids": [
+        9
+      ]
+    },
+    {
+      "episode_index": 1675,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 138,
+      "task_ids": [
+        7
+      ]
+    },
+    {
+      "episode_index": 1676,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 140,
+      "task_ids": [
+        1
+      ]
+    },
+    {
+      "episode_index": 1677,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 142,
+      "task_ids": [
+        4
+      ]
+    },
+    {
+      "episode_index": 1678,
+      "tasks": [
+        "pick up the black bowl next to the plate and place it on the plate"
+      ],
+      "length": 97,
+      "task_ids": [
+        8
+      ]
+    },
+    {
+      "episode_index": 1679,
+      "tasks": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate"
+      ],
+      "length": 88,
+      "task_ids": [
+        0
+      ]
+    },
+    {
+      "episode_index": 1680,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 98,
+      "task_ids": [
+        5
+      ]
+    },
+    {
+      "episode_index": 1681,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 152,
+      "task_ids": [
+        1
+      ]
+    },
+    {
+      "episode_index": 1682,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 111,
+      "task_ids": [
+        2
+      ]
+    },
+    {
+      "episode_index": 1683,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 124,
+      "task_ids": [
+        9
+      ]
+    },
+    {
+      "episode_index": 1684,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 102,
+      "task_ids": [
+        5
+      ]
+    },
+    {
+      "episode_index": 1685,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 138,
+      "task_ids": [
+        5
+      ]
+    },
+    {
+      "episode_index": 1686,
+      "tasks": [
+        "pick up the black bowl from table center and place it on the plate"
+      ],
+      "length": 117,
+      "task_ids": [
+        2
+      ]
+    },
+    {
+      "episode_index": 1687,
+      "tasks": [
+        "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+      ],
+      "length": 143,
+      "task_ids": [
+        4
+      ]
+    },
+    {
+      "episode_index": 1688,
+      "tasks": [
+        "pick up the black bowl next to the ramekin and place it on the plate"
+      ],
+      "length": 145,
+      "task_ids": [
+        1
+      ]
+    },
+    {
+      "episode_index": 1689,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 102,
+      "task_ids": [
+        5
+      ]
+    },
+    {
+      "episode_index": 1690,
+      "tasks": [
+        "pick up the black bowl on the wooden cabinet and place it on the plate"
+      ],
+      "length": 133,
+      "task_ids": [
+        9
+      ]
+    },
+    {
+      "episode_index": 1691,
+      "tasks": [
+        "pick up the black bowl on the stove and place it on the plate"
+      ],
+      "length": 140,
+      "task_ids": [
+        7
+      ]
+    },
+    {
+      "episode_index": 1692,
+      "tasks": [
+        "pick up the black bowl on the ramekin and place it on the plate"
+      ],
+      "length": 109,
+      "task_ids": [
+        5
+      ]
+    }
+  ]
+}

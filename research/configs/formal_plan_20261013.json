@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "frozen_at": "2026-10-13T11:52:18.783713+08:00",
+  "user_authorization": "那就开始正式训练吧",
+  "thread": "PUBLIC_REPRODUCTION",
+  "suite": "libero_spatial",
+  "training_episodes": 432,
+  "training_frames": 52970,
+  "data_revision": "a4336d589d589045d1c56423ffdf3b88a0e19b1f",
+  "source": "official pi05_base; fresh experiment; smoke checkpoint not used",
+  "config": "pi05_libero_lora_3090x2_train",
+  "training_seed": 42,
+  "steps": 30000,
+  "global_batch": 2,
+  "per_device_batch": 1,
+  "fsdp_devices": 2,
+  "workers": 2,
+  "learning_rate": 5e-05,
+  "warmup_steps": 1000,
+  "ema": null,
+  "checkpoint_interval": 1000,
+  "checkpoint_keep_period": 10000,
+  "checkpoint_keep_latest": 1,
+  "training_sample_presentations": 60000,
+  "equivalent_dataset_passes": 1.1327166320558806,
+  "allowed_physical_gpus": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "maximum_simultaneous_gpus": 2,
+  "project_budget_GiB": 120,
+  "filesystem_reserve_GiB": 100,
+  "evaluation": {
+    "task_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "initial_state_indices": [
+      2,
+      12,
+      22,
+      32,
+      42
+    ],
+    "env_seed_rule": "1000 + 100*task_id + initial_state_index",
+    "policy_noise_seed_rule": "2000 + 100*task_id + initial_state_index; reset at first inference of each episode",
+    "episodes_per_policy": 50,
+    "policies": [
+      "pi05_base_with_same_spatial_norm",
+      "final_update30000"
+    ],
+    "max_steps": 220,
+    "wait_steps": 10,
+    "action_horizon": 10,
+    "replan_steps": 5,
+    "checkpoint_selection": "fixed final; do not select on these evaluation episodes",
+    "scope": "paired spatial subset, not full LIBERO benchmark; training seed=1; no claim of official score reproduction"
+  },
+  "analysis": {
+    "outputs": [
+      "per-task and overall success",
+      "paired success difference",
+      "task-cluster bootstrap 95% interval with 10000 samples seed20261013",
+      "failures and videos",
+      "training finite-value/frozen-parameter audit",
+      "resource accounting"
+    ],
+    "claim_rule": "report completed whole evaluation set; no resampling or threshold changes for poor outcomes"
+  },
+  "persistent_gpu_waiter": false,
+  "external_logging": false,
+  "automatic_followup": true,
+  "stop_after": "30000 updates plus paired evaluation and report; no unapproved extra training",
+  "notes": [
+    "Small batch means about 1.13 dataset passes; this is a first formal run, not a convergence guarantee.",
+    "Retain old smoke artifacts; automatic rotation applies only to checkpoints created by this formal run.",
+    "Protocol freezes now before new training/evaluation outputs."
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "stage": "mini_vla_m0_20261015_v1",
+  "kind": "data_contract_and_cpu_model_verification",
+  "source_manifest": "reports/spatial_full_manifest.json",
+  "source_manifest_sha256": "12beff3f050f00a02bdae1e286ade58465396e91bda595056d20abde979d7371",
+  "dataset_root": "datasets/lerobot/physical-intelligence/libero",
+  "output": "results/mini_vla_m0_20261015_v1",
+  "split": {
+    "seed": 20261015,
+    "unit": "whole demonstration episode",
+    "stratification": "exact task language",
+    "validation_fraction": 0.1,
+    "rounding": "ceil per task",
+    "ranking": "sha256 of seed:original_episode_id, ascending; first ceil(n*0.1) go to validation",
+    "expected_train_episodes": 384,
+    "expected_validation_episodes": 48
+  },
+  "preprocessing": {
+    "image_size": 128,
+    "image_resize": "Pillow bilinear, RGB, CHW float32 / 255; stored images are not flipped",
+    "vocabulary": "lowercase word tokens from training instructions only, PAD=0 UNK=1",
+    "max_language_length": 32,
+    "state_normalization": "per-dimension population mean/std on training frames only; std below 1e-6 becomes 1",
+    "action_normalization": "same z-score rule; inverse normalization before controller clipping [-1,1]",
+    "horizon": 1,
+    "control_action_dimension": 7
+  },
+  "model": {
+    "cnn_channels": [16, 32, 64],
+    "spatial_pool": [4, 4],
+    "visual_projection": 256,
+    "language_embedding": 64,
+    "state_hidden": 64,
+    "fusion_hidden": [512, 256],
+    "action_hidden": 128,
+    "seed": 20261015
+  },
+  "verification": {
+    "device": "cpu",
+    "threads": 4,
+    "max_seconds_per_command": 120,
+    "new_artifact_cap_mib": 16,
+    "real_data_optimizer_updates": 0,
+    "checks": ["complete episode split", "all numeric rows and ids", "train-only statistics/vocabulary", "boundary mask", "two-camera decoding", "normalization roundtrip", "all input paths and gradients", "labels excluded from inference", "checkpoint roundtrip", "known-target synthetic fit"],
+    "synthetic_fit": {"steps": 30, "batch": 2, "optimizer": "Adam", "learning_rate": 0.001, "seed": 20261015, "criterion": "final MSE below 20 percent of initial MSE; engineering control only"},
+    "scope": "No new simulation, GPU work, formal policy training, or confirmation evaluation"
+  },
+  "resource_policy": {"project_cap_gib": 120, "filesystem_reserve_gib": 100, "old_recovery_budgets_reset": false},
+  "next": "Explain data and core code, then separately freeze M1 training and closed-loop run protocol"
+}

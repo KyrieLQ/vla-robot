@@ -1,0 +1,14 @@
+{
+  "status": "PROPOSED_REQUIRES_EXPLICIT_USER_APPROVAL",
+  "approved": false,
+  "created_at": "2026-10-14T11:25:28.692412+08:00",
+  "parent_protocol": "configs/recovery_branch_plan_20261014_v3.json",
+  "parent_sha256": "fa18812a5a05e16ef93b33bb44aa6e51bbdbf3bfc2287d1a41fcd9ad4ecf008b",
+  "flag": "unconsumed_suffix_image_amendment_approved",
+  "evidence": "results/recovery_branches_20261014_v2/failure_numeric_audit.json",
+  "scope": "Extend the existing unconsumed-image diagnostic exception to unconsumed images inside the continue suffix (action-queue intermediate frames and terminal recording frame). Root images and images actually passed to inference remain exactly matched; all numeric/action/chunk/final-result gates remain. Apply per-step physical-state checks at original 1e-7 tolerance; record every render hash mismatch.",
+  "out_of_scope": "No permission to alter consumed model inputs, root observations, seeds, samples, model parameters, max steps, success predicate or feasibility threshold.",
+  "reason_approval_needed": "Previous explicit user approval was limited to historical action-prefix replay and retained exact images throughout the continue suffix.",
+  "prepared_code": "scripts/evaluate_recovery_branches_v3.py",
+  "default_behavior": "Exception disabled; affected roots deferred, no incomplete-set performance claim."
+}

@@ -1,0 +1,98 @@
+{
+  "purpose": "Read-only teaching example from existing M1/M2 cache;no model or simulation execution",
+  "episode_id": 1500,
+  "episode_length": 91,
+  "horizon": 10,
+  "examples": [
+    {
+      "frame_index": 45,
+      "cache_anchor_index": 25918,
+      "target_frame_indices": [
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54
+      ],
+      "action_mask": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "valid_target_steps": 10
+    },
+    {
+      "frame_index": 88,
+      "cache_anchor_index": 25961,
+      "target_frame_indices": [
+        88,
+        89,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90
+      ],
+      "action_mask": [
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "valid_target_steps": 3
+    },
+    {
+      "frame_index": 90,
+      "cache_anchor_index": 25963,
+      "target_frame_indices": [
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90
+      ],
+      "action_mask": [
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "valid_target_steps": 1
+    }
+  ],
+  "original_example": "results/mini_vla_m0_20261015_v1/example.json",
+  "cache": "datasets/mini_vla_128_20261019_v1/train",
+  "cache_manifest_sha256": "e980fc9964d27e2326c530e7ae1a3321ee453fe48b888194b34bec42e7ee38ca"
+}

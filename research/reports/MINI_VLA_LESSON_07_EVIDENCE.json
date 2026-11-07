@@ -1,0 +1,22 @@
+{
+  "checked_at": "2026-10-23T21:14:02.888191+08:00",
+  "canonical_model_id": "M7",
+  "legacy_experiment_stage": "M8",
+  "parameters_frozen": 507482304,
+  "parameters_trainable": 398663,
+  "epochs": 50,
+  "updates": 94950,
+  "selected_epoch": 12,
+  "selected_updates": 22788,
+  "visual_tokens_two_images": 128,
+  "hidden_width": 960,
+  "local_links_verified": 8,
+  "source_sha256": {
+    "results/mini_vla_m8_regression_train_20261021_run1/review/independent_acceptance.json": "1db956df1e4922e9cd25dcec3959fe96d317d92c11650026f9ee4dc9403c69f7",
+    "results/mini_vla_m8_dev50_20261021_run1/review/independent_acceptance.json": "e62600c563df90fc93437397e004460445177da020120c48bd72c3a1e5718454",
+    "mini_vla/vlm_frontend_v1.py": "77bdd8e809f7fa7be902f01e64361de73a1e2c1c3555d81e7c936bc2212994c6",
+    "mini_vla/vlm_action_heads_v1.py": "37b9e1817ed9d674d9bed7d8592825bdbe3c553b5c9dbc3b4ea46a9fb2b45078",
+    "mini_vla/vlm_cached_data_v2.py": "3f2bca0a908d79fa26e506e0726515b35b8b12eacdcbcc0a8902b2eecf4a41e4"
+  },
+  "new_experiments": false
+}

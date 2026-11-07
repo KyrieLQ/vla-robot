@@ -1,0 +1,27 @@
+{
+  "status": "APPROVED",
+  "thread": "PUBLIC_REPRODUCTION",
+  "at": "2026-11-03T08:44:38.084199+00:00",
+  "user_message": "把这个两张改了，改成4张。并且后续每次任务启动都首先尝试多GPU",
+  "scope": "Current Mini VLA feature-extraction migration and subsequent authorized tasks; prefer verified useful multi-GPU parallelism on every new launch",
+  "allow_existing_compute_processes": true,
+  "utilization_is_not_a_veto": true,
+  "allowed_physical_gpus": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "max_simultaneous_gpus": 4,
+  "no_other_process_termination": true,
+  "other_budgets_unchanged": true,
+  "current_eval_min_free_mib": 4096,
+  "threshold_basis": "Preflight LoRA PyTorch peak allocated1.15GiB; completed training process observedNVML1570MiB. 4GiB admission includes extra EGL/runtime and transient margin; not an exclusive reservation.",
+  "prefer_multi_gpu_at_every_launch": true,
+  "supersedes_gpu_count_policy": "configs/mini_vla_shared_gpu_20261029_APPROVED.json",
+  "scientific_protocol_unchanged": true
+}

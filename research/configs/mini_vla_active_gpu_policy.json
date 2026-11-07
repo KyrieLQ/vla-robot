@@ -1,0 +1,16 @@
+{
+  "status": "ACTIVE",
+  "approval": "configs/mini_vla_shared_gpu_20261103_APPROVED.json",
+  "approval_sha256": "8381e90c84364adfa97aa25482ac6024d3d613e60c341633992dd8f93c05747b",
+  "max_simultaneous_physical_gpus": 4,
+  "startup_policy": "prefer_multi_gpu",
+  "preferred_gpu_count": 4,
+  "shared_gpu_allowed": true,
+  "minimum_free_memory_from_stage_measurement": true,
+  "parallelize_independent_extraction_first": true,
+  "require_numeric_equivalence_and_real_throughput": true,
+  "single_gpu_fallback_requires_recorded_reason": true,
+  "preserve_batch_samples_updates_seeds_and_accounting": true,
+  "storage_and_host_memory_caps_unchanged": true,
+  "override_scope": "GPU-count fields in all older Mini VLA scope/resource approvals are superseded by the20261103 user instruction; other limits unchanged"
+}

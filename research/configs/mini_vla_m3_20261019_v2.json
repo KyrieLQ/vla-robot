@@ -1,0 +1,175 @@
+{
+  "stage": "mini_vla_m3_20261019_v2",
+  "authorization": "User authorized automatic evidence-driven component upgrades and all GPUs; retain shared 3h/8GiB limits",
+  "thread": "PUBLIC_REPRODUCTION",
+  "split": "configs/mini_vla_split_20261015_v1.json",
+  "preprocessing": "results/mini_vla_m0_20261015_v1/preprocessing.json",
+  "dataset_root": "datasets/lerobot/physical-intelligence/libero",
+  "cache": "datasets/mini_vla_128_20261019_v1",
+  "architecture": "M3 controlled visual upgrade on K10/H5: TinyCNN+ImageNet RGB standardization, random ResNet18, pretrained ResNet18",
+  "training": {
+    "seed": 42,
+    "epochs": 50,
+    "batch_size": 128,
+    "workers": 2,
+    "optimizer": "AdamW",
+    "learning_rate": 0.0003,
+    "weight_decay": 0.0001,
+    "gradient_clip_norm": 1.0,
+    "precision": "float32",
+    "augmentation": "none",
+    "shuffle": "all training frames; deterministic seed+epoch; drop_last=false",
+    "checkpoint_selection": "minimum full validation FIRST-ACTION frame-weighted normalized MSE; earliest on ties, same criterion as M1",
+    "checkpoint_retention": "initial, best, latest; resume only completed epochs with optimizer state",
+    "expected_train_frames_per_epoch": 46982,
+    "expected_validation_frames": 5988,
+    "total_training_sample_presentations": 2349100,
+    "real_training_seeds": 1,
+    "loss": "masked normalized MSE across all valid K10 target steps; terminal padding has zero weight",
+    "initialization": "fresh seed42 per variant; nonvisual initial parameters identical to M2 initial; random/pretrained ResNet projection and nonvisual parameters identical; only official backbone weights differ",
+    "valid_target_steps_per_epoch": 452540,
+    "expected_validation_target_steps": 57720,
+    "comparability": "Same anchors, K10 labels, masks, 50 epochs, batch128, optimizer and validation selection; ResNet architecture increases capacity and adds BatchNorm/residual layers; no best-seed selection"
+  },
+  "evaluation": {
+    "suite": "libero_spatial",
+    "task_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "initial_state_indices": [
+      2,
+      12,
+      22,
+      32,
+      42
+    ],
+    "reset_protocol": "fresh_environment_canonical_anchor_history",
+    "env_seed_rule": "1000+100*task_id+initial_state_index",
+    "variants": [
+      "h5"
+    ],
+    "episodes_per_variant": 50,
+    "max_steps": 220,
+    "wait_steps": 10,
+    "action_horizon": 10,
+    "replan_steps": {
+      "h5": 5
+    },
+    "success": "LIBERO env._check_success matches returned done; no custom threshold",
+    "videos": "all 150 new episodes",
+    "preflight_positive": "results/research_diagnosis_20261014_v3/ckpt30k_prefix5/episodes/task0_init2",
+    "preflight_rule": "replay existing successful action trace and verify initial/final physical state and original success step; no new positive sample search",
+    "confirmation_access": false,
+    "scope": "development pilot within known tasks, one training seed; no unseen-task or full benchmark claim",
+    "baseline": "reuse all 50 accepted M2 H5 outcomes; compare each visual control on identical fixed initial states",
+    "new_episodes": 150
+  },
+  "analysis": {
+    "metrics": [
+      "per-epoch train/validation loss",
+      "offline mean-action reference",
+      "per-task and overall paired success",
+      "task-cluster bootstrap interval",
+      "inference latency",
+      "GPU peak memory",
+      "throughput",
+      "failure videos"
+    ],
+    "bootstrap_seed": 20261019,
+    "bootstrap_samples": 10000,
+    "upgrade_rule": "Separate normalization, architecture/capacity and ImageNet initialization effects. H5 chosen for reduced policy calls, not proven superior success. Preserve all variants and negative findings. Do not open confirmation set; freeze later attention-fusion experiment only after review."
+  },
+  "resources": {
+    "allowed_physical_gpus": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "simultaneous_gpus": 1,
+    "max_cpu_threads": 4,
+    "stage_total_seconds": 10800,
+    "cache_seconds": 1800,
+    "gpu_stage_seconds": 7200,
+    "new_artifact_cap_gib": 8,
+    "project_cap_gib": 120,
+    "filesystem_reserve_gib": 100,
+    "idle_gate": "two samples plus prelaunch check; no compute process; used<=512MiB; utilization<=5%",
+    "old_recovery_accounting": "unchanged; this is the newly requested Mini VLA baseline stage, not a reset or continuation of the old recovery queue",
+    "persistent_idle_monitor": true,
+    "per_attempt_seconds": 7200,
+    "ledger": "results/mini_vla_m1_20261019_ledger.json",
+    "budget_scope": "Extend same cumulative 3h and 8GiB ledger to authorized M3; includes previous stages/audits; no reset",
+    "reuse_cache": true,
+    "m3_additional_artifact_cap_gib": 2
+  },
+  "resumption": "retain cache, completed epoch checkpoints and completed episode outcomes; no resampling or extra epochs because of scores",
+  "automatic_followup": "supervisor terminal event to same thread; review then enqueue next frozen authorized stage; stop dispatcher when M6 reviewed complete or user cancels",
+  "baseline_run": "results/mini_vla_m2_20261019_run1",
+  "baseline_acceptance_sha256": "9c67eb43f6dbf0e1f28e53b47c73be7deff53fa5cfe3ec772773d88f591ff74d",
+  "gpu_authorization": "configs/mini_vla_all_gpus_20261019_APPROVED.json",
+  "model_variants": [
+    "tiny_norm",
+    "resnet_random",
+    "resnet_pretrained"
+  ],
+  "expected_parameters": {
+    "tiny_norm": 794726,
+    "resnet_random": 13781894,
+    "resnet_pretrained": 13781894
+  },
+  "baseline_variant": "h5",
+  "pretraining": {
+    "url": "https://download.pytorch.org/models/resnet18-f37072fd.pth",
+    "path": "cache/torch/hub/checkpoints/resnet18-f37072fd.pth",
+    "sha256_prefix": "f37072fd",
+    "max_bytes": 67108864,
+    "source": "torchvision 0.22.1 ResNet18_Weights.IMAGENET1K_V1",
+    "trainability": "all retained backbone parameters fine-tuned; classifier discarded; no frozen feature cache"
+  },
+  "image_processing": {
+    "resolution": 128,
+    "resize_crop": "reuse existing 128 bilinear cache; no center crop or augmentation",
+    "fixed_mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "fixed_std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "controls": "M2 -> tiny_norm isolates RGB normalization. tiny_norm -> resnet_random changes architecture/capacity. resnet_random -> resnet_pretrained changes initialization only. Same RGB normalization in all three new models; resolution differs from standard ImageNet inference and is disclosed."
+  },
+  "resource_preflight": {
+    "synthetic_training_steps_per_architecture": 25,
+    "warmup_steps": 5,
+    "timed_eval_steps": 10,
+    "synthetic_weights_discarded": true,
+    "estimation": "18400 train steps +2350 validation batches +240s data/checkpoint allowance per model; random ResNet timing used for both identical ResNet architectures; +1800s for150 rollouts/analysis, multiply total by1.15",
+    "gate": "Launch real training only if estimate fits remaining single-attempt and shared window minus setup and120s reserve; otherwise exit78 with concrete measurements, do not reduce epochs or silently skip controls"
+  },
+  "supersedes": "configs/mini_vla_m3_20261019_v1.json",
+  "changes": "No scientific changes; latest fast50 directive and explicitly authorized quiet300s dispatcher; run1 never trained and is preserved.",
+  "idle_monitor": {
+    "controller": "automation/mini_vla_dispatcher.json",
+    "interval_seconds": 300,
+    "notifications": "stage terminal events and blockers only",
+    "waiting_wall_time": "separately recorded by dispatcher; all experimental execution and failed attempts remain on existing non-reset ledger"
+  },
+  "evaluation_schedule_standard": "configs/mini_vla_libero_benchmark_20261019_v2.json"
+}

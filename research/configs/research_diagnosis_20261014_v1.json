@@ -1,0 +1,144 @@
+{
+  "version": 1,
+  "created_at": "2026-10-14T00:47:53.228504+08:00",
+  "authorization_text": "那开始吧，正好把空闲的gpu利用起来",
+  "originating_thread": "PUBLIC_REPRODUCTION",
+  "objective": "Bounded failure diagnosis for task-progress-aware selective recovery; first stage of the approved 1–2 month research plan.",
+  "split_manifest": "configs/research_split_20261014_v1.json",
+  "split_sha256": "7eca378ed4fbf44ae38dabe8734a1a68691af2988f750e6829c55763227b9a6c",
+  "jobs": [
+    {
+      "name": "preflight",
+      "checkpoint_step": 30000,
+      "replan_steps": 5,
+      "max_steps": 220,
+      "cases": "preflight"
+    },
+    {
+      "name": "ckpt30k_prefix5",
+      "checkpoint_step": 30000,
+      "replan_steps": 5,
+      "max_steps": 440,
+      "cases": "development"
+    },
+    {
+      "name": "ckpt10k_prefix5",
+      "checkpoint_step": 10000,
+      "replan_steps": 5,
+      "max_steps": 220,
+      "cases": "development"
+    },
+    {
+      "name": "ckpt20k_prefix5",
+      "checkpoint_step": 20000,
+      "replan_steps": 5,
+      "max_steps": 220,
+      "cases": "development"
+    },
+    {
+      "name": "ckpt30k_prefix1",
+      "checkpoint_step": 30000,
+      "replan_steps": 1,
+      "max_steps": 220,
+      "cases": "development"
+    },
+    {
+      "name": "ckpt30k_prefix10",
+      "checkpoint_step": 30000,
+      "replan_steps": 10,
+      "max_steps": 220,
+      "cases": "development"
+    }
+  ],
+  "preflight_cases": [
+    {
+      "pair_id": "task0_init2",
+      "task_id": 0,
+      "initial_state_index": 2,
+      "env_seed": 1002,
+      "policy_seed": 2002
+    },
+    {
+      "pair_id": "task4_init22",
+      "task_id": 4,
+      "initial_state_index": 22,
+      "env_seed": 1422,
+      "policy_seed": 2422
+    }
+  ],
+  "preflight_protocol": "Run both cases with telemetry off and on; require identical image hashes, success, steps; actions/state/chunks allclose atol=1e-6 rtol=0; compare original first image and 220-step result. Any mismatch blocks the study and requires diagnosis, no outcome-driven retries.",
+  "primary_max_steps": 220,
+  "wait_steps": 10,
+  "denoising_steps": 10,
+  "action_horizon": 10,
+  "checkpoint_root": "checkpoints/pi05_libero_lora_3090x2_train/formal_spatial_20261013_v1",
+  "old_eval": "results/formal_pipeline_20261013_v2/trained_eval/episodes",
+  "allowed_physical_gpus": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "maximum_simultaneous_gpus": 2,
+  "initial_worker_count": 1,
+  "admission": "Two samples plus immediate recheck, no compute PIDs, <=512MiB used, >=95% free, <=5% utilization. One finite admission per job; no persistent waiting.",
+  "project_budget_gib": 120,
+  "filesystem_reserve_gib": 100,
+  "new_artifact_budget_gib": 8,
+  "queue_timeout_seconds": 36000,
+  "job_timeout_seconds": 10800,
+  "expected_policy_episodes": 1000,
+  "extra_preflight_episodes": 4,
+  "persistent_idle_monitor": false,
+  "periodic_chat_notifications": false,
+  "new_gradient_updates_this_queue": 0,
+  "confirmation_episodes_this_queue": 0,
+  "primary_analysis": {
+    "unit": "episode paired by task and initial state; 10 task clusters",
+    "bootstrap_seed": 20261014,
+    "bootstrap_draws": 10000,
+    "contrasts": [
+      "30k-20k",
+      "20k-10k",
+      "prefix1-prefix5",
+      "prefix10-prefix5"
+    ],
+    "intervals": "Exploratory task-cluster percentile 95% intervals, not adjusted confirmatory claims; disclose one VLA training seed.",
+    "costs": [
+      "policy calls",
+      "inference seconds",
+      "episode wall seconds",
+      "steps to first success"
+    ],
+    "late_success": "220-to-440 extension for baseline only, reported separately; never treated as a 220-step method gain"
+  },
+  "diagnostic_thresholds": {
+    "target_lift_m": 0.04,
+    "transport_displacement_m": 0.05,
+    "near_destination_xy_m": 0.05,
+    "stall_window_steps": 40,
+    "stall_target_net_motion_m": 0.01,
+    "stall_target_max_excursion_m": 0.02,
+    "description": "Descriptive non-exclusive geometric/contact proxies, not causal labels; success predicates unchanged. Fixed before new outcomes."
+  },
+  "interpretation_rules": [
+    "No method superiority claim from development results or interim totals.",
+    "Large delay-only fraction strengthens the timeout explanation; do not market extended budget as recovery.",
+    "Better short prefix must be reported with its additional inference cost.",
+    "Checkpoint improvements suggest under-training as a competitor, not proof that recovery is unnecessary.",
+    "Contact/position associations do not prove intervention benefit; next stage must validate complete-state branch reproduction and paired intervention outcomes.",
+    "No new full VLA training or confirmation evaluation is part of this queue. Freeze next-stage cases, actions, thresholds and remaining budget before data collection."
+  ],
+  "telemetry": [
+    "two compressed cameras",
+    "actions and full predicted chunks",
+    "robot state",
+    "object/fixture poses",
+    "bilateral finger contact proxy",
+    "object contacts",
+    "original goal predicate",
+    "policy call cost"
+  ],
+  "information_boundary": "Oracle metadata and arrays remain evaluator-side; inference payload contains only images, language, robot state and the pre-existing episode RNG seed.",
+  "auto_followup": "Verify complete counts and preflight, compute paired cluster statistics and failure proxies, write ANALYSIS.json and REPORT.md; one completion/failure event to originating conversation for review and necessary authorized next stage."
+}

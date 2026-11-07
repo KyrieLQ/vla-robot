@@ -1,0 +1,220 @@
+{
+  "version": 1,
+  "phase": "recovery_value_offline_pilot",
+  "created_at": "2026-10-14T18:35:43.902321+08:00",
+  "originating_thread": "PUBLIC_REPRODUCTION",
+  "authorization": "Original research objective and passed >=8 robust-rescue gate; freeze models/losses/seeds/budget before features or fitting.",
+  "parent_run": "results/recovery_paired_live_20261014_v3",
+  "parent_plan_sha256": "5274caa852a0245f76ff7ab45d6f9c50e750405a20375ab8fa6ffef53b4de485",
+  "parent_analysis_sha256": "8fa0d12bc46029351c04a2464fa8c6a1eb4330b388326a575ef9a79c5aaac0e0",
+  "parent_acceptance_sha256": "498780dfdfdd89edab4e17aaac468b2ef0c9566ed865aba8832a1981906bd61b",
+  "root_manifest": "configs/recovery_branch_roots_20261014_v1.json",
+  "root_manifest_sha256": "3d5effd30982d8bfd23ee20780771ecf959246ec3f715039a993073fa2526374",
+  "development_split": "configs/research_split_20261014_v1.json",
+  "checkpoint": "checkpoints/pi05_libero_lora_3090x2_train/formal_spatial_20261013_v1/30000",
+  "source_episodes": "results/research_diagnosis_20261014_v3/ckpt30k_prefix5/episodes",
+  "expected_roots": 269,
+  "fit_episodes": 140,
+  "fit_roots": 186,
+  "calibration_episodes": 60,
+  "calibration_roots": 83,
+  "methods": [
+    "continue_a",
+    "fine20",
+    "resample5",
+    "retreat5_fine20"
+  ],
+  "vla_parameters_frozen": true,
+  "new_simulation_rollouts": 0,
+  "confirmation_evaluations": 0,
+  "features": {
+    "encoder": "Frozen 30k pi0.5 PaliGemma prefix transformer after original policy input transforms; mean-pool external camera, wrist camera and valid language/state tokens.",
+    "output_dtype": "float16",
+    "pca_components": 32,
+    "pca_fit": "fit roots only; standardize then PCA then standardize projected coordinates",
+    "visual_history": "previous original factual t60 root feature only at t120; mask absent history at t60",
+    "robot_history_offsets": [
+      -20,
+      -15,
+      -10,
+      -5,
+      0
+    ],
+    "executed_action_history_offsets": [
+      -4,
+      -3,
+      -2,
+      -1
+    ],
+    "allowed_inputs": [
+      "current camera observations",
+      "past camera observation when available",
+      "past/current robot proprioception",
+      "past executed actions",
+      "language goal",
+      "elapsed action budget"
+    ],
+    "forbidden_inputs": [
+      "task ID",
+      "initial-state index",
+      "policy/environment seeds",
+      "object poses/IDs",
+      "goal labels",
+      "candidate future actions/outcomes"
+    ],
+    "cache_reuse_claim": "Offline encoder pass is measured extra work. Live VLA-cache sharing not implemented or claimed in this pilot."
+  },
+  "targets": {
+    "joint_outcome_class": "2*y_continue_a + y_candidate, four classes 00,01(win),10(loss),11",
+    "candidate_gain": "P(01)-P(10)",
+    "cost": "clip(max(0,calls_candidate-calls_A)/ceil((220-root_step)/5),0,2)",
+    "progress_cues": [
+      "target bilateral finger contact proxy",
+      "target lifted >=0.04m above episode start",
+      "target XY within 0.05m of destination"
+    ],
+    "progress_scope": "Privileged simulator quantities are training labels only; reversible cues, not time fraction, not a certified grasp or monotone progress."
+  },
+  "model": {
+    "trunk_hidden": [
+      128,
+      64
+    ],
+    "activation": "SiLU",
+    "dropout": 0.1,
+    "heads": {
+      "progress": 3,
+      "joint": 12,
+      "marginal_value": 4,
+      "failure": 1,
+      "cost": 3
+    }
+  },
+  "variants": [
+    "paired_progress",
+    "paired_no_progress",
+    "paired_no_history",
+    "marginal_value",
+    "failure_trigger"
+  ],
+  "training": {
+    "seeds": [
+      11,
+      23,
+      47
+    ],
+    "updates_per_model": 1000,
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 0.001,
+    "gradient_clip": 1.0,
+    "device": "cpu",
+    "full_batch": true,
+    "sample_weight": "Each fit episode totals one; its roots share that weight. Candidates averaged within root.",
+    "loss": "paired: CE(joint, all three candidates)+0.1*BCE(progress)+0.2*BCE(failure)+0.2*SmoothL1(cost); marginal: BCE(all four outcomes)+0.1*BCE(progress)+0.2*SmoothL1(cost); failure: BCE(failure)+0.1*BCE(progress)+0.2*SmoothL1(cost). No-progress removes progress input and auxiliary term.",
+    "selection": "Final update only; no calibration early stopping, no best-seed selection; all three seeds and arithmetic ensemble reported."
+  },
+  "calibration": {
+    "gain_cost_weight": 0.05,
+    "ensemble_standard_deviation_penalty": 1.0,
+    "thresholds": [
+      0.0,
+      0.025,
+      0.05,
+      0.075,
+      0.1,
+      0.125,
+      0.15,
+      0.175,
+      0.2,
+      0.225,
+      0.25,
+      0.275,
+      0.3,
+      0.325,
+      0.35,
+      0.375,
+      0.4,
+      0.425,
+      0.45,
+      0.475,
+      0.5,
+      0.525,
+      0.55,
+      0.575,
+      0.6,
+      0.625,
+      0.65,
+      0.675,
+      0.7,
+      0.725,
+      0.75,
+      0.775,
+      0.8,
+      0.825,
+      0.85,
+      0.875,
+      0.9,
+      0.925,
+      0.95,
+      0.975,
+      1.0,
+      null
+    ],
+    "none_threshold": "Always continue; mandatory fallback",
+    "constraints": [
+      "zero observed harmed calibration roots",
+      "positive added calls / baseline calls <=0.20, episode-weighted"
+    ],
+    "objective": "Maximize episode-weighted mean signed gain; ties prefer lower positive added cost, fewer interventions, stricter threshold.",
+    "candidate_tie_priority": [
+      "resample5",
+      "fine20",
+      "retreat5_fine20"
+    ],
+    "failure_trigger_candidate": "Choose fixed candidate on fit-failed roots by mean gain minus 0.05 cost, episode-weighted; never use calibration labels to choose it.",
+    "scope": "Decision-level development calibration, not held-out deployment or a safety guarantee. Do not splice t60/t120 branch outcomes into an online episode score."
+  },
+  "next_gate": {
+    "minimum_ensemble_calibration_net_wins": 1,
+    "max_calibration_harms": 0,
+    "minimum_positive_individual_seeds": 2,
+    "action": "Only if the primary paired_progress pilot passes, prepare a separately frozen closed-loop development test and VLA cache-tap identity checks. Otherwise analyze learnability without changing this run or opening confirmation."
+  },
+  "resources": {
+    "maximum_simultaneous_gpus": 1,
+    "allowed_physical_gpus": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "cpu_threads": 4,
+    "max_active_seconds": 900,
+    "project_budget_gib": 120,
+    "filesystem_reserve_gib": 100,
+    "phase_artifact_cap_gib": 4,
+    "new_output_reserve_mib": 64,
+    "prior_paired_active_seconds": 13097.827193767997,
+    "prior_recovery_active_seconds": 19928.44429674535,
+    "all_recovery_artifact_roots": [
+      "results/recovery_branches_20261014_v1",
+      "results/recovery_branches_20261014_v2",
+      "results/recovery_branches_20261014_v3",
+      "results/recovery_branches_20261014_v4",
+      "results/recovery_branches_20261014_v5",
+      "results/recovery_branches_20261014_v6",
+      "results/recovery_paired_live_20261014_v1",
+      "results/recovery_paired_live_20261014_v2",
+      "reports/policy_image_effect_20261014",
+      "results/recovery_paired_live_20261014_v3"
+    ]
+  },
+  "reporting": [
+    "Full 1345-branch result remains fixed",
+    "Report fit/calibration separately and 60/120 separately",
+    "Report module seeds separately from one VLA seed",
+    "No inference of deployed improvement from oracle or calibration results",
+    "Feature extraction time and module training time charged separately; no new VLA updates"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "project": "pi05_lora_libero",
+  "originating_thread": "PUBLIC_REPRODUCTION",
+  "model": "pi05_base",
+  "backend": "JAX/Flax",
+  "method": "LoRA",
+  "suite": "libero_spatial",
+  "smoke_updates": 20,
+  "resume_additional_updates": 2,
+  "closed_loop_episodes": 2,
+  "initial_batch_size": 1,
+  "data_workers": 2,
+  "initial_gpus": 1,
+  "maximum_gpus": 4,
+  "additional_disk_budget_GiB": 120,
+  "filesystem_minimum_available_GiB": 100,
+  "formal_training_authorized_this_round": false,
+  "full_benchmark_authorized_this_round": false,
+  "persistent_gpu_polling": false,
+  "external_logging": false
+}

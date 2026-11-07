@@ -1,0 +1,20 @@
+{
+  "status": "PARTIALLY_RESUMED_BY_USER",
+  "requested_at": "2026-10-23T20:37:25.608626+08:00",
+  "scope": "New Mini VLA VLM finetuning: LoRA, partial/full unfreezing, and preparatory GPU training benchmarks",
+  "reason": "User requested not to perform subsequent finetuning for now",
+  "resume_requires": "New explicit user instruction to resume",
+  "already_running": false,
+  "already_queued": false,
+  "completed_M7_M8_head_training": "Preserved; VLM was frozen",
+  "allowed_continuation": "Lessons, diagrams and existing-result interpretation; no new training",
+  "unrelated_projects_affected": false,
+  "reaffirmed_at": "2026-10-23T21:14:02.888191+08:00",
+  "existing_pi05_teaching_reference": "M9 may reuse completed pi0.5 work; no new training authorized",
+  "resume_record": {
+    "at": "2026-10-27T08:31:22.890979+00:00",
+    "approval": "configs/mini_vla_m6_lora_20261027_AUTHORIZED.json",
+    "scope": "PPT M6 SmolVLM matched continuation + necessary preflight",
+    "other_new_finetuning": "still deferred"
+  }
+}

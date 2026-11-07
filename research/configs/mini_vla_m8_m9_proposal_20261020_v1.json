@@ -1,0 +1,115 @@
+{
+  "status": "PROPOSED_AWAITING_BUDGET_APPROVAL_NOT_EXECUTABLE",
+  "thread": "PUBLIC_REPRODUCTION",
+  "report": "reports/MINI_VLA_M8_M9_RESOURCE_PROPOSAL_20261020.md",
+  "basis": "CompletedM8preflight;rawfulltokens78.850684762GiB exceed current storage headroom",
+  "request": {
+    "additional_effective_execution_seconds": 43200,
+    "new_shared_execution_limit_seconds": 93600,
+    "additional_phase_artifact_gib": 80,
+    "new_phase_artifact_limit_gib": 140,
+    "new_project_cap_gib": 240,
+    "filesystem_reserve_gib": 100,
+    "max_simultaneous_gpus": 2,
+    "rent_gpus": false
+  },
+  "proposed_work_limits": {
+    "cumulative_seconds": 64800,
+    "new_artifacts_gib": 84,
+    "cache_seconds": 21600,
+    "m8_train_seconds": 14400,
+    "m9_train_seconds": 14400,
+    "paired_dev50_seconds": 3600,
+    "final2000_reserved_seconds": 10800
+  },
+  "data": {
+    "split": "configs/mini_vla_four_suite_demo_split_20261019_v1.json",
+    "preprocessing": "configs/mini_vla_m6_preprocessing_20261019_v1.json",
+    "train_episodes": 1506,
+    "validation_episodes": 187,
+    "train_frames": 243000,
+    "validation_frames": 30465,
+    "cache_frames": 273465,
+    "cache_hidden_bytes": 84665278080,
+    "cache_dtype": "rawBF16bits_uint16",
+    "truncate_or_pool_tokens": false,
+    "confirmation_access": false
+  },
+  "vlm": {
+    "model_id": "HuggingFaceTB/SmolVLM2-500M-Video-Instruct",
+    "revision": "7b375e1b73b11138ff12fe22c8f2822d8fe03467",
+    "frozen": true,
+    "processor": {
+      "size": {
+        "longest_edge": 512
+      },
+      "do_image_splitting": false,
+      "reason": "One512view percamera using official normalization/tokenizer;explicit departure from default2048image splitting,no128cache reuse"
+    },
+    "hidden_size": 960
+  },
+  "training_shared": {
+    "seed": 42,
+    "epochs": 50,
+    "batch_size": 128,
+    "updates_per_epoch": 1899,
+    "total_updates": 94950,
+    "optimizer": "AdamW",
+    "lr": 0.0003,
+    "weight_decay": 0.0001,
+    "clip_norm": 1.0,
+    "head_dtype": "float32",
+    "horizon": 10,
+    "execute_prefix": 5,
+    "selection": "minimum full validation generated first-action normalizedMSE;earliest ties",
+    "retain": "initial,best,latest+optimizer",
+    "decoder": {
+      "layers": 1,
+      "d_model": 128,
+      "heads": 4,
+      "ffn": 512,
+      "dropout": 0
+    }
+  },
+  "m8": {
+    "type": "regression",
+    "observation_projection": "960->128",
+    "state_encoder": "8->64->128",
+    "action_queries": 10,
+    "output": "128->7",
+    "loss": "valid-position maskedMSE"
+  },
+  "m9": {
+    "type": "conditional_flow_matching",
+    "base_noise": "standardnormal",
+    "time": "uniform[0,1]",
+    "interpolation": "(1-t)*z+t*a",
+    "velocity_target": "a-z",
+    "loss": "valid-position masked velocityMSE",
+    "action_projection": "7->128",
+    "time_embedding": "fixedsinusoidal+MLP",
+    "integration": "explicitEuler10steps",
+    "offline_noise_seed": "SHA256(20261020,episode,frame)",
+    "online_noise_seed": "SHA256(20261020,task,init,call_index)"
+  },
+  "evaluation": {
+    "development_each": 50,
+    "baseline_m6": 47,
+    "baseline_m7a": 37,
+    "final2000": "reserve only until finalmodel and execution frozen;do not open during development"
+  },
+  "gates": {
+    "before_cache": "available filesystem>=184GiB and project/newphase limits;no oldfiles deleted",
+    "cache_online_relative_L2_max": 0.01,
+    "full_training": "measured full50epoch estimate must fit remaining assignedstage/global budget",
+    "failure": "retain allcompletedoutputs, no threshold/seed/sample changes;no unapproved retries outside budget"
+  },
+  "implementation": "Freeze executable code, data bindings and meaningful CPU contracts before each authorized launch;this proposal alone cannot be enqueued",
+  "input_sha256": {
+    "configs/mini_vla_four_suite_demo_split_20261019_v1.json": "97142601f468d5415c4dec96ec6cf014b965b3c3261e6945c26c8b17ce36be30",
+    "configs/mini_vla_m6_preprocessing_20261019_v1.json": "acc542f5811bc8fcb8af6f39d6e9c77052cd092ac5ff73908ee4abb1a0c84251",
+    "results/mini_vla_m8_preflight_20261020_run2/review/independent_acceptance.json": "5dd9ed8afa15cbdf0395f40a3262c39f5b65a553ffd1fd7d3cb2f434491c27df",
+    "results/mini_vla_m7a_20261020_run1/review/independent_acceptance.json": "437edc819ce2db9460f6499789ed104947dc1651f2bbc7ddfacc1cf6fffd9c59",
+    "results/mini_vla_m6_fast50_20261020_run1/review/independent_acceptance.json": "b7ba0717def9af43e992405912b62071d2d45d0a58a57bf9f8606816ba18a1f8"
+  }
+}

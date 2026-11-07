@@ -1,0 +1,66 @@
+{
+  "status": "AUTHORIZED_STAGED_SEQUENCE",
+  "thread": "PUBLIC_REPRODUCTION",
+  "authorization": "configs/mini_vla_flow_improvement_20261103_AUTHORIZED.json",
+  "reason": "Distinguish unstable sampling, tail input mismatch and insufficient conditional action modeling; no presumed improvement.",
+  "fixed": {
+    "backbone": "M6 selected LoRA endpoint; frozen",
+    "head_reference": "fixed adapted Flow epoch43, original21/50",
+    "data": "1506 train/187 validation demonstrations;243000/30465 frames;no final2000",
+    "training": "50epochs94950updates per new head;seed42;effectivebatch128;original AdamW3e-4 wd1e-4 clip1;no reduced coverage",
+    "selection": "complete validation generated first-action MSE under fixed original per-frame noise;never closed-loop checkpoint picking",
+    "execution": "K10H5,Euler10,originalSpatial50 initial states,raw success predicate",
+    "storage": "old caches/weights retained; no new full token disk cache; RAM extraction must preserve host128GiB/RSS100GiB"
+  },
+  "stages": [
+    {
+      "id": "noise_persistence",
+      "new_updates": 0,
+      "new_episodes": 50,
+      "intervention": "Fresh per-call noise -> same per-episode original call0 noise; everything else identical; all marginal noises remain standard Normal.",
+      "baseline": "Reuse accepted21/50 whole trajectories only after hashes/initial states verified",
+      "same_observation_shadow": "Also compute fresh-noise actions with same features; never execute or select them",
+      "metrics": [
+        "paired success/wins/losses/task-cluster descriptive95interval",
+        "same-observation noise action difference",
+        "gripper sign disagreements",
+        "overlap between previous unexecuted five steps and next predicted first five",
+        "actual action boundary change",
+        "cost/video"
+      ],
+      "interpretation": "Only attribute this contrast to the noise persistence protocol. Smaller overlap error without higher success is not an improvement. No noise/seed search."
+    },
+    {
+      "id": "tail_input_consistency",
+      "status": "NEXT_TO_IMPLEMENT_AND_FREEZE",
+      "new_updates": 94950,
+      "new_episodes": 50,
+      "intervention": "Use existing repeated-final-action target padding to build all10 noisy input tokens. Do not pass future action validity mask to Decoder. Retain original valid-only velocity loss, normalization, model architecture and full-frame coverage.",
+      "baseline": "original50epoch fixed adapted Flow; seed42 exact original initial parameters; original fresh per-call inference noise even if stage1 improves",
+      "diagnostics": "full and tail validation,first5/wholechunk per-coordinate/gripper metrics; primary selection unchanged",
+      "gate": "First require full-window per-example loss equivalence and no inference access to future labels/masks, then full-data throughput/storage admission."
+    },
+    {
+      "id": "decoder_depth",
+      "status": "FREEZE_AFTER_TAIL_REVIEW",
+      "max_new_updates": 94950,
+      "max_new_episodes": 50,
+      "intervention": "Compare2layers against1layer, width128 unchanged; same tail convention fixed in stage2. Do not simultaneously change time injection."
+    },
+    {
+      "id": "time_conditioning",
+      "status": "FREEZE_AFTER_PRECEDING_REVIEW",
+      "max_new_updates": 94950,
+      "max_new_episodes": 50,
+      "intervention": "Single time-injection comparison with selected matched structural control; specify exact layer conditioning and initialization before launch. No time deletion solely to minimize small-sample MSE."
+    }
+  ],
+  "decision_rules": [
+    "Every started arm completes registered data coverage and validation; no early stopping because success is low.",
+    "Paired spatial50 is development only and one training seed; use task-cluster descriptive uncertainty.",
+    "If intervention yields no net benefit or contradictory metrics, retain negative result and proceed only to next already-scoped diagnostic, not extra sweeps.",
+    "Training RAM extraction may be shared by pre-frozen arms to save I/O; model state, RNG and per-arm sample order must be isolated. No indefinite RAM retention while waiting for analysis.",
+    "Freeze exact implementation and output hashes before new data. Budgets/permissions outside this bounded sequence require concrete review."
+  ],
+  "automation": "Original dispatcher/thread. Completion event requires full independent checks and documentation; accepted != processed. Stage1 terminal event prepares authorized tail successor. Stop queue only after bounded sequence has been handled."
+}

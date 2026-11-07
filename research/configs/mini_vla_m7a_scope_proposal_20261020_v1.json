@@ -1,0 +1,101 @@
+{
+  "status": "AWAITING_SCOPE_REALLOCATION_APPROVAL",
+  "launchable": false,
+  "goal": "first short architectural bridge toward pretrainedVLM+generative action expert",
+  "scope": "M7a spatial visual tokens only, same four-suite data/seed/training recipe; defaultSpatial50 development,no final2000",
+  "model": {
+    "source": "mini_vla/spatial_tokens_model_v1.py",
+    "sha256": "82291535e6d874cf8dc25b54b79938c11645238888d3f27b1554b57a8d3f5c78",
+    "class": "SpatialTokensMiniVLA",
+    "parameters": 11604103,
+    "visual_tokens": 32,
+    "total_observation_tokens": 34,
+    "comparison_observation_tokens": 4,
+    "unchanged": [
+      "ImageNetResNet18",
+      "128resolution",
+      "masked-mean language71word",
+      "proprioMLP",
+      "one-layerencoder/decoder128d4heads",
+      "learned10actionqueries",
+      "K10/H5"
+    ],
+    "changed": [
+      "flattened image projection replaced by512to128 per-grid projection",
+      "learned4x4 spatial position plus existingcamera type codes"
+    ],
+    "claim_boundary": "Representation and projection capacity change together;fewer parameters does not prove efficiency or improvement;not yet a pretrainedVLM."
+  },
+  "baseline": {
+    "run": "results/mini_vla_m6_fast50_20261020_run1",
+    "successes": 47,
+    "episodes": 50,
+    "acceptance_sha256": "b7ba0717def9af43e992405912b62071d2d45d0a58a57bf9f8606816ba18a1f8"
+  },
+  "training": {
+    "seed": 42,
+    "epochs": 50,
+    "batch_size": 128,
+    "updates": 94950,
+    "train_episodes": 1506,
+    "validation_episodes": 187,
+    "split": "configs/mini_vla_four_suite_demo_split_20261019_v1.json",
+    "preprocessing": "configs/mini_vla_m6_preprocessing_20261019_v1.json",
+    "initialization": "fresh identicalImageNet seed42,not warm-start M6 weights",
+    "selection": "earliest minimum full validation first-actionMSE",
+    "optimizer": "sameAdamW3e-4wd1e-4clip1FP32",
+    "no_result_based_extra_epochs": true
+  },
+  "evaluation": {
+    "suite": "libero_spatial",
+    "task_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "initial_state_indices": [
+      2,
+      12,
+      22,
+      32,
+      42
+    ],
+    "episodes": 50,
+    "replan_steps": 5,
+    "new_training_configurations": 1,
+    "confirmation_access": false,
+    "final2000": "defer until modern architecture selection is frozen"
+  },
+  "resources": {
+    "request_type": "repurpose remaining approvedM6 budget,no increase in total cap",
+    "current_remaining_seconds": 34169.57008837955,
+    "proposed_stage_cap_seconds": 10800,
+    "proposed_stage_artifact_cap_gib": 1,
+    "original_total_seconds": 50400,
+    "phase_artifact_cap_gib": 60,
+    "project_cap_gib": 160,
+    "filesystem_reserve_gib": 100,
+    "simultaneous_gpus": 1,
+    "estimate": "about2-3h based onM6 backbone throughput;measure new34-token throughput before launch,exit if stage or cumulative cap cannot coverfull50epochs+50eval",
+    "later_M8_M9_budget": "not assumed granted;prepare concrete protocols and resource needs"
+  },
+  "validation": "reports/mini_vla_m7a_cpu_proposal_checks_20261020.json",
+  "current_work_done": [
+    "model implementation",
+    "shared initialization/shape/padding/gradient/no-future-input CPUchecks",
+    "concrete sample/seed/resource proposal"
+  ],
+  "not_done": [
+    "GPUthroughput",
+    "training",
+    "closed-loop evaluation"
+  ],
+  "authority_note": "OriginalM6 approval covers oneM4 model;M7a changes experiment purpose. Await explicit scope confirmation,not GPU-number permission or repeated14h approval."
+}

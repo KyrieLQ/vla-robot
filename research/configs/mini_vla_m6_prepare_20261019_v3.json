@@ -1,0 +1,69 @@
+{
+  "phase": "prepare",
+  "stage": "mini_vla_m6_prepare_20261019_v3",
+  "thread": "PUBLIC_REPRODUCTION",
+  "approval": "configs/mini_vla_m6_20261019_APPROVED.json",
+  "approval_sha256": "7cca1097ed283871bfe591cc0b9ee5646ee639b3ea1b564f63b9f98339899f6b",
+  "entry_module": "mini_vla.prepare_m6_v3",
+  "data_revision": "a4336d589d589045d1c56423ffdf3b88a0e19b1f",
+  "source_metadata": "reports/hf_dataset_metadata.json",
+  "source_metadata_sha256": "d3f37918f5b4aa04d8d20428bcc2e65a1f48755ab17c48ef871afb71c48e6ddb",
+  "dataset_root": "datasets/lerobot/physical-intelligence/libero",
+  "split": "configs/mini_vla_four_suite_demo_split_20261019_v1.json",
+  "preprocessing": "configs/mini_vla_m6_preprocessing_20261019_v1.json",
+  "cache": "datasets/mini_vla_four_suite_128_20261019_v1",
+  "input_sha256": {
+    "configs/mini_vla_m6_download_manifest_20261019_v1.json": "d6d1665cb3255601aa98284def1cfb8ff908964710e9d0e8e33ce5d61981254b",
+    "configs/mini_vla_four_suite_demo_split_20261019_v1.json": "97142601f468d5415c4dec96ec6cf014b965b3c3261e6945c26c8b17ce36be30",
+    "reports/hf_dataset_metadata.json": "d3f37918f5b4aa04d8d20428bcc2e65a1f48755ab17c48ef871afb71c48e6ddb",
+    "configs/mini_vla_m6_20261019_APPROVED.json": "7cca1097ed283871bfe591cc0b9ee5646ee639b3ea1b564f63b9f98339899f6b"
+  },
+  "frozen_sources": [
+    "mini_vla/prepare_m6_v3.py",
+    "mini_vla/data.py",
+    "scripts/start_mini_vla_m6_v1.sh",
+    "configs/mini_vla_m6_download_manifest_20261019_v1.json",
+    "configs/mini_vla_four_suite_demo_split_20261019_v1.json",
+    "reports/hf_dataset_metadata.json",
+    "configs/mini_vla_m6_20261019_APPROVED.json"
+  ],
+  "resources": {
+    "per_attempt_seconds": 10800,
+    "additional_reservation_bytes": 49776979072,
+    "allowed_physical_gpus": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "cpu_threads": 4,
+    "download_workers": 2,
+    "gpu_count": 0,
+    "new_phase_execution_seconds": 50400,
+    "phase_artifact_gib": 60,
+    "project_gib": 160,
+    "filesystem_reserve_gib": 100
+  },
+  "download_transport": "official HTTPS preferred; public mirror only after bounded official failures, pinned official SHA256 mandatory, no credentials/TLS bypass",
+  "cache_resume": "checkpoint per completed episode after memmap flush; no redecoding completed episodes; interrupted episode safely rebuilt",
+  "next": "Independently verify all prepared data. Check latest user reply on modern-architecture route and timing of2000 final evaluation before scheduling any training/confirmation; current successor is data preparation only.",
+  "engineering_revision": {
+    "source_run": "results/mini_vla_m6_prepare_20261019_run2",
+    "failure": "Transport SSLEOFError after197 verified current-pass files; not hash failure",
+    "change": "defer isolated network failures,finish other files;4consecutive failures triggers bounded300s backoff;3rounds max,no missing-file exclusion,no repeats of alreadyverified files within attempt",
+    "numeric_and_cache_AST_identical": true,
+    "future_route": "prepare-only;latest architecture-route decision must be checked before any training/final release"
+  },
+  "network_recovery": {
+    "max_rounds": 3,
+    "backoff_seconds": 300,
+    "consecutive_failures_before_backoff": 4,
+    "worker_count": 2,
+    "integrity_failure_is_fatal": true,
+    "incomplete_is_not_success": true
+  }
+}

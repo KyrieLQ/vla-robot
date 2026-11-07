@@ -1,0 +1,29 @@
+{
+  "checked_at": "2026-10-24T14:36:58.194788+08:00",
+  "course_model_id": "M8",
+  "ppt_model_id": "M7",
+  "legacy_experiment_stage": "M9",
+  "epochs": 50,
+  "updates": 94950,
+  "selected_epoch": 43,
+  "selected_updates": 81657,
+  "parameters": 432711,
+  "parameter_increment": 34048,
+  "K": 10,
+  "S_euler": 10,
+  "H_execute": 5,
+  "dev_successes": 18,
+  "regression_dev_successes": 39,
+  "links_checked": 8,
+  "display_equations": 14,
+  "toy_arithmetic_verified": true,
+  "toy_not_measured_model_behavior": true,
+  "source_sha256": {
+    "results/mini_vla_m9_flow_train_20261021_run1/review/independent_acceptance.json": "f237e8866419a44afade64bd3f07ac758321c2455faad18e7073a8f1c1e60668",
+    "results/mini_vla_m9_dev50_20261021_run1/review/independent_acceptance.json": "29774a5c1d40cf3832d7f8a353ed0d41931ac7ee43ed84a7bc1c7e58261be8b7",
+    "mini_vla/vlm_action_heads_v1.py": "37b9e1817ed9d674d9bed7d8592825bdbe3c553b5c9dbc3b4ea46a9fb2b45078",
+    "mini_vla/train_vlm_flow_v1.py": "d7b188eb1c35f727ad25e1ac1fb2ee5b7f619c5d22237a9f32a33b2aa3e72600"
+  },
+  "background_source": "https://arxiv.org/abs/2210.02747",
+  "new_experiments": false
+}

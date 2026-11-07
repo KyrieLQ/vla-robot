@@ -1,0 +1,1212 @@
+{
+  "version": 3,
+  "created_at": "2026-10-14T11:25:28.692412+08:00",
+  "phase": "recovery_branch_feasibility",
+  "originating_thread": "PUBLIC_REPRODUCTION",
+  "authorization": "User approved starting the 1–2 month VLA improvement project and automatic follow-through within resource limits.",
+  "source_diagnosis": "configs/research_diagnosis_20261014_v2.json",
+  "source_diagnosis_sha256": "70a34203dd43853a67272172b3decf3700b9c18610f3729b47cf3c0996a06784",
+  "source_episodes": "results/research_diagnosis_20261014_v3/ckpt30k_prefix5/episodes",
+  "root_manifest": "configs/recovery_branch_roots_20261014_v1.json",
+  "root_manifest_sha256": "3d5effd30982d8bfd23ee20780771ecf959246ec3f715039a993073fa2526374",
+  "development_split": "configs/research_split_20261014_v1.json",
+  "development_split_sha256": "7eca378ed4fbf44ae38dabe8734a1a68691af2988f750e6829c55763227b9a6c",
+  "checkpoint": "checkpoints/pi05_libero_lora_3090x2_train/formal_spatial_20261013_v1/30000",
+  "checkpoint_updates": 30000,
+  "new_gradient_updates": 0,
+  "unique_scenarios": 200,
+  "roots": 269,
+  "branches_per_root": 4,
+  "expected_branches": 1076,
+  "confirmation_cases_used": 0,
+  "root_rule": "Fixed t=60 for all 200 episodes; t=120 additionally if the baseline is still active at that time (69 cases). No future success filtering.",
+  "methods": [
+    {
+      "name": "continue",
+      "rule": "Resume original RNG at number of previous calls; execute prefix5 to the same total 220-step cap."
+    },
+    {
+      "name": "fine20",
+      "rule": "Same RNG at the root; prefix1 for exactly 20 actual actions, then return to prefix5."
+    },
+    {
+      "name": "resample5",
+      "rule": "Restart the policy noise stream using the frozen independent root seed, retain prefix5 for the remainder."
+    },
+    {
+      "name": "retreat5_fine20",
+      "rule": "Five legal OSC commands [0,0,0.3,0,0,0,-1] (upwards with open gripper), then 20 prefix1 actions and return to prefix5. All actions count toward 220."
+    }
+  ],
+  "method_order": "continue first as the per-root integrity control, then fine20,resample5,retreat5_fine20; each branch starts from an independently replayed identical root.",
+  "prefix_steps": 5,
+  "action_horizon": 10,
+  "denoising_steps": 10,
+  "max_total_steps": 220,
+  "fine_steps": 20,
+  "retreat_steps": 5,
+  "retreat_action": [
+    0,
+    0,
+    0.3,
+    0,
+    0,
+    0,
+    -1
+  ],
+  "reset_protocol": {
+    "mode": "fresh_environment_canonical_anchor_history",
+    "anchor_indices": [
+      2,
+      12,
+      22,
+      32,
+      42
+    ],
+    "history_rule": "For case index i, instantiate a fresh environment; replay reset + init state + 10 dummy waits for each anchor j<i, then seed/reset/set target state and wait 10. No policy calls in warmup. This preserves the old five-anchor initial scenes and is independent of subset/queue/variant order.",
+    "evidence": "reports/research_reset_history_probe.json",
+    "upstream_modified": false,
+    "scope_note": "Common reproducible scene definitions across conditions; not a claim of byte-identical official 50-trial sequential reset semantics."
+  },
+  "wait_steps": 10,
+  "state_reconstruction": "Canonical initialization plus exact replay of all original actions to the root, rebuilding native controller/internal history. No claim that qpos/qvel alone restore state. No rollout rewind after a branch begins.",
+  "rng_reconstruction": "Policy.infer splits its JAX key once per call. Rebuild original key from episode seed and advance the carried key root_step/5 times; first continue prediction must match the archived chunk.",
+  "acceptance": {
+    "image_hashes": "Historical action-prefix images are recorded for diagnostics and do not cause rejection; no inference consumes them. Root image hash and every full continue-suffix image hash (including terminal observation) remain exact.",
+    "numeric_atol": 1e-06,
+    "numeric_rtol": 0,
+    "root_simulator_atol": 1e-07,
+    "continue_final_outcome_and_steps": "exact at the 220-action cap",
+    "fail_policy": "Preserve evidence and stop affected collection; never relax gates or choose a different sample because of a mismatch.",
+    "prefix_physical_state": "At every replayed step: qpos, qvel, control at absolute tolerance 1e-7, rtol=0; robot_state at original 1e-6. No oracle fields are sent to the policy."
+  },
+  "preflight_roots": [
+    {
+      "pair_id": "task0_init2",
+      "branch_step": 60
+    },
+    {
+      "pair_id": "task4_init22",
+      "branch_step": 120
+    },
+    {
+      "pair_id": "task0_init5",
+      "branch_step": 60
+    }
+  ],
+  "preflight_protocol": "Each GPU independently regenerates three continue suffixes: known success, known failure, and task0/init5 which exposed the render discrepancy. All six controls must pass before new intervention outcomes.",
+  "workers": 2,
+  "maximum_simultaneous_gpus": 2,
+  "allowed_physical_gpus": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "queue_timeout_seconds": 27894,
+  "job_timeout_seconds": 25200,
+  "project_budget_gib": 120,
+  "filesystem_reserve_gib": 100,
+  "new_artifact_budget_gib": 4,
+  "periodic_chat_notifications": false,
+  "persistent_idle_monitor": false,
+  "analysis": {
+    "units": "269 paired roots nested in 200 episodes and 10 tasks; early/late cohorts reported separately",
+    "bootstrap_seed": 2026101402,
+    "bootstrap_draws": 10000,
+    "metrics": [
+      "paired successes and losses vs continue",
+      "rescued baseline-failure episodes",
+      "harmed baseline-success episodes",
+      "additional policy calls and inference seconds",
+      "actual steps consumed",
+      "per-task counts"
+    ],
+    "intervals": "Exploratory task-cluster bootstrap; no multiplicity-adjusted or confirmation claim. Roots and branches are not independent episodes.",
+    "oracle": "Any-candidate success is only an offline feasibility upper bound, never a deployed selector score.",
+    "feasibility_gate": "If at least 8 distinct baseline-failure episodes have a successful alternative and every continue control passes, proceed to frozen-encoder progress/value module development with fixed fit/calibration split. Otherwise improve the recovery candidates/teacher before training a selector; no outcome-driven repeated branch sampling.",
+    "noise_limit": "One fixed stochastic stream per method/root; labels are sampled outcomes, not exact conditional expected values."
+  },
+  "self_review": [
+    "Full-episode prefix1 wins do not imply locally recoverable failures; this experiment tests that gap.",
+    "Fixed upward/open retreat can drop a held object or collide; it is a bounded simulator candidate, not a safe real-robot controller.",
+    "A failure classifier cannot help when no recovery candidate works. The oracle feasibility gate precedes module training.",
+    "Preserve successful-case controls to measure false intervention harm; never collect only failed trajectories.",
+    "The 60/120 roots are convenient development probes, not a learned trigger or proof of optimal timing.",
+    "All geometric/contact labels stay evaluator-side; no object IDs, task IDs or future labels enter policy inputs."
+  ],
+  "references": [
+    "https://mujoco.readthedocs.io/en/3.2.3/programming/simulation.html#state-and-control",
+    "https://docs.jax.dev/en/latest/random-numbers.html"
+  ],
+  "next_stage_requires": "Complete integrity and feasibility review, then freeze module architecture, training targets, seeds, costs and held-out calibration rules before training.",
+  "engineering_amendment_status": "APPROVED",
+  "prefix_replay_acceptance_amendment_approved": true,
+  "parent_protocol": "configs/recovery_branch_plan_20261014_v2.json",
+  "parent_protocol_sha256": "3d252de4c77cbc41ea86a69e6eec098cba8e6706a9599585cac43d3cc2c0c61d",
+  "proposed_at": "2026-10-14T10:44:51.332916+08:00",
+  "resume_runs": [
+    "results/recovery_branches_20261014_v2"
+  ],
+  "evidence": [
+    "reports/branch_replay_repeatability_probe.json",
+    "reports/branch_render_readback_probe.json",
+    "reports/branch_fresh_process_probe/summary.json"
+  ],
+  "isolation_probe_conclusion": "Fresh processes still produced one render-only mismatch in 16 trials; do not add per-branch process isolation overhead because it did not eliminate the discrepancy.",
+  "approved_at": "2026-10-14T10:58:36.846311+08:00",
+  "approval": {
+    "source": "Explicit user reply to request_user_input_async",
+    "answer": "批准该工程修订（推荐）",
+    "scope": "Only images not consumed by policy during historical action-prefix replay become diagnostic records with strict per-step qpos/qvel/control validation. Root images, full continue suffix images/actions/state/predicted chunks and final outcomes retain prior gates."
+  },
+  "accepted_engineering_change": "For historical action-prefix replay only, replace exact image-hash rejection by per-step qpos/qvel/control checks at the existing 1e-7 absolute tolerance, retaining all render hash mismatches. No inference consumes those replay images. Root images, all continue-suffix images, state/action/chunk tolerances and final outcome/steps remain under the original gates.",
+  "proposal_file": "configs/recovery_branch_plan_20261014_v2_PROPOSED.json",
+  "proposal_sha256": "181f9d593883bf8a1b0568934b236dc741e3fe8daf4171b5344dbda5fe89454c",
+  "prior_resource_accounting": {
+    "admission_windows": [
+      {
+        "record": "reports/gpu_selection_20261014_102835.json",
+        "seconds": 94.36925935745239,
+        "gpus": 2
+      },
+      {
+        "record": "reports/gpu_selection_20261014_103209.json",
+        "seconds": 31.353801488876343,
+        "gpus": 1
+      },
+      {
+        "record": "reports/gpu_selection_20261014_103546.json",
+        "seconds": 52.08183717727661,
+        "gpus": 1
+      },
+      {
+        "record": "reports/gpu_selection_20261014_104007.json",
+        "seconds": 109.52255010604858,
+        "gpus": 1
+      }
+    ],
+    "elapsed_active_window_seconds": 287.32744812965393,
+    "selected_gpu_window_hours": 0.4495595403641669,
+    "note": "Admission/report timestamp to completion file mtime, includes CPU and I/O; excludes user decision wait and is not pure GPU compute.",
+    "resumed_v2_elapsed_seconds": 618.3588189119473,
+    "cumulative_active_window_seconds": 905.6862670416012
+  },
+  "original_queue_active_window_budget_seconds": 28800,
+  "resume_audit": [
+    {
+      "root_id": "task0_init2_t60",
+      "method": "continue",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v1/workers/worker0/roots/task0_init2_t60/continue",
+      "source_result_sha256": "79f87617df240753647d32258f6cb639911ea5a78db64f22533624b3cc481e05",
+      "trace_sha256": "21f3fc76bf2d08945604ed0d433667220f49578ae96d4243c060d4cee5bb153a",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init2_t60",
+      "method": "fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v1/workers/worker0/roots/task0_init2_t60/fine20",
+      "source_result_sha256": "e9cb3a579eea7c4b02124e01a2759c34e6b365a2de5bd8af4cf71ac5a42f5e6c",
+      "trace_sha256": "8f93763fda096c4475f883aaf72e53274f88d9a4422988da6967742a01579d5a",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init2_t60",
+      "method": "resample5",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v1/workers/worker0/roots/task0_init2_t60/resample5",
+      "source_result_sha256": "f7270929f20db2a0347f1b1b3af022543469774d86995813aafb6dbf4ad44410",
+      "trace_sha256": "70d4525cedfeb99e84502be8b1af465c9eee3207e4452b3d0d1ce12c0e1e63fc",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init2_t60",
+      "method": "retreat5_fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v1/workers/worker0/roots/task0_init2_t60/retreat5_fine20",
+      "source_result_sha256": "418a46fa0095088420cb140ceba88383c1219a338a617fcdfa96cae00dea3494",
+      "trace_sha256": "dd65a4c3b1d5ce402004715d1e1e7e9978af4134484a85f20e20ebd04dc09613",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init6_t60",
+      "method": "continue",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v1/workers/worker0/roots/task0_init6_t60/continue",
+      "source_result_sha256": "10ca399a8ed26e394bd6e46873302bff929789bd15f0a5133ca4f3690a6a17ac",
+      "trace_sha256": "22391eaf2cee7984d4b46db3656361fdd88884432f11a86e7f773e26f26ccec1",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init6_t60",
+      "method": "fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v1/workers/worker0/roots/task0_init6_t60/fine20",
+      "source_result_sha256": "fcb61624f80add5fa54c6b234247ed0b8fc6bf84da82546bf73ad04ce3f9e4b9",
+      "trace_sha256": "bb414dc6fd3b2a6429aee8f2a498eaf63f6edbd0e66fc88606d1ff3a71a8473a",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init6_t60",
+      "method": "resample5",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v1/workers/worker0/roots/task0_init6_t60/resample5",
+      "source_result_sha256": "ad4aea1a37d2682d47bb02721d1a7500fbc6aba6821835dece49de8903e98398",
+      "trace_sha256": "c0045c774287cd0ae719c73ed1ea00c21abaf003049b84f4c9a72dbd615ad0fd",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init6_t60",
+      "method": "retreat5_fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v1/workers/worker0/roots/task0_init6_t60/retreat5_fine20",
+      "source_result_sha256": "cd332f12bb7a3b24c5c7de0f0dd9414d91ad8fb8d5bd7de31de99aeb24ae3e64",
+      "trace_sha256": "8ed5942cca49a9fefc4702cfd04fbd002a90e3cefb370ec2796482f371e92ff6",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init12_t60",
+      "method": "continue",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker0/roots/task0_init12_t60/continue",
+      "source_result_sha256": "94908603871647d52489585eff744686f8d55777871ad374b46bf9aa9193854d",
+      "trace_sha256": "26a7de0f817af061e85c4f4d2158b14457b9b836c76bec00b4a40c96fd12391b",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init12_t60",
+      "method": "fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker0/roots/task0_init12_t60/fine20",
+      "source_result_sha256": "27e09b00edc66c4efb9142b2d82f76281157ead6983e4575c510f8af5b2a42f0",
+      "trace_sha256": "143218c1d77f504cf3ae77595f9ceca41b2882ea2c1543336c4ef1ecfa3b437f",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init12_t60",
+      "method": "resample5",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker0/roots/task0_init12_t60/resample5",
+      "source_result_sha256": "05ad1e5955340755456af740c93e7eeb25a0aacc740718d2ba889a0eeed51cf3",
+      "trace_sha256": "be1fe47ef9d8bfbaf55d9ec28059ff38262fa6f004b52d29e481bda0ce3b3cfc",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init12_t60",
+      "method": "retreat5_fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker0/roots/task0_init12_t60/retreat5_fine20",
+      "source_result_sha256": "4fb72c6e89fdb05f58e14a401c598bbe8bc72af8e315b4e54b1a635e25b8d5c7",
+      "trace_sha256": "2d3eb40ae7e3a1c43b5eb7d10acd1b784e42cb47292e5f118d2ad309dd423a0f",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init16_t60",
+      "method": "continue",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker0/roots/task0_init16_t60/continue",
+      "source_result_sha256": "c859001121ac687a70f4502110c0f23b8675f7596af890626a27a7ffbeabf09c",
+      "trace_sha256": "76a0fbc706aa0c94d7348aee63ef61725249fea0a62092d869aed651cd94906b",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init16_t60",
+      "method": "fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker0/roots/task0_init16_t60/fine20",
+      "source_result_sha256": "be9d72e5d1d87f3f1a0b63af2371036b92e6478f6b7c8bd76880f8b10cce00fa",
+      "trace_sha256": "956e31d89cddb5842ab864ae7754156cdc592b58a77d755587dfde07f5100bc1",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init16_t60",
+      "method": "resample5",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker0/roots/task0_init16_t60/resample5",
+      "source_result_sha256": "dd748e55d8b2ac9f8c897f09382224a19ad79111ef5d778bf79587e37f9fdd7e",
+      "trace_sha256": "ddd48f38aebe79a0d9feb16d0eb5fc4db0ead1a302e576dd53f8f79f11185b5c",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init16_t60",
+      "method": "retreat5_fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker0/roots/task0_init16_t60/retreat5_fine20",
+      "source_result_sha256": "33a6f737003e33120dacc2defd08497868c715fbde48ba5ebd233b3e32335dcd",
+      "trace_sha256": "4d7ffd4889fdad825074c2ffbbfd335f79701c1a4772f1a015c0f20c86ca8c37",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init22_t60",
+      "method": "continue",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker0/roots/task0_init22_t60/continue",
+      "source_result_sha256": "c06ccab7c2305d36e32dad2fbf8d76684e2005984c5072e92aedf284a60ff524",
+      "trace_sha256": "dd6ddceb26cfec83e5c281f5161a2919084e8ceaa824656e69a73bb0771a8b63",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init22_t60",
+      "method": "fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker0/roots/task0_init22_t60/fine20",
+      "source_result_sha256": "f98a2735916e5227e0f8777718ce79566b31c56714efe4b27db57cff62ab154e",
+      "trace_sha256": "bd5ac36ae45f3a7e742e05bd41f3a4b9d9804336cf1fc2b885a63113059958b8",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init22_t60",
+      "method": "resample5",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker0/roots/task0_init22_t60/resample5",
+      "source_result_sha256": "b7b61aa62605d5f3cc8f7f2c2d68ad0d481c8db5cab4d7e4a927cb61e5cdb427",
+      "trace_sha256": "9030d8efaa5403f0e660ca3278b83fd366c67e35c9d53c265d8a720930601658",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init22_t60",
+      "method": "retreat5_fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker0/roots/task0_init22_t60/retreat5_fine20",
+      "source_result_sha256": "6782d2ed532854b02778471256a80d774a81a3e527aa2637494845f61afcb3be",
+      "trace_sha256": "0188d83fd29d7087c4f6777a5ddece32f860548fcaa36b86074fb18267c57625",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init27_t60",
+      "method": "continue",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker0/roots/task0_init27_t60/continue",
+      "source_result_sha256": "a47327e92556b9b95c3965eebd8836857b8f9b3728befdc05d9cbc3b3b80045a",
+      "trace_sha256": "d7e7cb62b074abb25388a4ff54bbbcf5e120644a6581a48240264ea4456a70f9",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init27_t60",
+      "method": "fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker0/roots/task0_init27_t60/fine20",
+      "source_result_sha256": "9fd5d610dd55bb04064725d9215a72d71c0f3901e1a2d94cda5be3b94fbf84c6",
+      "trace_sha256": "dfd412e20e10049922e517ef17106d53fc6c37a6d844f77084b6e4e1e75021f3",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init27_t60",
+      "method": "resample5",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker0/roots/task0_init27_t60/resample5",
+      "source_result_sha256": "aa9878d2882afe38f6700581fbe0ac054fdf6b126b1702b61d78d8a63f55cf9b",
+      "trace_sha256": "321a2446b9b4af75159aed73a944a5eaadae385bfe37f7570d3882fc0054367d",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init27_t60",
+      "method": "retreat5_fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker0/roots/task0_init27_t60/retreat5_fine20",
+      "source_result_sha256": "88c4094837900dbd75f409dd9688c55c508a89a12b84c4de5e86d1e6d0303b13",
+      "trace_sha256": "8946322d10cec7b2d73c52d6346ecc874acc5b00d6f74323ce34c91f14469d4f",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init32_t60",
+      "method": "continue",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker0/roots/task0_init32_t60/continue",
+      "source_result_sha256": "fdd298ac27e67335520c4aac9cfd0db408898333e7b892ad8164e5212944380a",
+      "trace_sha256": "4cc026f3ab3d0654a64b0dcc49c12095a9f675454c78c590d77add2cc1e4af88",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init32_t60",
+      "method": "fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker0/roots/task0_init32_t60/fine20",
+      "source_result_sha256": "07a67c50075b5692ee93bb7f2a123a5d0cb4ad96789aa42f3e01b3e057d0b62f",
+      "trace_sha256": "90df1fca371ef0da82ee0e8344fa4687b14317821ed89510707cb59c8af881a4",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init32_t60",
+      "method": "resample5",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker0/roots/task0_init32_t60/resample5",
+      "source_result_sha256": "8a877e405eead50f9d4041877e85aeaf9b3f53b9be54c18e0a1d772040978570",
+      "trace_sha256": "301f434f21e32466a72beb2ae2311c1d81473178f7fb7860991ac3e1852ac351",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init32_t60",
+      "method": "retreat5_fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker0/roots/task0_init32_t60/retreat5_fine20",
+      "source_result_sha256": "db1da36670a5e3bdf80518d684a5bb53b5f8a7199192cc4079cdfacf676071f7",
+      "trace_sha256": "00268c131f32784f4164e23f1d97e12c2610f25b9a56ed88c462c22412f5126e",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init36_t60",
+      "method": "continue",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker0/roots/task0_init36_t60/continue",
+      "source_result_sha256": "f8b105a2c6b4baeafb9cd217c54f79be437dfe7663da6d19686a7cd72ee1f8ba",
+      "trace_sha256": "b852e9660b5688111ed08e2274a869dcaeee9b34e92e6ea08a05b8cc87539fc7",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init36_t60",
+      "method": "fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker0/roots/task0_init36_t60/fine20",
+      "source_result_sha256": "1e62ce660e4d3b2f5ed52d5055984ab5adf4ca11fbda52413f01c35238a74605",
+      "trace_sha256": "a240de806eeeebc187e156abb2a725eb47c46540f87238a29413f2a1f8d1d305",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init36_t60",
+      "method": "resample5",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker0/roots/task0_init36_t60/resample5",
+      "source_result_sha256": "67c4421b697034adfb7a77d3366eb42dd467993eefcf9d69f65ab447ab1a6e46",
+      "trace_sha256": "5873805dbd9e884c11ee22c7acfbf8717c49ade6f986c83d1f153696e40896fb",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init36_t60",
+      "method": "retreat5_fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker0/roots/task0_init36_t60/retreat5_fine20",
+      "source_result_sha256": "831a1238117cb7d40eade697b5fe1fbcbc8d0d5ab604a51cd2bf95b9d1ccd411",
+      "trace_sha256": "3d2944973cd630fed4dd70a08673693a43be45c476be889a0792e218cf56329b",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init40_t60",
+      "method": "continue",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker0/roots/task0_init40_t60/continue",
+      "source_result_sha256": "0789bc769746525d5790223e3c20f6a555719ab123e2c53f9de0868d13b5d96c",
+      "trace_sha256": "6f06880b33da073c7348e5023b9251115ce939d2602e4c992494ffd5a589ea52",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init40_t60",
+      "method": "fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker0/roots/task0_init40_t60/fine20",
+      "source_result_sha256": "1b2b45fcc13b98c7c04c23cba933c095ee2fb3dda465c2e85df0291ea34f032c",
+      "trace_sha256": "cbd6a4a63acbfc6d8c677fc731bcc1f5dd1810d260dbbce12e7fd6bb717c60d9",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init40_t60",
+      "method": "resample5",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker0/roots/task0_init40_t60/resample5",
+      "source_result_sha256": "6cf29ceb26aa3222a34b83ae7ea083398ba53ca5f2d7fd8b24de40e6b8e1fa51",
+      "trace_sha256": "427ae392241f87644b085c92f7093832c421aa2034137ba89e9e73cfeccd48ae",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init40_t60",
+      "method": "retreat5_fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker0/roots/task0_init40_t60/retreat5_fine20",
+      "source_result_sha256": "f12eced887760da996acc9ee0d67cf9d2c4129f2deb929567b3f567b821bc7d5",
+      "trace_sha256": "4b009256d70cbe17733ff7eb3baea47589fc2d8e1a7f2bf78f518fb40083b55d",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init43_t60",
+      "method": "continue",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker0/roots/task0_init43_t60/continue",
+      "source_result_sha256": "3caab4e8d77fbe880d092a255c82a3b1c4a3f52e96feb09be1e443cb6b498ead",
+      "trace_sha256": "406a3374f7d261a95dfcf8ae0f42ecfe5a57baa9e93fd52035461fbd0caa961c",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init43_t60",
+      "method": "fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker0/roots/task0_init43_t60/fine20",
+      "source_result_sha256": "3f71c92d710ef616efe883e46a19c050e5062aad7e17f70ace862484d20163cc",
+      "trace_sha256": "91626dfb5f64fade08a9e9831d30bad6945f9e7f61b8b1ef42f1a10d90e8665f",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init43_t60",
+      "method": "resample5",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker0/roots/task0_init43_t60/resample5",
+      "source_result_sha256": "2419621c83550ee7d14c4011898abf19a6a120d8b164d2554af1fdbdb75a0c0f",
+      "trace_sha256": "36df60ba2dffaf0c82e0232d0d7f16c163a02eea9c42542dc3dd61f07d8b0bda",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init43_t60",
+      "method": "retreat5_fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker0/roots/task0_init43_t60/retreat5_fine20",
+      "source_result_sha256": "6380dcf73af9958a725b790da2cb3d2c8cc001824255eb9b91b2c4aee23de9b1",
+      "trace_sha256": "dc4faeed611f30bbde91d8f45f697f9458843d13ff93fa57f844ee3229c2dce5",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task1_init0_t60",
+      "method": "continue",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker0/roots/task1_init0_t60/continue",
+      "source_result_sha256": "793c2c89f2bd9ac81ace2033ca1303f72be9eb55206a818f33e9e1efd8b48b68",
+      "trace_sha256": "914e24a1297505e9549b34251a680103d8f81e76869aa5bc1a5491e420987cb4",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task1_init0_t60",
+      "method": "fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker0/roots/task1_init0_t60/fine20",
+      "source_result_sha256": "6e347b129e159565d4fcd36ef3954470843532c9f984a99152ff35fab8109905",
+      "trace_sha256": "d664a650f6d199cb6b4913611acd03257985309ba66d7bfa9b6e4a332409d800",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task1_init0_t60",
+      "method": "resample5",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker0/roots/task1_init0_t60/resample5",
+      "source_result_sha256": "5fb703a1c38182001ef2a5a8cad6bc3c377300b6895f080d71b7707dab2bc9ce",
+      "trace_sha256": "ce811e8ed6d77a07772623afcd74bf2774006dba10572ea34594cea33a7adc4f",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task1_init0_t60",
+      "method": "retreat5_fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker0/roots/task1_init0_t60/retreat5_fine20",
+      "source_result_sha256": "cae69d24344117bbe8c199027cd3c2e04df786d3fa81e463e1f3d0958b866367",
+      "trace_sha256": "52e5160a1aae8cff3737017223235619d1073f622a0aba83ad1bab1c9b832474",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task1_init0_t120",
+      "method": "continue",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker0/roots/task1_init0_t120/continue",
+      "source_result_sha256": "542ea20a9aabda8d88f7ac9cb98bf97959a4af48a0c5db7d86ed34dd89d3a48c",
+      "trace_sha256": "6d3769592c9d65da15b78fed0079162cd077aec8c3b979c79216a9db0732ca4b",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task1_init0_t120",
+      "method": "fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker0/roots/task1_init0_t120/fine20",
+      "source_result_sha256": "d4b1b910df2f7f1503eb70c7ef6423a425a3ed56627e3471b50cc157c9173ac5",
+      "trace_sha256": "60d298e6e6c009b13c34be2a40137b0928f7723e833c31bb798c87c094b8599a",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task1_init0_t120",
+      "method": "resample5",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker0/roots/task1_init0_t120/resample5",
+      "source_result_sha256": "9bc2f9fe3696f84b7c28b9d5cda02c6a08071dc4aba80b2b5dde2548c89819e8",
+      "trace_sha256": "2a2d0397c84f64c56a6cfee973160924ce95cb2bd1ba776bab5e52e513c5d8ae",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task1_init0_t120",
+      "method": "retreat5_fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker0/roots/task1_init0_t120/retreat5_fine20",
+      "source_result_sha256": "214b3a19409ff6e4dac459e317f43f54686fa2acb348a0acc0ae6b527b097143",
+      "trace_sha256": "a0a26bcc6f5aa755693309f50a3cc61639396f389eeb6990445af4d224b4739c",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task1_init4_t60",
+      "method": "continue",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker0/roots/task1_init4_t60/continue",
+      "source_result_sha256": "67a0937372ebe5e036482120e3e2f9d95b6501042903ca9cfb5d9035b7092b93",
+      "trace_sha256": "f6f08e0dfcdee48b10a03a0c3df179338f921689b607c194edd2f3a956150e6f",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task1_init4_t60",
+      "method": "fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker0/roots/task1_init4_t60/fine20",
+      "source_result_sha256": "4cd126205376abf0339999539cad0c00013035062eb4ddc373d02af00bb24a7f",
+      "trace_sha256": "c1e81eb460a959d5904c1fca1d2a25903320d1451fcb3056e5670d96ea178c62",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task1_init4_t60",
+      "method": "resample5",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker0/roots/task1_init4_t60/resample5",
+      "source_result_sha256": "19d3fc8da9bb83c8546d7249c3a64a3a9a28a89134c87f113877b25b8b8280d1",
+      "trace_sha256": "b05d8dfaaa7b2b05a59e41d978cead77534c2b90f0542e96c1e80b4e059fc676",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task1_init4_t60",
+      "method": "retreat5_fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker0/roots/task1_init4_t60/retreat5_fine20",
+      "source_result_sha256": "1329108be93f98bb9ffa67653fe0b2e5142b1412c3a1fa89a721716875978d5c",
+      "trace_sha256": "b2e40722bb0a26b4a7c3113a44b1b8af82c98b627c2045c39a4eca320d467a0d",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task1_init10_t60",
+      "method": "continue",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker0/roots/task1_init10_t60/continue",
+      "source_result_sha256": "d5ad658fdff1a9ce4dd20a255fd1e751738ad6082ce51628032411ae91926913",
+      "trace_sha256": "3ddc237f37001122eeab721971d81c83bcb59ac6261394e38207b4ac721e86dd",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task1_init10_t60",
+      "method": "fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker0/roots/task1_init10_t60/fine20",
+      "source_result_sha256": "1744ccccc7e2e434fe3dc5bb692c5692cc0575320d2b64f995669cefbf467045",
+      "trace_sha256": "200f1d6ea6d9e4185e9ed897a03bdb30c04dfa9790db6be498e43f9375a2da88",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task1_init10_t60",
+      "method": "resample5",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker0/roots/task1_init10_t60/resample5",
+      "source_result_sha256": "3bddd832d60bc8ee623c672fc63308f5b672579302a576e173ede20400235e4d",
+      "trace_sha256": "2d600c37dca32dd8edb79dbeed4ec96d5b472ec9ac708704af40a0f46278f785",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task1_init10_t60",
+      "method": "retreat5_fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker0/roots/task1_init10_t60/retreat5_fine20",
+      "source_result_sha256": "023da075a3adbb431caa6fb7b8cc2bae948b334e7a2c4ca83b9f1d55692f9f83",
+      "trace_sha256": "6dceee3a9650d419b56518c8fe9e230e62b4c5e1d56c05bf43833b9c7ebb6f58",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task1_init13_t60",
+      "method": "continue",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker0/roots/task1_init13_t60/continue",
+      "source_result_sha256": "c4d76f226a13a4142ddba1132f43575f1cfd5c72363e14e3a2d7773d0dad9744",
+      "trace_sha256": "475553d5f79237d094fae82125980b101c4c4f5c021eade2ac149b0ab87b90d6",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task1_init13_t60",
+      "method": "fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker0/roots/task1_init13_t60/fine20",
+      "source_result_sha256": "a2fad8748acb6ef5f9e71bf9a6bb240876c620ce0c467b013b4112c0b8b22c8f",
+      "trace_sha256": "f8ae324c024de739f264c9eb8512c6d22c0be76cdd836dc226dafc06cb8cca01",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task1_init13_t60",
+      "method": "resample5",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker0/roots/task1_init13_t60/resample5",
+      "source_result_sha256": "e52390aca5b253c82591cdd3e77e6f1a35b55f4084775c7ac26bd91438ec032c",
+      "trace_sha256": "8b3361bcc42f0c39cfe7fc2e7afafa5e6d2918fbd720c75fd5c3d40318aa37aa",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task1_init13_t60",
+      "method": "retreat5_fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker0/roots/task1_init13_t60/retreat5_fine20",
+      "source_result_sha256": "edc16cdba53df319a5d13e05c7f0f0b6fdfc48cd14f1285a624a1e9323591d43",
+      "trace_sha256": "559afdbfc37834381adde6ed68dd362cd57a29181c71e9496d5609a08c85fcfc",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task1_init22_t60",
+      "method": "continue",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker0/roots/task1_init22_t60/continue",
+      "source_result_sha256": "62dfcb1bb9c5ce141e54821e39bff1ccdff788d4889265f843e1aa76ddc25aa6",
+      "trace_sha256": "18405e044e980a53d8f78777285416f0958e27d9517ea7825ff6c7f0bff7aa68",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task1_init22_t60",
+      "method": "fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker0/roots/task1_init22_t60/fine20",
+      "source_result_sha256": "bd9362c2d00695350fac3cf98a6ffa346aa77fab0b1fd38c97010f350b3acec0",
+      "trace_sha256": "dc79b0b2e160ace4fe254d16e70881572f06de58ba04ff7dbb4b6271edb4d80b",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task1_init22_t60",
+      "method": "resample5",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker0/roots/task1_init22_t60/resample5",
+      "source_result_sha256": "2eada58e4e255bbd475fd7aa006a871dc41873348a2255aefdafb2391619ba17",
+      "trace_sha256": "198f3f65d0477e51e95fa8eddae5bed99ee2c28a592d95c9231ef851826e5172",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task1_init22_t60",
+      "method": "retreat5_fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker0/roots/task1_init22_t60/retreat5_fine20",
+      "source_result_sha256": "ba6220c21a8194f23fdae73f314f210f567706ef299776d35152d77aae52c03d",
+      "trace_sha256": "df19290e44c10b10fc5698e07a6a73d66e00f77eae831dbd0dedc2ac2038e87b",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init5_t60",
+      "method": "continue",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v1/workers/worker1/roots/task0_init5_t60/continue",
+      "source_result_sha256": "af00873d29155a6c2f4fc1f58cae5cf6e818fa297f65fbed6f18c2f56971454f",
+      "trace_sha256": "72c19e39144c02cf46e422184df14d98314e0fbebf2dcab01d043c38dc0cb1e3",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init5_t60",
+      "method": "fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v1/workers/worker1/roots/task0_init5_t60/fine20",
+      "source_result_sha256": "c898fb2c46d85e525ee242ce7e52a53075513aaeef37b13d63d17fa4af50b1d5",
+      "trace_sha256": "5074065cc9139dfb6b42d8407e033d4876e1e2170480d4d3c392766a94ca568d",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init5_t60",
+      "method": "resample5",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task0_init5_t60/resample5",
+      "source_result_sha256": "a3fc4ed0e7f271e6efbb5ba0e009ff43d9ef3608751c9438a8d6ccf84274a166",
+      "trace_sha256": "bdca95619e15befefd6de367cc9425f4ee10eb77300e436bc2c3296a618832aa",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init5_t60",
+      "method": "retreat5_fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task0_init5_t60/retreat5_fine20",
+      "source_result_sha256": "83aa7df7b6875c7852d5933c4a57b4b0681cd85841b1aafa6c4e3210a6bff58f",
+      "trace_sha256": "8f8bb46b2ca552bdb5404e64ba94665646db7c70e14bc1b33267185ae3bddd0a",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init8_t60",
+      "method": "continue",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task0_init8_t60/continue",
+      "source_result_sha256": "7b814e01f884f17bb1dc7d38a657abd8bdc4490debb32be2915e48a9d90bbfb7",
+      "trace_sha256": "9b235492e402b8c13c9cb4dd76a4adf223b05cdc384cc5d1a73dd60f9fbc0078",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init8_t60",
+      "method": "fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task0_init8_t60/fine20",
+      "source_result_sha256": "a534f17b54d68909925a1381eaae9e09e16c4176e0a36d1506e256c37dcc82ea",
+      "trace_sha256": "6ab95375a997903bc2c3a77e2a3a6e47b5c3cf4aa8bc2c2914e6ad3a013f3c79",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init8_t60",
+      "method": "resample5",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task0_init8_t60/resample5",
+      "source_result_sha256": "0b18f0201ea099825d92a689f129483d71e09afc067c2adacb9a175938a316d4",
+      "trace_sha256": "d16e5b60669fbac1645fcbf0a533f8035c87c7b602287d57e06fa80685795f6a",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init8_t60",
+      "method": "retreat5_fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task0_init8_t60/retreat5_fine20",
+      "source_result_sha256": "16390df8680759396a3f0b136fce568198955ec3c656a10a97537186a5028294",
+      "trace_sha256": "3af41c8872f20d01261a2b83feeb1e80d00aa675fff5ad1f2f1144df300ba088",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init15_t60",
+      "method": "continue",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task0_init15_t60/continue",
+      "source_result_sha256": "4c3a999b3f28ed75bb0026249abce8bb005de2bc95f7817cb5c6c0052cbcf4c5",
+      "trace_sha256": "dc4aa1002ba395140f7189421a3dbeb31046a4b5e11d7183a5d71792197d6f89",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init15_t60",
+      "method": "fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task0_init15_t60/fine20",
+      "source_result_sha256": "57355acba854c6a27103d5a425924401c0a9477b26e15ac79aba99ef81382a84",
+      "trace_sha256": "6b4f03ce18a2d3a6d617a7c9b88f151ba74276413340c2bb6e523c44834fb309",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init15_t60",
+      "method": "resample5",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task0_init15_t60/resample5",
+      "source_result_sha256": "9ab4b0da359860cbfa2473f275c8d44eef2d411da499112a8ebac0d694148d8a",
+      "trace_sha256": "4b1b172bfd02d426d36230712ed966b0add73dbb683e423c4dab7d01c9655e19",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init15_t60",
+      "method": "retreat5_fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task0_init15_t60/retreat5_fine20",
+      "source_result_sha256": "fc00f24c6255a972492bd09954f26408322c74d2e1ddf4d0712cff746a44049f",
+      "trace_sha256": "18c095aaddf69933bac8148374a576b35e927acddf4a1ce0eb0f373722b4318b",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init18_t60",
+      "method": "continue",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task0_init18_t60/continue",
+      "source_result_sha256": "6db5f26fe35b6a67e746560e6e2d6c394f55b96ea0bde8b743e3ee13fcab6635",
+      "trace_sha256": "1e301b5591497f5a4959cddf3d28e4ae8aca64f950f824c987bbeb6707b9aceb",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init18_t60",
+      "method": "fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task0_init18_t60/fine20",
+      "source_result_sha256": "388c29c9e2ec5fbdb43fc6d9a0eba64f03e7a90d06a6e2416726ae18138953d7",
+      "trace_sha256": "4fb4dff0c444537f3ac9872da3e95780262924c2a460d51e280f6f6c25d8330d",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init18_t60",
+      "method": "resample5",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task0_init18_t60/resample5",
+      "source_result_sha256": "c6d04ba00e6953c46081457101038bda9acb4388ba2bd3794e6f68ccf158499b",
+      "trace_sha256": "362dff8773449525aac26a0cd02db610c19cf5a882446083759c2da8eaa626d0",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init18_t60",
+      "method": "retreat5_fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task0_init18_t60/retreat5_fine20",
+      "source_result_sha256": "6b3083332a99ba657459c7ef369936c09ad9773ff805f2fe6e7730fedd3d768c",
+      "trace_sha256": "84296f94dcc8d2bf9d0e064bce117b9f0fb859a83f96271c0e560044accdebe6",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init26_t60",
+      "method": "continue",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task0_init26_t60/continue",
+      "source_result_sha256": "929ee4cc713709faf4a032ae270d65a172ed1894f4ed1ae96a978d7f4d0eba0a",
+      "trace_sha256": "0504627cce11d322c72eee6f5463143d7676dabe57eacee9e9bf05fbf64c51d2",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init26_t60",
+      "method": "fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task0_init26_t60/fine20",
+      "source_result_sha256": "84c6070f08b5198aa1516446e471a7b8b2e247a32e9fbde668e387648df8ade1",
+      "trace_sha256": "e1f3c8f21e808b5031a538d4925d33721807f5d45348341177505192282b4d75",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init26_t60",
+      "method": "resample5",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task0_init26_t60/resample5",
+      "source_result_sha256": "2423dd3d46df96721b6493475290d96711d94ba3fffb2bb326d29db5a3a84067",
+      "trace_sha256": "9b8cec693b364dbb506e6f1f169c2f104ae1357c436c091d4bb0f6a27760623c",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init26_t60",
+      "method": "retreat5_fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task0_init26_t60/retreat5_fine20",
+      "source_result_sha256": "d7e15632d4c4256676db9116fb724a88ef1065abd9192ca949620b23bf8427c4",
+      "trace_sha256": "80696a5a102e555af6bd6775bab1f278774df54641adeaacd4e0233b9669cde3",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init26_t120",
+      "method": "continue",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task0_init26_t120/continue",
+      "source_result_sha256": "6420b623288ffe92c1de641540ff6fc0a05250c48cc614bb74708d3473aab06e",
+      "trace_sha256": "c6761a0a9abe6386a5176812edd8e1df9e95820ac03480efad6d2c2ffdf076c9",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init26_t120",
+      "method": "fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task0_init26_t120/fine20",
+      "source_result_sha256": "db8ba8cdfa35f50b0d0b23b76d91ec467ee1fc39af7c33c0ed24df543e23f088",
+      "trace_sha256": "f644f9bdcf16c27a3a6addafe7245fde326713e546f7fe5e29575bbb033cb444",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init26_t120",
+      "method": "resample5",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task0_init26_t120/resample5",
+      "source_result_sha256": "4cc1605bfc832afa2e58b457993b86dcf4b558bd01caed3fc5fbf108e476f1a1",
+      "trace_sha256": "53a19d26339bfe0ca957112a571e4a79302c9d3654df36767a3e2699b52dc251",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init26_t120",
+      "method": "retreat5_fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task0_init26_t120/retreat5_fine20",
+      "source_result_sha256": "7eb1f3818e552f2077d3813a1fd8b315982d3f3bacf0fad6568697442820719b",
+      "trace_sha256": "22a62c67ab5e9ba8c2affa6623508d209efc8f36100d66e8eb9daa2d8e76f287",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init28_t60",
+      "method": "continue",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task0_init28_t60/continue",
+      "source_result_sha256": "9c6aede2b1149a8ffd36e091aed34bbf9da9e69ebacaaac4b429b2407eb7bc7a",
+      "trace_sha256": "2cf84372ebb0d8fce00a8fa89ea4e6ff5c2a63a8a7e8ebb3dd85ff7c01929254",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init28_t60",
+      "method": "fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task0_init28_t60/fine20",
+      "source_result_sha256": "a17f04c795a990bb622174b93564608ef7fd4bf0ddf5f30b34dbfbe3b1dffba0",
+      "trace_sha256": "8d53e0acade2678b4993a395574350b71da9c9e7fff4471256c96afc9d42d4c2",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init28_t60",
+      "method": "resample5",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task0_init28_t60/resample5",
+      "source_result_sha256": "941f2ab0bd61cdb1175ecd5d553496dca8bef916d53b661923be084c81a58cc2",
+      "trace_sha256": "1d1c68fb9b8f2a26c629b170d2790a47c5b2743c3810f7dc6d4ec943f9bab3ec",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init28_t60",
+      "method": "retreat5_fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task0_init28_t60/retreat5_fine20",
+      "source_result_sha256": "7803bd428d284e148f1d1477829725d03279fffab23f5e91b5cb3b06a218a5e5",
+      "trace_sha256": "11bec9a8cd1011ce479a568b9c8a95392288222523b7e194bca7c7a2a40cb5a9",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init35_t60",
+      "method": "continue",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task0_init35_t60/continue",
+      "source_result_sha256": "099f526269cd7a6b0b9c5b7b12be063e5186cb3afb63d3482a468d420106aab0",
+      "trace_sha256": "ed3cb7061513d216ce7ab11fa1c054284a2867c98ce4b2865ece6bac60ddec7d",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init35_t60",
+      "method": "fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task0_init35_t60/fine20",
+      "source_result_sha256": "41b974a6bc0db810a9be1c9f1ebc3d08532582d70b9fec826999298e1b0868f5",
+      "trace_sha256": "699ceff5a4d8c6cfcf9c0cf162bb5bae86de125a534597b2ea84f06860db7808",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init35_t60",
+      "method": "resample5",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task0_init35_t60/resample5",
+      "source_result_sha256": "a91ea0d06d9691dacab3942011341ba14e1589d2bea015409b3ab365af461ca6",
+      "trace_sha256": "1546aff21e69a518a5c8023cdab572a92dcebeda8e00476b845f7c2af054d1b7",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init35_t60",
+      "method": "retreat5_fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task0_init35_t60/retreat5_fine20",
+      "source_result_sha256": "d889d4c7deff3dfe3e29df5dd241399c68de8409adffb6002dd5e67760b9bf15",
+      "trace_sha256": "4316902b99d6ec080f67265199ece52154a07d7ca9c4d49a945c07540baf7044",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init39_t60",
+      "method": "continue",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task0_init39_t60/continue",
+      "source_result_sha256": "49abb8155f9b04000db45a9bfec675c36ea8cfd585ccfb93caedc2a156c32c1c",
+      "trace_sha256": "0029caf1459b28088c81a8f62247c2946eb2339748ef3880a3a3a871e68b6f32",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init39_t60",
+      "method": "fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task0_init39_t60/fine20",
+      "source_result_sha256": "20994f1ef4d5dde443958725e7885edb4df8802c3a47b8645338ef1cc795de8a",
+      "trace_sha256": "0316b0a2ac3306f2fd0624a21560dfdc242aa158079e889d00ad6c9cc6b2587f",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init39_t60",
+      "method": "resample5",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task0_init39_t60/resample5",
+      "source_result_sha256": "5b7563baa5d28b39495b7f24b422b8b6c5be2296ac8ab29cc7603f3fa1530fed",
+      "trace_sha256": "687e28d0a862b5ad8efb316190e6a86ddada58f0a9ed543180265180aa18f257",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init39_t60",
+      "method": "retreat5_fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task0_init39_t60/retreat5_fine20",
+      "source_result_sha256": "ede9ef3efb87b93083b81797f9de8c60de348d8d8960c17aeca70f15dc1d7e90",
+      "trace_sha256": "6d899f061523f79636349064d12e142d2aa16ce79043115828aae0c9ffe431e6",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init42_t60",
+      "method": "continue",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task0_init42_t60/continue",
+      "source_result_sha256": "0dbe576e20289186c26230e4d4c82248715faef91e2214c1fbe77d7afda7a14e",
+      "trace_sha256": "f8a7e6a68c324b33ef63f873b4341087751894095259cb1468a425f644711f3d",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init42_t60",
+      "method": "fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task0_init42_t60/fine20",
+      "source_result_sha256": "a47cfd1c7ee53a4aed06264fe010cc938051f0c87f5b0a5b84678e5ad85f3b96",
+      "trace_sha256": "a580ae6c4a0062e5ce04b9a82a5a8589f587949941c567f947f150956d9f3b79",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init42_t60",
+      "method": "resample5",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task0_init42_t60/resample5",
+      "source_result_sha256": "56316a63127eb10d8502451d41e07aa933471f5ccd77f311760af15b0b028bf1",
+      "trace_sha256": "a97a5dc739f3b8f133a19446b56f311a64e16c8e730062a18c0e133ec0665efb",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init42_t60",
+      "method": "retreat5_fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task0_init42_t60/retreat5_fine20",
+      "source_result_sha256": "1cf54f7c68134164d603f7417cc492dc71d6315bf1b83aea1af6f46338cdb786",
+      "trace_sha256": "7c16bae75f50e58f80eb4f1847e82e25e715428c7a34da092e9cee7b5c8c0869",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init45_t60",
+      "method": "continue",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task0_init45_t60/continue",
+      "source_result_sha256": "ddb2536385ca4a655ecd1ed8616c87166bcf89aaed3e460c2d63eb2ad0f48966",
+      "trace_sha256": "d76a378345cf1f115a3c2e42d15f120066731960d4dafec524d6a0693b697b75",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init45_t60",
+      "method": "fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task0_init45_t60/fine20",
+      "source_result_sha256": "ef126ea1e284b6f992bf7b06fc1cdd5f0edf9837be8e4d074ff1cd51e5aa17d2",
+      "trace_sha256": "8973f5e2a336eee8b6950fcf29d0b7637b8b314691328ac4a2f63293f929bd9b",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init45_t60",
+      "method": "resample5",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task0_init45_t60/resample5",
+      "source_result_sha256": "d27409d382ceda60741e7ddc75ec4667cedd151f3130ac83c5b5b2fbdb657703",
+      "trace_sha256": "2a21ae66bfd96451adb7ce100b85c4add35466d48cf5ad30532aee355ac95415",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init45_t60",
+      "method": "retreat5_fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task0_init45_t60/retreat5_fine20",
+      "source_result_sha256": "b217c227b47f7b096461c53ab58982ed18886f1c4e405769bec66ee6503dd3b6",
+      "trace_sha256": "a04e8cfb2d9a3c080ed625636438ed73032a4d05bababe84510b26c9dae6105c",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init45_t120",
+      "method": "continue",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task0_init45_t120/continue",
+      "source_result_sha256": "bf31e20b37ca009c1fddb77c8b9d37060be6727c7d86d715c3ee2c83f4fc2d84",
+      "trace_sha256": "ebcf2e7ce5d16a67f14e8e12f8ceae4da714990ee86329a23310a270e5589832",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init45_t120",
+      "method": "fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task0_init45_t120/fine20",
+      "source_result_sha256": "710b897012ade550e5b5f5354b63a1cc5c217f430490305e14f215c88102f98f",
+      "trace_sha256": "45bcd2b572751af8619cf587b6e78b52c50fbac9f0f3ca4a20c878fe05e19b56",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init45_t120",
+      "method": "resample5",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task0_init45_t120/resample5",
+      "source_result_sha256": "702727c3a7cda2f851ff3e765fd2f250fddd228404a4c28c532f7bc092239a31",
+      "trace_sha256": "e450af101927933f2fc9c4b316698c881795cbd2fdfb6cfa4febcd4e8520447f",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task0_init45_t120",
+      "method": "retreat5_fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task0_init45_t120/retreat5_fine20",
+      "source_result_sha256": "08b254b794fd77497129c556fdd7d75b7e31668c6d4d03e4b134481289a5cb2f",
+      "trace_sha256": "4eec2390f35ac846b67847953d4dfbccbbfe800c70c460ee461d642d9ca16fff",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task1_init2_t60",
+      "method": "continue",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task1_init2_t60/continue",
+      "source_result_sha256": "b493d0db03431e12dca45bce284d57e9399db91ada2d941b252ebea6d7a8d3da",
+      "trace_sha256": "c3e844037adae0e68dc241c4c68fde96bfeb14a4efdd4f10bdb55963b1b8714a",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task1_init2_t60",
+      "method": "fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task1_init2_t60/fine20",
+      "source_result_sha256": "9703330793bf34e7c06fcac0f0fa50487488f6e009f3306b22472df4ab8528dc",
+      "trace_sha256": "180b51cd6f8a4084e0a5366e998117be4e59e9bc8afb75127b5661ba5ecad569",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task1_init2_t60",
+      "method": "resample5",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task1_init2_t60/resample5",
+      "source_result_sha256": "eb39ae3634001c84cd50b7b495a4f638ab8b4e087604c49c0172b00c2a8ec378",
+      "trace_sha256": "c7ed7c0d93b9f30f937aaf2e22578ea05169823cbc918c2f776b5430a2e6e26b",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task1_init2_t60",
+      "method": "retreat5_fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task1_init2_t60/retreat5_fine20",
+      "source_result_sha256": "338e98055a2f99edc043523401eff8b716917cd34a5220939d0b349c5e5b5e4e",
+      "trace_sha256": "524e6bd1318b609ca8a9a12099009b5288a55739376a8f76ef6f2561982d21f2",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task1_init9_t60",
+      "method": "continue",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task1_init9_t60/continue",
+      "source_result_sha256": "c33001e628dff3f585acde263cf663cc53e6d65cf96b8527ba51e4a19b8d92c3",
+      "trace_sha256": "9d0d6209e39c50f8275ee0f73d005495d8506adc48147c4f23d862e92dd89ee4",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task1_init9_t60",
+      "method": "fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task1_init9_t60/fine20",
+      "source_result_sha256": "04e031bc1b621331ccde74f11a9b50a18018afcaf57ce961cd28ca30978ead70",
+      "trace_sha256": "8b9946259a1bf2500e52d380b75a25b8876a0678023ed858fe18564808678f79",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task1_init9_t60",
+      "method": "resample5",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task1_init9_t60/resample5",
+      "source_result_sha256": "ea77dc1be68544a723b8df54fc1e2104ddd24eacb389ad13c3a92044252d5849",
+      "trace_sha256": "a3d5ca4a40e242d7d5fc6dd651389d2f17a78e5c26d039c1131acd6ce9c20447",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task1_init9_t60",
+      "method": "retreat5_fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task1_init9_t60/retreat5_fine20",
+      "source_result_sha256": "fe2e60ed3b6d6e373e93ccb330fb4c3859de49cd3a5a5f5b275f7c562994c5ef",
+      "trace_sha256": "20f1549795a54700620eef29b080b9c148278c1dd342e825c1059b32471f127e",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task1_init12_t60",
+      "method": "continue",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task1_init12_t60/continue",
+      "source_result_sha256": "6fca09c051ac4eb67bb33077557b48020bedbebb9e3623cf2574e765e398e578",
+      "trace_sha256": "9660cb9e246521f8322c18ce3090dce62cfdd2b467bc0170939e3dd979ab4163",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task1_init12_t60",
+      "method": "fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task1_init12_t60/fine20",
+      "source_result_sha256": "47ab1c384d73892069e693114b4fbe00c4bf4d4e387bd1abf3f4109b8729d207",
+      "trace_sha256": "9568c457aa54553ba185c84170d2a0094438a3c34236400cb7977beff211be15",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task1_init12_t60",
+      "method": "resample5",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task1_init12_t60/resample5",
+      "source_result_sha256": "c37901fb537c737853ff04a58e8e8b79af272351e87b414987892b716d2287a7",
+      "trace_sha256": "4f8bb290409cf494062f44199cf79e4285abbcfa90a61fc33a8dbd197db79185",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task1_init12_t60",
+      "method": "retreat5_fine20",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task1_init12_t60/retreat5_fine20",
+      "source_result_sha256": "9d436b72a60b6d1edd15801f20b795eecee120c40d714562a4b3f4377877436a",
+      "trace_sha256": "2a1b4db295fc40d333a93f7b8edfd129e27ac732dbb22a02295f0f4f83cc4446",
+      "accepted_under": "v1 or approved v2 protocol"
+    },
+    {
+      "root_id": "task1_init15_t60",
+      "method": "continue",
+      "output": "/data1/niuye/lq/pi05_lora_libero/results/recovery_branches_20261014_v2/workers/worker1/roots/task1_init15_t60/continue",
+      "source_result_sha256": "e9cc21badb1c65400a6bb5d074ca72a08e74343802f65e1064d01f0aae3f41c0",
+      "trace_sha256": "cdc3d88316a455a675d55fe4f0c0ac48d3cc5969890906aa429e20f3a3979c19",
+      "accepted_under": "v1 or approved v2 protocol"
+    }
+  ],
+  "retained_complete_branches": 125,
+  "remaining_new_branches": 951,
+  "prior_branch_artifact_bytes": 51138560,
+  "unconsumed_suffix_image_amendment_approved": false,
+  "known_unconsumed_render_blocks": [
+    {
+      "root_id": "task1_init22_t120",
+      "method": "continue",
+      "step": 187,
+      "reason": "Existing exact suffix-image gate remains failed; physics/action/chunk records match. No repeat until resolved.",
+      "source": "results/recovery_branches_20261014_v2/failure_numeric_audit.json"
+    }
+  ],
+  "failure_containment": "Preserve every originally scheduled root. Defer only a known or newly detected unconsumed-suffix render mismatch when state checks pass; do not retry or collect the remaining methods at that root. Continue independently unaffected roots with all existing gates. Any consumed-image/root-image/state/action mismatch is still fatal. Incomplete root coverage forbids full statistics and module training."
+}

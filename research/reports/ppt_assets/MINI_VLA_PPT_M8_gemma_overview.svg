@@ -1,0 +1,203 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2622" height="650" viewBox="0 0 2622 650">
+<rect width="100%" height="100%" fill="white"/>
+<rect x="16" y="8" width="510" height="394" rx="12" fill="#ECF8FD" stroke="none"/>
+<circle cx="44" cy="36" r="19" fill="#0563C6" stroke="#0563C6" stroke-width="1.5"/>
+<text x="44" y="36" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="28" font-weight="700" fill="white">1</text>
+<text x="293.5" y="36" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="32" font-weight="700" fill="#071E4A">视觉 / 文字特征</text>
+<text x="271.0" y="82" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="27" font-weight="400" fill="#071E4A">先分别得到2048维向量</text>
+<text x="271.0" y="367" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="30" font-weight="400" fill="#071E4A">图像与文字宽度均2048</text>
+<polygon points="528,215 539,215 539,204 555,224 539,244 539,233 528,233" fill="#148EEB"/>
+<rect x="556" y="8" width="470" height="394" rx="12" fill="#ECF8FD" stroke="none"/>
+<circle cx="584" cy="36" r="19" fill="#0563C6" stroke="#0563C6" stroke-width="1.5"/>
+<text x="584" y="36" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="28" font-weight="700" fill="white">2</text>
+<text x="813.5" y="36" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="32" font-weight="700" fill="#071E4A">拼接观测前缀</text>
+<text x="791.0" y="82" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="27" font-weight="400" fill="#071E4A">沿token维拼接 + 有效mask</text>
+<text x="791.0" y="367" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="30" font-weight="400" fill="#071E4A">[B,P,2048]</text>
+<polygon points="1028,215 1039,215 1039,204 1055,224 1039,244 1039,233 1028,233" fill="#148EEB"/>
+<rect x="1056" y="8" width="570" height="394" rx="12" fill="#ECF8FD" stroke="none"/>
+<circle cx="1084" cy="36" r="19" fill="#0563C6" stroke="#0563C6" stroke-width="1.5"/>
+<text x="1084" y="36" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="28" font-weight="700" fill="white">3</text>
+<text x="1363.5" y="36" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="32" font-weight="700" fill="#071E4A">Gemma Transformer</text>
+<text x="1341.0" y="82" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="27" font-weight="400" fill="#071E4A">18层，各层参数独立</text>
+<text x="1341.0" y="367" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="30" font-weight="400" fill="#071E4A">[B,P,2048]</text>
+<polygon points="1628,215 1639,215 1639,204 1655,224 1639,244 1639,233 1628,233" fill="#148EEB"/>
+<rect x="1656" y="8" width="410" height="394" rx="12" fill="#ECF8FD" stroke="none"/>
+<circle cx="1684" cy="36" r="19" fill="#0563C6" stroke="#0563C6" stroke-width="1.5"/>
+<text x="1684" y="36" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="28" font-weight="700" fill="white">4</text>
+<text x="1883.5" y="36" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="32" font-weight="700" fill="#071E4A">最终 RMSNorm</text>
+<text x="1861.0" y="82" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="27" font-weight="400" fill="#071E4A">只对最后一层输出归一化</text>
+<text x="1861.0" y="367" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="30" font-weight="400" fill="#071E4A">[B,P,2048]</text>
+<polygon points="2068,215 2079,215 2079,204 2095,224 2079,244 2079,233 2068,233" fill="#148EEB"/>
+<rect x="2096" y="8" width="510" height="394" rx="12" fill="#ECF8FD" stroke="none"/>
+<circle cx="2124" cy="36" r="19" fill="#0563C6" stroke="#0563C6" stroke-width="1.5"/>
+<text x="2124" y="36" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="28" font-weight="700" fill="white">5</text>
+<text x="2373.5" y="36" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="32" font-weight="700" fill="#071E4A">前缀隐藏表示</text>
+<text x="2351.0" y="82" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="27" font-weight="400" fill="#071E4A">可返回，但本策略不生成文字</text>
+<text x="2351.0" y="367" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="30" font-weight="400" fill="#071E4A">[B,P,2048]</text>
+<rect x="61" y="166" width="160" height="135" rx="0" fill="#9DCEF7" stroke="#194C76"/>
+<polyline points="61,188.5 221,188.5" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="61,211.0 221,211.0" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="61,233.5 221,233.5" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="61,256.0 221,256.0" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="61,278.5 221,278.5" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="81.0,166 81.0,301" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="101.0,166 101.0,301" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="121.0,166 121.0,301" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="141.0,166 141.0,301" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="161.0,166 161.0,301" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="181.0,166 181.0,301" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="201.0,166 201.0,301" fill="none" stroke="#528CBF" stroke-width="1"/>
+<rect x="316" y="166" width="160" height="135" rx="0" fill="#92D8AE" stroke="#194C76"/>
+<polyline points="316,188.5 476,188.5" fill="none" stroke="#4D9C72" stroke-width="1"/>
+<polyline points="316,211.0 476,211.0" fill="none" stroke="#4D9C72" stroke-width="1"/>
+<polyline points="316,233.5 476,233.5" fill="none" stroke="#4D9C72" stroke-width="1"/>
+<polyline points="316,256.0 476,256.0" fill="none" stroke="#4D9C72" stroke-width="1"/>
+<polyline points="316,278.5 476,278.5" fill="none" stroke="#4D9C72" stroke-width="1"/>
+<polyline points="336.0,166 336.0,301" fill="none" stroke="#4D9C72" stroke-width="1"/>
+<polyline points="356.0,166 356.0,301" fill="none" stroke="#4D9C72" stroke-width="1"/>
+<polyline points="376.0,166 376.0,301" fill="none" stroke="#4D9C72" stroke-width="1"/>
+<polyline points="396.0,166 396.0,301" fill="none" stroke="#4D9C72" stroke-width="1"/>
+<polyline points="416.0,166 416.0,301" fill="none" stroke="#4D9C72" stroke-width="1"/>
+<polyline points="436.0,166 436.0,301" fill="none" stroke="#4D9C72" stroke-width="1"/>
+<polyline points="456.0,166 456.0,301" fill="none" stroke="#4D9C72" stroke-width="1"/>
+<text x="141" y="140" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="25" font-weight="400" fill="#071E4A">视觉token</text>
+<text x="396" y="140" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="25" font-weight="400" fill="#071E4A">文字token</text>
+<text x="271.0" y="329" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="24" font-weight="400" fill="#071E4A">来自SigLIP投影与文字Embedding</text>
+<rect x="697" y="151" width="190" height="150" rx="0" fill="#9DCEF7" stroke="#194C76"/>
+<polyline points="697,169.75 887,169.75" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="697,188.5 887,188.5" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="697,207.25 887,207.25" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="697,226.0 887,226.0" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="697,244.75 887,244.75" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="697,263.5 887,263.5" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="697,282.25 887,282.25" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="720.75,151 720.75,301" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="744.5,151 744.5,301" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="768.25,151 768.25,301" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="792.0,151 792.0,301" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="815.75,151 815.75,301" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="839.5,151 839.5,301" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="863.25,151 863.25,301" fill="none" stroke="#528CBF" stroke-width="1"/>
+<rect x="689" y="159" width="190" height="150" rx="0" fill="#9DCEF7" stroke="#194C76"/>
+<polyline points="689,177.75 879,177.75" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="689,196.5 879,196.5" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="689,215.25 879,215.25" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="689,234.0 879,234.0" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="689,252.75 879,252.75" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="689,271.5 879,271.5" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="689,290.25 879,290.25" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="712.75,159 712.75,309" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="736.5,159 736.5,309" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="760.25,159 760.25,309" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="784.0,159 784.0,309" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="807.75,159 807.75,309" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="831.5,159 831.5,309" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="855.25,159 855.25,309" fill="none" stroke="#528CBF" stroke-width="1"/>
+<rect x="681" y="167" width="190" height="150" rx="0" fill="#9DCEF7" stroke="#194C76"/>
+<polyline points="681,185.75 871,185.75" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="681,204.5 871,204.5" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="681,223.25 871,223.25" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="681,242.0 871,242.0" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="681,260.75 871,260.75" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="681,279.5 871,279.5" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="681,298.25 871,298.25" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="704.75,167 704.75,317" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="728.5,167 728.5,317" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="752.25,167 752.25,317" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="776.0,167 776.0,317" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="799.75,167 799.75,317" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="823.5,167 823.5,317" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="847.25,167 847.25,317" fill="none" stroke="#528CBF" stroke-width="1"/>
+<rect x="681" y="280" width="190" height="37" rx="0" fill="#92D8AE" stroke="#194C76"/>
+<polyline points="681,298.5 871,298.5" fill="none" stroke="#4D9C72" stroke-width="1"/>
+<polyline points="704.75,280 704.75,317" fill="none" stroke="#4D9C72" stroke-width="1"/>
+<polyline points="728.5,280 728.5,317" fill="none" stroke="#4D9C72" stroke-width="1"/>
+<polyline points="752.25,280 752.25,317" fill="none" stroke="#4D9C72" stroke-width="1"/>
+<polyline points="776.0,280 776.0,317" fill="none" stroke="#4D9C72" stroke-width="1"/>
+<polyline points="799.75,280 799.75,317" fill="none" stroke="#4D9C72" stroke-width="1"/>
+<polyline points="823.5,280 823.5,317" fill="none" stroke="#4D9C72" stroke-width="1"/>
+<polyline points="847.25,280 847.25,317" fill="none" stroke="#4D9C72" stroke-width="1"/>
+<text x="791.0" y="137" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="25" font-weight="400" fill="#071E4A">P=968（含被屏蔽的补位）</text>
+<text x="791.0" y="333" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="25" font-weight="400" fill="#071E4A">图像与文字共同作为前缀</text>
+<rect x="1133" y="137" width="440" height="151" rx="6" fill="#A8D7C1" stroke="#3D9471"/>
+<rect x="1124" y="146" width="440" height="151" rx="6" fill="#A8D7C1" stroke="#3D9471"/>
+<rect x="1115" y="155" width="440" height="151" rx="6" fill="#A8D7C1" stroke="#3D9471"/>
+<rect x="1106" y="164" width="440" height="151" rx="6" fill="#A8D7C1" stroke="#3D9471"/>
+<text x="1326" y="189" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="25" font-weight="400" fill="#071E4A">Pre-RMSNorm + MQA / RoPE</text>
+<text x="1326" y="232" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="26" font-weight="400" fill="#071E4A">残差 + GELU门控FFN</text>
+<text x="1326" y="275" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="25" font-weight="400" fill="#071E4A">宽度2048；FFN中间维16384</text>
+<text x="1596" y="233" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#071E4A">…</text>
+<text x="1341.0" y="335" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="24" font-weight="400" fill="#071E4A">基础权重冻结，LoRA r=16可训练</text>
+<rect x="1776.0" y="154" width="170" height="150" rx="0" fill="#9DCEF7" stroke="#194C76"/>
+<polyline points="1776.0,172.75 1946.0,172.75" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="1776.0,191.5 1946.0,191.5" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="1776.0,210.25 1946.0,210.25" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="1776.0,229.0 1946.0,229.0" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="1776.0,247.75 1946.0,247.75" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="1776.0,266.5 1946.0,266.5" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="1776.0,285.25 1946.0,285.25" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="1797.25,154 1797.25,304" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="1818.5,154 1818.5,304" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="1839.75,154 1839.75,304" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="1861.0,154 1861.0,304" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="1882.25,154 1882.25,304" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="1903.5,154 1903.5,304" fill="none" stroke="#528CBF" stroke-width="1"/>
+<polyline points="1924.75,154 1924.75,304" fill="none" stroke="#528CBF" stroke-width="1"/>
+<rect x="1686" y="202" width="350" height="52" rx="8" fill="white" stroke="#4D92CB"/>
+<text x="1861.0" y="228" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="29" font-weight="700" fill="#071E4A">RMSNorm</text>
+<text x="1861.0" y="331" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="22" font-weight="400" fill="#071E4A">沿每个token的2048维归一化</text>
+<rect x="2267" y="158" width="175" height="142" rx="0" fill="#7ABBEA" stroke="#194C76"/>
+<polyline points="2267,175.75 2442,175.75" fill="none" stroke="#3A89C3" stroke-width="1"/>
+<polyline points="2267,193.5 2442,193.5" fill="none" stroke="#3A89C3" stroke-width="1"/>
+<polyline points="2267,211.25 2442,211.25" fill="none" stroke="#3A89C3" stroke-width="1"/>
+<polyline points="2267,229.0 2442,229.0" fill="none" stroke="#3A89C3" stroke-width="1"/>
+<polyline points="2267,246.75 2442,246.75" fill="none" stroke="#3A89C3" stroke-width="1"/>
+<polyline points="2267,264.5 2442,264.5" fill="none" stroke="#3A89C3" stroke-width="1"/>
+<polyline points="2267,282.25 2442,282.25" fill="none" stroke="#3A89C3" stroke-width="1"/>
+<polyline points="2288.875,158 2288.875,300" fill="none" stroke="#3A89C3" stroke-width="1"/>
+<polyline points="2310.75,158 2310.75,300" fill="none" stroke="#3A89C3" stroke-width="1"/>
+<polyline points="2332.625,158 2332.625,300" fill="none" stroke="#3A89C3" stroke-width="1"/>
+<polyline points="2354.5,158 2354.5,300" fill="none" stroke="#3A89C3" stroke-width="1"/>
+<polyline points="2376.375,158 2376.375,300" fill="none" stroke="#3A89C3" stroke-width="1"/>
+<polyline points="2398.25,158 2398.25,300" fill="none" stroke="#3A89C3" stroke-width="1"/>
+<polyline points="2420.125,158 2420.125,300" fill="none" stroke="#3A89C3" stroke-width="1"/>
+<rect x="2259" y="166" width="175" height="142" rx="0" fill="#7ABBEA" stroke="#194C76"/>
+<polyline points="2259,183.75 2434,183.75" fill="none" stroke="#3A89C3" stroke-width="1"/>
+<polyline points="2259,201.5 2434,201.5" fill="none" stroke="#3A89C3" stroke-width="1"/>
+<polyline points="2259,219.25 2434,219.25" fill="none" stroke="#3A89C3" stroke-width="1"/>
+<polyline points="2259,237.0 2434,237.0" fill="none" stroke="#3A89C3" stroke-width="1"/>
+<polyline points="2259,254.75 2434,254.75" fill="none" stroke="#3A89C3" stroke-width="1"/>
+<polyline points="2259,272.5 2434,272.5" fill="none" stroke="#3A89C3" stroke-width="1"/>
+<polyline points="2259,290.25 2434,290.25" fill="none" stroke="#3A89C3" stroke-width="1"/>
+<polyline points="2280.875,166 2280.875,308" fill="none" stroke="#3A89C3" stroke-width="1"/>
+<polyline points="2302.75,166 2302.75,308" fill="none" stroke="#3A89C3" stroke-width="1"/>
+<polyline points="2324.625,166 2324.625,308" fill="none" stroke="#3A89C3" stroke-width="1"/>
+<polyline points="2346.5,166 2346.5,308" fill="none" stroke="#3A89C3" stroke-width="1"/>
+<polyline points="2368.375,166 2368.375,308" fill="none" stroke="#3A89C3" stroke-width="1"/>
+<polyline points="2390.25,166 2390.25,308" fill="none" stroke="#3A89C3" stroke-width="1"/>
+<polyline points="2412.125,166 2412.125,308" fill="none" stroke="#3A89C3" stroke-width="1"/>
+<rect x="2251" y="174" width="175" height="142" rx="0" fill="#7ABBEA" stroke="#194C76"/>
+<polyline points="2251,191.75 2426,191.75" fill="none" stroke="#3A89C3" stroke-width="1"/>
+<polyline points="2251,209.5 2426,209.5" fill="none" stroke="#3A89C3" stroke-width="1"/>
+<polyline points="2251,227.25 2426,227.25" fill="none" stroke="#3A89C3" stroke-width="1"/>
+<polyline points="2251,245.0 2426,245.0" fill="none" stroke="#3A89C3" stroke-width="1"/>
+<polyline points="2251,262.75 2426,262.75" fill="none" stroke="#3A89C3" stroke-width="1"/>
+<polyline points="2251,280.5 2426,280.5" fill="none" stroke="#3A89C3" stroke-width="1"/>
+<polyline points="2251,298.25 2426,298.25" fill="none" stroke="#3A89C3" stroke-width="1"/>
+<polyline points="2272.875,174 2272.875,316" fill="none" stroke="#3A89C3" stroke-width="1"/>
+<polyline points="2294.75,174 2294.75,316" fill="none" stroke="#3A89C3" stroke-width="1"/>
+<polyline points="2316.625,174 2316.625,316" fill="none" stroke="#3A89C3" stroke-width="1"/>
+<polyline points="2338.5,174 2338.5,316" fill="none" stroke="#3A89C3" stroke-width="1"/>
+<polyline points="2360.375,174 2360.375,316" fill="none" stroke="#3A89C3" stroke-width="1"/>
+<polyline points="2382.25,174 2382.25,316" fill="none" stroke="#3A89C3" stroke-width="1"/>
+<polyline points="2404.125,174 2404.125,316" fill="none" stroke="#3A89C3" stroke-width="1"/>
+<text x="2351.0" y="139" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="26" font-weight="400" fill="#071E4A">不是7维控制动作</text>
+<text x="2351.0" y="334" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="24" font-weight="400" fill="#071E4A">没有动作输出头或文本采样步骤</text>
+<polyline points="1341.0,405 1341.0,449" fill="none" stroke="#258557" stroke-width="2.5"/>
+<polygon points="1341.0,449 1346.0,439.0 1336.0,439.0" fill="#258557"/>
+<rect x="941.0" y="452" width="800" height="98" rx="10" fill="#EAF6EF" stroke="#3D9471"/>
+<text x="1341.0" y="478" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="29" font-weight="700" fill="#258557">逐层旁路输出：18层的 K/V</text>
+<text x="1341.0" y="519" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="25" font-weight="400" fill="#258557">每层 K、V 均为 [B,P,1,256]，供动作专家对应层读取</text>
+<text x="1311.0" y="585" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="25" font-weight="400" fill="#071E4A">动作专家读取各层K/V，不是仅把最终隐藏表示接入另一个小Decoder；推理时前缀缓存一次，供10次Euler调用复用。</text>
+<text x="1311.0" y="625" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="24" font-weight="400" fill="#071E4A">本项目 π0.5 语言分支：图文前缀内部双向注意力；不读取动作后缀。普通Gemma文本生成的因果mask不适用于此处。</text>
+</svg>

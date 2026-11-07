@@ -1,0 +1,380 @@
+{
+  "status": "PASS",
+  "episodes_used": 600,
+  "expected_episodes": 600,
+  "distinct_initial_cases": 200,
+  "tasks": 40,
+  "suites": 4,
+  "results": {
+    "existing": {
+      "successes": 141,
+      "episodes": 200,
+      "rate": 0.705,
+      "by_suite": {
+        "libero_spatial": {
+          "successes": 40,
+          "episodes": 50
+        },
+        "libero_object": {
+          "successes": 48,
+          "episodes": 50
+        },
+        "libero_goal": {
+          "successes": 35,
+          "episodes": 50
+        },
+        "libero_10": {
+          "successes": 18,
+          "episodes": 50
+        }
+      },
+      "task_cluster_descriptive_95_interval": [
+        0.625,
+        0.7849999999999999
+      ],
+      "policy_latency_median_seconds": 0.09054485731758177,
+      "policy_latency_p95_seconds": 0.13205840534064917
+    },
+    "depth1": {
+      "successes": 126,
+      "episodes": 200,
+      "rate": 0.63,
+      "by_suite": {
+        "libero_spatial": {
+          "successes": 40,
+          "episodes": 50
+        },
+        "libero_object": {
+          "successes": 41,
+          "episodes": 50
+        },
+        "libero_goal": {
+          "successes": 32,
+          "episodes": 50
+        },
+        "libero_10": {
+          "successes": 13,
+          "episodes": 50
+        }
+      },
+      "task_cluster_descriptive_95_interval": [
+        0.5549999999999999,
+        0.705
+      ],
+      "policy_latency_median_seconds": 0.09073763014748693,
+      "policy_latency_p95_seconds": 0.13339555338025086
+    },
+    "depth2": {
+      "successes": 118,
+      "episodes": 200,
+      "rate": 0.59,
+      "by_suite": {
+        "libero_spatial": {
+          "successes": 26,
+          "episodes": 50
+        },
+        "libero_object": {
+          "successes": 44,
+          "episodes": 50
+        },
+        "libero_goal": {
+          "successes": 36,
+          "episodes": 50
+        },
+        "libero_10": {
+          "successes": 12,
+          "episodes": 50
+        }
+      },
+      "task_cluster_descriptive_95_interval": [
+        0.515,
+        0.66
+      ],
+      "policy_latency_median_seconds": 0.09181302995420992,
+      "policy_latency_p95_seconds": 0.13467475934885442
+    }
+  },
+  "paired": {
+    "depth2_vs_depth1": {
+      "rescued": 30,
+      "new_failures": 38,
+      "difference": -0.040000000000000036,
+      "task_cluster_descriptive_95_interval": [
+        -0.125,
+        0.045
+      ],
+      "rescued_cases": [
+        "libero_spatial/task1_init13",
+        "libero_spatial/task6_init3",
+        "libero_spatial/task9_init12",
+        "libero_object/task2_init34",
+        "libero_object/task4_init4",
+        "libero_object/task4_init12",
+        "libero_object/task4_init17",
+        "libero_object/task5_init37",
+        "libero_object/task5_init40",
+        "libero_object/task7_init4",
+        "libero_object/task9_init49",
+        "libero_goal/task0_init16",
+        "libero_goal/task0_init46",
+        "libero_goal/task2_init22",
+        "libero_goal/task3_init14",
+        "libero_goal/task3_init32",
+        "libero_goal/task3_init33",
+        "libero_goal/task5_init23",
+        "libero_goal/task6_init10",
+        "libero_goal/task6_init31",
+        "libero_goal/task8_init39",
+        "libero_goal/task9_init24",
+        "libero_10/task1_init7",
+        "libero_10/task2_init49",
+        "libero_10/task3_init19",
+        "libero_10/task3_init23",
+        "libero_10/task3_init38",
+        "libero_10/task6_init1",
+        "libero_10/task6_init36",
+        "libero_10/task8_init5"
+      ],
+      "new_failure_cases": [
+        "libero_spatial/task1_init23",
+        "libero_spatial/task2_init16",
+        "libero_spatial/task3_init2",
+        "libero_spatial/task3_init10",
+        "libero_spatial/task3_init32",
+        "libero_spatial/task4_init2",
+        "libero_spatial/task4_init20",
+        "libero_spatial/task6_init1",
+        "libero_spatial/task6_init34",
+        "libero_spatial/task7_init27",
+        "libero_spatial/task7_init28",
+        "libero_spatial/task8_init12",
+        "libero_spatial/task8_init16",
+        "libero_spatial/task8_init17",
+        "libero_spatial/task8_init22",
+        "libero_spatial/task9_init6",
+        "libero_spatial/task9_init41",
+        "libero_object/task6_init9",
+        "libero_object/task6_init24",
+        "libero_object/task7_init16",
+        "libero_object/task9_init17",
+        "libero_object/task9_init44",
+        "libero_goal/task2_init12",
+        "libero_goal/task2_init32",
+        "libero_goal/task6_init13",
+        "libero_goal/task8_init16",
+        "libero_goal/task8_init38",
+        "libero_goal/task9_init2",
+        "libero_goal/task9_init45",
+        "libero_10/task1_init2",
+        "libero_10/task2_init2",
+        "libero_10/task2_init33",
+        "libero_10/task3_init26",
+        "libero_10/task5_init9",
+        "libero_10/task5_init30",
+        "libero_10/task5_init48",
+        "libero_10/task7_init19",
+        "libero_10/task7_init41"
+      ],
+      "by_suite": {
+        "libero_spatial": {
+          "rescued": 3,
+          "new_failures": 17
+        },
+        "libero_object": {
+          "rescued": 8,
+          "new_failures": 5
+        },
+        "libero_goal": {
+          "rescued": 11,
+          "new_failures": 7
+        },
+        "libero_10": {
+          "rescued": 8,
+          "new_failures": 9
+        }
+      }
+    },
+    "depth1_vs_existing": {
+      "rescued": 15,
+      "new_failures": 30,
+      "difference": -0.07499999999999996,
+      "task_cluster_descriptive_95_interval": [
+        -0.135,
+        -0.019999999999999997
+      ],
+      "rescued_cases": [
+        "libero_spatial/task4_init2",
+        "libero_spatial/task4_init22",
+        "libero_spatial/task6_init34",
+        "libero_spatial/task7_init27",
+        "libero_spatial/task8_init17",
+        "libero_spatial/task9_init6",
+        "libero_spatial/task9_init41",
+        "libero_goal/task0_init40",
+        "libero_goal/task0_init44",
+        "libero_goal/task2_init12",
+        "libero_goal/task5_init19",
+        "libero_goal/task6_init13",
+        "libero_goal/task9_init47",
+        "libero_10/task3_init26",
+        "libero_10/task7_init41"
+      ],
+      "new_failure_cases": [
+        "libero_spatial/task0_init18",
+        "libero_spatial/task1_init13",
+        "libero_spatial/task2_init4",
+        "libero_spatial/task4_init19",
+        "libero_spatial/task6_init3",
+        "libero_spatial/task9_init5",
+        "libero_spatial/task9_init12",
+        "libero_object/task2_init34",
+        "libero_object/task4_init4",
+        "libero_object/task4_init12",
+        "libero_object/task4_init17",
+        "libero_object/task5_init37",
+        "libero_object/task7_init4",
+        "libero_object/task9_init49",
+        "libero_goal/task0_init46",
+        "libero_goal/task2_init22",
+        "libero_goal/task2_init43",
+        "libero_goal/task3_init14",
+        "libero_goal/task5_init23",
+        "libero_goal/task6_init15",
+        "libero_goal/task6_init37",
+        "libero_goal/task9_init24",
+        "libero_goal/task9_init25",
+        "libero_10/task1_init7",
+        "libero_10/task1_init15",
+        "libero_10/task1_init43",
+        "libero_10/task2_init27",
+        "libero_10/task2_init49",
+        "libero_10/task9_init18",
+        "libero_10/task9_init24"
+      ],
+      "by_suite": {
+        "libero_spatial": {
+          "rescued": 7,
+          "new_failures": 7
+        },
+        "libero_object": {
+          "rescued": 0,
+          "new_failures": 7
+        },
+        "libero_goal": {
+          "rescued": 6,
+          "new_failures": 9
+        },
+        "libero_10": {
+          "rescued": 2,
+          "new_failures": 7
+        }
+      }
+    },
+    "depth2_vs_existing": {
+      "rescued": 18,
+      "new_failures": 41,
+      "difference": -0.11499999999999999,
+      "task_cluster_descriptive_95_interval": [
+        -0.2,
+        -0.024999999999999988
+      ],
+      "rescued_cases": [
+        "libero_spatial/task4_init22",
+        "libero_object/task5_init40",
+        "libero_goal/task0_init16",
+        "libero_goal/task0_init40",
+        "libero_goal/task0_init44",
+        "libero_goal/task3_init32",
+        "libero_goal/task3_init33",
+        "libero_goal/task5_init19",
+        "libero_goal/task6_init10",
+        "libero_goal/task6_init31",
+        "libero_goal/task8_init39",
+        "libero_goal/task9_init47",
+        "libero_10/task3_init19",
+        "libero_10/task3_init23",
+        "libero_10/task3_init38",
+        "libero_10/task6_init1",
+        "libero_10/task6_init36",
+        "libero_10/task8_init5"
+      ],
+      "new_failure_cases": [
+        "libero_spatial/task0_init18",
+        "libero_spatial/task1_init23",
+        "libero_spatial/task2_init4",
+        "libero_spatial/task2_init16",
+        "libero_spatial/task3_init2",
+        "libero_spatial/task3_init10",
+        "libero_spatial/task3_init32",
+        "libero_spatial/task4_init19",
+        "libero_spatial/task4_init20",
+        "libero_spatial/task6_init1",
+        "libero_spatial/task7_init28",
+        "libero_spatial/task8_init12",
+        "libero_spatial/task8_init16",
+        "libero_spatial/task8_init22",
+        "libero_spatial/task9_init5",
+        "libero_object/task6_init9",
+        "libero_object/task6_init24",
+        "libero_object/task7_init16",
+        "libero_object/task9_init17",
+        "libero_object/task9_init44",
+        "libero_goal/task2_init32",
+        "libero_goal/task2_init43",
+        "libero_goal/task6_init15",
+        "libero_goal/task6_init37",
+        "libero_goal/task8_init16",
+        "libero_goal/task8_init38",
+        "libero_goal/task9_init2",
+        "libero_goal/task9_init25",
+        "libero_goal/task9_init45",
+        "libero_10/task1_init2",
+        "libero_10/task1_init15",
+        "libero_10/task1_init43",
+        "libero_10/task2_init2",
+        "libero_10/task2_init27",
+        "libero_10/task2_init33",
+        "libero_10/task5_init9",
+        "libero_10/task5_init30",
+        "libero_10/task5_init48",
+        "libero_10/task7_init19",
+        "libero_10/task9_init18",
+        "libero_10/task9_init24"
+      ],
+      "by_suite": {
+        "libero_spatial": {
+          "rescued": 1,
+          "new_failures": 15
+        },
+        "libero_object": {
+          "rescued": 1,
+          "new_failures": 5
+        },
+        "libero_goal": {
+          "rescued": 10,
+          "new_failures": 9
+        },
+        "libero_10": {
+          "rescued": 6,
+          "new_failures": 12
+        }
+      }
+    }
+  },
+  "selected_system_by_frozen_dev_rule": "existing",
+  "full_decoded_videos": 120,
+  "raw_trajectories_verified": 600,
+  "total_physical_steps": 135655,
+  "total_policy_calls": 27287,
+  "all_initial_identities_match": true,
+  "worker_gates_verified": 4,
+  "new_training_updates": 0,
+  "final2000_access": false,
+  "elapsed_seconds": 149.83124045981094,
+  "limitations": [
+    "Adaptive development panel,one training seed;intervals descriptive,not unseen-task generalization.",
+    "Newdepth1vsdepth2 is the matched training contrast;existingendpoint has a different training history.",
+    "All journals and traces reviewed;physical states rely on executed guards and recorded evidence,not a second600-episode rerun.",
+    "All120 preselected videos decoded;representative visual inspection still required in followup."
+  ]
+}

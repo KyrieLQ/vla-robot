@@ -1,0 +1,79 @@
+{
+  "status": "FROZEN_ENGINEERING_DIAGNOSTIC",
+  "phase": "modern_cache",
+  "purpose": "Locate failed batch8/batch1 numerical parity on original first8 inputs;not productionretry or thresholdchange",
+  "samples": [
+    {
+      "suite": "libero_10",
+      "task_id": 0,
+      "episode_id": 8,
+      "frame_index": 0,
+      "instruction": "put both the alphabet soup and the tomato sauce in the basket"
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 0,
+      "episode_id": 181,
+      "frame_index": 130,
+      "instruction": "put both the alphabet soup and the tomato sauce in the basket"
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 0,
+      "episode_id": 363,
+      "frame_index": 274,
+      "instruction": "put both the alphabet soup and the tomato sauce in the basket"
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 1,
+      "episode_id": 12,
+      "frame_index": 0,
+      "instruction": "put both the cream cheese box and the butter in the basket"
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 1,
+      "episode_id": 215,
+      "frame_index": 123,
+      "instruction": "put both the cream cheese box and the butter in the basket"
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 1,
+      "episode_id": 378,
+      "frame_index": 251,
+      "instruction": "put both the cream cheese box and the butter in the basket"
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 2,
+      "episode_id": 6,
+      "frame_index": 0,
+      "instruction": "turn on the stove and put the moka pot on it"
+    },
+    {
+      "suite": "libero_10",
+      "task_id": 2,
+      "episode_id": 225,
+      "frame_index": 128,
+      "instruction": "turn on the stove and put the moka pot on it"
+    }
+  ],
+  "model_directory": "cache/models/smolvlm2_500m_7b375e1",
+  "source_plan": "configs/mini_vla_modern_cache_20261020_v1.json",
+  "budget_seconds": 180,
+  "gpu_count": 1,
+  "comparisons": [
+    "CPU processor tensors/padding",
+    "BF16 SDPA full8 versus1",
+    "mask-derived position_ids without changing single-sample input",
+    "vision8 versus1",
+    "language8 versus1 with fixed precomputed vision features",
+    "FP32 arithmetic with BF16-rounded weights/input, for attribution only"
+  ],
+  "original_gate_relative_L2": 0.01,
+  "new_training_updates": 0,
+  "new_simulation_episodes": 0,
+  "production_cache_changes": false
+}

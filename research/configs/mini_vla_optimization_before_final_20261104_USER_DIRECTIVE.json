@@ -1,0 +1,15 @@
+{
+  "status": "ACTIVE_USER_DIRECTIVE",
+  "recorded_at": "2026-11-04T09:06:15.416867+00:00",
+  "thread": "PUBLIC_REPRODUCTION",
+  "user_request": "先等之前的实验结束搞完再说；先依据既有实验优化SmolVLM LoRA与pi05，优化定型后最后做2000集",
+  "current_authorized_scope": "Finish current time-conditioning training, final registeredSpatial50, independent audit/videos/docs; no interruption",
+  "defer_new_training_until_current_scope_complete": true,
+  "defer_full2000_until_optimized_model_and_execution_frozen": true,
+  "current_turn_scope": "Read-only evidence/code/primary-literature review and prioritized design; no new GPU run or simulation",
+  "prior_three_stage_plan": "reports/MINI_VLA_THREE_STAGE_COMPARISON_PLAN_20261104.md",
+  "superseded_recommendation": "Do not immediately benchmark currentSmolVLM over2000; optimization-first now",
+  "future_scope": "Finite matched ablations need concrete scientific/runtime/storage protocols after current scope; no unlimited tuning",
+  "old2000_already_seen": true,
+  "storage_gpu_limits_unchanged": true
+}

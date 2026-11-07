@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "source": "/data1/niuye/lq/pi05_lora_libero/results/research_diagnosis_20261014_v3/ckpt30k_prefix5/episodes/task0_init2",
+  "source_trace_sha256": "816d877923d074a9d622e5b9d5000d3bffc3416abf93375009007cb571dbc167",
+  "steps": 73,
+  "max_qpos_error": 0.0,
+  "success_verified": true,
+  "mapping": {
+    "selected_gpu": {
+      "index": 0,
+      "uuid": "GPU-a9c265a3-769a-8eb3-cad1-210227838db9",
+      "pci_bus_id": "00000000:01:00.0",
+      "name": "NVIDIA GeForce RTX 3090",
+      "total_mib": 24576,
+      "used_mib": 2368,
+      "free_mib": 21884,
+      "utilization": 38,
+      "compute_pids": [
+        2434327
+      ],
+      "logical_index": 0
+    },
+    "egl_devices": [
+      {
+        "egl_index": 0,
+        "uuid": "GPU-5364d756-8cb6-794e-8a1c-303b8895a623"
+      },
+      {
+        "egl_index": 1,
+        "uuid": "GPU-0d539020-f6ac-c9c4-5248-8f359f25541d"
+      },
+      {
+        "egl_index": 2,
+        "uuid": "GPU-a9c265a3-769a-8eb3-cad1-210227838db9"
+      },
+      {
+        "egl_index": 3,
+        "uuid": "GPU-adc3d0a7-35f1-0430-983f-d8dd7ebc1b4f"
+      },
+      {
+        "egl_index": 4,
+        "uuid": "GPU-5c173736-d092-c6e3-554d-876eb9bf3f03"
+      },
+      {
+        "egl_index": 5,
+        "uuid": "GPU-5962806e-c440-1d52-a73b-e61620c2de96"
+      },
+      {
+        "egl_index": 6,
+        "uuid": "GPU-8cfab92f-d509-0ee9-f4b6-47aeaa0afd5e"
+      },
+      {
+        "egl_index": 7,
+        "uuid": "GPU-35717887-5b7d-30a7-e983-7712d8261e77"
+      }
+    ],
+    "matched_egl_index": 2,
+    "egl_vendor_manifest": "/usr/share/glvnd/egl_vendor.d/10_nvidia.json",
+    "enumerated_device_count": 8
+  },
+  "note": "Replay of existing successful trace; not a new policy evaluation sample"
+}

@@ -1,0 +1,27 @@
+{
+  "model": "ResNet18 + Transformer",
+  "checkpoint": "M5 epoch 3",
+  "action_horizon": 10,
+  "execute_steps": 5,
+  "suite_metrics": {
+    "libero_10": {
+      "successes": 335,
+      "episodes": 500
+    },
+    "libero_goal": {
+      "successes": 341,
+      "episodes": 500
+    },
+    "libero_object": {
+      "successes": 439,
+      "episodes": 500
+    },
+    "libero_spatial": {
+      "successes": 450,
+      "episodes": 500
+    }
+  },
+  "successes": 1565,
+  "episodes": 2000,
+  "source": "research/results/mini_vla_final2000_20261021_run3/review/episodes.csv"
+}

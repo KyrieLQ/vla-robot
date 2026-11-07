@@ -1,0 +1,604 @@
+{
+  "status": "PASS",
+  "new_episodes": 50,
+  "baseline_episodes": 50,
+  "selected_epoch": 1,
+  "selected_checkpoint_sha256": "0c421fa7eff783f448f84105280c0d125e57a173805575c12e7d2a3adac0e85c",
+  "metrics": {
+    "m6": {
+      "successes": 47,
+      "episodes": 50,
+      "calls": 1171,
+      "steps": 5755,
+      "rpc_median_ms": 8.611065801233053,
+      "rpc_p95_ms": 37.834594026207924,
+      "rpc_total_seconds": 14.37900100229308
+    },
+    "m7a": {
+      "successes": 37,
+      "episodes": 50,
+      "calls": 1439,
+      "steps": 7134,
+      "rpc_median_ms": 8.127727080136538,
+      "rpc_p95_ms": 15.84800947457551,
+      "rpc_total_seconds": 13.425305091775954
+    }
+  },
+  "paired": {
+    "wins": 0,
+    "losses": 10,
+    "difference": -0.2,
+    "task_cluster_descriptive_95_interval": [
+      -0.32000000000000006,
+      -0.08
+    ],
+    "rescued_cases": [],
+    "regressed_cases": [
+      [
+        1,
+        12
+      ],
+      [
+        2,
+        42
+      ],
+      [
+        5,
+        22
+      ],
+      [
+        5,
+        42
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        22
+      ],
+      [
+        7,
+        32
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        9,
+        2
+      ],
+      [
+        9,
+        42
+      ]
+    ]
+  },
+  "per_task": [
+    {
+      "task": 0,
+      "m6": 5,
+      "m7a": 5
+    },
+    {
+      "task": 1,
+      "m6": 5,
+      "m7a": 4
+    },
+    {
+      "task": 2,
+      "m6": 5,
+      "m7a": 4
+    },
+    {
+      "task": 3,
+      "m6": 5,
+      "m7a": 5
+    },
+    {
+      "task": 4,
+      "m6": 4,
+      "m7a": 4
+    },
+    {
+      "task": 5,
+      "m6": 5,
+      "m7a": 3
+    },
+    {
+      "task": 6,
+      "m6": 5,
+      "m7a": 5
+    },
+    {
+      "task": 7,
+      "m6": 4,
+      "m7a": 1
+    },
+    {
+      "task": 8,
+      "m6": 5,
+      "m7a": 4
+    },
+    {
+      "task": 9,
+      "m6": 4,
+      "m7a": 2
+    }
+  ],
+  "remaining_failure_cases": [
+    [
+      1,
+      12
+    ],
+    [
+      2,
+      42
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      5,
+      22
+    ],
+    [
+      5,
+      42
+    ],
+    [
+      7,
+      2
+    ],
+    [
+      7,
+      22
+    ],
+    [
+      7,
+      32
+    ],
+    [
+      7,
+      42
+    ],
+    [
+      8,
+      2
+    ],
+    [
+      9,
+      2
+    ],
+    [
+      9,
+      12
+    ],
+    [
+      9,
+      42
+    ]
+  ],
+  "initial_physics_max_error": 0.0,
+  "initial_image_mismatch": [],
+  "all_actual_action_queues_exact": true,
+  "artifact_hashes": {
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task0_init12/trace.npz": "a84f6a76d1840674de42294ae2e49f85d04501316e089c659b26d41b008085a0",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task0_init12/external.mp4": "2faf109dc7599d3f37e67f6950cda8484a9b686c658482dcfcffbe1de0da2a1b",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task0_init2/trace.npz": "34466c506f12e39b9103b2d787c7516b3af20d1f4980c42167cebbc11f59bc02",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task0_init2/external.mp4": "1c068b0d553b2677fc4af8dbe1c11f2effba38f349f34e019f8b5c8866f7e587",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task0_init22/trace.npz": "a1d78a235c69494686ba58d7c750dfcabfc785e04a5d3cc146477e26cf0950e6",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task0_init22/external.mp4": "0d1f8a8f7fd2b99f1dbd1adaaaa2e91eca57161b6b091f844a86189723f6a3c8",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task0_init32/trace.npz": "032dc7c2510e81129640f81229598d9d09bdec4a3d0218f72c27e464f44794bd",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task0_init32/external.mp4": "4a80bcf2acddea96ec526541e13ebb2003486fe1f50b1ed8cd99236673ec2fc1",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task0_init42/trace.npz": "5ce185a540d3d145f23bc0c7c340a7004e1de6f904cee686238f263bd5416c96",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task0_init42/external.mp4": "85d8a6224e700f79610fdacb3cbea4c295d0f940a9a1a046bd4c939428162372",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task1_init12/trace.npz": "0fe77b2702bf11e40c018ec0057129868369a634478e61e84201ef914fa91438",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task1_init12/external.mp4": "d1616397f1c109ce8a03a50a79673d7a4a187facfb16a30e873968a04bcdb452",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task1_init2/trace.npz": "1ccb8b80a6a2e337c35c62215fec6c9fb9b5947c133aae225d503cc153234336",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task1_init2/external.mp4": "782281b2a3d2d98b8ed05ca0a769134e2234716d2b5a180160672187aab848d7",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task1_init22/trace.npz": "b0be67bd45653b1fadbb5752c5843ab2e113c972617e90b81189b73d6705085a",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task1_init22/external.mp4": "c5f12a177b178781eee71f4abe05bcf4bc2c6c487ea71608739f349ded4b7707",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task1_init32/trace.npz": "8fc323ac5eff41e86e992ff60db13efd3557604b88feb459f5950625bd5b85aa",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task1_init32/external.mp4": "66af1efe7a57a827707d01c29b35b984f1f8a21970c482e55485718aef6f5517",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task1_init42/trace.npz": "1e65b3bacf164abd6de7a330ba073a0825905e05747c9588db4ce45e9f1d802f",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task1_init42/external.mp4": "2e9a3d96c123965430dd5916447dfc33eef358b4f388debbcd3b2c66531c6e33",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task2_init12/trace.npz": "70f31097dc1c8dcb10c83dc2971d7250fe7b0f4c3416229d99e0b576bcec6dde",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task2_init12/external.mp4": "6425231794c169c01134ed86c1ee2c8d720b6c709c64ef04f584dd237a0d257f",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task2_init2/trace.npz": "2b71e453fabbe446dc7b79e8ab68549f97b2e9c2c9911c21d3ed4edb3c06c03a",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task2_init2/external.mp4": "b7493b071247043d155d9fe6eecaead34db14f6b037307cd289cf425c4e8f5e3",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task2_init22/trace.npz": "069f6c934a4180cece43986501cccdf624f3048d58b474a5ed47e2465a7af70d",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task2_init22/external.mp4": "b9b29e50d29e1d55dc5e0ae43b0922c86eab6329416434e88e7cafdaf6cff3d7",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task2_init32/trace.npz": "4b5dc6919ab4f54af30c1fdd56df825b5eafa2f107b1cbc145b7dc594652a821",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task2_init32/external.mp4": "9e3e9ac5ad3b5911d52f255050146a5660ec2b2f9071538ec40dbd7c5912dee8",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task2_init42/trace.npz": "ac8cb7aa5f178a57d2bcbad65b341b22c6c0abec33fce9cd2fc0e3073ebea510",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task2_init42/external.mp4": "9d08726a13930ce9a38388100fbbad7f85c8fc2e318d307803cd037f8ee95598",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task3_init12/trace.npz": "9fa116a9073b17ba5bbd87b49a7fafe7ce4584a2a3b8e3e58b2771def2f2254e",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task3_init12/external.mp4": "dc5052da39444115dcae2730b9dc73d96fea85fed6d5678dedc8eabf8d03ca89",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task3_init2/trace.npz": "0ec669a2b4a7cb89cefcd3346390efd9010feeea5502c98520f254d88dd5aee5",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task3_init2/external.mp4": "8848417856d3ca05c9fbf01bf054652ccad891b7c6e633f89391b983a55562cf",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task3_init22/trace.npz": "590b538de9e287118b4fad983c402afe75a94ea7b01b96748ea4b3f8e2b15a39",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task3_init22/external.mp4": "012961fb3fe0bd92efe19d763b2b1b892783933bf67071ba482d2eb4bc734fe6",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task3_init32/trace.npz": "feed0158b7ec7b5a7363632c37bced4a07bd2efe3951b1d3659456b2ede1e81d",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task3_init32/external.mp4": "46f9d6a06132b650f4b732a8585c90e22c1386315ee5545b34ac617f3ef93870",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task3_init42/trace.npz": "8bc0a820413cfc84bcbfe0b38adadebeb034ca6da61dc9eac7a25bd6f241bcfd",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task3_init42/external.mp4": "dc0ebcf882544fe1182c04077d79bdd1e137ec258e7135811f8a69497f01b52d",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task4_init12/trace.npz": "1c2660e04204eb9bd5bd86f1aae1124f9e4b4267968d735d1267c0424de5bd7c",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task4_init12/external.mp4": "fb7ebdd35c5477088e36c6df6e9848ed479baf776ad318b5daaa928da41d0a76",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task4_init2/trace.npz": "ac4717c7ab8bc885c25a8d675587a78c699ec6a25ebb170871d31c7c66a13bc2",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task4_init2/external.mp4": "a5ace3affbb795974232459cd3607ce80cede6ea056b9dba86079a7ce5043390",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task4_init22/trace.npz": "25387b05d02e8c4556b25e51524bebe118f5892c1743970277c290cbdaa5fb4e",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task4_init22/external.mp4": "832c482976942ded757f5f209da128e1dc7a0a491f9044ad0c8409a1006e2a1d",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task4_init32/trace.npz": "0e0ade23945b70b2c0b3e4e46313aa6c9a1eb9ac7e7fb9d8fdeb10f3a50f7527",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task4_init32/external.mp4": "3defbed588904fa1bb923494f9e14a2942e4474f83d5f202fd41542689a548a0",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task4_init42/trace.npz": "1c67e4a3b9c577f040b7f60b47b2752c9720b276bfa9b263c8d5eec42da93e05",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task4_init42/external.mp4": "2897c02a3140c05c7e64fe06609cd143af18e8b88147fddad9e8eb13ffc8e0cf",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task5_init12/trace.npz": "c931703fe52a95856c9a46a82606f9e71fe762f6c57eb1636043b14d75453c48",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task5_init12/external.mp4": "cc711693c783ad8ffb44c90897578a89b7fbdaca436be63b709010a82409cb39",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task5_init2/trace.npz": "fc853906712fd3d0c6a3363a794d5f64a918376f21152ebac58a09555018b5e6",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task5_init2/external.mp4": "9f04e2c0af543aa7314f7b69349b730ca8af1f54ac46ff954122d01013bed331",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task5_init22/trace.npz": "7bd3beca52b46b6e1728569176223a881e7cdb574525d4afdfea3e8391de3c5e",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task5_init22/external.mp4": "30bdc7decd4e36eec504b0aec2f1660f7ea70bb75c064b4860ef062354eef76e",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task5_init32/trace.npz": "3bb228d7b7771c2dbe26387f76b0fa8d3248a04c0df38a831d3e75f99c09e6a4",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task5_init32/external.mp4": "3a7938a49d4bbea7a31c0f770c61bc8a2acac542c834be0c1e02ba186eb23363",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task5_init42/trace.npz": "3cecf4658c6715ae35843b38c90ec8186d18accce25d93c44b31123230bc3adc",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task5_init42/external.mp4": "39ce674932f4a2fb4abe2c9445d337bc5081e5395e7a97ff3348f44791be1897",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task6_init12/trace.npz": "aa2c1055030a3e945619260e140d8fa0962b73dcdc82eb8a1bcfd9fba603a697",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task6_init12/external.mp4": "9168e4f811996b91d67096f3877a831ce39bfbd9699945f809fc56931dcf5513",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task6_init2/trace.npz": "90a10665dac0692d79d6ff18c19cb2a204607ab4948682c9467354bae4765614",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task6_init2/external.mp4": "9be0b0c531d96b0977cdfaf8eeb12aa598b71e52f562028e660b1d8b453f3040",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task6_init22/trace.npz": "1c84e6535ac4130adfe0527d7089eb4545952f298536018d7aa9e2cd4a405e8f",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task6_init22/external.mp4": "1309b39812d7eb2994cdeb7eb37cd01c10c070015a1edd1db4ab6b7837a25ffc",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task6_init32/trace.npz": "97f4c12d07ff3c8efdf26d6b5cb776d88439b9ad8e822ced0ecb7c70798b2c77",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task6_init32/external.mp4": "60596bf4797186f572d6fe82ad068d589c8ea2407a5d57882b890dc8c460e093",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task6_init42/trace.npz": "9539e7a3f9a23749fedc97ec64c6f652b62861f5b8ea4e3ad72a90f893d9f097",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task6_init42/external.mp4": "3419612312ac5ac89c6967580d42ee1b290d92b048b408f2e4e3c20dd7bdb3b1",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task7_init12/trace.npz": "03854a09892a597654c1028619b65d1dd92168081a5ef642e087fc2a5da079d0",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task7_init12/external.mp4": "24feb8550d7fd41a588db3a996f1699903f29acd122682911aafb9cf84b5dbaf",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task7_init2/trace.npz": "61b8f90b024972607b733cc3321c517d11dc819b92c6224dbd7dc9601346dadd",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task7_init2/external.mp4": "86544e13a021f120d02469e69a33158175390a60d3cff9e5124d72a16acff992",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task7_init22/trace.npz": "8bc0a073a1d902863db6439e9e4d5ca91e3dbe842038722a22ea8c8a7ae13127",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task7_init22/external.mp4": "187235e3594fa6eabb82c44a34e1ac12c10e4822c608f83de7cb6d64fbf739f7",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task7_init32/trace.npz": "b99dfc49bb9a444762d10db4679e89f0294742802c4231d865b83e86f14b9254",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task7_init32/external.mp4": "323c6f355a7436b392e2c178f7101067975f8ef99a763f48f0ba29300487289b",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task7_init42/trace.npz": "9cea86b960b3ff3e3ce59cec863e745b9aca4f483c1b54a13e2fa33c71c5ee94",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task7_init42/external.mp4": "3e02ba537a5671d3dc667acfe509e7c8f4cf448e9a80f1d219f35e847e6699be",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task8_init12/trace.npz": "988945a9b401f23e23e54abed0af67a20cceb10001744cde5ca65c46f1ef10e3",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task8_init12/external.mp4": "b61d6b7a21e96c92f342ef85756cfa2e2efde2e263261771db0987424033bd75",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task8_init2/trace.npz": "c447e037d1bfbf0f9aa937e3a293d6dc506948bc8a4233ae2d91b372b7c3fb7b",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task8_init2/external.mp4": "da671419ff70c505f6e87b04ea8ce4b1c1f54e08748008852c612a92c26c931b",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task8_init22/trace.npz": "5a2c9f2fd5338103ac5dd083ce27819412441ba493eeb2629b96aa88fe647108",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task8_init22/external.mp4": "f41414914215e3d6807f2ca287591d2d868f5968c8f27d540b154b7ddcf325bd",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task8_init32/trace.npz": "990aa8ccd68d0960685327cf3bab977221e47279c02a01a65c1913fe8fdd3453",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task8_init32/external.mp4": "54ad6104ff0c319f2f74621015a5a5d57eb6de942b1be7951d593771eafdfedd",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task8_init42/trace.npz": "42297e624854364afab0062218442546c30f5dfa88fa981f3687d5ef57d50467",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task8_init42/external.mp4": "32f9da4fe06077bc24e9dab99c80c6e807b0dbc90beaf0fc862f6d967b7936a8",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task9_init12/trace.npz": "6faf7f479e72840c4a91e76b18c31eca998780011d06ebd0f5c2734838e06f1c",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task9_init12/external.mp4": "28eca2def465ede33b7dc64c0d00784cac7310453278ea101c87eeb5ace2f636",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task9_init2/trace.npz": "478d125ceed628a7373e4f0ea618ae26acc7ce2b581762edc9f95d8de621ffb7",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task9_init2/external.mp4": "9ee59fe412c014ad6caf1b02954a22f05ff4c883ace18b38d90164c709fdd6a2",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task9_init22/trace.npz": "c166874012270d1024015588b79169222ee1383f5729da725e18c99bf13f67a0",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task9_init22/external.mp4": "ae061d2cf27c8763acba7196730e15101e7a6a06a5efaf65dcb55e8d5e02e63e",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task9_init32/trace.npz": "95e98b151e59f0e2556b7fc1e39c6c5a5d272cbccb480c7a7f715b0697e48a94",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task9_init32/external.mp4": "c7d48019e5e1609915f8dc54663209385ab92ff70c53e1fd2bfc0a6b2355e09e",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task9_init42/trace.npz": "a17ac3ee71dc9206df77659e5c2a3b541dd7de142e0bb81a297e37f5773d6f78",
+    "results/mini_vla_m6_fast50_20261020_run1/resnet_pretrained/h5/task9_init42/external.mp4": "86b85498cfbaa83142294c6a639d8080dd11b4792c05dca76087f6d40dfcbc39",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task0_init12/trace.npz": "34d06643cb6bc0e03de03f49e496abc8bb8bf1d64d7a76040740890f01b55a32",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task0_init12/external.mp4": "2f02b657b64ad44851791dd1021030f444a20fc8f668282b8d50364ce00ee8d1",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task0_init2/trace.npz": "e44b73c78616e5e28085bf86a1f03dfcbbbdab24a5066dde31120abae0aace70",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task0_init2/external.mp4": "0495b8904e26e6753af67703aaca79ae6b10f26cb3c27fb056c3800699586189",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task0_init22/trace.npz": "4a3f7351bbe4d857906e3ccbad822cd16933700e1fc8a4a934769612f8da543c",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task0_init22/external.mp4": "e9672422dd09e2d2ec5ab2024595f1ef2a5581b4a204bef8319e2417f0b3f8e5",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task0_init32/trace.npz": "f2bc3b8a78834e71e995a22a727ac56da522f9df4d022713410659cab4e0550d",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task0_init32/external.mp4": "85a442ec889282b451635dc7eb298a243e54fe6202e9676be663e445e38a18f8",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task0_init42/trace.npz": "7d52254b85939073c98493fce9e367c77add2a33f95291324ec4e29902548e28",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task0_init42/external.mp4": "4bb9fe3f8270268581690d3a99a5fff80330673365680edfcf40fef9f836ec4d",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task1_init12/trace.npz": "424407acdb97d8cd6bff1c42898b88305fe28a947d3d1f68a6f18ab030bba140",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task1_init12/external.mp4": "4c10e60cc68dba8cb18acbc35e8033b09d6f81268be6a51940b8c3a19cac695e",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task1_init2/trace.npz": "392bdf7f6de56c3448258fd1c280d60c89eb6c3d9e41274490534e2c773850e6",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task1_init2/external.mp4": "aff5a86376cb750e3beb200c3e44b6452bef3f3634d88c6494f7ccec0fc1d01c",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task1_init22/trace.npz": "e3bf44896a1f8fb74c5eefeb90d21656f0ecec972beb1ff39fca7a7665d0c6bc",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task1_init22/external.mp4": "aa3833792a06cff7c8664b11dd7aa45a6a94d2aae6264b91cd70724ce2e4d51c",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task1_init32/trace.npz": "7021aa4c4a5d109952f0e2db75ebf010abf39a44171d75d6ae91397679f477d9",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task1_init32/external.mp4": "8a7f02f9c59b2d2fed61ee0ea2fb0bbd79ebf5b8a9c8d1235e9bf89504ecc10c",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task1_init42/trace.npz": "bc23aaec5a69709e27a87b3fcc48cf2753a583bd7010d0064c78fe82c9df7445",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task1_init42/external.mp4": "8625fe2c839919436c9c741f7086bc5007cba62d0ebc41e767568b357b4737ad",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task2_init12/trace.npz": "8c9aa1984495cc1a15f2047abbf4278ef23166b603fc96fa99a1871f1c9c7cc8",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task2_init12/external.mp4": "c711b1c15d60611417a2d1cef01f5d33f77b886a60f8bce5ae2c69053e5fa059",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task2_init2/trace.npz": "32fa3d4e6ab3429b45fbf0d1045eb72c4c39044b98e8d5b56ec21bf2e62eda58",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task2_init2/external.mp4": "e2e5c60283ad770b57449c74f1c81a8dc9d9b1dfcd3e0e70ad3e63f8987bb356",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task2_init22/trace.npz": "a6fe65c8dc797c384b3ea14018d14ae4ea2a06ae05241df33bbfebcdad4d5393",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task2_init22/external.mp4": "0c633b6d2238e14be1f0291601ef94cfc817653e81178a5169ece86cf7d4d7ee",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task2_init32/trace.npz": "3951f1af14ca075ee9d30f474385b8b1c5b946d218699848ca84f99459fb7682",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task2_init32/external.mp4": "4508ba7f5e88d602863245e073110b5f3010976ab4be3bf625ddcf05ce666417",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task2_init42/trace.npz": "07e8702831fac584399beb249ea5cf1f0fb7518786cf280d40117de8dc29ff1c",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task2_init42/external.mp4": "a899ac83ac7fc95122acda77ae7c2c9be71193c7300bf8fa03b9461236268021",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task3_init12/trace.npz": "686d29876fc3b720b76e24d8bc556c6477b361d56126fabf836a8a896f00d643",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task3_init12/external.mp4": "f8845b95082a0ebb3bc6101350d4716857681e422aaa03ebf043d79d00d87489",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task3_init2/trace.npz": "abfa7b9a3309cb95204b5bbe3a06e34b2b5da9ab346be453b9249e23bd5b0206",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task3_init2/external.mp4": "e283758c3bfb17f4b0137c6041cda12f9b09cab8e1b101abb130684030f4a8ef",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task3_init22/trace.npz": "a37467ef794a741932fab4a51da057d615b406fcfb0fcd9da3fd4fe6f1903a51",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task3_init22/external.mp4": "15328f836108ec88b69983c402c291ae613b3fa85a97c71021983c3687125b83",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task3_init32/trace.npz": "a169b28ababdd88e01fe23037ab0896f0d20e61ce2151b336d69c34eb354e8d2",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task3_init32/external.mp4": "006700186a049a9bec72feba3aa11758ba82cfb008e07e58b467945156d88e43",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task3_init42/trace.npz": "52deec1c5fe3f5ec6bc5319fdbae0059031730b0cad97ac801d77de9d606347f",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task3_init42/external.mp4": "668563e456c5f614f8547621df54eba18003f9ffb4c7170ea6e73d239b113f5b",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task4_init12/trace.npz": "7f960d697a9b5a5fe31b999c3d8a6a98301453804dcca514df2f420f6b670473",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task4_init12/external.mp4": "d75796879ab492ac32bdc739ba71f833eb3052d3de31779c70c36ac3bc870d9b",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task4_init2/trace.npz": "45c6f54637a3af6b1e0448c487a7b101a5f1fc9fe78e8f82540bc7f6249d35cf",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task4_init2/external.mp4": "916f0b73833546be7bd007b8604257977aa39b400d50d7529c13efbb65774813",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task4_init22/trace.npz": "480abfc1199727b7195b26c815883f552e3d63d971a6c31fdef46d8852e08c25",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task4_init22/external.mp4": "93f1d6b5097264f06acefbb8df54f9c69baa835d8c17ba5e6369258ce19b4bfc",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task4_init32/trace.npz": "6e7bda66d9f5287395bc4314fe16a9a438cca1874f9386e915d4ffcd685f28b4",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task4_init32/external.mp4": "9aee048b8f79f9fdac218cd0a9d89a4703480b043d4c2758498bb9c1305dce0e",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task4_init42/trace.npz": "ec007b032b0cdec47e1bc8f32b7929ebc5ed2f7698826e08836a22555753a3b9",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task4_init42/external.mp4": "6f612bcec056057708f4fc5b4350b93d76694a0a4233a5aa10c413fe0a61e576",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task5_init12/trace.npz": "021e96972d3ace4b8946cf99afbfb7093d67f81766b12173c156805a591e0611",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task5_init12/external.mp4": "aea182559a1ef9dd88c5d89da2100b075744ce9648c765237863d9e268d9974a",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task5_init2/trace.npz": "5d033280045422101bc871b9055c7e11f028c92f1956d14a1d7eecb33bb4a9c2",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task5_init2/external.mp4": "0e624dcda5a06e807e491c764c509510b7ba28978c5ec0966322025e8aa57896",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task5_init22/trace.npz": "0a4ab2d72795fd252b2e80f02bf65d0f2a85cf22905e2c55620c3679dc9c9c02",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task5_init22/external.mp4": "ab439097151b2a22a82527e7c3ea834945c5e4027ca7c4d422b9264dfa1e10df",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task5_init32/trace.npz": "f595121019d788b6d3bfc524da0d1a26e72d1be1c7709882f243f7bfeaab7f5d",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task5_init32/external.mp4": "634c7a7783cfad980b5b6cff7a4c09e9e6fe598ff12f1f42c2006a9a6b039ebb",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task5_init42/trace.npz": "b2e31786273c8758598170cfc71cfa8a0810432f2be3dea98b370c28bd2318c4",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task5_init42/external.mp4": "7be1277ef5816897e33d2fbdcaa7b98921b643c3dddd61740a0805b54ba7fdba",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task6_init12/trace.npz": "5517f471f1c83e3015676fcecea34c6db32505cf1d9207bda2b40f25b7c147e0",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task6_init12/external.mp4": "d95497d41beb10f97bc99c5672413b6bf7ed165e89684879f02e93a4793387ed",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task6_init2/trace.npz": "ba69d2c0f2e80bac57330a40b8a0f4009ec91fa80443bbcffe2757b6e5b41653",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task6_init2/external.mp4": "b217828db9d44fcb74c2a46cb1f98685f365740223d2323d3c24bf2ed1bc19ee",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task6_init22/trace.npz": "bc3a714cf4f42e05179af40e9ff83f016b92b7d976e0bca6ca7005c8b0e356b6",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task6_init22/external.mp4": "bb4c17f7e592ef1be07f6e2df456bfa4431720c0a9e24e5e87c72f835fd348f9",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task6_init32/trace.npz": "430487c757ef60a03784af0740c9087542505d535bcc2bed1b4ba7876dbdc79e",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task6_init32/external.mp4": "e352faf9f93504b9d218bd43382d2a5d746eea83e55cbc01b08c7e061e403247",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task6_init42/trace.npz": "8ce926221b680396a93ad4d1670ca0b52ea362ca15cf5f4edb65243e08989779",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task6_init42/external.mp4": "5a997a643412e4ce2fb962d8f84e7287878b7151a0960e5a11af29a5d7266eee",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task7_init12/trace.npz": "8b9b25e7a5513c21d9362a8aadee32fcfa2b5951c36eb4a7d586fbfbbcba059d",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task7_init12/external.mp4": "8d34a1a21c7f5b35f1b10dd0cdb6580792ec7abbb4058ccd5ad65e9a81258b12",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task7_init2/trace.npz": "54e1a7bfb5fcf39cf588a6b7a1aea1365e9775b7432be7c24651e8ecce7faf0b",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task7_init2/external.mp4": "5c1ec68d4ffb786fe96ea60518d1f33fe67fc9029576a861633479a2ec296957",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task7_init22/trace.npz": "81d222b28474595cb2119e838cd87659843fb9a359386021e6f67c80c6f3e69e",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task7_init22/external.mp4": "9aa97cd84f8411acf8697b73ba2627e7297d22e946f31f54ff4ce9423824c256",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task7_init32/trace.npz": "724be6abb858cc3afe7cdef952dfec2c77c77336ff11843b7bc21ba24b2880e9",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task7_init32/external.mp4": "b64c7aec0be88bb28cdd8db5e3566a70a63180bb02e5b3303665706bef79a68c",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task7_init42/trace.npz": "99e651a7aca51d1f5c8edffdfbe4cb332149d60b7db4cfc9b800ff97fb11dadd",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task7_init42/external.mp4": "5a2f6f21202c47f21d4e8a158af98069dee6583f20a36c77fdf899d5d1e36cbd",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task8_init12/trace.npz": "c271dc015dd029dee87292f8da04f233a2852c7c35199ca95df310d103f6b56a",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task8_init12/external.mp4": "1a33a26269648160e89a23417e8838109a8cb5bc497e2110bf30096c1f767d55",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task8_init2/trace.npz": "0d094cbd8eaa8d01566502e1a6fa2de8813d44e1a49648db795ebbadc003a95a",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task8_init2/external.mp4": "592a2d9e54b2b7093264498a88091aa72a433e91f53478ff2593bd6fa3aa2978",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task8_init22/trace.npz": "07eb6a97b3d67ca2161cd8d949d8a1f17d0145c7d6bf4cb9662c78718376534f",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task8_init22/external.mp4": "4e47fa94e56aec57da094ae910eeaee66222d47e7bdf2df5a292c44a52f6e332",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task8_init32/trace.npz": "f8cb5a74b908eecc2fa89c2fff9f513b7fcaa92d2a68df88d3a9f1624c7be3d9",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task8_init32/external.mp4": "3fa84387183b01a819e188a761d138ff57f9efaf3656541a64e8248b8405b317",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task8_init42/trace.npz": "8d0173d83923784fd8f9bd1ae467c519631bf13c9f1be1ae117bd3d83c2e6dfe",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task8_init42/external.mp4": "d0e0b0afbe90d46819d3d322743eb1bdd63cc32ba023668255de21b40781d50d",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task9_init12/trace.npz": "62910e03decd106cf39ea1b5e27fa94800a442b77bc7762f05ffb34cbaae936f",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task9_init12/external.mp4": "0acab22bbcc03821b869126c1d6bd8719c518bb2444649996c5559f38387b234",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task9_init2/trace.npz": "061f79575bb0fa04c49a925f7236d1ace7b09723d489abf04fb582b873cb11a9",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task9_init2/external.mp4": "10af70d4be2e7b40f7c111d8f3571c18f8faa5a8e753ec3e25c394946982b35e",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task9_init22/trace.npz": "caf40e4a93aa7ef9dd63b2f52c5930e5051512d19cdb88e86ebb09da6c6f7c8f",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task9_init22/external.mp4": "d4e9424491c084be07df74eae54b49343e9038ddedf6b7858b989afb6f5a8390",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task9_init32/trace.npz": "1447783469e6b40e242f19daa0999357462f0c223a73d1d7867ef85a6688afe2",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task9_init32/external.mp4": "384553f00934dc2bd9fd7b741a2284fa3bdf5f21bba57c8f1deb88a6b3e726bd",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task9_init42/trace.npz": "2bfef8a63df7f03e42a0955fb08dcfcab285660488972a9fc01e4d7ca62d5dbb",
+    "results/mini_vla_m7a_20261020_run1/resnet_pretrained/h5/task9_init42/external.mp4": "6b455bd3781596c06a17188b806168d6050d40d5d7effe8788de10aed5a1251b"
+  },
+  "videos_selected": [
+    {
+      "variant": "m6",
+      "case": [
+        1,
+        12
+      ],
+      "success": true
+    },
+    {
+      "variant": "m7a",
+      "case": [
+        1,
+        12
+      ],
+      "success": false
+    },
+    {
+      "variant": "m6",
+      "case": [
+        2,
+        42
+      ],
+      "success": true
+    },
+    {
+      "variant": "m7a",
+      "case": [
+        2,
+        42
+      ],
+      "success": false
+    },
+    {
+      "variant": "m6",
+      "case": [
+        4,
+        2
+      ],
+      "success": false
+    },
+    {
+      "variant": "m7a",
+      "case": [
+        4,
+        2
+      ],
+      "success": false
+    },
+    {
+      "variant": "m6",
+      "case": [
+        5,
+        22
+      ],
+      "success": true
+    },
+    {
+      "variant": "m7a",
+      "case": [
+        5,
+        22
+      ],
+      "success": false
+    },
+    {
+      "variant": "m6",
+      "case": [
+        5,
+        42
+      ],
+      "success": true
+    },
+    {
+      "variant": "m7a",
+      "case": [
+        5,
+        42
+      ],
+      "success": false
+    },
+    {
+      "variant": "m6",
+      "case": [
+        7,
+        2
+      ],
+      "success": true
+    },
+    {
+      "variant": "m7a",
+      "case": [
+        7,
+        2
+      ],
+      "success": false
+    },
+    {
+      "variant": "m6",
+      "case": [
+        7,
+        22
+      ],
+      "success": true
+    },
+    {
+      "variant": "m7a",
+      "case": [
+        7,
+        22
+      ],
+      "success": false
+    },
+    {
+      "variant": "m6",
+      "case": [
+        7,
+        32
+      ],
+      "success": true
+    },
+    {
+      "variant": "m7a",
+      "case": [
+        7,
+        32
+      ],
+      "success": false
+    },
+    {
+      "variant": "m6",
+      "case": [
+        7,
+        42
+      ],
+      "success": false
+    },
+    {
+      "variant": "m7a",
+      "case": [
+        7,
+        42
+      ],
+      "success": false
+    },
+    {
+      "variant": "m6",
+      "case": [
+        8,
+        2
+      ],
+      "success": true
+    },
+    {
+      "variant": "m7a",
+      "case": [
+        8,
+        2
+      ],
+      "success": false
+    },
+    {
+      "variant": "m6",
+      "case": [
+        9,
+        2
+      ],
+      "success": true
+    },
+    {
+      "variant": "m7a",
+      "case": [
+        9,
+        2
+      ],
+      "success": false
+    },
+    {
+      "variant": "m6",
+      "case": [
+        9,
+        12
+      ],
+      "success": false
+    },
+    {
+      "variant": "m7a",
+      "case": [
+        9,
+        12
+      ],
+      "success": false
+    },
+    {
+      "variant": "m6",
+      "case": [
+        9,
+        42
+      ],
+      "success": true
+    },
+    {
+      "variant": "m7a",
+      "case": [
+        9,
+        42
+      ],
+      "success": false
+    }
+  ],
+  "elapsed_seconds": 9.369657814968377,
+  "new_training_updates": 0,
+  "confirmation_accessed": false,
+  "claim_boundary": "Adaptive Spatial50, seed42, matched data/updates/normalization. Spatial tokenization and projection capacity jointly change; not parameter-matched and no four-suite success claim."
+}

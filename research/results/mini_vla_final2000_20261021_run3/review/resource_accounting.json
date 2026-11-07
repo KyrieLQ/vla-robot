@@ -1,0 +1,22 @@
+{
+  "at": "2026-10-21T23:32:46.843118+08:00",
+  "total_execution_seconds": 60529.3795448211,
+  "total_limit_seconds": 93600,
+  "modern_execution_seconds": 35716.88904046593,
+  "modern_limit_seconds": 68400,
+  "final_execution_seconds": 6071.899011904374,
+  "final_limit_seconds": 14400,
+  "final_run3_wall_seconds": 5482.910443888977,
+  "audit_and_delivery_charge_seconds": 150.41255808016285,
+  "project_allocated_bytes": 215828279296,
+  "project_limit_bytes": 257698037760,
+  "shared_growth_bytes": 117114056704,
+  "shared_growth_limit_bytes": 150323855360,
+  "modern_charged_growth_bytes": 85868408832,
+  "modern_growth_limit_bytes": 90194313216,
+  "filesystem_available_bytes_snapshot": 355830882304,
+  "filesystem_reserved_bytes": 107374182400,
+  "scope_note": "26h ledger starts at M6; older M1-M4 and recovery ledgers preserved separately. Effective execution includes attempts/audits, not waiting. No claim of metered GPU-hours.",
+  "final_all_runs_allocated_bytes_deduplicated": 1005174784,
+  "final_artifact_limit_bytes": 2147483648
+}

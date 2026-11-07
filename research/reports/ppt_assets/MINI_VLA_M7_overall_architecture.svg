@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2720" height="1530" viewBox="0 0 2720 1530">
+<rect width="100%" height="100%" fill="white"/>
+<text x="1360" y="48" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="42" font-weight="700" fill="#071E4A">M7 · 冻结预训练VLM + 回归动作头</text>
+<text x="1360" y="98" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="30" font-weight="400" fill="#071E4A">完整图文token → 追加本体状态 → 10个动作查询 → 连续动作块</text>
+<rect x="40" y="250" width="310" height="120" rx="12" fill="#F2F7FA" stroke="#7194AC"/>
+<text x="195.0" y="291.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="32" font-weight="700" fill="#071E4A">外部相机 RGB</text>
+<text x="195.0" y="329.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="30" font-weight="400" fill="#071E4A">[B,256,256,3]</text>
+<rect x="40" y="430" width="310" height="120" rx="12" fill="#F2F7FA" stroke="#7194AC"/>
+<text x="195.0" y="471.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="32" font-weight="700" fill="#071E4A">腕部相机 RGB</text>
+<text x="195.0" y="509.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="30" font-weight="400" fill="#071E4A">[B,256,256,3]</text>
+<rect x="40" y="620" width="310" height="110" rx="12" fill="#F2F7FA" stroke="#7194AC"/>
+<text x="195.0" y="656.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="32" font-weight="700" fill="#071E4A">任务文字指令</text>
+<text x="195.0" y="694.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="26" font-weight="400" fill="#071E4A">例如：把碗放到盘上</text>
+<polyline points="350,310 375,310 375,350 400,350" fill="none" stroke="#148EEB" stroke-width="2.5"/>
+<polygon points="400,350 390.0,345.0 390.0,355.0" fill="#148EEB"/>
+<polyline points="350,490 375,490 375,430 400,430" fill="none" stroke="#148EEB" stroke-width="2.5"/>
+<polygon points="400,430 390.0,425.0 390.0,435.0" fill="#148EEB"/>
+<polyline points="350,675 375,675 375,550 400,550" fill="none" stroke="#148EEB" stroke-width="2.5"/>
+<polygon points="400,550 390.0,545.0 390.0,555.0" fill="#148EEB"/>
+<rect x="400" y="245" width="440" height="410" rx="12" fill="#ECF8FD" stroke="#7194AC"/>
+<text x="620" y="282" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="32" font-weight="700" fill="#071E4A">官方 Processor</text>
+<text x="620" y="340" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="24" font-weight="400" fill="#071E4A">图像：在线方向转换、缩放、标准化</text>
+<text x="620" y="383" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#071E4A">两张图处理到512 × 512</text>
+<text x="620" y="425" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="30" font-weight="400" fill="#071E4A">[B,2,3,512,512]</text>
+<polyline points="425,462 815,462" fill="none" stroke="#B6CFDF" stroke-width="1.5"/>
+<text x="620" y="501" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="26" font-weight="400" fill="#071E4A">文字：模板 + 官方 tokenizer</text>
+<text x="620" y="546" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="26" font-weight="400" fill="#071E4A">token IDs + attention mask</text>
+<text x="620" y="601" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="24" font-weight="400" fill="#071E4A">保持相机顺序与输入模板一致</text>
+<rect x="910" y="180" width="640" height="500" rx="12" fill="#ECF8FD" stroke="#148EEB"/>
+<polyline points="930.0,220.0 962.0,220.0" fill="none" stroke="#148EEB" stroke-width="2"/>
+<polyline points="938.0,206.14359353944897 954.0,233.85640646055103" fill="none" stroke="#148EEB" stroke-width="2"/>
+<polyline points="954.0,206.14359353944897 938.0,233.85640646055103" fill="none" stroke="#148EEB" stroke-width="2"/>
+<text x="1238" y="220" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="32" font-weight="700" fill="#071E4A">SmolVLM2-500M · 冻结</text>
+<rect x="940" y="285" width="580" height="110" rx="12" fill="#ECF8FD" stroke="#148EEB"/>
+<text x="1230.0" y="321.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="32" font-weight="700" fill="#071E4A">视觉Transformer + Connector</text>
+<text x="1230.0" y="359.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#071E4A">两图 → 128个视觉token</text>
+<rect x="940" y="490" width="580" height="125" rx="12" fill="#ECF8FD" stroke="#148EEB"/>
+<text x="1230.0" y="533.5" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="32" font-weight="700" fill="#071E4A">图文序列 + 预训练文本Transformer</text>
+<text x="1230.0" y="571.5" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#071E4A">读取完整 last_hidden_state</text>
+<polyline points="840,350 940,350" fill="none" stroke="#148EEB" stroke-width="2.5"/>
+<polygon points="940,350 930.0,345.0 930.0,355.0" fill="#148EEB"/>
+<polyline points="840,550 940,550" fill="none" stroke="#148EEB" stroke-width="2.5"/>
+<polygon points="940,550 930.0,545.0 930.0,555.0" fill="#148EEB"/>
+<polyline points="1230,395 1230,490" fill="none" stroke="#148EEB" stroke-width="2.5"/>
+<polygon points="1230,490 1235.0,480.0 1225.0,480.0" fill="#148EEB"/>
+<text x="1230" y="438" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="24" font-weight="400" fill="#071E4A">视觉特征填入图像token位置</text>
+<text x="1230" y="651" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="24" font-weight="400" fill="#071E4A">约507M载入参数冻结；不生成动作说明文字</text>
+<rect x="1610" y="310" width="420" height="150" rx="12" fill="#EAF6EF" stroke="#258557"/>
+<text x="1820.0" y="347.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="32" font-weight="700" fill="#071E4A">完整图文隐藏表示 H</text>
+<text x="1820.0" y="385.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#071E4A">[B,L,960] · BF16</text>
+<text x="1820.0" y="423.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#071E4A">保留全部有效token</text>
+<polyline points="1520,552 1575,552 1575,385 1610,385" fill="none" stroke="#148EEB" stroke-width="2.5"/>
+<polygon points="1610,385 1600.0,380.0 1600.0,390.0" fill="#148EEB"/>
+<polyline points="1820,460 1820,610" fill="none" stroke="#148EEB" stroke-width="2.5"/>
+<polygon points="1820,610 1825.0,600.0 1815.0,600.0" fill="#148EEB"/>
+<text x="1930" y="532" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="24" font-weight="400" fill="#071E4A">保留 L 轴</text>
+<rect x="1610" y="610" width="420" height="110" rx="12" fill="#FFF3E5" stroke="#C47A25"/>
+<text x="1820.0" y="646.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="32" font-weight="700" fill="#071E4A">可训练图文投影</text>
+<text x="1820.0" y="684.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="30" font-weight="400" fill="#071E4A">Linear 960→128</text>
+<text x="1820" y="762" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="30" font-weight="400" fill="#071E4A">[B,L,128]</text>
+<rect x="2140" y="180" width="510" height="500" rx="12" fill="#FFF9F1" stroke="#D9CAB7"/>
+<text x="2395" y="225" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="32" font-weight="700" fill="#C47A25">训练时：专家监督</text>
+<rect x="2170" y="285" width="450" height="120" rx="12" fill="#F2F7FA" stroke="#7194AC"/>
+<text x="2395.0" y="326.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="32" font-weight="700" fill="#071E4A">标准化专家动作块</text>
+<text x="2395.0" y="364.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="26" font-weight="400" fill="#071E4A">[B,10,7] 及有效位置mask</text>
+<polyline points="2395,405 2395,500" fill="none" stroke="#C47A25" stroke-width="2.5"/>
+<polygon points="2395,500 2400.0,490.0 2390.0,490.0" fill="#C47A25"/>
+<rect x="2170" y="500" width="450" height="120" rx="12" fill="#F2F7FA" stroke="#7194AC"/>
+<text x="2395.0" y="541.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="32" font-weight="700" fill="#071E4A">有效位置 Masked MSE</text>
+<text x="2395.0" y="579.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="26" font-weight="400" fill="#071E4A">L = Σ(m·(â−a)²) / (7·Σm)</text>
+<text x="2395" y="651" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="24" font-weight="400" fill="#071E4A">标签与目标mask不进入部署前向</text>
+<text x="620" y="845" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="28" font-weight="700" fill="#071E4A">本体状态单独编码；不输入VLM</text>
+<rect x="40" y="925" width="310" height="120" rx="12" fill="#F2F7FA" stroke="#7194AC"/>
+<text x="195.0" y="966.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="32" font-weight="700" fill="#071E4A">机器人本体状态</text>
+<text x="195.0" y="1004.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="30" font-weight="400" fill="#071E4A">[B,8]</text>
+<rect x="400" y="925" width="300" height="120" rx="12" fill="#F2F7FA" stroke="#7194AC"/>
+<text x="550.0" y="966.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="32" font-weight="700" fill="#071E4A">训练侧统计标准化</text>
+<text x="550.0" y="1004.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#071E4A">[B,8]</text>
+<polyline points="350,985 400,985" fill="none" stroke="#148EEB" stroke-width="2.5"/>
+<polygon points="400,985 390.0,980.0 390.0,990.0" fill="#148EEB"/>
+<rect x="750" y="920" width="410" height="130" rx="12" fill="#FFF3E5" stroke="#C47A25"/>
+<text x="955.0" y="947.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="32" font-weight="700" fill="#071E4A">可训练状态MLP</text>
+<text x="955.0" y="985.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#071E4A">8→64→ReLU→128</text>
+<text x="955.0" y="1023.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#071E4A">[B,1,128]</text>
+<polyline points="700,985 750,985" fill="none" stroke="#148EEB" stroke-width="2.5"/>
+<polygon points="750,985 740.0,980.0 740.0,990.0" fill="#148EEB"/>
+<rect x="1220" y="920" width="400" height="130" rx="12" fill="#EAF6EF" stroke="#258557"/>
+<text x="1420.0" y="947.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="32" font-weight="700" fill="#071E4A">拼接图文 + 状态token</text>
+<text x="1420.0" y="985.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="26" font-weight="400" fill="#071E4A">memory：[B,L+1,128]</text>
+<text x="1420.0" y="1023.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="26" font-weight="400" fill="#071E4A">padding mask：[B,L+1]</text>
+<polyline points="1160,985 1220,985" fill="none" stroke="#148EEB" stroke-width="2.5"/>
+<polygon points="1220,985 1210.0,980.0 1210.0,990.0" fill="#148EEB"/>
+<polyline points="1820,780 1820,820 1420,820 1420,920" fill="none" stroke="#258557" stroke-width="2.5"/>
+<polygon points="1420,920 1425.0,910.0 1415.0,910.0" fill="#258557"/>
+<rect x="1210" y="1155" width="410" height="135" rx="12" fill="#FFF3E5" stroke="#C47A25"/>
+<text x="1415.0" y="1184.5" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="32" font-weight="700" fill="#071E4A">10个可学习动作查询</text>
+<text x="1415.0" y="1222.5" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#071E4A">参数：[10,128]</text>
+<text x="1415.0" y="1260.5" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#071E4A">扩展：[B,10,128]</text>
+<rect x="1670" y="890" width="410" height="230" rx="12" fill="#FFF3E5" stroke="#C47A25"/>
+<text x="1875.0" y="929.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="32" font-weight="700" fill="#071E4A">可训练动作 Decoder</text>
+<text x="1875.0" y="967.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="24" font-weight="400" fill="#071E4A">1层 · 4头 · 隐藏宽度128</text>
+<text x="1875.0" y="1005.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="24" font-weight="400" fill="#071E4A">查询自注意力 + 交叉注意力</text>
+<text x="1875.0" y="1043.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="24" font-weight="400" fill="#071E4A">FFN：128→512→128，ReLU</text>
+<text x="1875.0" y="1081.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="24" font-weight="400" fill="#071E4A">输出：[B,10,128]</text>
+<polyline points="1620,985 1670,985" fill="none" stroke="#258557" stroke-width="2.5"/>
+<polygon points="1670,985 1660.0,980.0 1660.0,990.0" fill="#258557"/>
+<polyline points="1620,1222 1875,1222 1875,1120" fill="none" stroke="#148EEB" stroke-width="2.5"/>
+<polygon points="1875,1120 1870.0,1130.0 1880.0,1130.0" fill="#148EEB"/>
+<text x="1765" y="1184" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="24" font-weight="400" fill="#071E4A">tgt：查询输入</text>
+<rect x="2130" y="955" width="450" height="100" rx="12" fill="#FFF3E5" stroke="#C47A25"/>
+<text x="2355.0" y="986.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="32" font-weight="700" fill="#071E4A">可训练动作输出层</text>
+<text x="2355.0" y="1024.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="30" font-weight="400" fill="#071E4A">共享 Linear 128→7</text>
+<polyline points="2080,1005 2130,1005" fill="none" stroke="#148EEB" stroke-width="2.5"/>
+<polygon points="2130,1005 2120.0,1000.0 2120.0,1010.0" fill="#148EEB"/>
+<rect x="2130" y="1120" width="450" height="100" rx="12" fill="#EAF6EF" stroke="#258557"/>
+<text x="2355.0" y="1151.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="32" font-weight="700" fill="#071E4A">标准化动作预测</text>
+<text x="2355.0" y="1189.0" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="30" font-weight="400" fill="#071E4A">[B,10,7]</text>
+<polyline points="2355,1055 2355,1120" fill="none" stroke="#148EEB" stroke-width="2.5"/>
+<polygon points="2355,1120 2360.0,1110.0 2350.0,1110.0" fill="#148EEB"/>
+<polyline points="2580,1170 2680,1170 2680,560 2620,560" fill="none" stroke="#C47A25" stroke-width="2.5"/>
+<polygon points="2620,560 2630.0,565.0 2630.0,555.0" fill="#C47A25"/>
+<text x="2620" y="865" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="24" font-weight="400" fill="#C47A25">预测值</text>
+<rect x="2130" y="1320" width="510" height="150" rx="12" fill="#EAF6EF" stroke="#258557"/>
+<text x="2385" y="1347" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="32" font-weight="700" fill="#258557">推理执行：K=10，H=5</text>
+<text x="2385" y="1392" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#071E4A">反标准化 → 截断到 [−1,1]</text>
+<text x="2385" y="1434" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="26" font-weight="400" fill="#071E4A">执行前5步 → 获取新观测再预测</text>
+<polyline points="2355,1220 2355,1270 2385,1270 2385,1320" fill="none" stroke="#258557" stroke-width="2.5"/>
+<polygon points="2385,1320 2390.0,1310.0 2380.0,1310.0" fill="#258557"/>
+<rect x="40" y="1330" width="1950" height="140" rx="12" fill="#F4F8FB" stroke="none"/>
+<text x="1015" y="1362" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="26" font-weight="400" fill="#071E4A">橙色边框：可训练模块，共398,663参数；蓝色VLM框：冻结。</text>
+<text x="1015" y="1404" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="26" font-weight="400" fill="#071E4A">训练可读取已验收的BF16特征缓存；在线必须对新图像与指令重新计算VLM。</text>
+<text x="1015" y="1446" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="25" font-weight="400" fill="#071E4A">L为图文序列长度：当前任务有效长度153–170；batch补位通过mask屏蔽。</text>
+<text x="1360" y="1500" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="24" font-weight="400" fill="#071E4A">M7总体架构 · 当前课程编号（历史实验M8）· 图中宽度、层数及训练范围均对应实际代码</text>
+</svg>

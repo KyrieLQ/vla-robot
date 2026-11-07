@@ -1,0 +1,430 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3432" height="440" viewBox="0 0 3432 440">
+<rect width="100%" height="100%" fill="white"/>
+<rect x="16" y="8" width="350" height="384" rx="12" fill="#ECF8FD" stroke="none"/>
+<circle cx="44" cy="35" r="19" fill="#0563C6" stroke="#0563C6" stroke-width="1.5"/>
+<text x="44" y="35" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="28" font-weight="700" fill="white">1</text>
+<text x="213.5" y="35" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="32" font-weight="700" fill="#071E4A">动作查询输入</text>
+<text x="191.0" y="80" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="30" font-weight="400" fill="#071E4A">10个可学习查询</text>
+<text x="191.0" y="355" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="32" font-weight="400" fill="#071E4A">[B,10,128]</text>
+<polygon points="368,206 379,206 379,195 395,215 379,235 379,224 368,224" fill="#148EEB"/>
+<rect x="396" y="8" width="390" height="384" rx="12" fill="#ECF8FD" stroke="none"/>
+<circle cx="424" cy="35" r="19" fill="#0563C6" stroke="#0563C6" stroke-width="1.5"/>
+<text x="424" y="35" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="28" font-weight="700" fill="white">2</text>
+<text x="613.5" y="35" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="32" font-weight="700" fill="#071E4A">多头自注意力</text>
+<text x="591.0" y="80" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="30" font-weight="400" fill="#071E4A">查询之间交换信息</text>
+<text x="591.0" y="355" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="32" font-weight="400" fill="#071E4A">权重：10 × 10 / 头</text>
+<polygon points="788,206 799,206 799,195 815,215 799,235 799,224 788,224" fill="#148EEB"/>
+<rect x="816" y="8" width="300" height="384" rx="12" fill="#ECF8FD" stroke="none"/>
+<circle cx="844" cy="35" r="19" fill="#0563C6" stroke="#0563C6" stroke-width="1.5"/>
+<text x="844" y="35" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="28" font-weight="700" fill="white">3</text>
+<text x="988.5" y="35" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="32" font-weight="700" fill="#071E4A">残差 + 归一化</text>
+<text x="966.0" y="80" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="30" font-weight="400" fill="#071E4A">Add + LayerNorm</text>
+<text x="966.0" y="355" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="32" font-weight="400" fill="#071E4A">[B,10,128]</text>
+<polygon points="1118,206 1129,206 1129,195 1145,215 1129,235 1129,224 1118,224" fill="#148EEB"/>
+<rect x="1146" y="8" width="460" height="384" rx="12" fill="#ECF8FD" stroke="none"/>
+<circle cx="1174" cy="35" r="19" fill="#0563C6" stroke="#0563C6" stroke-width="1.5"/>
+<text x="1174" y="35" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="28" font-weight="700" fill="white">4</text>
+<text x="1398.5" y="35" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="32" font-weight="700" fill="#071E4A">多头交叉注意力</text>
+<text x="1376.0" y="80" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="30" font-weight="400" fill="#071E4A">Q：查询；K/V：观测</text>
+<text x="1376.0" y="355" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="32" font-weight="400" fill="#071E4A">权重：10 × 4 / 头</text>
+<polygon points="1608,206 1619,206 1619,195 1635,215 1619,235 1619,224 1608,224" fill="#148EEB"/>
+<rect x="1636" y="8" width="300" height="384" rx="12" fill="#ECF8FD" stroke="none"/>
+<circle cx="1664" cy="35" r="19" fill="#0563C6" stroke="#0563C6" stroke-width="1.5"/>
+<text x="1664" y="35" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="28" font-weight="700" fill="white">5</text>
+<text x="1808.5" y="35" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="32" font-weight="700" fill="#071E4A">残差 + 归一化</text>
+<text x="1786.0" y="80" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="30" font-weight="400" fill="#071E4A">Add + LayerNorm</text>
+<text x="1786.0" y="355" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="32" font-weight="400" fill="#071E4A">[B,10,128]</text>
+<polygon points="1938,206 1949,206 1949,195 1965,215 1949,235 1949,224 1938,224" fill="#148EEB"/>
+<rect x="1966" y="8" width="360" height="384" rx="12" fill="#ECF8FD" stroke="none"/>
+<circle cx="1994" cy="35" r="19" fill="#0563C6" stroke="#0563C6" stroke-width="1.5"/>
+<text x="1994" y="35" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="28" font-weight="700" fill="white">6</text>
+<text x="2168.5" y="35" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="32" font-weight="700" fill="#071E4A">前馈网络 (FFN)</text>
+<text x="2146.0" y="80" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="30" font-weight="400" fill="#071E4A">128→256→128</text>
+<text x="2146.0" y="355" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="32" font-weight="400" fill="#071E4A">中间激活：GELU</text>
+<polygon points="2328,206 2339,206 2339,195 2355,215 2339,235 2339,224 2328,224" fill="#148EEB"/>
+<rect x="2356" y="8" width="300" height="384" rx="12" fill="#ECF8FD" stroke="none"/>
+<circle cx="2384" cy="35" r="19" fill="#0563C6" stroke="#0563C6" stroke-width="1.5"/>
+<text x="2384" y="35" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="28" font-weight="700" fill="white">7</text>
+<text x="2528.5" y="35" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="32" font-weight="700" fill="#071E4A">残差 + 归一化</text>
+<text x="2506.0" y="80" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="30" font-weight="400" fill="#071E4A">Add + LayerNorm</text>
+<text x="2506.0" y="355" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="32" font-weight="400" fill="#071E4A">[B,10,128]</text>
+<polygon points="2658,206 2669,206 2669,195 2685,215 2669,235 2669,224 2658,224" fill="#148EEB"/>
+<rect x="2686" y="8" width="360" height="384" rx="12" fill="#ECF8FD" stroke="none"/>
+<circle cx="2714" cy="35" r="19" fill="#0563C6" stroke="#0563C6" stroke-width="1.5"/>
+<text x="2714" y="35" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="28" font-weight="700" fill="white">8</text>
+<text x="2888.5" y="35" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="32" font-weight="700" fill="#071E4A">解码特征输出</text>
+<text x="2866.0" y="80" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="30" font-weight="400" fill="#071E4A">10个动作槽位</text>
+<text x="2866.0" y="355" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="32" font-weight="400" fill="#071E4A">[B,10,128]</text>
+<polygon points="3048,206 3059,206 3059,195 3075,215 3059,235 3059,224 3048,224" fill="#148EEB"/>
+<rect x="3076" y="8" width="340" height="384" rx="12" fill="#ECF8FD" stroke="none"/>
+<circle cx="3104" cy="35" r="19" fill="#0563C6" stroke="#0563C6" stroke-width="1.5"/>
+<text x="3104" y="35" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="28" font-weight="700" fill="white">9</text>
+<text x="3268.5" y="35" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="32" font-weight="700" fill="#071E4A">动作输出 (Linear)</text>
+<text x="3246.0" y="80" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="30" font-weight="400" fill="#071E4A">128 → 7</text>
+<text x="3246.0" y="355" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="32" font-weight="400" fill="#071E4A">[B,10,7]</text>
+<rect x="127.0" y="151" width="164" height="144" rx="0" fill="#A9C7F8" stroke="#194C76"/>
+<polyline points="127.0,165.4 291.0,165.4" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="127.0,179.8 291.0,179.8" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="127.0,194.2 291.0,194.2" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="127.0,208.6 291.0,208.6" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="127.0,223.0 291.0,223.0" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="127.0,237.4 291.0,237.4" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="127.0,251.8 291.0,251.8" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="127.0,266.2 291.0,266.2" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="127.0,280.6 291.0,280.6" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="147.5,151 147.5,295" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="168.0,151 168.0,295" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="188.5,151 188.5,295" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="209.0,151 209.0,295" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="229.5,151 229.5,295" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="250.0,151 250.0,295" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="270.5,151 270.5,295" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<rect x="119.0" y="159" width="164" height="144" rx="0" fill="#A9C7F8" stroke="#194C76"/>
+<polyline points="119.0,173.4 283.0,173.4" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="119.0,187.8 283.0,187.8" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="119.0,202.2 283.0,202.2" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="119.0,216.6 283.0,216.6" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="119.0,231.0 283.0,231.0" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="119.0,245.4 283.0,245.4" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="119.0,259.8 283.0,259.8" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="119.0,274.2 283.0,274.2" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="119.0,288.6 283.0,288.6" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="139.5,159 139.5,303" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="160.0,159 160.0,303" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="180.5,159 180.5,303" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="201.0,159 201.0,303" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="221.5,159 221.5,303" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="242.0,159 242.0,303" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="262.5,159 262.5,303" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<rect x="111.0" y="167" width="164" height="144" rx="0" fill="#A9C7F8" stroke="#194C76"/>
+<polyline points="111.0,181.4 275.0,181.4" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="111.0,195.8 275.0,195.8" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="111.0,210.2 275.0,210.2" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="111.0,224.6 275.0,224.6" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="111.0,239.0 275.0,239.0" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="111.0,253.4 275.0,253.4" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="111.0,267.8 275.0,267.8" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="111.0,282.2 275.0,282.2" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="111.0,296.6 275.0,296.6" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="131.5,167 131.5,311" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="152.0,167 152.0,311" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="172.5,167 172.5,311" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="193.0,167 193.0,311" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="213.5,167 213.5,311" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="234.0,167 234.0,311" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="254.5,167 254.5,311" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<text x="191.0" y="322" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="24" font-weight="400" fill="#071E4A">10 个token，每个128维</text>
+<text x="591.0" y="155" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="24" font-weight="400" fill="#071E4A">Q、K、V：来自同一输入</text>
+<rect x="485" y="178" width="112" height="112" rx="0" fill="#68D89B" stroke="#194C76"/>
+<polyline points="485,189.2 597,189.2" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="485,200.4 597,200.4" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="485,211.6 597,211.6" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="485,222.8 597,222.8" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="485,234.0 597,234.0" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="485,245.2 597,245.2" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="485,256.4 597,256.4" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="485,267.6 597,267.6" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="485,278.8 597,278.8" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="496.2,178 496.2,290" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="507.4,178 507.4,290" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="518.6,178 518.6,290" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="529.8,178 529.8,290" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="541.0,178 541.0,290" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="552.2,178 552.2,290" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="563.4,178 563.4,290" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="574.6,178 574.6,290" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="585.8,178 585.8,290" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<rect x="477" y="186" width="112" height="112" rx="0" fill="#68D89B" stroke="#194C76"/>
+<polyline points="477,197.2 589,197.2" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="477,208.4 589,208.4" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="477,219.6 589,219.6" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="477,230.8 589,230.8" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="477,242.0 589,242.0" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="477,253.2 589,253.2" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="477,264.4 589,264.4" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="477,275.6 589,275.6" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="477,286.8 589,286.8" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="488.2,186 488.2,298" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="499.4,186 499.4,298" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="510.6,186 510.6,298" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="521.8,186 521.8,298" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="533.0,186 533.0,298" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="544.2,186 544.2,298" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="555.4,186 555.4,298" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="566.6,186 566.6,298" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="577.8,186 577.8,298" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<rect x="469" y="194" width="112" height="112" rx="0" fill="#68D89B" stroke="#194C76"/>
+<polyline points="469,205.2 581,205.2" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="469,216.4 581,216.4" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="469,227.6 581,227.6" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="469,238.8 581,238.8" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="469,250.0 581,250.0" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="469,261.2 581,261.2" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="469,272.4 581,272.4" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="469,283.6 581,283.6" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="469,294.8 581,294.8" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="480.2,194 480.2,306" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="491.4,194 491.4,306" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="502.6,194 502.6,306" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="513.8,194 513.8,306" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="525.0,194 525.0,306" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="536.2,194 536.2,306" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="547.4,194 547.4,306" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="558.6,194 558.6,306" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="569.8,194 569.8,306" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<rect x="461" y="202" width="112" height="112" rx="0" fill="#68D89B" stroke="#194C76"/>
+<polyline points="461,213.2 573,213.2" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="461,224.4 573,224.4" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="461,235.6 573,235.6" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="461,246.8 573,246.8" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="461,258.0 573,258.0" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="461,269.2 573,269.2" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="461,280.4 573,280.4" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="461,291.6 573,291.6" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="461,302.8 573,302.8" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="472.2,202 472.2,314" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="483.4,202 483.4,314" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="494.6,202 494.6,314" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="505.8,202 505.8,314" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="517.0,202 517.0,314" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="528.2,202 528.2,314" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="539.4,202 539.4,314" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="550.6,202 550.6,314" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<polyline points="561.8,202 561.8,314" fill="none" stroke="#2A9B61" stroke-width="1"/>
+<text x="691" y="220" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="26" font-weight="400" fill="#071E4A">4 个头</text>
+<text x="691" y="261" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="24" font-weight="400" fill="#071E4A">每头32维</text>
+<circle cx="966.0" cy="198" r="24" fill="#FFFFFF" stroke="#2873B2" stroke-width="1.5"/>
+<text x="966.0" y="195" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="38" font-weight="700" fill="#148EEB">+</text>
+<polyline points="966.0,224 966.0,251" fill="none" stroke="#148EEB" stroke-width="2.5"/>
+<polygon points="966.0,251 971.0,241.0 961.0,241.0" fill="#148EEB"/>
+<rect x="846" y="258" width="240" height="50" rx="6" fill="#D8ECFF" stroke="#4E8AB6"/>
+<text x="966.0" y="282" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="28" font-weight="700" fill="#071E4A">LayerNorm</text>
+<circle cx="1786.0" cy="198" r="24" fill="#FFFFFF" stroke="#2873B2" stroke-width="1.5"/>
+<text x="1786.0" y="195" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="38" font-weight="700" fill="#148EEB">+</text>
+<polyline points="1786.0,224 1786.0,251" fill="none" stroke="#148EEB" stroke-width="2.5"/>
+<polygon points="1786.0,251 1791.0,241.0 1781.0,241.0" fill="#148EEB"/>
+<rect x="1666" y="258" width="240" height="50" rx="6" fill="#D8ECFF" stroke="#4E8AB6"/>
+<text x="1786.0" y="282" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="28" font-weight="700" fill="#071E4A">LayerNorm</text>
+<circle cx="2506.0" cy="198" r="24" fill="#FFFFFF" stroke="#2873B2" stroke-width="1.5"/>
+<text x="2506.0" y="195" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="38" font-weight="700" fill="#148EEB">+</text>
+<polyline points="2506.0,224 2506.0,251" fill="none" stroke="#148EEB" stroke-width="2.5"/>
+<polygon points="2506.0,251 2511.0,241.0 2501.0,241.0" fill="#148EEB"/>
+<rect x="2386" y="258" width="240" height="50" rx="6" fill="#D8ECFF" stroke="#4E8AB6"/>
+<text x="2506.0" y="282" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="28" font-weight="700" fill="#071E4A">LayerNorm</text>
+<text x="1466" y="137" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="24" font-weight="400" fill="#258557">memory：4个token</text>
+<rect x="1411" y="158" width="128" height="38" rx="0" fill="#99DFB5" stroke="#194C76"/>
+<polyline points="1411,167.5 1539,167.5" fill="none" stroke="#3C9C68" stroke-width="1"/>
+<polyline points="1411,177.0 1539,177.0" fill="none" stroke="#3C9C68" stroke-width="1"/>
+<polyline points="1411,186.5 1539,186.5" fill="none" stroke="#3C9C68" stroke-width="1"/>
+<polyline points="1427.0,158 1427.0,196" fill="none" stroke="#3C9C68" stroke-width="1"/>
+<polyline points="1443.0,158 1443.0,196" fill="none" stroke="#3C9C68" stroke-width="1"/>
+<polyline points="1459.0,158 1459.0,196" fill="none" stroke="#3C9C68" stroke-width="1"/>
+<polyline points="1475.0,158 1475.0,196" fill="none" stroke="#3C9C68" stroke-width="1"/>
+<polyline points="1491.0,158 1491.0,196" fill="none" stroke="#3C9C68" stroke-width="1"/>
+<polyline points="1507.0,158 1507.0,196" fill="none" stroke="#3C9C68" stroke-width="1"/>
+<polyline points="1523.0,158 1523.0,196" fill="none" stroke="#3C9C68" stroke-width="1"/>
+<polyline points="1476,196 1476,218 1374,218" fill="none" stroke="#258557" stroke-width="2.5"/>
+<polygon points="1374,218 1384.0,223.0 1384.0,213.0" fill="#258557"/>
+<text x="1476" y="244" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="24" font-weight="400" fill="#258557">K、V</text>
+<text x="1201" y="201" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="26" font-weight="700" fill="#148EEB">Q</text>
+<polyline points="1171,230 1254,230" fill="none" stroke="#148EEB" stroke-width="2.5"/>
+<polygon points="1254,230 1244.0,225.0 1244.0,235.0" fill="#148EEB"/>
+<rect x="1285" y="194" width="88" height="102" rx="0" fill="#FFB555" stroke="#194C76"/>
+<polyline points="1285,204.2 1373,204.2" fill="none" stroke="#CE832F" stroke-width="1"/>
+<polyline points="1285,214.4 1373,214.4" fill="none" stroke="#CE832F" stroke-width="1"/>
+<polyline points="1285,224.6 1373,224.6" fill="none" stroke="#CE832F" stroke-width="1"/>
+<polyline points="1285,234.8 1373,234.8" fill="none" stroke="#CE832F" stroke-width="1"/>
+<polyline points="1285,245.0 1373,245.0" fill="none" stroke="#CE832F" stroke-width="1"/>
+<polyline points="1285,255.2 1373,255.2" fill="none" stroke="#CE832F" stroke-width="1"/>
+<polyline points="1285,265.4 1373,265.4" fill="none" stroke="#CE832F" stroke-width="1"/>
+<polyline points="1285,275.6 1373,275.6" fill="none" stroke="#CE832F" stroke-width="1"/>
+<polyline points="1285,285.8 1373,285.8" fill="none" stroke="#CE832F" stroke-width="1"/>
+<polyline points="1307.0,194 1307.0,296" fill="none" stroke="#CE832F" stroke-width="1"/>
+<polyline points="1329.0,194 1329.0,296" fill="none" stroke="#CE832F" stroke-width="1"/>
+<polyline points="1351.0,194 1351.0,296" fill="none" stroke="#CE832F" stroke-width="1"/>
+<rect x="1277" y="202" width="88" height="102" rx="0" fill="#FFB555" stroke="#194C76"/>
+<polyline points="1277,212.2 1365,212.2" fill="none" stroke="#CE832F" stroke-width="1"/>
+<polyline points="1277,222.4 1365,222.4" fill="none" stroke="#CE832F" stroke-width="1"/>
+<polyline points="1277,232.6 1365,232.6" fill="none" stroke="#CE832F" stroke-width="1"/>
+<polyline points="1277,242.8 1365,242.8" fill="none" stroke="#CE832F" stroke-width="1"/>
+<polyline points="1277,253.0 1365,253.0" fill="none" stroke="#CE832F" stroke-width="1"/>
+<polyline points="1277,263.2 1365,263.2" fill="none" stroke="#CE832F" stroke-width="1"/>
+<polyline points="1277,273.4 1365,273.4" fill="none" stroke="#CE832F" stroke-width="1"/>
+<polyline points="1277,283.6 1365,283.6" fill="none" stroke="#CE832F" stroke-width="1"/>
+<polyline points="1277,293.8 1365,293.8" fill="none" stroke="#CE832F" stroke-width="1"/>
+<polyline points="1299.0,202 1299.0,304" fill="none" stroke="#CE832F" stroke-width="1"/>
+<polyline points="1321.0,202 1321.0,304" fill="none" stroke="#CE832F" stroke-width="1"/>
+<polyline points="1343.0,202 1343.0,304" fill="none" stroke="#CE832F" stroke-width="1"/>
+<rect x="1269" y="210" width="88" height="102" rx="0" fill="#FFB555" stroke="#194C76"/>
+<polyline points="1269,220.2 1357,220.2" fill="none" stroke="#CE832F" stroke-width="1"/>
+<polyline points="1269,230.4 1357,230.4" fill="none" stroke="#CE832F" stroke-width="1"/>
+<polyline points="1269,240.6 1357,240.6" fill="none" stroke="#CE832F" stroke-width="1"/>
+<polyline points="1269,250.8 1357,250.8" fill="none" stroke="#CE832F" stroke-width="1"/>
+<polyline points="1269,261.0 1357,261.0" fill="none" stroke="#CE832F" stroke-width="1"/>
+<polyline points="1269,271.2 1357,271.2" fill="none" stroke="#CE832F" stroke-width="1"/>
+<polyline points="1269,281.4 1357,281.4" fill="none" stroke="#CE832F" stroke-width="1"/>
+<polyline points="1269,291.6 1357,291.6" fill="none" stroke="#CE832F" stroke-width="1"/>
+<polyline points="1269,301.8 1357,301.8" fill="none" stroke="#CE832F" stroke-width="1"/>
+<polyline points="1291.0,210 1291.0,312" fill="none" stroke="#CE832F" stroke-width="1"/>
+<polyline points="1313.0,210 1313.0,312" fill="none" stroke="#CE832F" stroke-width="1"/>
+<polyline points="1335.0,210 1335.0,312" fill="none" stroke="#CE832F" stroke-width="1"/>
+<rect x="1261" y="218" width="88" height="102" rx="0" fill="#FFB555" stroke="#194C76"/>
+<polyline points="1261,228.2 1349,228.2" fill="none" stroke="#CE832F" stroke-width="1"/>
+<polyline points="1261,238.4 1349,238.4" fill="none" stroke="#CE832F" stroke-width="1"/>
+<polyline points="1261,248.6 1349,248.6" fill="none" stroke="#CE832F" stroke-width="1"/>
+<polyline points="1261,258.8 1349,258.8" fill="none" stroke="#CE832F" stroke-width="1"/>
+<polyline points="1261,269.0 1349,269.0" fill="none" stroke="#CE832F" stroke-width="1"/>
+<polyline points="1261,279.2 1349,279.2" fill="none" stroke="#CE832F" stroke-width="1"/>
+<polyline points="1261,289.4 1349,289.4" fill="none" stroke="#CE832F" stroke-width="1"/>
+<polyline points="1261,299.6 1349,299.6" fill="none" stroke="#CE832F" stroke-width="1"/>
+<polyline points="1261,309.8 1349,309.8" fill="none" stroke="#CE832F" stroke-width="1"/>
+<polyline points="1283.0,218 1283.0,320" fill="none" stroke="#CE832F" stroke-width="1"/>
+<polyline points="1305.0,218 1305.0,320" fill="none" stroke="#CE832F" stroke-width="1"/>
+<polyline points="1327.0,218 1327.0,320" fill="none" stroke="#CE832F" stroke-width="1"/>
+<text x="1476" y="286" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="24" font-weight="400" fill="#071E4A">4 个注意力头</text>
+<polyline points="2027,170 2137.0,151" fill="none" stroke="#384A5B" stroke-width="1"/>
+<polyline points="2027,170 2137.0,187" fill="none" stroke="#384A5B" stroke-width="1"/>
+<polyline points="2027,170 2137.0,223" fill="none" stroke="#384A5B" stroke-width="1"/>
+<polyline points="2027,170 2137.0,259" fill="none" stroke="#384A5B" stroke-width="1"/>
+<polyline points="2027,170 2137.0,295" fill="none" stroke="#384A5B" stroke-width="1"/>
+<polyline points="2027,209 2137.0,151" fill="none" stroke="#384A5B" stroke-width="1"/>
+<polyline points="2027,209 2137.0,187" fill="none" stroke="#384A5B" stroke-width="1"/>
+<polyline points="2027,209 2137.0,223" fill="none" stroke="#384A5B" stroke-width="1"/>
+<polyline points="2027,209 2137.0,259" fill="none" stroke="#384A5B" stroke-width="1"/>
+<polyline points="2027,209 2137.0,295" fill="none" stroke="#384A5B" stroke-width="1"/>
+<polyline points="2027,248 2137.0,151" fill="none" stroke="#384A5B" stroke-width="1"/>
+<polyline points="2027,248 2137.0,187" fill="none" stroke="#384A5B" stroke-width="1"/>
+<polyline points="2027,248 2137.0,223" fill="none" stroke="#384A5B" stroke-width="1"/>
+<polyline points="2027,248 2137.0,259" fill="none" stroke="#384A5B" stroke-width="1"/>
+<polyline points="2027,248 2137.0,295" fill="none" stroke="#384A5B" stroke-width="1"/>
+<polyline points="2027,287 2137.0,151" fill="none" stroke="#384A5B" stroke-width="1"/>
+<polyline points="2027,287 2137.0,187" fill="none" stroke="#384A5B" stroke-width="1"/>
+<polyline points="2027,287 2137.0,223" fill="none" stroke="#384A5B" stroke-width="1"/>
+<polyline points="2027,287 2137.0,259" fill="none" stroke="#384A5B" stroke-width="1"/>
+<polyline points="2027,287 2137.0,295" fill="none" stroke="#384A5B" stroke-width="1"/>
+<polyline points="2155.0,151 2265,170" fill="none" stroke="#384A5B" stroke-width="1"/>
+<polyline points="2155.0,151 2265,209" fill="none" stroke="#384A5B" stroke-width="1"/>
+<polyline points="2155.0,151 2265,248" fill="none" stroke="#384A5B" stroke-width="1"/>
+<polyline points="2155.0,151 2265,287" fill="none" stroke="#384A5B" stroke-width="1"/>
+<polyline points="2155.0,187 2265,170" fill="none" stroke="#384A5B" stroke-width="1"/>
+<polyline points="2155.0,187 2265,209" fill="none" stroke="#384A5B" stroke-width="1"/>
+<polyline points="2155.0,187 2265,248" fill="none" stroke="#384A5B" stroke-width="1"/>
+<polyline points="2155.0,187 2265,287" fill="none" stroke="#384A5B" stroke-width="1"/>
+<polyline points="2155.0,223 2265,170" fill="none" stroke="#384A5B" stroke-width="1"/>
+<polyline points="2155.0,223 2265,209" fill="none" stroke="#384A5B" stroke-width="1"/>
+<polyline points="2155.0,223 2265,248" fill="none" stroke="#384A5B" stroke-width="1"/>
+<polyline points="2155.0,223 2265,287" fill="none" stroke="#384A5B" stroke-width="1"/>
+<polyline points="2155.0,259 2265,170" fill="none" stroke="#384A5B" stroke-width="1"/>
+<polyline points="2155.0,259 2265,209" fill="none" stroke="#384A5B" stroke-width="1"/>
+<polyline points="2155.0,259 2265,248" fill="none" stroke="#384A5B" stroke-width="1"/>
+<polyline points="2155.0,259 2265,287" fill="none" stroke="#384A5B" stroke-width="1"/>
+<polyline points="2155.0,295 2265,170" fill="none" stroke="#384A5B" stroke-width="1"/>
+<polyline points="2155.0,295 2265,209" fill="none" stroke="#384A5B" stroke-width="1"/>
+<polyline points="2155.0,295 2265,248" fill="none" stroke="#384A5B" stroke-width="1"/>
+<polyline points="2155.0,295 2265,287" fill="none" stroke="#384A5B" stroke-width="1"/>
+<circle cx="2018" cy="170" r="9" fill="#48ADF6" stroke="#174365" stroke-width="1.5"/>
+<circle cx="2018" cy="209" r="9" fill="#48ADF6" stroke="#174365" stroke-width="1.5"/>
+<circle cx="2018" cy="248" r="9" fill="#48ADF6" stroke="#174365" stroke-width="1.5"/>
+<circle cx="2018" cy="287" r="9" fill="#48ADF6" stroke="#174365" stroke-width="1.5"/>
+<circle cx="2146.0" cy="151" r="9" fill="#69D198" stroke="#174365" stroke-width="1.5"/>
+<circle cx="2146.0" cy="187" r="9" fill="#69D198" stroke="#174365" stroke-width="1.5"/>
+<circle cx="2146.0" cy="223" r="9" fill="#69D198" stroke="#174365" stroke-width="1.5"/>
+<circle cx="2146.0" cy="259" r="9" fill="#69D198" stroke="#174365" stroke-width="1.5"/>
+<circle cx="2146.0" cy="295" r="9" fill="#69D198" stroke="#174365" stroke-width="1.5"/>
+<circle cx="2274" cy="170" r="9" fill="#FFA43F" stroke="#174365" stroke-width="1.5"/>
+<circle cx="2274" cy="209" r="9" fill="#FFA43F" stroke="#174365" stroke-width="1.5"/>
+<circle cx="2274" cy="248" r="9" fill="#FFA43F" stroke="#174365" stroke-width="1.5"/>
+<circle cx="2274" cy="287" r="9" fill="#FFA43F" stroke="#174365" stroke-width="1.5"/>
+<text x="2018" y="326" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="24" font-weight="400" fill="#071E4A">128</text>
+<text x="2146.0" y="326" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="24" font-weight="400" fill="#071E4A">256</text>
+<text x="2274" y="326" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="24" font-weight="400" fill="#071E4A">128</text>
+<rect x="2802.0" y="151" width="164" height="144" rx="0" fill="#9DCEF7" stroke="#194C76"/>
+<polyline points="2802.0,165.4 2966.0,165.4" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="2802.0,179.8 2966.0,179.8" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="2802.0,194.2 2966.0,194.2" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="2802.0,208.6 2966.0,208.6" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="2802.0,223.0 2966.0,223.0" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="2802.0,237.4 2966.0,237.4" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="2802.0,251.8 2966.0,251.8" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="2802.0,266.2 2966.0,266.2" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="2802.0,280.6 2966.0,280.6" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="2822.5,151 2822.5,295" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="2843.0,151 2843.0,295" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="2863.5,151 2863.5,295" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="2884.0,151 2884.0,295" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="2904.5,151 2904.5,295" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="2925.0,151 2925.0,295" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="2945.5,151 2945.5,295" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<rect x="2794.0" y="159" width="164" height="144" rx="0" fill="#9DCEF7" stroke="#194C76"/>
+<polyline points="2794.0,173.4 2958.0,173.4" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="2794.0,187.8 2958.0,187.8" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="2794.0,202.2 2958.0,202.2" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="2794.0,216.6 2958.0,216.6" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="2794.0,231.0 2958.0,231.0" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="2794.0,245.4 2958.0,245.4" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="2794.0,259.8 2958.0,259.8" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="2794.0,274.2 2958.0,274.2" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="2794.0,288.6 2958.0,288.6" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="2814.5,159 2814.5,303" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="2835.0,159 2835.0,303" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="2855.5,159 2855.5,303" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="2876.0,159 2876.0,303" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="2896.5,159 2896.5,303" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="2917.0,159 2917.0,303" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="2937.5,159 2937.5,303" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<rect x="2786.0" y="167" width="164" height="144" rx="0" fill="#9DCEF7" stroke="#194C76"/>
+<polyline points="2786.0,181.4 2950.0,181.4" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="2786.0,195.8 2950.0,195.8" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="2786.0,210.2 2950.0,210.2" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="2786.0,224.6 2950.0,224.6" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="2786.0,239.0 2950.0,239.0" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="2786.0,253.4 2950.0,253.4" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="2786.0,267.8 2950.0,267.8" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="2786.0,282.2 2950.0,282.2" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="2786.0,296.6 2950.0,296.6" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="2806.5,167 2806.5,311" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="2827.0,167 2827.0,311" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="2847.5,167 2847.5,311" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="2868.0,167 2868.0,311" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="2888.5,167 2888.5,311" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="2909.0,167 2909.0,311" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<polyline points="2929.5,167 2929.5,311" fill="none" stroke="#3D8DBF" stroke-width="1"/>
+<text x="2866.0" y="322" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="24" font-weight="400" fill="#071E4A">10 个token，每个128维</text>
+<polyline points="3152,150 3340,170" fill="none" stroke="#384A5B" stroke-width="1.1"/>
+<polyline points="3152,150 3340,220" fill="none" stroke="#384A5B" stroke-width="1.1"/>
+<polyline points="3152,150 3340,270" fill="none" stroke="#384A5B" stroke-width="1.1"/>
+<polyline points="3152,190 3340,170" fill="none" stroke="#384A5B" stroke-width="1.1"/>
+<polyline points="3152,190 3340,220" fill="none" stroke="#384A5B" stroke-width="1.1"/>
+<polyline points="3152,190 3340,270" fill="none" stroke="#384A5B" stroke-width="1.1"/>
+<polyline points="3152,230 3340,170" fill="none" stroke="#384A5B" stroke-width="1.1"/>
+<polyline points="3152,230 3340,220" fill="none" stroke="#384A5B" stroke-width="1.1"/>
+<polyline points="3152,230 3340,270" fill="none" stroke="#384A5B" stroke-width="1.1"/>
+<polyline points="3152,270 3340,170" fill="none" stroke="#384A5B" stroke-width="1.1"/>
+<polyline points="3152,270 3340,220" fill="none" stroke="#384A5B" stroke-width="1.1"/>
+<polyline points="3152,270 3340,270" fill="none" stroke="#384A5B" stroke-width="1.1"/>
+<polyline points="3152,310 3340,170" fill="none" stroke="#384A5B" stroke-width="1.1"/>
+<polyline points="3152,310 3340,220" fill="none" stroke="#384A5B" stroke-width="1.1"/>
+<polyline points="3152,310 3340,270" fill="none" stroke="#384A5B" stroke-width="1.1"/>
+<circle cx="3141" cy="150" r="10" fill="#48ADF6" stroke="#174365" stroke-width="1.5"/>
+<circle cx="3141" cy="190" r="10" fill="#48ADF6" stroke="#174365" stroke-width="1.5"/>
+<circle cx="3141" cy="230" r="10" fill="#48ADF6" stroke="#174365" stroke-width="1.5"/>
+<circle cx="3141" cy="270" r="10" fill="#48ADF6" stroke="#174365" stroke-width="1.5"/>
+<circle cx="3141" cy="310" r="10" fill="#48ADF6" stroke="#174365" stroke-width="1.5"/>
+<circle cx="3351" cy="170" r="10" fill="#FFA43F" stroke="#86431F" stroke-width="1.5"/>
+<circle cx="3351" cy="220" r="10" fill="#FFA43F" stroke="#86431F" stroke-width="1.5"/>
+<circle cx="3351" cy="270" r="10" fill="#FFA43F" stroke="#86431F" stroke-width="1.5"/>
+<text x="3246.0" y="115" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="24" font-weight="400" fill="#071E4A">每个槽位共用同一层</text>
+<circle cx="381" cy="215" r="3.2" fill="#C47A25" stroke="#C47A25" stroke-width="1.5"/>
+<polyline points="381,215 381,119 966.0,119 966.0,172" fill="none" stroke="#C47A25" stroke-width="2.5"/>
+<polygon points="966.0,172 971.0,162.0 961.0,162.0" fill="#C47A25"/>
+<text x="673.5" y="105" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="24" font-weight="400" fill="#C47A25">残差连接</text>
+<circle cx="1131" cy="215" r="3.2" fill="#C47A25" stroke="#C47A25" stroke-width="1.5"/>
+<polyline points="1131,215 1131,119 1786.0,119 1786.0,172" fill="none" stroke="#C47A25" stroke-width="2.5"/>
+<polygon points="1786.0,172 1791.0,162.0 1781.0,162.0" fill="#C47A25"/>
+<text x="1458.5" y="105" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="24" font-weight="400" fill="#C47A25">残差连接</text>
+<circle cx="1951" cy="215" r="3.2" fill="#C47A25" stroke="#C47A25" stroke-width="1.5"/>
+<polyline points="1951,215 1951,119 2506.0,119 2506.0,172" fill="none" stroke="#C47A25" stroke-width="2.5"/>
+<polygon points="2506.0,172 2511.0,162.0 2501.0,162.0" fill="#C47A25"/>
+<text x="2228.5" y="105" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="24" font-weight="400" fill="#C47A25">残差连接</text>
+<text x="1716.0" y="421" dominant-baseline="central" text-anchor="middle" font-family="Noto Sans CJK SC" font-size="24" font-weight="400" fill="#071E4A">Decoder：1层；4头；Post-LN；无因果mask；dropout=0。第9栏为decoder外接动作输出层。</text>
+</svg>

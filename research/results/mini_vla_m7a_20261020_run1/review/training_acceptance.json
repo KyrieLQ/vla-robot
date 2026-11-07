@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "epochs": 50,
+  "updates": 94950,
+  "train_frames_per_epoch": 243000,
+  "validation_frames": 30465,
+  "valid_K10_validation_targets": 296235,
+  "selected_epoch": 1,
+  "checkpoints": {
+    "initial": {
+      "epoch": 0,
+      "updates": 0,
+      "sha256": "38ede48ee25bfb0aa8edc42fcab913b328940bf3dcf4d2b9d509de52e13663c9"
+    },
+    "best": {
+      "epoch": 1,
+      "updates": 1899,
+      "sha256": "0c421fa7eff783f448f84105280c0d125e57a173805575c12e7d2a3adac0e85c"
+    },
+    "latest": {
+      "epoch": 50,
+      "updates": 94950,
+      "sha256": "55c30ec7e69ec1db6800690cb9a92a54d2a047731e0ec14c9335f5bfca9b2b73"
+    }
+  },
+  "independent_GPU_validation": {
+    "normalized_mse": 0.33013068892550684,
+    "all_valid_chunk_mse": 0.32427244346555034,
+    "mean_action_normalized_mse": 0.9880714085375778
+  },
+  "numerical_backend": "FP32 CUDA, batch128 matching training validation; independent numpy float64 target/error aggregation",
+  "per_suite_validation_mse": {
+    "spatial": 0.3940728065285991,
+    "object": 0.23378322536470642,
+    "goal": 0.4028160397073642,
+    "long": 0.3233996978960086
+  },
+  "all_per_task_values_matched": true,
+  "changed_module_groups": [
+    "vision",
+    "language",
+    "state",
+    "encoder",
+    "decoder",
+    "queries",
+    "output",
+    "grid_projection",
+    "spatial_position"
+  ],
+  "elapsed_seconds": 15.723046905826777,
+  "simulation_episodes": 0,
+  "confirmation_accessed": false,
+  "claim_boundary": "M7a full offline validation and gradient/initialization audit; no new updates, closed-loop, or confirmation access."
+}

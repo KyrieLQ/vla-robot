@@ -1,0 +1,9 @@
+{
+  "source": "/data1/niuye/lq/pi05_lora_libero/results/mini_vla_m3_20261019_run2",
+  "acceptance_sha256": "4b57a49d3cee11524227714d58dedea239c0c235983938c6f498054d96c64f1a",
+  "reused_training_variants": 3,
+  "reused_closed_loop_episodes": 100,
+  "new_closed_loop_episodes": 50,
+  "original_plan_sha256": "434efa07ba3cad1de26177232a6f275d9abaae7237c769ce45349612893739ef",
+  "training_updates_added": 0
+}

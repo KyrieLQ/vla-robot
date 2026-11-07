@@ -1,0 +1,105 @@
+{
+  "status": "PASS",
+  "completed_at": "2026-10-15T08:44:17.957236+00:00",
+  "device": "cpu",
+  "threads": 4,
+  "torch_version": "2.7.1+cu126",
+  "elapsed_seconds": 7.621830777032301,
+  "unit_checks_passed": 5,
+  "split": {
+    "train_episodes": 384,
+    "validation_episodes": 48,
+    "train_frames": 46982
+  },
+  "train_only_statistics_independent_recalculation": "PASS",
+  "parameters": 786599,
+  "parameters_by_module": {
+    "vision": 286752,
+    "language": 1792,
+    "proprioception": 4736,
+    "fusion": 459520,
+    "action_head": 33799
+  },
+  "output_shape": [
+    1,
+    1,
+    7
+  ],
+  "real_example_loss_untrained": 0.3747134506702423,
+  "gradient_l1_by_module": {
+    "vision": 2.629214446642436,
+    "language": 0.02626819908618927,
+    "proprioception": 0.2819956270977855,
+    "fusion": 19.64826500415802,
+    "action_head": 8.332005977630615
+  },
+  "input_change_max_output_difference": {
+    "image": 0.00048151612281799316,
+    "wrist_image": 0.0001767631620168686,
+    "state": 0.0015532150864601135,
+    "token_ids": 0.019366763532161713
+  },
+  "input_sensitivity_scope": "Connectivity only, not learned language or control competence",
+  "label_exclusion": "PASS",
+  "checkpoint_roundtrip": "EXACT",
+  "training_inference_preprocessing": "EXACT",
+  "normalization_roundtrip": "PASS",
+  "synthetic_fit": {
+    "steps": 30,
+    "initial_mse": 0.14918239414691925,
+    "final_mse": 0.00017065007705241442,
+    "curve": [
+      0.14918239414691925,
+      0.12908418476581573,
+      0.11486227065324783,
+      0.09415081888437271,
+      0.06555303186178207,
+      0.0353194959461689,
+      0.037875134497880936,
+      0.017984243109822273,
+      0.0031165778636932373,
+      0.0015051396330818534,
+      0.002838627900928259,
+      0.0035085075069218874,
+      0.003951861523091793,
+      0.00471020070835948,
+      0.005205568857491016,
+      0.004526984412223101,
+      0.0029261165764182806,
+      0.0014665293274447322,
+      0.0007241725688800216,
+      0.0005466044531203806,
+      0.0005618096911348403,
+      0.0005233596893958747,
+      0.00048456116928718984,
+      0.0005598407005891204,
+      0.0007190912729129195,
+      0.0007811912219040096,
+      0.0006648286362178624,
+      0.00045211726683191955,
+      0.0002860698732547462,
+      0.0002100614656228572
+    ],
+    "weights_retained": false
+  },
+  "real_data_optimizer_updates": 0,
+  "new_simulation_episodes": 0,
+  "confirmation_episodes": 0,
+  "source_hashes": {
+    "mini_vla/__init__.py": "de234f7a7e7222b55e194a2a2a7b410389693c57339f27aacd1386ab7d7e50e9",
+    "mini_vla/data.py": "78854966383cdb986c0232c9710d6d350a77e9e82ef0e0b3cf83ddaa043a9a30",
+    "mini_vla/model.py": "ad427864acd56401f98f7acf6cace5e3dcea2bed37c099078eada7dafa0ef204",
+    "mini_vla/policy.py": "2406ec414c729b934d3f106049fa674fd6f825bf03e2fa6d6150ee05ae05034c",
+    "mini_vla/prepare.py": "6bce5770f8b72730a42de3ebc1e91ba5b0d91c775706fe7528bbdc404ba52097",
+    "mini_vla/tests/__init__.py": "f7e95f0cf49c3a090cbcbee255b01cddd66b4071a4d2b441d7ecd12f361c3ec5",
+    "mini_vla/tests/test_contract.py": "5cd79462c7127e152591440e65e3a61bbba427b8306ce1b26b621e6cce233d25",
+    "mini_vla/verify.py": "fba72c87b62c4f4c11a2091b0f6b0a71c8878eb1ae87f72fafb9a35368711e59"
+  },
+  "artifact_hashes": {
+    "configs/mini_vla_m0_20261015_v1.json": "447a082369d76dad23c21381aaf66a6961b14b74b2418e73dc9340499b7d3c29",
+    "configs/mini_vla_split_20261015_v1.json": "37dbbefe4ba96dec383806ac7107dc39da92c0d2ccafc8d35f8d63aababd8bf2",
+    "results/mini_vla_m0_20261015_v1/preprocessing.json": "e23e588d3287f576fe48823cde1073b6840e84f20d9c87df543c6e782ffbfae1",
+    "results/mini_vla_m0_20261015_v1/untrained_model.pt": "73064d3f4a683135790867cbd97dc0df6b079f2229ade687866d27f455431db7"
+  },
+  "artifact_bytes_before_report": 3430508
+}

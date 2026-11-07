@@ -1,0 +1,22 @@
+{
+  "status": "APPROVED",
+  "thread": "PUBLIC_REPRODUCTION",
+  "date": "2026-11-03",
+  "recorded_at": "2026-11-03T07:31:11.160816+00:00",
+  "user_request": "进行",
+  "authorization_context": "User explicitly accepted the immediately preceding staged Flow diagnosis/improvement plan: noise and chunk continuity, tail-input consistency, then separate decoder-depth and time-conditioning comparisons.",
+  "scope": "Stage1 same-checkpoint persistent-noise Spatial50; stage2 original-size loss-only tail-mask training full50epochs+Spatial50; up to two separately frozen structural comparisons for decoder depth and time conditioning after evidence review. No unrelated experiments.",
+  "time_overrun_allowed": true,
+  "time_basis": "The latest explicit request extends necessary execution to this bounded improvement sequence; prior explicit necessary-time-overrun preference remains. Each stage gets an operational guard and real throughput admission; all accumulated time retained.",
+  "storage_caps_increased": false,
+  "old_ledgers_preserved": true,
+  "new_VLM_updates": false,
+  "final2000_access": false,
+  "max_simultaneous_gpus": 2,
+  "gpu_sharing_approval": "configs/mini_vla_shared_gpu_20261029_APPROVED.json",
+  "additional_whole_feature_disk_cache": false,
+  "maximum_new_training_arms": 3,
+  "maximum_new_development_episodes": 200,
+  "maximum_new_artifact_bytes": 2147483648,
+  "require_per_stage_frozen_protocol": true
+}

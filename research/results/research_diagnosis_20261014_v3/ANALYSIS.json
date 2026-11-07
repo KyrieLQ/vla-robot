@@ -1,0 +1,458 @@
+{
+  "status": "COMPLETE",
+  "generated_at": "2026-10-14T05:12:14.203070+08:00",
+  "n_policy_episodes_used": 1000,
+  "n_policy_episodes_expected": 1000,
+  "unique_development_scenarios": 200,
+  "confirmation_episodes_used": 0,
+  "training_seed_count": 1,
+  "summaries": {
+    "ckpt30k_prefix5": {
+      "n_used": 200,
+      "n_expected": 200,
+      "successes_at_220": 170,
+      "success_rate_at_220": 0.85,
+      "per_task_successes": [
+        18,
+        18,
+        20,
+        19,
+        10,
+        18,
+        18,
+        17,
+        16,
+        16
+      ],
+      "primary_policy_calls": 5065,
+      "primary_inference_seconds": 810.2692037846427,
+      "calls_per_primary_success": 29.794117647058822,
+      "total_episode_wall_seconds_including_extensions": 1785.8516105220187,
+      "late_successes_221_to_440": 8
+    },
+    "ckpt10k_prefix5": {
+      "n_used": 200,
+      "n_expected": 200,
+      "successes_at_220": 119,
+      "success_rate_at_220": 0.595,
+      "per_task_successes": [
+        14,
+        5,
+        15,
+        14,
+        15,
+        10,
+        14,
+        11,
+        16,
+        5
+      ],
+      "primary_policy_calls": 6360,
+      "primary_inference_seconds": 1072.3493524962105,
+      "calls_per_primary_success": 53.445378151260506,
+      "total_episode_wall_seconds_including_extensions": 1949.9813986723311,
+      "late_successes_221_to_440": 0
+    },
+    "ckpt20k_prefix5": {
+      "n_used": 200,
+      "n_expected": 200,
+      "successes_at_220": 152,
+      "success_rate_at_220": 0.76,
+      "per_task_successes": [
+        19,
+        10,
+        16,
+        17,
+        15,
+        15,
+        16,
+        17,
+        16,
+        11
+      ],
+      "primary_policy_calls": 5884,
+      "primary_inference_seconds": 941.9761552133132,
+      "calls_per_primary_success": 38.71052631578947,
+      "total_episode_wall_seconds_including_extensions": 1740.9223779891618,
+      "late_successes_221_to_440": 0
+    },
+    "ckpt30k_prefix1": {
+      "n_used": 200,
+      "n_expected": 200,
+      "successes_at_220": 173,
+      "success_rate_at_220": 0.865,
+      "per_task_successes": [
+        17,
+        20,
+        18,
+        17,
+        15,
+        19,
+        19,
+        18,
+        14,
+        16
+      ],
+      "primary_policy_calls": 23664,
+      "primary_inference_seconds": 4227.0914999854285,
+      "calls_per_primary_success": 136.78612716763007,
+      "total_episode_wall_seconds_including_extensions": 4949.155554998433,
+      "late_successes_221_to_440": 0
+    },
+    "ckpt30k_prefix10": {
+      "n_used": 200,
+      "n_expected": 200,
+      "successes_at_220": 148,
+      "success_rate_at_220": 0.74,
+      "per_task_successes": [
+        18,
+        18,
+        17,
+        16,
+        5,
+        13,
+        19,
+        15,
+        15,
+        12
+      ],
+      "primary_policy_calls": 2854,
+      "primary_inference_seconds": 459.2396925576031,
+      "calls_per_primary_success": 19.283783783783782,
+      "total_episode_wall_seconds_including_extensions": 1203.7630970876198,
+      "late_successes_221_to_440": 0
+    }
+  },
+  "paired_comparisons": {
+    "30k-20k": {
+      "paired_episodes": 200,
+      "task_clusters": 10,
+      "success_difference": 0.09000000000000001,
+      "task_cluster_bootstrap_95pct": [
+        -0.015000000000000003,
+        0.195
+      ],
+      "wins": 40,
+      "losses": 22,
+      "exploratory_unadjusted_interval": true
+    },
+    "20k-10k": {
+      "paired_episodes": 200,
+      "task_clusters": 10,
+      "success_difference": 0.165,
+      "task_cluster_bootstrap_95pct": [
+        0.095,
+        0.23499999999999996
+      ],
+      "wins": 57,
+      "losses": 24,
+      "exploratory_unadjusted_interval": true
+    },
+    "prefix1-prefix5": {
+      "paired_episodes": 200,
+      "task_clusters": 10,
+      "success_difference": 0.015,
+      "task_cluster_bootstrap_95pct": [
+        -0.045,
+        0.08499999999999999
+      ],
+      "wins": 27,
+      "losses": 24,
+      "exploratory_unadjusted_interval": true
+    },
+    "prefix10-prefix5": {
+      "paired_episodes": 200,
+      "task_clusters": 10,
+      "success_difference": -0.11000000000000001,
+      "task_cluster_bootstrap_95pct": [
+        -0.175,
+        -0.049999999999999996
+      ],
+      "wins": 17,
+      "losses": 39,
+      "exploratory_unadjusted_interval": true
+    }
+  },
+  "baseline_failure_proxies": {
+    "primary_success": {
+      "episodes": 170,
+      "nonexclusive_proxy_counts": {
+        "target_bilateral_contact_ever": 167,
+        "other_bowl_bilateral_contact_ever": 0,
+        "target_lift_4cm_ever": 170,
+        "target_displacement_5cm_ever": 170,
+        "target_near_destination_xy_5cm_ever": 170,
+        "target_motion_stall_after_contact": 49,
+        "late_success": 0
+      }
+    },
+    "primary_failure": {
+      "episodes": 30,
+      "nonexclusive_proxy_counts": {
+        "target_bilateral_contact_ever": 17,
+        "other_bowl_bilateral_contact_ever": 0,
+        "target_lift_4cm_ever": 18,
+        "target_displacement_5cm_ever": 19,
+        "target_near_destination_xy_5cm_ever": 12,
+        "target_motion_stall_after_contact": 14,
+        "late_success": 8
+      }
+    }
+  },
+  "old_anchor_rechecks": [
+    {
+      "pair_id": "task0_init2",
+      "matches_success": true,
+      "matches_first_image": true
+    },
+    {
+      "pair_id": "task0_init12",
+      "matches_success": true,
+      "matches_first_image": true
+    },
+    {
+      "pair_id": "task0_init22",
+      "matches_success": true,
+      "matches_first_image": true
+    },
+    {
+      "pair_id": "task0_init32",
+      "matches_success": true,
+      "matches_first_image": true
+    },
+    {
+      "pair_id": "task0_init42",
+      "matches_success": true,
+      "matches_first_image": true
+    },
+    {
+      "pair_id": "task1_init2",
+      "matches_success": true,
+      "matches_first_image": true
+    },
+    {
+      "pair_id": "task1_init12",
+      "matches_success": true,
+      "matches_first_image": true
+    },
+    {
+      "pair_id": "task1_init22",
+      "matches_success": true,
+      "matches_first_image": true
+    },
+    {
+      "pair_id": "task1_init32",
+      "matches_success": true,
+      "matches_first_image": true
+    },
+    {
+      "pair_id": "task1_init42",
+      "matches_success": true,
+      "matches_first_image": true
+    },
+    {
+      "pair_id": "task2_init2",
+      "matches_success": true,
+      "matches_first_image": true
+    },
+    {
+      "pair_id": "task2_init12",
+      "matches_success": true,
+      "matches_first_image": true
+    },
+    {
+      "pair_id": "task2_init22",
+      "matches_success": true,
+      "matches_first_image": true
+    },
+    {
+      "pair_id": "task2_init32",
+      "matches_success": true,
+      "matches_first_image": true
+    },
+    {
+      "pair_id": "task2_init42",
+      "matches_success": true,
+      "matches_first_image": true
+    },
+    {
+      "pair_id": "task3_init2",
+      "matches_success": true,
+      "matches_first_image": true
+    },
+    {
+      "pair_id": "task3_init12",
+      "matches_success": true,
+      "matches_first_image": true
+    },
+    {
+      "pair_id": "task3_init22",
+      "matches_success": true,
+      "matches_first_image": true
+    },
+    {
+      "pair_id": "task3_init32",
+      "matches_success": true,
+      "matches_first_image": true
+    },
+    {
+      "pair_id": "task3_init42",
+      "matches_success": true,
+      "matches_first_image": true
+    },
+    {
+      "pair_id": "task4_init2",
+      "matches_success": true,
+      "matches_first_image": true
+    },
+    {
+      "pair_id": "task4_init12",
+      "matches_success": true,
+      "matches_first_image": true
+    },
+    {
+      "pair_id": "task4_init22",
+      "matches_success": true,
+      "matches_first_image": true
+    },
+    {
+      "pair_id": "task4_init32",
+      "matches_success": true,
+      "matches_first_image": true
+    },
+    {
+      "pair_id": "task4_init42",
+      "matches_success": true,
+      "matches_first_image": true
+    },
+    {
+      "pair_id": "task5_init2",
+      "matches_success": true,
+      "matches_first_image": true
+    },
+    {
+      "pair_id": "task5_init12",
+      "matches_success": true,
+      "matches_first_image": true
+    },
+    {
+      "pair_id": "task5_init22",
+      "matches_success": true,
+      "matches_first_image": true
+    },
+    {
+      "pair_id": "task5_init32",
+      "matches_success": true,
+      "matches_first_image": true
+    },
+    {
+      "pair_id": "task5_init42",
+      "matches_success": true,
+      "matches_first_image": true
+    },
+    {
+      "pair_id": "task6_init2",
+      "matches_success": true,
+      "matches_first_image": true
+    },
+    {
+      "pair_id": "task6_init12",
+      "matches_success": true,
+      "matches_first_image": true
+    },
+    {
+      "pair_id": "task6_init22",
+      "matches_success": true,
+      "matches_first_image": true
+    },
+    {
+      "pair_id": "task6_init32",
+      "matches_success": true,
+      "matches_first_image": true
+    },
+    {
+      "pair_id": "task6_init42",
+      "matches_success": true,
+      "matches_first_image": true
+    },
+    {
+      "pair_id": "task7_init2",
+      "matches_success": true,
+      "matches_first_image": true
+    },
+    {
+      "pair_id": "task7_init12",
+      "matches_success": true,
+      "matches_first_image": true
+    },
+    {
+      "pair_id": "task7_init22",
+      "matches_success": true,
+      "matches_first_image": true
+    },
+    {
+      "pair_id": "task7_init32",
+      "matches_success": true,
+      "matches_first_image": true
+    },
+    {
+      "pair_id": "task7_init42",
+      "matches_success": true,
+      "matches_first_image": true
+    },
+    {
+      "pair_id": "task8_init2",
+      "matches_success": true,
+      "matches_first_image": true
+    },
+    {
+      "pair_id": "task8_init12",
+      "matches_success": true,
+      "matches_first_image": true
+    },
+    {
+      "pair_id": "task8_init22",
+      "matches_success": true,
+      "matches_first_image": true
+    },
+    {
+      "pair_id": "task8_init32",
+      "matches_success": true,
+      "matches_first_image": true
+    },
+    {
+      "pair_id": "task8_init42",
+      "matches_success": true,
+      "matches_first_image": true
+    },
+    {
+      "pair_id": "task9_init2",
+      "matches_success": true,
+      "matches_first_image": true
+    },
+    {
+      "pair_id": "task9_init12",
+      "matches_success": true,
+      "matches_first_image": true
+    },
+    {
+      "pair_id": "task9_init22",
+      "matches_success": true,
+      "matches_first_image": true
+    },
+    {
+      "pair_id": "task9_init32",
+      "matches_success": true,
+      "matches_first_image": true
+    },
+    {
+      "pair_id": "task9_init42",
+      "matches_success": true,
+      "matches_first_image": true
+    }
+  ],
+  "video_container_metadata_checked": 2000,
+  "video_check_scope": "Frame count/dimensions in container metadata; preflight observation hashes are computed before video compression.",
+  "scientific_scope": "Exploratory development diagnosis only. Finger contacts and thresholds are proxies. Multiple frames/variants are not independent scenarios; no causal recovery claim.",
+  "next_stage": "Review failure mechanisms and strong baseline choice; freeze branch reproduction tests and recovery candidates before new data. Do not open confirmation split."
+}
