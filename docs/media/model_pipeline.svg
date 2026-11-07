@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="136" viewBox="0 0 1200 136" role="img" aria-labelledby="title description">
+  <title id="title">VLA 模型训练与评测流程</title>
+  <desc id="description">遥操作示范或 LIBERO 数据，经质量检查与整条示范划分、归一化与模型训练，输入图像、指令和状态得到动作块，执行闭环逐回合评测，复核成功率、轨迹与视频。</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#4b5563"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="136" rx="12" fill="#ffffff"/>
+  <g fill="none" stroke="#4b5563" stroke-width="1.7" marker-end="url(#arrow)">
+    <path d="M178 68H211"/><path d="M378 68H411"/><path d="M578 68H611"/>
+    <path d="M778 68H811"/><path d="M978 68H1011"/>
+  </g>
+  <g fill="#f0ebff" stroke="#a78bfa" stroke-width="1.5">
+    <rect x="16" y="28" width="162" height="80" rx="6"/>
+    <rect x="216" y="28" width="162" height="80" rx="6"/>
+    <rect x="416" y="28" width="162" height="80" rx="6"/>
+    <rect x="616" y="28" width="162" height="80" rx="6"/>
+    <rect x="816" y="28" width="162" height="80" rx="6"/>
+    <rect x="1016" y="28" width="168" height="80" rx="6"/>
+  </g>
+  <g fill="#1f2937" font-family="'Microsoft YaHei', 'Noto Sans CJK SC', 'PingFang SC', sans-serif" font-size="17" text-anchor="middle">
+    <text x="97" y="61"><tspan x="97">遥操作示范 /</tspan><tspan x="97" dy="25">LIBERO 数据</tspan></text>
+    <text x="297" y="61"><tspan x="297">质量检查与整条</tspan><tspan x="297" dy="25">示范划分</tspan></text>
+    <text x="497" y="61"><tspan x="497">归一化与</tspan><tspan x="497" dy="25">模型训练</tspan></text>
+    <text x="697" y="61"><tspan x="697">图像 + 指令 + 状态</tspan><tspan x="697" dy="25">→ 动作块</tspan></text>
+    <text x="897" y="61"><tspan x="897">闭环执行与</tspan><tspan x="897" dy="25">逐回合评测</tspan></text>
+    <text x="1100" y="61"><tspan x="1100">成功率、轨迹与</tspan><tspan x="1100" dy="25">视频复核</tspan></text>
+  </g>
+</svg>

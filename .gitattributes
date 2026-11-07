@@ -9,5 +9,6 @@
 *.patch -text
 *.png binary
 *.gif binary
+*.webp binary
 *.webm binary
 *.mp4 binary

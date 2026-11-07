@@ -8,9 +8,9 @@
 
 ## 机器人演示
 
-[![PiPER 双臂机器人演示](docs/media/robot_demo.gif)](docs/media/robot_demo.mp4)
+[![PiPER 双臂机器人演示](docs/media/robot_demo.webp)](docs/media/robot_demo.mp4)
 
-[播放 MP4](docs/media/robot_demo.mp4) · [WebM](docs/media/robot_demo.webm) · 12 秒 / 50 FPS
+[播放 MP4](docs/media/robot_demo.mp4) · [WebM](docs/media/robot_demo.webm) · 完整视频：12 秒 / 50 FPS
 
 ## 模型路线
 
@@ -23,28 +23,20 @@
 | π0.5 | OpenPI 数据变换、LoRA 配置、训练及推理入口 | 完整 VLA 的任务适配 |
 | 真机数据 | PiPER 主从遥操作、三路相机、LeRobot | 数据采集、时间对齐与训练输入一致性 |
 
-```mermaid
-flowchart LR
-    D[遥操作示范 / LIBERO 数据] --> Q[质量检查与整条示范划分]
-    Q --> T[归一化与模型训练]
-    T --> P[图像 + 指令 + 状态 → 动作块]
-    P --> E[闭环执行与逐回合评测]
-    E --> R[成功率、轨迹与视频复核]
-```
+![从示范采集到模型训练与闭环评测的流程](docs/media/model_pipeline.svg)
 
 ## LIBERO 评测
 
-ResNet18 + Transformer 四套联合训练模型：**40 个任务、2,000 回合，成功率 78.25%**。动作块长度 K=10，每次执行 H=5 步。
+LIBERO 四套共 **40 个任务、2,000 回合**，最终结果如下：
 
-| Suite | 成功 / 回合 | 成功率 |
-|---|---:|---:|
-| Spatial | 450 / 500 | 90.0% |
-| Object | 439 / 500 | 87.8% |
-| Goal | 341 / 500 | 68.2% |
-| Long | 335 / 500 | 67.0% |
-| **总计** | **1,565 / 2,000** | **78.25%** |
+| 模型 | 最终成功率 |
+|---|---:|
+| CNN + 文本 Embedding + MLP 基线 | 15.80% |
+| ResNet18 + Transformer + 动作分块 | 78.25% |
+| SmolVLM + LoRA + 回归动作头 | 80.45% |
+| **π0.5 + LoRA** | **90.15%** |
 
-数字可直接由仓库中的 [逐回合 CSV](research/results/mini_vla_final2000_20261021_run3/review/episodes.csv) 复算。SmolVLM LoRA 的 Spatial 开发集结果为 **46/50（92%）**；与完整四套评测分别报告。各阶段协议、对照结果和证据见 [RESULTS](docs/RESULTS.md)。
+与项目简历一致的最终成绩汇总见 [RESULTS](docs/RESULTS.md)。
 
 ## 快速运行
 
