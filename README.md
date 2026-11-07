@@ -81,4 +81,4 @@ examples/                    CPU 模型示例
 tools/                       仓库完整性检查
 ```
 
-研究环境与真机环境分别管理；`research/scripts` 中保留的历史运行器可能绑定原实验路径和资源协议，推荐按文档中的入口使用。大体积数据集、训练权重、缓存、SSH 配置和登录凭据不随源码发布。上游版本、许可和适配文件范围见 [THIRD_PARTY](THIRD_PARTY.md)。
+上游版本、许可和适配文件范围见 [THIRD_PARTY](THIRD_PARTY.md)。
