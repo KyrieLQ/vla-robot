@@ -8,6 +8,8 @@
 
 ## 机器人演示
 
+**任务指令：** `put yellow into box`（将黄色物体放入盒子）。
+
 [![PiPER 双臂机器人演示](docs/media/robot_demo.webp)](docs/media/robot_demo.mp4)
 
 [播放 MP4](docs/media/robot_demo.mp4) · [WebM](docs/media/robot_demo.webm) · 完整视频：12 秒 / 50 FPS
@@ -35,8 +37,6 @@ LIBERO 四套共 **40 个任务、2,000 回合**，最终结果如下：
 | ResNet18 + Transformer + 动作分块 | 78.25% |
 | SmolVLM + LoRA + 回归动作头 | 80.45% |
 | **π0.5 + LoRA** | **90.15%** |
-
-与项目简历一致的最终成绩汇总见 [RESULTS](docs/RESULTS.md)。
 
 ## 快速运行
 
